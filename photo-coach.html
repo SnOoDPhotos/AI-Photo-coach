@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SNOOD Photo Coach</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0d0d0d;
+    --surface: #161616;
+    --surface2: #1e1e1e;
+    --border: #2a2a2a;
+    --accent: #e8c547;
+    --accent2: #c9a227;
+    --text: #f0ede8;
+    --muted: #6b6762;
+    --success: #4caf7d;
+    --error: #e05c5c;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* GRAIN OVERLAY */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 1000;
+    opacity: 0.4;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 40px;
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    background: rgba(13,13,13,0.92);
+    backdrop-filter: blur(12px);
+    z-index: 100;
+  }
+
+  .logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    letter-spacing: 3px;
+    color: var(--accent);
+  }
+
+  .logo span {
+    color: var(--text);
+    font-size: 13px;
+    font-family: 'DM Mono', monospace;
+    letter-spacing: 2px;
+    display: block;
+    margin-top: -4px;
+  }
+
+  .header-badge {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: var(--muted);
+    border: 1px solid var(--border);
+    padding: 6px 14px;
+    border-radius: 2px;
+  }
+
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 48px 40px;
+  }
+
+  /* API KEY SECTION */
+  .api-section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    padding: 24px 28px;
+    margin-bottom: 40px;
+    display: flex;
+    gap: 16px;
+    align-items: flex-end;
+  }
+
+  .api-section .field {
+    flex: 1;
+  }
+
+  label {
+    display: block;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    color: var(--muted);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+
+  input[type="password"], input[type="text"] {
+    width: 100%;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 12px 16px;
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  input:focus { border-color: var(--accent); }
+
+  .btn {
+    background: var(--accent);
+    color: #0d0d0d;
+    border: none;
+    padding: 12px 24px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+
+  .btn:hover { background: var(--accent2); transform: translateY(-1px); }
+  .btn:active { transform: translateY(0); }
+  .btn:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
+
+  .btn-outline {
+    background: transparent;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+  }
+
+  .btn-outline:hover { background: rgba(232,197,71,0.08); }
+
+  /* UPLOAD ZONE */
+  .upload-zone {
+    border: 2px dashed var(--border);
+    padding: 60px 40px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+    background: var(--surface);
+    margin-bottom: 40px;
+  }
+
+  .upload-zone:hover, .upload-zone.drag-over {
+    border-color: var(--accent);
+    background: rgba(232,197,71,0.03);
+  }
+
+  .upload-zone input[type="file"] {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+  }
+
+  .upload-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+    opacity: 0.4;
+  }
+
+  .upload-zone h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    letter-spacing: 3px;
+    color: var(--text);
+    margin-bottom: 8px;
+  }
+
+  .upload-zone p {
+    color: var(--muted);
+    font-size: 13px;
+    font-family: 'DM Mono', monospace;
+  }
+
+  /* WORKSPACE */
+  .workspace {
+    display: none;
+    gap: 32px;
+  }
+
+  .workspace.active { display: grid; grid-template-columns: 1fr 1fr; }
+
+  @media (max-width: 768px) {
+    .workspace.active { grid-template-columns: 1fr; }
+    header { padding: 16px 20px; }
+    main { padding: 24px 20px; }
+  }
+
+  .photo-panel {
+    position: sticky;
+    top: 100px;
+    align-self: start;
+  }
+
+  .photo-panel img {
+    width: 100%;
+    display: block;
+    border: 1px solid var(--border);
+  }
+
+  .photo-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 12px;
+  }
+
+  .iteration-badge {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: var(--accent);
+    background: rgba(232,197,71,0.1);
+    padding: 4px 12px;
+    border: 1px solid rgba(232,197,71,0.2);
+  }
+
+  .photo-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .photo-actions .btn, .photo-actions label.btn {
+    flex: 1;
+    text-align: center;
+    font-size: 13px;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .photo-actions label.btn input { display: none; }
+
+  /* ANALYSIS PANEL */
+  .analysis-panel { display: flex; flex-direction: column; gap: 0; }
+
+  .panel-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 24px;
+  }
+
+  .panel-header h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  .dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+
+  /* ANALYSIS OUTPUT */
+  .analysis-output {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 24px;
+    min-height: 300px;
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--text);
+    white-space: pre-wrap;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .analysis-output.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    color: var(--muted);
+  }
+
+  .spinner {
+    width: 32px; height: 32px;
+    border: 2px solid var(--border);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .placeholder-text {
+    color: var(--muted);
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  /* ITERATION HISTORY */
+  .history-section {
+    margin-top: 48px;
+    grid-column: 1 / -1;
+  }
+
+  .history-header {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: var(--muted);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .history-header::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  .history-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+  }
+
+  .history-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    cursor: pointer;
+    transition: all 0.2s;
+    overflow: hidden;
+  }
+
+  .history-item:hover { border-color: var(--accent); }
+
+  .history-item img { width: 100%; display: block; aspect-ratio: 16/9; object-fit: cover; }
+
+  .history-item-meta {
+    padding: 10px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .history-item-meta span {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: var(--accent);
+  }
+
+  .history-item-meta small {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+  }
+
+  /* MARKDOWN STYLING in output */
+  .analysis-output h1, .analysis-output h2, .analysis-output h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+    color: var(--accent);
+    margin: 20px 0 10px;
+  }
+
+  .analysis-output h1 { font-size: 22px; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
+  .analysis-output h2 { font-size: 18px; }
+  .analysis-output h3 { font-size: 15px; color: var(--text); }
+
+  .analysis-output strong {
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  .analysis-output code {
+    font-family: 'DM Mono', monospace;
+    background: var(--surface2);
+    padding: 2px 6px;
+    font-size: 12px;
+    color: var(--accent);
+    border: 1px solid var(--border);
+  }
+
+  .analysis-output ul, .analysis-output ol {
+    padding-left: 20px;
+    margin: 8px 0;
+  }
+
+  .analysis-output li { margin-bottom: 6px; }
+
+  .analysis-output hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 20px 0;
+  }
+
+  .status-bar {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 8px 0;
+    margin-top: 8px;
+  }
+
+  .status-dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--success);
+  }
+
+  .status-text {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+  .new-session-btn {
+    margin-top: 16px;
+    width: 100%;
+  }
+
+  .finale-btn {
+    background: linear-gradient(135deg, #e8c547, #c9a227);
+    color: #0d0d0d;
+    border: none;
+    padding: 16px 24px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 16px;
+    transition: all 0.3s;
+    display: none;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .finale-btn::before {
+    content: '★';
+    margin-right: 10px;
+  }
+
+  .finale-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(232,197,71,0.3);
+  }
+
+  .finale-btn.visible { display: block; animation: fadeIn 0.5s ease; }
+
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+  .finale-badge {
+    display: none;
+    background: linear-gradient(135deg, rgba(232,197,71,0.15), rgba(232,197,71,0.05));
+    border: 1px solid rgba(232,197,71,0.4);
+    padding: 12px 16px;
+    margin-top: 16px;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--accent);
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  .finale-badge.visible { display: block; }
+
+
+  .software-selector {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 0;
+  }
+
+  .sw-btn {
+    flex: 1;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    color: var(--muted);
+    padding: 10px 8px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: center;
+  }
+
+  .sw-btn:hover { border-color: var(--accent); color: var(--text); }
+
+  .sw-btn.active {
+    background: rgba(232,197,71,0.12);
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  .sw-badge {
+    display: inline-block;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: var(--accent);
+    border: 1px solid rgba(232,197,71,0.3);
+    padding: 2px 8px;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+
+
+  /* SESSIONS PANEL */
+  .sessions-bar {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--muted);
+    padding: 16px 24px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .sessions-bar-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    color: var(--muted);
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .session-chips {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    flex: 1;
+  }
+
+  .session-chip {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 6px 14px;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    letter-spacing: 0.5px;
+  }
+
+  .session-chip:hover { border-color: var(--accent); color: var(--accent); }
+  .session-chip.active { border-color: var(--accent); background: rgba(232,197,71,0.1); color: var(--accent); }
+
+  .session-chip-del {
+    opacity: 0.4;
+    font-size: 14px;
+    line-height: 1;
+    padding: 0 2px;
+  }
+  .session-chip-del:hover { opacity: 1; color: var(--error); }
+
+  .sessions-bar .btn { font-size: 12px; padding: 8px 16px; }
+
+  .save-indicator {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--success);
+    letter-spacing: 1px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .save-indicator.show { opacity: 1; }
+
+  .session-name-input {
+    background: var(--bg);
+    border: 1px solid var(--accent);
+    color: var(--text);
+    padding: 6px 12px;
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    outline: none;
+    width: 180px;
+  }
+
+  .api-info {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 8px;
+  }
+
+  .api-info a { color: var(--accent); text-decoration: none; }
+  .api-info a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    Photo Coach
+    <span>AI — POWERED BY CLAUDE</span>
+  </div>
+  <div class="header-badge">AI PHOTO COACH <span id="softwareBadge">· LIGHTROOM</span></div>
+</header>
+
+<main>
+
+  <!-- API KEY -->
+  <div class="api-section" id="apiSection">
+    <div class="field">
+      <label>Anthropic API Key</label>
+      <input type="password" id="apiKey" placeholder="sk-ant-..." />
+      <div class="api-info">Nog geen key? Haal hem op via <a href="https://console.anthropic.com" target="_blank">console.anthropic.com</a> — je key wordt niet opgeslagen.</div>
+    </div>
+    <div class="field" style="max-width:320px">
+      <label>Software voorkeur</label>
+      <div class="software-selector">
+        <button class="sw-btn active" id="sw-lr" onclick="setSoftware('lightroom')">⬡ Lightroom</button>
+        <button class="sw-btn" id="sw-ps" onclick="setSoftware('photoshop')">⬡ Photoshop</button>
+        <button class="sw-btn" id="sw-both" onclick="setSoftware('both')">⬡ Beide</button>
+      </div>
+    </div>
+    <button class="btn" onclick="saveKey()">CONNECT</button>
+  </div>
+
+
+  <!-- SESSIONS BAR -->
+  <div class="sessions-bar" id="sessionsBar">
+    <span class="sessions-bar-label">Opgeslagen sessies</span>
+    <div class="session-chips" id="sessionChips">
+      <span style="font-family:'DM Mono',monospace;font-size:11px;color:var(--muted)">Nog geen sessies opgeslagen</span>
+    </div>
+    <span class="save-indicator" id="saveIndicator">✓ OPGESLAGEN</span>
+    <button class="btn btn-outline" onclick="saveCurrentSession()" id="saveBtn" style="display:none">SESSIE OPSLAAN</button>
+  </div>
+
+  <!-- UPLOAD ZONE -->
+  <div class="upload-zone" id="uploadZone">
+    <input type="file" accept="image/*" onchange="handleUpload(this.files[0])" id="fileInput" />
+    <div class="upload-icon">⬡</div>
+    <h2>UPLOAD YOUR PHOTO</h2>
+    <p>Sleep een foto hierheen of klik om te selecteren · JPG, PNG, WEBP</p>
+  </div>
+
+  <!-- WORKSPACE -->
+  <div class="workspace" id="workspace">
+
+    <!-- LEFT: PHOTO -->
+    <div class="photo-panel">
+      <div class="photo-meta">
+        <div class="iteration-badge" id="iterationLabel">VERSIE 1</div>
+        <div class="status-bar">
+          <div class="status-dot"></div>
+          <span class="status-text" id="statusText">KLAAR VOOR ANALYSE</span>
+        </div>
+      </div>
+      <img id="currentPhoto" src="" alt="Current photo" />
+      <div class="photo-actions">
+        <label class="btn btn-outline">
+          NIEUWE VERSIE
+          <input type="file" accept="image/*" onchange="handleNewVersion(this.files[0])" />
+        </label>
+        <button class="btn btn-outline" onclick="newSession()" style="flex:0.5">↺ RESET</button>
+      </div>
+      <div class="finale-badge" id="finaleBadge">
+        ✦ FOTO HEEFT MEERDERE ITERATIES — FINALE ANALYSE BESCHIKBAAR
+      </div>
+      <button class="finale-btn" id="finaleBtn" onclick="finaleAnalysis()">
+        FINALE PERFECTIE ANALYSE
+      </button>
+    </div>
+
+    <!-- RIGHT: ANALYSIS -->
+    <div class="analysis-panel">
+      <div class="panel-header">
+        <div class="dot" id="analysisDot"></div>
+        <h3>AI ANALYSE</h3>
+      </div>
+      <div class="analysis-output" id="analysisOutput">
+        <div class="placeholder-text">ANALYSE WORDT GELADEN...</div>
+      </div>
+    </div>
+
+    <!-- HISTORY -->
+    <div class="history-section" id="historySection" style="display:none">
+      <div class="history-header">ITERATIE GESCHIEDENIS</div>
+      <div class="history-grid" id="historyGrid"></div>
+    </div>
+
+  </div>
+
+</main>
+
+<script>
+  let apiKey = '';
+  let software = 'lightroom';
+  let iteration = 0;
+  let currentSessionId = null;
+  let currentAnalysis = '';
+  const DB_NAME = 'PhotoCoachDB';
+  const DB_VERSION = 1;
+  let db = null;
+
+  // ── IndexedDB setup ──────────────────────────────────────────────
+  function initDB() {
+    return new Promise((resolve, reject) => {
+      const req = indexedDB.open(DB_NAME, DB_VERSION);
+      req.onupgradeneeded = e => {
+        const d = e.target.result;
+        if (!d.objectStoreNames.contains('sessions')) {
+          const store = d.createObjectStore('sessions', { keyPath: 'id' });
+          store.createIndex('updatedAt', 'updatedAt');
+        }
+      };
+      req.onsuccess = e => { db = e.target.result; resolve(); };
+      req.onerror = () => reject(req.error);
+    });
+  }
+
+  function dbGetAll() {
+    return new Promise((resolve, reject) => {
+      const tx = db.transaction('sessions', 'readonly');
+      const req = tx.objectStore('sessions').getAll();
+      req.onsuccess = () => resolve(req.result || []);
+      req.onerror = () => reject(req.error);
+    });
+  }
+
+  function dbPut(session) {
+    return new Promise((resolve, reject) => {
+      const tx = db.transaction('sessions', 'readwrite');
+      const req = tx.objectStore('sessions').put(session);
+      req.onsuccess = () => resolve();
+      req.onerror = () => reject(req.error);
+    });
+  }
+
+  function dbDelete(id) {
+    return new Promise((resolve, reject) => {
+      const tx = db.transaction('sessions', 'readwrite');
+      const req = tx.objectStore('sessions').delete(id);
+      req.onsuccess = () => resolve();
+      req.onerror = () => reject(req.error);
+    });
+  }
+
+  async function loadSessionChips() {
+    if (!db) return;
+    const sessions = await dbGetAll();
+    const chips = document.getElementById('sessionChips');
+    if (sessions.length === 0) {
+      chips.innerHTML = '<span style="font-family:\'DM Mono\',monospace;font-size:11px;color:var(--muted)">Nog geen sessies opgeslagen</span>';
+      return;
+    }
+    sessions.sort((a, b) => b.updatedAt - a.updatedAt);
+    chips.innerHTML = sessions.map(s => `
+      <div class="session-chip ${s.id === currentSessionId ? 'active' : ''}" onclick="loadSession('${s.id}')">
+        <span>${s.name}</span>
+        <span style="color:var(--muted);font-size:10px">V${s.iteration}</span>
+        <span class="session-chip-del" onclick="event.stopPropagation();deleteSession('${s.id}')" title="Verwijder sessie">×</span>
+      </div>
+    `).join('');
+  }
+
+  async function saveCurrentSession(showPrompt = true) {
+    if (!db || iteration === 0) return;
+    let name = currentSessionId ? null : null;
+
+    if (!currentSessionId) {
+      name = prompt('Geef deze sessie een naam (bijv. "Waterbuffel Yala"):');
+      if (!name || !name.trim()) return;
+      currentSessionId = 'session_' + Date.now();
+    }
+
+    const sessions = await dbGetAll();
+    const existing = sessions.find(s => s.id === currentSessionId);
+    name = name || (existing ? existing.name : 'Sessie');
+
+    const session = {
+      id: currentSessionId,
+      name: name.trim(),
+      iteration,
+      software,
+      history: history.map(h => ({ version: h.version, timestamp: h.timestamp, dataUrl: h.dataUrl })),
+      lastAnalysis: currentAnalysis,
+      updatedAt: Date.now()
+    };
+
+    await dbPut(session);
+    await loadSessionChips();
+
+    const ind = document.getElementById('saveIndicator');
+    ind.classList.add('show');
+    setTimeout(() => ind.classList.remove('show'), 2000);
+  }
+
+  async function loadSession(id) {
+    if (isAnalyzing) return;
+    const sessions = await dbGetAll();
+    const s = sessions.find(x => x.id === id);
+    if (!s) return;
+
+    // restore state
+    currentSessionId = s.id;
+    iteration = s.iteration;
+    software = s.software || 'lightroom';
+    history = s.history || [];
+
+    // update software UI
+    setSoftware(software);
+
+    // show workspace
+    document.getElementById('uploadZone').style.display = 'none';
+    document.getElementById('workspace').classList.add('active');
+    document.getElementById('saveBtn').style.display = '';
+
+    // restore last photo
+    if (history.length > 0) {
+      const last = history[history.length - 1];
+      document.getElementById('currentPhoto').src = last.dataUrl;
+      document.getElementById('iterationLabel').textContent = `VERSIE ${last.version}`;
+    }
+
+    // restore analysis
+    if (s.lastAnalysis) {
+      document.getElementById('analysisOutput').innerHTML = s.lastAnalysis;
+      currentAnalysis = s.lastAnalysis;
+    }
+
+    document.getElementById('statusText').textContent = `SESSIE HERSTELD — VERSIE ${iteration}`;
+    renderHistory();
+    checkFinaleButton();
+    await loadSessionChips();
+  }
+
+  async function deleteSession(id) {
+    if (!confirm('Sessie verwijderen?')) return;
+    await dbDelete(id);
+    if (currentSessionId === id) currentSessionId = null;
+    await loadSessionChips();
+  }
+
+  // Init on load
+  initDB().then(() => loadSessionChips());
+  let history = [];
+  let isAnalyzing = false;
+
+  // Drag and drop
+  const uploadZone = document.getElementById('uploadZone');
+  uploadZone.addEventListener('dragover', e => { e.preventDefault(); uploadZone.classList.add('drag-over'); });
+  uploadZone.addEventListener('dragleave', () => uploadZone.classList.remove('drag-over'));
+  uploadZone.addEventListener('drop', e => {
+    e.preventDefault();
+    uploadZone.classList.remove('drag-over');
+    const file = e.dataTransfer.files[0];
+    if (file && file.type.startsWith('image/')) handleUpload(file);
+  });
+
+  function saveKey() {
+    const input = document.getElementById('apiKey').value.trim();
+    if (!input.startsWith('sk-ant-')) {
+      alert('Vul een geldige Anthropic API key in (begint met sk-ant-)');
+      return;
+    }
+    apiKey = input;
+    document.getElementById('apiSection').style.borderLeftColor = 'var(--success)';
+    document.querySelector('#apiSection .btn').textContent = '✓ CONNECTED';
+    document.querySelector('#apiSection .btn').disabled = true;
+    // Disable software buttons too
+    document.querySelectorAll('.sw-btn').forEach(b => { b.disabled = true; b.style.opacity = '0.6'; });
+  }
+
+  function setSoftware(choice) {
+    software = choice;
+    document.querySelectorAll('.sw-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('sw-' + (choice === 'lightroom' ? 'lr' : choice === 'photoshop' ? 'ps' : 'both')).classList.add('active');
+    const labels = { lightroom: '· LIGHTROOM', photoshop: '· PHOTOSHOP', both: '· LR + PS' };
+    document.getElementById('softwareBadge').textContent = labels[choice];
+  }
+
+  function handleUpload(file) {
+    if (!file) return;
+    if (!apiKey) { alert('Vul eerst je Anthropic API key in.'); return; }
+
+    iteration = 1;
+    history = [];
+    document.getElementById('uploadZone').style.display = 'none';
+    document.getElementById('workspace').classList.add('active');
+    document.getElementById('saveBtn').style.display = '';
+    currentSessionId = null;
+
+    const reader = new FileReader();
+    reader.onload = e => {
+      const dataUrl = e.target.result;
+      document.getElementById('currentPhoto').src = dataUrl;
+      document.getElementById('iterationLabel').textContent = `VERSIE ${iteration}`;
+      addToHistory(dataUrl, iteration);
+      analyzePhoto(dataUrl, true);
+    };
+    reader.readAsDataURL(file);
+  }
+
+  function handleNewVersion(file) {
+    if (!file || isAnalyzing) return;
+
+    iteration++;
+    const reader = new FileReader();
+    reader.onload = e => {
+      const dataUrl = e.target.result;
+      document.getElementById('currentPhoto').src = dataUrl;
+      document.getElementById('iterationLabel').textContent = `VERSIE ${iteration}`;
+      addToHistory(dataUrl, iteration);
+      analyzePhoto(dataUrl, false);
+    };
+    reader.readAsDataURL(file);
+  }
+
+  function addToHistory(dataUrl, ver) {
+    history.push({ dataUrl, version: ver, timestamp: new Date().toLocaleTimeString('nl-NL', {hour:'2-digit',minute:'2-digit'}) });
+    renderHistory();
+  }
+
+  function renderHistory() {
+    const section = document.getElementById('historySection');
+    const grid = document.getElementById('historyGrid');
+
+    if (history.length < 2) { section.style.display = 'none'; return; }
+    section.style.display = 'block';
+
+    grid.innerHTML = history.map((item, i) => `
+      <div class="history-item" onclick="showHistoryItem(${i})">
+        <img src="${item.dataUrl}" alt="Versie ${item.version}" />
+        <div class="history-item-meta">
+          <span>V${item.version}</span>
+          <small>${item.timestamp}</small>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  function showHistoryItem(index) {
+    const item = history[index];
+    document.getElementById('currentPhoto').src = item.dataUrl;
+    document.getElementById('iterationLabel').textContent = `VERSIE ${item.version} (HISTORY)`;
+  }
+
+  async function analyzePhoto(dataUrl, isFirst) {
+    if (!apiKey) return;
+    isAnalyzing = true;
+
+    const output = document.getElementById('analysisOutput');
+    const statusText = document.getElementById('statusText');
+
+    output.innerHTML = '<div class="loading"><div class="spinner"></div><span style="font-family:\'DM Mono\',monospace;font-size:12px;color:var(--muted)">ANALYSEREN...</span></div>';
+    statusText.textContent = 'BEZIG MET ANALYSEREN...';
+
+    const base64 = dataUrl.split(',')[1];
+    const mimeMatch = dataUrl.match(/data:(image\/[a-z]+);/);
+    const mimeType = mimeMatch ? mimeMatch[1] : 'image/jpeg';
+
+    const swInstructions = {
+      lightroom: `Geef adviezen uitsluitend voor Adobe Lightroom (nieuwste versie). Gebruik Lightroom-terminologie: Belichting, Schaduwen, Hooglichten, Witten, Zwarten, Textuur, Helderheid (Clarity), HSL, Curven, Maskers, Radiale verlopen, Lineaire verlopen, Vignettage. Geef exacte schuifregelaarwaarden.`,
+      photoshop: `Geef adviezen uitsluitend voor Adobe Photoshop (nieuwste versie). Gebruik Photoshop-terminologie: Aanpassingslagen (Curves, Levels, Hue/Saturation, Color Balance, Selective Color, Vibrance), Camera Raw Filter, Luminosity Masks, Dodge & Burn, Smart Objects, Layer Blending Modes. Geef concrete instellingen en werkwijzen.`,
+      both: `Geef adviezen voor zowel Adobe Lightroom als Adobe Photoshop. Structureer duidelijk: begin met Lightroom (globale aanpassingen, maskers, HSL), gevolgd door Photoshop-verfijningen (retouche, geavanceerde maskers, compositing). Geef exacte waarden voor beide programma's.`
+    };
+
+    const swLabel = software === 'lightroom' ? 'Adobe Lightroom' : software === 'photoshop' ? 'Adobe Photoshop' : 'Adobe Lightroom en Photoshop';
+
+    const systemPrompt = `Je bent een professionele wildlife- en natuurfotograaf die fungeert als persoonlijke fotobewerkingscoach. Je analyseert foto's en geeft concrete, specifieke bewerkingsadviezen.
+
+STIJL: Reageer als de fotograaf zelf — direct, enthousiast, deskundig. Vertel wat je ziet, wat goed is, en wat beter kan.
+
+TAAL: Geef alle adviezen in het NEDERLANDS.
+
+FORMAT: Gebruik duidelijke koppen (##), geef altijd exacte waarden (bijv. +25, -0.45, 6200K), en maak het praktisch uitvoerbaar.
+
+SOFTWARE: ${swInstructions[software]}
+
+FOCUS:
+- Belichting & toon
+- Kleur & witbalans
+- Textuur, clarity, scherpte
+- Lokale aanpassingen
+- Compositie indien relevant
+
+Wees specifiek en geef altijd numerieke waarden. Geen vage adviezen.`;
+
+    const userPrompt = isFirst
+      ? `Dit is de ORIGINELE foto. Analyseer hem volledig als bewerkingscoach en geef een compleet bewerkingsplan voor ${swLabel}. Wat werkt al goed? Wat moet verbeterd worden en hoe exact?`
+      : `Dit is VERSIE ${iteration} — een bewerkte versie van de vorige foto.
+
+Analyseer de verbeteringen die zijn doorgevoerd én geef de volgende set concrete adviezen voor ${swLabel}. Erken wat er goed is gegaan en stuur bij waar nodig. We werken iteratief naar het perfecte eindresultaat.`;
+
+    try {
+      const response = await fetch('https://api.anthropic.com/v1/messages', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          model: 'claude-sonnet-4-20250514',
+          max_tokens: 1500,
+          system: systemPrompt,
+          messages: [{
+            role: 'user',
+            content: [
+              { type: 'image', source: { type: 'base64', media_type: mimeType, data: base64 } },
+              { type: 'text', text: userPrompt }
+            ]
+          }]
+        })
+      });
+
+      const data = await response.json();
+
+      if (data.error) {
+        output.innerHTML = `<div style="color:var(--error);font-family:'DM Mono',monospace;font-size:12px;">FOUT: ${data.error.message}</div>`;
+        statusText.textContent = 'FOUT';
+        isAnalyzing = false;
+        return;
+      }
+
+      const text = data.content.map(b => b.text || '').join('');
+      output.innerHTML = renderMarkdown(text);
+      currentAnalysis = output.innerHTML;
+      statusText.textContent = `VERSIE ${iteration} GEANALYSEERD`;
+      checkFinaleButton();
+      if (currentSessionId) saveCurrentSession(false);
+
+    } catch (err) {
+      output.innerHTML = `<div style="color:var(--error);font-family:'DM Mono',monospace;font-size:12px;">VERBINDINGSFOUT: ${err.message}<br><br>Controleer je API key en internetverbinding.</div>`;
+      statusText.textContent = 'FOUT';
+    }
+
+    isAnalyzing = false;
+  }
+
+  function checkFinaleButton() {
+    if (iteration >= 3) {
+      document.getElementById('finaleBtn').classList.add('visible');
+      document.getElementById('finaleBadge').classList.add('visible');
+    }
+  }
+
+  async function finaleAnalysis() {
+    if (!apiKey || isAnalyzing) return;
+    const currentSrc = document.getElementById('currentPhoto').src;
+    if (!currentSrc) return;
+
+    isAnalyzing = true;
+    const output = document.getElementById('analysisOutput');
+    const statusText = document.getElementById('statusText');
+
+    output.innerHTML = '<div class="loading"><div class="spinner"></div><span style="font-family:\'DM Mono\',monospace;font-size:12px;color:var(--accent)">FINALE ANALYSE BEZIG...</span></div>';
+    statusText.textContent = 'FINALE ANALYSE...';
+
+    const base64 = currentSrc.split(',')[1];
+    const mimeMatch = currentSrc.match(/data:(image\/[a-z]+);/);
+    const mimeType = mimeMatch ? mimeMatch[1] : 'image/jpeg';
+
+    try {
+      const response = await fetch('https://api.anthropic.com/v1/messages', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          model: 'claude-sonnet-4-20250514',
+          max_tokens: 1000,
+          system: (() => {
+            const swI = {
+              lightroom: 'Gebruik Lightroom-terminologie en schuifregelaarwaarden.',
+              photoshop: 'Gebruik Photoshop-terminologie: aanpassingslagen, Camera Raw Filter, Dodge & Burn, Layer Blending Modes.',
+              both: 'Geef finishing touches voor zowel Lightroom als Photoshop, duidelijk gescheiden.'
+            };
+            const swL = software === 'lightroom' ? 'Adobe Lightroom' : software === 'photoshop' ? 'Adobe Photoshop' : 'Adobe Lightroom en Photoshop';
+            return `Je bent een professionele fotograaf en bewerkingscoach. Je geeft de allerlaatste subtiele finishing touches voor ${swL}. Taal: Nederlands. Gebruik koppen (##) en exacte waarden. ${swI[software]}`;
+          })(),
+          messages: [{
+            role: 'user',
+            content: [
+              { type: 'image', source: { type: 'base64', media_type: mimeType, data: base64 } },
+              { type: 'text', text: `Dit is versie ${iteration} van de foto. We hebben al meerdere bewerkingsrondes gedaan en de foto ziet er heel goed uit.\n\nDit is de FINALE PERFECTIE ANALYSE. Geef alleen de allerlaatste subtiele tweaks die het verschil maken tussen goed en absoluut perfect. Denk aan micro-aanpassingen in de curve, allerlaatste scherptedetails, subtiele luminantie-correcties. Wees beknopt maar precies. Sluit af met een eindoordeel.` }
+            ]
+          }]
+        })
+      });
+
+      const data = await response.json();
+      if (data.error) {
+        output.innerHTML = `<div style="color:var(--error);font-family:'DM Mono',monospace;font-size:12px;">FOUT: ${data.error.message}</div>`;
+        isAnalyzing = false;
+        return;
+      }
+
+      const text = data.content.map(b => b.text || '').join('');
+      output.innerHTML = `<div style="background:rgba(232,197,71,0.08);border:1px solid rgba(232,197,71,0.3);padding:12px 16px;margin-bottom:20px;font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:2px;color:var(--accent)">\u2605 FINALE PERFECTIE ANALYSE \u2014 VERSIE ${iteration}</div>` + renderMarkdown(text);
+      statusText.textContent = '\u2605 FINALE ANALYSE COMPLEET';
+      currentAnalysis = output.innerHTML;
+      if (currentSessionId) saveCurrentSession(false);
+      document.getElementById('finaleBtn').innerHTML = '\u2713 KLAAR \u2014 FOTO IS PERFECT';
+      document.getElementById('finaleBtn').disabled = true;
+      document.getElementById('finaleBtn').style.opacity = '0.6';
+
+    } catch (err) {
+      output.innerHTML = `<div style="color:var(--error);font-family:'DM Mono',monospace;font-size:12px;">FOUT: ${err.message}</div>`;
+    }
+
+    isAnalyzing = false;
+  }
+
+  function renderMarkdown(text) {
+    return text
+      .replace(/^### (.+)$/gm, '<h3>$1</h3>')
+      .replace(/^## (.+)$/gm, '<h2>$1</h2>')
+      .replace(/^# (.+)$/gm, '<h1>$1</h1>')
+      .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+      .replace(/`([^`]+)`/g, '<code>$1</code>')
+      .replace(/^---$/gm, '<hr>')
+      .replace(/^\- (.+)$/gm, '<li>$1</li>')
+      .replace(/(<li>.*<\/li>)/gs, '<ul>$1</ul>')
+      .replace(/\n\n/g, '<br><br>')
+      .replace(/\n/g, '<br>');
+  }
+
+  function newSession() {
+    if (!confirm('Nieuwe sessie starten? De huidige analyse wordt gewist.')) return;
+    iteration = 0;
+    history = [];
+    document.getElementById('workspace').classList.remove('active');
+    document.getElementById('uploadZone').style.display = 'block';
+    document.getElementById('historySection').style.display = 'none';
+    document.getElementById('currentPhoto').src = '';
+    document.getElementById('analysisOutput').innerHTML = '<div class="placeholder-text">ANALYSE WORDT GELADEN...</div>';
+    document.getElementById('fileInput').value = '';
+    document.getElementById('finaleBtn').classList.remove('visible');
+    document.getElementById('finaleBadge').classList.remove('visible');
+    document.getElementById('finaleBtn').disabled = false;
+    document.getElementById('finaleBtn').style.opacity = '1';
+    document.getElementById('finaleBtn').innerHTML = 'FINALE PERFECTIE ANALYSE';
+    currentSessionId = null;
+    currentAnalysis = '';
+    document.getElementById('saveBtn').style.display = 'none';
+    loadSessionChips();
+    // Note: software preference is kept across sessions intentionally
+  }
+</script>
+</body>
+</html>

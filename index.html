@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SNOOD Photo Coach</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d0d0d;--surface:#161616;--surface2:#1e1e1e;--border:#2a2a2a;--accent:#e8c547;--accent2:#c9a227;--text:#f0ede8;--muted:#6b6762;--success:#4caf7d;--error:#e05c5c}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-weight:300;min-height:100vh;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:1000;opacity:0.4}
+header{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:28px 40px 20px;border-bottom:1px solid var(--border);position:sticky;top:0;background:rgba(13,13,13,0.92);backdrop-filter:blur(12px);z-index:100;text-align:center}
+.logo{display:flex;flex-direction:column;align-items:center;gap:4px}
+.logo img{height:90px;width:auto;max-width:380px;object-fit:contain}
+.logo span{color:var(--muted);font-size:12px;font-family:'DM Mono',monospace;letter-spacing:2px;display:block;text-align:center}
+main{max-width:1100px;margin:0 auto;padding:40px 40px}
+.api-section{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--accent);padding:20px 24px;margin-bottom:20px;display:flex;gap:16px;align-items:flex-end;flex-wrap:wrap}
+.api-section .field{flex:1;min-width:200px}
+label{display:block;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:1.5px;color:var(--muted);margin-bottom:8px;text-transform:uppercase}
+input[type="password"]{width:100%;background:var(--bg);border:1px solid var(--border);color:var(--text);padding:12px 16px;font-family:'DM Mono',monospace;font-size:13px;outline:none;transition:border-color 0.2s}
+input:focus{border-color:var(--accent)}
+select{width:100%;background:var(--bg);border:1px solid var(--border);color:var(--text);padding:11px 14px;font-family:'DM Sans',sans-serif;font-size:13px;outline:none;cursor:pointer;appearance:none;background-image:url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 viewBox=%220 0 12 12%22><path fill=%22%23e8c547%22 d=%22M6 8L1 3h10z%22/></svg>');background-repeat:no-repeat;background-position:right 12px center}
+select option,select optgroup{background:#1e1e1e;color:#f0ede8}
+.btn{background:var(--accent);color:#0d0d0d;border:none;padding:12px 24px;font-family:Bebas Neue,sans-serif;font-size:16px;letter-spacing:2px;cursor:pointer;transition:all 0.2s;white-space:nowrap}
+.btn:hover{background:var(--accent2);transform:translateY(-1px)}
+.btn:active{transform:translateY(0)}
+.btn:disabled{opacity:0.4;cursor:not-allowed;transform:none}
+.btn-outline{background:transparent;border:1px solid var(--accent);color:var(--accent)}
+.btn-outline:hover{background:rgba(232,197,71,0.08)}
+.api-info{font-family:'DM Mono',monospace;font-size:11px;color:var(--muted);margin-top:8px}
+.api-info a{color:var(--accent);text-decoration:none}
+.sessions-bar{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--muted);padding:14px 20px;margin-bottom:20px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.sessions-bar-label{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:1.5px;color:var(--muted);text-transform:uppercase;white-space:nowrap}
+.session-chips{display:flex;gap:8px;flex-wrap:wrap;flex:1}
+.session-chip{background:var(--bg);border:1px solid var(--border);color:var(--text);padding:5px 12px;font-family:'DM Mono',monospace;font-size:11px;cursor:pointer;transition:all 0.2s;display:flex;align-items:center;gap:8px}
+.session-chip:hover{border-color:var(--accent);color:var(--accent)}
+.session-chip.active{border-color:var(--accent);background:rgba(232,197,71,0.1);color:var(--accent)}
+.session-chip-del{opacity:0.4;font-size:14px}
+.session-chip-del:hover{opacity:1;color:var(--error)}
+.save-indicator{font-family:'DM Mono',monospace;font-size:10px;color:var(--success);letter-spacing:1px;opacity:0;transition:opacity 0.3s}
+.save-indicator.show{opacity:1}
+.sessions-bar .btn{font-size:12px;padding:8px 16px}
+.workflow-bar{background:var(--surface);border:1px solid var(--border);padding:14px 20px;margin-bottom:20px;display:none;align-items:center;gap:0;flex-wrap:wrap}
+.phase-step{display:flex;align-items:center;gap:8px;flex:1;opacity:0.3;transition:all 0.3s;min-width:80px}
+.phase-step.active{opacity:1}
+.phase-step.done{opacity:0.55}
+.phase-num{width:26px;height:26px;border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:Bebas Neue,sans-serif;font-size:13px;color:var(--muted);flex-shrink:0;transition:all 0.3s}
+.phase-step.active .phase-num{border-color:var(--accent);color:var(--accent);background:rgba(232,197,71,0.1)}
+.phase-step.done .phase-num{border-color:var(--success);color:var(--success);background:rgba(76,175,125,0.1)}
+.phase-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:1px;color:var(--muted);text-transform:uppercase;line-height:1.3}
+.phase-step.active .phase-label{color:var(--text)}
+.phase-divider{width:20px;height:1px;background:var(--border);flex-shrink:0;margin:0 2px}
+.phase-advance-btn{background:transparent;border:1px solid var(--accent);color:var(--accent);padding:6px 14px;font-family:Bebas Neue,sans-serif;font-size:13px;letter-spacing:1px;cursor:pointer;transition:all 0.2s;white-space:nowrap;margin-left:12px}
+.phase-advance-btn:hover{background:rgba(232,197,71,0.1)}
+.phase-advance-btn:disabled{opacity:0.3;cursor:not-allowed}
+.upload-zone{border:2px dashed var(--border);padding:60px 40px;text-align:center;cursor:pointer;transition:all 0.3s;position:relative;background:var(--surface);margin-bottom:30px}
+.upload-zone:hover,.upload-zone.drag-over{border-color:var(--accent);background:rgba(232,197,71,0.03)}
+.upload-zone input[type="file"]{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%}
+.upload-icon{font-size:44px;margin-bottom:14px;opacity:0.35}
+.upload-zone h2{font-family:Bebas Neue,sans-serif;font-size:24px;letter-spacing:3px;color:var(--text);margin-bottom:8px}
+.upload-zone p{color:var(--muted);font-size:13px;font-family:'DM Mono',monospace}
+.workspace{display:none;gap:28px}
+.workspace.active{display:grid;grid-template-columns:1fr 1fr}
+.photo-panel{position:sticky;top:100px;align-self:start}
+.photo-panel img{width:100%;display:block;border:1px solid var(--border)}
+.photo-meta{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border);margin-bottom:10px}
+.iteration-badge{font-family:Bebas Neue,sans-serif;font-size:13px;letter-spacing:2px;color:var(--accent);background:rgba(232,197,71,0.1);padding:3px 10px;border:1px solid rgba(232,197,71,0.2)}
+.status-bar{display:flex;gap:6px;align-items:center}
+.status-dot{width:6px;height:6px;border-radius:50%;background:var(--success)}
+.status-text{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted)}
+.photo-actions{display:flex;gap:8px;margin-top:10px}
+.photo-actions .btn,.photo-actions label.btn{flex:1;text-align:center;font-size:13px;padding:10px;cursor:pointer}
+.photo-actions label.btn input{display:none}
+.finale-btn{background:linear-gradient(135deg,#e8c547,#c9a227);color:#0d0d0d;border:none;padding:14px 24px;font-family:Bebas Neue,sans-serif;font-size:17px;letter-spacing:3px;cursor:pointer;width:100%;margin-top:12px;transition:all 0.3s;display:none}
+.finale-btn:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(232,197,71,0.25)}
+.finale-btn.visible{display:block;animation:fadeIn 0.5s ease}
+.finale-badge{display:none;background:rgba(232,197,71,0.07);border:1px solid rgba(232,197,71,0.3);padding:10px 14px;margin-top:12px;font-family:'DM Mono',monospace;font-size:10px;color:var(--accent);letter-spacing:1px;text-align:center}
+.finale-badge.visible{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.analysis-panel{display:flex;flex-direction:column;gap:0}
+.panel-header{display:flex;align-items:center;gap:10px;padding-bottom:16px;border-bottom:1px solid var(--border);margin-bottom:18px}
+.panel-header h3{font-family:Bebas Neue,sans-serif;font-size:18px;letter-spacing:2px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--accent);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
+.edit-check-box{background:rgba(76,175,125,0.06);border:1px solid rgba(76,175,125,0.25);padding:14px 18px;margin-bottom:14px;display:none}
+.edit-check-box.visible{display:block}
+.edit-check-label{font-family:Bebas Neue,sans-serif;font-size:12px;letter-spacing:2px;color:var(--success);margin-bottom:6px}
+.analysis-output{background:var(--surface);border:1px solid var(--border);padding:20px;min-height:280px;font-size:14px;line-height:1.8;color:var(--text);font-family:'DM Sans',sans-serif}
+.analysis-output p{margin-bottom:10px}
+.analysis-output ul{padding-left:20px;margin-bottom:10px}
+.analysis-output li{margin-bottom:5px}
+.analysis-output h1{font-family:Bebas Neue,sans-serif;font-size:20px;letter-spacing:2px;color:var(--accent);margin:18px 0 8px;border-bottom:1px solid var(--border);padding-bottom:6px}
+.analysis-output h2{font-family:Bebas Neue,sans-serif;font-size:17px;letter-spacing:2px;color:var(--accent);margin:16px 0 8px}
+.analysis-output h3{font-family:Bebas Neue,sans-serif;font-size:14px;color:var(--text);margin:12px 0 6px}
+.analysis-output strong{color:var(--accent);font-weight:500}
+.analysis-output code{font-family:'DM Mono',monospace;background:var(--surface2);padding:2px 6px;font-size:12px;color:var(--accent);border:1px solid var(--border)}
+.analysis-output hr{border:none;border-top:1px solid var(--border);margin:16px 0}
+.analysis-output.loading{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:14px;color:var(--muted)}
+.spinner{width:30px;height:30px;border:2px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin 0.8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.placeholder-text{color:var(--muted);font-family:'DM Mono',monospace;font-size:11px;letter-spacing:1px;text-align:center;padding:50px 20px}
+.learning-box{background:rgba(232,197,71,0.05);border:1px solid rgba(232,197,71,0.25);padding:18px 22px;margin-top:16px;display:none}
+.learning-box.visible{display:block;animation:fadeIn 0.5s ease}
+.learning-label{font-family:Bebas Neue,sans-serif;font-size:14px;letter-spacing:2px;color:var(--accent);margin-bottom:8px}
+.history-section{margin-top:40px;grid-column:1 / -1;display:none}
+.history-header{font-family:Bebas Neue,sans-serif;font-size:16px;letter-spacing:3px;color:var(--muted);margin-bottom:16px;display:flex;align-items:center;gap:12px}
+.history-header::after{content:'';flex:1;height:1px;background:var(--border)}
+.history-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
+.history-item{background:var(--surface);border:1px solid var(--border);cursor:pointer;transition:all 0.2s;overflow:hidden}
+.history-item:hover{border-color:var(--accent)}
+.history-item img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover}
+.history-item-meta{padding:8px 10px;display:flex;justify-content:space-between;align-items:center}
+.history-item-meta span{font-family:Bebas Neue,sans-serif;font-size:12px;letter-spacing:1px;color:var(--accent)}
+.history-item-meta small{font-family:'DM Mono',monospace;font-size:9px;color:var(--muted)}
+
+/* FEEDBACK MODAL */
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.75);z-index:500;display:none;align-items:center;justify-content:center;padding:20px}
+.modal-overlay.visible{display:flex}
+.modal{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--accent);padding:28px;max-width:520px;width:100%;animation:fadeIn 0.2s ease}
+.modal h3{font-family:Bebas Neue,sans-serif;font-size:20px;letter-spacing:2px;color:var(--accent);margin-bottom:6px}
+.modal p{font-size:13px;color:var(--muted);font-family:'DM Mono',monospace;letter-spacing:0.5px;margin-bottom:18px;line-height:1.6}
+.modal textarea{width:100%;background:var(--bg);border:1px solid var(--border);color:var(--text);padding:12px 14px;font-family:'DM Sans',sans-serif;font-size:13px;outline:none;resize:vertical;min-height:90px;line-height:1.6;transition:border-color 0.2s}
+.modal textarea:focus{border-color:var(--accent)}
+.modal-actions{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+.modal-actions .btn{flex:1;text-align:center;font-size:14px;padding:12px}
+.modal-skip{background:transparent;border:1px solid var(--border);color:var(--muted);padding:12px;font-family:Bebas Neue,sans-serif;font-size:13px;letter-spacing:1px;cursor:pointer;transition:all 0.2s;flex:0.6;text-align:center}
+.modal-skip:hover{border-color:var(--muted);color:var(--text)}
+
+.phase-refine-btn{background:transparent;border:1px solid var(--muted);color:var(--muted);padding:6px 14px;font-family:Bebas Neue,sans-serif;font-size:13px;letter-spacing:1px;cursor:pointer;transition:all 0.2s;white-space:nowrap}
+.phase-refine-btn:hover{border-color:var(--text);color:var(--text)}
+.phase-refine-btn:disabled{opacity:0.3;cursor:not-allowed}
+.phase-refine-btn.active-phase{border-color:var(--accent);color:var(--accent)}
+
+/* NEXT PHASE MODAL */
+.next-phase-modal .modal{border-left-color:var(--success)}
+.upload-drop-area{border:2px dashed var(--border);padding:30px;text-align:center;cursor:pointer;transition:all 0.2s;position:relative;background:var(--bg);margin-top:14px}
+.upload-drop-area:hover,.upload-drop-area.drag-over{border-color:var(--accent);background:rgba(232,197,71,0.03)}
+.upload-drop-area input{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%}
+.upload-drop-area p{font-family:'DM Mono',monospace;font-size:12px;color:var(--muted);letter-spacing:0.5px}
+.upload-drop-area.has-file p{color:var(--success)}
+.phase-tag{display:inline-block;font-family:Bebas Neue,sans-serif;font-size:11px;letter-spacing:2px;color:var(--bg);background:var(--accent);padding:3px 10px;margin-bottom:10px}
+
+@media(max-width:768px){.workspace.active{grid-template-columns:1fr}header{padding:16px}main{padding:16px}.api-section{flex-direction:column;gap:10px;padding:14px}.api-section .field{min-width:unset}.sessions-bar{flex-direction:column;align-items:flex-start;gap:8px;padding:12px 14px}.workflow-bar{gap:4px;padding:12px 14px}.phase-label{display:none}.photo-panel{position:static}.photo-actions{flex-direction:column}.photo-actions .btn,.photo-actions label.btn{text-align:center}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">
+    <img id="logoImg" alt="SNOOD Photography">
+    <span>AI PHOTO COACH &nbsp;&middot;&nbsp; <span id="softwareBadge">LIGHTROOM</span></span>
+  </div>
+</header>
+<main>
+  <div class="api-section" id="apiSection">
+    <div class="field" style="max-width:200px">
+      <label>AI Model</label>
+      <select id="providerSelect" onchange="setProvider(this.value)">
+        <optgroup label="Google">
+          <option value="gemini">Gemini 2.5 Flash</option>
+        </optgroup>
+        <optgroup label="Anthropic">
+          <option value="claude">Claude Sonnet 4.6</option>
+          <option value="claude-opus">Claude Opus 4.6</option>
+          <option value="claude-haiku">Claude Haiku 4.5</option>
+        </optgroup>
+        <optgroup label="OpenAI">
+          <option value="gpt4o">GPT-4o</option>
+          <option value="gpt4o-mini">GPT-4o Mini</option>
+        </optgroup>
+        <optgroup label="Mistral">
+          <option value="pixtral">Pixtral Large</option>
+        </optgroup>
+        <optgroup label="Groq">
+          <option value="groq">Groq Llama 4 Scout</option>
+        </optgroup>
+        <optgroup label="SiliconFlow">
+          <option value="siliconflow">Qwen3-VL-32B</option>
+        </optgroup>
+      </select>
+    </div>
+
+    <div class="field" style="max-width:260px">
+      <label>Software voorkeur</label>
+      <select id="softwareSelect" onchange="setSoftware(this.value)">
+        <optgroup label="Adobe">
+          <option value="lightroom">Adobe Lightroom</option>
+          <option value="photoshop">Adobe Photoshop</option>
+          <option value="both">Adobe Lightroom + Photoshop</option>
+        </optgroup>
+        <optgroup label="Professioneel">
+          <option value="captureone">Capture One</option>
+          <option value="dxo">DxO PhotoLab</option>
+          <option value="luminar">Luminar Neo</option>
+        </optgroup>
+        <optgroup label="Gratis">
+          <option value="darktable">Darktable</option>
+          <option value="gimp">GIMP</option>
+          <option value="rawtherapee">RawTherapee</option>
+        </optgroup>
+        <optgroup label="Mobiel">
+          <option value="snapseed">Snapseed</option>
+          <option value="lightroommobile">Lightroom Mobile</option>
+          <option value="vsco">VSCO</option>
+        </optgroup>
+      </select>
+    </div>
+    <button class="btn" id="connectBtn" onclick="saveKey()">START</button>
+  </div>
+  <div class="sessions-bar" id="sessionsBar">
+    <span class="sessions-bar-label">Sessies</span>
+    <div class="session-chips" id="sessionChips"><span style="font-family:'DM Mono',monospace;font-size:11px;color:var(--muted)">Nog geen sessies opgeslagen</span></div>
+    <span class="save-indicator" id="saveIndicator">&#10003; OPGESLAGEN</span>
+    <button class="btn btn-outline" onclick="saveCurrentSession()" id="saveBtn" style="display:none;font-size:12px;padding:8px 16px">SESSIE OPSLAAN</button>
+  </div>
+  <div class="workflow-bar" id="workflowBar">
+    <div class="phase-step active" id="phase1"><div class="phase-num">1</div><div class="phase-label">Globaal</div></div>
+    <div class="phase-divider"></div>
+    <div class="phase-step" id="phase2"><div class="phase-num">2</div><div class="phase-label">Toon</div></div>
+    <div class="phase-divider"></div>
+    <div class="phase-step" id="phase3"><div class="phase-num">3</div><div class="phase-label">Lokaal</div></div>
+    <div class="phase-divider"></div>
+    <div class="phase-step" id="phase4"><div class="phase-num">4</div><div class="phase-label">Final Touch</div></div>
+    <div class="phase-divider"></div>
+    <div class="phase-step" id="phase5"><div class="phase-num">&#10003;</div><div class="phase-label">Eindoordeel</div></div>
+    <div style="display:flex;gap:8px;margin-left:auto;flex-wrap:wrap">
+      <button class="phase-refine-btn" id="phasePrevBtn" onclick="goToPreviousPhase()" style="display:none">&larr; VORIGE FASE</button>
+      <button class="phase-refine-btn" id="phaseRefineBtn" onclick="openRefineModal()" disabled>&#9998; NOG AANPASSEN</button>
+      <button class="phase-advance-btn" id="phaseAdvanceBtn" onclick="openNextPhaseModal()" disabled>VOLGENDE FASE &rarr;</button>
+    </div>
+  </div>
+  <div class="upload-zone" id="uploadZone">
+    <input type="file" accept="image/*" onchange="handleUpload(this.files[0])" id="fileInput">
+    <div class="upload-icon">&#11041;</div>
+    <h2>UPLOAD YOUR PHOTO</h2>
+    <p>Sleep een foto hierheen of klik om te selecteren &middot; JPG, PNG, WEBP</p>
+  </div>
+  <div class="workspace" id="workspace">
+    <div class="photo-panel">
+      <div class="photo-meta">
+        <div class="iteration-badge" id="iterationLabel">VERSIE 1</div>
+        <div class="status-bar"><div class="status-dot"></div><span class="status-text" id="statusText">KLAAR</span></div>
+      </div>
+      <img id="currentPhoto" src="" alt="foto">
+      <div class="photo-actions">
+        <button class="btn btn-outline" onclick="newSession()">&#8635; NIEUWE FOTO</button>
+      </div>
+      <div class="finale-badge visible" id="finaleBadge" style="display:none">&#10022; FINALE ANALYSE BESCHIKBAAR NA 3 ITERATIES</div>
+      <button class="finale-btn" id="finaleBtn" onclick="finaleAnalysis()">&#9733; FINALE PERFECTIE ANALYSE</button>
+    </div>
+    <div class="analysis-panel">
+      <div class="panel-header">
+        <div class="dot"></div>
+        <h3>AI ANALYSE</h3>
+        <span id="phaseLabel" style="font-family:'DM Mono',monospace;font-size:10px;color:var(--accent);letter-spacing:1px;margin-left:auto"></span>
+      </div>
+      <div class="edit-check-box" id="editCheckBox">
+        <div class="edit-check-label">&#10022; EDIT CHECK</div>
+        <div id="editCheckText"></div>
+      </div>
+      <div class="analysis-output" id="analysisOutput">
+        <div class="placeholder-text">ANALYSE WORDT GELADEN...</div>
+      </div>
+      <div class="learning-box" id="learningBox">
+        <div class="learning-label">&#9733; EINDOORDEEL & FOTOGRAFIETIP</div>
+        <div id="learningText"></div>
+      </div>
+    </div>
+    <div class="history-section" id="historySection">
+      <div class="history-header">ITERATIE GESCHIEDENIS</div>
+      <div class="history-grid" id="historyGrid"></div>
+    </div>
+  </div>
+
+<div class="modal-overlay" id="disclaimerModal" style="z-index:600">
+  <div class="modal" style="max-width:580px">
+    <h3>&#9432; WELKOM BIJ SNOOD PHOTO COACH</h3>
+    <p style="margin-bottom:14px;line-height:1.7;font-size:13px;color:var(--text)">Voordat je begint, lees even de volgende punten door:</p>
+    <div style="background:var(--bg);border:1px solid var(--border);padding:16px;margin-bottom:16px;font-size:13px;line-height:1.8">
+      <div style="margin-bottom:10px"><strong style="color:var(--accent)">&#10003; Jouw foto's</strong><br>
+      Je foto's worden alleen tijdelijk verwerkt om de AI-analyse te genereren. Ze worden niet opgeslagen op onze servers.</div>
+      <div style="margin-bottom:10px"><strong style="color:var(--accent)">&#10003; AI Training</strong><br>
+      Standaard worden jouw foto's NIET gebruikt voor het trainen van AI-modellen.</div>
+      <div style="margin-bottom:10px"><strong style="color:var(--accent)">&#10003; Adviezen</strong><br>
+      De adviezen zijn gegenereerd door AI en dienen als inspiratie. Resultaten kunnen variëren per foto und situatie.</div>
+      <div style="margin-bottom:4px"><strong style="color:var(--accent)">&#9744; Optioneel</strong><br>
+      <label style="cursor:pointer;display:flex;align-items:center;gap:10px;margin-top:6px">
+        <input type="checkbox" id="trainingConsent" style="width:16px;height:16px;accent-color:var(--accent)">
+        <span>Ik geef toestemming om mijn foto's te gebruiken voor kwaliteitsverbetering van de app</span>
+      </label></div>
+    </div>
+    <div class="modal-actions">
+      <button class="btn" onclick="acceptDisclaimer()">AKKOORD & DOORGAAN</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="refineModal">
+  <div class="modal">
+    <h3>WAT WIL JE NOG VERBETEREN?</h3>
+    <p>Vertel de AI wat je nog niet bevalt. De AI geeft dan nieuwe gerichte adviezen zonder al gedane bewerkingen te herhalen.</p>
+    <textarea id="refineText" placeholder="Bijv: de lucht is nog te licht, de kleuren zijn te warm..."></textarea>
+    <div class="modal-actions">
+      <button class="btn" onclick="submitRefine()">NIEUWE ADVIEZEN OPHALEN</button>
+      <button class="modal-skip" onclick="closeRefineModal()">ANNULEREN</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay next-phase-modal" id="nextPhaseModal">
+  <div class="modal">
+    <div id="nextPhaseTag" class="phase-tag">NAAR FASE 2</div>
+    <h3>UPLOAD JE BEWERKTE FOTO</h3>
+    <p>Upload de bewerkte versie. De AI controleert of alle fase-adviezen zijn doorgevoerd en gaat daarna direct door met de volgende fase.</p>
+    <div class="upload-drop-area" id="nextPhaseDropArea">
+      <input type="file" accept="image/*" id="nextPhaseFileInput" onchange="handleNextPhaseFile(this.files[0])">
+      <p id="nextPhaseDropText">&#8679; Sleep je foto hierheen of klik om te selecteren</p>
+    </div>
+    <div class="modal-actions">
+      <button class="btn" id="nextPhaseSubmitBtn" onclick="submitNextPhase()" disabled>FASE AFRONDEN & ANALYSEREN</button>
+      <button class="modal-skip" onclick="closeNextPhaseModal()">ANNULEREN</button>
+    </div>
+  </div>
+</div>
+</main>
+<script>
+// ── State ──────────────────────────────────────────────────────────────────
+var apiKey = '';
+var software = 'lightroom';
+var iteration = 0;
+var currentPhase = 1;
+var previousPhotoData = null;
+var currentSessionId = null;
+var currentAnalysis = '';
+var isAnalyzing = false;
+var photoHistory = [];
+var db = null;
+var PHASE_LABELS = ['', 'FASE 1 · COMPOSITIE & GLOBAAL', 'FASE 2 · TOON & KLEUR', 'FASE 3 · LOKAAL', 'FASE 4 · FINAL TOUCH', 'FASE 5 · EINDOORDEEL'];
+var LOGO_B64 = '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';
+
+// ── Software instructions ──────────────────────────────────────────────────
+var swLabels = {lightroom:'LIGHTROOM',photoshop:'PHOTOSHOP',both:'LR + PS',captureone:'CAPTURE ONE',dxo:'DXO PHOTOLAB',luminar:'LUMINAR NEO',darktable:'DARKTABLE',gimp:'GIMP',rawtherapee:'RAWTHERAPEE',snapseed:'SNAPSEED',lightroommobile:'LR MOBILE',vsco:'VSCO'};
+var swInstructions = {
+  lightroom: 'Geef adviezen UITSLUITEND voor Adobe Lightroom Classic of Lightroom CC. TOEGESTANE TOOLS: Belichting, Contrast, Hooglichten, Schaduwen, Witten, Zwarten, Textuur, Helderheid (Clarity), Aanwezigheid, Witbalans, Tint, Levendigheid, Verzadiging, HSL/Kleurmixer, Toonkromme, Detail (Verscherpen + Ruisreductie), Lenscorrecties, Transformatie, Effecten (Vignettage + Korrel), Maskers (Onderwerp, Lucht, Achtergrond, Persoon, Radiaal verloop, Lineair verloop, Kleurenbereik, Heldheidsbereik, Penseel). VERBODEN: Photoshop tools zoals Lagen, Curves aanpassingslaag, Healing Brush, Clone Stamp, Content-Aware, Frequency Separation, Luminosity Masks, Blending Modes. Als je twijfelt of een tool bestaat in Lightroom - noem hem NIET.',
+  photoshop: 'Geef adviezen uitsluitend voor Adobe Photoshop. Gebruik: Aanpassingslagen (Curves, Levels, Hue/Saturation, Selective Color, Vibrance), Camera Raw Filter, Luminosity Masks, Dodge en Burn, Smart Objects, Layer Blending Modes. Geef stap-voor-stap instructies. Nooit Lightroom-termen noemen.',
+  both: 'Geef adviezen voor Lightroom EN Photoshop. Begin met Lightroom voor globale aanpassingen, daarna Photoshop voor verfijningen. Geef exacte waarden voor beide en benoem duidelijk welk programma.',
+  captureone: 'Geef adviezen uitsluitend voor Capture One. Gebruik: Exposure, Contrast, Brightness, Color Balance, Levels, Curves, Luma Range, Color Editor, Clarity, Structure, Sharpening, Noise Reduction, Local Adjustments met Layers en Masks. Geef exacte waarden.',
+  dxo: 'Geef adviezen uitsluitend voor DxO PhotoLab. Gebruik: SmartLighting, ClearView Plus, DeepPRIME ruisreductie, HSL, Tone Curve, Selective Tone, Local Adjustments met Auto Mask en Control Points. Geef exacte waarden.',
+  luminar: 'Geef adviezen uitsluitend voor Luminar Neo. Gebruik: Light (Exposure/Contrast/Highlights/Shadows), Color (Temperature/Saturation/Vibrance), Details (Sharpness/Noise), AI tools (Sky AI, Relight AI, Structure AI). Geef exacte schuifregelaarwaarden.',
+  darktable: 'Geef adviezen uitsluitend voor Darktable. Gebruik: Exposure, Filmic RGB, Color Calibration, Tone Equalizer, Local Contrast, Color Zones, Sharpen, Denoise, Parametric/Drawn Masks. Gebruik Darktable-naamgeving, nooit Lightroom-termen.',
+  gimp: 'Geef adviezen uitsluitend voor GIMP. Gebruik: Colors menu (Levels, Curves, Hue-Saturation, Brightness-Contrast, Shadows-Highlights), Filters (Unsharp Mask, Blur), Dodge/Burn tool, Clone tool, Layer Modes. Geef stap-voor-stap via menu-paden.',
+  rawtherapee: 'Geef adviezen uitsluitend voor RawTherapee. Gebruik: Exposure, Tone Curve, Lab Adjustments, HSV Equalizer, Color Toning, Sharpening, Noise Reduction, Local Lab. Geef exacte waarden en het juiste tabblad.',
+  snapseed: 'Geef adviezen uitsluitend voor Snapseed. Gebruik: Tune Image (Brightness/Contrast/Saturation/Ambiance/Highlights/Shadows/Warmth), Details (Structure/Sharpening), Curves, Selective (puntsgewijze aanpassing), Healing, Vignette. GEEN maskers, GEEN lagen. Geef waarden van -100 tot +100.',
+  lightroommobile: 'Geef adviezen uitsluitend voor Lightroom Mobile. Gebruik: Licht, Kleur (Witbalans/Levendigheid/Verzadiging/Kleurmixer), Detail, Effecten (Textuur/Clarity/Vignettage), Maskers. Geef exacte schuifregelaarwaarden.',
+  vsco: 'Geef adviezen uitsluitend voor VSCO. Gebruik: Presets (geef specifieke naam zoals A4 of C1), Exposure, Contrast, Saturation, Highlights, Shadows, Temperature, Sharpness, Clarity, Grain, Fade, Vignette, Split Tone. GEEN maskers of lokale aanpassingen. Geef waarden van -12 tot +12.'
+};
+var phaseInstructions = {
+  1: 'FASE 1 - COMPOSITIE, DENOISE & GLOBAAL: Begin met compositiebeoordeling (crop/rechtzetten alleen adviseren als het aantoonbaar verbetert). Dan denoise/ruisreductie als basis. Dan globale aanpassingen: belichting, witbalans, contrast, hooglichten, schaduwen, witten, zwarten, globale kleur en verzadiging. Max 6 adviezen. Nog GEEN kleurcurves, lokale aanpassingen of creatieve effecten.',
+  2: 'FASE 2 - TOON & KLEUR VERFIJNING: Globale basis en denoise zijn gedaan. Focus nu op verfijning: toonkromme/curves, HSL kleurmixer, specifieke kleurcorrecties, fijnafstelling schaduwen en hooglichten. Nog GEEN lokale maskers of creatieve effecten.',
+  3: 'FASE 3 - LOKALE AANPASSINGEN: Globaal en kleur zijn klaar. Focus op lokale bewerkingen: maskers op onderwerp/lucht/achtergrond, lokale belichting, lokale kleurcorrecties. Gebruik alleen tools beschikbaar in de gekozen software. Nog GEEN creatieve stijleffecten.',
+  4: 'FASE 4 - FINAL TOUCH & STIJL: Alle correcties zijn gedaan. Focus op creatieve afwerking: kleurgrading, split toning, vignette, filmkorrel, scherpte, creatieve sfeer. Dit is de persoonlijke stempel op de foto.',
+  5: 'FASE 5 - EINDOORDEEL: Geef een volledig eindoordeel over de foto als geheel. Wat is er goed gelukt in de bewerking? Wat maakt deze foto sterk? Geef ook nog een laatste kleine suggestie als die er is. Sluit daarna af met een persoonlijke fotografietip gericht op het genre van deze foto.'
+};
+
+// ── IndexedDB ──────────────────────────────────────────────────────────────
+function initDB() {
+  return new Promise(function(resolve, reject) {
+    var req = indexedDB.open('PhotoCoachDB', 1);
+    req.onupgradeneeded = function(e) {
+      var d = e.target.result;
+      if (!d.objectStoreNames.contains('sessions')) {
+        d.createObjectStore('sessions', {keyPath:'id'});
+      }
+    };
+    req.onsuccess = function(e) { db = e.target.result; resolve(); };
+    req.onerror = function() { reject(req.error); };
+  });
+}
+function dbGetAll() {
+  return new Promise(function(resolve, reject) {
+    var tx = db.transaction('sessions','readonly');
+    var req = tx.objectStore('sessions').getAll();
+    req.onsuccess = function() { resolve(req.result || []); };
+    req.onerror = function() { reject(req.error); };
+  });
+}
+function dbPut(session) {
+  return new Promise(function(resolve, reject) {
+    var tx = db.transaction('sessions','readwrite');
+    var req = tx.objectStore('sessions').put(session);
+    req.onsuccess = function() { resolve(); };
+    req.onerror = function() { reject(req.error); };
+  });
+}
+function dbDelete(id) {
+  return new Promise(function(resolve, reject) {
+    var tx = db.transaction('sessions','readwrite');
+    var req = tx.objectStore('sessions').delete(id);
+    req.onsuccess = function() { resolve(); };
+    req.onerror = function() { reject(req.error); };
+  });
+}
+async function loadSessionChips() {
+  if (!db) return;
+  var sessions = await dbGetAll();
+  var chips = document.getElementById('sessionChips');
+  if (!sessions.length) {
+    chips.innerHTML = '<span style="font-family:\'DM Mono\',monospace;font-size:11px;color:var(--muted)">Nog geen sessies opgeslagen</span>';
+    return;
+  }
+  sessions.sort(function(a,b){return b.updatedAt - a.updatedAt;});
+  chips.innerHTML = sessions.map(function(s) {
+    return '<div class="session-chip ' + (s.id === currentSessionId ? 'active' : '') + '" onclick="loadSession(\'' + s.id + '\')">'
+      + '<span>' + s.name + '</span>'
+      + '<span style="color:var(--muted);font-size:10px">V' + s.iteration + '</span>'
+      + '<span class="session-chip-del" onclick="event.stopPropagation();deleteSession(\'' + s.id + '\')" title="Verwijder">&times;</span>'
+      + '</div>';
+  }).join('');
+}
+async function saveCurrentSession(prompt) {
+  if (!db || iteration === 0) return;
+  var name = null;
+  if (!currentSessionId) {
+    name = window.prompt('Geef deze sessie een naam (bijv. "Waterbuffel Yala"):');
+    if (!name || !name.trim()) return;
+    currentSessionId = 'session_' + Date.now();
+  }
+  var sessions = await dbGetAll();
+  var existing = sessions.find(function(s){return s.id === currentSessionId;});
+  name = name || (existing ? existing.name : 'Sessie');
+  await dbPut({
+    id: currentSessionId,
+    name: name.trim(),
+    iteration: iteration,
+    software: software,
+    currentPhase: currentPhase,
+    previousAnalysisText: previousAnalysisText,
+    lastAnalysis: currentAnalysis,
+    updatedAt: Date.now()
+  });
+  await loadSessionChips();
+  var ind = document.getElementById('saveIndicator');
+  ind.classList.add('show');
+  setTimeout(function(){ind.classList.remove('show');}, 2000);
+}
+async function loadSession(id) {
+  if (isAnalyzing) return;
+  var sessions = await dbGetAll();
+  var s = sessions.find(function(x){return x.id === id;});
+  if (!s) return;
+
+  currentSessionId = s.id;
+  iteration = s.iteration || 0;
+  software = s.software || 'lightroom';
+  currentPhase = s.currentPhase || 1;
+  previousAnalysisText = s.previousAnalysisText || '';
+  photoHistory = [];
+
+  setSoftware(software);
+
+  document.getElementById('uploadZone').style.display = 'none';
+  document.getElementById('workspace').classList.add('active');
+  document.getElementById('workflowBar').style.display = 'flex';
+  document.getElementById('saveBtn').style.display = '';
+  document.getElementById('editCheckBox').classList.remove('visible');
+  document.getElementById('learningBox').classList.remove('visible');
+
+  updatePhaseUI();
+  if (currentPhase > 1) document.getElementById('phasePrevBtn').style.display = '';
+
+  if (s.lastAnalysis) {
+    document.getElementById('analysisOutput').innerHTML = s.lastAnalysis;
+    currentAnalysis = s.lastAnalysis;
+  }
+
+  document.getElementById('iterationLabel').textContent = 'VERSIE ' + iteration;
+  document.getElementById('statusText').textContent = 'SESSIE HERSTELD — UPLOAD NIEUWE VERSIE OM DOOR TE GAAN';
+  document.getElementById('phaseLabel').textContent = PHASE_LABELS[currentPhase] || '';
+  document.getElementById('phaseAdvanceBtn').disabled = currentPhase >= 4;
+  document.getElementById('phaseRefineBtn').disabled = false;
+  document.getElementById('phaseRefineBtn').classList.add('active-phase');
+
+  checkFinaleButton();
+  await loadSessionChips();
+}
+async function deleteSession(id) {
+  if (!confirm('Sessie verwijderen?')) return;
+  await dbDelete(id);
+  if (currentSessionId === id) currentSessionId = null;
+  await loadSessionChips();
+}
+
+// ── Disclaimer ─────────────────────────────────────────────────────────────
+function checkDisclaimer() {
+  var accepted = localStorage.getItem('snood_disclaimer_accepted');
+  if (!accepted) {
+    document.getElementById('disclaimerModal').classList.add('visible');
+  }
+}
+function acceptDisclaimer() {
+  var consent = document.getElementById('trainingConsent').checked;
+  localStorage.setItem('snood_disclaimer_accepted', '1');
+  localStorage.setItem('snood_training_consent', consent ? '1' : '0');
+  document.getElementById('disclaimerModal').classList.remove('visible');
+}
+
+document.addEventListener('keydown', function(e){
+  if (e.key === 'Escape') { closeRefineModal(); closeNextPhaseModal(); }
+});
+
+// ── Drag/drop ──────────────────────────────────────────────────────────────
+var uploadZone = document.getElementById('uploadZone');
+uploadZone.addEventListener('dragover', function(e){e.preventDefault();uploadZone.classList.add('drag-over');});
+uploadZone.addEventListener('dragleave', function(){uploadZone.classList.remove('drag-over');});
+uploadZone.addEventListener('drop', function(e){
+  e.preventDefault();
+  uploadZone.classList.remove('drag-over');
+  var file = e.dataTransfer.files[0];
+  if (file && file.type.startsWith('image/')) handleUpload(file);
+});
+
+// ── Key/software ───────────────────────────────────────────────────────────
+var apiProvider = 'gemini';
+
+var providerConfig = {
+  gemini:      { name:'GEMINI 2.5 FLASH',   placeholder:'AIza...'},
+  claude:      { name:'CLAUDE SONNET 4.6',  placeholder:'sk-ant-...'},
+  'claude-opus':  { name:'CLAUDE OPUS 4.6',    placeholder:'sk-ant-...'},
+  'claude-haiku': { name:'CLAUDE HAIKU 4.5',   placeholder:'sk-ant-...'},
+  gpt4o:       { name:'GPT-4O',             placeholder:'sk-...'},
+  'gpt4o-mini':   { name:'GPT-4O MINI',        placeholder:'sk-...'},
+  pixtral:     { name:'PIXTRAL LARGE',      placeholder:'...'},
+  groq:        { name:'GROQ LLAMA 4',       placeholder:'gsk_...'},
+  siliconflow: { name:'QWEN3-VL SILICON',   placeholder:'sk-...'}
+};
+
+function setProvider(choice) {
+  apiProvider = choice;
+}
+
+function saveKey() {
+  apiProvider = document.getElementById('providerSelect').value;
+  apiKey = 'backend';
+  var cfg = providerConfig[apiProvider] || providerConfig.gemini;
+  document.getElementById('apiSection').style.borderLeftColor = 'var(--success)';
+  document.getElementById('connectBtn').textContent = '✓ ' + cfg.name;
+  document.getElementById('connectBtn').disabled = true;
+  document.getElementById('providerSelect').disabled = true;
+  document.getElementById('softwareBadge').textContent = cfg.name;
+}
+
+function setSoftware(choice) {
+  software = choice;
+  document.getElementById('softwareSelect').value = choice;
+  document.getElementById('softwareBadge').textContent = swLabels[choice] || choice.toUpperCase();
+}
+
+// ── History ────────────────────────────────────────────────────────────────
+function addToHistory(dataUrl, ver) {
+  var d = new Date();
+  photoHistory.push({
+    dataUrl: dataUrl,
+    version: ver,
+    timestamp: d.getHours().toString().padStart(2,'0') + ':' + d.getMinutes().toString().padStart(2,'0')
+  });
+  renderHistory();
+}
+function renderHistory() {
+  var section = document.getElementById('historySection');
+  var grid = document.getElementById('historyGrid');
+  if (photoHistory.length < 2) { section.style.display = 'none'; return; }
+  section.style.display = 'block';
+  grid.innerHTML = photoHistory.map(function(item, i) {
+    return '<div class="history-item" onclick="showHistoryItem(' + i + ')">'
+      + '<img src="' + item.dataUrl + '" alt="V' + item.version + '">'
+      + '<div class="history-item-meta"><span>V' + item.version + '</span><small>' + item.timestamp + '</small></div>'
+      + '</div>';
+  }).join('');
+}
+function showHistoryItem(index) {
+  var item = photoHistory[index];
+  document.getElementById('currentPhoto').src = item.dataUrl;
+  document.getElementById('iterationLabel').textContent = 'VERSIE ' + item.version + ' (HISTORY)';
+}
+
+// ── Upload ─────────────────────────────────────────────────────────────────
+function handleUpload(file) {
+  if (!file) return;
+  if (!apiKey) { alert('Klik eerst op START.'); return; }
+  iteration = 1;
+  photoHistory = [];
+  currentPhase = 1;
+  previousPhotoData = null;
+  currentSessionId = null;
+  currentAnalysis = '';
+  previousAnalysisText = '';
+  document.getElementById('uploadZone').style.display = 'none';
+  document.getElementById('workspace').classList.add('active');
+  document.getElementById('workflowBar').style.display = 'flex';
+  document.getElementById('saveBtn').style.display = '';
+  document.getElementById('editCheckBox').classList.remove('visible');
+  document.getElementById('learningBox').classList.remove('visible');
+  document.getElementById('finaleBtn').classList.remove('visible');
+  document.getElementById('finaleBadge').style.display = 'none';
+  document.getElementById('phaseAdvanceBtn').disabled = true;
+  if(document.getElementById('phaseRefineBtn')) { document.getElementById('phaseRefineBtn').disabled = true; document.getElementById('phaseRefineBtn').classList.remove('active-phase'); }
+  updatePhaseUI();
+  var reader = new FileReader();
+  reader.onload = function(e) {
+    var dataUrl = e.target.result;
+    document.getElementById('currentPhoto').src = dataUrl;
+    document.getElementById('iterationLabel').textContent = 'VERSIE 1';
+    addToHistory(dataUrl, 1);
+    analyzePhoto(dataUrl, true);
+  };
+  reader.readAsDataURL(file);
+}
+
+var pendingNextPhaseFile = null;
+var userFeedback = '';
+var previousAnalysisText = '';
+
+// ── Refine modal ───────────────────────────────────────────────────────────
+function openRefineModal() {
+  if (isAnalyzing) return;
+  document.getElementById('refineText').value = '';
+  document.getElementById('refineModal').classList.add('visible');
+  setTimeout(function(){ document.getElementById('refineText').focus(); }, 100);
+}
+function closeRefineModal() {
+  document.getElementById('refineModal').classList.remove('visible');
+}
+function submitRefine() {
+  userFeedback = document.getElementById('refineText').value.trim();
+  closeRefineModal();
+  var currentSrc = document.getElementById('currentPhoto').src;
+  if (!currentSrc) return;
+  iteration++;
+  document.getElementById('iterationLabel').textContent = 'VERSIE ' + iteration;
+  addToHistory(currentSrc, iteration);
+  analyzePhoto(currentSrc, false);
+}
+
+// ── Next phase modal ───────────────────────────────────────────────────────
+function openNextPhaseModal() {
+  if (isAnalyzing) return;
+  var nextPhase = currentPhase + 1;
+  var phaseNames = {2:'NAAR FASE 2 — TOON & KLEUR', 3:'NAAR FASE 3 — LOKAAL', 4:'NAAR FASE 4 — FINAL TOUCH', 5:'AFRONDEN'};
+  document.getElementById('nextPhaseTag').textContent = phaseNames[nextPhase] || 'VOLGENDE FASE';
+  document.getElementById('nextPhaseDropText').textContent = '↑ Sleep je bewerkte foto hierheen of klik om te selecteren';
+  document.getElementById('nextPhaseDropArea').classList.remove('has-file');
+  document.getElementById('nextPhaseFileInput').value = '';
+  document.getElementById('nextPhaseSubmitBtn').disabled = true;
+  pendingNextPhaseFile = null;
+  document.getElementById('nextPhaseModal').classList.add('visible');
+}
+function closeNextPhaseModal() {
+  document.getElementById('nextPhaseModal').classList.remove('visible');
+  pendingNextPhaseFile = null;
+}
+function handleNextPhaseFile(file) {
+  if (!file) return;
+  pendingNextPhaseFile = file;
+  document.getElementById('nextPhaseDropText').textContent = '✓ ' + file.name;
+  document.getElementById('nextPhaseDropArea').classList.add('has-file');
+  document.getElementById('nextPhaseSubmitBtn').disabled = false;
+}
+function submitNextPhase() {
+  if (!pendingNextPhaseFile) return;
+  var file = pendingNextPhaseFile;
+  closeNextPhaseModal();
+  currentPhase++;
+  updatePhaseUI();
+  document.getElementById('phaseAdvanceBtn').disabled = true;
+  document.getElementById('phaseRefineBtn').disabled = true;
+  document.getElementById('phaseRefineBtn').classList.remove('active-phase');
+  document.getElementById('phasePrevBtn').style.display = currentPhase > 1 ? '' : 'none';
+
+  if (currentPhase === 5) {
+    iteration++;
+    var prevSrc5 = document.getElementById('currentPhoto').src;
+    previousPhotoData = (prevSrc5 && prevSrc5.startsWith('data:')) ? prevSrc5 : null;
+    var reader5 = new FileReader();
+    reader5.onload = function(e) {
+      var dataUrl = e.target.result;
+      document.getElementById('currentPhoto').src = dataUrl;
+      document.getElementById('iterationLabel').textContent = 'VERSIE ' + iteration;
+      addToHistory(dataUrl, iteration);
+      triggerLearningMoment();
+    };
+    reader5.readAsDataURL(file);
+    return;
+  }
+
+  iteration++;
+  var prevSrc = document.getElementById('currentPhoto').src;
+  previousPhotoData = (prevSrc && prevSrc.startsWith('data:')) ? prevSrc : null;
+  userFeedback = '';
+  var reader = new FileReader();
+  reader.onload = function(e) {
+    var dataUrl = e.target.result;
+    document.getElementById('currentPhoto').src = dataUrl;
+    document.getElementById('iterationLabel').textContent = 'VERSIE ' + iteration;
+    addToHistory(dataUrl, iteration);
+    analyzePhoto(dataUrl, false);
+  };
+  reader.readAsDataURL(file);
+}
+
+// ── Phase UI ──────────────────────────────────────────────────────────────
+function updatePhaseUI() {
+  for (var i = 1; i <= 5; i++) {
+    var el = document.getElementById('phase' + i);
+    if (!el) continue;
+    el.classList.remove('active','done');
+    if (i < currentPhase) el.classList.add('done');
+    else if (i === currentPhase) el.classList.add('active');
+  }
+  var btn = document.getElementById('phaseAdvanceBtn');
+  var lbl = document.getElementById('phaseLabel');
+  if (btn) btn.textContent = currentPhase >= 4 ? '✓ AFGEROND' : 'VOLGENDE FASE →';
+  if (lbl) lbl.textContent = PHASE_LABELS[currentPhase] || '';
+}
+
+function goToPreviousPhase() {
+  if (currentPhase <= 1) return;
+  if (!confirm('Terug naar de vorige fase? Je kunt dan opnieuw aanpassingen doen.')) return;
+  currentPhase--;
+  updatePhaseUI();
+  document.getElementById('phaseAdvanceBtn').disabled = false;
+  document.getElementById('phaseRefineBtn').disabled = false;
+  document.getElementById('phaseRefineBtn').classList.add('active-phase');
+  document.getElementById('phasePrevBtn').style.display = currentPhase > 1 ? '' : 'none';
+  document.getElementById('analysisOutput').innerHTML =
+    '<div style="text-align:center;padding:30px 20px">'
+    + '<div style="font-family:Bebas Neue,sans-serif;font-size:20px;letter-spacing:3px;color:var(--accent)">TERUG NAAR FASE ' + currentPhase + '</div>'
+    + '<div style="margin-top:10px;font-size:13px;color:var(--muted)">Upload een nieuwe versie of klik op NOG AANPASSEN voor nieuwe adviezen.</div>'
+    + '</div>';
+}
+
+// ── Learning moment ────────────────────────────────────────────────────────
+async function triggerLearningMoment(){
+  var src = document.getElementById('currentPhoto').src;
+  if(!src) return;
+  document.getElementById('analysisOutput').innerHTML = '<div style="text-align:center;padding:40px 20px"><div style="font-family:Bebas Neue,sans-serif;font-size:20px;letter-spacing:3px;color:var(--accent)">FOTO IS KLAAR!</div><div style="margin-top:10px;font-size:12px;color:var(--muted)">Eindoordeel wordt geladen...</div></div>';
+  var base64 = src.split(',')[1];
+  var mm = src.match(/data:(image\/[a-z]+);/);
+  var mimeType = mm ? mm[1] : 'image/jpeg';
+  var r = await callAI('Je bent een professionele fotograaf en bewerkingscoach. Taal: Nederlands. Gebruik ## EINDOORDEEL en ## FOTOGRAFIETIP als koppen.',
+    [{inline_data:{mime_type:mimeType,data:base64}},{text:'Volledig bewerkte foto. Geef: 1) ## EINDOORDEEL over de bewerking. 2) ## FOTOGRAFIETIP for de volgende foto van dit genre. Max 150 woorden.'}],600);
+  document.getElementById('learningText').innerHTML = renderMarkdown(r.text || '');
+  document.getElementById('learningBox').classList.add('visible');
+  document.getElementById('analysisOutput').innerHTML = '<div style="text-align:center;padding:28px 20px"><div style="font-family:Bebas Neue,sans-serif;font-size:20px;letter-spacing:3px;color:var(--success)">✓ BEWERKINGSTRAJECT VOLTOOID</div><div style="margin-top:8px;font-size:12px;color:var(--muted)">Bekijk het eindoordeel hieronder</div></div>';
+}
+
+// ── Universal AI caller ───────────────────────────────────────────────────
+async function callAI(systemPrompt, parts, maxTokens) {
+  try {
+    var response = await fetch('/api/analyze', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        provider: apiProvider,
+        parts: parts,
+        systemPrompt: systemPrompt,
+        maxTokens: maxTokens || 8192
+      })
+    });
+    var data = await response.json();
+    if (data.error) return { error: data.error, text: '' };
+    return { text: data.text || '', error: null };
+  } catch(e) {
+    return { error: e.message, text: '' };
+  }
+}
+
+// ── Analyse ────────────────────────────────────────────────────────────────
+async function analyzePhoto(dataUrl,isFirst){
+  if(!apiKey) return;
+  isAnalyzing=true;
+  var output=document.getElementById('analysisOutput');
+  var statusText=document.getElementById('statusText');
+  output.className='analysis-output loading';
+  output.innerHTML='<div class="spinner"></div><span style="font-family:\'DM Mono\',monospace;font-size:11px;color:var(--muted)">ANALYSEREN...</span>';
+  statusText.textContent='BEZIG...';
+  var base64=dataUrl.split(',')[1];
+  var mm=dataUrl.match(/data:(image\/[a-z]+);/);
+  var mimeType=mm?mm[1]:'image/jpeg';
+  var swName=swLabels[software]||software;
+  var systemPrompt='Je bent een professionele fotobewerkingscoach. Geef concrete bewerkingsadviezen. Stijl: direct, enthousiast, deskundig. Taal: Nederlands. Format: gebruik ## koppen, geef altijd exacte waarden. Software: '+swInstructions[software]+' '+(phaseInstructions[currentPhase]||phaseInstructions[4])+' Geen vage adviezen.';
+  var hasEditCheck=!isFirst&&previousPhotoData;
+  var parts=[];
+  if(hasEditCheck){
+    parts.push({inline_data:{mime_type:'image/jpeg',data:previousPhotoData.split(',')[1]}});
+    parts.push({text:'Dit is de VORIGE versie (versie '+(iteration-1)+').'});
+  }
+  parts.push({inline_data:{mime_type:mimeType,data:base64}});
+  if(isFirst){
+    parts.push({text:'Dit is de ORIGINELE foto. Geef bewerkingsplan voor FASE 1 in '+swName+'. Herken ook het fotogenre.'});
+  } else {
+    var fb=userFeedback?' Gebruiker wil verbeteren: "'+userFeedback+'". Focus hierop.':'';
+    var pn=previousAnalysisText&&!userFeedback?' EERDER GEGEVEN ADVIEZEN: ['+previousAnalysisText.slice(0,600)+']. Herhaal deze NIET.':'';
+    var ph=hasEditCheck&&currentPhase>1?' FASE OVERGANG naar fase '+currentPhase+'. Doe ## EDIT CHECK van fase '+(currentPhase-1)+' adviezen, daarna door met fase '+currentPhase+'.':'Gebruik ## EDIT CHECK om te benoemen wat je ziet. Benoem afwijkingen als creatieve keuze.';
+    parts.push({text:'Dit is versie '+iteration+'. '+ph+' Geef adviezen voor fase '+currentPhase+' in '+swName+'.'+fb+pn});
+  }
+  var aiResult=await callAI(systemPrompt,parts,8192);
+  output.className='analysis-output';
+  if(aiResult.error){
+    output.innerHTML='<div style="color:var(--error);font-family:\'DM Mono\',monospace;font-size:12px">FOUT: '+aiResult.error+'</div>';
+    statusText.textContent='FOUT';
+    isAnalyzing=false;
+    return;
+  }
+  var text=aiResult.text;
+  var ecM=text.match(/##\s*EDIT CHECK\s*\r?\n([\s\S]*?)(?=##|$)/i);
+  if(ecM){document.getElementById('editCheckText').innerHTML=renderMarkdown(ecM[1].trim());document.getElementById('editCheckBox').classList.add('visible');}
+  else{document.getElementById('editCheckBox').classList.remove('visible');}
+  var mainText=text.replace(/##\s*EDIT CHECK\s*\r?\n[\s\S]*?(?=##|$)/i,'').trim();
+  previousAnalysisText=mainText;
+  output.innerHTML=renderMarkdown(mainText);
+  currentAnalysis=output.innerHTML;
+  statusText.textContent='V'+iteration+' GEANALYSEERD';
+  document.getElementById('phaseLabel').textContent=PHASE_LABELS[currentPhase]||'';
+  document.getElementById('phaseAdvanceBtn').disabled=currentPhase>=4;
+  document.getElementById('phaseRefineBtn').disabled=false;
+  document.getElementById('phaseRefineBtn').classList.add('active-phase');
+  checkFinaleButton();
+  if(currentSessionId) saveCurrentSession(false);
+  isAnalyzing=false;
+}
+
+// ── Finale ─────────────────────────────────────────────────────────────────
+function checkFinaleButton(){
+  if(iteration&gt;=3){document.getElementById('finaleBtn').classList.add('visible');document.getElementById('finaleBadge').style.display='block';}
+}
+async function finaleAnalysis(){
+  if(!apiKey||isAnalyzing) return;
+  var src=document.getElementById('currentPhoto').src;
+  if(!src) return;
+  isAnalyzing=true;
+  var output=document.getElementById('analysisOutput');
+  output.className='analysis-output loading';
+  output.innerHTML='<div class="spinner"></div><span style="font-family:\'DM Mono\',monospace;font-size:11px;color:var(--accent)">FINALE...</span>';
+  var base64=src.split(',')[1];
+  var mm=src.match(/data:(image\/[a-z]+);/);
+  var mimeType=mm?mm[1]:'image/jpeg';
+  var r=await callAI('Je bent fotobewerkingscoach. Laatste finishing touches voor '+(swLabels[software]||software)+'. Taal: Nederlands.',
+    [{inline_data:{mime_type:mimeType,data:base64}},{text:'Versie '+iteration+'. Laatste subtiele tweaks. Sluit af met eindoordeel.'}],8192);
+  output.className='analysis-output';
+  if(r.error){output.innerHTML='<div style="color:var(--error)">FOUT: '+r.error+'</div>';isAnalyzing=false;return;}
+  output.innerHTML='<div style="background:rgba(232,197,71,0.07);border:1px solid rgba(232,197,71,0.3);padding:10px 16px;margin-bottom:16px;font-family:Bebas Neue,sans-serif;font-size:14px;letter-spacing:2px;color:var(--accent)">★ FINALE ANALYSE — VERSIE '+iteration+'</div>'+renderMarkdown(r.text);
+  currentAnalysis=output.innerHTML;
+  document.getElementById('statusText').textContent='★ FINALE COMPLEET';
+  document.getElementById('finaleBtn').textContent='✓ KLAAR — FOTO IS PERFECT';
+  document.getElementById('finaleBtn').disabled=true;
+  document.getElementById('finaleBtn').style.opacity='0.6';
+  if(currentSessionId) saveCurrentSession(false);
+  isAnalyzing=false;
+}
+
+// ── Reset ──────────────────────────────────────────────────────────────────
+function newSession(){
+  if(!confirm('Nieuwe sessie starten?')) return;
+  iteration=0;photoHistory=[];currentPhase=1;previousPhotoData=null;
+  currentSessionId=null;currentAnalysis='';previousAnalysisText='';userFeedback='';
+  document.getElementById('workspace').classList.remove('active');
+  document.getElementById('uploadZone').style.display='block';
+  document.getElementById('workflowBar').style.display='none';
+  document.getElementById('historySection').style.display='none';
+  document.getElementById('currentPhoto').src='';
+  document.getElementById('analysisOutput').className='analysis-output';
+  document.getElementById('analysisOutput').innerHTML='<div class="placeholder-text">ANALYSE WORDT GELADEN...</div>';
+  document.getElementById('fileInput').value='';
+  document.getElementById('saveBtn').style.display='none';
+  document.getElementById('finaleBtn').classList.remove('visible');
+  document.getElementById('finaleBadge').style.display='none';
+  document.getElementById('finaleBtn').disabled=false;
+  document.getElementById('finaleBtn').style.opacity='1';
+  document.getElementById('finaleBtn').textContent='★ FINALE PERFECTIE ANALYSE';
+  document.getElementById('editCheckBox').classList.remove('visible');
+  document.getElementById('learningBox').classList.remove('visible');
+  document.getElementById('phaseAdvanceBtn').disabled=true;
+  if(document.getElementById('phaseRefineBtn')){document.getElementById('phaseRefineBtn').disabled=true;document.getElementById('phaseRefineBtn').classList.remove('active-phase');}
+  if(document.getElementById('phasePrevBtn')) document.getElementById('phasePrevBtn').style.display='none';
+  updatePhaseUI();
+  loadSessionChips();
+}
+
+// ── Markdown ───────────────────────────────────────────────────────────────
+function renderMarkdown(text){
+  if(!text) return '';
+  var lines=text.split(/\r?\n/),html='',inList=false;
+  for(var i=0;i<lines.length;i++){
+    var l=lines[i];
+    if(l.startsWith('### ')){if(inList){html+='</ul>';inList=false;}html+='<h3>'+fmt(l.slice(4))+'</h3>';}
+    else if(l.startsWith('## ')){if(inList){html+='</ul>';inList=false;}html+='<h2>'+fmt(l.slice(3))+'</h2>';}
+    else if(l.startsWith('# ')){if(inList){html+='</ul>';inList=false;}html+='<h1>'+fmt(l.slice(2))+'</h1>';}
+    else if(l.match(/^[-*] /)){if(!inList){html+='<ul>';inList=true;}html+='<li>'+fmt(l.slice(2))+'</li>';}
+    else if(l.trim()==='---'){if(inList){html+='</ul>';inList=false;}html+='<hr>';}
+    else if(l.trim()===''){if(inList){html+='</ul>';inList=false;}html+='<br>';}
+    else{if(inList){html+='</ul>';inList=false;}html+='<p>'+fmt(l)+'</p>';}
+  }
+  if(inList) html+='</ul>';
+  return html;
+}
+function fmt(t){
+  return t.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>').replace(/\*(.+?)\*/g,'<em>$1</em>').replace(/`([^`]+)`/g,'<code>$1</code>');
+}
+
+initDB().then(function(){loadSessionChips(); checkDisclaimer();});
+</script>
+</body>
+</html>

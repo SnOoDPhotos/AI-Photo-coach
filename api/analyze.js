@@ -32,14 +32,14 @@ export default async function handler(req, res) {
       const apiKey = process.env.ANTHROPIC_API_KEY;
       if (!apiKey) return res.status(500).json({ error: 'Claude API key niet geconfigureerd' });
       const models = { claude: 'claude-sonnet-4-6', 'claude-opus': 'claude-opus-4-6', 'claude-haiku': 'claude-haiku-4-5-20251001' };
-      const claudeParts = parts.map(p => {
+      const cp = parts.map(p => {
         if (p.inline_data) return { type: 'image', source: { type: 'base64', media_type: p.inline_data.mime_type, data: p.inline_data.data } };
         if (p.text) return { type: 'text', text: p.text };
       }).filter(Boolean);
       const r = await fetch('https://api.anthropic.com/v1/messages', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'x-api-key': apiKey, 'anthropic-version': '2023-06-01' },
-        body: JSON.stringify({ model: models[provider], max_tokens: maxTokens || 8192, system: systemPrompt, messages: [{ role: 'user', content: claudeParts }] })
+        body: JSON.stringify({ model: models[provider], max_tokens: maxTokens || 8192, system: systemPrompt, messages: [{ role: 'user', content: cp }] })
       });
       const d = await r.json();
       if (d.error) return res.status(400).json({ error: d.error.message });

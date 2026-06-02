@@ -1,6 +1,3 @@
-import fs from 'fs';
-import path from 'path';
-
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
@@ -10,52 +7,8 @@ export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
 
   try {
-    // 1. Haal de variabelen op uit de request body (inclusief de nieuwe genre en tags)
-    let { provider, parts, systemPrompt, maxTokens, genre, tags } = req.body;
+    const { provider, parts, systemPrompt, maxTokens } = req.body;
     if (!parts || !systemPrompt) return res.status(400).json({ error: 'Ontbrekende velden' });
-
-    // 2. EXPORT MATCH ENGINE: Pas de systeemprompt aan als er een genre en tags zijn meegegeven
-    if (genre && tags && Array.isArray(tags)) {
-      try {
-        const jsonPath = path.join(process.cwd(), 'photo_coach_workflows.json');
-        if (fs.existsSync(jsonPath)) {
-          const fileData = fs.readFileSync(jsonPath, 'utf8');
-          const workflowDatabase = JSON.parse(fileData);
-
-          const expertList = workflowDatabase.genres[genre]?.experts || [];
-          let bestExpert = null;
-          let highestScore = -1;
-
-          expertList.forEach(expert => {
-            const matches = expert.trigger_tags.filter(tag => tags.includes(tag)).length;
-            if (matches > highestScore) {
-              highestScore = matches;
-              bestExpert = expert;
-            }
-          });
-
-          // Fallback naar de eerste expert van het genre als er geen specifieke tag-match is
-          if (!bestExpert && expertList.length > 0) {
-            bestExpert = expertList[0];
-          }
-
-          if (bestExpert) {
-            // Breid de binnenkomende systemPrompt dynamisch uit met de expert-data
-            systemPrompt += `\n\n[SNOOD ENGINE CONFIGURATION]
-De backend heeft de specifieke nabewerkingsfilosofie van expert '${bestExpert.name}' geselecteerd (Stijl: ${bestExpert.focus}). Dit is jouw strikte bron van waarheid voor de technische sliders, maskers en kleurbehandeling.
-
-Gebruik deze JSON-instructies dwingend om je advies op te bouwen:
-${JSON.stringify(bestExpert.workflow, null, 2)}
-
-Sluit je advies ALTIJD af met een apart, ongewijzigd blok genaamd 'Pro Insight' waarin je de volgende filosofie op een inspirerende manier uitlegt:
-"${bestExpert.pro_insight}"`;
-          }
-        }
-      } catch (jsonErr) {
-        console.error("Fout bij het verwerken van photo_coach_workflows.json:", jsonErr);
-        // De code gaat gewoon door met de originele systeemprompt als de JSON faalt
-      }
-    }
 
     let text = '';
 
@@ -103,7 +56,7 @@ Sluit je advies ALTIJD af met een apart, ongewijzigd blok genaamd 'Pro Insight' 
       const r = await fetch('https://api.openai.com/v1/chat/completions', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${apiKey}` },
-        body: JSON.stringify({ model: models[provider], max_tokens: maxTokens || 8192, messages: [{ role: 'system', content: systemPrompt }, { role: 'user', content: mc = oc }] }) // herstel typo van origineel
+        body: JSON.stringify({ model: models[provider], max_tokens: maxTokens || 8192, messages: [{ role: 'system', content: systemPrompt }, { role: 'user', content: oc }] })
       });
       const d = await r.json();
       if (d.error) return res.status(400).json({ error: d.error.message });

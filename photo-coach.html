@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SNOOD Photo Coach - Expert Edition</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0d0d0d;
+    --surface: #161616;
+    --surface2: #1e1e1e;
+    --border: #2a2a2a;
+    --accent: #e8c547;
+    --accent2: #c9a227;
+    --text: #f0ede8;
+    --muted: #6b6762;
+    --success: #4caf7d;
+    --error: #e05c5c;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 1000;
+    opacity: 0.4;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 28px 40px 20px;
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    background: rgba(13,13,13,0.92);
+    backdrop-filter: blur(12px);
+    z-index: 100;
+    text-align: center;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 4px;
+  }
+
+  .logo h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 42px;
+    letter-spacing: 4px;
+    color: var(--text);
+  }
+
+  .logo h1 span {
+    color: var(--accent);
+  }
+
+  .logo span.sub {
+    color: var(--muted);
+    font-size: 13px;
+    font-family: 'DM Mono', monospace;
+    letter-spacing: 2px;
+    display: block;
+    text-align: center;
+    margin-top: 4px;
+  }
+
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 48px 40px;
+  }
+
+  .api-section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    padding: 24px 28px;
+    margin-bottom: 40px;
+    display: flex;
+    gap: 16px;
+    align-items: flex-end;
+  }
+
+  .api-section .field {
+    flex: 1;
+  }
+
+  label {
+    display: block;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    color: var(--muted);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+
+  input[type="text"], select {
+    width: 100%;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 12px 16px;
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  input:focus, select:focus { border-color: var(--accent); }
+
+  .btn {
+    background: var(--accent);
+    color: #0d0d0d;
+    border: none;
+    padding: 12px 24px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+
+  .btn:hover { background: var(--accent2); transform: translateY(-1px); }
+  .btn:active { transform: translateY(0); }
+
+  .btn-outline {
+    background: transparent;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+  }
+
+  .btn-outline:hover { background: rgba(232,197,71,0.08); }
+
+  /* UPLOAD ZONE (GEREPAREERD VOOR VERBETERDE KLIK-ACTIE) */
+  .upload-zone {
+    border: 2px dashed var(--border);
+    padding: 60px 40px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+    background: var(--surface);
+    margin-bottom: 40px;
+  }
+
+  .upload-zone:hover, .upload-zone.drag-over {
+    border-color: var(--accent);
+    background: rgba(232,197,71,0.03);
+  }
+
+  .upload-zone input[type="file"] {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+  }
+
+  .upload-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+    opacity: 0.4;
+    pointer-events: none;
+  }
+
+  .upload-zone h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    letter-spacing: 3px;
+    color: var(--text);
+    margin-bottom: 8px;
+    pointer-events: none;
+  }
+
+  .upload-zone p {
+    color: var(--muted);
+    font-size: 13px;
+    font-family: 'DM Mono', monospace;
+    pointer-events: none;
+  }
+
+  /* WORKSPACE */
+  .workspace {
+    display: none;
+    gap: 32px;
+  }
+
+  .workspace.active { display: grid; grid-template-columns: 1fr 1fr; }
+
+  @media (max-width: 768px) {
+    .workspace.active { grid-template-columns: 1fr; }
+    .api-section { flex-direction: column; gap: 12px; }
+    .photo-panel { position: static; }
+  }
+
+  .photo-panel {
+    position: sticky;
+    top: 100px;
+    align-self: start;
+  }
+
+  .photo-panel img {
+    width: 100%;
+    display: block;
+    border: 1px solid var(--border);
+  }
+
+  .photo-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 12px;
+  }
+
+  .iteration-badge {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: var(--accent);
+    background: rgba(232,197,71,0.1);
+    padding: 4px 12px;
+    border: 1px solid rgba(232,197,71,0.2);
+  }
+
+  .photo-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .photo-actions .btn, .photo-actions label.btn {
+    flex: 1;
+    text-align: center;
+    font-size: 13px;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .photo-actions label.btn input { display: none; }
+
+  /* ANALYSIS PANEL */
+  .analysis-panel { display: flex; flex-direction: column; gap: 0; }
+
+  .panel-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 24px;
+  }
+
+  .panel-header h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  .dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+
+  .analysis-output {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 24px;
+    min-height: 300px;
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--text);
+  }
+
+  .analysis-output.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    color: var(--muted);
+  }
+
+  .spinner {
+    width: 32px; height: 32px;
+    border: 2px solid var(--border);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .placeholder-text {
+    color: var(--muted);
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  /* ITERATION HISTORY */
+  .history-section {
+    margin-top: 48px;
+    grid-column: 1 / -1;
+  }
+
+  .history-header {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: var(--muted);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .history-header::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  .history-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+  }
+
+  .history-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    cursor: pointer;
+    transition: all 0.2s;
+    overflow: hidden;
+  }
+
+  .history-item:hover { border-color: var(--accent); }
+  .history-item img { width: 100%; display: block; aspect-ratio: 16/9; object-fit: cover; }
+
+  .history-item-meta {
+    padding: 10px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .history-item-meta span {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 13px;
+    color: var(--accent);
+  }
+
+  /* MARKDOWN OUTPUT */
+  .analysis-output h1, .analysis-output h2, .analysis-output h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+    color: var(--accent);
+    margin: 20px 0 10px;
+  }
+
+  .analysis-output h1 { font-size: 22px; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
+  .analysis-output h2 { font-size: 18px; }
+  .analysis-output strong { color: var(--accent); font-weight: 500; }
+  .analysis-output code { font-family: 'DM Mono', monospace; background: var(--surface2); padding: 2px 6px; font-size: 12px; color: var(--accent); }
+  .analysis-output ul { padding-left: 20px; margin: 8px 0; }
+  .analysis-output li { margin-bottom: 6px; }
+  .analysis-output hr { border: none; border-top: 1px solid var(--border); margin: 20px 0; }
+
+  .status-bar { display: flex; gap: 8px; align-items: center; padding: 8px 0; }
+  .status-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--success); }
+  .status-text { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--muted); }
+
+  /* SESSIONS PANEL */
+  .sessions-bar {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--muted);
+    padding: 16px 24px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .sessions-bar-label { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--muted); text-transform: uppercase; }
+  .session-chips { display: flex; gap: 8px; flex-wrap: wrap; flex: 1; }
+  .session-chip { background: var(--bg); border: 1px solid var(--border); color: var(--text); padding: 6px 14px; font-family: 'DM Mono', monospace; font-size: 11px; cursor: pointer; display: flex; align-items: center; gap: 8px; }
+  .session-chip.active { border-color: var(--accent); background: rgba(232,197,71,0.1); color: var(--accent); }
+  .session-chip-del { opacity: 0.4; cursor: pointer; }
+  .session-chip-del:hover { color: var(--error); opacity: 1; }
+  .save-indicator { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--success); opacity: 0; transition: opacity 0.3s; }
+  .save-indicator.show { opacity: 1; }
+
+  .finale-btn {
+    background: linear-gradient(135deg, #e8c547, #c9a227);
+    color: #0d0d0d;
+    border: none;
+    padding: 16px 24px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 16px;
+    transition: all 0.3s;
+    display: none;
+  }
+
+  .finale-btn.visible { display: block; }
+
+  .finale-badge {
+    display: none;
+    background: linear-gradient(135deg, rgba(232,197,71,0.15), rgba(232,197,71,0.05));
+    border: 1px solid rgba(232,197,71,0.4);
+    padding: 12px 16px;
+    margin-top: 16px;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--accent);
+    text-align: center;
+  }
+
+  .finale-badge.visible { display: block; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <h1>SNOOD <span>PHOTOGRAPHY</span></h1>
+    <span class="sub">AI PHOTO COACH — POWERED BY VERCEL &nbsp;·&nbsp; <span id="softwareBadge">LIGHTROOM</span></span>
+  </div>
+</header>
+
+<main>
+
+  <div class="api-section" id="apiSection">
+    <div class="field">
+      <label>Software voorkeur</label>
+      <select id="softwareSelect" onchange="setSoftware(this.value)">
+        <optgroup label="Adobe">
+          <option value="lightroom">Adobe Lightroom</option>
+          <option value="photoshop">Adobe Photoshop</option>
+          <option value="both">Adobe Lightroom + Photoshop</option>
+        </optgroup>
+        <optgroup label="Professioneel">
+          <option value="captureone">Capture One</option>
+          <option value="dxo">DxO PhotoLab</option>
+          <option value="luminar">Luminar Neo</option>
+        </optgroup>
+      </select>
+    </div>
+    <div class="field">
+      <label>Extra instructie voor de Coach (Optioneel)</label>
+      <input type="text" id="userQuestionInput" placeholder="Bijv: Hoe krijg ik meer focus op het oog?" />
+    </div>
+  </div>
+
+  <div class="sessions-bar" id="sessionsBar">
+    <span class="sessions-bar-label">Opgeslagen sessies</span>
+    <div class="session-chips" id="sessionChips">
+      <span style="font-family:'DM Mono',monospace;font-size:11px;color:var(--muted)">Nog geen sessies opgeslagen</span>
+    </div>
+    <span class="save-indicator" id="saveIndicator">✓ OPGESLAGEN</span>
+    <button class="btn btn-outline" onclick="saveCurrentSession()" id="saveBtn" style="display:none">SESSIE OPSLAAN</button>
+  </div>
+
+  <div class="upload-zone" id="uploadZone">
+    <input type="file" accept="image/*" onchange="handleUpload(this.files[0])" id="fileInput" />
+    <div class="upload-icon">⬡</div>
+    <h2>UPLOAD YOUR PHOTO</h2>
+    <p>Klik om een foto te selecteren of sleep hem hierheen · JPG, PNG, WEBP</p>
+  </div>
+
+  <div class="workspace" id="workspace">
+
+    <div class="photo-panel">
+      <div class="photo-meta">
+        <div class="iteration-badge" id="iterationLabel">VERSIE 1</div>
+        <div class="status-bar">
+          <div class="status-dot"></div>
+          <span class="status-text" id="statusText">KLAAR VOOR ANALYSE</span>
+        </div>
+      </div>
+      <img id="currentPhoto" src="" alt="Current photo" />
+      <div class="photo-actions">
+        <label class="btn btn-outline">
+          NIEUWE VERSIE
+          <input type="file" accept="image/*" onchange="handleNewVersion(this.files[0])" />
+        </label>
+        <button class="btn btn-outline" onclick="newSession()" style="flex:0.5">↺ RESET</button>
+      </div>
+      <div class="finale-badge" id="finaleBadge">
+        ✦ FOTO HEEFT MEERDERE ITERATIES — FINALE ANALYSE BESCHIKBAAR
+      </div>
+      <button class="finale-btn" id="finaleBtn" onclick="finaleAnalysis()">
+        FINALE PERFECTIE ANALYSE
+      </button>
+    </div>
+
+    <div class="analysis-panel">
+      <div class="panel-header">
+        <div class="dot" id="analysisDot"></div>
+        <h3>SNOOD EXPERT ENGINE OUTPUT</h3>
+      </div>
+      <div class="analysis-output" id="analysisOutput">
+        <div class="placeholder-text">ANALYSE WORDT GELADEN...</div>
+      </div>
+    </div>
+
+    <div class="history-section" id="historySection" style="display:none">
+      <div class="history-header">ITERATIE GESCHIEDENIS</div>
+      <div class="history-grid" id="historyGrid"></div>
+    </div>
+
+  </div>
+
+</main>
+
+<script>
+  let software = 'lightroom';
+  let iteration = 0;
+  let currentSessionId = null;
+  let currentAnalysis = '';
+  const DB_NAME = 'PhotoCoachDB';
+  const DB_VERSION = 1;
+  let db = null;
+  let history = [];
+  let isAnalyzing = false;
+
+  // IndexedDB setup
+  function initDB() {
+    return new Promise((resolve, reject) => {
+      const req = indexedDB.open(DB_NAME, DB_VERSION);
+      req.onupgradeneeded = e => {
+        const d = e.target.result;
+        if (!d.objectStoreNames.contains('sessions')) {
+          const store = d.createObjectStore('sessions', { keyPath: 'id' });
+          store.createIndex('updatedAt', 'updatedAt');
+        }
+      };
+      req.onsuccess = e => { db = e.target.result; resolve(); };
+      req.onerror = () => reject(req.error);
+    });
+  }
+
+  function dbGetAll() {
+    return new Promise((resolve, reject) => {
+      const tx = db.transaction('sessions', 'readonly');
+      const req = tx.objectStore('sessions').getAll();
+      req.onsuccess = () => resolve(req.result || []);
+      req.onerror = () => reject(req.error);
+    });
+  }
+
+  function dbPut(session) {
+    return new Promise((resolve, reject) => {
+      const tx = db.transaction('sessions', 'readwrite');
+      const req = tx.objectStore('sessions').put(session);
+      req.onsuccess = () => resolve();
+      req.onerror = () => reject(req.error);
+    });
+  }
+
+  function dbDelete(id) {
+    return new Promise((resolve, reject) => {
+      const tx = db.transaction('sessions', 'readwrite');
+      const req = tx.objectStore('sessions').delete(id);
+      req.onsuccess = () => resolve();
+      req.onerror = () => reject(req.error);
+    });
+  }
+
+  async function loadSessionChips() {
+    if (!db) return;
+    const sessions = await dbGetAll();
+    const chips = document.getElementById('sessionChips');
+    if (sessions.length === 0) {
+      chips.innerHTML = '<span style="font-family:\'DM Mono\',monospace;font-size:11px;color:var(--muted)">Nog geen sessies opgeslagen</span>';
+      return;
+    }
+    sessions.sort((a, b) => b.updatedAt - a.updatedAt);
+    chips.innerHTML = sessions.map(s => `
+      <div class="session-chip ${s.id === currentSessionId ? 'active' : ''}" onclick="loadSession('${s.id}')">
+        <span>${s.name}</span>
+        <span style="color:var(--muted);font-size:10px">V${s.iteration}</span>
+        <span class="session-chip-del" onclick="event.stopPropagation();deleteSession('${s.id}')" title="Verwijder sessie">×</span>
+      </div>
+    `).join('');
+  }
+
+  async function saveCurrentSession(showPrompt = true) {
+    if (!db || iteration === 0) return;
+    let name = currentSessionId ? null : null;
+
+    if (!currentSessionId) {
+      name = prompt('Geef deze sessie een naam:');
+      if (!name || !name.trim()) return;
+      currentSessionId = 'session_' + Date.now();
+    }
+
+    const sessions = await dbGetAll();
+    const existing = sessions.find(s => s.id === currentSessionId);
+    name = name || (existing ? existing.name : 'Sessie');
+
+    const session = {
+      id: currentSessionId,
+      name: name.trim(),
+      iteration,
+      software,
+      history: history.map(h => ({ version: h.version, timestamp: h.timestamp, dataUrl: h.dataUrl })),
+      lastAnalysis: currentAnalysis,
+      updatedAt: Date.now()
+    };
+
+    await dbPut(session);
+    await loadSessionChips();
+
+    const ind = document.getElementById('saveIndicator');
+    ind.classList.add('show');
+    setTimeout(() => ind.classList.remove('show'), 2000);
+  }
+
+  async function loadSession(id) {
+    if (isAnalyzing) return;
+    const sessions = await dbGetAll();
+    const s = sessions.find(x => x.id === id);
+    if (!s) return;
+
+    currentSessionId = s.id;
+    iteration = s.iteration;
+    software = s.software || 'lightroom';
+    history = s.history || [];
+
+    setSoftware(software);
+
+    document.getElementById('uploadZone').style.display = 'none';
+    document.getElementById('workspace').classList.add('active');
+    document.getElementById('saveBtn').style.display = '';
+
+    if (history.length > 0) {
+      const last = history[history.length - 1];
+      document.getElementById('currentPhoto').src = last.dataUrl;
+      document.getElementById('iterationLabel').textContent = `VERSIE ${last.version}`;
+    }
+
+    if (s.lastAnalysis) {
+      document.getElementById('analysisOutput').innerHTML = s.lastAnalysis;
+      currentAnalysis = s.lastAnalysis;
+    }
+
+    document.getElementById('statusText').textContent = `SESSIE HERSTELD — VERSIE ${iteration}`;
+    renderHistory();
+    checkFinaleButton();
+    await loadSessionChips();
+  }
+
+  async function deleteSession(id) {
+    if (!confirm('Sessie verwijderen?')) return;
+    await dbDelete(id);
+    if (currentSessionId === id) currentSessionId = null;
+    await loadSessionChips();
+  }
+
+  // Drag and drop event listeners
+  const uploadZone = document.getElementById('uploadZone');
+  uploadZone.addEventListener('dragover', e => { e.preventDefault(); uploadZone.classList.add('drag-over'); });
+  uploadZone.addEventListener('dragleave', () => uploadZone.classList.remove('drag-over'));
+  uploadZone.addEventListener('drop', e => {
+    e.preventDefault();
+    uploadZone.classList.remove('drag-over');
+    const file = e.dataTransfer.files[0];
+    if (file && file.type.startsWith('image/')) handleUpload(file);
+  });
+
+  const softwareLabels = {
+    lightroom: '· LIGHTROOM', photoshop: '· PHOTOSHOP', both: '· LR + PS',
+    captureone: '· CAPTURE ONE', dxo: '· DXO PHOTOLAB', luminar: '· LUMINAR NEO'
+  };
+
+  function setSoftware(choice) {
+    software = choice;
+    document.getElementById('softwareSelect').value = choice;
+    document.getElementById('softwareBadge').textContent = softwareLabels[choice] || '· ' + choice.toUpperCase();
+  }
+
+  function handleUpload(file) {
+    if (!file) return;
+
+    iteration = 1;
+    history = [];
+    document.getElementById('uploadZone').style.display = 'none';
+    document.getElementById('workspace').classList.add('active');
+    document.getElementById('saveBtn').style.display = '';
+    currentSessionId = null;
+
+    const reader = new FileReader();
+    reader.onload = e => {
+      const dataUrl = e.target.result;
+      document.getElementById('currentPhoto').src = dataUrl;
+      document.getElementById('iterationLabel').textContent = `VERSIE ${iteration}`;
+      addToHistory(dataUrl, iteration);
+      analyzePhoto(dataUrl, true);
+    };
+    reader.readAsDataURL(file);
+  }
+
+  function handleNewVersion(file) {
+    if (!file || isAnalyzing) return;
+
+    iteration++;
+    const reader = new FileReader();
+    reader.onload = e => {
+      const dataUrl = e.target.result;
+      document.getElementById('currentPhoto').src = dataUrl;
+      document.getElementById('iterationLabel').textContent = `VERSIE ${iteration}`;
+      addToHistory(dataUrl, iteration);
+      analyzePhoto(dataUrl, false);
+    };
+    reader.readAsDataURL(file);
+  }
+
+  function addToHistory(dataUrl, ver) {
+    history.push({ dataUrl, version: ver, timestamp: new Date().toLocaleTimeString('nl-NL', {hour:'2-digit',minute:'2-digit'}) });
+    renderHistory();
+  }
+
+  function renderHistory() {
+    const section = document.getElementById('historySection');
+    const grid = document.getElementById('historyGrid');
+
+    if (history.length < 2) { section.style.display = 'none'; return; }
+    section.style.display = 'block';
+
+    grid.innerHTML = history.map((item, i) => `
+      <div class="history-item" onclick="showHistoryItem(${i})">
+        <img src="${item.dataUrl}" alt="Versie ${item.version}" />
+        <div class="history-item-meta">
+          <span>V${item.version}</span>
+          <small>${item.timestamp}</small>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  function showHistoryItem(index) {
+    const item = history[index];
+    document.getElementById('currentPhoto').src = item.dataUrl;
+    document.getElementById('iterationLabel').textContent = `VERSIE ${item.version} (HISTORY)`;
+  }
+
+  async function analyzePhoto(dataUrl, isFirst) {
+    isAnalyzing = true;
+
+    const output = document.getElementById('analysisOutput');
+    const statusText = document.getElementById('statusText');
+
+    output.innerHTML = '<div class="loading"><div class="spinner"></div><span style="font-family:\'DM Mono\',monospace;font-size:12px;color:var(--muted)">SNOOD AI COMPRESSIE & ANALYSE...</span></div>';
+    statusText.textContent = 'FOTO OPTIMALISEREN...';
+
+    const resizeAndCompress = (srcDataUrl) => {
+      return new Promise((resolve) => {
+        const img = new Image();
+        img.src = srcDataUrl;
+        img.onload = () => {
+          const maxDim = 1200; 
+          let width = img.width;
+          let height = img.height;
+
+          if (width > maxDim || height > maxDim) {
+            if (width > height) {
+              height *= maxDim / width;
+              width = maxDim;
+            } else {
+              width *= maxDim / height;
+              height = maxDim;
+            }
+          }
+
+          const canvas = document.createElement('canvas');
+          canvas.width = width;
+          canvas.height = height;
+          const ctx = canvas.getContext('2d');
+          ctx.drawImage(img, 0, 0, width, height);
+          resolve(canvas.toDataURL('image/jpeg', 0.75));
+        };
+      });
+    };
+
+    const optimizedDataUrl = await resizeAndCompress(dataUrl);
+    const base64 = optimizedDataUrl.split(',')[1];
+    const mimeType = 'image/jpeg';
+
+    statusText.textContent = 'FOTO SCANNEN & EXPERT MATCHEN...';
+
+    const swLabel = software === 'lightroom' ? 'Adobe Lightroom' : software === 'photoshop' ? 'Adobe Photoshop' : 'Adobe Lightroom en Photoshop';
+    const extraVraag = document.getElementById('userQuestionInput').value.trim();
+
+    const systemPrompt = `Je bent de SNOOD Photo Coach, een authentieke en vlijmscherpe AI-retoucheringscoach.
+TAAL: Reageer ALTIJD volledig in het NEDERLANDS.
+SOFTWARE FOCUS: Geef gerichte en specifieke parameterwaarden passend bij de toolset van ${swLabel}.
+FORMAT: Gebruik duidelijke Markdown-koppen (##) en bulletpoints.`;
+
+    const userPrompt = isFirst
+      ? `Dit is de ORIGINELE foto. Extra instructie van de fotograaf: ${extraVraag || 'Geen'}. Analyseer de foto en lever een concreet, stapsgewijs bewerkingsadvies gebaseerd op de automatisch gekoppelde expert.`
+      : `Dit is VERSIE ${iteration} van de foto. Analyseer de wijzigingen ten opzichte van de vorige stap en stuur bij waar nodig.`;
+
+    try {
+      const response = await fetch('/api/analyze', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          provider: 'gpt4o',
+          systemPrompt: systemPrompt,
+          maxTokens: 4000,
+          genre: "", 
+          tags: [], 
+          parts: [
+            { inline_data: { mime_type: mimeType, data: base64 } },
+            { text: userPrompt }
+          ]
+        })
+      });
+
+      const data = await response.json();
+
+      if (data.error) {
+        output.innerHTML = `<div style="color:var(--error);font-family:'DM Mono',monospace;font-size:12px;">FOUT: ${data.error}</div>`;
+        statusText.textContent = 'FOUT';
+        isAnalyzing = false;
+        return;
+      }
+
+      output.innerHTML = renderMarkdown(data.text);
+      currentAnalysis = output.innerHTML;
+      
+      if(data.detectedGenre) {
+        statusText.textContent = `AUTOMATISCH GEDECTEERD: ${data.detectedGenre.toUpperCase()}`;
+      } else {
+        statusText.textContent = `VERSIE ${iteration} AFGEROND`;
+      }
+      
+      checkFinaleButton();
+      if (currentSessionId) saveCurrentSession(false);
+
+    } catch (err) {
+      output.innerHTML = `<div style="color:var(--error);font-family:'DM Mono',monospace;font-size:12px;">VERBINDINGSFOUT: ${err.message}</div>`;
+      statusText.textContent = 'FOUT';
+    }
+
+    isAnalyzing = false;
+  }
+
+  function checkFinaleButton() {
+    if (iteration >= 3) {
+      document.getElementById('finaleBtn').classList.add('visible');
+      document.getElementById('finaleBadge').classList.add('visible');
+    }
+  }
+
+  async function finaleAnalysis() {
+    if (isAnalyzing) return;
+    const currentSrc = document.getElementById('currentPhoto').src;
+    if (!currentSrc) return;
+
+    isAnalyzing = true;
+    const output = document.getElementById('analysisOutput');
+    const statusText = document.getElementById('statusText');
+
+    output.innerHTML = '<div class="loading"><div class="spinner"></div><span style="font-family:\'DM Mono\',monospace;font-size:12px;color:var(--accent)">FINALE POLISHING BEZIG...</span></div>';
+    statusText.textContent = 'FINALE ANALYSE...';
+
+    const base64 = currentSrc.split(',')[1];
+    const mimeType = 'image/jpeg';
+
+    try {
+      const response = await fetch('/api/analyze', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          provider: 'gpt4o',
+          systemPrompt: `Je bent een topfotograaf. Lever micro-aanpassingen (finishing touches) voor ${software}. Taal: Nederlands.`,
+          maxTokens: 4000,
+          parts: [
+            { inline_data: { mime_type: mimeType, data: base64 } },
+            { text: `Dit is versie ${iteration}. Lever de allerlaatste microscopische tweaks voor ultieme perfectie.` }
+          ]
+        })
+      });
+
+      const data = await response.json();
+      if (data.error) {
+        output.innerHTML = `<div style="color:var(--error);font-family:'DM Mono',monospace;font-size:12px;">FOUT: ${data.error}</div>`;
+        isAnalyzing = false;
+        return;
+      }
+
+      output.innerHTML = `<div style="background:rgba(232,197,71,0.08);border:1px solid rgba(232,197,71,0.3);padding:12px 16px;margin-bottom:20px;font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:2px;color:var(--accent)">★ FINALE MASTERCLASS VERDICT \u2014 VERSIE ${iteration}</div>` + renderMarkdown(data.text);
+      statusText.textContent = '★ FINALE ANALYSE VOLTOOID';
+      currentAnalysis = output.innerHTML;
+      if (currentSessionId) saveCurrentSession(false);
+      document.getElementById('finaleBtn').innerHTML = '✓ KLAAR — MEESTERWERK OPGELEVERD';
+      document.getElementById('finaleBtn').disabled = true;
+      document.getElementById('finaleBtn').style.opacity = '0.6';
+
+    } catch (err) {
+      output.innerHTML = `<div style="color:var(--error);font-family:'DM Mono',monospace;font-size:12px;">FOUT: ${err.message}</div>`;
+    }
+
+    isAnalyzing = false;
+  }
+
+  function renderMarkdown(text) {
+    const lines = text.split('\n');
+    let html = '';
+    let inList = false;
+
+    for (let line of lines) {
+      if (line.startsWith('### ')) {
+        if (inList) { html += '</ul>'; inList = false; }
+        html += '<h3>' + line.slice(4) + '</h3>';
+      } else if (line.startsWith('## ')) {
+        if (inList) { html += '</ul>'; inList = false; }
+        html += '<h2>' + line.slice(3) + '</h2>';
+      } else if (line.startsWith('# ')) {
+        if (inList) { html += '</ul>'; inList = false; }
+        html += '<h1>' + line.slice(2) + '</h1>';
+      } else if (line.match(/^[-*] /)) {
+        if (!inList) { html += '<ul>'; inList = true; }
+        html += '<li>' + formatInline(line.slice(2)) + '</li>';
+      } else if (line.trim() === '---') {
+        if (inList) { html += '</ul>'; inList = false; }
+        html += '<hr>';
+      } else if (line.trim() === '') {
+        if (inList) { html += '</ul>'; inList = false; }
+        html += '<br>';
+      } else {
+        if (inList) { html += '</ul>'; inList = false; }
+        html += '<p>' + formatInline(line) + '</p>';
+      }
+    }
+    if (inList) html += '</ul>';
+    return html;
+  }
+
+  function formatInline(text) {
+    return text
+      .replace(/\*\frac{}{}\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+      .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+      .replace(/\*(.+?)\*/g, '<em>$1</em>')
+      .replace(/`([^`]+)`/g, '<code>$1</code>');
+  }
+
+  function newSession() {
+    if (!confirm('Nieuwe sessie starten? De huidige analyse wordt gewist.')) return;
+    iteration = 0;
+    history = [];
+    document.getElementById('workspace').classList.remove('active');
+    document.getElementById('uploadZone').style.display = 'block';
+    document.getElementById('historySection').style.display = 'none';
+    document.getElementById('currentPhoto').src = '';
+    document.getElementById('analysisOutput').innerHTML = '<div class="placeholder-text">ANALYSE WORDT GELADEN...</div>';
+    document.getElementById('fileInput').value = '';
+    document.getElementById('finaleBtn').classList.remove('visible');
+    document.getElementById('finaleBadge').classList.remove('visible');
+    document.getElementById('finaleBtn').disabled = false;
+    document.getElementById('finaleBtn').style.opacity = '1';
+    document.getElementById('finaleBtn').innerHTML = 'FINALE PERFECTIE ANALYSE';
+    currentSessionId = null;
+    currentAnalysis = '';
+    document.getElementById('saveBtn').style.display = 'none';
+    loadSessionChips();
+  }
+
+  window.onload = () => {
+    initDB().then(() => loadSessionChips());
+  };
+</script>
+</body>
+</html>

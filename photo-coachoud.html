@@ -85,7 +85,7 @@
     padding: 48px 40px;
   }
 
-  /* INTERFACE BLOCK */
+  /* API KEY SECTION */
   .api-section {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -111,7 +111,7 @@
     text-transform: uppercase;
   }
 
-  input[type="text"], select {
+  input[type="password"], input[type="text"], select {
     width: 100%;
     background: var(--bg);
     border: 1px solid var(--border);
@@ -124,6 +124,45 @@
   }
 
   input:focus, select:focus { border-color: var(--accent); }
+
+  /* CONFIGURATION PANEL (V2 NEW) */
+  .config-panel {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .tag-checkbox {
+    display: none;
+  }
+
+  .tag-label {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    color: var(--muted);
+    padding: 6px 14px;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .tag-checkbox:checked + .tag-label {
+    border-color: var(--accent);
+    background: rgba(232,197,71,0.1);
+    color: var(--accent);
+  }
 
   .btn {
     background: var(--accent);
@@ -140,6 +179,7 @@
 
   .btn:hover { background: var(--accent2); transform: translateY(-1px); }
   .btn:active { transform: translateY(0); }
+  .btn:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
 
   .btn-outline {
     background: transparent;
@@ -418,49 +458,38 @@
   .session-chip-del:hover { color: var(--error); opacity: 1; }
   .save-indicator { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--success); opacity: 0; transition: opacity 0.3s; }
   .save-indicator.show { opacity: 1; }
-
-  .finale-btn {
-    background: linear-gradient(135deg, #e8c547, #c9a227);
-    color: #0d0d0d;
-    border: none;
-    padding: 16px 24px;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 18px;
-    letter-spacing: 3px;
-    cursor: pointer;
-    width: 100%;
-    margin-top: 16px;
-    transition: all 0.3s;
-    display: none;
-  }
-
-  .finale-btn.visible { display: block; }
-
-  .finale-badge {
-    display: none;
-    background: linear-gradient(135deg, rgba(232,197,71,0.15), rgba(232,197,71,0.05));
-    border: 1px solid rgba(232,197,71,0.4);
-    padding: 12px 16px;
-    margin-top: 16px;
-    font-family: 'DM Mono', monospace;
-    font-size: 11px;
-    color: var(--accent);
-    text-align: center;
-  }
-
-  .finale-badge.visible { display: block; }
 </style>
 </head>
 <body>
 
 <header>
   <div class="logo">
-    <img src="https://www.snoodphotos.com/wp-content/uploads/2021/11/cropped-logo-snoodphotos-wit-1.png" alt="SNOOD Photography" />
+    <img src="data:image/png;base64,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" alt="SNOOD Photography" />
     <span>AI PHOTO COACH — POWERED BY VERCEL &nbsp;·&nbsp; <span id="softwareBadge">LIGHTROOM</span></span>
   </div>
 </header>
 
 <main>
+
+  <div class="config-panel">
+    <div>
+      <label for="genreSelect">Kies Foto Genre</label>
+      <select id="genreSelect" onchange="updateTagOptions()">
+        <option value="nature_wildlife">Natuur & Wildlife</option>
+        <option value="landscape_seascapes">Landschap & Kust</option>
+        <option value="street_urban">Straat & Urban</option>
+        <option value="documentary_travel">Documentaire & Reizen</option>
+        <option value="sports_action">Sport & Actie</option>
+        <option value="commercial_specialist">Commercieel & Specialist</option>
+      </select>
+    </div>
+
+    <div>
+      <label>Selecteer Kenmerken & Omstandigheden (Tags)</label>
+      <div id="tagContainer" class="tag-container">
+        </div>
+    </div>
+  </div>
 
   <div class="api-section" id="apiSection">
     <div class="field">
@@ -555,6 +584,32 @@
   let db = null;
   let history = [];
   let isAnalyzing = false;
+
+  // Expert-tags configuratie behorende bij de JSON database
+  const genreTags = {
+    nature_wildlife: ["sharpness", "high_iso", "action", "birds", "mammals", "clean_bokeh", "forest", "jungle", "dense_vegetation", "distracting_background", "mist", "fog", "negative_space", "soft_light", "serene", "minimalist", "harsh_sunlight", "low_key", "sidelight", "dramatic_shadows", "snow", "rain", "storm", "winter", "high_key", "dreamy", "pastel", "creative", "conceptual", "painterly", "color_shift", "action_wildlife", "hunting", "water_splash"],
+    landscape_seascapes: ["flowers", "tulips", "forest_beams", "vibrant", "fairytale", "colorful", "misty_morning", "clouds", "dramatic_sky", "flat_land", "mills", "stormy", "netherlands", "sea", "ocean", "waves", "rocks", "water_reflection", "long_exposure", "coast"],
+    street_urban: ["night", "neon", "rainy_street", "dark_urban", "reflections", "moody", "monochrome", "black_and_white", "shadow_geometry", "architecture", "daytime_street", "lines", "cinematic_day", "film_look", "vintage", "pastel", "warm_street", "nostalgic"],
+    documentary_travel: ["travel", "culture", "market", "midday_sun", "warm_storytelling", "people_travel", "documentary_street", "human_element", "local_people", "portraits", "earthy_tones", "interaction", "intimate", "monochrome_documentary", "soft_bw", "quiet_scene", "minimalist_bw"],
+    sports_action: ["stadium", "field_sports", "running", "high_speed_action", "vibrant_sports", "athlete_pop", "gym", "fitness", "boxing", "grit", "muscle_definition", "heavy_shadows", "iron", "mountainbike", "trailrun", "motorsport", "forest_action", "speed", "panning", "mud"],
+    commercial_specialist: ["macro", "closeup", "insects", "textures", "flash_lighting", "micro_details", "product", "studio_lighting", "commercial_gear", "reflections", "glass_metal", "clean_retouch"]
+  };
+
+  function updateTagOptions() {
+    const genre = document.getElementById('genreSelect').value;
+    const container = document.getElementById('tagContainer');
+    const tags = genreTags[genre] || [];
+    
+    container.innerHTML = tags.map(tag => `
+      <input type="checkbox" id="tag_${tag}" class="tag-checkbox" value="${tag}">
+      <label for="tag_${tag}" class="tag-label">${tag.replace(/_/g, ' ')}</label>
+    `).join('');
+  }
+
+  function getSelectedTags() {
+    const checkboxes = document.querySelectorAll('.tag-checkbox:checked');
+    return Array.from(checkboxes).map(cb => cb.value);
+  }
 
   // ── IndexedDB setup ──────────────────────────────────────────────
   function initDB() {
@@ -783,67 +838,39 @@
     const output = document.getElementById('analysisOutput');
     const statusText = document.getElementById('statusText');
 
-    output.innerHTML = '<div class="loading"><div class="spinner"></div><span style="font-family:\'DM Mono\',monospace;font-size:12px;color:var(--muted)">SNOOD AI COMPRESSIE & ANALYSE...</span></div>';
-    statusText.textContent = 'FOTO OPTIMALISEREN...';
+    output.innerHTML = '<div class="loading"><div class="spinner"></div><span style="font-family:\'DM Mono\',monospace;font-size:12px;color:var(--muted)">SNOOD EXPERT ENGINE RENDER...</span></div>';
+    statusText.textContent = 'EXPERT MATCHING ACTIEF...';
 
-    // --- SMART CANVAS COMPRESSOR ENGINE ---
-    const resizeAndCompress = (srcDataUrl) => {
-      return new Promise((resolve) => {
-        const img = new Image();
-        img.src = srcDataUrl;
-        img.onload = () => {
-          const maxDim = 1200; 
-          let width = img.width;
-          let height = img.height;
-
-          if (width > maxDim || height > maxDim) {
-            if (width > height) {
-              height *= maxDim / width;
-              width = maxDim;
-            } else {
-              width *= maxDim / height;
-              height = maxDim;
-            }
-          }
-
-          const canvas = document.createElement('canvas');
-          canvas.width = width;
-          canvas.height = height;
-          const ctx = canvas.getContext('2d');
-          ctx.drawImage(img, 0, 0, width, height);
-          resolve(canvas.toDataURL('image/jpeg', 0.75));
-        };
-      });
-    };
-
-    const optimizedDataUrl = await resizeAndCompress(dataUrl);
-    const base64 = optimizedDataUrl.split(',')[1];
-    const mimeType = 'image/jpeg';
-
-    statusText.textContent = 'FOTO SCANNEN & EXPERT MATCHEN...';
+    const base64 = dataUrl.split(',')[1];
+    const mimeMatch = dataUrl.match(/data:(image\/[a-z]+);/);
+    const mimeType = mimeMatch ? mimeMatch[1] : 'image/jpeg';
 
     const swLabel = software === 'lightroom' ? 'Adobe Lightroom' : software === 'photoshop' ? 'Adobe Photoshop' : 'Adobe Lightroom en Photoshop';
+    const gekozenGenre = document.getElementById('genreSelect').value;
+    const geselecteerdeTags = getSelectedTags();
     const extraVraag = document.getElementById('userQuestionInput').value.trim();
 
-    const systemPrompt = `Je bent de SNOOD Photo Coach, een authentieke en vlijmscherpe AI-retoucheringscoach.
+    const systemPrompt = `Je bent de SNOOD Photo Coach, een authentieke en vlijmscherpe AI-retoucheringscoach die fotografen helpt hun beeldbewerking naar een professioneel niveau te tillen.
+
 TAAL: Reageer ALTIJD volledig in het NEDERLANDS.
 SOFTWARE FOCUS: Geef gerichte en specifieke parameterwaarden passend bij de toolset van ${swLabel}.
 FORMAT: Gebruik duidelijke Markdown-koppen (##) en bulletpoints.`;
 
     const userPrompt = isFirst
-      ? `Dit is de ORIGINELE foto. Extra instructie van de fotograaf: ${extraVraag || 'Geen'}. Analyseer de foto en lever een concreet, stapsgewijs bewerkingsadvies gebaseerd op de automatisch gekoppelde expert.`
-      : `Dit is VERSIE ${iteration} van de foto. Analyseer de wijzigingen ten opzichte van de vorige stap en stuur bij waar nodig.`;
+      ? `Dit is de ORIGINELE foto. Extra instructie van de fotograaf: ${extraVraag || 'Geen'}. Analyseer de foto en lever een concreet, stapsgewijs bewerkingsadvies gebaseerd op de expert parameters.`
+      : `Dit is VERSIE ${iteration} van de foto. Analyseer de tonale en compositorische wijzigingen ten opzichte van de vorige stap en stuur vakkundig bij waar nodig.`;
 
     try {
+      // Fetch-verzoek naar jouw Vercel /api/analyze endpoint
       const response = await fetch('/api/analyze', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          provider: 'gpt4o',
+          provider: 'gpt4o', // Schakelt via analyze.js soepel door naar OpenAI
           systemPrompt: systemPrompt,
           maxTokens: 4000,
-          genre: "", 
-          tags: [], 
+          genre: gekozenGenre,
+          tags: geselecteerdeTags,
           parts: [
             { inline_data: { mime_type: mimeType, data: base64 } },
             { text: userPrompt }
@@ -862,13 +889,7 @@ FORMAT: Gebruik duidelijke Markdown-koppen (##) en bulletpoints.`;
 
       output.innerHTML = renderMarkdown(data.text);
       currentAnalysis = output.innerHTML;
-      
-      if(data.detectedGenre) {
-        statusText.textContent = `AUTOMATISCH GEDECTEERD: ${data.detectedGenre.toUpperCase()}`;
-      } else {
-        statusText.textContent = `VERSIE ${iteration} AFGEROND`;
-      }
-      
+      statusText.textContent = `VERSIE ${iteration} AFGEROND via EXPERT CONFIG`;
       checkFinaleButton();
       if (currentSessionId) saveCurrentSession(false);
 
@@ -900,7 +921,8 @@ FORMAT: Gebruik duidelijke Markdown-koppen (##) en bulletpoints.`;
     statusText.textContent = 'FINALE ANALYSE...';
 
     const base64 = currentSrc.split(',')[1];
-    const mimeType = 'image/jpeg';
+    const mimeMatch = currentSrc.match(/data:(image\/[a-z]+);/);
+    const mimeType = mimeMatch ? mimeMatch[1] : 'image/jpeg';
 
     try {
       const response = await fetch('/api/analyze', {
@@ -974,7 +996,6 @@ FORMAT: Gebruik duidelijke Markdown-koppen (##) en bulletpoints.`;
 
   function formatInline(text) {
     return text
-      .replace(/\*\frac{}{}\*\*(.+?)\*\*/g, '<strong>$1</strong>')
       .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
       .replace(/\*(.+?)\*/g, '<em>$1</em>')
       .replace(/`([^`]+)`/g, '<code>$1</code>');
@@ -1001,8 +1022,10 @@ FORMAT: Gebruik duidelijke Markdown-koppen (##) en bulletpoints.`;
     loadSessionChips();
   }
 
+  // Window Initialization
   window.onload = () => {
     initDB().then(() => loadSessionChips());
+    updateTagOptions(); // Genereer starttags voor natuur/wildlife
   };
 </script>
 </body>

@@ -8,51 +8,51 @@
 <style>
 :root{--bg:#0d0d0d;--surface:#161616;--border:#2a2a2a;--accent:#e8c547;--text:#f0ede8;--muted:#6b6762;--success:#4caf7d;--error:#e05c5c}
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;min-height:100vh}
+body{background:var(--bg);color:var(--text);font-family:sans-serif;min-height:100vh}
 header{background:var(--surface);border-bottom:1px solid var(--border);padding:16px 32px;display:flex;align-items:center;justify-content:space-between}
 header img{height:44px;width:auto}
-.admin-badge{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:2px;color:var(--accent);border:1px solid var(--accent);padding:4px 12px}
+.admin-badge{font-family:monospace;font-size:11px;letter-spacing:2px;color:var(--accent);border:1px solid var(--accent);padding:4px 12px}
 main{max-width:1100px;margin:0 auto;padding:32px}
 .login-box{max-width:400px;margin:80px auto;background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--accent);padding:32px}
-.login-box h2{font-family:'Bebas Neue',sans-serif;font-size:24px;letter-spacing:3px;color:var(--accent);margin-bottom:24px}
-label{display:block;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:1.5px;color:var(--muted);margin-bottom:6px;text-transform:uppercase}
-input[type=text],input[type=password],textarea,select{width:100%;background:var(--bg);border:1px solid var(--border);color:var(--text);padding:10px 14px;font-family:'DM Sans',sans-serif;font-size:13px;outline:none;margin-bottom:16px;transition:border-color 0.2s}
+.login-box h2{font-family:sans-serif;font-weight:bold;letter-spacing:1px;font-size:24px;letter-spacing:3px;color:var(--accent);margin-bottom:24px}
+label{display:block;font-family:monospace;font-size:11px;letter-spacing:1.5px;color:var(--muted);margin-bottom:6px;text-transform:uppercase}
+input[type=text],input[type=password],textarea,select{width:100%;background:var(--bg);border:1px solid var(--border);color:var(--text);padding:10px 14px;font-family:sans-serif;font-size:13px;outline:none;margin-bottom:16px;transition:border-color 0.2s}
 input:focus,textarea:focus{border-color:var(--accent)}
-.btn{background:var(--accent);color:#0d0d0d;border:none;padding:11px 24px;font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:2px;cursor:pointer;width:100%}
+.btn{background:var(--accent);color:#0d0d0d;border:none;padding:11px 24px;font-family:sans-serif;font-weight:bold;letter-spacing:1px;font-size:16px;letter-spacing:2px;cursor:pointer;width:100%}
 .btn:hover{opacity:0.9}
 .btn-sm{width:auto;font-size:13px;padding:8px 18px}
 .btn-outline{background:transparent;border:1px solid var(--accent);color:var(--accent)}
-.error{color:var(--error);font-family:'DM Mono',monospace;font-size:12px;margin-bottom:12px;padding:8px;background:rgba(224,92,92,0.1);border:1px solid rgba(224,92,92,0.3)}
-.success-msg{color:var(--success);font-family:'DM Mono',monospace;font-size:12px;margin-bottom:12px;padding:8px;background:rgba(76,175,125,0.1);border:1px solid rgba(76,175,125,0.3)}
+.error{color:var(--error);font-family:monospace;font-size:12px;margin-bottom:12px;padding:8px;background:rgba(224,92,92,0.1);border:1px solid rgba(224,92,92,0.3)}
+.success-msg{color:var(--success);font-family:monospace;font-size:12px;margin-bottom:12px;padding:8px;background:rgba(76,175,125,0.1);border:1px solid rgba(76,175,125,0.3)}
 .hidden{display:none}
 .section{background:var(--surface);border:1px solid var(--border);padding:24px;margin-bottom:24px}
-.section h3{font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:2px;color:var(--accent);margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--border)}
+.section h3{font-family:sans-serif;font-weight:bold;letter-spacing:1px;font-size:18px;letter-spacing:2px;color:var(--accent);margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--border)}
 .stats{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px;margin-bottom:24px}
 .stat{background:var(--surface);border:1px solid var(--border);padding:16px;text-align:center}
-.stat-num{font-family:'Bebas Neue',sans-serif;font-size:36px;color:var(--accent)}
-.stat-label{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1px;color:var(--muted);margin-top:4px}
+.stat-num{font-family:sans-serif;font-weight:bold;letter-spacing:1px;font-size:36px;color:var(--accent)}
+.stat-label{font-family:monospace;font-size:10px;letter-spacing:1px;color:var(--muted);margin-top:4px}
 .entry-grid{display:grid;gap:8px}
 .entry-card{background:var(--bg);border:1px solid var(--border);padding:14px 18px;display:grid;grid-template-columns:1fr auto;align-items:center;gap:12px;transition:border-color 0.2s;cursor:pointer}
 .entry-card:hover{border-color:var(--accent)}
 .entry-title{font-size:13px;font-weight:500;margin-bottom:4px}
-.entry-meta{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted)}
-.tag{display:inline-block;background:rgba(232,197,71,0.1);border:1px solid rgba(232,197,71,0.2);color:var(--accent);font-family:'DM Mono',monospace;font-size:9px;padding:2px 8px;margin:2px;letter-spacing:1px}
+.entry-meta{font-family:monospace;font-size:10px;color:var(--muted)}
+.tag{display:inline-block;background:rgba(232,197,71,0.1);border:1px solid rgba(232,197,71,0.2);color:var(--accent);font-family:monospace;font-size:9px;padding:2px 8px;margin:2px;letter-spacing:1px}
 .tabs{display:flex;gap:0;border-bottom:1px solid var(--border);margin-bottom:24px}
-.tab{background:none;border:none;border-bottom:2px solid transparent;color:var(--muted);padding:10px 20px;font-family:'DM Mono',monospace;font-size:12px;letter-spacing:1px;cursor:pointer;margin-bottom:-1px;transition:all 0.2s}
+.tab{background:none;border:none;border-bottom:2px solid transparent;color:var(--muted);padding:10px 20px;font-family:monospace;font-size:12px;letter-spacing:1px;cursor:pointer;margin-bottom:-1px;transition:all 0.2s}
 .tab.active{color:var(--accent);border-bottom-color:var(--accent)}
 .tab:hover:not(.active){color:var(--text)}
-.json-area{font-family:'DM Mono',monospace;font-size:11px;min-height:300px;line-height:1.6;background:#0a0a0a;color:#a8d8a8}
-.user-info{font-family:'DM Mono',monospace;font-size:11px;color:var(--muted);display:flex;align-items:center;gap:12px}
-.logout-btn{background:none;border:1px solid var(--border);color:var(--muted);padding:5px 12px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1px;cursor:pointer;transition:all 0.2s}
+.json-area{font-family:monospace;font-size:11px;min-height:300px;line-height:1.6;background:#0a0a0a;color:#a8d8a8}
+.user-info{font-family:monospace;font-size:11px;color:var(--muted);display:flex;align-items:center;gap:12px}
+.logout-btn{background:none;border:1px solid var(--border);color:var(--muted);padding:5px 12px;font-family:monospace;font-size:10px;letter-spacing:1px;cursor:pointer;transition:all 0.2s}
 .logout-btn:hover{border-color:var(--error);color:var(--error)}
 .filter-bar{display:flex;gap:10px;margin-bottom:16px;flex-wrap:wrap}
 .filter-bar input,.filter-bar select{margin-bottom:0;width:auto;flex:1;min-width:120px}
 .detail-modal{position:fixed;inset:0;background:rgba(0,0,0,0.8);z-index:500;display:flex;align-items:center;justify-content:center;padding:20px}
 .detail-box{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--accent);max-width:600px;width:100%;max-height:80vh;overflow-y:auto;padding:28px}
-.detail-box h3{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:2px;color:var(--accent);margin-bottom:16px}
+.detail-box h3{font-family:sans-serif;font-weight:bold;letter-spacing:1px;font-size:20px;letter-spacing:2px;color:var(--accent);margin-bottom:16px}
 .detail-close{float:right;background:none;border:none;color:var(--muted);font-size:24px;cursor:pointer;margin-top:-4px}
 .technique-item{background:var(--bg);border:1px solid var(--border);padding:12px;margin-bottom:8px}
-.technique-name{font-family:'DM Mono',monospace;font-size:12px;color:var(--accent);font-weight:500;margin-bottom:4px}
+.technique-name{font-family:monospace;font-size:12px;color:var(--accent);font-weight:500;margin-bottom:4px}
 .technique-desc{font-size:13px;color:var(--text);line-height:1.6}
 </style>
 </head>
@@ -133,7 +133,7 @@ input:focus,textarea:focus{border-color:var(--accent)}
       <div class="section">
         <h3>EXPORTEREN NAAR GITHUB</h3>
         <p style="font-size:13px;color:var(--muted);margin-bottom:20px;line-height:1.7">Download de volledige kennisbank als knowledge-base.json en upload dit bestand naar GitHub. Vercel pikt de update automatisch op.</p>
-        <div style="background:var(--bg);border:1px solid var(--border);padding:16px;margin-bottom:20px;font-family:'DM Mono',monospace;font-size:12px;color:var(--muted);line-height:1.8">
+        <div style="background:var(--bg);border:1px solid var(--border);padding:16px;margin-bottom:20px;font-family:monospace;font-size:12px;color:var(--muted);line-height:1.8">
           <div>&#8594; Download knowledge-base.json</div>
           <div>&#8594; Ga naar github.com/SnOoDPhotos/AI-Photo-coach</div>
           <div>&#8594; Klik op knowledge-base.json</div>
@@ -286,7 +286,7 @@ function renderEntries() {
       + (e.genre||[]).map(function(g){return '<span class="tag">'+g+'</span>';}).join('')
       + (e.mood||[]).slice(0,2).map(function(m){return '<span class="tag" style="opacity:0.6">'+m+'</span>';}).join('')
       + '</div></div>'
-      + '<div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);text-align:right">'
+      + '<div style="font-family:monospace;font-size:10px;color:var(--muted);text-align:right">'
       + ((e.techniques||[]).length) + ' tech<br>'
       + ((e.unique_insights||[]).length) + ' insights'
       + '</div></div>';
@@ -298,9 +298,9 @@ function showDetail(idx) {
   if (!e) return;
   document.getElementById('detailTitle').textContent = e.video_title || 'Entry';
   var html = '';
-  if (e.philosophy) html += '<div style="margin-bottom:16px"><div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);margin-bottom:6px;letter-spacing:1px">FILOSOFIE</div><div style="font-size:13px;line-height:1.7;color:var(--text)">'+e.philosophy+'</div></div>';
+  if (e.philosophy) html += '<div style="margin-bottom:16px"><div style="font-family:monospace;font-size:10px;color:var(--muted);margin-bottom:6px;letter-spacing:1px">FILOSOFIE</div><div style="font-size:13px;line-height:1.7;color:var(--text)">'+e.philosophy+'</div></div>';
   if (e.techniques && e.techniques.length) {
-    html += '<div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);margin-bottom:8px;letter-spacing:1px">TECHNIEKEN ('+e.techniques.length+')</div>';
+    html += '<div style="font-family:monospace;font-size:10px;color:var(--muted);margin-bottom:8px;letter-spacing:1px">TECHNIEKEN ('+e.techniques.length+')</div>';
     e.techniques.forEach(function(t) {
       html += '<div class="technique-item"><div class="technique-name">'+t.name+'</div><div class="technique-desc">'+t.description+'</div>';
       if (t.when_to_use) html += '<div style="font-size:11px;color:var(--muted);margin-top:4px">Gebruik bij: '+t.when_to_use+'</div>';
@@ -308,7 +308,7 @@ function showDetail(idx) {
     });
   }
   if (e.unique_insights && e.unique_insights.length) {
-    html += '<div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);margin:12px 0 8px;letter-spacing:1px">UNIEKE INZICHTEN</div>';
+    html += '<div style="font-family:monospace;font-size:10px;color:var(--muted);margin:12px 0 8px;letter-spacing:1px">UNIEKE INZICHTEN</div>';
     e.unique_insights.forEach(function(i) { html += '<div style="font-size:13px;line-height:1.7;margin-bottom:6px;padding-left:12px;border-left:2px solid var(--accent)">'+i+'</div>'; });
   }
   document.getElementById('detailContent').innerHTML = html;

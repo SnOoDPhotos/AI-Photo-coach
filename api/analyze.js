@@ -1,7 +1,4 @@
-import fs from 'fs';
-import path from 'path';
-
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
@@ -10,122 +7,114 @@ export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
 
   try {
-    let { parts, systemPrompt, maxTokens } = req.body;
+    const { provider, parts, systemPrompt, maxTokens } = req.body;
     if (!parts || !systemPrompt) return res.status(400).json({ error: 'Ontbrekende velden' });
 
-    // We gebruiken hier jouw vertrouwde Gemini API key van Vercel
-    const apiKey = process.env.GEMINI_API_KEY;
-    if (!apiKey) return res.status(500).json({ error: 'Gemini API key niet geconfigureerd in Vercel' });
+    let text = '';
 
-    const imagePart = parts.find(p => p.inline_data);
-    const textPart = parts.find(p => p.text);
+    if (provider === 'gemini') {
+      const apiKey = process.env.GEMINI_API_KEY;
+      if (!apiKey) return res.status(500).json({ error: 'Gemini API key niet geconfigureerd' });
+      const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          system_instruction: { parts: [{ text: systemPrompt }] },
+          contents: [{ parts }],
+          generationConfig: { maxOutputTokens: maxTokens || 8192 }
+        })
+      });
+      const d = await r.json();
+      if (d.error) return res.status(400).json({ error: d.error.message });
+      text = d.candidates?.[0]?.content?.parts?.map(p => p.text || '').join('') || '';
 
-    let genre = "";
-    let tags = [];
+    } else if (['claude', 'claude-opus', 'claude-haiku'].includes(provider)) {
+      const apiKey = process.env.ANTHROPIC_API_KEY;
+      if (!apiKey) return res.status(500).json({ error: 'Claude API key niet geconfigureerd' });
+      const models = { claude: 'claude-sonnet-4-6', 'claude-opus': 'claude-opus-4-6', 'claude-haiku': 'claude-haiku-4-5-20251001' };
+      const cp = parts.map(p => {
+        if (p.inline_data) return { type: 'image', source: { type: 'base64', media_type: p.inline_data.mime_type, data: p.inline_data.data } };
+        if (p.text) return { type: 'text', text: p.text };
+      }).filter(Boolean);
+      const r = await fetch('https://api.anthropic.com/v1/messages', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'x-api-key': apiKey, 'anthropic-version': '2023-06-01' },
+        body: JSON.stringify({ model: models[provider], max_tokens: maxTokens || 8192, system: systemPrompt, messages: [{ role: 'user', content: cp }] })
+      });
+      const d = await r.json();
+      if (d.error) return res.status(400).json({ error: d.error.message });
+      text = d.content?.map(b => b.text || '').join('') || '';
 
-    // AUTOMATISCHE DETECTIE VIA GEMINI
-    if (imagePart && textPart && textPart.text.includes('ORIGINELE')) {
-      try {
-        const detectResponse = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            system_instruction: { 
-              parts: [{ 
-                text: `Analyseer de visuele eigenschappen van de afbeelding en geef uitsluitend een JSON-object terug met het meest geschikte 'genre' en een array van 'tags'.
-                
-                BESCHIKBARE CATEGORIEËN EN HUN TAGS:
-                - nature_wildlife: ["sharpness", "high_iso", "action", "birds", "mammals", "clean_bokeh", "forest", "jungle", "dense_vegetation", "distracting_background", "mist", "fog", "negative_space", "soft_light", "serene", "minimalist", "harsh_sunlight", "low_key", "sidelight", "dramatic_shadows", "snow", "rain", "storm", "winter", "high_key", "dreamy", "pastel", "creative", "conceptual", "painterly", "color_shift", "action_wildlife", "hunting", "water_splash"]
-                - landscape_seascapes: ["flowers", "tulips", "forest_beams", "vibrant", "fairytale", "colorful", "misty_morning", "clouds", "dramatic_sky", "flat_land", "mills", "stormy", "netherlands", "sea", "ocean", "waves", "rocks", "water_reflection", "long_exposure", "coast"]
-                - street_urban: ["night", "neon", "rainy_street", "dark_urban", "reflections", "moody", "monochrome", "black_and_white", "shadow_geometry", "architecture", "daytime_street", "lines", "cinematic_day", "film_look", "vintage", "pastel", "warm_street", "nostalgic"]
-                - documentary_travel: ["travel", "culture", "market", "midday_sun", "warm_storytelling", "people_travel", "documentary_street", "human_element", "local_people", "portraits", "earthy_tones", "interaction", "intimate", "monochrome_documentary", "soft_bw", "quiet_scene", "minimalist_bw"]
-                - sports_action: ["stadium", "field_sports", "running", "high_speed_action", "vibrant_sports", "athlete_pop", "gym", "fitness", "boxing", "grit", "muscle_definition", "heavy_shadows", "iron", "mountainbike", "trailrun", "motorsport", "forest_action", "speed", "panning", "mud"]
-                - commercial_specialist: ["macro", "closeup", "insects", "textures", "flash_lighting", "micro_details", "product", "studio_lighting", "commercial_gear", "reflections", "glass_metal", "clean_retouch"]
-                
-                Formatvoorbeeld: { "genre": "nature_wildlife", "tags": ["birds", "clean_bokeh", "soft_light"] }` 
-              }] 
-            },
-            contents: [{ parts: [{ inline_data: imagePart.inline_data }] }],
-            generationConfig: { 
-              responseMimeType: "application/json",
-              maxOutputTokens: 1000 
-            }
-          })
-        });
+    } else if (['gpt4o', 'gpt4o-mini'].includes(provider)) {
+      const apiKey = process.env.OPENAI_API_KEY;
+      if (!apiKey) return res.status(500).json({ error: 'OpenAI API key niet geconfigureerd' });
+      const models = { gpt4o: 'gpt-4o', 'gpt4o-mini': 'gpt-4o-mini' };
+      const oc = parts.map(p => {
+        if (p.inline_data) return { type: 'image_url', image_url: { url: `data:${p.inline_data.mime_type};base64,${p.inline_data.data}` } };
+        if (p.text) return { type: 'text', text: p.text };
+      }).filter(Boolean);
+      const r = await fetch('https://api.openai.com/v1/chat/completions', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${apiKey}` },
+        body: JSON.stringify({ model: models[provider], max_tokens: maxTokens || 8192, messages: [{ role: 'system', content: systemPrompt }, { role: 'user', content: oc }] })
+      });
+      const d = await r.json();
+      if (d.error) return res.status(400).json({ error: d.error.message });
+      text = d.choices?.[0]?.message?.content || '';
 
-        const detectData = await detectResponse.json();
-        const textResult = detectData.candidates?.[0]?.content?.parts?.[0]?.text;
-        
-        if (textResult) {
-          const detectedConfig = JSON.parse(textResult);
-          genre = detectedConfig.genre;
-          tags = detectedConfig.tags;
-        }
-      } catch (err) {
-        console.error("Fout tijdens Gemini automatische detectie:", err);
-      }
+    } else if (provider === 'pixtral') {
+      const apiKey = process.env.MISTRAL_API_KEY;
+      if (!apiKey) return res.status(500).json({ error: 'Mistral API key niet geconfigureerd' });
+      const mc = parts.map(p => {
+        if (p.inline_data) return { type: 'image_url', image_url: { url: `data:${p.inline_data.mime_type};base64,${p.inline_data.data}` } };
+        if (p.text) return { type: 'text', text: p.text };
+      }).filter(Boolean);
+      const r = await fetch('https://api.mistral.ai/v1/chat/completions', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${apiKey}` },
+        body: JSON.stringify({ model: 'pixtral-large-latest', max_tokens: maxTokens || 8192, messages: [{ role: 'system', content: systemPrompt }, { role: 'user', content: mc }] })
+      });
+      const d = await r.json();
+      if (d.error) return res.status(400).json({ error: d.error.message });
+      text = d.choices?.[0]?.message?.content || '';
+
+    } else if (provider === 'groq') {
+      const apiKey = process.env.GROQ_API_KEY;
+      if (!apiKey) return res.status(500).json({ error: 'Groq API key niet geconfigureerd' });
+      const gc = parts.map(p => {
+        if (p.inline_data) return { type: 'image_url', image_url: { url: `data:${p.inline_data.mime_type};base64,${p.inline_data.data}` } };
+        if (p.text) return { type: 'text', text: p.text };
+      }).filter(Boolean);
+      const r = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${apiKey}` },
+        body: JSON.stringify({ model: 'meta-llama/llama-4-scout-17b-16e-instruct', max_tokens: maxTokens || 8192, messages: [{ role: 'system', content: systemPrompt }, { role: 'user', content: gc }] })
+      });
+      const d = await r.json();
+      if (d.error) return res.status(400).json({ error: d.error.message });
+      text = d.choices?.[0]?.message?.content || '';
+
+    } else if (provider === 'siliconflow') {
+      const apiKey = process.env.SILICONFLOW_API_KEY;
+      if (!apiKey) return res.status(500).json({ error: 'SiliconFlow API key niet geconfigureerd' });
+      const sc = parts.map(p => {
+        if (p.inline_data) return { type: 'image_url', image_url: { url: `data:${p.inline_data.mime_type};base64,${p.inline_data.data}` } };
+        if (p.text) return { type: 'text', text: p.text };
+      }).filter(Boolean);
+      const r = await fetch('https://api.siliconflow.cn/v1/chat/completions', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${apiKey}` },
+        body: JSON.stringify({ model: 'Qwen/Qwen3-VL-32B-Instruct', max_tokens: maxTokens || 8192, messages: [{ role: 'system', content: systemPrompt }, { role: 'user', content: sc }] })
+      });
+      const d = await r.json();
+      if (d.error) return res.status(400).json({ error: d.error.message });
+      text = d.choices?.[0]?.message?.content || '';
+
+    } else {
+      return res.status(400).json({ error: 'Onbekende provider: ' + provider });
     }
 
-    // INTERNE MATCHING MET JOUW EXPERT DATABASE
-    if (genre && tags.length > 0) {
-      try {
-        const jsonPath = path.join(process.cwd(), 'photo_coach_workflows.json');
-        if (fs.existsSync(jsonPath)) {
-          const fileData = fs.readFileSync(jsonPath, 'utf8');
-          const workflowDatabase = JSON.parse(fileData);
-
-          const expertList = workflowDatabase.genres[genre]?.experts || [];
-          let bestExpert = null;
-          let highestScore = -1;
-
-          expertList.forEach(expert => {
-            const matches = expert.trigger_tags.filter(tag => tags.includes(tag)).length;
-            if (matches > highestScore) {
-              highestScore = matches;
-              bestExpert = expert;
-            }
-          });
-
-          if (!bestExpert && expertList.length > 0) bestExpert = expertList[0];
-
-          if (bestExpert) {
-            systemPrompt += `\n\n[SNOOD ENGINE AUTOMATISCHE DETECTIE]
-De AI-detector heeft vastgesteld dat dit beeld valt onder het genre '${genre}' met de kenmerken: ${tags.join(', ')}.
-Op basis hiervan is de workflow van expert '${bestExpert.name}' geselecteerd.
-
-Gebruik deze specifieke parameters dwingend voor je bewerkingsadvies:
-${JSON.stringify(bestExpert.workflow, null, 2)}
-
-Sluit af met de 'Pro Insight': "${bestExpert.pro_insight}"`;
-          }
-        }
-      } catch (jsonErr) {
-        console.error("Fout in expert match engine:", jsonErr);
-      }
-    }
-
-    // MAP PARTS NAAR GEMINI STRUCTUUR
-    const geminiContentsParts = parts.map(p => {
-      if (p.inline_data) return { inline_data: { mime_type: p.inline_data.mime_type, data: p.inline_data.data } };
-      if (p.text) return { text: p.text };
-    }).filter(Boolean);
-
-    // CORE ADVIES GENEREREN VIA GEMINI
-    const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        system_instruction: { parts: [{ text: systemPrompt }] },
-        contents: [{ parts: geminiContentsParts }],
-        generationConfig: { maxOutputTokens: maxTokens || 8192 }
-      })
-    });
-
-    const d = await r.json();
-    if (d.error) return res.status(400).json({ error: d.error.message });
-    
-    const finalReply = d.candidates?.[0]?.content?.parts?.map(p => p.text || '').join('') || '';
-    return res.status(200).json({ text: finalReply, detectedGenre: genre, detectedTags: tags });
+    return res.status(200).json({ text });
 
   } catch (err) {
     return res.status(500).json({ error: 'Server fout: ' + err.message });

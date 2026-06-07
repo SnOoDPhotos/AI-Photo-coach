@@ -1,34 +1,39 @@
-import knowledgeBase from '../knowledge-base.json' assert { type: 'json' };
+const https = require('https');
+const http = require('http');
+const fs = require('fs');
+const path = require('path');
 
-function selectRelevantKnowledge(photoGenre, photoMood, photoLight) {
+function loadKnowledgeBase() {
+  try {
+    const filePath = path.join(process.cwd(), 'knowledge-base.json');
+    const data = fs.readFileSync(filePath, 'utf-8');
+    return JSON.parse(data);
+  } catch(e) {
+    console.error('Could not load knowledge base:', e.message);
+    return [];
+  }
+}
+
+function selectRelevantKnowledge(knowledgeBase, genre, mood, light) {
   const scores = knowledgeBase.map(entry => {
     let score = 0;
-    // Genre match
-    if (photoGenre && entry.genre) {
-      const genreMatch = entry.genre.some(g => 
-        photoGenre.toLowerCase().includes(g.toLowerCase()) || 
-        g.toLowerCase().includes(photoGenre.toLowerCase())
+    if (genre && entry.genre) {
+      const match = entry.genre.some(g =>
+        genre.toLowerCase().includes(g.toLowerCase()) ||
+        g.toLowerCase().includes(genre.toLowerCase())
       );
-      if (genreMatch) score += 3;
+      if (match) score += 3;
     }
-    // Mood match
-    if (photoMood && entry.mood) {
-      const moodMatch = entry.mood.some(m => 
-        photoMood.toLowerCase().includes(m.toLowerCase())
-      );
-      if (moodMatch) score += 2;
+    if (mood && entry.mood) {
+      const match = entry.mood.some(m => mood.toLowerCase().includes(m.toLowerCase()));
+      if (match) score += 2;
     }
-    // Light match
-    if (photoLight && entry.light_conditions) {
-      const lightMatch = entry.light_conditions.some(l => 
-        photoLight.toLowerCase().includes(l.toLowerCase())
-      );
-      if (lightMatch) score += 2;
+    if (light && entry.light_conditions) {
+      const match = entry.light_conditions.some(l => light.toLowerCase().includes(l.toLowerCase()));
+      if (match) score += 2;
     }
     return { entry, score };
   });
-
-  // Return top 3 most relevant entries
   return scores
     .filter(s => s.score > 0)
     .sort((a, b) => b.score - a.score)
@@ -38,35 +43,27 @@ function selectRelevantKnowledge(photoGenre, photoMood, photoLight) {
 
 function buildKnowledgeContext(relevant) {
   if (!relevant.length) return '';
-  
-  let context = '\n\nEXPERT KENNISBANK - gebruik deze professionele inzichten om je adviezen te verrijken:\n';
-  
+  let ctx = '\n\nEXPERT KENNISBANK - gebruik deze professionele inzichten:\n';
   relevant.forEach((entry, i) => {
-    context += `\n[Expert ${i+1} - ${entry.genre?.join('/')}]:\n`;
-    context += `Filosofie: ${entry.philosophy}\n`;
-    
-    if (entry.techniques?.length) {
-      const topTechniques = entry.techniques.slice(0, 3);
-      context += 'Technieken:\n';
-      topTechniques.forEach(t => {
-        context += `- ${t.name}: ${t.description} (gebruik bij: ${t.when_to_use})\n`;
+    ctx += `\n[Expert ${i+1} - ${(entry.genre||[]).join('/')}]:\n`;
+    ctx += `Filosofie: ${entry.philosophy}\n`;
+    if (entry.techniques && entry.techniques.length) {
+      entry.techniques.slice(0,3).forEach(t => {
+        ctx += `- ${t.name}: ${t.description} (bij: ${t.when_to_use})\n`;
       });
     }
-    
-    if (entry.unique_insights?.length) {
-      context += `Unieke inzichten: ${entry.unique_insights.slice(0, 2).join('. ')}\n`;
+    if (entry.unique_insights && entry.unique_insights.length) {
+      ctx += `Inzichten: ${entry.unique_insights.slice(0,2).join('. ')}\n`;
     }
-    
-    if (entry.what_to_avoid?.length) {
-      context += `Vermijd: ${entry.what_to_avoid.slice(0, 2).join(', ')}\n`;
+    if (entry.what_to_avoid && entry.what_to_avoid.length) {
+      ctx += `Vermijd: ${entry.what_to_avoid.slice(0,2).join(', ')}\n`;
     }
   });
-  
-  context += '\nPas deze inzichten toe waar relevant voor de foto, maar forceer niets.\n';
-  return context;
+  ctx += '\nPas toe waar relevant, forceer niets.\n';
+  return ctx;
 }
 
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
@@ -77,20 +74,16 @@ export default async function handler(req, res) {
     const { provider, parts, systemPrompt, maxTokens, photoContext } = req.body;
     if (!parts || !systemPrompt) return res.status(400).json({ error: 'Ontbrekende velden' });
 
-    // Select relevant knowledge based on photo context
-    const relevant = photoContext 
-      ? selectRelevantKnowledge(photoContext.genre, photoContext.mood, photoContext.light)
+    const knowledgeBase = loadKnowledgeBase();
+    const relevant = photoContext
+      ? selectRelevantKnowledge(knowledgeBase, photoContext.genre, photoContext.mood, photoContext.light)
       : [];
-
     const knowledgeContext = buildKnowledgeContext(relevant);
     const enhancedPrompt = systemPrompt + knowledgeContext;
 
-    let text = '';
     const apiKey = process.env.GEMINI_API_KEY;
+    if (!apiKey) return res.status(500).json({ error: 'Gemini API key niet geconfigureerd' });
 
-    if (!apiKey) return res.status(500).json({ error: 'API key niet geconfigureerd' });
-
-    // Default to Gemini for expert version
     const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -103,9 +96,9 @@ export default async function handler(req, res) {
 
     const d = await r.json();
     if (d.error) return res.status(400).json({ error: d.error.message });
-    text = d.candidates?.[0]?.content?.parts?.map(p => p.text || '').join('') || '';
+    const text = d.candidates?.[0]?.content?.parts?.map(p => p.text || '').join('') || '';
 
-    return res.status(200).json({ 
+    return res.status(200).json({
       text,
       expertSources: relevant.length,
       knowledgeUsed: relevant.map(e => e.video_title)
@@ -114,4 +107,4 @@ export default async function handler(req, res) {
   } catch (err) {
     return res.status(500).json({ error: 'Server fout: ' + err.message });
   }
-}
+};

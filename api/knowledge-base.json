@@ -1,5 +1,240 @@
 [
   {
+    "video_title": "Editing Landscape Photography in 5 minutes | Lightroom Editing for Beginners (Part 2)",
+    "genre": [
+      "landschap"
+    ],
+    "light_conditions": [
+      "bewolkt",
+      "vlak licht"
+    ],
+    "mood": [
+      "rustig",
+      "minimalistisch",
+      "naturalistisch"
+    ],
+    "software": [
+      "Lightroom"
+    ],
+    "style_description": "De bewerkingsstijl richt zich op het behouden van een natuurlijke en realistische uitstraling, waarbij extreme en surrealistische effecten bewust worden vermeden. Door middel van subtiele toon- en contrastcorrecties wordt geprobeerd de sfeer te vangen zoals die tijdens het fotograferen daadwerkelijk was. Er wordt gestreefd naar een efficiënte en eenvoudige workflow die de inherente details van het RAW-bestand optimaal benut.",
+    "philosophy": "Houd Lightroom eenvoudig. De kernfilosofie is om met een minimale hoeveelheid schuifregelaars (hoofdzakelijk binnen het Standaard-paneel) in minder dan vijf minuten een krachtig resultaat te behalen. Het draait om het leggen van een solide, technisch correcte basis door middel van het maximaliseren van het histogram, waarna de kleuren subtiel worden versterkt zonder de realiteit uit het oog te verliezen.",
+    "workflow_order": [
+      "Stap 1: Het kiezen van het juiste kleurprofiel (bijv. Adobe Landschap).",
+      "Stap 2: Het nauwkeurig corrigeren van de witbalans om kleurzweem (veroorzaakt door ND-filters) te elimineren.",
+      "Stap 3: Het maximaliseren van het histogram (het bepalen van het witte en zwarte punt).",
+      "Stap 4: Globale tooncorrecties toepassen (hooglichten verminderen en schaduwen openen).",
+      "Stap 5: Het algehele contrast verhogen.",
+      "Stap 6: Lokale aanwezigheid en kleurlevendigheid versterken (Lokaal contrast en Levendigheid/Verzadiging)."
+    ],
+    "techniques": [
+      {
+        "name": "Histogram Maximalisatie (Witte en Zwarte Punten Extrapoleren)",
+        "description": "De fotograaf houdt de Shift-toets ingedrukt en dubbelklikt op de schuifregelaars 'Witte tinten' en 'Zwarte tinten'. Hierdoor rekt Lightroom het histogram automatisch uit tot de uiterste grenzen zonder dat er clipping optreedt.",
+        "when_to_use": "Altijd aan het begin van de tooncorrectie om het maximaal beschikbare dynamische bereik uit de sensor te benutten.",
+        "tools": [
+          "Standaard-paneel (Witte tinten / Zwarte tinten)"
+        ],
+        "effect": "Het creëert een zo breed mogelijk histogram en legt een solide basis voor het verdere contrastverloop, waardoor de foto direct meer diepte krijgt."
+      },
+      {
+        "name": "Gerichte Witbalans Correctie bij Lange Sluitertijden",
+        "description": "Met behulp van de pipet (White Balance Selector) zoekt de fotograaf naar een neutraal doel (grijs, zwart of wit) in de foto, terwijl hij de navigatie-preview aan de linkerkant gebruikt om het live effect te beoordelen.",
+        "when_to_use": "Wanneer er gebruik is gemaakt van sterke grijsfilters (zoals een 10-stops ND-filter) die een sterke blauwe of onnatuurlijke kleurzweem achterlaten.",
+        "tools": [
+          "Witbalans-pipet (Target tool)",
+          "Navigator-paneel"
+        ],
+        "effect": "Het elimineert de blauwe kleurzweem en herstelt de natuurlijke, warme tinten van het landschap zoals ze in werkelijkheid waren."
+      }
+    ],
+    "color_approach": "De fotograaf kiest allereerst voor een specifiek kleurprofiel ('Adobe Landschap') in plaats van de standaardinstelling om de kleuren direct een betere basis te geven. Daarnaast maakt hij een belangrijk onderscheid tussen 'Levendigheid' (Vibrance) en 'Verzadiging' (Saturation). Levendigheid wordt gebruikt om de minder verzadigde, gedempte kleuren subtiel op te halen, waarna een heel kleine hoeveelheid algehele verzadiging wordt toegevoegd voor een gebalanceerd en kleurrijk, maar realistisch resultaat.",
+    "local_adjustments": "In deze specifieke video worden er geen maskers of lokale aanpassingen gebruikt; de fotograaf beperkt zich bewust tot het toepassen van globale aanpassingen binnen het Standaard-paneel om te bewijzen hoe effectief een snelle, basisworkflow kan zijn.",
+    "what_to_avoid": [
+      "Het doorschieten met de 'Helderheid' (Clarity) slider, omdat een waarde van 100 de foto een volledig surrealistische en onnatuurlijke look geeft.",
+      "Het handmatig gissen naar witte en zwarte punten, om clipping (het verliezen van details in pure highlights of schaduwen) te voorkomen.",
+      "Het over-verzadigen van alle kleuren tegelijkertijd door enkel de verzadigingsknop te gebruiken."
+    ],
+    "best_for": "Beginnende landschapsfotografen die overweldigd raken door de complexiteit van Lightroom en snel een efficiënte, kwalitatieve basisbewerking willen toepassen op hun RAW-bestanden (met name foto's gemaakt met lange sluitertijden of onder egale lichtomstandigheden).",
+    "unique_insights": [
+      "Door de Shift-toets ingedrukt te houden en te dubbelklikken op de Witte/Zwarte sliders, berekent Lightroom exact de grens tot waar je de witten en zwarten kunt pushen zonder detailverlies.",
+      "Bij het gebruik van de witbalans-pipet helpt het openhouden van het Navigator-paneel linksboven om direct de impact op de gehele compositie te zien voordat je daadwerkelijk klikt."
+    ]
+  },
+  {
+    "video_title": "How to Edit Sports Photography in Lightroom",
+    "genre": [
+      "sport",
+      "portret",
+      "documentair",
+      "straat"
+    ],
+    "light_conditions": [
+      "kunstlicht",
+      "harde zon",
+      "gemengd licht",
+      "flitslicht"
+    ],
+    "mood": [
+      "dramatisch",
+      "krachtig",
+      "grungy",
+      "levendig",
+      "rauw"
+    ],
+    "software": [
+      "Lightroom"
+    ],
+    "style_description": "Sport Photography",
+    "philosophy": "De kernfilosofie is dat sportfotografie niet draait om zachtheid of subtiele romantiek, maar om actie, energie en drama. De herkenbaarheid van de stijl zit in het agressief isoleren van de sporter ten opzichte van de rommelige achtergrond (zoals een stadion of sportveld). Dit wordt bereikt door globale helderheid te combineren met uiterst specifieke AI-maskering, waarbij de atleet extra textuur krijgt en de omgeving juist tonaal en chromatisch wordt gedimd.",
+    "workflow_order": [
+      "Stap 1: Globale belichting en witbalans corrigeren in het basispaneel om de actie direct helder en leesbaar te maken",
+      "Stap 2: Het verhogen van het basiscontrast en het gericht herstellen van hooglichten om spiegelingen op zweet of glanzende kleding te controleren",
+      "Stap 3: Het globaal opvoeren van de presentie-schuiven (Textuur en Helderheid) voor een rauwe, grungy basisstructuur",
+      "Stap 4: HSL/Kleur-paneel gebruiken om afleidende teamkleuren of sponsorreclames in de achtergrond te neutraliseren",
+      "Stap 5: AI-maskering toepassen om de atleet selectief te isoleren van de sportomgeving",
+      "Stap 6: Lokale verscherping en microcontrast toepassen op het onderwerp en een lineair of radiaal verloop gebruiken voor handmatige vignettering"
+    ],
+    "techniques": [
+      {
+        "name": "Atletische Textuur- en Microcontrast-boost",
+        "description": "Binnen een selectief masker op de sporter worden de schuiven voor Textuur (Texture) en Helderheid (Clarity) significant verhoogd, vaak gecombineerd met een lichte toename in de Witte tinten.",
+        "when_to_use": "Bij close-up of actie-opnames van atleten waarbij spierdefinitie, zweetdruppels, modder of de specifieke textuur van sportkleding en attributen geaccentueerd moeten worden.",
+        "tools": [
+          "Maskeren",
+          "Selecteer Onderwerp",
+          "Textuur",
+          "Helderheid",
+          "Witte tinten"
+        ],
+        "effect": "Het onderwerp krijgt een extreem tastbare, rauwe en krachtige uitstraling; spieren en details worden scherper gedefinieerd en springen direct in het oog."
+      },
+      {
+        "name": "Achtergrond-degradatie via omgekeerde AI-maskering",
+        "description": "Nadat de sporter met AI is geselecteerd, wordt het masker omgekeerd om de volledige sportomgeving of het stadion te isoleren. Vervolgens worden de belichting, het contrast en de helderheid in de min gezet.",
+        "when_to_use": "Wanneer de achtergrond van het sportevenement te druk is (veel toeschouwers, felle reclameborden of storende structuren) en de atleet dreigt te verdrinken in de chaos.",
+        "tools": [
+          "Maskeren",
+          "Masker omkeren",
+          "Belichting",
+          "Contrast",
+          "Helderheid"
+        ],
+        "effect": "De achtergrond valt visueel terug in de schaduw en verliest zijn scherpte en dynamiek, waardoor er een natuurlijke, studiowaardige isolatie ontstaat rondom de actie op de voorgrond."
+      },
+      {
+        "name": "Sponsor- en Omgevingskleurzuivering via HSL",
+        "description": "De fotograaf selecteert de specifieke kleurkanalen die niet tot de tenuekleuren van de sporter behoren en verlaagt de verzadiging hiervan drastisch, terwijl de luminantie wordt gebruikt om achtergrondvlakken donderder te maken.",
+        "when_to_use": "Bij binnensporten of stadionfotografie met een wirwar aan felle, contrasterende kleuren in de boarding of tribunes die de aandacht opeisen.",
+        "tools": [
+          "HSL / Kleur",
+          "Verzadiging",
+          "Luminantie"
+        ],
+        "effect": "Het kleurenpalet wordt versimpeld en gecentreerd rondom de atleet. De achtergrond wordt chromatisch rustig en neutraal gemaakt."
+      }
+    ],
+    "color_approach": "De kleurbenadering is selectief en contrastrijk. Er wordt scherp toegezien op de integriteit en de pop van de primaire sportkleuren (zoals de kleur van het shirt of de schoenen), terwijl alle secundaire omgevingskleuren agressief worden gedempt. Color Grading wordt minimaal of uiterst koel toegepast in de schaduwen om het industriële, rauwe en hardcore karakter van de sportsfeer te versterken, terwijl huidstinten krachtig en warm gehouden worden.",
+    "local_adjustments": "Lokale maskers zijn de absolute sleutel om chaos te transformeren in een iconische sportplaat. Omdat de fotograaf tijdens een wedstrijd geen controle heeft over de achtergrond of de lichtopstelling, worden AI-onderwerpselecties intensief misbruikt om de atleet los te snijden van de omgeving. Lineaire en radiale verlopen worden daarnaast gestapeld aan de randen om een zware, handmatige vignette op te bouwen die de blik dwingend naar het brandpunt van de actie leidt.",
+    "what_to_avoid": [
+      "Het overmatig globaal openbreken van alle schaduwen (Shadows te ver naar rechts), omdat dit de zwarte delen van het stadion of de schaduwen op de atleet flets maakt en het dramatische, krachtige contrast volledig vernietigt.",
+      "Het gebruik van zachte Orton-effecten of zware ruisreductie over het onderwerp, omdat dit de harde, vlijmscherpe actiedetails en de rauwe textuur in een plastic look verandert."
+    ],
+    "best_for": "Sportfotografie, actie- en fitnessportretten, crossfit-shoots en commerciële atleten-promoties waarbij dramatiek, spiermassa en pure energie visueel vertaald moeten worden.",
+    "unique_insights": [
+      "Scherpte en pop in een sportfoto ontstaan niet door de globale scherpteschuif te forceren, maar door het tonaal uitspelen van het onderwerp tegen de achtergrond. Door de atleet lokaal te voorzien van textuur en wit-accenten, terwijl de achtergrond via een omgekeerd masker zowel contrast als helderheid verliest, creëer je een optische diepte waarbij de sporter letterlijk driedimensionaal uit de foto breekt—ongeacht hoe druk de oorspronkelijke locatie was."
+    ],
+    "photographer_name": "Otto Arney",
+    "youtube_url": "https://youtu.be/qMLQJLaJSV0?si=ADWHk008dWz5bucj"
+  },
+  {
+    "video_title": "Follow my Edit - Step-by-step Lightroom Tutorial (Ep:1)",
+    "genre": [
+      "wildlife"
+    ],
+    "light_conditions": [
+      "harde zon"
+    ],
+    "mood": [
+      "naturalistisch",
+      "levendig"
+    ],
+    "software": [
+      "Lightroom"
+    ],
+    "style_description": "Wildlife Photography",
+    "philosophy": "Het neutraliseren van de nadelen van hard zonlicht door middel van selectief lokaal tegenhouden en doordrukken (dodging en burning), met als doel de foto de zachte uitstraling te geven alsof deze tijdens het gouden uur is vastgelegd.",
+    "workflow_order": [
+      "Stap 1: Analyseren van de camera-instellingen en het histogram om de dynamische omvang te bepalen [00:02:23]",
+      "Stap 2: De horizon rechtzetten en compositie uitsnijden op basis van referentielijnen [00:05:05]",
+      "Stap 3: Globale contrast- en belichtingsbalans instellen via de 'Basisaanpassingen' (witte en zwarte punten) [00:06:30]",
+      "Stap 4: Handmatige en selectieve verscherping toepassen via maskering om ruisvorming te voorkomen [00:09:57]",
+      "Stap 5: Kleurruis handmatig reduceren in de schaduwpartijen [00:12:41]",
+      "Stap 6: De algehele kleurverzadiging controleren en eventueel storende reflecties dempen [00:14:45]",
+      "Stap 7: Lokale maskers (onderwerpdetectie) toepassen om textuur en helderheid van het hoofdonderwerp te versterken [00:16:56]",
+      "Stap 8: Gerichte penseelmaskers inzetten om overbelichte hooglichten en diepe schaduwen afzonderlijk te corrigeren [00:19:58]"
+    ],
+    "techniques": [
+      {
+        "name": "Schaduwen opwarmen (Koude schaduw-correctie)",
+        "description": "Diepe schaduwpartijen op het dier worden geselecteerd met een penseel (met automatische maskering ingeschakeld). Naast het lokaal verhogen van de schaduw- en belichtingswaarde, wordt de kleurtemperatuur (Temperature) aanzienlijk naar de warme kant geschoven [00:27:28].",
+        "when_to_use": "Relevant voor schaduwen die door hard, direct zonlicht zijn ontstaan; deze hebben van nature een blauwe, koele zweem.",
+        "tools": [
+          "Penseel (Brush)",
+          "Automatisch masker (Auto Mask)",
+          "Temperatuur (Temperature)"
+        ],
+        "effect": "Het heft de onnatuurlijke blauwe gloed in de schaduw op, waardoor de donkere delen naadloos en organisch aansluiten op de door de zon beschenen huid."
+      },
+      {
+        "name": "Gecontroleerde Randverscherping (Alt/Option Masking)",
+        "description": "Tijdens het verschuiven van de maskering-regelaar (Masking) in het verscherpingspaneel wordt de Alt-toets (Windows) of Option-toets (Mac) ingedrukt gehouden. Dit toont een zwart-wit weergave waarin alleen de witte lijnen verscherpt worden [00:11:25].",
+        "when_to_use": "Bij wildlife-foto's met egale achtergronden of donkere schaduwgebieden waar reguliere verscherping ongewenste korrel of ruis zou introduceren.",
+        "tools": [
+          "Verscherpen (Sharpening)",
+          "Maskeren (Masking)",
+          "Alt / Option-toets"
+        ],
+        "effect": "Alleen de cruciale contouren en texturen van het dier worden scherp gemaakt, terwijl de achtergrond en vlakke schaduwdelen volledig buiten schot blijven [00:11:37]."
+      },
+      {
+        "name": "Hooglichten camoufleren en matteren",
+        "description": "Glanzende, overbelichte delen op een natte huid worden met een zacht penseel geselecteerd. De hooglichten worden verlaagd en er wordt lokaal warmte toegevoegd om felle, spierwitte 'hotspots' te elimineren [00:21:59].",
+        "when_to_use": "Wanneer natte dieren in de felle zon gefotografeerd zijn en het reflecterende water op de huid zorgt voor storende, uitgebleekte witte vlekken.",
+        "tools": [
+          "Penseel (Brush)",
+          "Hooglichten (Highlights)",
+          "Temperatuur (Temperature)"
+        ],
+        "effect": "De felle reflecties verliezen hun storende werking en veranderen in een zachte, natuurlijke huidtint die minder de aandacht afleidt van het oog [00:22:22]."
+      },
+      {
+        "name": "Kleurruisreductie in donkere texturen",
+        "description": "Er wordt sterk ingezoomd (100% of meer) op de schaduwgebieden om te zoeken naar rode, groene of paarse pixels (kleurruis). De schuifregelaar voor kleurruisreductie wordt handmatig opgevoerd tot deze pixels verdwijnen [00:12:41].",
+        "when_to_use": "Bij onderwerpen met een donkere huid of vacht die in de schaduw staan, waarbij de details later in de nabewerking opgelicht gaan worden.",
+        "tools": [
+          "Details (Detail)",
+          "Kleurruisreductie (Color Noise Reduction)"
+        ],
+        "effect": "Het verwijdert de storende digitale kleurspikkels in de schaduw zonder de scherpte of details van de algehele afbeelding ingrijpend aan te tasten [00:13:32]."
+      }
+    ],
+    "color_approach": "De focus ligt op het behouden van een natuurgetrouw palet. Er wordt kritisch gekeken naar hoe de omgeving (zoals de blauwe lucht) reflecteert op het onderwerp [00:15:44]. In plaats van globale kleurveranderingen, worden selectieve kleuraanpassingen gebruikt via de witbalans en lokale maskers om onnatuurlijke kleurzwemen (zoals felle sneeuwwitte reflecties of blauwe schaduwen) te corrigeren en om te zetten naar aardse, warme tonen [00:22:16].",
+    "local_adjustments": "Lokale maskers vormen de kern van de workflow. Nadat het beeld globaal qua data stabiel is gemaakt, gebruikt de fotograaf onderwerpdetectie voor een subtiele boost in textuur [00:16:56], gevolgd door zeer specifieke, handmatige penseelmaskers met een hoge feather-waarde. Dit stelt haar in staat om de schaduwen en hooglichten onafhankelijk van elkaar te herstellen alsof er met een invulflits is gewerkt [00:19:00].",
+    "what_to_avoid": [
+      "Direct starten met lokale maskers: Zorg dat eerst de globale data (wit- en zwartpunten) correct is ingesteld [00:06:39].",
+      "Verscherpen van de gehele afbeelding: Dit creëert onnodige ruis en een 'crunchy' look in egale vlakken zoals de achtergrond [00:10:03].",
+      "Te veel Clarity/Texture op katachtigen: Textuur- en helderheidstools werken perfect op dieren met een stugge structuur (zoals olifanten of zebra's), maar maken de vacht van bijvoorbeeld leeuwen onnatuurlijk oud en onverzorgd [00:17:42].",
+      "Schadows oplichten zonder kleurcorrectie: Alleen de belichting van een schaduw verhogen maakt het resultaat flets en grauw; schaduwen in hard licht vereisen altijd extra warmte [00:27:19]."
+    ],
+    "best_for": "Wildlife- en natuurfotografie, in het bijzonder voor opnames die midden op de dag onder zware, contrastrijke lichtomstandigheden zijn gemaakt.",
+    "unique_insights": [
+      "Schaduwen veroorzaakt door direct zonlicht bevatten extreem veel blauwtinten door de reflectie van de lucht. De gouden truc voor een realistisch herstel is om bij het oplichten altijd de kleurtemperatuur lokaal te verhogen [00:27:28].",
+      "Gebruik bij het werken met lokale maskers altijd de navigator om door je ingezoomde foto te bewegen. Als je sleept in het hoofdscherm, verplaats je per ongeluk het masker zelf [00:18:07]."
+    ],
+    "photographer_name": "Janine Kraver",
+    "youtube_url": "Https://youtu.be/4in_Ttys_p4?is=mQeka2P_1AJpurxb"
+  },
+  {
     "video_title": "Advanced RAW Photo Editing Tricks You DON'T Want to Miss!",
     "genre": [
       "landschap"
@@ -15,7 +250,7 @@
     "software": [
       "Lightroom"
     ],
-    "style_description": "De stijl kenmerkt zich door een diepe, sfeervolle uitstraling met een sterke nadruk op dramatiek en gelaagdheid in het landschap. Er wordt gebruikgemaakt van gerichte belichtingscontrasten om de blik naar het centrum te leiden en mist- en wolkenstructuren te accentueren. Het kleurenpalet is zorgvuldig gestileerd en versimpeld om herfsttinten warm en krachtig naar voren te laten komen.",
+    "style_description": "Landscape Photography",
     "philosophy": "Het creëren van diepte en visuele spanning door het versterken van natuurlijke lichtovergangen (van donker naar licht) en het bewust vereenvoudigen van het kleurenpalet tot een beperkt aantal harmonieuze tinten.",
     "workflow_order": [
       "Stap 1: Foto's samenvoegen tot een HDR-blend [00:00:54]",
@@ -32,7 +267,7 @@
     "techniques": [
       {
         "name": "Achtergrondgloed isoleren (Backlighting)",
-        "description": "Er wordt een radiaal verloop geplaatst over de bergen waar het licht vandaan komt. Vervolgens wordt met de optie 'aftrekken' via kleurbereik (color range) de donkere bergketen zelf uit het masker gefilterd, waardoor alleen the lucht direct achter de bergen oplicht.",
+        "description": "Er wordt een radiaal verloop geplaatst over de bergen waar het licht vandaan komt. Vervolgens wordt met de optie 'aftrekken' via kleurbereik (color range) de donkere bergketen zelf uit het masker gefilterd, waardoor alleen de lucht direct achter de bergen oplicht.",
         "when_to_use": "Wanneer er natuurlijk tegenlicht of mist achter een donker landschapselement (zoals een berg of bomenrij) aanwezig is dat je selectief wilt aanzetten.",
         "tools": [
           "Radiaal filter (Radial Gradient)",
@@ -98,93 +333,9 @@
     "unique_insights": [
       "Het tijdelijk naar +100 schuiven van zowel Vibrance als Saturation is een absolute 'game-changer' om een feilloze witbalans te vinden als je ogen vermoeid raken [00:10:03].",
       "Elke overgang in belichting (van donker naar licht) in een foto fungeert voor het menselijk brein automatisch als een indicator van diepte; activeer dit bewust met strategisch geplaatste verloopfilters [00:08:41]."
-    ]
-  },
-  {
-    "video_title": "Follow my Edit - Step-by-step Lightroom Tutorial (Ep:1)",
-    "genre": [
-      "wildlife"
     ],
-    "light_conditions": [
-      "harde zon"
-    ],
-    "mood": [
-      "naturalistisch",
-      "levendig"
-    ],
-    "software": [
-      "Lightroom"
-    ],
-    "style_description": "De bewerkingsstijl richt zich op het herstellen en in balans brengen van opnames die onder uitdagende, contrastrijke lichtomstandigheden zijn gemaakt. Door gerichte lokale aanpassingen worden harde schaduwen verzacht en overbelichte delen gecorrigeerd, wat resulteert in een natuurlijk ogende en getrouwe weergave van het dier. De nadruk ligt op het behouden van textuur en het creëren van een egale lichtverdeling zonder de sfeer van het moment te verliezen.",
-    "philosophy": "Het neutraliseren van de nadelen van hard zonlicht door middel van selectief lokaal tegenhouden en doordrukken (dodging en burning), met als doel de foto de zachte uitstraling te geven alsof deze tijdens het gouden uur is vastgelegd.",
-    "workflow_order": [
-      "Stap 1: Analyseren van de camera-instellingen en het histogram om de dynamische omvang te bepalen [00:02:23]",
-      "Stap 2: De horizon rechtzetten en compositie uitsnijden op basis van referentielijnen [00:05:05]",
-      "Stap 3: Globale contrast- en belichtingsbalans instellen via de 'Basisaanpassingen' (witte en zwarte punten) [00:06:30]",
-      "Stap 4: Handmatige en selectieve verscherping toepassen via maskering om ruisvorming te voorkomen [00:09:57]",
-      "Stap 5: Kleurruis handmatig reduceren in de schaduwpartijen [00:12:41]",
-      "Stap 6: De algehele kleurverzadiging controleren en eventueel storende reflecties dempen [00:14:45]",
-      "Stap 7: Lokale maskers (onderwerpdetectie) toepassen om textuur en helderheid van het hoofdonderwerp te versterken [00:16:56]",
-      "Stap 8: Gerichte penseelmaskers inzetten om overbelichte hooglichten en diepe schaduwen afzonderlijk te corrigeren [00:19:58]"
-    ],
-    "techniques": [
-      {
-        "name": "Schaduwen opwarmen (Koude schaduw-correctie)",
-        "description": "Diepe schaduwpartijen op het dier worden geselecteerd met een penseel (met automatische maskering ingeschakeld). Naast het lokaal verhogen van de schaduw- en belichtingswaarde, wordt de kleurtemperatuur (Temperature) aanzienlijk naar de warme kant geschoven [00:27:28].",
-        "when_to_use": "Relevant voor schaduwen die door hard, direct zonlicht zijn ontstaan; deze hebben van nature een blauwe, koele zweem.",
-        "tools": [
-          "Penseel (Brush)",
-          "Automatisch masker (Auto Mask)",
-          "Temperatuur (Temperature)"
-        ],
-        "effect": "Het heft de onnatuurlijke blauwe gloed in de schaduw op, waardoor de donkere delen naadloos en organisch aansluiten op de door de zon beschenen huid."
-      },
-      {
-        "name": "Gecontroleerde Randverscherping (Alt/Option Masking)",
-        "description": "Tijdens het verschuiven van de maskering-regelaar (Masking) in het verscherpingspaneel wordt de Alt-toets (Windows) of Option-toets (Mac) ingedrukt gehouden. Dit toont een zwart-wit weergave waarin alleen de witte lijnen verscherpt worden [00:11:25].",
-        "when_to_use": "Bij wildlife-foto's met egale achtergronden of donkere schaduwgebieden waar reguliere verscherping ongewenste korrel of ruis zou introduceren.",
-        "tools": [
-          "Verscherpen (Sharpening)",
-          "Maskeren (Masking)",
-          "Alt / Option-toets"
-        ],
-        "effect": "Alleen de cruciale contouren en texturen van het dier worden scherp gemaakt, terwijl de achtergrond en vlakke schaduwdelen volledig buiten schot blijven [00:11:37]."
-      },
-      {
-        "name": "Hooglichten camoufleren en matteren",
-        "description": "Glanzende, overbelichte delen op een natte huid worden met een zacht penseel geselecteerd. De hooglichten worden verlaagd en er wordt lokaal warmte toegevoegd om felle, spierwitte 'hotspots' te elimineren [00:21:59].",
-        "when_to_use": "Wanneer natte dieren in de felle zon gefotografeerd zijn en het reflecterende water op de huid zorgt voor storende, uitgebleekte witte vlekken.",
-        "tools": [
-          "Penseel (Brush)",
-          "Hooglichten (Highlights)",
-          "Temperatuur (Temperature)"
-        ],
-        "effect": "De felle reflecties verliezen hun storende werking en veranderen in een zachte, natuurlijke huidtint die minder de aandacht afleidt van het oog [00:22:22]."
-      },
-      {
-        "name": "Kleurruisreductie in donkere texturen",
-        "description": "Er wordt sterk ingezoomd (100% of meer) op de schaduwgebieden om te zoeken naar rode, groene of paarse pixels (kleurruis). De schuifregelaar voor kleurruisreductie wordt handmatig opgevoerd tot deze pixels verdwijnen [00:12:41].",
-        "when_to_use": "Bij onderwerpen met een donkere huid of vacht die in de schaduw staan, waarbij de details later in de nabewerking opgelicht gaan worden.",
-        "tools": [
-          "Details (Detail)",
-          "Kleurruisreductie (Color Noise Reduction)"
-        ],
-        "effect": "Het verwijdert de storende digitale kleurspikkels in de schaduw zonder de scherpte of details van de algehele afbeelding ingrijpend aan te tasten [00:13:32]."
-      }
-    ],
-    "color_approach": "De focus ligt op het behouden van een natuurgetrouw palet. Er wordt kritisch gekeken naar hoe de omgeving (zoals de blauwe lucht) reflecteert op het onderwerp [00:15:44]. In plaats van globale kleurveranderingen, worden selectieve kleuraanpassingen gebruikt via de witbalans en lokale maskers om onnatuurlijke kleurzwemen (zoals felle sneeuwwitte reflecties of blauwe schaduwen) te corrigeren en om te zetten naar aardse, warme tonen [00:22:16].",
-    "local_adjustments": "Lokale maskers vormen de kern van de workflow. Nadat het beeld globaal qua data stabile is gemaakt, gebruikt de fotograaf onderwerpdetectie voor een subtiele boost in textuur [00:16:56], gevolgd door zeer specifieke, handmatige penseelmaskers met een hoge feather-waarde. Dit stelt haar in staat om de schaduwen en hooglichten onafhankelijk van elkaar te herstellen alsof er met een invulflits is gewerkt [00:19:00].",
-    "what_to_avoid": [
-      "Direct starten met lokale maskers: Zorg dat eerst de globale data (wit- en zwartpunten) correct is ingesteld [00:06:39].",
-      "Verscherpen van de gehele afbeelding: Dit creëert onnodige ruis en een 'crunchy' look in egale vlakken zoals de achtergrond [00:10:03].",
-      "Te veel Clarity/Texture op katachtigen: Textuur- en helderheidstools werken perfect op dieren met een stugge structuur (zoals olifanten of zebra's), maar maken de vacht van bijvoorbeeld leeuwen onnatuurlijk oud en onverzorgd [00:17:42].",
-      "Schadows oplichten zonder kleurcorrectie: Alleen de belichting van een schaduw verhogen maakt het resultaat flets en grauw; schaduwen in hard licht vereisen altijd extra warmte [00:27:19]."
-    ],
-    "best_for": "Wildlife- en natuurfotografie, in het bijzonder voor opnames die midden op de dag onder zware, contrastrijke lichtomstandigheden zijn gemaakt.",
-    "unique_insights": [
-      "Schaduwen veroorzaakt door direct zonlicht bevatten extreem veel blauwtinten door de reflectie van de lucht. De gouden truc voor een realistisch herstel is om bij het oplichten altijd de kleurtemperatuur lokaal te verhogen [00:27:28].",
-      "Gebruik bij het werken met lokale maskers altijd de navigator om door je ingezoomde foto te bewegen. Als je sleept in het hoofdscherm, verplaats je per ongeluk het masker zelf [00:18:07]."
-    ]
+    "photographer_name": "Mark Denney",
+    "youtube_url": "https://youtu.be/KviBJ0b8opI?is=fjZoSVX-HN1Vm2EQ"
   },
   {
     "video_title": "Editing Landscape Photography in Lightroom | How much is too much?",
@@ -201,13 +352,13 @@
     "software": [
       "Lightroom"
     ],
-    "style_description": "De bewerkingsstijl legt een sterke nadruk op het creëren van een onheilspellende, dramatische sfeer door het contrast en de textuur in de lucht intensief aan te zetten. De voorgrond wordt relatief lichter en gedetailleerder gehouden, waardoor er een duidelijke dieptewerking ontstaat ten opzichte van de zware bergen en lucht. Het resultaat balanceert tussen een getrouwe landschapsregistratie en een artistieke, contrastrijke expressie.",
+    "style_description": "Landscape Photography",
     "philosophy": "Het bewerken heeft geen vaste limieten; de fotograaf gebruikt post-processing als een creatief verlengstuk van zijn eigen visie om de dramatiek en de emotie van de natuurlijke elementen maximaal te versterken [00:12:51].",
     "workflow_order": [
       "Stap 1: De aspectratio aanpassen naar een breedbeeldverhouding (16x9) [00:06:15]",
       "Stap 2: Het kleurprofiel wijzigen naar een landschapsspecifiek profiel (Adobe Landscape) [00:06:26]",
       "Stap 3: De witbalans corrigeren naar een warmere, consistente preset (Cloudy) [00:06:58]",
-      "Stap 4: De globale wit- en zwartpunten bepalen via die shift-snelkoppeling [00:07:05]",
+      "Stap 4: De globale wit- en zwartpunten bepalen via de shift-snelkoppeling [00:07:05]",
       "Stap 5: De algemene belichting corrigeren en hooglichten extreem dempen [00:07:22]",
       "Stap 6: Textuur en nevelreductie (Dehaze) globaal opvoeren om structuur te tonen [00:07:38]",
       "Stap 7: Tooncurve aanpassen via een automatische medium-contrast preset [00:08:11]",
@@ -273,7 +424,9 @@
     "unique_insights": [
       "Laat je bewerking leiden door het beeld zelf: als er tijdens het verscherpen vreemde randen of artefacten ontstaan, vertelt de foto je letterlijk dat je te ver bent gegaan [00:09:23].",
       "Creativiteit kent geen vaste regels of limieten; post-processing is een evoluerend proces waarbij je eigen smaak en visie over de jaren heen logischerwijs veranderen en groeien [00:13:09]."
-    ]
+    ],
+    "photographer_name": "Attilio Ruffo",
+    "youtube_url": "Https://youtu.be/TJfnzFfr9nM?is=zdaDjrYazsUOUNhw"
   },
   {
     "video_title": "Editing Landscape Photography with Ligthroom in 2021",
@@ -292,7 +445,7 @@
     "software": [
       "Lightroom"
     ],
-    "style_description": "De bewerkingsstijl focust op het introduceren van diepte en tonaal contrast in een vlakke, langetijdopname. Door subtiele kleurscheidingen aan te brengen in de lichte en donkere partijen, krijgt het beeld een dromerig doch krachtig karakter. De nadruk ligt op het accentueren van structuren in de voorgrond terwijl de lucht juist dynamisch en contrastrijk wordt gemaakt.",
+    "style_description": "Landscape Photography",
     "philosophy": "Het corrigeren van ongewenste kleurzwemen veroorzaakt door filters, om vervolgens via geavanceerde kleurgradatie en de tooncurve een sfeervolle balans te vinden die de dynamiek van het landschap versterkt.",
     "workflow_order": [
       "Stap 1: De compositie uitsnijden naar breedbeeld (16x9) om de horizon uit het midden te halen en storende elementen te verwijderen [00:03:35]",
@@ -359,90 +512,15 @@
     "what_to_avoid": [
       "De horizon exact in het midden plaatsen: Dit deelt het beeld te symmetrisch op; gebruik een uitsnede (zoals 16x9) om de nadruk te verschuiven [00:03:35].",
       "Overmatige verzadiging via de globale 'Saturation'-knop: Dit overstuurt de kleuren; werk liever selectief in HSL of via kleurgradatie [00:08:06].",
-      "Het negeren van sensorvlekken: Sterke nevelreductie (Dehaze) makes sensorstof direct zichtbaar, spoor deze op en verwijder ze altijd met de heal-tool [00:11:53].",
+      "Het negeren van sensorvlekken: Sterke nevelreductie (Dehaze) maakt sensorstof direct zichtbaar, spoor deze op en verwijder ze altijd met de heal-tool [00:11:53].",
       "Ongecontroleerde aanpassingen in de tooncurve: Gebruik de Shift-toets tijdens het slepen van curvepunten om uitschieters en onnatuurlijke vervormingen te vermijden [00:05:43]."
     ],
     "best_for": "Langetijdfotografie (Long Exposure) van zee- en kustlandschappen, waarbij sterke grijsfilters (ND-filters) zijn gebruikt.",
     "unique_insights": [
       "Gebruik de 'Solo Mode' in Lightroom (rechtermuisklik op een paneel) om te zorgen dat geopende panelen automatisch sluiten wanneer je een nieuwe opent. Dit houdt je interface clean en overzichtelijk [00:08:23].",
       "Bij het bewerken van langetijdopnames met ND-filters is het handmatig corrigeren van kleurzwemen via de afzonderlijke RGB-kanalen in de tooncurve vele malen effectiever dan enkel de globale witbalans-schuifregelaar gebruiken [00:06:07]."
-    ]
-  },
-  {
-    "video_title": "The Secret to Color in Lightroom (That Most Photographers Miss)",
-    "genre": [
-      "landschap",
-      "bos"
     ],
-    "light_conditions": [
-      "gouden uur",
-      "bewolkt",
-      "vlak licht"
-    ],
-    "mood": [
-      "moody",
-      "rustig",
-      "cinematografisch",
-      "painterly"
-    ],
-    "software": [
-      "Lightroom",
-      "Photoshop"
-    ],
-    "style_description": "De stijl kenmerkt zich door een schilderachtige en zachte uitstraling in boslandschappen, waarbij de focus ligt op het harmoniseren van specifieke kleurgroepen. Door bewuste de-verzadiging van concurrerende tinten en het verschuiven van groentinten naar een warmere, olijfachtige richting, ontstaat een dromerig effect. Daarnaast wordt er een subtiele cinematografische toon gecreëerd door kleurgradaties in zowel de schaduwen als de hooglichten aan te brengen.",
-    "philosophy": "Kleur is het belangrijkste onderdeel van het creëren van een eigen fotografische stijl. De aanpak is gebaseerd op het concept van prioriteiten stellen: als alle kleuren intens zijn, valt er niets op. Een herkenbare stijl ontstaat door bewust bepaalde kleuren te prioriteren (en andere te de-prioriteren) en door te experimenteren met onderbelichte basistools zoals Kalibratie om de onderliggende RGB-structuur subtiel aan te passen.",
-    "workflow_order": [
-      "Stap 1: Witbalans instellen (globale kleurtemperatuur en tint aanpassen voor de hele foto).",
-      "Stap 2: Camerakalibratie (Calibration) gebruiken om de fundamentele RGB-primaire waarden te veranderen.",
-      "Stap 3: Contrast en tooncurve aanpassen (bijv. zwarten ophalen in bosfoto's om een zachte look te creëren).",
-      "Stap 4: Kleurenmenger (Color Mixer) gebruiken om de tint, verzadiging en luminantie van specifieke kleurvlakken te verfijnen.",
-      "Stap 5: Lokale aanpassingen met maskers (Color Range) toepassen om specifieke details te laten 'poppen'.",
-      "Stap 6: Kleurgradatie (Color Grading) toepassen voor een algehele sfeer of cinematografische toon."
-    ],
-    "techniques": [
-      {
-        "name": "Kleurprioritering via Selectieve De-verzadiging",
-        "description": "In plaats van alleen de gewenste kleur (bijvoorbeeld de oranje varens) te verzadigen, verlaagt de fotograaf juist de verzadiging van de concurrerende omringende kleuren (zoals geel en groen).",
-        "when_to_use": "Wanneer je een specifieke kleur of een specifiek element in de compositie extra nadruk wilt geven zonder de hele foto overmatig te verzadigen.",
-        "tools": [
-          "Color Mixer (Kleurenmenger) / HSL"
-        ],
-        "effect": "Het verhoogt de visuele impact van de hoofdkleur en zorgt voor een rustiger, minder schreeuwend en meer gebalanceerd beeld."
-      },
-      {
-        "name": "Blauwe Primaire Kalibratieverschuiving",
-        "description": "De fotograaf past de schuifregelaar van de 'Blue Primary' in het kalibratiepaneel aan om de onderliggende kleurverhoudingen in de pixels te veranderen.",
-        "when_to_use": "Bij zonsondergangen om het oranje in de lucht warmer te maken, of bij bosfoto's om de groentinten een zachtere, olijfachtige of warme gloed te geven.",
-        "tools": [
-          "Calibration (Kalibratie)"
-        ],
-        "effect": "Het verandert de kleurweergave van de gehele foto op een unieke manier die met reguliere HSL-sliders niet te bereiken is, wat zorgt voor een karakteristieke handtekening."
-      },
-      {
-        "name": "Gekruist Kleurbereik-Masker met Penseel",
-        "description": "Er wordt een 'Color Range' masker gemaakt om een specifieke kleur te selecteren (bijv. herfstblaadjes). Vervolgens wordt dit masker doorsneden (intersect) met een penseel (Brush) om de aanpassing lokaal te beperken.",
-        "when_to_use": "Wanneer een bepaalde kleur op meerdere plekken in de foto voorkomt (zoals mos op de grond), maar je de aanpassing (zoals extra luminantie of verzadiging) alleen op één specifiek deel (zoals de blaadjes aan de boom) wilt toepassen.",
-        "tools": [
-          "Masking",
-          "Color Range",
-          "Intersect with Brush"
-        ],
-        "effect": "Zorgt voor extreem nauwkeurige lokale kleurcorrecties zonder dat er vreemde randen of ongewenste kleurvlekken elders in de foto ontstaan."
-      }
-    ],
-    "color_approach": "Kleur grading en -menging worden toegepast om een interpretatie van de realiteit te creëren in plaats van een exacte kopie. Groen wordt in bossen vaak richting geel verschoven om een warmere look te krijgen, en rood/oranje krijgt prioriteit. Er wordt gewaarschuwd om de 'Hue' (Kleurtoon) sliders in de Color Mixer nooit met meer dan +/- 20 te verschuiven om een onnatuurlijk 'buitenaards' effect te voorkomen. Daarnaast wordt kleurgradatie (Color Grading) ingezet om sfeer te sturen, zoals het toevoegen van koude tinten in de schaduwen en warme tinten in de hooglichten voor een cinematografische uitstraling.",
-    "local_adjustments": "Maskers worden intensief gebruikt aan het einde van de workflow. Met name de 'Color Range' optie is favoriet om specifieke details (zoals reflecties in het water of herfstbladeren) te isoleren. Door deze maskers te combineren met radiale verlopen of penselen, worden subtiele accenten in verzadiging en helderheid aangebracht die de kijker door het beeld leiden.",
-    "what_to_avoid": [
-      "Het overmatig gebruiken van de algemene 'Vibrance' en 'Saturation' sliders in het basispaneel, omdat dit alle kleuren oncontroleerbaar hard maakt.",
-      "Het te ver doorschuiven van de 'Hue' (Kleurtoon) waarden in de HSL/Color Mixer (maximaal +/- 20 aanhouden).",
-      "Extreme witbalansverschuivingen die kunnen leiden tot 'banding' (kleurstrepen) in zachte verlopen zoals de lucht.",
-      "Pure, harde zwartwaarden in bos- of woodlandfotografie; de fotograaf adviseert om de zwarten in de curve altijd iets op te lichten voor een zachtere sfeer."
-    ],
-    "best_for": "Landschaps- en bosfotografen (woodland photography) die hun foto's een unieke, sfeervolle, schilderachtige of filmische identiteit willen meegeven en worstelen met 'saaie' of overheersende groentinten.",
-    "unique_insights": [
-      "Het aanpassen van de 'Tint' slider in de witbalans naar een klein beetje meer paars/magenta helpt in bossen enorm om de verschillende nuances in de aanwezige groentinten van elkaar te scheiden.",
-      "Het geheim van een herkenbare kleurstijl ligt niet in wat je toevoegt, maar in wat je weglaat (de-prioritering van overbodige kleuren).",
-      "Het creëren van een stijl is een organisch proces; je moet niets forceren maar je urenlang verliezen in kleine, subtiele aanpassingen die samen een groot verschil maken."
-    ]
+    "photographer_name": "Attilio Ruffo",
+    "youtube_url": "Https://youtu.be/Cn7OihvRa_w?is=ENMrGUj1l-kGdS-A"
   }
 ]

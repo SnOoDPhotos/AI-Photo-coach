@@ -170,6 +170,12 @@ input:focus,textarea:focus{border-color:var(--accent)}
           <div>&#8594; Commit changes</div>
         </div>
         <button class="btn btn-sm" onclick="exportKnowledge()">&#8595; DOWNLOAD knowledge-base.json</button>
+        <div style="margin-top:24px;padding-top:20px;border-top:1px solid var(--border)">
+          <h3 style="margin-bottom:8px">DATABASE INITIALISEREN</h3>
+          <p style="font-size:12px;color:var(--muted);margin-bottom:12px;line-height:1.7">Eenmalig: laad de huidige <code>knowledge-base.json</code> van de server in de database. Doe dit als de kennisbank leeg lijkt terwijl je weet dat het JSON bestand entries heeft.</p>
+          <button class="btn btn-sm btn-outline" onclick="initFromFile()">&#8679; LAAD knowledge-base.json IN DATABASE</button>
+          <div id="initResult" style="font-family:monospace;font-size:11px;margin-top:10px;color:var(--accent)"></div>
+        </div>
       </div>
     </div>
 
@@ -206,11 +212,6 @@ input:focus,textarea:focus{border-color:var(--accent)}
 var authToken = localStorage.getItem('snood_admin_token');
 var adminUser = localStorage.getItem('snood_admin_user');
 var localKnowledge = [];
-
-try {
-  var stored = localStorage.getItem('snood_knowledge_base');
-  if (stored) localKnowledge = JSON.parse(stored);
-} catch(e) {}
 
 // Zorg dat modal altijd hidden start
 document.getElementById('detailModal').classList.add('hidden');
@@ -284,18 +285,27 @@ function showAdminPanel() {
 }
 
 function loadKnowledge() {
-  fetch('/knowledge-base.json')
-    .then(function(r) { return r.json(); })
-    .then(function(d) {
-      if (Array.isArray(d)) {
-        localKnowledge = d;
-        localStorage.setItem('snood_knowledge_base', JSON.stringify(d));
-      }
-      renderAll();
-    })
-    .catch(function() {
-      if (localKnowledge.length > 0) renderAll();
-    });
+  fetch('/api/knowledge', {
+    method: 'POST',
+    headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({ action: 'list', token: authToken })
+  })
+  .then(function(r) { return r.json(); })
+  .then(function(d) {
+    if (d.success && Array.isArray(d.entries)) {
+      localKnowledge = d.entries;
+    } else if (Array.isArray(d)) {
+      localKnowledge = d;
+    }
+    renderAll();
+  })
+  .catch(function() {
+    // Fallback: JSON bestand
+    fetch('/knowledge-base.json')
+      .then(function(r) { return r.json(); })
+      .then(function(d) { if (Array.isArray(d)) localKnowledge = d; renderAll(); })
+      .catch(function() { if (localKnowledge.length > 0) renderAll(); });
+  });
 }
 
 function renderAll() {
@@ -423,9 +433,24 @@ function saveQuickEdits() {
     var field = inp.getAttribute('data-field');
     if (localKnowledge[idx] !== undefined) localKnowledge[idx][field] = inp.value.trim();
   });
-  localStorage.setItem('snood_knowledge_base', JSON.stringify(localKnowledge));
-  var btn = document.querySelector('#tab-add .btn[onclick="saveQuickEdits()"]');
-  if (btn) { var orig = btn.textContent; btn.textContent = '✓ OPGESLAGEN'; setTimeout(function(){ btn.textContent = orig; }, 2000); }
+  // Sla volledige kennisbank op via API
+  fetch('/api/knowledge', {
+    method: 'POST',
+    headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({ action: 'save_all', token: authToken, entries: localKnowledge })
+  })
+  .then(function(r) { return r.json(); })
+  .then(function(d) {
+    var btn = document.querySelector('button[onclick="saveQuickEdits()"]');
+    if (btn) {
+      var orig = btn.textContent;
+      btn.textContent = d.success ? '✓ OPGESLAGEN IN DATABASE' : '✗ FOUT: ' + (d.error||'');
+      setTimeout(function(){ btn.textContent = orig; }, 2500);
+    }
+  })
+  .catch(function(e) {
+    alert('Verbindingsfout: ' + e.message);
+  });
 }
 
 function validateAndAdd() {
@@ -447,10 +472,27 @@ function validateAndAdd() {
     if (ph.trim()) entry.photographer_name = ph.trim();
     if (yu.trim()) entry.youtube_url = yu.trim();
     if (sd.trim()) entry.style_description = sd.trim();
-    localKnowledge.push(entry);
-    localStorage.setItem('snood_knowledge_base', JSON.stringify(localKnowledge));
-    document.getElementById('addSuccess').textContent = '✓ Entry toegevoegd! Ga naar Exporteren om knowledge-base.json te downloaden en op GitHub te uploaden.';
-    document.getElementById('addSuccess').classList.remove('hidden');
+    // Sla op via API naar Redis
+    fetch('/api/knowledge', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({ action: 'add', token: authToken, entry: entry })
+    })
+    .then(function(r) { return r.json(); })
+    .then(function(d) {
+      if (d.success) {
+        localKnowledge.push(entry);
+        document.getElementById('addSuccess').textContent = '✓ Entry opgeslagen in database (' + d.count + ' totaal).';
+        document.getElementById('addSuccess').classList.remove('hidden');
+        clearAddForm();
+        renderAll();
+        renderQuickEditGrid();
+      } else {
+        showAddError(d.error || 'Opslaan mislukt');
+      }
+    })
+    .catch(function(e) { showAddError('Verbindingsfout: ' + e.message); });
+    return; // prevent double-push
     document.getElementById('newEntryJson').value = '';
     renderAll();
   } catch(e) {
@@ -610,6 +652,29 @@ function deleteUser(email) {
   .then(function(d) {
     if (d.success) loadUsers();
     else alert('Fout: ' + (d.error || 'Onbekend'));
+  });
+}
+
+function initFromFile() {
+  if (!confirm('Huidige knowledge-base.json in database laden? Dit overschrijft de huidige database-inhoud.')) return;
+  fetch('/api/knowledge', {
+    method: 'POST',
+    headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({ action: 'init_from_file', token: authToken })
+  })
+  .then(function(r) { return r.json(); })
+  .then(function(d) {
+    var el = document.getElementById('initResult');
+    if (d.success) {
+      el.textContent = '✓ ' + d.message;
+      loadKnowledge(); // herlaad kennisbank
+    } else {
+      el.style.color = 'var(--error)';
+      el.textContent = '✗ ' + (d.error || 'Onbekende fout');
+    }
+  })
+  .catch(function(e) {
+    document.getElementById('initResult').textContent = 'Verbindingsfout: ' + e.message;
   });
 }
 </script>

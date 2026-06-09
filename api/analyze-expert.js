@@ -3,27 +3,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-async function loadKnowledgeBase() {
-  // Probeer eerst Redis
-  try {
-    const url   = process.env.KV_REST_API_URL   || process.env.UPSTASH_REDIS_REST_URL;
-    const token = process.env.KV_REST_API_TOKEN  || process.env.UPSTASH_REDIS_REST_TOKEN;
-    if (url && token) {
-      const r = await fetch(url, {
-        method: 'POST',
-        headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
-        body: JSON.stringify(['GET', 'knowledge:db'])
-      });
-      const d = await r.json();
-      if (d.result) {
-        const parsed = JSON.parse(d.result);
-        if (Array.isArray(parsed) && parsed.length > 0) return parsed;
-      }
-    }
-  } catch(e) {
-    console.log('Redis fallback voor kennisbank:', e.message);
-  }
-  // Fallback: JSON bestand
+function loadKnowledgeBase() {
   try {
     const filePath = path.join(process.cwd(), 'knowledge-base.json');
     const data = fs.readFileSync(filePath, 'utf-8');
@@ -63,23 +43,79 @@ function selectRelevantKnowledge(knowledgeBase, genre, mood, light) {
 
 function buildKnowledgeContext(relevant) {
   if (!relevant.length) return '';
-  let ctx = '\n\nEXPERT KENNISBANK - gebruik deze professionele inzichten:\n';
-  relevant.forEach((entry, i) => {
-    ctx += `\n[Expert ${i+1} - ${(entry.genre||[]).join('/')}]:\n`;
-    ctx += `Filosofie: ${entry.philosophy}\n`;
-    if (entry.techniques && entry.techniques.length) {
-      entry.techniques.slice(0,3).forEach(t => {
-        ctx += `- ${t.name}: ${t.description} (bij: ${t.when_to_use})\n`;
+
+  const primary = relevant[0];
+  const photographerName = primary.photographer_name || null;
+
+  let ctx = '';
+
+  if (photographerName) {
+    // Specifieke fotograaf geselecteerd — dwingende stijlrichtlijnen
+    ctx += `\n\n=== VERPLICHTE BEWERKINGSSTIJL: ${photographerName} ===\n`;
+    ctx += `Je MOET deze specifieke stijl toepassen in elk onderdeel van je advies. Dit is geen suggestie.\n`;
+    ctx += `\nKernfilosofie: ${primary.philosophy}\n`;
+    if (primary.workflow_order && primary.workflow_order.length) {
+      ctx += `\nBewerkingsvolgorde van ${photographerName}:\n`;
+      primary.workflow_order.slice(0,5).forEach(s => ctx += `  ${s}\n`);
+    }
+    if (primary.techniques && primary.techniques.length) {
+      ctx += `\nVERPLICHTE TECHNIEKEN — noem deze expliciet bij naam in je advies:\n`;
+      primary.techniques.slice(0,4).forEach(t => {
+        ctx += `• ${t.name}: ${t.description}\n`;
+        ctx += `  Toepassen bij: ${t.when_to_use}\n`;
+        if (t.effect) ctx += `  Effect: ${t.effect}\n`;
       });
     }
-    if (entry.unique_insights && entry.unique_insights.length) {
-      ctx += `Inzichten: ${entry.unique_insights.slice(0,2).join('. ')}\n`;
+    if (primary.color_approach) {
+      ctx += `\nKleurbenadering van ${photographerName}:\n${primary.color_approach}\n`;
     }
-    if (entry.what_to_avoid && entry.what_to_avoid.length) {
-      ctx += `Vermijd: ${entry.what_to_avoid.slice(0,2).join(', ')}\n`;
+    if (primary.local_adjustments) {
+      ctx += `\nLokale aanpassingen volgens ${photographerName}:\n${primary.local_adjustments}\n`;
     }
-  });
-  ctx += '\nPas toe waar relevant, forceer niets.\n';
+    if (primary.what_to_avoid && primary.what_to_avoid.length) {
+      ctx += `\nUITDRUKKELIJK VERMIJDEN (${photographerName} vermijdt dit altijd):\n`;
+      primary.what_to_avoid.forEach(w => ctx += `✗ ${w}\n`);
+    }
+    if (primary.unique_insights && primary.unique_insights.length) {
+      ctx += `\nUnieke inzichten van ${photographerName} die je MOET verwerken:\n`;
+      primary.unique_insights.forEach(ins => ctx += `★ ${ins}\n`);
+    }
+    ctx += `\n=== EINDE STIJL ${photographerName} ===\n`;
+    ctx += `\nBelangrijk: Verwijs in je advies actief naar de bovenstaande technieken. `;
+    ctx += `Geef adviezen die specifiek passen bij de bewerkingsfilosofie van ${photographerName}. `;
+    ctx += `Een gebruiker moet na het lezen begrijpen dat dit advies gebaseerd is op een specifieke fotografenstijl.\n`;
+  } else {
+    // Geen specifieke fotograaf — gebruik relevante entries als richtlijnen
+    ctx += `\n\nEXPERT STIJLRICHTLIJNEN — verwerk actief in je advies:\n`;
+    relevant.forEach((entry, i) => {
+      const label = `Expert ${i+1} (${(entry.genre||[]).join('/')})`;
+      ctx += `\n[${label}]:\n`;
+      ctx += `Filosofie: ${entry.philosophy}\n`;
+      if (entry.techniques && entry.techniques.length) {
+        entry.techniques.slice(0,2).forEach(t => {
+          ctx += `• ${t.name}: ${t.description}\n`;
+        });
+      }
+      if (entry.unique_insights && entry.unique_insights.length) {
+        ctx += `Kerninsight: ${entry.unique_insights[0]}\n`;
+      }
+      if (entry.what_to_avoid && entry.what_to_avoid.length) {
+        ctx += `Vermijd: ${entry.what_to_avoid[0]}\n`;
+      }
+    });
+    ctx += `\nPas bovenstaande filosofieën en technieken actief toe in je bewerkingsadvies.\n`;
+  }
+
+  // Aanvullende experts als er meerdere zijn
+  if (photographerName && relevant.length > 1) {
+    ctx += `\nAanvullende context:\n`;
+    relevant.slice(1).forEach(entry => {
+      if (entry.photographer_name) {
+        ctx += `[${entry.photographer_name}]: ${entry.philosophy.substring(0,150)}...\n`;
+      }
+    });
+  }
+
   return ctx;
 }
 
@@ -95,9 +131,18 @@ module.exports = async function handler(req, res) {
     if (!parts || !systemPrompt) return res.status(400).json({ error: 'Ontbrekende velden' });
 
     const knowledgeBase = await loadKnowledgeBase();
-    const relevant = photoContext
-      ? selectRelevantKnowledge(knowledgeBase, photoContext.genre, photoContext.mood, photoContext.light)
-      : [];
+    let relevant = [];
+    if (photoContext && photoContext.forcedEntry) {
+      // Specifieke stijl gekozen: gebruik die als primair met _forced flag
+      const forced = Object.assign({}, photoContext.forcedEntry, { _forced: true });
+      const extra = selectRelevantKnowledge(
+        knowledgeBase.filter(e => e.video_title !== forced.video_title),
+        photoContext.genre, photoContext.mood, photoContext.light
+      ).slice(0, 2);
+      relevant = [forced, ...extra];
+    } else if (photoContext) {
+      relevant = selectRelevantKnowledge(knowledgeBase, photoContext.genre, photoContext.mood, photoContext.light);
+    }
     const knowledgeContext = buildKnowledgeContext(relevant);
     const enhancedPrompt = systemPrompt + knowledgeContext;
 

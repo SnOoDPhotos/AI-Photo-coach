@@ -3,7 +3,27 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-function loadKnowledgeBase() {
+async function loadKnowledgeBase() {
+  // Probeer eerst Redis
+  try {
+    const url   = process.env.KV_REST_API_URL   || process.env.UPSTASH_REDIS_REST_URL;
+    const token = process.env.KV_REST_API_TOKEN  || process.env.UPSTASH_REDIS_REST_TOKEN;
+    if (url && token) {
+      const r = await fetch(url, {
+        method: 'POST',
+        headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify(['GET', 'knowledge:db'])
+      });
+      const d = await r.json();
+      if (d.result) {
+        const parsed = JSON.parse(d.result);
+        if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+      }
+    }
+  } catch(e) {
+    console.log('Redis fallback voor kennisbank:', e.message);
+  }
+  // Fallback: JSON bestand
   try {
     const filePath = path.join(process.cwd(), 'knowledge-base.json');
     const data = fs.readFileSync(filePath, 'utf-8');
@@ -45,10 +65,7 @@ function buildKnowledgeContext(relevant) {
   if (!relevant.length) return '';
   let ctx = '\n\nEXPERT KENNISBANK - gebruik deze professionele inzichten:\n';
   relevant.forEach((entry, i) => {
-    const label = entry.photographer_name
-      ? `${entry.photographer_name} - ${(entry.genre||[]).join('/')}`
-      : (entry.genre||[]).join('/');
-    ctx += `\n[Expert ${i+1} - ${label}]:\n`;
+    ctx += `\n[Expert ${i+1} - ${(entry.genre||[]).join('/')}]:\n`;
     ctx += `Filosofie: ${entry.philosophy}\n`;
     if (entry.techniques && entry.techniques.length) {
       entry.techniques.slice(0,3).forEach(t => {
@@ -77,20 +94,10 @@ module.exports = async function handler(req, res) {
     const { provider, parts, systemPrompt, maxTokens, photoContext } = req.body;
     if (!parts || !systemPrompt) return res.status(400).json({ error: 'Ontbrekende velden' });
 
-    const knowledgeBase = loadKnowledgeBase();
-    let relevant = [];
-    if (photoContext && photoContext.forcedEntry) {
-      // Admin heeft een specifieke stijl gekozen: die staat voorop
-      relevant = [photoContext.forcedEntry];
-      // Vul aan met andere relevante entries (max 2 extra)
-      const extra = selectRelevantKnowledge(
-        knowledgeBase.filter(e => e.video_title !== photoContext.forcedEntry.video_title),
-        photoContext.genre, photoContext.mood, photoContext.light
-      ).slice(0, 2);
-      relevant = relevant.concat(extra);
-    } else if (photoContext) {
-      relevant = selectRelevantKnowledge(knowledgeBase, photoContext.genre, photoContext.mood, photoContext.light);
-    }
+    const knowledgeBase = await loadKnowledgeBase();
+    const relevant = photoContext
+      ? selectRelevantKnowledge(knowledgeBase, photoContext.genre, photoContext.mood, photoContext.light)
+      : [];
     const knowledgeContext = buildKnowledgeContext(relevant);
     const enhancedPrompt = systemPrompt + knowledgeContext;
 
@@ -114,11 +121,7 @@ module.exports = async function handler(req, res) {
     return res.status(200).json({
       text,
       expertSources: relevant.length,
-      knowledgeUsed: relevant.map(e => ({
-        title: e.video_title,
-        photographer: e.photographer_name || null,
-        url: e.youtube_url || null
-      }))
+      knowledgeUsed: relevant.map(e => e.video_title)
     });
 
   } catch (err) {

@@ -173,7 +173,7 @@ input:focus,textarea:focus{border-color:var(--accent)}
         <div style="margin-top:24px;padding-top:20px;border-top:1px solid var(--border)">
           <h3 style="margin-bottom:8px">DATABASE INITIALISEREN</h3>
           <p style="font-size:12px;color:var(--muted);margin-bottom:12px;line-height:1.7">Eenmalig: laad de huidige <code>knowledge-base.json</code> van de server in de database. Doe dit als de kennisbank leeg lijkt terwijl je weet dat het JSON bestand entries heeft.</p>
-          <button class="btn btn-sm btn-outline" onclick="initFromFile()">&#8679; LAAD knowledge-base.json IN DATABASE</button>
+          <button class="btn btn-sm" onclick="pushToDatabase()">&#8679; STUUR HUIDIGE KENNISBANK NAAR DATABASE</button>
           <div id="initResult" style="font-family:monospace;font-size:11px;margin-top:10px;color:var(--accent)"></div>
         </div>
       </div>
@@ -655,28 +655,36 @@ function deleteUser(email) {
   });
 }
 
-function initFromFile() {
-  if (!confirm('Huidige knowledge-base.json in database laden? Dit overschrijft de huidige database-inhoud.')) return;
+function pushToDatabase() {
+  if (!localKnowledge.length) {
+    alert('Geen kennisbank geladen. Zorg dat de entries zichtbaar zijn in het Overzicht.');
+    return;
+  }
+  if (!confirm('Huidige kennisbank (' + localKnowledge.length + ' entries) naar database sturen? Dit overschrijft de huidige database-inhoud.')) return;
+  var el = document.getElementById('initResult');
+  el.style.color = 'var(--accent)';
+  el.textContent = 'Bezig met opslaan...';
   fetch('/api/knowledge', {
     method: 'POST',
     headers: {'Content-Type':'application/json'},
-    body: JSON.stringify({ action: 'init_from_file', token: authToken })
+    body: JSON.stringify({ action: 'save_all', token: authToken, entries: localKnowledge })
   })
   .then(function(r) { return r.json(); })
   .then(function(d) {
-    var el = document.getElementById('initResult');
     if (d.success) {
-      el.textContent = '✓ ' + d.message;
-      loadKnowledge(); // herlaad kennisbank
+      el.textContent = '✓ ' + d.count + ' entries opgeslagen in database';
     } else {
       el.style.color = 'var(--error)';
       el.textContent = '✗ ' + (d.error || 'Onbekende fout');
     }
   })
   .catch(function(e) {
-    document.getElementById('initResult').textContent = 'Verbindingsfout: ' + e.message;
+    el.style.color = 'var(--error)';
+    el.textContent = 'Verbindingsfout: ' + e.message;
   });
 }
+
+function initFromFile() { pushToDatabase(); }
 </script>
 </body>
 </html>

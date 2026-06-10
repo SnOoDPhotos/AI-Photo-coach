@@ -256,18 +256,32 @@ function showAdminPanel() {
 }
 
 function loadKnowledge() {
-  fetch('/knowledge-base.json')
-    .then(function(r) { return r.json(); })
-    .then(function(d) {
-      if (Array.isArray(d)) {
-        localKnowledge = d;
-        localStorage.setItem('snood_knowledge_base', JSON.stringify(d));
-      }
+  fetch('/api/knowledge', {
+    method: 'POST',
+    headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({ action: 'list', token: authToken })
+  })
+  .then(function(r) { return r.json(); })
+  .then(function(d) {
+    if (d.success && Array.isArray(d.entries) && d.entries.length > 0) {
+      localKnowledge = d.entries;
       renderAll();
-    })
-    .catch(function() {
-      if (localKnowledge.length > 0) renderAll();
-    });
+    } else {
+      fetch('/knowledge-base.json')
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+          if (Array.isArray(data) && data.length > 0) localKnowledge = data;
+          renderAll();
+        })
+        .catch(function() { renderAll(); });
+    }
+  })
+  .catch(function() {
+    fetch('/knowledge-base.json')
+      .then(function(r) { return r.json(); })
+      .then(function(d) { if (Array.isArray(d)) localKnowledge = d; renderAll(); })
+      .catch(function() { renderAll(); });
+  });
 }
 
 function renderAll() {

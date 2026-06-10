@@ -146,7 +146,7 @@ input:focus,textarea:focus{border-color:var(--accent)}
 
       <div class="section" style="margin-top:20px">
         <h3>JSON IMPORTEREN</h3>
-        <p style="font-size:12px;color:var(--muted);margin-bottom:12px;line-height:1.7">Upload een knowledge-base.json rechtstreeks vanuit je computer. Vervangt de huidige kennisbank én slaat direct op in de database — geen GitHub nodig.</p>
+        <p style="font-size:12px;color:var(--muted);margin-bottom:12px;line-height:1.7">Upload een knowledge-base.json rechtstreeks vanuit je computer. Vervangt de huidige kennisbank én slaat direct op in de database.</p>
         <label style="display:inline-block;cursor:pointer">
           <input type="file" accept=".json" id="importFileInput" style="display:none" onchange="importJsonFile(this)">
           <span class="btn btn-sm" style="display:inline-block">&#8679; KIES knowledge-base.json</span>
@@ -156,7 +156,7 @@ input:focus,textarea:focus{border-color:var(--accent)}
 
       <div class="section" style="margin-top:20px">
         <h3>DATABASE BIJWERKEN</h3>
-        <p style="font-size:12px;color:var(--muted);margin-bottom:12px;line-height:1.7">Stuur de huidige kennisbank (zoals zichtbaar in Overzicht) direct naar de database.</p>
+        <p style="font-size:12px;color:var(--muted);margin-bottom:12px;line-height:1.7">Stuur de huidige kennisbank direct naar de database.</p>
         <button class="btn btn-sm btn-outline" onclick="pushToDatabase()">&#8679; STUUR HUIDIGE KENNISBANK NAAR DATABASE</button>
         <div id="initResult" style="font-family:monospace;font-size:11px;margin-top:10px;color:var(--accent)"></div>
       </div>
@@ -273,18 +273,41 @@ function showAdminPanel() {
 }
 
 function loadKnowledge() {
-  fetch('/knowledge-base.json')
-    .then(function(r) { return r.json(); })
-    .then(function(d) {
-      if (Array.isArray(d)) {
-        localKnowledge = d;
-        localStorage.setItem('snood_knowledge_base', JSON.stringify(d));
-      }
+  // Altijd eerst Redis raadplegen
+  fetch('/api/knowledge', {
+    method: 'POST',
+    headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({ action: 'list', token: authToken })
+  })
+  .then(function(r) { return r.json(); })
+  .then(function(d) {
+    if (d.success && Array.isArray(d.entries) && d.entries.length > 0) {
+      localKnowledge = d.entries;
       renderAll();
-    })
-    .catch(function() {
-      if (localKnowledge.length > 0) renderAll();
-    });
+    } else {
+      // Fallback naar JSON bestand alleen als Redis echt leeg is
+      fetch('/knowledge-base.json')
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+          if (Array.isArray(data) && data.length > 0) {
+            localKnowledge = data;
+            var el = document.getElementById('importResult');
+            if (el) {
+              el.style.color = 'var(--accent)';
+              el.textContent = 'Database leeg — geladen uit knowledge-base.json. Gebruik "STUUR NAAR DATABASE" om op te slaan.';
+            }
+          }
+          renderAll();
+        })
+        .catch(function() { renderAll(); });
+    }
+  })
+  .catch(function() {
+    fetch('/knowledge-base.json')
+      .then(function(r) { return r.json(); })
+      .then(function(d) { if (Array.isArray(d)) localKnowledge = d; renderAll(); })
+      .catch(function() { renderAll(); });
+  });
 }
 
 function renderAll() {
@@ -416,8 +439,7 @@ function importJsonFile(input) {
       var data = JSON.parse(e.target.result);
       if (!Array.isArray(data)) throw new Error('Geen geldige array');
       localKnowledge = data;
-      el.textContent = data.length + ' entries geladen uit bestand. Opslaan naar database...';
-      // Direct opslaan naar Redis
+      el.textContent = data.length + ' entries geladen. Opslaan naar database...';
       fetch('/api/knowledge', {
         method: 'POST',
         headers: {'Content-Type':'application/json'},
@@ -426,11 +448,11 @@ function importJsonFile(input) {
       .then(function(r) { return r.json(); })
       .then(function(d) {
         if (d.success) {
-          el.textContent = '✓ ' + d.count + ' entries geïmporteerd en opgeslagen in database!';
+          el.textContent = '✓ ' + d.count + ' entries geïmporteerd en opgeslagen!';
           renderAll();
         } else {
           el.style.color = 'var(--error)';
-          el.textContent = '✗ Database fout: ' + (d.error || 'onbekend');
+          el.textContent = '✗ ' + (d.error || 'Fout bij opslaan');
         }
       })
       .catch(function(err) {
@@ -439,19 +461,15 @@ function importJsonFile(input) {
       });
     } catch(err) {
       el.style.color = 'var(--error)';
-      el.textContent = '✗ Ongeldig JSON bestand: ' + err.message;
+      el.textContent = '✗ Ongeldig JSON: ' + err.message;
     }
   };
   reader.readAsText(file);
-  // Reset input zodat hetzelfde bestand opnieuw gekozen kan worden
   input.value = '';
 }
 
 function pushToDatabase() {
-  if (!localKnowledge.length) {
-    alert('Geen kennisbank geladen. Ga eerst naar Overzicht.');
-    return;
-  }
+  if (!localKnowledge.length) { alert('Geen kennisbank geladen.'); return; }
   if (!confirm('Huidige kennisbank (' + localKnowledge.length + ' entries) naar database sturen?')) return;
   var el = document.getElementById('initResult');
   el.style.color = 'var(--accent)';
@@ -464,7 +482,7 @@ function pushToDatabase() {
   .then(function(r) { return r.json(); })
   .then(function(d) {
     if (d.success) {
-      el.textContent = '✓ ' + d.count + ' entries opgeslagen in database';
+      el.textContent = '✓ ' + d.count + ' entries opgeslagen';
     } else {
       el.style.color = 'var(--error)';
       el.textContent = '✗ ' + (d.error || 'Fout');
@@ -472,7 +490,7 @@ function pushToDatabase() {
   })
   .catch(function(e) {
     el.style.color = 'var(--error)';
-    el.textContent = '✗ Verbindingsfout: ' + e.message;
+    el.textContent = '✗ ' + e.message;
   });
 }
 

@@ -143,23 +143,6 @@ input:focus,textarea:focus{border-color:var(--accent)}
         </div>
         <button class="btn btn-sm" onclick="exportKnowledge()">&#8595; DOWNLOAD knowledge-base.json</button>
       </div>
-
-      <div class="section" style="margin-top:20px">
-        <h3>JSON IMPORTEREN</h3>
-        <p style="font-size:12px;color:var(--muted);margin-bottom:12px;line-height:1.7">Upload een knowledge-base.json rechtstreeks vanuit je computer. Vervangt de huidige kennisbank én slaat direct op in de database.</p>
-        <label style="display:inline-block;cursor:pointer">
-          <input type="file" accept=".json" id="importFileInput" style="display:none" onchange="importJsonFile(this)">
-          <span class="btn btn-sm" style="display:inline-block">&#8679; KIES knowledge-base.json</span>
-        </label>
-        <div id="importResult" style="font-family:monospace;font-size:11px;margin-top:10px;color:var(--accent)"></div>
-      </div>
-
-      <div class="section" style="margin-top:20px">
-        <h3>DATABASE BIJWERKEN</h3>
-        <p style="font-size:12px;color:var(--muted);margin-bottom:12px;line-height:1.7">Stuur de huidige kennisbank direct naar de database.</p>
-        <button class="btn btn-sm btn-outline" onclick="pushToDatabase()">&#8679; STUUR HUIDIGE KENNISBANK NAAR DATABASE</button>
-        <div id="initResult" style="font-family:monospace;font-size:11px;margin-top:10px;color:var(--accent)"></div>
-      </div>
     </div>
 
     <!-- Users tab -->
@@ -273,41 +256,18 @@ function showAdminPanel() {
 }
 
 function loadKnowledge() {
-  // Altijd eerst Redis raadplegen
-  fetch('/api/knowledge', {
-    method: 'POST',
-    headers: {'Content-Type':'application/json'},
-    body: JSON.stringify({ action: 'list', token: authToken })
-  })
-  .then(function(r) { return r.json(); })
-  .then(function(d) {
-    if (d.success && Array.isArray(d.entries) && d.entries.length > 0) {
-      localKnowledge = d.entries;
+  fetch('/knowledge-base.json')
+    .then(function(r) { return r.json(); })
+    .then(function(d) {
+      if (Array.isArray(d)) {
+        localKnowledge = d;
+        localStorage.setItem('snood_knowledge_base', JSON.stringify(d));
+      }
       renderAll();
-    } else {
-      // Fallback naar JSON bestand alleen als Redis echt leeg is
-      fetch('/knowledge-base.json')
-        .then(function(r) { return r.json(); })
-        .then(function(data) {
-          if (Array.isArray(data) && data.length > 0) {
-            localKnowledge = data;
-            var el = document.getElementById('importResult');
-            if (el) {
-              el.style.color = 'var(--accent)';
-              el.textContent = 'Database leeg — geladen uit knowledge-base.json. Gebruik "STUUR NAAR DATABASE" om op te slaan.';
-            }
-          }
-          renderAll();
-        })
-        .catch(function() { renderAll(); });
-    }
-  })
-  .catch(function() {
-    fetch('/knowledge-base.json')
-      .then(function(r) { return r.json(); })
-      .then(function(d) { if (Array.isArray(d)) localKnowledge = d; renderAll(); })
-      .catch(function() { renderAll(); });
-  });
+    })
+    .catch(function() {
+      if (localKnowledge.length > 0) renderAll();
+    });
 }
 
 function renderAll() {
@@ -359,6 +319,7 @@ function renderEntries() {
     return '<div class="entry-card" onclick="showDetail('+idx+')">'
       + '<div>'
       + '<div class="entry-title">' + (e.video_title||'Geen titel') + '</div>'
+      + (e.photographer_name ? '<div style="font-family:monospace;font-size:10px;color:var(--accent);margin-top:2px;opacity:0.9">' + e.photographer_name + (e.youtube_url ? ' <a href="'+e.youtube_url+'" target="_blank" onclick="event.stopPropagation()" style="color:var(--accent);opacity:0.6;text-decoration:none">&#9654;</a>' : '') + '</div>' : '')
       + '<div class="entry-meta" style="margin-top:4px">'
       + (e.genre||[]).map(function(g){return '<span class="tag">'+g+'</span>';}).join('')
       + (e.mood||[]).slice(0,2).map(function(m){return '<span class="tag" style="opacity:0.6">'+m+'</span>';}).join('')
@@ -370,12 +331,33 @@ function renderEntries() {
   }).join('') : '<div style="color:var(--muted);font-size:13px;padding:20px;text-align:center">Geen entries gevonden</div>';
 }
 
+var currentDetailIdx = -1;
+
 function showDetail(idx) {
   var e = localKnowledge[idx];
   if (!e) return;
+  currentDetailIdx = idx;
   document.getElementById('detailTitle').textContent = e.video_title || 'Entry';
+
   var html = '';
-  if (e.philosophy) html += '<div style="margin-bottom:16px"><div style="font-family:monospace;font-size:10px;color:var(--muted);margin-bottom:6px;letter-spacing:1px">FILOSOFIE</div><div style="font-size:13px;line-height:1.7;color:var(--text)">'+e.philosophy+'</div></div>';
+
+  // Bewerkbare basisvelden
+  html += '<div style="background:rgba(232,197,71,0.04);border:1px solid rgba(232,197,71,0.15);padding:16px;margin-bottom:16px">';
+  html += '<div style="font-family:monospace;font-size:10px;color:var(--accent);letter-spacing:2px;margin-bottom:12px">BEWERKEN</div>';
+  html += '<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px">';
+  html += '<div><label style="font-size:10px;letter-spacing:1px">FOTOGRAFNAAM</label><input id="editPhotographer" type="text" value="'+(e.photographer_name||'')+'" style="width:100%;background:var(--bg);border:1px solid var(--border);color:var(--text);padding:8px 10px;font-family:monospace;font-size:12px;outline:none;margin-top:3px"></div>';
+  html += '<div><label style="font-size:10px;letter-spacing:1px">MODELNAAM</label><input id="editStyleDesc" type="text" value="'+(e.style_description||'')+'" style="width:100%;background:var(--bg);border:1px solid var(--border);color:var(--text);padding:8px 10px;font-family:monospace;font-size:12px;outline:none;margin-top:3px"></div>';
+  html += '</div>';
+  html += '<div style="margin-bottom:10px"><label style="font-size:10px;letter-spacing:1px">YOUTUBE URL</label><input id="editYoutube" type="url" value="'+(e.youtube_url||'')+'" style="width:100%;background:var(--bg);border:1px solid var(--border);color:var(--text);padding:8px 10px;font-family:monospace;font-size:12px;outline:none;margin-top:3px"></div>';
+  html += '<div style="margin-bottom:10px"><label style="font-size:10px;letter-spacing:1px">FILOSOFIE</label><textarea id="editPhilosophy" rows="3" style="width:100%;background:var(--bg);border:1px solid var(--border);color:var(--text);padding:8px 10px;font-family:monospace;font-size:12px;outline:none;margin-top:3px;resize:vertical">'+(e.philosophy||'')+'</textarea></div>';
+  html += '<div style="display:flex;gap:8px">';
+  html += '<button class="btn btn-sm" onclick="saveDetailEdit()">OPSLAAN</button>';
+  html += '<button class="btn btn-sm btn-outline" style="border-color:var(--error);color:var(--error)" onclick="deleteEntry('+idx+')">VERWIJDEREN</button>';
+  html += '</div>';
+  html += '<div id="editSaveResult" style="font-family:monospace;font-size:11px;margin-top:8px;color:var(--accent)"></div>';
+  html += '</div>';
+
+  // Readonly info
   if (e.techniques && e.techniques.length) {
     html += '<div style="font-family:monospace;font-size:10px;color:var(--muted);margin-bottom:8px;letter-spacing:1px">TECHNIEKEN ('+e.techniques.length+')</div>';
     e.techniques.forEach(function(t) {
@@ -388,8 +370,70 @@ function showDetail(idx) {
     html += '<div style="font-family:monospace;font-size:10px;color:var(--muted);margin:12px 0 8px;letter-spacing:1px">UNIEKE INZICHTEN</div>';
     e.unique_insights.forEach(function(i) { html += '<div style="font-size:13px;line-height:1.7;margin-bottom:6px;padding-left:12px;border-left:2px solid var(--accent)">'+i+'</div>'; });
   }
+  if (e.what_to_avoid && e.what_to_avoid.length) {
+    html += '<div style="font-family:monospace;font-size:10px;color:var(--muted);margin:12px 0 8px;letter-spacing:1px">VERMIJDEN</div>';
+    e.what_to_avoid.forEach(function(w) { html += '<div style="font-size:12px;line-height:1.6;margin-bottom:4px;color:var(--muted)">✗ '+w+'</div>'; });
+  }
+
   document.getElementById('detailContent').innerHTML = html;
   document.getElementById('detailModal').classList.remove('hidden');
+}
+
+function saveDetailEdit() {
+  if (currentDetailIdx < 0) return;
+  var e = localKnowledge[currentDetailIdx];
+  e.photographer_name = document.getElementById('editPhotographer').value.trim();
+  e.style_description  = document.getElementById('editStyleDesc').value.trim();
+  e.youtube_url        = document.getElementById('editYoutube').value.trim();
+  e.philosophy         = document.getElementById('editPhilosophy').value.trim();
+
+  var el = document.getElementById('editSaveResult');
+  el.style.color = 'var(--accent)';
+  el.textContent = 'Opslaan...';
+
+  fetch('/api/knowledge', {
+    method: 'POST',
+    headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({ action: 'update', token: authToken, index: currentDetailIdx, fields: {
+      photographer_name: e.photographer_name,
+      style_description: e.style_description,
+      youtube_url: e.youtube_url,
+      philosophy: e.philosophy
+    }})
+  })
+  .then(function(r) { return r.json(); })
+  .then(function(d) {
+    if (d.success) {
+      el.textContent = '✓ Opgeslagen';
+      renderAll();
+    } else {
+      el.style.color = 'var(--error)';
+      el.textContent = '✗ ' + (d.error || 'Fout');
+    }
+  })
+  .catch(function(e) {
+    el.style.color = 'var(--error)';
+    el.textContent = '✗ ' + e.message;
+  });
+}
+
+function deleteEntry(idx) {
+  if (!confirm('Entry verwijderen: "' + (localKnowledge[idx]||{}).video_title + '"?')) return;
+  fetch('/api/knowledge', {
+    method: 'POST',
+    headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({ action: 'delete', token: authToken, index: idx })
+  })
+  .then(function(r) { return r.json(); })
+  .then(function(d) {
+    if (d.success) {
+      localKnowledge.splice(idx, 1);
+      document.getElementById('detailModal').classList.add('hidden');
+      renderAll();
+    } else {
+      alert('Fout: ' + (d.error || 'onbekend'));
+    }
+  });
 }
 
 function closeDetail(e) {
@@ -425,73 +469,6 @@ function validateAndAdd() {
 function showAddError(msg) {
   var el = document.getElementById('addError');
   el.textContent = msg; el.classList.remove('hidden');
-}
-
-function importJsonFile(input) {
-  var file = input.files[0];
-  if (!file) return;
-  var el = document.getElementById('importResult');
-  el.style.color = 'var(--accent)';
-  el.textContent = 'Bestand lezen...';
-  var reader = new FileReader();
-  reader.onload = function(e) {
-    try {
-      var data = JSON.parse(e.target.result);
-      if (!Array.isArray(data)) throw new Error('Geen geldige array');
-      localKnowledge = data;
-      el.textContent = data.length + ' entries geladen. Opslaan naar database...';
-      fetch('/api/knowledge', {
-        method: 'POST',
-        headers: {'Content-Type':'application/json'},
-        body: JSON.stringify({ action: 'save_all', token: authToken, entries: localKnowledge })
-      })
-      .then(function(r) { return r.json(); })
-      .then(function(d) {
-        if (d.success) {
-          el.textContent = '✓ ' + d.count + ' entries geïmporteerd en opgeslagen!';
-          renderAll();
-        } else {
-          el.style.color = 'var(--error)';
-          el.textContent = '✗ ' + (d.error || 'Fout bij opslaan');
-        }
-      })
-      .catch(function(err) {
-        el.style.color = 'var(--error)';
-        el.textContent = '✗ Verbindingsfout: ' + err.message;
-      });
-    } catch(err) {
-      el.style.color = 'var(--error)';
-      el.textContent = '✗ Ongeldig JSON: ' + err.message;
-    }
-  };
-  reader.readAsText(file);
-  input.value = '';
-}
-
-function pushToDatabase() {
-  if (!localKnowledge.length) { alert('Geen kennisbank geladen.'); return; }
-  if (!confirm('Huidige kennisbank (' + localKnowledge.length + ' entries) naar database sturen?')) return;
-  var el = document.getElementById('initResult');
-  el.style.color = 'var(--accent)';
-  el.textContent = 'Bezig...';
-  fetch('/api/knowledge', {
-    method: 'POST',
-    headers: {'Content-Type':'application/json'},
-    body: JSON.stringify({ action: 'save_all', token: authToken, entries: localKnowledge })
-  })
-  .then(function(r) { return r.json(); })
-  .then(function(d) {
-    if (d.success) {
-      el.textContent = '✓ ' + d.count + ' entries opgeslagen';
-    } else {
-      el.style.color = 'var(--error)';
-      el.textContent = '✗ ' + (d.error || 'Fout');
-    }
-  })
-  .catch(function(e) {
-    el.style.color = 'var(--error)';
-    el.textContent = '✗ ' + e.message;
-  });
 }
 
 function exportKnowledge() {

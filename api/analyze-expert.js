@@ -51,11 +51,13 @@ function buildKnowledgeContext(relevant) {
 
   if (photographerName) {
     // Specifieke fotograaf geselecteerd — dwingende stijlrichtlijnen
-    ctx += `\n\n=== VERPLICHTE BEWERKINGSSTIJL: ${photographerName} ===\n`;
+    const styleLabel = primary.style_description || (primary.genre||[]).join('/') || 'Geselecteerde stijl';
+    ctx += `\n\n=== VERPLICHTE BEWERKINGSSTIJL: ${styleLabel} ===\n`;
     ctx += `Je MOET deze specifieke stijl toepassen in elk onderdeel van je advies. Dit is geen suggestie.\n`;
+    ctx += `BELANGRIJK: Noem NOOIT de naam van een fotograaf in je advies. Verwijs alleen naar "deze stijl" of "deze aanpak".\n`;
     ctx += `\nKernfilosofie: ${primary.philosophy}\n`;
     if (primary.workflow_order && primary.workflow_order.length) {
-      ctx += `\nBewerkingsvolgorde van ${photographerName}:\n`;
+      ctx += `\nBewerkingsvolgorde voor deze stijl:\n`;
       primary.workflow_order.slice(0,5).forEach(s => ctx += `  ${s}\n`);
     }
     if (primary.techniques && primary.techniques.length) {
@@ -67,23 +69,21 @@ function buildKnowledgeContext(relevant) {
       });
     }
     if (primary.color_approach) {
-      ctx += `\nKleurbenadering van ${photographerName}:\n${primary.color_approach}\n`;
+      ctx += `\nKleurbenadering voor deze stijl:\n${primary.color_approach}\n`;
     }
     if (primary.local_adjustments) {
-      ctx += `\nLokale aanpassingen volgens ${photographerName}:\n${primary.local_adjustments}\n`;
+      ctx += `\nLokale aanpassingen voor deze stijl:\n${primary.local_adjustments}\n`;
     }
     if (primary.what_to_avoid && primary.what_to_avoid.length) {
-      ctx += `\nUITDRUKKELIJK VERMIJDEN (${photographerName} vermijdt dit altijd):\n`;
+      ctx += `\nUITDRUKKELIJK VERMIJDEN:\n`;
       primary.what_to_avoid.forEach(w => ctx += `✗ ${w}\n`);
     }
     if (primary.unique_insights && primary.unique_insights.length) {
-      ctx += `\nUnieke inzichten van ${photographerName} die je MOET verwerken:\n`;
+      ctx += `\nUnieke inzichten die je MOET verwerken:\n`;
       primary.unique_insights.forEach(ins => ctx += `★ ${ins}\n`);
     }
-    ctx += `\n=== EINDE STIJL ${photographerName} ===\n`;
-    ctx += `\nBelangrijk: Verwijs in je advies actief naar de bovenstaande technieken. `;
-    ctx += `Geef adviezen die specifiek passen bij de bewerkingsfilosofie van ${photographerName}. `;
-    ctx += `Een gebruiker moet na het lezen begrijpen dat dit advies gebaseerd is op een specifieke fotografenstijl.\n`;
+    ctx += `\n=== EINDE STIJLRICHTLIJNEN ===\n`;
+    ctx += `\nBelangrijk: Verwerk deze stijl actief in ELKE stap. Noem specifieke technieken bij naam. Noem NOOIT een fotografnaam.\n`;
   } else {
     // Geen specifieke fotograaf — gebruik relevante entries als richtlijnen
     ctx += `\n\nEXPERT STIJLRICHTLIJNEN — verwerk actief in je advies:\n`;
@@ -108,11 +108,9 @@ function buildKnowledgeContext(relevant) {
 
   // Aanvullende experts als er meerdere zijn
   if (photographerName && relevant.length > 1) {
-    ctx += `\nAanvullende context:\n`;
-    relevant.slice(1).forEach(entry => {
-      if (entry.photographer_name) {
-        ctx += `[${entry.photographer_name}]: ${entry.philosophy.substring(0,150)}...\n`;
-      }
+    ctx += `\nAanvullende context van vergelijkbare stijlen:\n`;
+    relevant.slice(1).forEach((entry, i) => {
+      ctx += `[Stijl ${i+2}]: ${entry.philosophy.substring(0,150)}...\n`;
     });
   }
 

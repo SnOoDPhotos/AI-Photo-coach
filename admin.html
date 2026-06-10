@@ -256,33 +256,18 @@ function showAdminPanel() {
 }
 
 function loadKnowledge() {
-  fetch('/api/knowledge', {
-    method: 'POST',
-    headers: {'Content-Type':'application/json'},
-    body: JSON.stringify({ action: 'list', token: authToken })
-  })
-  .then(function(r) { return r.json(); })
-  .then(function(d) {
-    if (d.success && Array.isArray(d.entries) && d.entries.length > 0) {
-      localKnowledge = d.entries;
+  fetch('/knowledge-base.json')
+    .then(function(r) { return r.json(); })
+    .then(function(d) {
+      if (Array.isArray(d)) {
+        localKnowledge = d;
+        localStorage.setItem('snood_knowledge_base', JSON.stringify(d));
+      }
       renderAll();
-    } else {
-      // Fallback naar JSON bestand alleen als Redis leeg is
-      fetch('/knowledge-base.json')
-        .then(function(r) { return r.json(); })
-        .then(function(data) {
-          if (Array.isArray(data) && data.length > 0) localKnowledge = data;
-          renderAll();
-        })
-        .catch(function() { renderAll(); });
-    }
-  })
-  .catch(function() {
-    fetch('/knowledge-base.json')
-      .then(function(r) { return r.json(); })
-      .then(function(d) { if (Array.isArray(d)) localKnowledge = d; renderAll(); })
-      .catch(function() { renderAll(); });
-  });
+    })
+    .catch(function() {
+      if (localKnowledge.length > 0) renderAll();
+    });
 }
 
 function renderAll() {
@@ -345,12 +330,44 @@ function renderEntries() {
   }).join('') : '<div style="color:var(--muted);font-size:13px;padding:20px;text-align:center">Geen entries gevonden</div>';
 }
 
+var currentDetailIdx = -1;
+
 function showDetail(idx) {
   var e = localKnowledge[idx];
   if (!e) return;
+  currentDetailIdx = idx;
   document.getElementById('detailTitle').textContent = e.video_title || 'Entry';
+
   var html = '';
-  if (e.philosophy) html += '<div style="margin-bottom:16px"><div style="font-family:monospace;font-size:10px;color:var(--muted);margin-bottom:6px;letter-spacing:1px">FILOSOFIE</div><div style="font-size:13px;line-height:1.7;color:var(--text)">'+e.philosophy+'</div></div>';
+
+  // Bewerkbaar blok bovenaan
+  html += '<div style="background:rgba(232,197,71,0.04);border:1px solid rgba(232,197,71,0.2);padding:16px;margin-bottom:16px">';
+  html += '<div style="font-family:monospace;font-size:10px;color:var(--accent);letter-spacing:2px;margin-bottom:12px">BEWERKEN</div>';
+
+  html += '<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px">';
+  html += '<div><label style="font-family:monospace;font-size:10px;letter-spacing:1px">FOTOGRAFNAAM</label>'
+       + '<input id="editPhotographer" type="text" value="'+(e.photographer_name||'')+'" style="width:100%;background:var(--bg);border:1px solid var(--border);color:var(--text);padding:8px 10px;font-family:monospace;font-size:12px;outline:none;margin-top:3px"></div>';
+  html += '<div><label style="font-family:monospace;font-size:10px;letter-spacing:1px">MODELNAAM</label>'
+       + '<input id="editStyleDesc" type="text" value="'+(e.style_description||'')+'" style="width:100%;background:var(--bg);border:1px solid var(--border);color:var(--text);padding:8px 10px;font-family:monospace;font-size:12px;outline:none;margin-top:3px"></div>';
+  html += '</div>';
+
+  html += '<div style="margin-bottom:10px"><label style="font-family:monospace;font-size:10px;letter-spacing:1px">YOUTUBE URL</label>'
+       + '<input id="editYoutube" type="url" value="'+(e.youtube_url||'')+'" style="width:100%;background:var(--bg);border:1px solid var(--border);color:var(--text);padding:8px 10px;font-family:monospace;font-size:12px;outline:none;margin-top:3px"></div>';
+
+  html += '<div style="margin-bottom:10px"><label style="font-family:monospace;font-size:10px;letter-spacing:1px">GENRE (komma gescheiden)</label>'
+       + '<input id="editGenre" type="text" value="'+(e.genre||[]).join(', ')+'" style="width:100%;background:var(--bg);border:1px solid var(--border);color:var(--text);padding:8px 10px;font-family:monospace;font-size:12px;outline:none;margin-top:3px"></div>';
+
+  html += '<div style="margin-bottom:12px"><label style="font-family:monospace;font-size:10px;letter-spacing:1px">FILOSOFIE</label>'
+       + '<textarea id="editPhilosophy" rows="3" style="width:100%;background:var(--bg);border:1px solid var(--border);color:var(--text);padding:8px 10px;font-family:monospace;font-size:12px;outline:none;margin-top:3px;resize:vertical">'+(e.philosophy||'')+'</textarea></div>';
+
+  html += '<div style="display:flex;gap:8px;align-items:center">';
+  html += '<button class="btn btn-sm" onclick="saveDetailEdit()">&#10003; OPSLAAN</button>';
+  html += '<button class="btn btn-sm btn-outline" style="border-color:var(--error);color:var(--error)" onclick="deleteEntry('+idx+')">&#10005; VERWIJDEREN</button>';
+  html += '</div>';
+  html += '<div id="editSaveResult" style="font-family:monospace;font-size:11px;margin-top:8px;color:var(--accent)"></div>';
+  html += '</div>';
+
+  // Readonly info
   if (e.techniques && e.techniques.length) {
     html += '<div style="font-family:monospace;font-size:10px;color:var(--muted);margin-bottom:8px;letter-spacing:1px">TECHNIEKEN ('+e.techniques.length+')</div>';
     e.techniques.forEach(function(t) {
@@ -363,8 +380,82 @@ function showDetail(idx) {
     html += '<div style="font-family:monospace;font-size:10px;color:var(--muted);margin:12px 0 8px;letter-spacing:1px">UNIEKE INZICHTEN</div>';
     e.unique_insights.forEach(function(i) { html += '<div style="font-size:13px;line-height:1.7;margin-bottom:6px;padding-left:12px;border-left:2px solid var(--accent)">'+i+'</div>'; });
   }
+  if (e.what_to_avoid && e.what_to_avoid.length) {
+    html += '<div style="font-family:monospace;font-size:10px;color:var(--muted);margin:12px 0 8px;letter-spacing:1px">VERMIJDEN</div>';
+    e.what_to_avoid.forEach(function(w) { html += '<div style="font-size:12px;color:var(--muted);margin-bottom:4px">&#10005; '+w+'</div>'; });
+  }
+
   document.getElementById('detailContent').innerHTML = html;
   document.getElementById('detailModal').classList.remove('hidden');
+}
+
+function saveDetailEdit() {
+  if (currentDetailIdx < 0) return;
+  var e = localKnowledge[currentDetailIdx];
+  var genreRaw = document.getElementById('editGenre').value;
+  var genre = genreRaw.split(',').map(function(g){return g.trim();}).filter(Boolean);
+
+  e.photographer_name = document.getElementById('editPhotographer').value.trim();
+  e.style_description  = document.getElementById('editStyleDesc').value.trim();
+  e.youtube_url        = document.getElementById('editYoutube').value.trim();
+  e.genre              = genre;
+  e.philosophy         = document.getElementById('editPhilosophy').value.trim();
+
+  var el = document.getElementById('editSaveResult');
+  el.style.color = 'var(--accent)';
+  el.textContent = 'Opslaan...';
+
+  fetch('/api/knowledge', {
+    method: 'POST',
+    headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({
+      action: 'update',
+      token: authToken,
+      index: currentDetailIdx,
+      fields: {
+        photographer_name: e.photographer_name,
+        style_description: e.style_description,
+        youtube_url:       e.youtube_url,
+        genre:             e.genre,
+        philosophy:        e.philosophy
+      }
+    })
+  })
+  .then(function(r) { return r.json(); })
+  .then(function(d) {
+    if (d.success) {
+      el.textContent = '✓ Opgeslagen';
+      renderAll();
+    } else {
+      el.style.color = 'var(--error)';
+      el.textContent = '✗ ' + (d.error || 'Fout');
+    }
+  })
+  .catch(function(err) {
+    el.style.color = 'var(--error)';
+    el.textContent = '✗ ' + err.message;
+  });
+}
+
+function deleteEntry(idx) {
+  var title = (localKnowledge[idx]||{}).video_title || 'deze entry';
+  if (!confirm('Verwijderen: "' + title + '"?')) return;
+  fetch('/api/knowledge', {
+    method: 'POST',
+    headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({ action: 'delete', token: authToken, index: idx })
+  })
+  .then(function(r) { return r.json(); })
+  .then(function(d) {
+    if (d.success) {
+      localKnowledge.splice(idx, 1);
+      document.getElementById('detailModal').classList.add('hidden');
+      renderAll();
+    } else {
+      alert('Fout: ' + (d.error || 'onbekend'));
+    }
+  })
+  .catch(function(err) { alert('Verbindingsfout: ' + err.message); });
 }
 
 function closeDetail(e) {

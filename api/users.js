@@ -105,7 +105,10 @@ module.exports = async function handler(req, res) {
       const user = {
         email: email.toLowerCase(), passwordHash: hashPassword(password),
         role: 'user', status: 'pending',
-        sessionsUsed: 0, freeSessionsTotal: 1,
+        sessionsUsed: 0,       // aantal voltooide foto-sessies
+        uploadsUsed: 0,        // totaal aantal uploads (alle fasen)
+        freeSessionsTotal: 1,  // max gratis sessies
+        maxSessions: null,     // null = onbeperkt (voor betaald), getal = max
         createdAt: new Date().toISOString()
       };
       await kvSet(`user:${email.toLowerCase()}`, user);
@@ -175,8 +178,16 @@ module.exports = async function handler(req, res) {
       const emails = await kvSMembers('users:all');
       const users  = await Promise.all(emails.map(e => kvGet(`user:${e}`)));
       const clean  = users.filter(Boolean)
-        .map(u => ({ email: u.email, role: u.role, status: u.status,
-          sessionsUsed: u.sessionsUsed, freeSessionsTotal: u.freeSessionsTotal, createdAt: u.createdAt }))
+        .map(u => ({
+          email:             u.email,
+          role:              u.role,
+          status:            u.status,
+          sessionsUsed:      u.sessionsUsed      || 0,
+          uploadsUsed:       u.uploadsUsed       || 0,
+          freeSessionsTotal: u.freeSessionsTotal || 1,
+          maxSessions:       u.maxSessions       ?? null,
+          createdAt:         u.createdAt
+        }))
         .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
 
       return res.status(200).json({ success: true, users: clean });
@@ -202,6 +213,9 @@ module.exports = async function handler(req, res) {
         }
       }
       if (newRole) user.role = newRole;
+      if (req.body.maxSessions !== undefined) user.maxSessions = req.body.maxSessions;
+      if (req.body.freeSessionsTotal !== undefined) user.freeSessionsTotal = req.body.freeSessionsTotal;
+      if (req.body.resetSessions) { user.sessionsUsed = 0; user.uploadsUsed = 0; }
       await kvSet(`user:${targetEmail.toLowerCase()}`, user);
       return res.status(200).json({ success: true });
     }

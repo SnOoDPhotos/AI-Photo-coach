@@ -132,16 +132,26 @@ input:focus,textarea:focus{border-color:var(--accent)}
     <!-- Export -->
     <div id="tab-export" class="hidden">
       <div class="section">
-        <h3>EXPORTEREN NAAR GITHUB</h3>
-        <p style="font-size:13px;color:var(--muted);margin-bottom:20px;line-height:1.7">Download de volledige kennisbank als knowledge-base.json en upload dit bestand naar GitHub. Vercel pikt de update automatisch op.</p>
-        <div style="background:var(--bg);border:1px solid var(--border);padding:16px;margin-bottom:20px;font-family:monospace;font-size:12px;color:var(--muted);line-height:1.8">
-          <div>&#8594; Download knowledge-base.json</div>
-          <div>&#8594; Ga naar github.com/SnOoDPhotos/AI-Photo-coach</div>
-          <div>&#8594; Klik op knowledge-base.json</div>
-          <div>&#8594; Klik potlood &#8594; selecteer alles &#8594; plak nieuwe inhoud</div>
-          <div>&#8594; Commit changes</div>
-        </div>
+        <h3>EXPORTEREN</h3>
+        <p style="font-size:12px;color:var(--muted);margin-bottom:12px;line-height:1.7">Download de kennisbank als backup of voor GitHub.</p>
         <button class="btn btn-sm" onclick="exportKnowledge()">&#8595; DOWNLOAD knowledge-base.json</button>
+      </div>
+
+      <div class="section" style="margin-top:20px">
+        <h3>JSON IMPORTEREN</h3>
+        <p style="font-size:12px;color:var(--muted);margin-bottom:12px;line-height:1.7">Upload een knowledge-base.json vanuit je computer. Laadt direct in de database.</p>
+        <label style="display:inline-block;cursor:pointer">
+          <input type="file" accept=".json" id="importFileInput" style="display:none" onchange="importJsonFile(this)">
+          <span class="btn btn-sm" style="display:inline-block">&#8679; KIES knowledge-base.json</span>
+        </label>
+        <div id="importResult" style="font-family:monospace;font-size:11px;margin-top:10px;color:var(--accent)"></div>
+      </div>
+
+      <div class="section" style="margin-top:20px">
+        <h3>DATABASE BIJWERKEN</h3>
+        <p style="font-size:12px;color:var(--muted);margin-bottom:12px;line-height:1.7">Stuur de huidige kennisbank (zichtbaar in Overzicht) naar de database.</p>
+        <button class="btn btn-sm btn-outline" onclick="pushToDatabase()">&#8679; STUUR NAAR DATABASE</button>
+        <div id="initResult" style="font-family:monospace;font-size:11px;margin-top:10px;color:var(--accent)"></div>
       </div>
     </div>
 
@@ -396,6 +406,52 @@ function validateAndAdd() {
 function showAddError(msg) {
   var el = document.getElementById('addError');
   el.textContent = msg; el.classList.remove('hidden');
+}
+
+function importJsonFile(input) {
+  var file = input.files[0];
+  if (!file) return;
+  var el = document.getElementById('importResult');
+  el.style.color = 'var(--accent)';
+  el.textContent = 'Bestand lezen...';
+  var reader = new FileReader();
+  reader.onload = function(e) {
+    try {
+      var data = JSON.parse(e.target.result);
+      if (!Array.isArray(data)) throw new Error('Geen geldige array');
+      localKnowledge = data;
+      el.textContent = data.length + ' entries geladen. Opslaan...';
+      fetch('/api/knowledge', {
+        method: 'POST', headers: {'Content-Type':'application/json'},
+        body: JSON.stringify({ action: 'save_all', token: authToken, entries: localKnowledge })
+      })
+      .then(function(r) { return r.json(); })
+      .then(function(d) {
+        if (d.success) { el.textContent = '✓ ' + d.count + ' entries geimporteerd en opgeslagen!'; renderAll(); }
+        else { el.style.color = 'var(--error)'; el.textContent = '✗ ' + (d.error || 'Fout'); }
+      })
+      .catch(function(err) { el.style.color = 'var(--error)'; el.textContent = '✗ ' + err.message; });
+    } catch(err) { el.style.color = 'var(--error)'; el.textContent = '✗ Ongeldig JSON: ' + err.message; }
+  };
+  reader.readAsText(file);
+  input.value = '';
+}
+
+function pushToDatabase() {
+  if (!localKnowledge.length) { alert('Geen kennisbank geladen.'); return; }
+  if (!confirm(localKnowledge.length + ' entries naar database sturen?')) return;
+  var el = document.getElementById('initResult');
+  el.style.color = 'var(--accent)'; el.textContent = 'Bezig...';
+  fetch('/api/knowledge', {
+    method: 'POST', headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({ action: 'save_all', token: authToken, entries: localKnowledge })
+  })
+  .then(function(r) { return r.json(); })
+  .then(function(d) {
+    if (d.success) { el.textContent = '✓ ' + d.count + ' entries opgeslagen'; }
+    else { el.style.color = 'var(--error)'; el.textContent = '✗ ' + (d.error || 'Fout'); }
+  })
+  .catch(function(e) { el.style.color = 'var(--error)'; el.textContent = '✗ ' + e.message; });
 }
 
 function exportKnowledge() {

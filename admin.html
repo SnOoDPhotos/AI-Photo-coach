@@ -132,26 +132,16 @@ input:focus,textarea:focus{border-color:var(--accent)}
     <!-- Export -->
     <div id="tab-export" class="hidden">
       <div class="section">
-        <h3>EXPORTEREN</h3>
-        <p style="font-size:12px;color:var(--muted);margin-bottom:12px;line-height:1.7">Download de kennisbank als backup of voor GitHub.</p>
+        <h3>EXPORTEREN NAAR GITHUB</h3>
+        <p style="font-size:13px;color:var(--muted);margin-bottom:20px;line-height:1.7">Download de volledige kennisbank als knowledge-base.json en upload dit bestand naar GitHub. Vercel pikt de update automatisch op.</p>
+        <div style="background:var(--bg);border:1px solid var(--border);padding:16px;margin-bottom:20px;font-family:monospace;font-size:12px;color:var(--muted);line-height:1.8">
+          <div>&#8594; Download knowledge-base.json</div>
+          <div>&#8594; Ga naar github.com/SnOoDPhotos/AI-Photo-coach</div>
+          <div>&#8594; Klik op knowledge-base.json</div>
+          <div>&#8594; Klik potlood &#8594; selecteer alles &#8594; plak nieuwe inhoud</div>
+          <div>&#8594; Commit changes</div>
+        </div>
         <button class="btn btn-sm" onclick="exportKnowledge()">&#8595; DOWNLOAD knowledge-base.json</button>
-      </div>
-
-      <div class="section" style="margin-top:20px">
-        <h3>JSON IMPORTEREN</h3>
-        <p style="font-size:12px;color:var(--muted);margin-bottom:12px;line-height:1.7">Upload een knowledge-base.json vanuit je computer. Laadt direct in de database.</p>
-        <label style="display:inline-block;cursor:pointer">
-          <input type="file" accept=".json" id="importFileInput" style="display:none" onchange="importJsonFile(this)">
-          <span class="btn btn-sm" style="display:inline-block">&#8679; KIES knowledge-base.json</span>
-        </label>
-        <div id="importResult" style="font-family:monospace;font-size:11px;margin-top:10px;color:var(--accent)"></div>
-      </div>
-
-      <div class="section" style="margin-top:20px">
-        <h3>DATABASE BIJWERKEN</h3>
-        <p style="font-size:12px;color:var(--muted);margin-bottom:12px;line-height:1.7">Stuur de huidige kennisbank (zichtbaar in Overzicht) naar de database.</p>
-        <button class="btn btn-sm btn-outline" onclick="pushToDatabase()">&#8679; STUUR NAAR DATABASE</button>
-        <div id="initResult" style="font-family:monospace;font-size:11px;margin-top:10px;color:var(--accent)"></div>
       </div>
     </div>
 
@@ -266,32 +256,18 @@ function showAdminPanel() {
 }
 
 function loadKnowledge() {
-  fetch('/api/knowledge', {
-    method: 'POST',
-    headers: {'Content-Type':'application/json'},
-    body: JSON.stringify({ action: 'list', token: authToken })
-  })
-  .then(function(r) { return r.json(); })
-  .then(function(d) {
-    if (d.success && Array.isArray(d.entries) && d.entries.length > 0) {
-      localKnowledge = d.entries;
+  fetch('/knowledge-base.json')
+    .then(function(r) { return r.json(); })
+    .then(function(d) {
+      if (Array.isArray(d)) {
+        localKnowledge = d;
+        localStorage.setItem('snood_knowledge_base', JSON.stringify(d));
+      }
       renderAll();
-    } else {
-      fetch('/knowledge-base.json')
-        .then(function(r) { return r.json(); })
-        .then(function(data) {
-          if (Array.isArray(data) && data.length > 0) localKnowledge = data;
-          renderAll();
-        })
-        .catch(function() { renderAll(); });
-    }
-  })
-  .catch(function() {
-    fetch('/knowledge-base.json')
-      .then(function(r) { return r.json(); })
-      .then(function(d) { if (Array.isArray(d)) localKnowledge = d; renderAll(); })
-      .catch(function() { renderAll(); });
-  });
+    })
+    .catch(function() {
+      if (localKnowledge.length > 0) renderAll();
+    });
 }
 
 function renderAll() {
@@ -354,44 +330,12 @@ function renderEntries() {
   }).join('') : '<div style="color:var(--muted);font-size:13px;padding:20px;text-align:center">Geen entries gevonden</div>';
 }
 
-var currentDetailIdx = -1;
-
 function showDetail(idx) {
   var e = localKnowledge[idx];
   if (!e) return;
-  currentDetailIdx = idx;
   document.getElementById('detailTitle').textContent = e.video_title || 'Entry';
-
   var html = '';
-
-  // Bewerkbaar blok bovenaan
-  html += '<div style="background:rgba(232,197,71,0.04);border:1px solid rgba(232,197,71,0.2);padding:16px;margin-bottom:16px">';
-  html += '<div style="font-family:monospace;font-size:10px;color:var(--accent);letter-spacing:2px;margin-bottom:12px">BEWERKEN</div>';
-
-  html += '<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px">';
-  html += '<div><label style="font-family:monospace;font-size:10px;letter-spacing:1px">FOTOGRAFNAAM</label>'
-       + '<input id="editPhotographer" type="text" value="'+(e.photographer_name||'')+'" style="width:100%;background:var(--bg);border:1px solid var(--border);color:var(--text);padding:8px 10px;font-family:monospace;font-size:12px;outline:none;margin-top:3px"></div>';
-  html += '<div><label style="font-family:monospace;font-size:10px;letter-spacing:1px">MODELNAAM</label>'
-       + '<input id="editStyleDesc" type="text" value="'+(e.style_description||'')+'" style="width:100%;background:var(--bg);border:1px solid var(--border);color:var(--text);padding:8px 10px;font-family:monospace;font-size:12px;outline:none;margin-top:3px"></div>';
-  html += '</div>';
-
-  html += '<div style="margin-bottom:10px"><label style="font-family:monospace;font-size:10px;letter-spacing:1px">YOUTUBE URL</label>'
-       + '<input id="editYoutube" type="url" value="'+(e.youtube_url||'')+'" style="width:100%;background:var(--bg);border:1px solid var(--border);color:var(--text);padding:8px 10px;font-family:monospace;font-size:12px;outline:none;margin-top:3px"></div>';
-
-  html += '<div style="margin-bottom:10px"><label style="font-family:monospace;font-size:10px;letter-spacing:1px">GENRE (komma gescheiden)</label>'
-       + '<input id="editGenre" type="text" value="'+(e.genre||[]).join(', ')+'" style="width:100%;background:var(--bg);border:1px solid var(--border);color:var(--text);padding:8px 10px;font-family:monospace;font-size:12px;outline:none;margin-top:3px"></div>';
-
-  html += '<div style="margin-bottom:12px"><label style="font-family:monospace;font-size:10px;letter-spacing:1px">FILOSOFIE</label>'
-       + '<textarea id="editPhilosophy" rows="3" style="width:100%;background:var(--bg);border:1px solid var(--border);color:var(--text);padding:8px 10px;font-family:monospace;font-size:12px;outline:none;margin-top:3px;resize:vertical">'+(e.philosophy||'')+'</textarea></div>';
-
-  html += '<div style="display:flex;gap:8px;align-items:center">';
-  html += '<button class="btn btn-sm" onclick="saveDetailEdit()">&#10003; OPSLAAN</button>';
-  html += '<button class="btn btn-sm btn-outline" style="border-color:var(--error);color:var(--error)" onclick="deleteEntry('+idx+')">&#10005; VERWIJDEREN</button>';
-  html += '</div>';
-  html += '<div id="editSaveResult" style="font-family:monospace;font-size:11px;margin-top:8px;color:var(--accent)"></div>';
-  html += '</div>';
-
-  // Readonly info
+  if (e.philosophy) html += '<div style="margin-bottom:16px"><div style="font-family:monospace;font-size:10px;color:var(--muted);margin-bottom:6px;letter-spacing:1px">FILOSOFIE</div><div style="font-size:13px;line-height:1.7;color:var(--text)">'+e.philosophy+'</div></div>';
   if (e.techniques && e.techniques.length) {
     html += '<div style="font-family:monospace;font-size:10px;color:var(--muted);margin-bottom:8px;letter-spacing:1px">TECHNIEKEN ('+e.techniques.length+')</div>';
     e.techniques.forEach(function(t) {
@@ -404,82 +348,8 @@ function showDetail(idx) {
     html += '<div style="font-family:monospace;font-size:10px;color:var(--muted);margin:12px 0 8px;letter-spacing:1px">UNIEKE INZICHTEN</div>';
     e.unique_insights.forEach(function(i) { html += '<div style="font-size:13px;line-height:1.7;margin-bottom:6px;padding-left:12px;border-left:2px solid var(--accent)">'+i+'</div>'; });
   }
-  if (e.what_to_avoid && e.what_to_avoid.length) {
-    html += '<div style="font-family:monospace;font-size:10px;color:var(--muted);margin:12px 0 8px;letter-spacing:1px">VERMIJDEN</div>';
-    e.what_to_avoid.forEach(function(w) { html += '<div style="font-size:12px;color:var(--muted);margin-bottom:4px">&#10005; '+w+'</div>'; });
-  }
-
   document.getElementById('detailContent').innerHTML = html;
   document.getElementById('detailModal').classList.remove('hidden');
-}
-
-function saveDetailEdit() {
-  if (currentDetailIdx < 0) return;
-  var e = localKnowledge[currentDetailIdx];
-  var genreRaw = document.getElementById('editGenre').value;
-  var genre = genreRaw.split(',').map(function(g){return g.trim();}).filter(Boolean);
-
-  e.photographer_name = document.getElementById('editPhotographer').value.trim();
-  e.style_description  = document.getElementById('editStyleDesc').value.trim();
-  e.youtube_url        = document.getElementById('editYoutube').value.trim();
-  e.genre              = genre;
-  e.philosophy         = document.getElementById('editPhilosophy').value.trim();
-
-  var el = document.getElementById('editSaveResult');
-  el.style.color = 'var(--accent)';
-  el.textContent = 'Opslaan...';
-
-  fetch('/api/knowledge', {
-    method: 'POST',
-    headers: {'Content-Type':'application/json'},
-    body: JSON.stringify({
-      action: 'update',
-      token: authToken,
-      index: currentDetailIdx,
-      fields: {
-        photographer_name: e.photographer_name,
-        style_description: e.style_description,
-        youtube_url:       e.youtube_url,
-        genre:             e.genre,
-        philosophy:        e.philosophy
-      }
-    })
-  })
-  .then(function(r) { return r.json(); })
-  .then(function(d) {
-    if (d.success) {
-      el.textContent = '✓ Opgeslagen';
-      renderAll();
-    } else {
-      el.style.color = 'var(--error)';
-      el.textContent = '✗ ' + (d.error || 'Fout');
-    }
-  })
-  .catch(function(err) {
-    el.style.color = 'var(--error)';
-    el.textContent = '✗ ' + err.message;
-  });
-}
-
-function deleteEntry(idx) {
-  var title = (localKnowledge[idx]||{}).video_title || 'deze entry';
-  if (!confirm('Verwijderen: "' + title + '"?')) return;
-  fetch('/api/knowledge', {
-    method: 'POST',
-    headers: {'Content-Type':'application/json'},
-    body: JSON.stringify({ action: 'delete', token: authToken, index: idx })
-  })
-  .then(function(r) { return r.json(); })
-  .then(function(d) {
-    if (d.success) {
-      localKnowledge.splice(idx, 1);
-      document.getElementById('detailModal').classList.add('hidden');
-      renderAll();
-    } else {
-      alert('Fout: ' + (d.error || 'onbekend'));
-    }
-  })
-  .catch(function(err) { alert('Verbindingsfout: ' + err.message); });
 }
 
 function closeDetail(e) {
@@ -515,73 +385,6 @@ function validateAndAdd() {
 function showAddError(msg) {
   var el = document.getElementById('addError');
   el.textContent = msg; el.classList.remove('hidden');
-}
-
-function importJsonFile(input) {
-  var file = input.files[0];
-  if (!file) return;
-  var el = document.getElementById('importResult');
-  el.style.color = 'var(--accent)';
-  el.textContent = 'Bestand lezen...';
-  var reader = new FileReader();
-  reader.onload = function(e) {
-    try {
-      var data = JSON.parse(e.target.result);
-      if (!Array.isArray(data)) throw new Error('Geen geldige array');
-      localKnowledge = data;
-      el.textContent = data.length + ' entries geladen. Opslaan...';
-      fetch('/api/knowledge', {
-        method: 'POST',
-        headers: {'Content-Type':'application/json'},
-        body: JSON.stringify({ action: 'save_all', token: authToken, entries: localKnowledge })
-      })
-      .then(function(r) { return r.json(); })
-      .then(function(d) {
-        if (d.success) {
-          el.textContent = '✓ ' + d.count + ' entries geïmporteerd en opgeslagen!';
-          renderAll();
-        } else {
-          el.style.color = 'var(--error)';
-          el.textContent = '✗ ' + (d.error || 'Fout');
-        }
-      })
-      .catch(function(err) {
-        el.style.color = 'var(--error)';
-        el.textContent = '✗ ' + err.message;
-      });
-    } catch(err) {
-      el.style.color = 'var(--error)';
-      el.textContent = '✗ Ongeldig JSON: ' + err.message;
-    }
-  };
-  reader.readAsText(file);
-  input.value = '';
-}
-
-function pushToDatabase() {
-  if (!localKnowledge.length) { alert('Geen kennisbank geladen.'); return; }
-  if (!confirm(localKnowledge.length + ' entries naar database sturen?')) return;
-  var el = document.getElementById('initResult');
-  el.style.color = 'var(--accent)';
-  el.textContent = 'Bezig...';
-  fetch('/api/knowledge', {
-    method: 'POST',
-    headers: {'Content-Type':'application/json'},
-    body: JSON.stringify({ action: 'save_all', token: authToken, entries: localKnowledge })
-  })
-  .then(function(r) { return r.json(); })
-  .then(function(d) {
-    if (d.success) {
-      el.textContent = '✓ ' + d.count + ' entries opgeslagen';
-    } else {
-      el.style.color = 'var(--error)';
-      el.textContent = '✗ ' + (d.error || 'Fout');
-    }
-  })
-  .catch(function(e) {
-    el.style.color = 'var(--error)';
-    el.textContent = '✗ ' + e.message;
-  });
 }
 
 function exportKnowledge() {
@@ -655,25 +458,77 @@ function renderUsers(filter) {
     var color = statusColors[u.status] || '#6b6762';
     var label = statusLabels[u.status] || u.status.toUpperCase();
     var date = u.createdAt ? new Date(u.createdAt).toLocaleDateString('nl-NL') : '?';
-    var sessions = u.sessionsUsed + ' / ' + (u.freeSessionsTotal || 1);
-    var safeEmail = u.email.replace(/'/g, "\'");
-    html += '<div style="background:var(--bg);border:1px solid var(--border);padding:14px 18px;display:grid;grid-template-columns:1fr auto;align-items:center;gap:12px">';
-    html += '<div>';
-    html += '<div style="font-size:13px;font-weight:500;margin-bottom:4px">' + u.email + '</div>';
-    html += '<div style="font-family:monospace;font-size:10px;color:var(--muted)">';
-    html += '<span style="color:' + color + ';border:1px solid ' + color + ';padding:1px 6px;margin-right:8px">' + label + '</span>';
-    if (u.role === 'admin') html += '<span style="color:var(--accent);border:1px solid rgba(232,197,71,0.3);padding:1px 6px;margin-right:8px">ADMIN</span>';
-    html += 'Sessies: ' + sessions + ' &nbsp;&middot;&nbsp; Geregistreerd: ' + date;
-    html += '</div></div>';
-    html += '<div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end">';
+    var maxSess = (u.maxSessions !== null && u.maxSessions !== undefined) ? u.maxSessions : (u.freeSessionsTotal || 1);
+    var sessUsed = u.sessionsUsed || 0;
+    var uploadsUsed = u.uploadsUsed || 0;
+    var sessColor = sessUsed >= maxSess ? 'var(--error)' : 'inherit';
+    var safeId = u.email.replace(/[@.+]/g, '_');
+
+    html += '<div style="background:var(--bg);border:1px solid var(--border);padding:14px 18px;margin-bottom:2px">';
+
+    // Bovenste rij: email + status badges
+    html += '<div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">';
+    html += '<div style="font-size:13px;font-weight:500">' + u.email + '</div>';
+    html += '<span style="font-family:monospace;font-size:10px;color:' + color + ';border:1px solid ' + color + ';padding:1px 6px">' + label + '</span>';
+    if (u.role === 'admin') html += '<span style="font-family:monospace;font-size:10px;color:var(--accent);border:1px solid rgba(232,197,71,0.3);padding:1px 6px">ADMIN</span>';
+    html += '</div>';
+
+    // Statistieken rij
+    html += '<div style="display:flex;gap:16px;flex-wrap:wrap;font-family:monospace;font-size:11px;color:var(--muted);margin-bottom:10px">';
+    html += '<span>&#128247; Fotos: <strong style="color:' + sessColor + '">' + sessUsed + ' / ' + maxSess + '</strong></span>';
+    html += '<span>&#8679; Uploads: <strong>' + uploadsUsed + '</strong></span>';
+    html += '<span>Lid sinds: ' + date + '</span>';
+    html += '</div>';
+
+    // Max sessies instellen rij
+    html += '<div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:10px">';
+    html += '<span style="font-family:monospace;font-size:10px;color:var(--muted);letter-spacing:1px">MAX FOTOS:</span>';
+    html += '<input type="number" min="1" max="9999" value="' + maxSess + '" id="maxSess_' + safeId + '" style="width:65px;background:var(--surface);border:1px solid var(--border);color:var(--text);padding:4px 8px;font-family:monospace;font-size:12px;outline:none">';
+    html += '<button class="btn btn-sm" style="font-size:10px;padding:4px 12px" data-email="' + u.email + '" data-id="' + safeId + '" onclick="setMaxSessions(this)">INSTELLEN</button>';
+    html += '<button class="btn btn-sm btn-outline" style="font-size:10px;padding:4px 10px;opacity:0.7" data-email="' + u.email + '" onclick="resetSessionsBtn(this)">RESET TELLER</button>';
+    html += '</div>';
+
+    // Actie knoppen rij
+    html += '<div style="display:flex;gap:6px;flex-wrap:wrap">';
     if (u.status === 'pending') html += '<button class="btn btn-sm" style="font-size:11px;padding:6px 12px" data-email="' + u.email + '" data-status="approved" onclick="updateUserBtn(this)">&#10003; GOEDKEUREN</button>';
     if (u.status === 'approved') html += '<button class="btn btn-sm btn-outline" style="font-size:11px;padding:6px 12px;border-color:var(--error);color:var(--error)" data-email="' + u.email + '" data-status="blocked" onclick="updateUserBtn(this)">BLOKKEREN</button>';
     if (u.status === 'blocked') html += '<button class="btn btn-sm btn-outline" style="font-size:11px;padding:6px 12px" data-email="' + u.email + '" data-status="approved" onclick="updateUserBtn(this)">DEBLOKKEREN</button>';
+    if (u.role !== 'admin') html += '<button class="btn btn-sm btn-outline" style="font-size:11px;padding:6px 12px;opacity:0.5" data-email="' + u.email + '" data-role="admin" onclick="toggleRoleBtn(this)" title="Admin-rechten geven">&#9734; ADMIN</button>';
+    if (u.role === 'admin') html += '<button class="btn btn-sm btn-outline" style="font-size:11px;padding:6px 12px;border-color:var(--accent);color:var(--accent)" data-email="' + u.email + '" data-role="user" onclick="toggleRoleBtn(this)" title="Admin-rechten intrekken">&#9733; ADMIN</button>';
     html += '<button class="btn btn-sm btn-outline" style="font-size:11px;padding:6px 12px;border-color:var(--error);color:var(--error)" data-email="' + u.email + '" onclick="deleteUserBtn(this)">&#10005;</button>';
-    html += '</div></div>';
+    html += '</div>';
+
+    html += '</div>';
   });
   document.getElementById('usersGrid').innerHTML = html;
 }
+
+function setMaxSessions(btn) {
+  var email = btn.getAttribute('data-email');
+  var safeId = btn.getAttribute('data-id');
+  var val = parseInt(document.getElementById('maxSess_' + safeId).value);
+  if (isNaN(val) || val < 1) { alert('Voer een geldig getal in'); return; }
+  fetch('/api/users', {
+    method: 'POST',
+    headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({ action: 'admin_update', token: authToken, targetEmail: email, maxSessions: val, freeSessionsTotal: val })
+  })
+  .then(function(r) { return r.json(); })
+  .then(function(d) { if (d.success) loadUsers(); else alert('Fout: ' + (d.error||'')); });
+}
+
+function resetSessionsBtn(btn) {
+  var email = btn.getAttribute('data-email');
+  if (!confirm('Sessie- en uploadteller resetten voor ' + email + '?')) return;
+  fetch('/api/users', {
+    method: 'POST',
+    headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({ action: 'admin_update', token: authToken, targetEmail: email, resetSessions: true })
+  })
+  .then(function(r) { return r.json(); })
+  .then(function(d) { if (d.success) loadUsers(); else alert('Fout: ' + (d.error||'')); });
+}
+
 
 function updateUserBtn(btn) {
   updateUser(btn.getAttribute('data-email'), btn.getAttribute('data-status'));

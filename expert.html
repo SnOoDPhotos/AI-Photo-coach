@@ -1972,6 +1972,11 @@ function compressImage(dataUrl, maxSizeMB, quality) {
 function handleUpload(file){
   if(!file) return;
   if(!apiKey){alert('Klik eerst op START.');return;}
+  // Track elke upload (niet-blokkerend)
+  if(authToken && authRole !== 'admin') {
+    fetch('/api/users',{method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({action:'track_upload',token:authToken})}).catch(function(){});
+  }
   iteration=1;photoHistory=[];currentPhase=1;previousPhotoData=null;
   currentSessionId=null;currentAnalysis='';previousAnalysisText='';userFeedback='';cumulativeAnalysis=[];
   document.getElementById('uploadZone').style.display='none';

@@ -256,18 +256,29 @@ function showAdminPanel() {
 }
 
 function loadKnowledge() {
-  fetch('/knowledge-base.json')
-    .then(function(r) { return r.json(); })
-    .then(function(d) {
-      if (Array.isArray(d)) {
-        localKnowledge = d;
-        localStorage.setItem('snood_knowledge_base', JSON.stringify(d));
-      }
+  fetch('/api/knowledge', {
+    method: 'POST',
+    headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({ action: 'list', token: authToken })
+  })
+  .then(function(r) { return r.json(); })
+  .then(function(d) {
+    if (d.success && Array.isArray(d.entries) && d.entries.length > 0) {
+      localKnowledge = d.entries;
       renderAll();
-    })
-    .catch(function() {
-      if (localKnowledge.length > 0) renderAll();
-    });
+    } else {
+      fetch('/knowledge-base.json')
+        .then(function(r) { return r.json(); })
+        .then(function(data) { if (Array.isArray(data) && data.length > 0) localKnowledge = data; renderAll(); })
+        .catch(function() { renderAll(); });
+    }
+  })
+  .catch(function() {
+    fetch('/knowledge-base.json')
+      .then(function(r) { return r.json(); })
+      .then(function(d) { if (Array.isArray(d)) localKnowledge = d; renderAll(); })
+      .catch(function() { renderAll(); });
+  });
 }
 
 function renderAll() {
@@ -455,52 +466,75 @@ function renderUsers(filter) {
   var statusLabels = { pending: 'WACHT', approved: 'ACTIEF', blocked: 'GEBLOKKEERD' };
   var html = '';
   filtered.forEach(function(u) {
-    var color = statusColors[u.status] || '#6b6762';
-    var label = statusLabels[u.status] || u.status.toUpperCase();
-    var date = u.createdAt ? new Date(u.createdAt).toLocaleDateString('nl-NL') : '?';
-    var maxSess = (u.maxSessions !== null && u.maxSessions !== undefined) ? u.maxSessions : (u.freeSessionsTotal || 1);
+    var color  = statusColors[u.status] || '#6b6762';
+    var label  = statusLabels[u.status] || u.status.toUpperCase();
+    var date   = u.createdAt ? new Date(u.createdAt).toLocaleDateString('nl-NL') : '?';
+    var maxSess = (u.maxSessions !== null && u.maxSessions !== undefined) ? u.maxSessions : (u.freeSessionsTotal || 3);
     var sessUsed = u.sessionsUsed || 0;
     var uploadsUsed = u.uploadsUsed || 0;
     var sessColor = sessUsed >= maxSess ? 'var(--error)' : 'inherit';
     var safeId = u.email.replace(/[@.+]/g, '_');
+    var planColor = u.plan === 'expert' ? '#9b7fe8' : (u.plan === 'both' ? '#4caf7d' : 'var(--muted)');
+    var planLabel = u.plan === 'expert' ? 'EXPERT' : (u.plan === 'both' ? 'BASIC+EXPERT' : 'BASIC');
 
     html += '<div style="background:var(--bg);border:1px solid var(--border);padding:14px 18px;margin-bottom:2px">';
 
-    // Bovenste rij: email + status badges
+    // Email + badges
     html += '<div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">';
     html += '<div style="font-size:13px;font-weight:500">' + u.email + '</div>';
     html += '<span style="font-family:monospace;font-size:10px;color:' + color + ';border:1px solid ' + color + ';padding:1px 6px">' + label + '</span>';
+    html += '<span style="font-family:monospace;font-size:10px;color:' + planColor + ';border:1px solid ' + planColor + ';padding:1px 6px">' + planLabel + '</span>';
     if (u.role === 'admin') html += '<span style="font-family:monospace;font-size:10px;color:var(--accent);border:1px solid rgba(232,197,71,0.3);padding:1px 6px">ADMIN</span>';
     html += '</div>';
 
-    // Statistieken rij
+    // Stats
     html += '<div style="display:flex;gap:16px;flex-wrap:wrap;font-family:monospace;font-size:11px;color:var(--muted);margin-bottom:10px">';
-    html += '<span>&#128247; Fotos: <strong style="color:' + sessColor + '">' + sessUsed + ' / ' + maxSess + '</strong></span>';
-    html += '<span>&#8679; Uploads: <strong>' + uploadsUsed + '</strong></span>';
-    html += '<span>Lid sinds: ' + date + '</span>';
+    html += '<span>Fotos: <strong style="color:' + sessColor + '">' + sessUsed + ' / ' + maxSess + '</strong></span>';
+    html += '<span>Uploads: <strong>' + uploadsUsed + '</strong></span>';
+    html += '<span>Lid: ' + date + '</span>';
     html += '</div>';
 
-    // Max sessies instellen rij
+    // Plan instellen
+    html += '<div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:8px">';
+    html += '<span style="font-family:monospace;font-size:10px;color:var(--muted)">PLAN:</span>';
+    html += '<select id="plan_' + safeId + '" style="background:var(--surface);border:1px solid var(--border);color:var(--text);padding:4px 8px;font-family:monospace;font-size:11px;outline:none">';
+    html += '<option value="basic"' + ((!u.plan || u.plan === 'basic') ? ' selected' : '') + '>Basic (index.html)</option>';
+    html += '<option value="expert"' + (u.plan === 'expert' ? ' selected' : '') + '>Expert (expert.html)</option>';
+    html += '<option value="both"' + (u.plan === 'both' ? ' selected' : '') + '>Basic + Expert</option>';
+    html += '</select>';
+    html += '<button class="btn btn-sm" style="font-size:10px;padding:4px 10px" data-email="' + u.email + '" data-id="' + safeId + '" onclick="setPlanBtn(this)">INSTELLEN</button>';
+    html += '</div>';
+
+    // Max sessies
     html += '<div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:10px">';
-    html += '<span style="font-family:monospace;font-size:10px;color:var(--muted);letter-spacing:1px">MAX FOTOS:</span>';
+    html += '<span style="font-family:monospace;font-size:10px;color:var(--muted)">MAX FOTOS:</span>';
     html += '<input type="number" min="1" max="9999" value="' + maxSess + '" id="maxSess_' + safeId + '" style="width:65px;background:var(--surface);border:1px solid var(--border);color:var(--text);padding:4px 8px;font-family:monospace;font-size:12px;outline:none">';
-    html += '<button class="btn btn-sm" style="font-size:10px;padding:4px 12px" data-email="' + u.email + '" data-id="' + safeId + '" onclick="setMaxSessions(this)">INSTELLEN</button>';
+    html += '<button class="btn btn-sm" style="font-size:10px;padding:4px 10px" data-email="' + u.email + '" data-id="' + safeId + '" onclick="setMaxSessions(this)">INSTELLEN</button>';
     html += '<button class="btn btn-sm btn-outline" style="font-size:10px;padding:4px 10px;opacity:0.7" data-email="' + u.email + '" onclick="resetSessionsBtn(this)">RESET TELLER</button>';
     html += '</div>';
 
-    // Actie knoppen rij
+    // Actie knoppen
     html += '<div style="display:flex;gap:6px;flex-wrap:wrap">';
     if (u.status === 'pending') html += '<button class="btn btn-sm" style="font-size:11px;padding:6px 12px" data-email="' + u.email + '" data-status="approved" onclick="updateUserBtn(this)">&#10003; GOEDKEUREN</button>';
     if (u.status === 'approved') html += '<button class="btn btn-sm btn-outline" style="font-size:11px;padding:6px 12px;border-color:var(--error);color:var(--error)" data-email="' + u.email + '" data-status="blocked" onclick="updateUserBtn(this)">BLOKKEREN</button>';
     if (u.status === 'blocked') html += '<button class="btn btn-sm btn-outline" style="font-size:11px;padding:6px 12px" data-email="' + u.email + '" data-status="approved" onclick="updateUserBtn(this)">DEBLOKKEREN</button>';
-    if (u.role !== 'admin') html += '<button class="btn btn-sm btn-outline" style="font-size:11px;padding:6px 12px;opacity:0.5" data-email="' + u.email + '" data-role="admin" onclick="toggleRoleBtn(this)" title="Admin-rechten geven">&#9734; ADMIN</button>';
-    if (u.role === 'admin') html += '<button class="btn btn-sm btn-outline" style="font-size:11px;padding:6px 12px;border-color:var(--accent);color:var(--accent)" data-email="' + u.email + '" data-role="user" onclick="toggleRoleBtn(this)" title="Admin-rechten intrekken">&#9733; ADMIN</button>';
+    if (u.role !== 'admin') html += '<button class="btn btn-sm btn-outline" style="font-size:11px;padding:6px 12px;opacity:0.5" data-email="' + u.email + '" data-role="admin" onclick="toggleRoleBtn(this)">&#9734; ADMIN</button>';
+    if (u.role === 'admin') html += '<button class="btn btn-sm btn-outline" style="font-size:11px;padding:6px 12px;border-color:var(--accent);color:var(--accent)" data-email="' + u.email + '" data-role="user" onclick="toggleRoleBtn(this)">&#9733; ADMIN</button>';
     html += '<button class="btn btn-sm btn-outline" style="font-size:11px;padding:6px 12px;border-color:var(--error);color:var(--error)" data-email="' + u.email + '" onclick="deleteUserBtn(this)">&#10005;</button>';
     html += '</div>';
-
     html += '</div>';
   });
   document.getElementById('usersGrid').innerHTML = html;
+}
+
+function setPlanBtn(btn) {
+  var email = btn.getAttribute('data-email');
+  var safeId = btn.getAttribute('data-id');
+  var plan = document.getElementById('plan_' + safeId).value;
+  fetch('/api/users', {
+    method: 'POST', headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({ action: 'admin_update', token: authToken, targetEmail: email, plan: plan })
+  }).then(function(r) { return r.json(); }).then(function(d) { if (d.success) loadUsers(); else alert('Fout: ' + (d.error||'')); });
 }
 
 function setMaxSessions(btn) {
@@ -509,24 +543,18 @@ function setMaxSessions(btn) {
   var val = parseInt(document.getElementById('maxSess_' + safeId).value);
   if (isNaN(val) || val < 1) { alert('Voer een geldig getal in'); return; }
   fetch('/api/users', {
-    method: 'POST',
-    headers: {'Content-Type':'application/json'},
+    method: 'POST', headers: {'Content-Type':'application/json'},
     body: JSON.stringify({ action: 'admin_update', token: authToken, targetEmail: email, maxSessions: val, freeSessionsTotal: val })
-  })
-  .then(function(r) { return r.json(); })
-  .then(function(d) { if (d.success) loadUsers(); else alert('Fout: ' + (d.error||'')); });
+  }).then(function(r) { return r.json(); }).then(function(d) { if (d.success) loadUsers(); else alert('Fout: ' + (d.error||'')); });
 }
 
 function resetSessionsBtn(btn) {
   var email = btn.getAttribute('data-email');
   if (!confirm('Sessie- en uploadteller resetten voor ' + email + '?')) return;
   fetch('/api/users', {
-    method: 'POST',
-    headers: {'Content-Type':'application/json'},
+    method: 'POST', headers: {'Content-Type':'application/json'},
     body: JSON.stringify({ action: 'admin_update', token: authToken, targetEmail: email, resetSessions: true })
-  })
-  .then(function(r) { return r.json(); })
-  .then(function(d) { if (d.success) loadUsers(); else alert('Fout: ' + (d.error||'')); });
+  }).then(function(r) { return r.json(); }).then(function(d) { if (d.success) loadUsers(); else alert('Fout: ' + (d.error||'')); });
 }
 
 
@@ -536,6 +564,16 @@ function updateUserBtn(btn) {
 
 function deleteUserBtn(btn) {
   deleteUser(btn.getAttribute('data-email'));
+}
+
+function toggleRoleBtn(btn) {
+  var email = btn.getAttribute('data-email');
+  var newRole = btn.getAttribute('data-role');
+  if (!confirm((newRole === 'admin' ? 'Admin-rechten geven aan ' : 'Admin-rechten intrekken van ') + email + '?')) return;
+  fetch('/api/users', {
+    method: 'POST', headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({ action: 'admin_update', token: authToken, targetEmail: email, newRole: newRole })
+  }).then(function(r) { return r.json(); }).then(function(d) { if (d.success) loadUsers(); else alert('Fout: ' + (d.error||'')); });
 }
 
 function updateUser(email, newStatus) {

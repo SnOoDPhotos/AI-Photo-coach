@@ -102,13 +102,16 @@ module.exports = async function handler(req, res) {
       const existing = await kvGet(`user:${email.toLowerCase()}`);
       if (existing) return res.status(409).json({ error: 'Dit e-mailadres is al geregistreerd' });
 
+      const requestedPlan = (req.body.plan === 'expert') ? 'expert' : 'basic';
+      const defaultSessions = requestedPlan === 'expert' ? 1 : 3;
       const user = {
         email: email.toLowerCase(), passwordHash: hashPassword(password),
         role: 'user', status: 'pending',
-        sessionsUsed: 0,       // aantal voltooide foto-sessies
-        uploadsUsed: 0,        // totaal aantal uploads (alle fasen)
-        freeSessionsTotal: 1,  // max gratis sessies
-        maxSessions: null,     // null = onbeperkt (voor betaald), getal = max
+        plan: requestedPlan,
+        sessionsUsed: 0,
+        uploadsUsed: 0,
+        freeSessionsTotal: defaultSessions,
+        maxSessions: null,
         createdAt: new Date().toISOString()
       };
       await kvSet(`user:${email.toLowerCase()}`, user);
@@ -131,10 +134,21 @@ module.exports = async function handler(req, res) {
       if (user.status === 'blocked')
         return res.status(403).json({ error: 'Je account is geblokkeerd. Neem contact op.' });
 
+      // Check plan toegang
+      const requestedApp = req.body.app || 'basic';
+      const userPlan = user.plan || 'basic';
+      if (requestedApp === 'expert' && userPlan === 'basic') {
+        return res.status(403).json({ error: 'Je account heeft geen toegang tot de Expert versie. Neem contact op voor een upgrade.' });
+      }
+
       return res.status(200).json({
         success: true, token: generateToken(user.email, user.role),
         email: user.email, role: user.role,
-        sessionsUsed: user.sessionsUsed, freeSessionsTotal: user.freeSessionsTotal || 1
+        plan:              user.plan              || 'basic',
+        sessionsUsed:      user.sessionsUsed      || 0,
+        uploadsUsed:       user.uploadsUsed       || 0,
+        freeSessionsTotal: user.freeSessionsTotal || 3,
+        maxSessions:       user.maxSessions       ?? null
       });
     }
 
@@ -161,13 +175,25 @@ module.exports = async function handler(req, res) {
 
       const user = await kvGet(`user:${caller.email}`);
       if (!user) return res.status(404).json({ error: 'Gebruiker niet gevonden' });
-      if (user.sessionsUsed >= (user.freeSessionsTotal || 1))
-        return res.status(403).json({ error: 'Geen sessies meer beschikbaar.', needsUpgrade: true });
+      const maxAllowed = (user.maxSessions !== null && user.maxSessions !== undefined)
+        ? user.maxSessions : (user.freeSessionsTotal || (user.plan === 'expert' ? 1 : 3));
+
+      if (user.sessionsUsed >= maxAllowed)
+        return res.status(403).json({
+          error: 'Sessielimiet bereikt. Upgrade je account voor meer sessies.',
+          needsUpgrade: true,
+          sessionsUsed: user.sessionsUsed,
+          maxSessions: maxAllowed
+        });
 
       user.sessionsUsed = (user.sessionsUsed || 0) + 1;
+      user.uploadsUsed  = (user.uploadsUsed  || 0) + 1;
       await kvSet(`user:${caller.email}`, user);
-      return res.status(200).json({ success: true, allowed: true,
-        sessionsRemaining: (user.freeSessionsTotal || 1) - user.sessionsUsed });
+      return res.status(200).json({
+        success: true, allowed: true,
+        sessionsUsed: user.sessionsUsed,
+        sessionsRemaining: maxAllowed - user.sessionsUsed
+      });
     }
 
     // ── ADMIN: GEBRUIKERS OPHALEN ──────────────────────────────────────
@@ -184,7 +210,8 @@ module.exports = async function handler(req, res) {
           status:            u.status,
           sessionsUsed:      u.sessionsUsed      || 0,
           uploadsUsed:       u.uploadsUsed       || 0,
-          freeSessionsTotal: u.freeSessionsTotal || 1,
+          plan:              u.plan              || 'basic',
+          freeSessionsTotal: u.freeSessionsTotal || 3,
           maxSessions:       u.maxSessions       ?? null,
           createdAt:         u.createdAt
         }))

@@ -422,7 +422,7 @@ select option,select optgroup{background:#1e1e1e;color:#f0ede8}
     </div>
   </div>
   <div class="upload-zone" id="uploadZone">
-    <input type="file" accept="image/*" onchange="handleUpload(this.files[0])" id="fileInput" style="position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer;z-index:2">
+    <input type="file" accept="image/*" onchange="handleUpload(this.files[0])" id="fileInput">
     <div class="upload-icon">&#11041;</div>
     <h2>UPLOAD YOUR PHOTO</h2>
     <p>Sleep een foto hierheen of klik om te selecteren &middot; JPG, PNG, WEBP</p>
@@ -1412,8 +1412,14 @@ async function analyzePhoto(dataUrl,isFirst){
       : '';
     var absoluteValues = ' BELANGRIJK: Geef ALTIJD absolute eindwaarden, nooit relatieve aanpassingen. Zeg dus NIET "verhoog met +10" maar altijd "zet op +25". Als een waarde al eerder is geadviseerd, vermeld dan de nieuwe absolute eindwaarde.';
     var denoiseNote = ' Adviseer Denoise (AI Denoise) ALLEEN als de foto zichtbare ruis heeft die storend is. Bij een schone foto of foto waar korrel onderdeel is van de stijl: geen Denoise advies.';
-    var ph=hasEditCheck&&currentPhase>1?' FASE OVERGANG naar fase '+currentPhase+'. Doe ## EDIT CHECK van fase '+(currentPhase-1)+' adviezen, daarna door met fase '+currentPhase+'.':'Gebruik ## EDIT CHECK om te benoemen wat je ziet. Benoem afwijkingen als creatieve keuze.';
-    parts.push({text:'Dit is versie '+iteration+'. '+ph+' Geef adviezen voor fase '+currentPhase+' in '+swName+'.'+fb+cumHistory+absoluteValues+denoiseNote});
+    var prevAdvice = '';
+    if (hasEditCheck && currentPhase > 1 && previousAnalysisText) {
+      prevAdvice = ' DE EXACTE ADVIEZEN VAN FASE ' + (currentPhase-1) + ' DIE GECONTROLEERD MOETEN WORDEN: [' + previousAnalysisText.replace(/<[^>]*>/g,'').slice(0,1500) + ']. ';
+    }
+    var ph = hasEditCheck && currentPhase > 1
+      ? ' FASE OVERGANG naar fase ' + currentPhase + '. Doe ## EDIT CHECK: vergelijk de bewerkte foto met de adviezen van fase ' + (currentPhase-1) + ' en benoem per advies of het is toegepast, gedeeltelijk toegepast of overgeslagen (benoem dit als een mogelijke creatieve keuze, dwing niets af). Daarna door met fase ' + currentPhase + ' adviezen.'
+      : 'Gebruik ## EDIT CHECK om te benoemen wat je ziet. Benoem afwijkingen als creatieve keuze.';
+    parts.push({text:'Dit is versie '+iteration+'. '+ph+prevAdvice+' Geef adviezen voor fase '+currentPhase+' in '+swName+'.'+fb+cumHistory+absoluteValues+denoiseNote});
   }
   var aiResult=await callAI(systemPrompt,parts,8192);
   output.className='analysis-output';

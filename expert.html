@@ -611,11 +611,11 @@ select option,select optgroup{background:#1e1e1e;color:#f0ede8}
       <button class="phase-advance-btn" id="phaseAdvanceBtn" onclick="openNextPhaseModal()" disabled>VOLGENDE FASE &rarr;</button>
     </div>
   </div>
-  <div class="upload-zone" id="uploadZone" onclick="document.getElementById('fileInput').click()">
+  <div class="upload-zone" id="uploadZone">
     <input type="file" accept="image/*" onchange="handleUpload(this.files[0])" id="fileInput" style="position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer;z-index:2">
-    <div class="upload-icon" style="pointer-events:none">&#11041;</div>
-    <h2 style="pointer-events:none">UPLOAD YOUR PHOTO</h2>
-    <p style="pointer-events:none">Sleep een foto hierheen of klik om te selecteren &middot; JPG, PNG, WEBP</p>
+    <div class="upload-icon">&#11041;</div>
+    <h2>UPLOAD YOUR PHOTO</h2>
+    <p>Sleep een foto hierheen of klik om te selecteren &middot; JPG, PNG, WEBP</p>
   </div>
   <div class="workspace" id="workspace">
     <div class="photo-panel">

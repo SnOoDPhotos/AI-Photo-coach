@@ -1,19 +1,92 @@
-const https = require('https');
-const http = require('http');
-const fs = require('fs');
+const fs   = require('fs');
 const path = require('path');
 
-function loadKnowledgeBase() {
+// ── Redis helpers ──────────────────────────────────────────────────────────
+async function kvGet(key) {
+  const url   = process.env.KV_REST_API_URL   || process.env.UPSTASH_REDIS_REST_URL;
+  const token = process.env.KV_REST_API_TOKEN  || process.env.UPSTASH_REDIS_REST_TOKEN;
+  if (!url || !token) return null;
+  const r = await fetch(url, {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify(['GET', key])
+  });
+  const d = await r.json();
+  return d.result ? JSON.parse(d.result) : null;
+}
+
+// ── Kennisbank laden (Redis eerst, dan JSON fallback) ──────────────────────
+async function loadKnowledgeBase() {
+  try {
+    const data = await kvGet('knowledge:db');
+    if (Array.isArray(data) && data.length > 0) return data;
+  } catch(e) {
+    console.log('Redis fallback kennisbank:', e.message);
+  }
   try {
     const filePath = path.join(process.cwd(), 'knowledge-base.json');
-    const data = fs.readFileSync(filePath, 'utf-8');
-    return JSON.parse(data);
+    return JSON.parse(fs.readFileSync(filePath, 'utf-8'));
   } catch(e) {
-    console.error('Could not load knowledge base:', e.message);
     return [];
   }
 }
 
+// ── Software capabilities laden (Redis eerst, dan JSON fallback) ───────────
+async function loadSoftwareCapabilities() {
+  try {
+    const data = await kvGet('software:capabilities');
+    if (Array.isArray(data) && data.length > 0) return data;
+  } catch(e) {}
+  try {
+    const filePath = path.join(process.cwd(), 'software-capabilities.json');
+    return JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+  } catch(e) {
+    return [];
+  }
+}
+
+// ── Software context bouwen voor de AI ────────────────────────────────────
+function buildSoftwareContext(softwareId, capabilities) {
+  if (!softwareId || !capabilities.length) return '';
+
+  // Zoek de software op ID of gedeeltelijke naam match
+  const sw = capabilities.find(s =>
+    s.id === softwareId ||
+    s.name.toLowerCase().includes(softwareId.toLowerCase()) ||
+    s.short.toLowerCase().includes(softwareId.toLowerCase())
+  );
+  if (!sw) return '';
+
+  let ctx = `
+
+=== SOFTWARE: ${sw.name} ===
+`;
+  ctx += `BELANGRIJK: De gebruiker werkt met ${sw.name}. Geef ALLEEN adviezen die uitvoerbaar zijn in deze software.
+`;
+
+  if (sw.not_possible && sw.not_possible.length) {
+    ctx += `
+NIET BESCHIKBAAR in ${sw.name} — noem deze NOOIT:
+`;
+    sw.not_possible.forEach(f => {
+      const alt = sw.alternatives && sw.alternatives[f];
+      ctx += `✗ ${f}${alt ? ` → gebruik in plaats daarvan: ${alt}` : ''}
+`;
+    });
+  }
+
+  if (sw.notes) {
+    ctx += `
+Belangrijke noten voor ${sw.name}: ${sw.notes}
+`;
+  }
+
+  ctx += `=== EINDE SOFTWARE CONTEXT ===
+`;
+  return ctx;
+}
+
+// ── Kennisbank selectie ────────────────────────────────────────────────────
 function selectRelevantKnowledge(knowledgeBase, genre, mood, light) {
   const scores = knowledgeBase.map(entry => {
     let score = 0;
@@ -41,16 +114,15 @@ function selectRelevantKnowledge(knowledgeBase, genre, mood, light) {
     .map(s => s.entry);
 }
 
+// ── Kennisbank context bouwen ──────────────────────────────────────────────
 function buildKnowledgeContext(relevant) {
   if (!relevant.length) return '';
 
   const primary = relevant[0];
   const photographerName = primary.photographer_name || null;
-
   let ctx = '';
 
   if (photographerName) {
-    // Specifieke fotograaf geselecteerd — dwingende stijlrichtlijnen
     const styleLabel = primary.style_description || (primary.genre||[]).join('/') || 'Geselecteerde stijl';
     ctx += `\n\n=== VERPLICHTE BEWERKINGSSTIJL: ${styleLabel} ===\n`;
     ctx += `Je MOET deze specifieke stijl toepassen in elk onderdeel van je advies. Dit is geen suggestie.\n`;
@@ -68,12 +140,8 @@ function buildKnowledgeContext(relevant) {
         if (t.effect) ctx += `  Effect: ${t.effect}\n`;
       });
     }
-    if (primary.color_approach) {
-      ctx += `\nKleurbenadering voor deze stijl:\n${primary.color_approach}\n`;
-    }
-    if (primary.local_adjustments) {
-      ctx += `\nLokale aanpassingen voor deze stijl:\n${primary.local_adjustments}\n`;
-    }
+    if (primary.color_approach) ctx += `\nKleurbenadering:\n${primary.color_approach}\n`;
+    if (primary.local_adjustments) ctx += `\nLokale aanpassingen:\n${primary.local_adjustments}\n`;
     if (primary.what_to_avoid && primary.what_to_avoid.length) {
       ctx += `\nUITDRUKKELIJK VERMIJDEN:\n`;
       primary.what_to_avoid.forEach(w => ctx += `✗ ${w}\n`);
@@ -83,32 +151,23 @@ function buildKnowledgeContext(relevant) {
       primary.unique_insights.forEach(ins => ctx += `★ ${ins}\n`);
     }
     ctx += `\n=== EINDE STIJLRICHTLIJNEN ===\n`;
-    ctx += `\nBelangrijk: Verwerk deze stijl actief in ELKE stap. Noem specifieke technieken bij naam. Noem NOOIT een fotografnaam.\n`;
+    ctx += `\nBelangrijk: Verwerk deze stijl actief in ELKE stap. Noem NOOIT een fotografnaam.\n`;
   } else {
-    // Geen specifieke fotograaf — gebruik relevante entries als richtlijnen
     ctx += `\n\nEXPERT STIJLRICHTLIJNEN — verwerk actief in je advies:\n`;
     relevant.forEach((entry, i) => {
-      const label = `Expert ${i+1} (${(entry.genre||[]).join('/')})`;
-      ctx += `\n[${label}]:\n`;
+      ctx += `\n[Expert ${i+1} (${(entry.genre||[]).join('/')})]:\n`;
       ctx += `Filosofie: ${entry.philosophy}\n`;
       if (entry.techniques && entry.techniques.length) {
-        entry.techniques.slice(0,2).forEach(t => {
-          ctx += `• ${t.name}: ${t.description}\n`;
-        });
+        entry.techniques.slice(0,2).forEach(t => ctx += `• ${t.name}: ${t.description}\n`);
       }
-      if (entry.unique_insights && entry.unique_insights.length) {
-        ctx += `Kerninsight: ${entry.unique_insights[0]}\n`;
-      }
-      if (entry.what_to_avoid && entry.what_to_avoid.length) {
-        ctx += `Vermijd: ${entry.what_to_avoid[0]}\n`;
-      }
+      if (entry.unique_insights && entry.unique_insights.length) ctx += `Kerninsight: ${entry.unique_insights[0]}\n`;
+      if (entry.what_to_avoid && entry.what_to_avoid.length) ctx += `Vermijd: ${entry.what_to_avoid[0]}\n`;
     });
-    ctx += `\nPas bovenstaande filosofieën en technieken actief toe in je bewerkingsadvies.\n`;
+    ctx += `\nPas bovenstaande filosofieën en technieken actief toe.\n`;
   }
 
-  // Aanvullende experts als er meerdere zijn
   if (photographerName && relevant.length > 1) {
-    ctx += `\nAanvullende context van vergelijkbare stijlen:\n`;
+    ctx += `\nAanvullende context:\n`;
     relevant.slice(1).forEach((entry, i) => {
       ctx += `[Stijl ${i+2}]: ${entry.philosophy.substring(0,150)}...\n`;
     });
@@ -117,6 +176,7 @@ function buildKnowledgeContext(relevant) {
   return ctx;
 }
 
+// ── Handler ────────────────────────────────────────────────────────────────
 module.exports = async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
@@ -125,13 +185,18 @@ module.exports = async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
 
   try {
-    const { provider, parts, systemPrompt, maxTokens, photoContext } = req.body;
+    const { parts, systemPrompt, maxTokens, photoContext, software } = req.body;
     if (!parts || !systemPrompt) return res.status(400).json({ error: 'Ontbrekende velden' });
 
-    const knowledgeBase = await loadKnowledgeBase();
+    // Laad kennisbank en software capabilities parallel
+    const [knowledgeBase, softwareCapabilities] = await Promise.all([
+      loadKnowledgeBase(),
+      loadSoftwareCapabilities()
+    ]);
+
+    // Selecteer relevante kennisbank entries
     let relevant = [];
     if (photoContext && photoContext.forcedEntry) {
-      // Specifieke stijl gekozen: gebruik die als primair met _forced flag
       const forced = Object.assign({}, photoContext.forcedEntry, { _forced: true });
       const extra = selectRelevantKnowledge(
         knowledgeBase.filter(e => e.video_title !== forced.video_title),
@@ -141,8 +206,11 @@ module.exports = async function handler(req, res) {
     } else if (photoContext) {
       relevant = selectRelevantKnowledge(knowledgeBase, photoContext.genre, photoContext.mood, photoContext.light);
     }
-    const knowledgeContext = buildKnowledgeContext(relevant);
-    const enhancedPrompt = systemPrompt + knowledgeContext;
+
+    // Bouw prompts
+    const knowledgeContext  = buildKnowledgeContext(relevant);
+    const softwareContext   = buildSoftwareContext(software || photoContext?.software, softwareCapabilities);
+    const enhancedPrompt    = systemPrompt + knowledgeContext + softwareContext;
 
     const apiKey = process.env.GEMINI_API_KEY;
     if (!apiKey) return res.status(500).json({ error: 'Gemini API key niet geconfigureerd' });
@@ -164,7 +232,11 @@ module.exports = async function handler(req, res) {
     return res.status(200).json({
       text,
       expertSources: relevant.length,
-      knowledgeUsed: relevant.map(e => e.video_title)
+      knowledgeUsed: relevant.map(e => ({
+        title: e.video_title,
+        photographer: e.photographer_name || null,
+        url: e.youtube_url || null
+      }))
     });
 
   } catch (err) {

@@ -2071,6 +2071,61 @@ function renderMarkdown(text){
 function fmt(t){
   return t.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>').replace(/\*(.+?)\*/g,'<em>$1</em>').replace(/\x60([^\x60]+)\x60/g,'<code>$1</code>');
 }
+function showForgotForm() {
+  document.getElementById('forgotForm').style.display = 'block';
+  document.getElementById('authEmail').style.display = 'none';
+  document.getElementById('authPassword').style.display = 'none';
+  document.getElementById('authSubmitBtn').style.display = 'none';
+  document.getElementById('forgotLink').style.display = 'none';
+  document.getElementById('authError').style.display = 'none';
+  document.getElementById('authSuccess').style.display = 'none';
+  var toggleDiv = document.querySelector('.auth-toggle');
+  if (toggleDiv) toggleDiv.style.display = 'none';
+  var emailVal = document.getElementById('authEmail').value;
+  if (emailVal) document.getElementById('forgotEmail').value = emailVal;
+}
+
+function hideForgotForm() {
+  document.getElementById('forgotForm').style.display = 'none';
+  document.getElementById('authEmail').style.display = 'block';
+  document.getElementById('authPassword').style.display = 'block';
+  document.getElementById('authSubmitBtn').style.display = 'block';
+  document.getElementById('forgotLink').style.display = 'inline';
+  document.getElementById('authError').style.display = 'none';
+  document.getElementById('authSuccess').style.display = 'none';
+  var toggleDiv = document.querySelector('.auth-toggle');
+  if (toggleDiv) toggleDiv.style.display = 'block';
+}
+
+function submitForgot() {
+  var email = document.getElementById('forgotEmail').value.trim();
+  var err   = document.getElementById('authError');
+  var ok    = document.getElementById('authSuccess');
+  err.style.display = 'none'; ok.style.display = 'none';
+  if (!email) { err.textContent = 'Vul je e-mailadres in'; err.style.display = 'block'; return; }
+  var btn = document.getElementById('forgotBtn');
+  btn.disabled = true; btn.textContent = '...';
+  fetch('/api/reset', {
+    method: 'POST', headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({ action: 'request', email: email })
+  })
+  .then(function(r) { return r.json(); })
+  .then(function(d) {
+    btn.disabled = false; btn.textContent = 'RESET LINK VERSTUREN';
+    if (d.success) {
+      ok.textContent = d.message; ok.style.display = 'block';
+      document.getElementById('forgotForm').style.display = 'none';
+    } else {
+      err.textContent = d.error || 'Er ging iets mis'; err.style.display = 'block';
+    }
+  })
+  .catch(function(e) {
+    btn.disabled = false; btn.textContent = 'RESET LINK VERSTUREN';
+    err.textContent = 'Verbindingsfout: ' + e.message; err.style.display = 'block';
+  });
+}
+
+
 </script>
 </body>
 </html>

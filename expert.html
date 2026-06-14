@@ -493,7 +493,19 @@ select option,select optgroup{background:#1e1e1e;color:#f0ede8}
     <div class="auth-success" id="authSuccess"></div>
     <input class="auth-input" type="email" id="authEmail" placeholder="e-mailadres">
     <input class="auth-input" type="password" id="authPassword" placeholder="wachtwoord (min. 8 tekens)">
+    <!-- Wachtwoord vergeten form -->
+    <div id="forgotForm" style="display:none">
+      <div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);letter-spacing:1px;margin-bottom:8px">VOER JE E-MAILADRES IN</div>
+      <input class="auth-input" type="email" id="forgotEmail" placeholder="e-mailadres">
+      <button class="btn" style="width:100%;margin-top:4px" id="forgotBtn" onclick="submitForgot()">RESET LINK VERSTUREN</button>
+      <div style="text-align:center;margin-top:10px">
+        <a onclick="hideForgotForm()" style="font-family:'DM Mono',monospace;font-size:11px;color:var(--muted);cursor:pointer">← Terug naar inloggen</a>
+      </div>
+    </div>
     <button class="btn" style="width:100%;margin-top:4px" id="authSubmitBtn" onclick="authSubmit()">INLOGGEN</button>
+    <div style="text-align:right;margin-top:8px;margin-bottom:4px">
+      <a onclick="showForgotForm()" id="forgotLink" style="font-family:'DM Mono',monospace;font-size:11px;color:var(--muted);cursor:pointer;display:none">Wachtwoord vergeten?</a>
+    </div>
     <div class="auth-toggle">
       <span id="authToggleText">Nog geen account?</span>
       <a onclick="toggleAuthMode()" id="authToggleLink">Registreren</a>
@@ -809,7 +821,9 @@ var currentEditStyle = null;
       showApp();
     });
   }
-  // anders: auth screen blijft zichtbaar
+  // anders: auth screen blijft zichtbaar — toon vergeten link
+  var fl = document.getElementById('forgotLink');
+  if (fl) fl.style.display = 'inline';
 })();
 
 function showApp() {

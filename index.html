@@ -399,11 +399,10 @@ select option,select optgroup{background:#1e1e1e;color:#f0ede8}
     </div>
     <button class="btn" id="connectBtn" onclick="saveKey()">START</button>
   </div>
-  <div class="sessions-bar" id="sessionsBar">
+  <div class="sessions-bar" style="display:none" id="sessionsBar">
     <span class="sessions-bar-label">Sessies</span>
     <div class="session-chips" id="sessionChips"><span style="font-family:'DM Mono',monospace;font-size:11px;color:var(--muted)">Nog geen sessies opgeslagen</span></div>
     <span class="save-indicator" id="saveIndicator">&#10003; OPGESLAGEN</span>
-    <button class="btn btn-outline" onclick="saveCurrentSession()" id="saveBtn" style="display:none;font-size:12px;padding:8px 16px">SESSIE OPSLAAN</button>
   </div>
   <div class="workflow-bar" id="workflowBar">
     <div class="phase-step active" id="phase1"><div class="phase-num">1</div><div class="phase-label">Globaal</div></div>
@@ -551,7 +550,6 @@ select option,select optgroup{background:#1e1e1e;color:#f0ede8}
       <li><strong style="color:var(--accent)">NOG AANPASSEN</strong> &mdash; Niet tevreden met deze fase? Typ wat je wil verbeteren en krijg nieuwe gerichte adviezen.</li>
       <li><strong style="color:var(--accent)">VOLGENDE FASE &rarr;</strong> &mdash; Tevreden met de huidige fase? Upload je bewerkte foto en ga door naar de volgende fase.</li>
       <li><strong style="color:var(--accent)">&larr; VORIGE FASE</strong> &mdash; Wil je toch iets aanpassen in een eerdere fase? Ga terug.</li>
-      <li><strong style="color:var(--accent)">SESSIE OPSLAAN</strong> &mdash; Sla je huidige sessie op zodat je later verder kunt gaan.</li>
       <li><strong style="color:var(--accent)">&#9733; FINALE ANALYSE</strong> &mdash; Verschijnt na 3+ iteraties. Geeft de allerlaatste subtiele finishing touches.</li>
       <li><strong style="color:var(--accent)">&#8635; NIEUWE FOTO</strong> &mdash; Start een nieuwe sessie met een andere foto.</li>
     </ul>
@@ -741,7 +739,7 @@ async function loadSession(id) {
   document.getElementById('uploadZone').style.display = 'none';
   document.getElementById('workspace').classList.add('active');
   document.getElementById('workflowBar').style.display = 'flex';
-  document.getElementById('saveBtn').style.display = '';
+  // saveBtn removed
   document.getElementById('editCheckBox').classList.remove('visible');
   document.getElementById('learningBox').classList.remove('visible');
 
@@ -782,7 +780,7 @@ var uiText = {
     startBtn: 'START',
     newPhoto: '↺ NIEUWE FOTO',
     newVersion: 'NIEUWE VERSIE',
-    saveSession: 'SESSIE OPSLAAN',
+    saveSession: '',
     sessions: 'SESSIES',
     noSessions: 'Nog geen sessies opgeslagen',
     nextPhase: 'VOLGENDE FASE →',
@@ -806,7 +804,7 @@ var uiText = {
     startBtn: 'START',
     newPhoto: '↺ NEW PHOTO',
     newVersion: 'NEW VERSION',
-    saveSession: 'SAVE SESSION',
+    saveSession: '',
     sessions: 'SESSIONS',
     noSessions: 'No sessions saved yet',
     nextPhase: 'NEXT PHASE →',
@@ -846,7 +844,7 @@ function applyLanguage() {
   if (sessLabel) sessLabel.textContent = t.sessions;
   // Save btn
   var saveBtn = document.getElementById('saveBtn');
-  if (saveBtn) saveBtn.textContent = t.saveSession;
+  // saveBtn removed
   // Phase buttons
   var advBtn = document.getElementById('phaseAdvanceBtn');
   if (advBtn && !advBtn.disabled) advBtn.textContent = t.nextPhase;
@@ -1137,7 +1135,7 @@ function handleUpload(file) {
   document.getElementById('uploadZone').style.display = 'none';
   document.getElementById('workspace').classList.add('active');
   document.getElementById('workflowBar').style.display = 'flex';
-  document.getElementById('saveBtn').style.display = '';
+  // saveBtn removed
   document.getElementById('editCheckBox').classList.remove('visible');
   document.getElementById('learningBox').classList.remove('visible');
   document.getElementById('finaleBtn').classList.remove('visible');
@@ -1273,6 +1271,15 @@ function goToPreviousPhase() {
   updatePhaseUI();
   document.getElementById('phaseAdvanceBtn').disabled = false;
   document.getElementById('phaseRefineBtn').disabled = false;
+  // Voeg ook onderaan een knop toe
+  var existingWrap = document.getElementById('bottomPhaseBtnWrap');
+  if (existingWrap) existingWrap.parentNode.removeChild(existingWrap);
+  var btnDiv = document.createElement('div');
+  btnDiv.id = 'bottomPhaseBtnWrap';
+  btnDiv.style.cssText = 'text-align:right;padding:16px 0 8px;border-top:1px solid var(--border);margin-top:16px';
+  btnDiv.innerHTML = '<button class="phase-advance-btn" id="bottomPhaseBtn" onclick="openNextPhaseModal()" style="font-size:13px">VOLGENDE FASE &rarr;</button>';
+  var ao = document.getElementById('analysisOutput');
+  if (ao) ao.appendChild(btnDiv);
   document.getElementById('phaseRefineBtn').classList.add('active-phase');
   // Show prev button only if not on phase 1
   document.getElementById('phasePrevBtn').style.display = currentPhase > 1 ? '' : 'none';
@@ -1405,7 +1412,7 @@ async function analyzePhoto(dataUrl,isFirst){
   var swName=swLabels[software]||software;
   var langInstruction = appLanguage === 'en'
     ? 'LANGUAGE: Respond entirely in English. Use English software terminology.'
-    : 'TAAL: Antwoord volledig in het Nederlands. Gebruik Nederlandse termen maar vermeld de Engelse term tussen haakjes bij de eerste vermelding, bijv. Verzadiging (Saturation), Belichting (Exposure), Schaduwen (Shadows).';
+    : 'TAAL: Antwoord volledig in het Nederlands. Gebruik Nederlandse termen maar vermeld de Engelse term tussen haakjes bij de eerste vermelding, bijv. Verzadiging (Saturation), Belichting (Exposure), Schaduwen (Shadows). Witbalans Temperatuur: vermeld ALTIJD beide varianten, bijv. "verhoog Temperatuur naar +15 punten (of naar ~5800K als je op Aangepast staat)". Vertaal GEEN paneel- of kopnamen zoals "Details and Texture" of "HSL/Color Mixer" — gebruik alleen de originele softwarenamen.';
   var systemPrompt='Je bent een professionele fotobewerkingscoach. Geef concrete bewerkingsadviezen. Stijl: direct, enthousiast, deskundig. Format: gebruik ## koppen, geef altijd exacte waarden. '+langInstruction+' Software: '+swInstructions[software]+' '+(phaseInstructions[currentPhase]||phaseInstructions[4])+' Geen vage adviezen.';
   var hasEditCheck=!isFirst&&previousPhotoData;
   var parts=[];
@@ -1546,7 +1553,7 @@ function handleUpload(file){
   document.getElementById('uploadZone').style.display='none';
   document.getElementById('workspace').classList.add('active');
   document.getElementById('workflowBar').style.display='flex';
-  document.getElementById('saveBtn').style.display='';
+  // saveBtn removed
   document.getElementById('editCheckBox').classList.remove('visible');
   document.getElementById('learningBox').classList.remove('visible');
   document.getElementById('finaleBtn').classList.remove('visible');
@@ -1579,7 +1586,7 @@ function newSession(){
   document.getElementById('analysisOutput').className='analysis-output';
   document.getElementById('analysisOutput').innerHTML='<div class="placeholder-text">ANALYSE WORDT GELADEN...</div>';
   document.getElementById('fileInput').value='';
-  document.getElementById('saveBtn').style.display='none';
+  // saveBtn removed
   document.getElementById('finaleBtn').classList.remove('visible');
   document.getElementById('finaleBadge').style.display='none';
   document.getElementById('finaleBtn').disabled=false;
@@ -1600,7 +1607,9 @@ function renderMarkdown(text){
   var lines=text.split('\n'),html='',inList=false;
   for(var i=0;i<lines.length;i++){
     var l=lines[i];
-    if(l.startsWith('### ')){if(inList){html+='</ul>';inList=false;}html+='<h3>'+fmt(l.slice(4))+'</h3>';}
+    if(l.startsWith('##### ')){if(inList){html+='</ul>';inList=false;}html+='<p><strong>'+fmt(l.slice(6))+'</strong></p>';}
+    else if(l.startsWith('#### ')){if(inList){html+='</ul>';inList=false;}html+='<p><strong>'+fmt(l.slice(5))+'</strong></p>';}
+    else if(l.startsWith('### ')){if(inList){html+='</ul>';inList=false;}html+='<h3>'+fmt(l.slice(4))+'</h3>';}
     else if(l.startsWith('## ')){if(inList){html+='</ul>';inList=false;}html+='<h2>'+fmt(l.slice(3))+'</h2>';}
     else if(l.startsWith('# ')){if(inList){html+='</ul>';inList=false;}html+='<h1>'+fmt(l.slice(2))+'</h1>';}
     else if(l.match(/^[-*] /)){if(!inList){html+='<ul>';inList=true;}html+='<li>'+fmt(l.slice(2))+'</li>';}

@@ -1,0 +1,1096 @@
+[
+  {
+    "id": "lightroom_classic",
+    "name": "Adobe Lightroom Classic",
+    "short": "Lightroom",
+    "platform": [
+      "desktop"
+    ],
+    "type": "professional",
+    "version_checked": "2024",
+    "capabilities": {
+      "global_adjustments": {
+        "exposure": true,
+        "contrast": true,
+        "highlights": true,
+        "shadows": true,
+        "whites": true,
+        "blacks": true,
+        "clarity": true,
+        "dehaze": true,
+        "vibrance": true,
+        "saturation": true,
+        "texture": true
+      },
+      "white_balance": {
+        "temperature": true,
+        "tint": true,
+        "eyedropper": true,
+        "presets": true
+      },
+      "tone_curve": {
+        "parametric": true,
+        "point_curve": true,
+        "rgb_channels": true,
+        "targeted_adjustment": true
+      },
+      "color": {
+        "hsl_mixer": true,
+        "color_grading": true,
+        "camera_calibration": true,
+        "selective_color": false
+      },
+      "detail": {
+        "sharpening": true,
+        "masking_slider": true,
+        "noise_reduction_luminance": true,
+        "noise_reduction_color": true,
+        "ai_denoise": true
+      },
+      "lens_corrections": {
+        "auto_corrections": true,
+        "manual_corrections": true,
+        "chromatic_aberration": true,
+        "vignetting": true
+      },
+      "local_adjustments": {
+        "brush": true,
+        "linear_gradient": true,
+        "radial_gradient": true,
+        "ai_subject_select": true,
+        "ai_sky_select": true,
+        "ai_background_select": true,
+        "color_range_mask": true,
+        "luminance_range_mask": true,
+        "intersect_masks": true,
+        "subtract_masks": true
+      },
+      "retouching": {
+        "heal": true,
+        "clone": true,
+        "content_aware_remove": true,
+        "red_eye": true
+      },
+      "effects": {
+        "vignette": true,
+        "grain": true,
+        "orton_effect": false,
+        "glow": false
+      },
+      "profiles": {
+        "camera_profiles": true,
+        "creative_profiles": true,
+        "custom_profiles": true
+      },
+      "advanced": {
+        "hdr_merge": true,
+        "panorama_merge": true,
+        "layers": false,
+        "blending_modes": false,
+        "frequency_separation": false,
+        "luminosity_masks": false,
+        "channel_mixer": false,
+        "smart_objects": false
+      },
+      "export": {
+        "batch_export": true,
+        "presets": true,
+        "watermark": true
+      }
+    },
+    "notes": "De meest complete bewerkingssoftware voor RAW fotografie. Alle kennisbank technieken zijn volledig toepasbaar.",
+    "not_possible": [],
+    "alternatives": {}
+  },
+  {
+    "id": "lightroom_mobile",
+    "name": "Adobe Lightroom Mobile",
+    "short": "Lightroom Mobile",
+    "platform": [
+      "ios",
+      "android"
+    ],
+    "type": "mobile",
+    "version_checked": "2024",
+    "capabilities": {
+      "global_adjustments": {
+        "exposure": true,
+        "contrast": true,
+        "highlights": true,
+        "shadows": true,
+        "whites": true,
+        "blacks": true,
+        "clarity": true,
+        "dehaze": true,
+        "vibrance": true,
+        "saturation": true,
+        "texture": true
+      },
+      "white_balance": {
+        "temperature": true,
+        "tint": true,
+        "eyedropper": true,
+        "presets": true
+      },
+      "tone_curve": {
+        "parametric": true,
+        "point_curve": true,
+        "rgb_channels": true,
+        "targeted_adjustment": false
+      },
+      "color": {
+        "hsl_mixer": true,
+        "color_grading": true,
+        "camera_calibration": true,
+        "selective_color": false
+      },
+      "detail": {
+        "sharpening": true,
+        "masking_slider": true,
+        "noise_reduction_luminance": true,
+        "noise_reduction_color": true,
+        "ai_denoise": true
+      },
+      "lens_corrections": {
+        "auto_corrections": true,
+        "manual_corrections": true,
+        "chromatic_aberration": true,
+        "vignetting": true
+      },
+      "local_adjustments": {
+        "brush": true,
+        "linear_gradient": true,
+        "radial_gradient": true,
+        "ai_subject_select": true,
+        "ai_sky_select": true,
+        "ai_background_select": false,
+        "color_range_mask": true,
+        "luminance_range_mask": true,
+        "intersect_masks": false,
+        "subtract_masks": false
+      },
+      "retouching": {
+        "heal": true,
+        "clone": false,
+        "content_aware_remove": true,
+        "red_eye": true
+      },
+      "effects": {
+        "vignette": true,
+        "grain": true,
+        "orton_effect": false,
+        "glow": false
+      },
+      "profiles": {
+        "camera_profiles": true,
+        "creative_profiles": true,
+        "custom_profiles": false
+      },
+      "advanced": {
+        "hdr_merge": true,
+        "panorama_merge": false,
+        "layers": false,
+        "blending_modes": false,
+        "frequency_separation": false,
+        "luminosity_masks": false,
+        "channel_mixer": false,
+        "smart_objects": false
+      }
+    },
+    "notes": "Vrijwel gelijkwaardig aan desktop voor basisbewerking. Masker combinaties (intersect/subtract) niet beschikbaar.",
+    "not_possible": [
+      "intersect_masks",
+      "subtract_masks",
+      "panorama_merge",
+      "clone"
+    ],
+    "alternatives": {
+      "intersect_masks": "Gebruik aparte maskers na elkaar",
+      "subtract_masks": "Gebruik kleur- of luminantiebereik als alternatief filter"
+    }
+  },
+  {
+    "id": "photoshop",
+    "name": "Adobe Photoshop",
+    "short": "Photoshop",
+    "platform": [
+      "desktop"
+    ],
+    "type": "professional",
+    "version_checked": "2024",
+    "capabilities": {
+      "global_adjustments": {
+        "exposure": true,
+        "contrast": true,
+        "highlights": true,
+        "shadows": true,
+        "whites": true,
+        "blacks": true,
+        "clarity": false,
+        "dehaze": true,
+        "vibrance": true,
+        "saturation": true,
+        "texture": false
+      },
+      "white_balance": {
+        "temperature": true,
+        "tint": true,
+        "eyedropper": true,
+        "presets": true
+      },
+      "tone_curve": {
+        "parametric": false,
+        "point_curve": true,
+        "rgb_channels": true,
+        "targeted_adjustment": false
+      },
+      "color": {
+        "hsl_mixer": true,
+        "color_grading": false,
+        "camera_calibration": false,
+        "selective_color": true
+      },
+      "detail": {
+        "sharpening": true,
+        "masking_slider": false,
+        "noise_reduction_luminance": true,
+        "noise_reduction_color": true,
+        "ai_denoise": true
+      },
+      "lens_corrections": {
+        "auto_corrections": true,
+        "manual_corrections": true,
+        "chromatic_aberration": true,
+        "vignetting": true
+      },
+      "local_adjustments": {
+        "brush": true,
+        "linear_gradient": true,
+        "radial_gradient": true,
+        "ai_subject_select": true,
+        "ai_sky_select": true,
+        "ai_background_select": true,
+        "color_range_mask": true,
+        "luminance_range_mask": true,
+        "intersect_masks": true,
+        "subtract_masks": true
+      },
+      "retouching": {
+        "heal": true,
+        "clone": true,
+        "content_aware_remove": true,
+        "red_eye": true
+      },
+      "effects": {
+        "vignette": true,
+        "grain": true,
+        "orton_effect": true,
+        "glow": true
+      },
+      "profiles": {
+        "camera_profiles": true,
+        "creative_profiles": false,
+        "custom_profiles": true
+      },
+      "advanced": {
+        "hdr_merge": true,
+        "panorama_merge": true,
+        "layers": true,
+        "blending_modes": true,
+        "frequency_separation": true,
+        "luminosity_masks": true,
+        "channel_mixer": true,
+        "smart_objects": true
+      }
+    },
+    "notes": "Gebruik voor alle bewerkingen in fase 1-3 de Camera Raw Filter (Filter → Camera Raw Filter, Ctrl+Shift+A). Hierin zijn DEZELFDE schuifregelaars beschikbaar als Lightroom. Fase 4 mag eenvoudige aanpassingslagen gebruiken. Witbalans Temperatuur staat in Kelvin bij Aangepast of in punten bij voorinstelling.",
+    "not_possible": [
+      "lagenstructuur fase 1-3",
+      "smart_objects fase 1-3",
+      "blend_modes fase 1-3",
+      "frequency_separation",
+      "luminosity_masks"
+    ],
+    "alternatives": {
+      "clarity": "Gebruik Camera Raw Filter → Texture/Clarity schuifregelaar",
+      "texture": "Gebruik Camera Raw Filter → Texture schuifregelaar",
+      "color_grading": "Gebruik Camera Raw Filter → Color Grading paneel",
+      "hsl_mixer": "Gebruik Camera Raw Filter → HSL/Kleurmixer paneel",
+      "ai_denoise": "Gebruik Camera Raw Filter → Detail → Denoise AI",
+      "lagenstructuur fase 1-3": "Gebruik Camera Raw Filter voor alle globale en lokale aanpassingen"
+    }
+  },
+  {
+    "id": "capture_one",
+    "name": "Capture One",
+    "short": "Capture One",
+    "platform": [
+      "desktop"
+    ],
+    "type": "professional",
+    "version_checked": "2024",
+    "capabilities": {
+      "global_adjustments": {
+        "exposure": true,
+        "contrast": true,
+        "highlights": true,
+        "shadows": true,
+        "whites": true,
+        "blacks": true,
+        "clarity": true,
+        "dehaze": false,
+        "vibrance": true,
+        "saturation": true,
+        "texture": false
+      },
+      "white_balance": {
+        "temperature": true,
+        "tint": true,
+        "eyedropper": true,
+        "presets": true
+      },
+      "tone_curve": {
+        "parametric": true,
+        "point_curve": true,
+        "rgb_channels": true,
+        "targeted_adjustment": true
+      },
+      "color": {
+        "hsl_mixer": true,
+        "color_grading": true,
+        "camera_calibration": false,
+        "selective_color": true
+      },
+      "detail": {
+        "sharpening": true,
+        "masking_slider": true,
+        "noise_reduction_luminance": true,
+        "noise_reduction_color": true,
+        "ai_denoise": true
+      },
+      "lens_corrections": {
+        "auto_corrections": true,
+        "manual_corrections": true,
+        "chromatic_aberration": true,
+        "vignetting": true
+      },
+      "local_adjustments": {
+        "brush": true,
+        "linear_gradient": true,
+        "radial_gradient": true,
+        "ai_subject_select": true,
+        "ai_sky_select": false,
+        "ai_background_select": false,
+        "color_range_mask": true,
+        "luminance_range_mask": true,
+        "intersect_masks": true,
+        "subtract_masks": true
+      },
+      "retouching": {
+        "heal": true,
+        "clone": true,
+        "content_aware_remove": false,
+        "red_eye": false
+      },
+      "effects": {
+        "vignette": true,
+        "grain": true,
+        "orton_effect": false,
+        "glow": false
+      },
+      "profiles": {
+        "camera_profiles": true,
+        "creative_profiles": true,
+        "custom_profiles": true
+      },
+      "advanced": {
+        "hdr_merge": false,
+        "panorama_merge": false,
+        "layers": true,
+        "blending_modes": false,
+        "frequency_separation": false,
+        "luminosity_masks": false,
+        "channel_mixer": false,
+        "smart_objects": false
+      }
+    },
+    "notes": "Uitstekende kleurverwerking en lagen. Geen Dehaze, geen AI sky/background select, geen HDR merge.",
+    "not_possible": [
+      "dehaze",
+      "texture",
+      "ai_sky_select",
+      "ai_background_select",
+      "hdr_merge",
+      "camera_calibration"
+    ],
+    "alternatives": {
+      "dehaze": "Gebruik Clarity en Contrast combinatie, of het Haze Removal tool (beperkt beschikbaar)",
+      "texture": "Gebruik Structure slider (vergelijkbaar met Texture)",
+      "ai_sky_select": "Gebruik kleur- of luminantiebereik masker voor lucht selectie"
+    }
+  },
+  {
+    "id": "snapseed",
+    "name": "Snapseed",
+    "short": "Snapseed",
+    "platform": [
+      "ios",
+      "android"
+    ],
+    "type": "mobile",
+    "version_checked": "2024",
+    "capabilities": {
+      "global_adjustments": {
+        "exposure": true,
+        "contrast": true,
+        "highlights": true,
+        "shadows": true,
+        "whites": false,
+        "blacks": false,
+        "clarity": false,
+        "dehaze": false,
+        "vibrance": true,
+        "saturation": true,
+        "texture": false
+      },
+      "white_balance": {
+        "temperature": true,
+        "tint": true,
+        "eyedropper": false,
+        "presets": false
+      },
+      "tone_curve": {
+        "parametric": false,
+        "point_curve": true,
+        "rgb_channels": true,
+        "targeted_adjustment": false
+      },
+      "color": {
+        "hsl_mixer": false,
+        "color_grading": false,
+        "camera_calibration": false,
+        "selective_color": false
+      },
+      "detail": {
+        "sharpening": true,
+        "masking_slider": false,
+        "noise_reduction_luminance": false,
+        "noise_reduction_color": false,
+        "ai_denoise": false
+      },
+      "lens_corrections": {
+        "auto_corrections": false,
+        "manual_corrections": false,
+        "chromatic_aberration": false,
+        "vignetting": true
+      },
+      "local_adjustments": {
+        "brush": false,
+        "linear_gradient": false,
+        "radial_gradient": false,
+        "ai_subject_select": false,
+        "ai_sky_select": false,
+        "ai_background_select": false,
+        "color_range_mask": false,
+        "luminance_range_mask": false,
+        "intersect_masks": false,
+        "subtract_masks": false,
+        "selective_tool": true
+      },
+      "retouching": {
+        "heal": true,
+        "clone": false,
+        "content_aware_remove": false,
+        "red_eye": true
+      },
+      "effects": {
+        "vignette": true,
+        "grain": false,
+        "orton_effect": false,
+        "glow": false
+      },
+      "profiles": {
+        "camera_profiles": false,
+        "creative_profiles": true,
+        "custom_profiles": false
+      },
+      "advanced": {
+        "hdr_merge": false,
+        "panorama_merge": false,
+        "layers": true,
+        "blending_modes": true,
+        "frequency_separation": false,
+        "luminosity_masks": false,
+        "channel_mixer": false,
+        "smart_objects": false,
+        "double_exposure": true,
+        "selective_tool": true,
+        "expand": true,
+        "perspective": true
+      }
+    },
+    "notes": "Gratis mobiele app met beperkte maar effectieve tools. Geen HSL, geen AI maskers, geen Denoise AI, geen Whites/Blacks schuiven. Lokale aanpassingen via Selective tool (puntgebaseerd). Heeft unieke functies zoals Double Exposure, Expand en Perspective.",
+    "not_possible": [
+      "hsl_mixer",
+      "ai_denoise",
+      "ai_subject_select",
+      "ai_sky_select",
+      "linear_gradient",
+      "radial_gradient",
+      "brush",
+      "whites",
+      "blacks",
+      "clarity",
+      "dehaze",
+      "texture",
+      "color_grading",
+      "camera_calibration",
+      "noise_reduction"
+    ],
+    "alternatives": {
+      "hsl_mixer": "Niet beschikbaar — gebruik Saturation globaal of Selective tool voor kleurspecifieke aanpassingen op een punt",
+      "ai_denoise": "Niet beschikbaar — gebruik Details tool met Sharpening laag zorgvuldig, of bewerk op hogere ISO met Heal tool",
+      "linear_gradient": "Niet beschikbaar — gebruik meerdere Selective tool punten om een vergelijkbaar effect te bereiken",
+      "radial_gradient": "Gebruik Selective tool punten in een cirkelpatroon of het Vignette effect",
+      "ai_subject_select": "Gebruik Selective tool op het onderwerp en pas Brightness/Contrast/Saturation aan",
+      "whites": "Gebruik Highlights als vervanging voor Whites",
+      "blacks": "Gebruik Shadows als vervanging voor Blacks",
+      "clarity": "Gebruik Details > Sharpening voor microcontrast, of Structure tool",
+      "color_grading": "Gebruik Curves per RGB kanaal voor kleurgrading",
+      "noise_reduction": "Niet beschikbaar — maak foto met lagere ISO of gebruik een andere app"
+    }
+  },
+  {
+    "id": "vsco",
+    "name": "VSCO",
+    "short": "VSCO",
+    "platform": [
+      "ios",
+      "android"
+    ],
+    "type": "mobile",
+    "version_checked": "2024",
+    "capabilities": {
+      "global_adjustments": {
+        "exposure": true,
+        "contrast": true,
+        "highlights": true,
+        "shadows": true,
+        "whites": false,
+        "blacks": false,
+        "clarity": false,
+        "dehaze": false,
+        "vibrance": false,
+        "saturation": true,
+        "texture": false
+      },
+      "white_balance": {
+        "temperature": true,
+        "tint": true,
+        "eyedropper": false,
+        "presets": false
+      },
+      "tone_curve": {
+        "parametric": false,
+        "point_curve": true,
+        "rgb_channels": false,
+        "targeted_adjustment": false
+      },
+      "color": {
+        "hsl_mixer": false,
+        "color_grading": false,
+        "camera_calibration": false,
+        "selective_color": false
+      },
+      "detail": {
+        "sharpening": true,
+        "masking_slider": false,
+        "noise_reduction_luminance": false,
+        "noise_reduction_color": false,
+        "ai_denoise": false
+      },
+      "lens_corrections": {
+        "auto_corrections": false,
+        "manual_corrections": false,
+        "chromatic_aberration": false,
+        "vignetting": true
+      },
+      "local_adjustments": {
+        "brush": false,
+        "linear_gradient": false,
+        "radial_gradient": false,
+        "ai_subject_select": false,
+        "ai_sky_select": false,
+        "ai_background_select": false,
+        "color_range_mask": false,
+        "luminance_range_mask": false,
+        "intersect_masks": false,
+        "subtract_masks": false
+      },
+      "retouching": {
+        "heal": false,
+        "clone": false,
+        "content_aware_remove": false,
+        "red_eye": false
+      },
+      "effects": {
+        "vignette": true,
+        "grain": true,
+        "orton_effect": false,
+        "glow": false
+      },
+      "profiles": {
+        "camera_profiles": false,
+        "creative_profiles": true,
+        "custom_profiles": false
+      },
+      "advanced": {
+        "hdr_merge": false,
+        "panorama_merge": false,
+        "layers": false,
+        "blending_modes": false,
+        "frequency_separation": false,
+        "luminosity_masks": false,
+        "channel_mixer": false,
+        "smart_objects": false
+      }
+    },
+    "notes": "Stijlgerichte app met sterke presets/filters. Zeer beperkte bewerkingsmogelijkheden. Geen lokale aanpassingen, geen HSL, geen retoucheren. Primair geschikt voor stijlfilters en lichte basiscorrecties.",
+    "not_possible": [
+      "hsl_mixer",
+      "ai_denoise",
+      "local_adjustments",
+      "retouching",
+      "whites",
+      "blacks",
+      "clarity",
+      "dehaze",
+      "texture",
+      "vibrance"
+    ],
+    "alternatives": {
+      "hsl_mixer": "Niet beschikbaar — kies een preset die de gewenste kleurtoon benadert",
+      "local_adjustments": "Niet beschikbaar in VSCO — overweeg Snapseed voor lokale aanpassingen",
+      "retouching": "Niet beschikbaar — gebruik Snapseed Healing tool"
+    }
+  },
+  {
+    "id": "luminar_neo",
+    "name": "Luminar Neo",
+    "short": "Luminar Neo",
+    "platform": [
+      "desktop"
+    ],
+    "type": "professional",
+    "version_checked": "2024",
+    "capabilities": {
+      "global_adjustments": {
+        "exposure": true,
+        "contrast": true,
+        "highlights": true,
+        "shadows": true,
+        "whites": true,
+        "blacks": true,
+        "clarity": true,
+        "dehaze": true,
+        "vibrance": true,
+        "saturation": true,
+        "texture": true
+      },
+      "white_balance": {
+        "temperature": true,
+        "tint": true,
+        "eyedropper": true,
+        "presets": true
+      },
+      "tone_curve": {
+        "parametric": false,
+        "point_curve": true,
+        "rgb_channels": true,
+        "targeted_adjustment": false
+      },
+      "color": {
+        "hsl_mixer": true,
+        "color_grading": true,
+        "camera_calibration": false,
+        "selective_color": false
+      },
+      "detail": {
+        "sharpening": true,
+        "masking_slider": false,
+        "noise_reduction_luminance": true,
+        "noise_reduction_color": true,
+        "ai_denoise": true
+      },
+      "lens_corrections": {
+        "auto_corrections": true,
+        "manual_corrections": true,
+        "chromatic_aberration": true,
+        "vignetting": true
+      },
+      "local_adjustments": {
+        "brush": true,
+        "linear_gradient": true,
+        "radial_gradient": true,
+        "ai_subject_select": true,
+        "ai_sky_select": true,
+        "ai_background_select": true,
+        "color_range_mask": false,
+        "luminance_range_mask": false,
+        "intersect_masks": false,
+        "subtract_masks": false
+      },
+      "retouching": {
+        "heal": true,
+        "clone": true,
+        "content_aware_remove": true,
+        "red_eye": true
+      },
+      "effects": {
+        "vignette": true,
+        "grain": true,
+        "orton_effect": false,
+        "glow": true
+      },
+      "profiles": {
+        "camera_profiles": true,
+        "creative_profiles": true,
+        "custom_profiles": false
+      },
+      "advanced": {
+        "hdr_merge": true,
+        "panorama_merge": false,
+        "layers": true,
+        "blending_modes": false,
+        "frequency_separation": false,
+        "luminosity_masks": false,
+        "channel_mixer": false,
+        "smart_objects": false,
+        "ai_sky_replacement": true,
+        "ai_portrait_enhancer": true
+      }
+    },
+    "notes": "Sterke AI-tools maar minder fijnmazige controle dan Lightroom. Geen kleur- of luminantiebereik maskers. Unieke AI sky replacement en portrait enhancer.",
+    "not_possible": [
+      "camera_calibration",
+      "color_range_mask",
+      "luminance_range_mask",
+      "intersect_masks"
+    ],
+    "alternatives": {
+      "color_range_mask": "Gebruik AI object selectie als alternatief",
+      "camera_calibration": "Niet beschikbaar — gebruik kleurenprofiel instelling"
+    }
+  },
+  {
+    "id": "rawtherapee",
+    "name": "RawTherapee",
+    "short": "RawTherapee",
+    "platform": [
+      "desktop"
+    ],
+    "type": "free",
+    "version_checked": "5.10",
+    "capabilities": {
+      "global_adjustments": {
+        "exposure": true,
+        "contrast": true,
+        "highlights": true,
+        "shadows": true,
+        "whites": true,
+        "blacks": true,
+        "clarity": true,
+        "dehaze": true,
+        "vibrance": true,
+        "saturation": true,
+        "texture": false
+      },
+      "white_balance": {
+        "temperature": true,
+        "tint": true,
+        "eyedropper": true,
+        "presets": true
+      },
+      "tone_curve": {
+        "parametric": true,
+        "point_curve": true,
+        "rgb_channels": true,
+        "targeted_adjustment": false
+      },
+      "color": {
+        "hsl_mixer": true,
+        "color_grading": false,
+        "camera_calibration": true,
+        "selective_color": true
+      },
+      "detail": {
+        "sharpening": true,
+        "masking_slider": true,
+        "noise_reduction_luminance": true,
+        "noise_reduction_color": true,
+        "ai_denoise": false
+      },
+      "local_adjustments": {
+        "brush": true,
+        "linear_gradient": true,
+        "radial_gradient": true,
+        "ai_subject_select": false,
+        "ai_sky_select": false,
+        "ai_background_select": false,
+        "color_range_mask": true,
+        "luminance_range_mask": true,
+        "intersect_masks": false,
+        "subtract_masks": false
+      },
+      "retouching": {
+        "heal": false,
+        "clone": false,
+        "content_aware_remove": false,
+        "red_eye": false
+      },
+      "effects": {
+        "vignette": true,
+        "grain": true,
+        "orton_effect": false,
+        "glow": false
+      },
+      "profiles": {
+        "camera_profiles": true,
+        "creative_profiles": false,
+        "custom_profiles": true
+      },
+      "advanced": {
+        "hdr_merge": false,
+        "panorama_merge": false,
+        "layers": false,
+        "blending_modes": false,
+        "frequency_separation": false,
+        "luminosity_masks": false,
+        "channel_mixer": false,
+        "smart_objects": false
+      }
+    },
+    "notes": "Krachtige gratis RAW bewerker. Geen AI functies, geen retouchering. Interface is complexer dan Lightroom. Naam van tools wijkt soms af.",
+    "not_possible": [
+      "ai_denoise",
+      "ai_subject_select",
+      "ai_sky_select",
+      "heal",
+      "clone",
+      "texture",
+      "color_grading"
+    ],
+    "alternatives": {
+      "ai_denoise": "Gebruik Noise Reduction > Luminance met Wavelet methode",
+      "ai_subject_select": "Gebruik handmatig masker met kleur- of luminantiebereik",
+      "color_grading": "Gebruik RGB curves per kanaal voor split toning effect",
+      "texture": "Niet beschikbaar — gebruik Clarity als alternatief"
+    }
+  },
+  {
+    "id": "darktable",
+    "name": "darktable",
+    "short": "darktable",
+    "platform": [
+      "desktop"
+    ],
+    "type": "free",
+    "version_checked": "4.6",
+    "capabilities": {
+      "global_adjustments": {
+        "exposure": true,
+        "contrast": true,
+        "highlights": true,
+        "shadows": true,
+        "whites": true,
+        "blacks": true,
+        "clarity": true,
+        "dehaze": true,
+        "vibrance": true,
+        "saturation": true,
+        "texture": false
+      },
+      "white_balance": {
+        "temperature": true,
+        "tint": true,
+        "eyedropper": true,
+        "presets": true
+      },
+      "tone_curve": {
+        "parametric": false,
+        "point_curve": true,
+        "rgb_channels": true,
+        "targeted_adjustment": false
+      },
+      "color": {
+        "hsl_mixer": true,
+        "color_grading": true,
+        "camera_calibration": true,
+        "selective_color": false
+      },
+      "detail": {
+        "sharpening": true,
+        "masking_slider": false,
+        "noise_reduction_luminance": true,
+        "noise_reduction_color": true,
+        "ai_denoise": false
+      },
+      "local_adjustments": {
+        "brush": true,
+        "linear_gradient": true,
+        "radial_gradient": true,
+        "ai_subject_select": false,
+        "ai_sky_select": false,
+        "ai_background_select": false,
+        "color_range_mask": true,
+        "luminance_range_mask": true,
+        "intersect_masks": true,
+        "subtract_masks": true
+      },
+      "retouching": {
+        "heal": true,
+        "clone": true,
+        "content_aware_remove": false,
+        "red_eye": false
+      },
+      "effects": {
+        "vignette": true,
+        "grain": true,
+        "orton_effect": false,
+        "glow": false
+      },
+      "profiles": {
+        "camera_profiles": true,
+        "creative_profiles": false,
+        "custom_profiles": true
+      },
+      "advanced": {
+        "hdr_merge": true,
+        "panorama_merge": false,
+        "layers": false,
+        "blending_modes": true,
+        "frequency_separation": false,
+        "luminosity_masks": false,
+        "channel_mixer": true,
+        "smart_objects": false
+      }
+    },
+    "notes": "Krachtige gratis open-source bewerker met steile leercurve. Modulaire aanpak, namen wijken sterk af van Lightroom. Geen AI functies.",
+    "not_possible": [
+      "ai_denoise",
+      "ai_subject_select",
+      "ai_sky_select",
+      "texture"
+    ],
+    "alternatives": {
+      "ai_denoise": "Gebruik Denoise (profiled) module — uitstekende resultaten zonder AI",
+      "ai_subject_select": "Gebruik combinatie van kleur- en luminantiebereik maskers",
+      "texture": "Niet beschikbaar — gebruik Local Contrast module",
+      "clarity": "Gebruik Local Contrast of Tone Equalizer module"
+    }
+  },
+  {
+    "id": "dxo_photolab",
+    "name": "DxO PhotoLab",
+    "short": "DxO PhotoLab",
+    "platform": [
+      "desktop"
+    ],
+    "type": "professional",
+    "version_checked": "7",
+    "capabilities": {
+      "global_adjustments": {
+        "exposure": true,
+        "contrast": true,
+        "highlights": true,
+        "shadows": true,
+        "whites": true,
+        "blacks": true,
+        "clarity": true,
+        "dehaze": true,
+        "vibrance": true,
+        "saturation": true,
+        "texture": false
+      },
+      "white_balance": {
+        "temperature": true,
+        "tint": true,
+        "eyedropper": true,
+        "presets": true
+      },
+      "tone_curve": {
+        "parametric": false,
+        "point_curve": true,
+        "rgb_channels": true,
+        "targeted_adjustment": false
+      },
+      "color": {
+        "hsl_mixer": true,
+        "color_grading": false,
+        "camera_calibration": false,
+        "selective_color": true
+      },
+      "detail": {
+        "sharpening": true,
+        "masking_slider": false,
+        "noise_reduction_luminance": true,
+        "noise_reduction_color": true,
+        "ai_denoise": true
+      },
+      "local_adjustments": {
+        "brush": true,
+        "linear_gradient": true,
+        "radial_gradient": true,
+        "ai_subject_select": true,
+        "ai_sky_select": true,
+        "ai_background_select": false,
+        "color_range_mask": true,
+        "luminance_range_mask": true,
+        "intersect_masks": false,
+        "subtract_masks": false
+      },
+      "retouching": {
+        "heal": true,
+        "clone": true,
+        "content_aware_remove": false,
+        "red_eye": false
+      },
+      "effects": {
+        "vignette": true,
+        "grain": true,
+        "orton_effect": false,
+        "glow": false
+      },
+      "profiles": {
+        "camera_profiles": true,
+        "creative_profiles": false,
+        "custom_profiles": false
+      },
+      "advanced": {
+        "hdr_merge": false,
+        "panorama_merge": false,
+        "layers": false,
+        "blending_modes": false,
+        "frequency_separation": false,
+        "luminosity_masks": false,
+        "channel_mixer": false,
+        "smart_objects": false,
+        "prime_denoising": true,
+        "optics_corrections": true
+      }
+    },
+    "notes": "Beste AI ruisreductie (DeepPRIME). Uitstekende lenscorrecties. Minder creatieve bewerkingsopties dan Lightroom. Geen color grading, geen camera kalibratie.",
+    "not_possible": [
+      "texture",
+      "color_grading",
+      "camera_calibration",
+      "intersect_masks",
+      "hdr_merge"
+    ],
+    "alternatives": {
+      "color_grading": "Gebruik RGB curves per kanaal",
+      "camera_calibration": "Niet beschikbaar",
+      "texture": "Gebruik Microcontrast instelling als alternatief"
+    }
+  }
+]

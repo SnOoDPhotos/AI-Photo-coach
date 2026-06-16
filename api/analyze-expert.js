@@ -49,14 +49,13 @@ async function loadSoftwareCapabilities() {
 function buildSoftwareContext(softwareId, capabilities) {
   if (!softwareId || !capabilities.length) return '';
 
+  // Zoek de software op ID of gedeeltelijke naam match
   const sw = capabilities.find(s =>
     s.id === softwareId ||
     s.name.toLowerCase().includes(softwareId.toLowerCase()) ||
     s.short.toLowerCase().includes(softwareId.toLowerCase())
   );
   if (!sw) return '';
-
-  const isPhotoshop = sw.id === 'photoshop' || sw.name.toLowerCase().includes('photoshop');
 
   let ctx = `
 
@@ -65,39 +64,7 @@ function buildSoftwareContext(softwareId, capabilities) {
   ctx += `BELANGRIJK: De gebruiker werkt met ${sw.name}. Geef ALLEEN adviezen die uitvoerbaar zijn in deze software.
 `;
 
-  // Photoshop specifieke instructies
-  if (isPhotoshop) {
-    ctx += `
-PHOTOSHOP WERKWIJZE — VERPLICHT:
-`;
-    ctx += `• Alle globale aanpassingen (belichting, kleur, contrast, witbalans) doe je via Filter → Camera Raw Filter (Ctrl+Shift+A)
-`;
-    ctx += `• In Camera Raw werken DEZELFDE schuifregelaars als in Lightroom: Exposure, Contrast, Highlights, Shadows, Whites, Blacks, Clarity, Texture, Vibrance, Saturation, HSL, Color Grading
-`;
-    ctx += `• Witbalans Temperatuur staat in Kelvin (bijv. 5500K) of in punten als je een voorinstelling gebruikt. Vermeld ALTIJD beide: "verhoog Temperatuur naar +15 punten (of naar ~5800K bij Aangepast)"
-`;
-    ctx += `• Fase 1 en 2: gebruik UITSLUITEND Camera Raw Filter voor alle aanpassingen
-`;
-    ctx += `• Fase 3 (lokale aanpassingen): gebruik de maskers en penseeltools IN Camera Raw Filter, NIET de Photoshop lagenstructuur
-`;
-    ctx += `• Fase 4: mag eenvoudige aanpassingslagen (Curves, Hue/Saturation) gebruiken als aanvulling
-`;
-    ctx += `• Begin fase 3 ALTIJD met: "Druk Ctrl+Shift+A om Camera Raw Filter te openen"
-`;
-    ctx += `• NOOIT: lagenstructuur, smart objects, frequentie-scheiding, blend modes in fase 1-3
-`;
-  }
-
-  // Taalconsistentie instructie
-  ctx += `
-TAALINSTRUCTIE: Gebruik ALTIJD de Nederlandse term gevolgd door de Engelse term tussen haakjes.
-`;
-  ctx += `Voorbeelden: "Belichting (Exposure)", "Witbalans (White Balance)", "Schaduwen (Shadows)", "Ruis (Noise)", "Scherpte (Sharpness)"
-`;
-  ctx += `NOOIT alleen de Engelse term zonder Nederlandse vertaling.
-`;
-
-  if (sw.not_possible && sw.not_possible.length && !isPhotoshop) {
+  if (sw.not_possible && sw.not_possible.length) {
     ctx += `
 NIET BESCHIKBAAR in ${sw.name} — noem deze NOOIT:
 `;
@@ -110,7 +77,7 @@ NIET BESCHIKBAAR in ${sw.name} — noem deze NOOIT:
 
   if (sw.notes) {
     ctx += `
-Noten voor ${sw.name}: ${sw.notes}
+Belangrijke noten voor ${sw.name}: ${sw.notes}
 `;
   }
 
@@ -259,8 +226,9 @@ module.exports = async function handler(req, res) {
     });
 
     const d = await r.json();
-    if (d.error) return res.status(400).json({ error: d.error.message });
+    if (d.error) return res.status(400).json({ error: d.error.message || d.error.status || JSON.stringify(d.error) });
     const text = d.candidates?.[0]?.content?.parts?.map(p => p.text || '').join('') || '';
+    if (!text) return res.status(200).json({ error: 'Geen antwoord ontvangen van Gemini. Probeer opnieuw.', text: '' });
 
     return res.status(200).json({
       text,

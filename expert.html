@@ -601,9 +601,9 @@ select option,select optgroup{background:#1e1e1e;color:#f0ede8}
     </div>
     <button class="btn" id="connectBtn" onclick="saveKey()">START</button>
   </div>
-  <div class="sessions-bar" id="sessionsBar">
+  <div class="sessions-bar" id="sessionsBar" style="display:none">
     <span class="sessions-bar-label">Sessies</span>
-    <div class="session-chips" id="sessionChips"><span style="font-family:'DM Mono',monospace;font-size:11px;color:var(--muted)">Nog geen sessies opgeslagen</span></div>
+    <div class="session-chips" id="sessionChips"></div>
     <span class="save-indicator" id="saveIndicator">&#10003; OPGESLAGEN</span>
   </div>
   <div class="workflow-bar" id="workflowBar">
@@ -1712,16 +1712,15 @@ function goToPreviousPhase() {
   updatePhaseUI();
   document.getElementById('phaseAdvanceBtn').disabled = false;
   document.getElementById('phaseRefineBtn').disabled = false;
-  // Voeg ook onderaan een knop toe
-  var existing = document.getElementById('bottomPhaseBtn');
-  if (!existing) {
-    var btnDiv = document.createElement('div');
-    btnDiv.id = 'bottomPhaseBtnWrap';
-    btnDiv.style.cssText = 'text-align:right;padding:16px 0 8px;border-top:1px solid var(--border);margin-top:16px';
-    btnDiv.innerHTML = '<button class="phase-advance-btn" id="bottomPhaseBtn" onclick="openNextPhaseModal()" style="font-size:13px">VOLGENDE FASE &rarr;</button>';
-    var ao = document.getElementById('analysisOutput');
-    if (ao) ao.appendChild(btnDiv);
-  }
+  // Voeg ook onderaan een knop toe (verwijder oude eerst)
+  var existingWrap = document.getElementById('bottomPhaseBtnWrap');
+  if (existingWrap) existingWrap.parentNode.removeChild(existingWrap);
+  var btnDiv = document.createElement('div');
+  btnDiv.id = 'bottomPhaseBtnWrap';
+  btnDiv.style.cssText = 'text-align:right;padding:16px 0 8px;border-top:1px solid var(--border);margin-top:16px';
+  btnDiv.innerHTML = '<button class="phase-advance-btn" id="bottomPhaseBtn" onclick="openNextPhaseModal()" style="font-size:13px">VOLGENDE FASE &rarr;</button>';
+  var ao = document.getElementById('analysisOutput');
+  if (ao) ao.appendChild(btnDiv);
   document.getElementById('phaseRefineBtn').classList.add('active-phase');
   // Show prev button only if not on phase 1
   document.getElementById('phasePrevBtn').style.display = currentPhase > 1 ? '' : 'none';
@@ -1868,7 +1867,7 @@ async function analyzePhoto(dataUrl,isFirst){
   var swName=swLabels[software]||software;
   var langInstruction = appLanguage === 'en'
     ? 'LANGUAGE: Respond entirely in English. Use English software terminology.'
-    : 'TAAL: Antwoord volledig in het Nederlands. Gebruik Nederlandse termen maar vermeld de Engelse term tussen haakjes bij de eerste vermelding, bijv. Verzadiging (Saturation), Belichting (Exposure), Schaduwen (Shadows).';
+    : 'TAAL: Antwoord volledig in het Nederlands. Gebruik Nederlandse termen maar vermeld de Engelse term tussen haakjes bij de eerste vermelding, bijv. Verzadiging (Saturation), Belichting (Exposure), Schaduwen (Shadows). Witbalans Temperatuur: vermeld ALTIJD beide varianten, bijv. "verhoog Temperatuur naar +15 punten (of naar ~5800K als je op Aangepast staat)". Vertaal GEEN paneel- of kopnamen zoals "Details and Texture" of "HSL/Color Mixer" — gebruik alleen de originele softwarenamen.';
   var systemPrompt='Je bent een professionele fotobewerkingscoach. Geef concrete bewerkingsadviezen. Stijl: direct, enthousiast, deskundig. Format: gebruik ## koppen, geef altijd exacte waarden. '+langInstruction+' Software: '+swInstructions[software]+' '+(phaseInstructions[currentPhase]||phaseInstructions[4])+' Geen vage adviezen.';
   var hasEditCheck=!isFirst&&previousPhotoData;
   var parts=[];
@@ -2090,7 +2089,9 @@ function renderMarkdown(text){
   var lines=text.split('\n'),html='',inList=false;
   for(var i=0;i<lines.length;i++){
     var l=lines[i];
-    if(l.startsWith('### ')){if(inList){html+='</ul>';inList=false;}html+='<h3>'+fmt(l.slice(4))+'</h3>';}
+    if(l.startsWith('##### ')){if(inList){html+='</ul>';inList=false;}html+='<p><strong>'+fmt(l.slice(6))+'</strong></p>';}
+    else if(l.startsWith('#### ')){if(inList){html+='</ul>';inList=false;}html+='<p><strong>'+fmt(l.slice(5))+'</strong></p>';}
+    else if(l.startsWith('### ')){if(inList){html+='</ul>';inList=false;}html+='<h3>'+fmt(l.slice(4))+'</h3>';}
     else if(l.startsWith('## ')){if(inList){html+='</ul>';inList=false;}html+='<h2>'+fmt(l.slice(3))+'</h2>';}
     else if(l.startsWith('# ')){if(inList){html+='</ul>';inList=false;}html+='<h1>'+fmt(l.slice(2))+'</h1>';}
     else if(l.match(/^[-*] /)){if(!inList){html+='<ul>';inList=true;}html+='<li>'+fmt(l.slice(2))+'</li>';}

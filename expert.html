@@ -1774,10 +1774,7 @@ async function callAI(systemPrompt, parts, maxTokens) {
       console.log('[callAI error]', data.error);
       return { error: data.error, text: '' };
     }
-    if (!data.text || data.text.trim() === '') {
-      console.log('[callAI] empty response', data);
-      return { error: 'Geen antwoord ontvangen van de AI. Probeer het opnieuw.', text: '' };
-    }
+
     // Show expert sources badge
     var badge = document.getElementById('expertBadge');
     if (badge && data.expertSources > 0) {

@@ -1712,15 +1712,7 @@ function goToPreviousPhase() {
   updatePhaseUI();
   document.getElementById('phaseAdvanceBtn').disabled = false;
   document.getElementById('phaseRefineBtn').disabled = false;
-  // Voeg ook onderaan een knop toe (verwijder oude eerst)
-  var existingWrap = document.getElementById('bottomPhaseBtnWrap');
-  if (existingWrap) existingWrap.parentNode.removeChild(existingWrap);
-  var btnDiv = document.createElement('div');
-  btnDiv.id = 'bottomPhaseBtnWrap';
-  btnDiv.style.cssText = 'text-align:right;padding:16px 0 8px;border-top:1px solid var(--border);margin-top:16px';
-  btnDiv.innerHTML = '<button class="phase-advance-btn" id="bottomPhaseBtn" onclick="openNextPhaseModal()" style="font-size:13px">VOLGENDE FASE &rarr;</button>';
-  var ao = document.getElementById('analysisOutput');
-  if (ao) ao.appendChild(btnDiv);
+
   document.getElementById('phaseRefineBtn').classList.add('active-phase');
   // Show prev button only if not on phase 1
   document.getElementById('phasePrevBtn').style.display = currentPhase > 1 ? '' : 'none';
@@ -1853,7 +1845,18 @@ async function triggerLearningMoment(){
 }
 
 // ── Analyse ────────────────────────────────────────────────────────────────
+var _lastDataUrl = null;
+var _lastIsFirst = true;
+
+function retryAnalysis() {
+  if (_lastDataUrl) {
+    analyzePhoto(_lastDataUrl, _lastIsFirst);
+  }
+}
+
 async function analyzePhoto(dataUrl,isFirst){
+  _lastDataUrl = dataUrl;
+  _lastIsFirst = isFirst;
   if(!apiKey) return;
   isAnalyzing=true;
   var output=document.getElementById('analysisOutput');
@@ -1897,8 +1900,22 @@ async function analyzePhoto(dataUrl,isFirst){
   var aiResult=await callAI(systemPrompt,parts,8192);
   output.className='analysis-output';
   if(aiResult.error){
-    output.innerHTML='<div style="color:var(--error);font-family:monospace;font-size:12px">FOUT: '+aiResult.error+'</div>';
-    statusText.textContent='FOUT';
+    var errMsg = aiResult.error || '';
+    var isBusy = errMsg.toLowerCase().includes('overloaded') || errMsg.toLowerCase().includes('peak') ||
+                 errMsg.toLowerCase().includes('capacity') || errMsg.toLowerCase().includes('503') ||
+                 errMsg.toLowerCase().includes('429') || errMsg.toLowerCase().includes('quota');
+    var errHtml = '<div style="color:var(--error);font-family:monospace;font-size:12px;padding:12px;border:1px solid var(--error);background:rgba(224,92,92,0.06)">';
+    if (isBusy) {
+      errHtml += '<div style="margin-bottom:8px">&#9888; Server is momenteel druk bezet. Probeer het opnieuw.</div>';
+      errHtml += '<button class="btn btn-sm" onclick="retryAnalysis()" style="font-size:11px;padding:6px 16px">&#8635; OPNIEUW PROBEREN</button>';
+    } else {
+      errHtml += 'FOUT: ' + errMsg;
+    }
+    errHtml += '</div>';
+    output.innerHTML = errHtml;
+    statusText.textContent = isBusy ? 'DRUK' : 'FOUT';
+    // Iteratie NIET ophogen bij fout — zet terug
+    if (iteration > 1) iteration--;
     isAnalyzing=false;
     return;
   }
@@ -1917,6 +1934,17 @@ async function analyzePhoto(dataUrl,isFirst){
   document.getElementById('phaseRefineBtn').disabled=false;
   document.getElementById('phaseRefineBtn').classList.add('active-phase');
   checkFinaleButton();
+  // Voeg volgende fase knop onderaan toe
+  if (currentPhase < 5) {
+    var existingWrap = document.getElementById('bottomPhaseBtnWrap');
+    if (existingWrap) existingWrap.parentNode.removeChild(existingWrap);
+    var btnDiv = document.createElement('div');
+    btnDiv.id = 'bottomPhaseBtnWrap';
+    btnDiv.style.cssText = 'text-align:right;padding:16px 0 8px;border-top:1px solid var(--border);margin-top:16px';
+    btnDiv.innerHTML = '<button class="phase-advance-btn" onclick="openNextPhaseModal()" style="font-size:13px">VOLGENDE FASE &rarr;</button>';
+    var ao = document.getElementById('analysisOutput');
+    if (ao) ao.appendChild(btnDiv);
+  }
   if(currentSessionId) saveCurrentSession(false);
   isAnalyzing=false;
 }

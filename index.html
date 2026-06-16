@@ -1400,11 +1400,29 @@ async function triggerLearningMoment(){
 // ── Analyse ────────────────────────────────────────────────────────────────
 var _lastDataUrl = null;
 var _lastIsFirst = true;
+var _retryCount = 0;
+var _maxRetries = 3;
 
 function retryAnalysis() {
-  if (_lastDataUrl) {
-    analyzePhoto(_lastDataUrl, _lastIsFirst);
+  if (!_lastDataUrl) return;
+  _retryCount++;
+  if (_retryCount > _maxRetries) {
+    _retryCount = 0;
+    var output = document.getElementById('analysisOutput');
+    if (output) output.innerHTML = '<div style="color:var(--error);font-family:monospace;font-size:12px;padding:12px;border:1px solid var(--error);background:rgba(224,92,92,0.06)">Server is langdurig bezet. Probeer het over een paar minuten opnieuw.</div>';
+    return;
   }
+  var delay = _retryCount * 2000; // 2s, 4s, 6s wachttijd
+  var output = document.getElementById('analysisOutput');
+  if (output) {
+    output.innerHTML = '<div style="color:var(--muted);font-family:monospace;font-size:12px;padding:12px;text-align:center">'
+      + '<div class="spinner"></div>'
+      + '<span>Poging ' + _retryCount + ' van ' + _maxRetries + ' — even wachten...</span>'
+      + '</div>';
+  }
+  setTimeout(function() {
+    analyzePhoto(_lastDataUrl, _lastIsFirst);
+  }, delay);
 }
 
 async function analyzePhoto(dataUrl,isFirst){
@@ -1456,13 +1474,19 @@ async function analyzePhoto(dataUrl,isFirst){
     var errMsg = aiResult.error || '';
     var isBusy = errMsg.toLowerCase().includes('overloaded') || errMsg.toLowerCase().includes('peak') ||
                  errMsg.toLowerCase().includes('capacity') || errMsg.toLowerCase().includes('503') ||
-                 errMsg.toLowerCase().includes('429') || errMsg.toLowerCase().includes('quota');
-    var errHtml = '<div style="color:var(--error);font-family:monospace;font-size:12px;padding:12px;border:1px solid var(--error);background:rgba(224,92,92,0.06)">';
+                 errMsg.toLowerCase().includes('429') || errMsg.toLowerCase().includes('quota') ||
+                 errMsg.toLowerCase().includes('rate') || errMsg.toLowerCase().includes('limit') ||
+                 errMsg.toLowerCase().includes('busy') || errMsg.toLowerCase().includes('unavailable') ||
+                 errMsg.toLowerCase().includes('resource') || errMsg.toLowerCase().includes('try again') ||
+                 errMsg.toLowerCase().includes('server') || errMsg === '' || !errMsg;
+    var errHtml = '<div style="font-family:monospace;font-size:12px;padding:14px;border:1px solid var(--error);background:rgba(224,92,92,0.06)">';
     if (isBusy) {
-      errHtml += '<div style="margin-bottom:8px">&#9888; Server is momenteel druk bezet. Probeer het opnieuw.</div>';
+      errHtml += '<div style="color:var(--accent);margin-bottom:10px;font-size:13px">&#9888; Server is momenteel druk bezet</div>';
+      errHtml += '<div style="color:var(--muted);font-size:11px;margin-bottom:12px">Dit is een tijdelijk probleem bij de AI-aanbieder. De app probeert het automatisch opnieuw.</div>';
       errHtml += '<button class="btn btn-sm" onclick="retryAnalysis()" style="font-size:11px;padding:6px 16px">&#8635; OPNIEUW PROBEREN</button>';
     } else {
-      errHtml += 'FOUT: ' + errMsg;
+      errHtml += '<div style="color:var(--error)">FOUT: ' + (errMsg || 'Onbekende fout') + '</div>';
+      errHtml += '<div style="margin-top:10px"><button class="btn btn-sm btn-outline" onclick="retryAnalysis()" style="font-size:11px;padding:6px 16px">&#8635; OPNIEUW PROBEREN</button></div>';
     }
     errHtml += '</div>';
     output.innerHTML = errHtml;
@@ -1471,6 +1495,7 @@ async function analyzePhoto(dataUrl,isFirst){
     isAnalyzing=false;
     return;
   }
+  _retryCount = 0; // Reset retry teller bij succes
   var text=aiResult.text;
   var ecM=text.match(/##\s*EDIT CHECK\s*\n([\s\S]*?)(?=##|$)/i);
   if(ecM){document.getElementById('editCheckText').innerHTML=renderMarkdown(ecM[1].trim());document.getElementById('editCheckBox').classList.add('visible');}

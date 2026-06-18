@@ -365,9 +365,9 @@ function renderEntries() {
       + (e.genre||[]).map(function(g){return '<span class="tag">'+g+'</span>';}).join('')
       + (e.mood||[]).slice(0,2).map(function(m){return '<span class="tag" style="opacity:0.6">'+m+'</span>';}).join('')
       + '</div></div>'
-      + '<div style="font-family:monospace;font-size:10px;color:var(--muted);text-align:right">'
-      + ((e.techniques||[]).length) + ' tech<br>'
-      + ((e.unique_insights||[]).length) + ' insights'
+      + '<div style="font-family:monospace;font-size:10px;text-align:right">'
+      + '<span style="color:' + ((e.techniques||[]).length >= 3 ? 'var(--success)' : 'var(--error)') + '">' + (e.techniques||[]).length + ' tech</span><br>'
+      + '<span style="color:' + ((e.unique_insights||[]).length >= 2 ? 'var(--success)' : 'var(--error)') + '">' + (e.unique_insights||[]).length + ' insights</span>'
       + '</div></div>';
   }).join('') : '<div style="color:var(--muted);font-size:13px;padding:20px;text-align:center">Geen entries gevonden</div>';
 }

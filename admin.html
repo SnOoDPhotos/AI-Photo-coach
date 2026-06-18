@@ -37,8 +37,8 @@ input:focus,textarea:focus{border-color:var(--accent)}
 .entry-title{font-size:13px;font-weight:500;margin-bottom:4px}
 .entry-meta{font-family:monospace;font-size:10px;color:var(--muted)}
 .tag{display:inline-block;background:rgba(232,197,71,0.1);border:1px solid rgba(232,197,71,0.2);color:var(--accent);font-family:monospace;font-size:9px;padding:2px 8px;margin:2px;letter-spacing:1px}
-.tabs{display:flex;gap:0;border-bottom:1px solid var(--border);margin-bottom:24px}
-.tab{background:none;border:none;border-bottom:2px solid transparent;color:var(--muted);padding:10px 20px;font-family:monospace;font-size:12px;letter-spacing:1px;cursor:pointer;margin-bottom:-1px;transition:all 0.2s}
+.tabs{display:flex;gap:0;border-bottom:1px solid var(--border);margin-bottom:24px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;white-space:nowrap;flex-shrink:0}.tabs::-webkit-scrollbar{display:none}
+.tab{flex-shrink:0;background:none;border:none;border-bottom:2px solid transparent;color:var(--muted);padding:10px 20px;font-family:monospace;font-size:12px;letter-spacing:1px;cursor:pointer;margin-bottom:-1px;transition:all 0.2s}
 .tab.active{color:var(--accent);border-bottom-color:var(--accent)}
 .tab:hover:not(.active){color:var(--text)}
 .json-area{font-family:monospace;font-size:11px;min-height:300px;line-height:1.6;background:#0a0a0a;color:#a8d8a8}

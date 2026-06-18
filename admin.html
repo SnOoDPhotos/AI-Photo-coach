@@ -92,6 +92,7 @@ input:focus,textarea:focus{border-color:var(--accent)}
       <button class="tab" id="tab-btn-add" onclick="showTab('add')">TOEVOEGEN</button>
       <button class="tab" id="tab-btn-export" onclick="showTab('export')">EXPORTEREN</button>
       <button class="tab" id="tab-btn-users" onclick="showTab('users')">GEBRUIKERS <span id="pendingBadge" style="display:none;background:var(--error);color:#fff;font-size:9px;padding:2px 6px;margin-left:4px">0</span></button>
+      <button class="tab" id="tab-btn-software" onclick="showTab('software')">SOFTWARE</button>
     </div>
 
     <!-- Overview -->
@@ -173,6 +174,26 @@ input:focus,textarea:focus{border-color:var(--accent)}
     </div>
 
   </div>
+
+    <!-- SOFTWARE CAPABILITIES TAB -->
+    <div id="tab-software" class="hidden">
+      <div class="section">
+        <h3>SOFTWARE CAPABILITIES</h3>
+        <p style="font-size:13px;color:var(--muted);margin-bottom:20px;line-height:1.7">
+          Overzicht van alle software pakketten en hun beschikbare tools. Dit bepaalt welke adviezen de AI geeft per software.
+        </p>
+        <div id="softwareGrid" style="display:grid;gap:12px"></div>
+      </div>
+    </div>
+
+    <!-- SOFTWARE TAB -->
+    <div id="tab-software" class="hidden">
+      <div class="section">
+        <h3>SOFTWARE CAPABILITIES</h3>
+        <p style="font-size:13px;color:var(--muted);margin-bottom:20px;line-height:1.7">Overzicht van alle software pakketten en hun beschikbare tools. Dit bepaalt welke adviezen de AI geeft.</p>
+        <div id="softwareGrid" style="display:grid;gap:12px"></div>
+      </div>
+    </div>
 </main>
 
 <!-- Detail modal -->
@@ -522,7 +543,7 @@ function exportKnowledge() {
 }
 
 function showTab(name) {
-  ['overview','add','export','users'].forEach(function(t) {
+  ['overview','add','export','users','software'].forEach(function(t) {
     document.getElementById('tab-'+t).classList.toggle('hidden', t !== name);
     document.getElementById('tab-btn-'+t).classList.toggle('active', t === name);
   });
@@ -716,6 +737,37 @@ function deleteUser(email) {
     else alert('Fout: ' + (d.error || 'Onbekend'));
   });
 }
+function loadSoftwareCapabilities() {
+  var grid = document.getElementById('softwareGrid');
+  if (!grid) return;
+  grid.innerHTML = '<div style="color:var(--muted);font-size:13px;padding:20px">Laden...</div>';
+  fetch('/software-capabilities.json')
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+      if (!Array.isArray(data)) { grid.innerHTML = '<div style="color:var(--error)">Geen data</div>'; return; }
+      grid.innerHTML = data.map(function(sw) {
+        var notPossible = sw.not_possible || [];
+        var alts = sw.alternatives || {};
+        var caps = sw.capabilities || {};
+        var totalTrue = 0;
+        function countCaps(obj) { Object.values(obj).forEach(function(v) { if (v === true) totalTrue++; else if (typeof v === 'object') countCaps(v); }); }
+        countCaps(caps);
+        return '<div style="background:var(--bg);border:1px solid var(--border);padding:16px">'
+          + '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">'
+          + '<div><div style="font-size:15px;font-weight:600;color:var(--accent)">' + sw.name + '</div>'
+          + '<div style="font-family:monospace;font-size:10px;color:var(--muted)">' + (sw.platform||'') + '</div></div>'
+          + '<div style="font-family:monospace;font-size:11px;color:var(--success)">' + totalTrue + ' tools</div></div>'
+          + (sw.notes ? '<div style="font-size:12px;color:var(--text);margin-bottom:8px;padding:8px;border-left:2px solid var(--accent);background:rgba(232,197,71,0.05)">' + sw.notes + '</div>' : '')
+          + (notPossible.length ? '<div style="font-size:12px;margin-top:6px"><span style="color:var(--error);font-family:monospace;font-size:10px">NIET BESCHIKBAAR: </span>'
+            + notPossible.map(function(f) { var a = alts[f]; return '<span style="color:var(--muted)">' + f + (a ? ' &rarr; ' + a : '') + '</span>'; }).join(', ')
+          + '</div>' : '')
+          + '</div>';
+      }).join('');
+    })
+    .catch(function(e) { grid.innerHTML = '<div style="color:var(--error)">Fout: ' + e.message + '</div>'; });
+}
+
+
 </script>
 </body>
 </html>

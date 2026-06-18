@@ -465,9 +465,30 @@ function validateAndAdd() {
   if (!jsonStr) { showAddError('Plak eerst JSON van Gemini'); return; }
   try {
     var entry = JSON.parse(jsonStr);
-    var required = ['video_title', 'genre', 'techniques'];
+    var required = ['video_title', 'genre', 'techniques', 'philosophy', 'unique_insights'];
     var missing = required.filter(function(k) { return !entry[k]; });
     if (missing.length) { showAddError('Ontbrekende velden: ' + missing.join(', ')); return; }
+
+    // Kwaliteitscheck
+    var warnings = [];
+    var techCount = (entry.techniques || []).length;
+    var insightCount = (entry.unique_insights || []).length;
+    if (techCount < 3) warnings.push(techCount + ' technieken — minimaal 3 vereist');
+    if (insightCount < 2) warnings.push(insightCount + ' unique insights — minimaal 2 vereist');
+    if (!entry.workflow_order || !entry.workflow_order.length) warnings.push('workflow_order ontbreekt');
+    if (!entry.color_approach) warnings.push('color_approach ontbreekt');
+    if (!entry.youtube_url) warnings.push('youtube_url ontbreekt');
+
+    if (warnings.length) {
+      var proceed = confirm('⚠ Kwaliteitswaarschuwing:
+
+' + warnings.join('
+') + '
+
+Deze entry voldoet niet aan de minimale eisen. Toch toevoegen?');
+      if (!proceed) return;
+    }
+
     // Check for duplicate
     var exists = localKnowledge.find(function(e) { return e.video_title === entry.video_title; });
     if (exists) { showAddError('Entry met deze titel bestaat al'); return; }

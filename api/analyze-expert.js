@@ -1,6 +1,31 @@
 const fs   = require('fs');
 const path = require('path');
 
+// ── Groq fallback ──────────────────────────────────────────────────────────
+function isGeminiQuotaError(d) {
+  const msg = d?.error?.message || '';
+  return msg.includes('quota') || msg.includes('billing') || msg.includes('credits') ||
+         msg.includes('RESOURCE_EXHAUSTED') || msg.includes('prepayment') || d?.error?.code === 429;
+}
+
+async function callGroqFallback(parts, systemPrompt, maxTokens) {
+  const apiKey = process.env.GROQ_API_KEY;
+  if (!apiKey) return null;
+  const gc = parts.map(p => {
+    if (p.inline_data) return { type: 'image_url', image_url: { url: `data:${p.inline_data.mime_type};base64,${p.inline_data.data}` } };
+    if (p.text) return { type: 'text', text: p.text };
+  }).filter(Boolean);
+  try {
+    const r = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${apiKey}` },
+      body: JSON.stringify({ model: 'meta-llama/llama-4-scout-17b-16e-instruct', max_tokens: maxTokens || 8192, messages: [{ role: 'system', content: systemPrompt }, { role: 'user', content: gc }] })
+    });
+    const d = await r.json();
+    return d.choices?.[0]?.message?.content || null;
+  } catch(e) { return null; }
+}
+
 // ── Redis helpers ──────────────────────────────────────────────────────────
 async function kvGet(key) {
   const url   = process.env.KV_REST_API_URL   || process.env.UPSTASH_REDIS_REST_URL;
@@ -45,44 +70,85 @@ async function loadSoftwareCapabilities() {
   }
 }
 
+// ── Software ID mapping (expert.html values → capabilities IDs) ────────────
+const SOFTWARE_ID_MAP = {
+  'lightroom':      'lightroom_classic',
+  'lightroommobile':'lightroom_mobile',
+  'photoshop':      'photoshop',
+  'both':           'lightroom_classic',
+  'captureone':     'capture_one',
+  'dxo':            'dxo_photolab',
+  'luminar':        'luminar_neo',
+  'darktable':      'darktable',
+  'rawtherapee':    'rawtherapee',
+  'snapseed':       'snapseed',
+  'vsco':           'vsco',
+  'gimp':           null  // geen capabilities entry voor GIMP
+};
+
+// ── Capabilities samenvatten voor de AI ────────────────────────────────────
+function summarizeCapabilities(caps) {
+  const available = [];
+  const unavailable = [];
+  function walk(obj, prefix) {
+    Object.entries(obj).forEach(([key, val]) => {
+      if (typeof val === 'boolean') {
+        const label = (prefix ? prefix + ' > ' : '') + key.replace(/_/g, ' ');
+        if (val) available.push(label);
+        else unavailable.push(label);
+      } else if (typeof val === 'object' && val !== null) {
+        walk(val, key.replace(/_/g, ' '));
+      }
+    });
+  }
+  walk(caps, '');
+  return { available, unavailable };
+}
+
 // ── Software context bouwen voor de AI ────────────────────────────────────
 function buildSoftwareContext(softwareId, capabilities) {
   if (!softwareId || !capabilities.length) return '';
 
-  // Zoek de software op ID of gedeeltelijke naam match
-  const sw = capabilities.find(s =>
-    s.id === softwareId ||
-    s.name.toLowerCase().includes(softwareId.toLowerCase()) ||
-    s.short.toLowerCase().includes(softwareId.toLowerCase())
-  );
+  // Map expert.html ID naar capabilities ID
+  const mappedId = SOFTWARE_ID_MAP[softwareId] || softwareId;
+  if (!mappedId) return '';
+
+  const sw = capabilities.find(s => s.id === mappedId);
   if (!sw) return '';
 
-  let ctx = `
+  let ctx = `\n\n=== SOFTWARE: ${sw.name} (${sw.platform || ''}) ===\n`;
+  ctx += `BELANGRIJK: De gebruiker werkt UITSLUITEND met ${sw.name}. Geef ALLEEN adviezen uitvoerbaar in deze software. Noem NOOIT tools uit andere software.\n`;
 
-=== SOFTWARE: ${sw.name} ===
-`;
-  ctx += `BELANGRIJK: De gebruiker werkt met ${sw.name}. Geef ALLEEN adviezen die uitvoerbaar zijn in deze software.
-`;
+  // Gebruik capabilities boolean map
+  if (sw.capabilities) {
+    const { available, unavailable } = summarizeCapabilities(sw.capabilities);
+    if (available.length) {
+      ctx += `\nBESCHIKBAAR in ${sw.name} (gebruik deze actief):\n`;
+      // Groepeer per categorie voor leesbaarheid
+      const grouped = {};
+      available.forEach(a => {
+        const parts = a.split(' > ');
+        const cat = parts[0] || 'Overig';
+        if (!grouped[cat]) grouped[cat] = [];
+        grouped[cat].push(parts.slice(1).join(' > ') || a);
+      });
+      Object.entries(grouped).forEach(([cat, tools]) => {
+        ctx += `  ${cat}: ${tools.join(', ')}\n`;
+      });
+    }
+  }
 
+  // Niet beschikbare tools met alternatieven
   if (sw.not_possible && sw.not_possible.length) {
-    ctx += `
-NIET BESCHIKBAAR in ${sw.name} — noem deze NOOIT:
-`;
+    ctx += `\nNIET BESCHIKBAAR in ${sw.name} — noem deze NOOIT:\n`;
     sw.not_possible.forEach(f => {
       const alt = sw.alternatives && sw.alternatives[f];
-      ctx += `✗ ${f}${alt ? ` → gebruik in plaats daarvan: ${alt}` : ''}
-`;
+      ctx += `  ✗ ${f}${alt ? ' → gebruik: ' + alt : ''}\n`;
     });
   }
 
-  if (sw.notes) {
-    ctx += `
-Belangrijke noten voor ${sw.name}: ${sw.notes}
-`;
-  }
-
-  ctx += `=== EINDE SOFTWARE CONTEXT ===
-`;
+  if (sw.notes) ctx += `\nSpeciaal voor ${sw.name}: ${sw.notes}\n`;
+  ctx += `=== EINDE SOFTWARE CONTEXT ===\n`;
   return ctx;
 }
 
@@ -177,29 +243,6 @@ function buildKnowledgeContext(relevant) {
 }
 
 // ── Handler ────────────────────────────────────────────────────────────────
-function isGeminiQuotaError(d) {
-  const msg = d?.error?.message || '';
-  return msg.includes('quota') || msg.includes('billing') || msg.includes('credits') ||
-         msg.includes('RESOURCE_EXHAUSTED') || msg.includes('prepayment') || d?.error?.code === 429;
-}
-
-async function callGroqFallback(parts, systemPrompt, maxTokens) {
-  const apiKey = process.env.GROQ_API_KEY;
-  if (!apiKey) return null;
-  const gc = parts.map(p => {
-    if (p.inline_data) return { type: 'image_url', image_url: { url: `data:${p.inline_data.mime_type};base64,${p.inline_data.data}` } };
-    if (p.text) return { type: 'text', text: p.text };
-  }).filter(Boolean);
-  const r = await fetch('https://api.groq.com/openai/v1/chat/completions', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${apiKey}` },
-    body: JSON.stringify({ model: 'meta-llama/llama-4-scout-17b-16e-instruct', max_tokens: maxTokens || 8192, messages: [{ role: 'system', content: systemPrompt }, { role: 'user', content: gc }] })
-  });
-  const d = await r.json();
-  if (d.error) return null;
-  return d.choices?.[0]?.message?.content || null;
-}
-
 module.exports = async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
@@ -249,9 +292,18 @@ module.exports = async function handler(req, res) {
     });
 
     const d = await r.json();
-    if (d.error) return res.status(400).json({ error: d.error.message || d.error.status || JSON.stringify(d.error) });
-    const text = d.candidates?.[0]?.content?.parts?.map(p => p.text || '').join('') || '';
-    if (!text) return res.status(200).json({ error: 'Geen antwoord ontvangen van Gemini. Probeer opnieuw.', text: '' });
+    let text = '';
+    let usedFallback = false;
+    if (d.error && isGeminiQuotaError(d)) {
+      const fallbackText = await callGroqFallback(parts, enhancedPrompt, maxTokens);
+      if (fallbackText) { text = fallbackText; usedFallback = true; }
+      else return res.status(400).json({ error: d.error.message || JSON.stringify(d.error) });
+    } else if (d.error) {
+      return res.status(400).json({ error: d.error.message || d.error.status || JSON.stringify(d.error) });
+    } else {
+      text = d.candidates?.[0]?.content?.parts?.map(p => p.text || '').join('') || '';
+    }
+    if (!text) return res.status(200).json({ error: 'Geen antwoord ontvangen. Probeer opnieuw.', text: '' });
 
     return res.status(200).json({
       text,

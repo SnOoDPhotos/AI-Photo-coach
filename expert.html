@@ -1002,11 +1002,38 @@ function populateStyleSelect(entries, filterGenre) {
   var filterMood = authRole === 'admin' ? ((document.getElementById('adminMoodSelect')||{}).value || '') : '';
   var genre = filterGenre || adminGenre;
 
+  // Software filter mapping
+  var SW_LABEL_MAP = {
+    'lightroom': ['Lightroom Classic', 'Lightroom', 'Adobe Lightroom', 'Adobe Lightroom Classic'],
+    'lightroommobile': ['Lightroom Mobile', 'Adobe Lightroom Mobile'],
+    'photoshop': ['Photoshop', 'Adobe Photoshop'],
+    'both': ['Lightroom Classic', 'Photoshop', 'Lightroom', 'Adobe Lightroom'],
+    'captureone': ['Capture One', 'CaptureOne', 'Capture One Pro'],
+    'dxo': ['DxO PhotoLab', 'DxO'],
+    'luminar': ['Luminar Neo', 'Luminar', 'Luminar AI'],
+    'darktable': ['darktable', 'Darktable'],
+    'rawtherapee': ['RawTherapee', 'Raw Therapee'],
+    'snapseed': ['Snapseed'],
+    'vsco': ['VSCO'],
+    'gimp': ['GIMP']
+  };
+  var currentSoftwareLabels = SW_LABEL_MAP[software] || [];
+
   var matched = 0;
   entries.forEach(function(e, i) {
     if (filterPhotographer && e.photographer_name !== filterPhotographer) return;
     if (genre && !(e.genre||[]).some(function(g) { return g.toLowerCase() === genre.toLowerCase(); })) return;
     if (filterMood && !(e.mood||[]).includes(filterMood)) return;
+    // Software filter: toon alleen stijlen compatible met gekozen software
+    // Als kennisbank entry geen software heeft, altijd tonen
+    if (currentSoftwareLabels.length && e.software && e.software.length) {
+      var swMatch = e.software.some(function(s) {
+        return currentSoftwareLabels.some(function(l) {
+          return s.toLowerCase() === l.toLowerCase();
+        });
+      });
+      if (!swMatch) return;
+    }
 
     var opt = document.createElement('option');
     opt.value = i;

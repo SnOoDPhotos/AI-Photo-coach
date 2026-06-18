@@ -3,6 +3,30 @@
     "api/analyze.js": {
       "maxDuration": 60,
       "memory": 1024
+    },
+    "api/analyze-expert.js": {
+      "maxDuration": 60,
+      "memory": 1024
+    },
+    "api/users.js": {
+      "maxDuration": 30,
+      "memory": 512
+    },
+    "api/knowledge.js": {
+      "maxDuration": 30,
+      "memory": 512
+    },
+    "api/software.js": {
+      "maxDuration": 30,
+      "memory": 512
+    },
+    "api/auth.js": {
+      "maxDuration": 10,
+      "memory": 256
+    },
+    "api/reset.js": {
+      "maxDuration": 30,
+      "memory": 256
     }
   }
 }

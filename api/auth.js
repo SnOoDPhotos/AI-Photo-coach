@@ -13,8 +13,8 @@ function verifyAdminToken(token) {
     const decoded = Buffer.from(token, 'base64').toString('utf8');
     const [username, ts, ...rest] = decoded.split(':');
     if (rest.join(':') !== secret) return false;
-    // 24 uur geldig
-    if (Date.now() - parseInt(ts) > 24 * 60 * 60 * 1000) return false;
+    // 7 dagen geldig
+    if (Date.now() - parseInt(ts) > 7 * 24 * 60 * 60 * 1000) return false;
     return username === process.env.ADMIN_USERNAME;
   } catch (e) {
     return false;

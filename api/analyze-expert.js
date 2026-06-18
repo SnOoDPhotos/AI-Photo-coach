@@ -177,6 +177,29 @@ function buildKnowledgeContext(relevant) {
 }
 
 // ── Handler ────────────────────────────────────────────────────────────────
+function isGeminiQuotaError(d) {
+  const msg = d?.error?.message || '';
+  return msg.includes('quota') || msg.includes('billing') || msg.includes('credits') ||
+         msg.includes('RESOURCE_EXHAUSTED') || msg.includes('prepayment') || d?.error?.code === 429;
+}
+
+async function callGroqFallback(parts, systemPrompt, maxTokens) {
+  const apiKey = process.env.GROQ_API_KEY;
+  if (!apiKey) return null;
+  const gc = parts.map(p => {
+    if (p.inline_data) return { type: 'image_url', image_url: { url: `data:${p.inline_data.mime_type};base64,${p.inline_data.data}` } };
+    if (p.text) return { type: 'text', text: p.text };
+  }).filter(Boolean);
+  const r = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${apiKey}` },
+    body: JSON.stringify({ model: 'meta-llama/llama-4-scout-17b-16e-instruct', max_tokens: maxTokens || 8192, messages: [{ role: 'system', content: systemPrompt }, { role: 'user', content: gc }] })
+  });
+  const d = await r.json();
+  if (d.error) return null;
+  return d.choices?.[0]?.message?.content || null;
+}
+
 module.exports = async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
@@ -232,6 +255,7 @@ module.exports = async function handler(req, res) {
 
     return res.status(200).json({
       text,
+      usedFallback,
       expertSources: relevant.length,
       knowledgeUsed: relevant.map(e => ({
         title: e.video_title,

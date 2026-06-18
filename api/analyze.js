@@ -1,3 +1,34 @@
+// Helper: call Groq as fallback with vision
+async function callGroqFallback(parts, systemPrompt, maxTokens) {
+  const apiKey = process.env.GROQ_API_KEY;
+  if (!apiKey) return null;
+
+  const gc = parts.map(p => {
+    if (p.inline_data) return { type: 'image_url', image_url: { url: `data:${p.inline_data.mime_type};base64,${p.inline_data.data}` } };
+    if (p.text) return { type: 'text', text: p.text };
+  }).filter(Boolean);
+
+  const r = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${apiKey}` },
+    body: JSON.stringify({
+      model: 'meta-llama/llama-4-scout-17b-16e-instruct',
+      max_tokens: maxTokens || 8192,
+      messages: [{ role: 'system', content: systemPrompt }, { role: 'user', content: gc }]
+    })
+  });
+  const d = await r.json();
+  if (d.error) return null;
+  return d.choices?.[0]?.message?.content || null;
+}
+
+// Check if error is Gemini quota/billing related
+function isGeminiQuotaError(d) {
+  const msg = d?.error?.message || '';
+  return msg.includes('quota') || msg.includes('billing') || msg.includes('credits') ||
+         msg.includes('RESOURCE_EXHAUSTED') || msg.includes('prepayment') || d?.error?.code === 429;
+}
+
 module.exports = async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
@@ -11,10 +42,12 @@ module.exports = async function handler(req, res) {
     if (!parts || !systemPrompt) return res.status(400).json({ error: 'Ontbrekende velden' });
 
     let text = '';
+    let usedFallback = false;
 
     if (provider === 'gemini') {
       const apiKey = process.env.GEMINI_API_KEY;
       if (!apiKey) return res.status(500).json({ error: 'Gemini API key niet geconfigureerd' });
+
       const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -25,8 +58,21 @@ module.exports = async function handler(req, res) {
         })
       });
       const d = await r.json();
-      if (d.error) return res.status(400).json({ error: d.error.message });
-      text = d.candidates?.[0]?.content?.parts?.map(p => p.text || '').join('') || '';
+
+      // Fallback to Groq on quota/billing error
+      if (d.error && isGeminiQuotaError(d)) {
+        const fallbackText = await callGroqFallback(parts, systemPrompt, maxTokens);
+        if (fallbackText) {
+          text = fallbackText;
+          usedFallback = true;
+        } else {
+          return res.status(400).json({ error: d.error.message });
+        }
+      } else if (d.error) {
+        return res.status(400).json({ error: d.error.message });
+      } else {
+        text = d.candidates?.[0]?.content?.parts?.map(p => p.text || '').join('') || '';
+      }
 
     } else if (['claude', 'claude-opus', 'claude-haiku'].includes(provider)) {
       const apiKey = process.env.ANTHROPIC_API_KEY;
@@ -114,9 +160,9 @@ module.exports = async function handler(req, res) {
       return res.status(400).json({ error: 'Onbekende provider: ' + provider });
     }
 
-    return res.status(200).json({ text });
+    return res.status(200).json({ text, usedFallback });
 
   } catch (err) {
     return res.status(500).json({ error: 'Server fout: ' + err.message });
   }
-}
+};

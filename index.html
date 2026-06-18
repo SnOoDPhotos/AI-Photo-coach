@@ -1338,6 +1338,22 @@ async function callAI(systemPrompt, parts, maxTokens) {
       return { error: data.error, text: '' };
     }
 
+    // Toon waarschuwing als Groq fallback gebruikt werd
+    if (data.usedFallback) {
+      var warn = document.getElementById('fallbackWarning');
+      if (!warn) {
+        warn = document.createElement('div');
+        warn.id = 'fallbackWarning';
+        warn.style.cssText = 'background:rgba(232,197,71,0.08);border:1px solid rgba(232,197,71,0.4);color:#e8c547;font-family:monospace;font-size:11px;padding:10px 14px;margin-bottom:12px;letter-spacing:0.5px;line-height:1.6';
+        warn.innerHTML = '&#9888;&nbsp; Tijdelijk: analyse via reservemodel (Groq). Adviezen kunnen minder gedetailleerd zijn dan normaal. Gemini wordt hersteld zodra credits zijn aangevuld.';
+        var output = document.getElementById('analysisOutput');
+        if (output && output.parentNode) output.parentNode.insertBefore(warn, output);
+      }
+      warn.style.display = 'block';
+    } else {
+      var w = document.getElementById('fallbackWarning');
+      if (w) w.style.display = 'none';
+    }
     return { text: data.text || '', error: null };
   } catch(e) {
     console.log('[callAI catch]', e.message);

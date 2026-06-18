@@ -480,12 +480,8 @@ function validateAndAdd() {
     if (!entry.youtube_url) warnings.push('youtube_url ontbreekt');
 
     if (warnings.length) {
-      var proceed = confirm('⚠ Kwaliteitswaarschuwing:
-
-' + warnings.join('
-') + '
-
-Deze entry voldoet niet aan de minimale eisen. Toch toevoegen?');
+      var warnMsg = '⚠ Kwaliteitswaarschuwing:\n\n' + warnings.join('\n') + '\n\nDeze entry voldoet niet aan de minimale eisen. Toch toevoegen?';
+      var proceed = confirm(warnMsg);
       if (!proceed) return;
     }
 

@@ -485,44 +485,78 @@ function validateAndAdd() {
   document.getElementById('addError').classList.add('hidden');
   document.getElementById('addSuccess').classList.add('hidden');
   if (!jsonStr) { showAddError('Plak eerst JSON van Gemini'); return; }
+
   try {
-    var entry = JSON.parse(jsonStr);
+    var parsed = JSON.parse(jsonStr);
+    var entries = Array.isArray(parsed) ? parsed : [parsed];
+
     var required = ['video_title', 'genre', 'techniques', 'philosophy', 'unique_insights'];
-    var missing = required.filter(function(k) { return !entry[k]; });
-    if (missing.length) { showAddError('Ontbrekende velden: ' + missing.join(', ')); return; }
+    var added = [];
+    var skipped = [];
+    var failed = [];
 
-    // Kwaliteitscheck
-    var warnings = [];
-    var techCount = (entry.techniques || []).length;
-    var insightCount = (entry.unique_insights || []).length;
-    if (techCount < 3) warnings.push(techCount + ' technieken — minimaal 3 vereist');
-    if (insightCount < 2) warnings.push(insightCount + ' unique insights — minimaal 2 vereist');
-    if (!entry.workflow_order || !entry.workflow_order.length) warnings.push('workflow_order ontbreekt');
-    if (!entry.color_approach) warnings.push('color_approach ontbreekt');
-    if (!entry.youtube_url) warnings.push('youtube_url ontbreekt');
+    entries.forEach(function(entry) {
+      var missing = required.filter(function(k) { return !entry[k]; });
+      if (missing.length) {
+        failed.push({ title: entry.video_title || '(geen titel)', reason: 'Ontbrekende velden: ' + missing.join(', ') });
+        return;
+      }
 
-    if (warnings.length) {
-      var warnMsg = '⚠ Kwaliteitswaarschuwing:\n\n' + warnings.join('\n') + '\n\nDeze entry voldoet niet aan de minimale eisen. Toch toevoegen?';
-      var proceed = confirm(warnMsg);
-      if (!proceed) return;
+      var techCount = (entry.techniques || []).length;
+      var insightCount = (entry.unique_insights || []).length;
+      var warnings = [];
+      if (techCount < 3) warnings.push(techCount + ' technieken');
+      if (insightCount < 2) warnings.push(insightCount + ' insights');
+      if (!entry.workflow_order || !entry.workflow_order.length) warnings.push('geen workflow_order');
+      if (!entry.color_approach) warnings.push('geen color_approach');
+
+      var exists = localKnowledge.find(function(e) { return e.video_title === entry.video_title; });
+      if (exists) {
+        skipped.push({ title: entry.video_title, reason: 'bestaat al' });
+        return;
+      }
+
+      if (warnings.length) {
+        skipped.push({ title: entry.video_title, reason: 'kwaliteit onvoldoende: ' + warnings.join(', ') });
+        return;
+      }
+
+      localKnowledge.push(entry);
+      added.push(entry.video_title);
+    });
+
+    if (added.length === 0 && skipped.length === 0 && failed.length === 0) {
+      showAddError('Geen geldige entries gevonden in de JSON');
+      return;
     }
 
-    // Check for duplicate
-    var exists = localKnowledge.find(function(e) { return e.video_title === entry.video_title; });
-    if (exists) { showAddError('Entry met deze titel bestaat al'); return; }
-    localKnowledge.push(entry);
     localStorage.setItem('snood_knowledge_base', JSON.stringify(localKnowledge));
     document.getElementById('newEntryJson').value = '';
     renderAll();
 
-    document.getElementById('addSuccess').textContent = '✓ Entry toegevoegd — wordt naar database gestuurd...';
-    document.getElementById('addSuccess').classList.remove('hidden');
-    autoPushToDatabase(entry.video_title);
+    var summary = '';
+    if (added.length) summary += '\u2713 ' + added.length + ' toegevoegd';
+    if (skipped.length) summary += (summary ? ' \u2014 ' : '') + '\u26a0 ' + skipped.length + ' overgeslagen';
+    if (failed.length) summary += (summary ? ' \u2014 ' : '') + '\u2717 ' + failed.length + ' mislukt';
+
+    var detailLines = [];
+    skipped.forEach(function(s) { detailLines.push('\u26a0 ' + s.title + ': ' + s.reason); });
+    failed.forEach(function(f) { detailLines.push('\u2717 ' + f.title + ': ' + f.reason); });
+
+    if (added.length > 0) {
+      document.getElementById('addSuccess').textContent = summary + (detailLines.length ? '\n' + detailLines.join('\n') : '') + ' \u2014 wordt naar database gestuurd...';
+      document.getElementById('addSuccess').style.whiteSpace = 'pre-line';
+      document.getElementById('addSuccess').classList.remove('hidden');
+      autoPushToDatabase(added.length + ' entries');
+    } else {
+      showAddError(summary + '\n' + detailLines.join('\n'));
+      document.getElementById('addError').style.whiteSpace = 'pre-line';
+    }
+
   } catch(e) {
     showAddError('Ongeldige JSON: ' + e.message);
   }
 }
-
 
 function autoPushToDatabase(addedTitle) {
   fetch('/api/knowledge', {

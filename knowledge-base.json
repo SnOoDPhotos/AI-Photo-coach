@@ -20256,5 +20256,262 @@
       "De fotograaf kiest er bewust voor om de zwarte- en witte punten van de water- en grondmaskers op nul te laten staan om de natuurlijke overgang met de nachtelijke schaduwen te waarborgen.",
       "Hij laat zien dat het selectief verlagen van de verzadiging (Saturation) een van de meest effectieve methoden is om storende lichtvervuiling aan de horizon onzichtbaar te maken."
     ]
+  },
+  {
+    "video_title": "Simple Andromeda Processing: Tutorial with Free Software (Siril + Gimp )",
+    "photographer_name": "Deep Sky Detail",
+    "youtube_url": "https://www.youtube.com/watch?v=0Ft8_TO-Gw4",
+    "genre": [
+      "nacht & astro"
+    ],
+    "light_conditions": [
+      "nacht"
+    ],
+    "mood": [
+      "naturalistisch"
+    ],
+    "software": [
+      "darktable",
+      "GIMP"
+    ],
+    "style_description": "Clean Naturalistic Andromeda Galaxy",
+    "philosophy": "De workflow streeft naar een uiterst toegankelijke, gratis methode om de Andromeda-galactische kern en stofbanen naar voren te halen zonder dure AI-tools. De focus ligt op het herstellen van de achtergrond en het neutraliseren van ruis in de pure lineaire en chromatische kanalen. De bewerker gelooft in subtiele, herhaalbare stappen om artefacten en kleurruis wiskundig te scheiden van de werkelijke details van het sterrenstelsel.",
+    "workflow_order": [
+      "Stap 1: Crop de onbewerkte lineaire stack om lelijke stacking-artefacten in de hoeken direct uit te sluiten.",
+      "Stap 2: Voer een RBF-achtergrondextractie uit met dither om lichtvervuiling en maangradiënten te neutraliseren.",
+      "Stap 3: Pas Richardson-Lucy deconvolution toe via gradient descent met exact 80 iteraties om sterren strakker te maken.",
+      "Stap 4: Verwijder groenruis, pas achtergrondneutralisatie toe, stretch de data via ArcSign en Histogram, en splits de kanalen in GIMP via LAB-decompositie."
+    ],
+    "techniques": [
+      {
+        "name": "RBF Achtergrond Model",
+        "description": "Pas background extraction toe met RBF en geactiveerde dither, en plaats handmatig 10 tot 15 sample-punten uitsluitend op de donkere achtergrondruimte ver buiten de Andromeda-melkwegstelsel.",
+        "when_to_use": "Wanneer breedbandopnames gradiënten vertonen door storende maan- of stadsverlichting.",
+        "tools": [
+          "Image Processing / Background Extraction"
+        ],
+        "effect": "De ongelijkmatige achtergrond wordt perfect uniform getrokken, waardoor de zwakke buitenste galactische armen direct beter zichtbaar worden."
+      },
+      {
+        "name": "Richardson-Lucy Deconvolution",
+        "description": "Genereer een PSF op basis van de sterren en pas Richardson-Lucy deconvolution toe via de gradient descent-methode met exact 80 iteraties op het frame.",
+        "when_to_use": "In de lineaire staat om atmosferische onscherpte effectief te corrigeren.",
+        "tools": [
+          "Image Processing / Filters / Deconvolution"
+        ],
+        "effect": "De sterrendiameters krimpen tot messcherpe speldenprikken en de fijne stofbanen in de kern van het sterrenstelsel winnen enorm aan definitie."
+      },
+      {
+        "name": "ArcSign Kleurbehoud Stretch",
+        "description": "Voer een initiële stretch uit via ArcSign Transformation, activeer de waarschuwing voor clipping en schuif de rekfactor stapsgewijs omhoog.",
+        "when_to_use": "Als eerste rekstap om de lineaire data om te zetten naar een zichtbare afbeelding zonder verzadiging te verliezen.",
+        "tools": [
+          "Image Processing / Stretches / ArcSign Transformation"
+        ],
+        "effect": "De helderheid van het sterrenstelsel neemt toe terwijl de intense kleuren in de kern en sterren perfect behouden blijven."
+      },
+      {
+        "name": "LAB-Ruimte Kleurruis Scheiding",
+        "description": "Decomponeer de afbeelding in GIMP naar de LAB-kleurruimte en pas een krachtige Gaussian Blur toe op uitsluitend het A-kanaal en het B-kanaal afzonderlijk.",
+        "when_to_use": "Na de definitieve stretch om grove, storende kleurruis effectief weg te poetsen.",
+        "tools": [
+          "GIMP / Colors / Components / Decompose (LAB)",
+          "Filters / Blur / Gaussian Blur"
+        ],
+        "effect": "Grote rode, groene en blauwe splotches verdwijnen volledig uit de achtergrond, terwijl de pure details in het L-kanaal haarscherp blijven."
+      },
+      {
+        "name": "Luminantie Histogram Fine-Tuning",
+        "description": "Selecteer uitsluitend het geïsoleerde L-kanaal (Luminance) in GIMP en pas niveaus toe door het midpunt iets omhoog en het zwartpunt iets omlaag te schuiven.",
+        "when_to_use": "Vóór de recompositie om het contrast van het sterrenstelsel puur op helderheid te baseren.",
+        "tools": [
+          "GIMP / Colors / Levels"
+        ],
+        "effect": "De achtergrond wordt dieper donker en de structuren van de Andromeda-nevel springen direct visueel naar voren zonder kleurvervorming."
+      }
+    ],
+    "color_approach": "De kleurbalans wordt objectief gezuiverd door een vroege 'Remove Green Noise' bewerking uit te voeren, aangezien groene sterren fysiek onmogelijk zijn. Vervolgens wordt in GIMP de kleurlaag via de LCH-colormodus bovenop de luminantie geplaatst, waarna het midpunt in de niveaus selectief naar rechts wordt getrokken om storende achtergrond-verzadiging volledig te elimineren.",
+    "local_adjustments": "Er worden geen zware maskers gebruikt, maar de deconvolution-scherpte wordt lokaal getest door via 'Set ROI to selection' een handmatige regio rondom de galactische kern te trekken. Dit voorkomt onnodig lange rekentijden en ringing-artefacten op de rest van de sterrenhemel.",
+    "what_to_avoid": [
+      "Het plaatsen van achtergrondextractie-samples op de ijle buitenste gaswolken van de galactische armen, wat leidt tot data-clipping.",
+      "Het in één keer te agressief doordrukken van de ArcSign stretchfactor, waardoor de histogrampiek te snel naar rechts verschuift."
+    ],
+    "best_for": "Beginnende astrofotografen die Andromeda- of breedbandopnames zonder ingewikkelde betaalde AI-software tot een clean eindresultaat willen brengen.",
+    "unique_insights": [
+      "De fotograaf laat zien dat je voor een deconvolution met 80 iteraties verplicht gradient descent moet selecteren, omdat de standaardmethode de sterren direct in lelijke zwarte ringen verandert.",
+      "Hij adviseert om de stretch-data uit de software altijd als een 32-bit floating-point TIFF te exporteren, omdat GIMP de traditionele astronomische FITS-bestanden vaak buggy en traag inlaadt.",
+      "Door de afbeelding in GIMP om te zetten naar een LCH-kleurlaag boven een luminantie-laag, kan het midpunt van het histogram extreem ver naar rechts worden geschoven; dit desatureert uitsluitend de donkere hemelruis tot een egale, zwarte diepte."
+    ]
+  },
+  {
+    "video_title": "Battle! Lightroom Classic VS Luminar AI - One of the hardest Retouching - Milky way!",
+    "photographer_name": "Serge Ramelli",
+    "youtube_url": "https://www.youtube.com/watch?v=jEeY7w57w34",
+    "genre": [
+      "nacht & astro"
+    ],
+    "light_conditions": [
+      "nacht"
+    ],
+    "mood": [
+      "levendig"
+    ],
+    "software": [
+      "Lightroom Classic",
+      "Luminar Neo"
+    ],
+    "style_description": "Vibrant Moody Cold Astro",
+    "philosophy": "De fotograaf hanteert een puur artistieke, expressieve benadering waarbij 'nacht' gelijkstaat aan koude, diepblauwe en magenta tinten. Zijn filosofie weigert om schaduwen zomaar open te trekken om destructieve digitale ruis te voorkomen. In plaats daarvan pusht hij de witte tonen en het micro-contrast agressief om de Melkweg handmatig uit het donker te boetseren.",
+    "workflow_order": [
+      "Stap 1: Verhoog de algehele blootstelling (Exposure) en schuif de Whites drastisch omhoog om de sterrenhemel te activeren.",
+      "Stap 2: Verschuif de witbalans-temperatuur handmatig richting intens koud blauw en voeg extra magenta toe.",
+      "Stap 3: Teken een lokaal radiaal filter over de Melkwegkern, inverseer het masker en voeg flink veel Clarity en warmte toe.",
+      "Stap 4: Importeer het onbewerkte RAW-bestand los in de concurrent (Luminar) en herhaal de workflow via Accent AI en detail-maskers."
+    ],
+    "techniques": [
+      {
+        "name": "Agressieve Whites Extractie",
+        "description": "Schuif de Whites-regelaar flink omhoog naar de positieve waarden, terwijl je de Shadows-regelaar bewust onaangetast laat op nul.",
+        "when_to_use": "Bij onderbelichte sterrenhemel-RAW-bestanden om de sterren direct te activeren zonder ruis te introduceren.",
+        "tools": [
+          "Lightroom / Basis / Witte tinten"
+        ],
+        "effect": "De sterren en de heldere gaswolk van de Melkweg lichten krachtig op, terwijl de donkere hemelbodem diep zwart blijft."
+      },
+      {
+        "name": "Kleurcontrast via Inverted Radiaalfilter",
+        "description": "Plaats een radiale cirkel exact over de diagonaal van de Melkweg, druk op 'Invert Mask' en voeg lokaal Clarity en een flinke dosis gele/rode warmte toe.",
+        "when_to_use": "Om de kleurloze kosmische dust-clouds visueel te scheiden van de omliggende koude kosmos.",
+        "tools": [
+          "Lightroom / Maskeren / Radiaal verloop"
+        ],
+        "effect": "De kern van de Melkweg krijgt een dramatische, vurige gloed en micro-scherpte, spelend tegen een koude achtergrond."
+      },
+      {
+        "name": "Accent AI Selectieve Maskering",
+        "description": "Draai de Accent AI-schuifregelaar extreem ver open, open het penseelmasker op 100% sterkte over de kern en vervaag de randen naar 50% en 25% naarmate je uitwaaiert.",
+        "when_to_use": "In de AI-software om de Melkweg handmatig een enorme dynamische boost te geven.",
+        "tools": [
+          "Luminar / Enhancer / Accent AI",
+          "Paint Mask (Radius, Softness 100)"
+        ],
+        "effect": "De structuren en contrasten in de gaswolken exploderen in detail, perfect vloeiend overgaand in de rest van de hemel."
+      },
+      {
+        "name": "Kleine Details Hemel-Penseel",
+        "description": "Verhoog de schuifregelaar voor 'Small Details' drastisch en schilder dit effect met een penseel op 50% dekking uitsluitend over de sterrenband.",
+        "when_to_use": "Om fijne sterrenstofstructuren extra knapperig te maken zonder de voorgrond korrelig te maken.",
+        "tools": [
+          "Luminar / Structure & Details / Small Details"
+        ],
+        "effect": "Duizenden minuscule, voorheen onzichtbare sterren lichten direct scherp op binnen de Melkweg-structuur."
+      },
+      {
+        "name": "Selectieve Kleurruis Onderdrukking",
+        "description": "Schuif de Color Noise Reduction handmatig omhoog naar exact 25, maar laat de Luminosity Noise Reduction strikt rond de 10 staan.",
+        "when_to_use": "Bij het wegwerken van chromatische sensorruis veroorzaakt door extreem hoge ISO-waarden.",
+        "tools": [
+          "Lightroom of Luminar / Ruisonderdrukking / Kleur"
+        ],
+        "effect": "Lelijke paarse en groene pixels smelten geruisloos weg, terwijl de scherpte van de werkelijke sterren behouden blijft."
+      }
+    ],
+    "color_approach": "De kleurbenadering van de fotograaf is gedurfd en complementair. De algehele sfeer van de nacht wordt gekoeld door de temperatuur naar 3400K-3500K te trekken voor een ijzige, diepblauwe kosmos. Lokaal injecteert hij via penselen en radialen juist intense gele, rode en magenta tinten in de galactische kern om een krachtig, schilderachtig kleurcontrast op te bouwen.",
+    "local_adjustments": "Lokale aanpassingen zijn cruciaal om overbelichting tegen te gaan. De fotograaf gebruikt handmatige penselen met maximale zachtheid (softness 100) om overbelichte delen aan de horizon (highlights) selectief omlaag te borstelen. In Luminar bouwt hij een handmatige 'dodge & burn' laag op met een minieme kracht (strength 9) om de lichte banen in de nevel handmatig op te lichten.",
+    "what_to_avoid": [
+      "Het openklikken van de Shadows-schuifregelaar bij zwaar onderbelichte astro-foto's, wat direct een oncontroleerbare deken van digitale ruis opwerpt.",
+      "Het pushen van de Luminosity ruisonderdrukking voorbij de waarde 10, omdat de software de sterren dan aanziet voor ruis en ze simpelweg wegpoetst."
+    ],
+    "best_for": "Enkele opnames (single exposures) van de Melkweg waarbij een saaie, fletse RAW-plaat getransformeerd moet worden in een punchy kunstwerk.",
+    "unique_insights": [
+      "De fotograaf waarschuwt om NOOIT vanuit Lightroom via een TIFF-kopie naar Luminar te exporteren voor astro; open altijd het pure, onbewerkte RAW-bestand (zoals .ARW) rechtstreeks in Luminar om de maximale bitdiepte te behouden.",
+      "Hij laat zien dat de 'Whites'-schuifregelaar de absolute geheime sleutel is voor astro: deze pakt uitsluitend de sterren aan, terwijl de 'Exposure'-regelaar de hele achtergrond ongewenst grijs maakt.",
+      "Door een penseelmasker stapsgewijs af te bouwen in kracht (van 100% naar 50% naar 25%) tijdens het aanbrengen van AI-effecten, simuleer je handmatig het natuurlijke verloop van galactisch licht."
+    ]
+  },
+  {
+    "video_title": "Milky Way Processing Tips - In Post #526",
+    "photographer_name": "Scott Davenport",
+    "youtube_url": "https://www.youtube.com/watch?v=nkNFzUdS5U8",
+    "genre": [
+      "nacht & astro"
+    ],
+    "light_conditions": [
+      "nacht"
+    ],
+    "mood": [
+      "moody"
+    ],
+    "software": [
+      "Lightroom Classic",
+      "ON1 Photo RAW"
+    ],
+    "style_description": "Moody Inky-Blue Galactic Core",
+    "philosophy": "De nabewerkingsfilosofie dicteert een strakke, driefasige structuur: eerst de destructieve sensorruis elimineren met gespecialiseerde software, daarna globaal het atmosferische contrast herstellen, en tot slot de voorgrond en de galactische kern als twee volstrekt tegenpolen behandelen. De fotograaf streeft naar een diepe, 'inky-blue' sfeer in de kosmos waarbij de compositie de blik dwingt naar het warme galactische centrum.",
+    "workflow_order": [
+      "Stap 1: Stuur het RAW-bestand naar ON1 NoNoise AI om de ISO 3200-ruis te elimineren en de sterren lokaal te verscherpen.",
+      "Stap 2: Pas de globale 'Auto'-basiselementen toe in Lightroom en verlaag de belichting handmatig met een halve stop.",
+      "Stap 3: Voeg krachtig Clarity en Dehaze toe over de gehele afbeelding om de atmosferische sluier te doorbreken.",
+      "Stap 4: Maak een lokaal luchtmasker voor de blauwe tinten, inverseer dit om de voorgrond te verduisteren, en plaats een radiaalmasker op de kern."
+    ],
+    "techniques": [
+      {
+        "name": "Micro-Detail Sterren Pop",
+        "description": "Voer AI-ruisonderdrukking uit en schuif de specifieke 'Detail'-regelaar in het ruispakket omhoog.",
+        "when_to_use": "Als allerhande eerste stap bij opnames geschoten op hoge ISO-waarden (zoals ISO 3200) om sterren te isoleren.",
+        "tools": [
+          "ON1 NoNoise AI / Detail Slider"
+        ],
+        "effect": "De storende korrel smelt volledig weg, terwijl de minuscule lichtpunten van de sterren direct een scherpe, heldere 'pop' krijgen."
+      },
+      {
+        "name": "Atmosferische Sluier Doorbreken",
+        "description": "Voer een stevige dosis globale Clarity en Dehaze toe aan de basisfoto.",
+        "when_to_use": "Nadat de ruis is getemperd, om de kosmische dust-clouds direct los te trekken uit de achtergrond.",
+        "tools": [
+          "Lightroom / Basis / Helderheid & Nevel verwijderen"
+        ],
+        "effect": "De nachtelijke hemel wordt direct diep donkergrijs en de structuren van de Melkweg snijden scherp door de waas heen."
+      },
+      {
+        "name": "Inky-Blue White Balance Masking",
+        "description": "Selecteer de lucht via een masker en sleep de temperatuurregelaar handmatig diep naar de koude zijde.",
+        "when_to_use": "Om de suggestie van oneindige, diepe kosmische ruimte te wekken zonder de kleuren kunstmatig te tinten.",
+        "tools": [
+          "Lightroom / Maskeren / Lucht / Temperatuur"
+        ],
+        "effect": "De sterrenhemel transformeert in een rijke, inky-blauwe kleur, terwijl de natuurlijke kleurcast behouden blijft."
+      },
+      {
+        "name": "Voorgrond Downplaying Masker",
+        "description": "Dupliceer het luchtmasker, inverseer het, verlaag de belichting drastisch en schuif de tintregelaar weg van het groen naar magenta.",
+        "when_to_use": "Wanneer de woestijn- of landschapsvoorgrond saai is en de blik van de Melkweg afleidt.",
+        "tools": [
+          "Lightroom / Maskeren / Masker omkeren / Belichting & Tint"
+        ],
+        "effect": "De woestijngrond verdwijnt in diepe, cleane schaduwen zonder lelijke groene of chromatische kleurafwijkingen."
+      },
+      {
+        "name": "Complementair Kern-Filter",
+        "description": "Trek een simpel radiaal verloop over de galactische kern, verhoog de belichting, voeg extra Clarity toe en schroef de Temperatuur handmatig op.",
+        "when_to_use": "Uitsluitend op het helderste centrum van de Melkweg om maximale visuele scheiding te forceren.",
+        "tools": [
+          "Lightroom / Maskeren / Radiaal verloop / Temp & Helderheid"
+        ],
+        "effect": "De kosmische stofwolken krijgen een dramatische, warme, paars-gele gloed die hard contrasteert met de koele lucht."
+      }
+    ],
+    "color_approach": "De kleurbenadering leunt zwaar op het complementaire spel tussen warm en koud via de fysieke witbalans-schuifregelaars, in plaats van het digitaal inkleuren met kleurfilters. Door de lucht een diepe, inky-blauwe koelte te geven en de galactische kern lokaal op te warmen, ontstaat er een levendige, driedimensionale dieptewerking in de gassen.",
+    "local_adjustments": "Lokale maskers worden uitsluitend functioneel ingezet. Davenport gebruikt geavanceerde selectieve maskers (zoals het automatisch selecteren van de lucht en het accuraat omkeren daarvan) om de voorgrond volledig te isoleren. Een simpele radiale cirkel is voldoende om de Melkwegkern onafhankelijk te voorzien van een tegenovergestelde witbalans.",
+    "what_to_avoid": [
+      "Het vertrouwen op de standaard ingebouwde basisonderdrukkers van RAW-converters; deze zijn ontoereikend voor de extreme ruis van astrofotografie.",
+      "Het te ver openlaten van de automatische belichting na een 'Auto-Basic' klik, wat de diepe zwarte kosmos flets en grijs maakt."
+    ],
+    "best_for": "Astrofotografen die een snelle, logische workflow zoeken in Lightroom om een Melkwegfoto met een oninteressante voorgrond artistiek te maximaliseren.",
+    "unique_insights": [
+      "De fotograaf benadrukt dat de kleine details in een astrofoto de sterren zelf zijn; ruisreductie-pakketten moeten daarom specifiek worden afgesteld op het verscherpen van deze micro-punten.",
+      "Hij onthult dat je een lelijke, groene kleurzweem in diepe schaduwen van de zwarte voorgrond perfect kunt elimineren door de tint-regelaar lokaal diep in de tegenovergestelde richting (magenta) te duwen.",
+      "Om de delicate, microscopische kosmische stofdeeltjes (cosmic dust) zacht te laten overvloeien, adviseert hij om binnen het radiaalmasker van de Melkweg de Dehaze-regelaar juist een fractie in de negatieve richting te schuiven."
+    ]
   }
 ]

@@ -122,6 +122,14 @@ input:focus,textarea:focus{border-color:var(--accent)}
   "techniques": [...],
   ...
 }'></textarea>
+        <div style="display:flex;align-items:center;gap:10px;margin-top:10px">
+          <label class="btn btn-sm btn-outline" style="cursor:pointer;position:relative;overflow:hidden">
+            \u2191 IMPORTEER JSON BESTAND
+            <input type="file" accept=".json,application/json" id="jsonFileInput" onchange="handleJsonFileImport(this.files[0])" style="position:absolute;inset:0;opacity:0;cursor:pointer">
+          </label>
+          <span style="font-family:monospace;font-size:10px;color:var(--muted)">Laadt het bestand in het tekstveld hierboven \u2014 omzeilt clipboard-limieten op mobiel</span>
+        </div>
+
         <div id="addError" class="error hidden" style="margin-top:10px"></div>
         <div id="addSuccess" class="success-msg hidden" style="margin-top:10px"></div>
         <div style="display:flex;gap:10px;margin-top:12px">
@@ -945,6 +953,24 @@ function autoAnalyzeVideos() {
     document.getElementById('autoError').classList.remove('hidden');
   });
 }
+
+function handleJsonFileImport(file) {
+  if (!file) return;
+  var reader = new FileReader();
+  reader.onload = function(e) {
+    document.getElementById('newEntryJson').value = e.target.result;
+    document.getElementById('addError').classList.add('hidden');
+    document.getElementById('addSuccess').textContent = '\u2713 Bestand "' + file.name + '" geladen in het tekstveld. Klik op VALIDEREN & TOEVOEGEN om door te gaan.';
+    document.getElementById('addSuccess').classList.remove('hidden');
+  };
+  reader.onerror = function() {
+    document.getElementById('addError').textContent = 'Kon bestand niet lezen';
+    document.getElementById('addError').classList.remove('hidden');
+  };
+  reader.readAsText(file);
+  document.getElementById('jsonFileInput').value = '';
+}
+
 
 </script>
 </body>

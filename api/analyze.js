@@ -59,17 +59,25 @@ module.exports = async function handler(req, res) {
       });
       const d = await r.json();
 
+      let geminiErrorDetail = null;
+
       // Fallback to Groq on quota/billing error
       if (d.error && isGeminiQuotaError(d)) {
+        geminiErrorDetail = {
+          message: d.error.message,
+          code: d.error.code,
+          status: d.error.status,
+          details: d.error.details || null
+        };
         const fallbackText = await callGroqFallback(parts, systemPrompt, maxTokens);
         if (fallbackText) {
           text = fallbackText;
           usedFallback = true;
         } else {
-          return res.status(400).json({ error: d.error.message });
+          return res.status(400).json({ error: d.error.message, geminiErrorDetail });
         }
       } else if (d.error) {
-        return res.status(400).json({ error: d.error.message });
+        return res.status(400).json({ error: d.error.message, geminiErrorRaw: d.error });
       } else {
         text = d.candidates?.[0]?.content?.parts?.map(p => p.text || '').join('') || '';
       }
@@ -160,7 +168,7 @@ module.exports = async function handler(req, res) {
       return res.status(400).json({ error: 'Onbekende provider: ' + provider });
     }
 
-    return res.status(200).json({ text, usedFallback });
+    return res.status(200).json({ text, usedFallback, geminiErrorDetail: typeof geminiErrorDetail !== 'undefined' ? geminiErrorDetail : null });
 
   } catch (err) {
     return res.status(500).json({ error: 'Server fout: ' + err.message });

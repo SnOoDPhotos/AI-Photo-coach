@@ -27,6 +27,10 @@
     "api/reset.js": {
       "maxDuration": 30,
       "memory": 256
+    },
+    "api/analyze-video.js": {
+      "maxDuration": 60,
+      "memory": 1024
     }
   }
 }

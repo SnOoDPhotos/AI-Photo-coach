@@ -1340,6 +1340,7 @@ async function callAI(systemPrompt, parts, maxTokens) {
 
     // Toon waarschuwing als Groq fallback gebruikt werd
     if (data.usedFallback) {
+      console.log('[GEMINI QUOTA ERROR DETAIL]', JSON.stringify(data.geminiErrorDetail, null, 2));
       var warn = document.getElementById('fallbackWarning');
       if (!warn) {
         warn = document.createElement('div');

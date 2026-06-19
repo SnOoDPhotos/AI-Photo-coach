@@ -93,6 +93,7 @@ input:focus,textarea:focus{border-color:var(--accent)}
       <button class="tab" id="tab-btn-export" onclick="showTab('export')">EXPORTEREN</button>
       <button class="tab" id="tab-btn-users" onclick="showTab('users')">GEBRUIKERS <span id="pendingBadge" style="display:none;background:var(--error);color:#fff;font-size:9px;padding:2px 6px;margin-left:4px">0</span></button>
       <button class="tab" id="tab-btn-software" onclick="showTab('software')">SOFTWARE</button>
+      <button class="tab" id="tab-btn-auto" onclick="showTab('auto')">AUTO-ANALYSE</button>
     </div>
 
     <!-- Overview -->
@@ -192,6 +193,27 @@ input:focus,textarea:focus{border-color:var(--accent)}
         <h3>SOFTWARE CAPABILITIES</h3>
         <p style="font-size:13px;color:var(--muted);margin-bottom:20px;line-height:1.7">Overzicht van alle software pakketten en hun beschikbare tools. Dit bepaalt welke adviezen de AI geeft.</p>
         <div id="softwareGrid" style="display:grid;gap:12px"></div>
+      </div>
+    </div>
+
+    <!-- AUTO-ANALYSE TAB -->
+    <div id="tab-auto" class="hidden">
+      <div class="section">
+        <h3>AUTOMATISCHE VIDEO-ANALYSE</h3>
+        <p style="font-size:13px;color:var(--muted);margin-bottom:16px;line-height:1.7">
+          Plak YouTube URL's (één per regel, max 10 per keer). Gemini analyseert elke video automatisch en voegt geldige entries direct toe aan de kennisbank.
+        </p>
+        <label>YouTube URL's (één per regel)</label>
+        <textarea class="json-area" id="autoUrls" style="min-height:150px" placeholder="https://youtube.com/watch?v=...
+https://youtube.com/watch?v=...
+https://youtube.com/watch?v=..."></textarea>
+        <div id="autoError" class="error hidden" style="margin-top:10px"></div>
+        <div id="autoSuccess" class="success-msg hidden" style="margin-top:10px"></div>
+        <div style="display:flex;gap:10px;margin-top:12px">
+          <button class="btn btn-sm" id="autoAnalyzeBtn" onclick="autoAnalyzeVideos()">START AUTOMATISCHE ANALYSE</button>
+          <button class="btn btn-sm btn-outline" onclick="document.getElementById('autoUrls').value=''">LEEGMAKEN</button>
+        </div>
+        <div id="autoResults" style="margin-top:20px"></div>
       </div>
     </div>
 </main>
@@ -585,7 +607,7 @@ function exportKnowledge() {
 }
 
 function showTab(name) {
-  ['overview','add','export','users','software'].forEach(function(t) {
+  ['overview','add','export','users','software','auto'].forEach(function(t) {
     document.getElementById('tab-'+t).classList.toggle('hidden', t !== name);
     document.getElementById('tab-btn-'+t).classList.toggle('active', t === name);
   });
@@ -809,6 +831,86 @@ function loadSoftwareCapabilities() {
     .catch(function(e) { grid.innerHTML = '<div style="color:var(--error)">Fout: ' + e.message + '</div>'; });
 }
 
+
+function autoAnalyzeVideos() {
+  var urlsText = document.getElementById('autoUrls').value.trim();
+  document.getElementById('autoError').classList.add('hidden');
+  document.getElementById('autoSuccess').classList.add('hidden');
+  document.getElementById('autoResults').innerHTML = '';
+
+  if (!urlsText) {
+    document.getElementById('autoError').textContent = 'Plak eerst YouTube URLs';
+    document.getElementById('autoError').classList.remove('hidden');
+    return;
+  }
+
+  var urls = urlsText.split('\n').map(function(u) { return u.trim(); }).filter(function(u) { return u.length > 0; });
+
+  if (urls.length > 10) {
+    document.getElementById('autoError').textContent = 'Maximaal 10 URLs per keer (timeout limiet). Je hebt er ' + urls.length + '.';
+    document.getElementById('autoError').classList.remove('hidden');
+    return;
+  }
+
+  var btn = document.getElementById('autoAnalyzeBtn');
+  btn.disabled = true;
+  btn.textContent = 'BEZIG MET ANALYSEREN... (kan 1-2 minuten duren)';
+
+  fetch('/api/analyze-video', {
+    method: 'POST',
+    headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({ token: authToken, youtubeUrls: urls })
+  })
+  .then(function(r) { return r.json(); })
+  .then(function(d) {
+    btn.disabled = false;
+    btn.textContent = 'START AUTOMATISCHE ANALYSE';
+
+    if (!d.success) {
+      document.getElementById('autoError').textContent = d.error || 'Onbekende fout';
+      document.getElementById('autoError').classList.remove('hidden');
+      return;
+    }
+
+    var r = d.results;
+    document.getElementById('autoSuccess').textContent = '\u2713 ' + r.added.length + ' toegevoegd, ' + r.skipped.length + ' overgeslagen (bestaat al), ' + r.failed.length + ' mislukt. Totaal kennisbank: ' + d.totalEntries + ' entries.';
+    document.getElementById('autoSuccess').classList.remove('hidden');
+
+    var html = '';
+    if (r.added.length) {
+      html += '<div style="margin-bottom:16px"><div style="font-family:monospace;font-size:11px;color:var(--success);margin-bottom:8px">\u2713 TOEGEVOEGD (' + r.added.length + ')</div>';
+      r.added.forEach(function(item) {
+        html += '<div style="font-size:12px;padding:6px 10px;background:rgba(76,175,125,0.08);border-left:2px solid var(--success);margin-bottom:4px">' + item.title + ' \u2014 ' + item.techniques + ' technieken, ' + item.insights + ' insights</div>';
+      });
+      html += '</div>';
+    }
+    if (r.skipped.length) {
+      html += '<div style="margin-bottom:16px"><div style="font-family:monospace;font-size:11px;color:var(--muted);margin-bottom:8px">\u2014 OVERGESLAGEN (' + r.skipped.length + ')</div>';
+      r.skipped.forEach(function(item) {
+        html += '<div style="font-size:12px;padding:6px 10px;color:var(--muted)">' + (item.title||item.url) + ' \u2014 ' + item.reason + '</div>';
+      });
+      html += '</div>';
+    }
+    if (r.failed.length) {
+      html += '<div><div style="font-family:monospace;font-size:11px;color:var(--error);margin-bottom:8px">\u2717 MISLUKT (' + r.failed.length + ')</div>';
+      r.failed.forEach(function(item) {
+        html += '<div style="font-size:12px;padding:6px 10px;background:rgba(224,92,92,0.08);border-left:2px solid var(--error);margin-bottom:4px">' + (item.title||item.url) + ' \u2014 ' + item.error + '</div>';
+      });
+      html += '</div>';
+    }
+    document.getElementById('autoResults').innerHTML = html;
+
+    if (r.added.length > 0) {
+      loadKnowledge();
+    }
+  })
+  .catch(function(e) {
+    btn.disabled = false;
+    btn.textContent = 'START AUTOMATISCHE ANALYSE';
+    document.getElementById('autoError').textContent = 'Verbindingsfout: ' + e.message;
+    document.getElementById('autoError').classList.remove('hidden');
+  });
+}
 
 </script>
 </body>

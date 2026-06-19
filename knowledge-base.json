@@ -19993,5 +19993,268 @@
       "Door decoratieve overlays (ornamenten) exact te matchen met de kleur uit de foto (zoals het pak of de bloemen) ontstaat er direct design-technische synergie.",
       "Het toepassen van de uiteindelijke color grading op een samengevoegde toplaag (stamp visible) zorgt ervoor dat de complexe double exposure-montage als één organisch geheel oogt."
     ]
+  },
+  {
+    "video_title": "Milky Way Photography Lightroom Tutorial! Night Photography Editing Workflow",
+    "photographer_name": "Ryan",
+    "youtube_url": "https://www.youtube.com/watch?v=E8CBVx26gKQ",
+    "genre": [
+      "nacht & astro"
+    ],
+    "light_conditions": [
+      "nacht"
+    ],
+    "mood": [
+      "levendig"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Vivid Night Sky Galaxy",
+    "philosophy": "De focus ligt op het maximaliseren van de informatie die uit een schone RAW-opname getrokken kan worden. Door slim gebruik te maken van maskers worden specifieke delen van de foto versterkt zonder de rest te overbelichten. Het doel is om verborgen details in de sterrenhemel bloot te leggen en tegelijkertijd storende elementen te balanceren.",
+    "workflow_order": [
+      "stap 1: Analyseer het histogram en verhoog tijdelijk de belichting extreem om verborgen details en schaduwinformatie te controleren.",
+      "stap 2: Pas een lokaal aanpassingspenseel toe op het lichtspoor van de auto om de hooglichten lokaal te verlagen.",
+      "stap 3: Gebruik een fijn penseel met de Auto Mask-functie langs de klifrand om de hemel te scheiden.",
+      "stap 4: Versterk de structuren in de Melkweg handmatig door met een penseel de oplichtende banen te volgen en de belichting subtiel te verhogen."
+    ],
+    "techniques": [
+      {
+        "name": "Extreme Belichtingscontrole",
+        "description": "Verhoog de globale Exposure tijdelijk naar een extreem hoge waarde om te controleren hoeveel detail en ruis er in de donkere delen van de RAW-file zit.",
+        "when_to_use": "Aan het begin van de bewerking van elke nachtfoto.",
+        "tools": [
+          "Belichting (Exposure)"
+        ],
+        "effect": "Voorheen onzichtbare sterren en schaduwdetails in de voorgrond worden direct visueel zichtbaar."
+      },
+      {
+        "name": "Lokale Hooglichten Reductie",
+        "description": "Verlaag Highlights lokaal op felle lichtsporen om overbelichting tegen te gaan zonder de omliggende sterren te dimmen.",
+        "when_to_use": "Bij storende felle lichtbronnen zoals koplampen of lichtsporen van auto's.",
+        "tools": [
+          "Aanpassingspenseel (Adjustment Brush)",
+          "Hooglichten (Highlights)"
+        ],
+        "effect": "Het felle witte lichtspoor krijgt meer detail en de clipping verdwijnt."
+      },
+      {
+        "name": "Auto Mask Randdetectie",
+        "description": "Activeer Auto Mask om bij het inkleuren van de lucht de scherpe rand van de klif automatisch te detecteren en te vermijden.",
+        "when_to_use": "Bij het maskeren van de hemel die grenst aan een donkere, harde voorgrondstructuur.",
+        "tools": [
+          "Aanpassingspenseel (Adjustment Brush)",
+          "Automatisch masker (Auto Mask)"
+        ],
+        "effect": "Er ontstaat een zuivere scheiding zonder dat de aanpassingen doorbloeden op de klif."
+      },
+      {
+        "name": "Melkweg Doordrukken",
+        "description": "Verhoog de Exposure en Clarity handmatig met een zacht penseel om de lichte banen van de Melkweg extra aan te zetten.",
+        "when_to_use": "Wanneer de natuurlijke structuur van de Melkweg te flets oogt en extra pop vereist.",
+        "tools": [
+          "Aanpassingspenseel (Adjustment Brush)",
+          "Belichting (Exposure)",
+          "Helderheid (Clarity)"
+        ],
+        "effect": "De kern van de Melkweg springt er visueel sterker uit ten opzichte van de rest van de hemel."
+      },
+      {
+        "name": "Oranje en Teal Look via Kalibratie",
+        "description": "Verschuif de Red Primary naar rechts en de Blue Primary naar links in het kalibratiepaneel om een complementair contrast te creëren.",
+        "when_to_use": "Om een cinematische kleurbalans tussen warme rotsen en een koele lucht te forceren.",
+        "tools": [
+          "Camerakalibratie (Camera Calibration)"
+        ],
+        "effect": "Rode tinten verschuiven naar warm oranje en blauwe luchten transformeren naar diep teal."
+      }
+    ],
+    "color_approach": "De fotograaf kiest voor een expressieve benadering door middel van het HSL-paneel en camerakalibratie. Er wordt gestuurd op een complementair oranje-en-teal effect waarbij de warme gloed op de rotsen contrasteert met een koele, diepblauwe sterrenhemel.",
+    "local_adjustments": "Lokale maskers vormen de spil van deze workflow. Er worden meerdere penselen gebruikt: één om overbelichte lichtsporen te temperen, één met randdetectie voor de globale luchtcorrectie, en een vloeibaar penseel met verlaagde flow om handmatig de nevels van de Melkweg op te lichten.",
+    "what_to_avoid": [
+      "Het blindelings globaal verlagen van de hooglichten waardoor je kostbare helderheid in de sterren verliest.",
+      "Een te harde flow gebruiken op het penseel waardoor de handmatige Melkweg-aanpassingen er als onnatuurlijke vlekken uitzien."
+    ],
+    "best_for": "Nachtopnames met een sterke contrastrijke voorgrond en felle kunstlichtelementen.",
+    "unique_insights": [
+      "Hij adviseert om de globale Exposure direct bij de start maximaal open te draaien, niet om de foto zo te bewerken, maar louter als diagnose-instrument om dataverlies in de schaduwen op te sporen.",
+      "Het handmatig inkleuren van de Melkweg gebeurt bewust op een overdreven hoge intensiteit, waarna de effect-slider in zijn geheel wordt teruggedraaid om de perfecte, subtiele blending te vinden.",
+      "Hij past de witbalans van de voorgrond aan om een kunstmatig gecreëerd lichtspoor warmer te maken, zodat het functioneert als een natuurlijk ogende lichtbron voor de klif."
+    ]
+  },
+  {
+    "video_title": "Stunning Milky Way Photo Editing in Lightroom!",
+    "photographer_name": "Delaney",
+    "youtube_url": "https://www.youtube.com/watch?v=1C8unsi_fQU",
+    "genre": [
+      "nacht & astro"
+    ],
+    "light_conditions": [
+      "nacht"
+    ],
+    "mood": [
+      "cinematisch"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Clean Contrast Astro",
+    "philosophy": "Snelheid en effectiviteit staan centraal in deze minimalistische benadering. Door direct naar een koele witbalans te grijpen en globale basiscontrasten toe te passen, wordt de foto in een handomdraai getransformeerd. Ruisreductie wordt strategisch toegepast door de scherpte juist te minimaliseren.",
+    "workflow_order": [
+      "stap 1: Pas de witbalans direct aan naar een koele temperatuur voor een blauwe basistoon.",
+      "stap 2: Verlaag de algemene scherpte naar nul en zet de helderheid in de negatieve waarden om ruis tegen te gaan.",
+      "stap 3: Verhoog de verzadiging van oranje en rode tinten via de HSL-regelaars.",
+      "stap 4: Breng een lokaal penseel aan over de kern van de Melkweg voor gericht contrast."
+    ],
+    "techniques": [
+      {
+        "name": "Koele Witbalans Basis",
+        "description": "Zet de kleurtemperatuur handmatig om naar een lage waarde om een diepblauwe, natuurlijke nachtelijke sfeer te introduceren.",
+        "when_to_use": "Direct bij de eerste stap van de raw-ontwikkeling van een astrofoto.",
+        "tools": [
+          "Witbalans (White Balance)"
+        ],
+        "effect": "De modderige bruingele zweem in de lucht verandert direct in een sfeervol nachtelijk blauw."
+      },
+      {
+        "name": "Negatieve Helderheid voor Ruisreductie",
+        "description": "Zet de algemene Sharpening op 0 en verlaag Clarity licht naar negatieve waarden om korreligheid in egale vlakken te verzachten.",
+        "when_to_use": "Wanneer een hoge ISO-waarde heeft geleid tot storende digitale ruis in de donkere lucht.",
+        "tools": [
+          "Helderheid (Clarity)",
+          "Verscherpen (Sharpening)"
+        ],
+        "effect": "De storende, scherpe digitale ruis in de achtergrond wordt visueel zachter en minder opvallend."
+      },
+      {
+        "name": "Doelgerichte Kleurversterking",
+        "description": "Verhoog de Saturation van de kanalen Orange en Red specifiek om de warme gloed in de kosmische stofwolken op te krikken.",
+        "when_to_use": "Als de kern van de Melkweg te monochroom of flets oogt.",
+        "tools": [
+          "HSL / Kleur (Saturation)"
+        ],
+        "effect": "De verborgen warme, gouden en roze tinten in het centrum van de Melkweg lichten intenser op."
+      },
+      {
+        "name": "Lokale Melkweg Contrast",
+        "description": "Breng een lokaal masker aan over de galactische baan en verhoog daar het contrast om de nevels te scheiden van de sterren.",
+        "when_to_use": "Om de Melkweg te laten knallen zonder de rest van de hemel aan te tasten.",
+        "tools": [
+          "Aanpassingspenseel (Adjustment Brush)",
+          "Contrast"
+        ],
+        "effect": "De Melkweg krijgt lokaal veel meer diepte en definitie."
+      },
+      {
+        "name": "Aanvullende Ruisreductie",
+        "description": "Schuif de Luminance ruisreductie omhoog nadat de scherpte-instellingen zijn aangepast om de resterende korrel glad te strijken.",
+        "when_to_use": "Als de foto na de basisstap met negatieve helderheid nog steeds storende korrel vertoont.",
+        "tools": [
+          "Ruisreductie (Noise Reduction)"
+        ],
+        "effect": "Het hemelruim krijgt een vloeiendere en schonere textuur."
+      }
+    ],
+    "color_approach": "De focus ligt op het scheiden van koude en warme tonen. De hemel wordt globaal blauw gemaakt, waarna via het HSL-paneel de oranje en rode verzadiging agressief omhoog wordt gepusht om de kleurrijke elementen in de kosmische nevels te accentueren.",
+    "local_adjustments": "Er wordt een enkel, strategisch masker via het penseel ingezet. Dit masker bedekt uitsluitend de diagonaal van de Melkweg om daar lokaal het contrast te boosten, zodat de sterrenhemel niet uniform platgeslagen wordt.",
+    "what_to_avoid": [
+      "Standaard verscherping toepassen op een hoge ISO-nachtfoto, omdat dit de digitale ruis alleen maar versterkt.",
+      "De witbalans te warm laten staan waardoor de nachtelijke sfeer verloren gaat."
+    ],
+    "best_for": "Snelle astrofotografie-bewerkingen waarbij digitale ruis effectief onderdrukt moet worden.",
+    "unique_insights": [
+      "In plaats van traditionele verscherping te gebruiken, elimineert de fotograaf juist alle basisscherpte en duwt de helderheid in de min om een natuurlijk masker tegen ruis te vormen.",
+      "Er wordt aangetoond dat je met slechts een handvol sliders in minder dan een minuut een fletse RAW-opname tot een indrukwekkend eindresultaat kunt pushen.",
+      "De warme kleuren in de Melkweg worden niet via globale witbalans gezocht, maar exclusief via selectieve HSL-verzadiging om de blauwe lucht zuiver te houden."
+    ]
+  },
+  {
+    "video_title": "How to Edit Milky Way Photos in Lightroom | Landscape Astrophotography Editing Tutorial",
+    "photographer_name": "Christopher Neal",
+    "youtube_url": "https://www.youtube.com/watch?v=SBT3bx-0jvc",
+    "genre": [
+      "landschap",
+      "nacht & astro"
+    ],
+    "light_conditions": [
+      "nacht"
+    ],
+    "mood": [
+      "dramatisch"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Adaptive Balanced Beach Astro",
+    "philosophy": "Nachtfoto's kunnen niet puur in de camera perfect gemaakt worden en vereisen computerwerk. Door gebruik te maken van adaptieve kleurprofielen en geavanceerde AI-maskers voor landschappen, wordt geprobeerd een harmonieuze balans te vinden tussen een gedetailleerde hemel, dynamisch water en een warme, tastbare voorgrond.",
+    "workflow_order": [
+      "stap 1: Schakel over naar het adaptieve kleurprofiel en corrigeer de globale belichting naar beneden.",
+      "stap 2: Activeer de AI-ruisreductie (Denoise) om een schone basislaag te genereren.",
+      "stap 3: Genereer automatische AI-maskers voor de drie hoofdcomponenten: de lucht, het water en de grond.",
+      "stap 4: Pas een handmatig penseel toe op de Melkweg om selectief de witten te boosten en de hooglichten te temperen."
+    ],
+    "techniques": [
+      {
+        "name": "Adaptief Kleurprofiel",
+        "description": "Zet het profiel op Adaptive Color om de belichting over het hele frame automatisch te egaliseren en verborgen kleuren te versterken.",
+        "when_to_use": "Bij de start van de bewerking om direct een rijke dynamiek te forceren.",
+        "tools": [
+          "Profiel (Profile - Adaptive Color)"
+        ],
+        "effect": "De schaduwen lichten op en de algehele kleurintensiteit van de RAW-file neemt aanzienlijk toe."
+      },
+      {
+        "name": "Scherptemaskering met Option-Key",
+        "description": "Houd de Option-toets ingedrukt tijdens het schuiven van de Masking-slider om de verscherping puur te beperken tot de randen van de sterren.",
+        "when_to_use": "Bij het handmatig verscherpen van sterren zonder de donkere hemelruis mee te trekken.",
+        "tools": [
+          "Verscherpen (Sharpening - Masking)"
+        ],
+        "effect": "Alleen de contouren van de sterren lichten wit op in het masker, wat betekent dat de achtergrond ruisvrij blijft."
+      },
+      {
+        "name": "AI Landschapsmaskering",
+        "description": "Gebruik de AI-functionaliteit om de scène automatisch op te splitsen in aparte maskers voor lucht, water en natuurlijke grond.",
+        "when_to_use": "Bij complexe composities met duidelijke scheidingen tussen elementen.",
+        "tools": [
+          "Maskeren (Masking - Sky, Water, Ground)"
+        ],
+        "effect": "Drie perfect gescheiden maskers worden direct aangemaakt zonder handmatig poetswerk."
+      },
+      {
+        "name": "Melkweg Witte Punten Boost",
+        "description": "Verhoog de Whites fors binnen het Melkweg-penseel terwijl je de Highlights juist iets verlaagt om de sterrenclusters te laten stralen.",
+        "when_to_use": "Wanneer de kern van de Melkweg extra contrast en 'pop' nodig heeft.",
+        "tools": [
+          "Aanpassingspenseel (Adjustment Brush)",
+          "Witten (Whites)",
+          "Hooglichten (Highlights)"
+        ],
+        "effect": "De helderste sterren in de kern lichten sterk op, terwijl de nevels zacht en gedetailleerd blijven."
+      },
+      {
+        "name": "Kleurverzadiging Lichtvervuiling Dempen",
+        "description": "Selecteer het gebied met lichtvervuiling met een penseel en trek de Saturation en Highlights naar beneden.",
+        "when_to_use": "Wanneer een storende gele of oranje gloed van een nabijgelegen stad de horizon verpest.",
+        "tools": [
+          "Aanpassingspenseel (Adjustment Brush)",
+          "Verzadiging (Saturation)",
+          "Hooglichten (Highlights)"
+        ],
+        "effect": "De onnatuurlijke felle gloed aan de horizon wordt geneutraliseerd en minder dominant."
+      }
+    ],
+    "color_approach": "De fotograaf kiest voor een gesplitste kleuraanpak per zone. De lucht krijgt een koele, licht paarsachtige tint met extra verzadiging in de Melkwegcore. De voorgrond (het strand en de rotsen) wordt daarentegen bewust opgewarmd via de temperatuurregelaar om een natuurlijk kleurcontrast met de nachtelijke hemel te bewerkstelligen.",
+    "local_adjustments": "Er wordt intensief gebruik gemaakt van AI-gestuurde lokale aanpassingen. Door de lucht, het water en het zand apart te maskeren, kan elk element zijn eigen contrast- en textuurbehandeling krijgen. Daarnaast worden handmatige penselen gebruikt om de Melkweg lokaal op te lichten en horizon-lichtvervuiling weg te poetsen.",
+    "what_to_avoid": [
+      "Het volledig openzetten van de vignette-compensatie bij lenscorrectie, omdat dit de hoeken onnatuurlijk licht kan maken.",
+      "Het globaal verscherpen van de gehele foto zonder masker, wat leidt tot een explosie van korrel in de donkere luchtpartijen."
+    ],
+    "best_for": "Composities aan de kust waarbij zee, strand en sterrenhemel harmonieus op elkaar afgestemd moeten worden.",
+    "unique_insights": [
+      "Het gebruik van het 'Adaptive Color' profiel zet de basisbelichting zo drastisch omhoog dat de globale Exposure slider daarna direct omlaag gecorrigeerd moet worden om oversturing te voorkomen.",
+      "De fotograaf kiest er bewust voor om de zwarte- en witte punten van de water- en grondmaskers op nul te laten staan om de natuurlijke overgang met de nachtelijke schaduwen te waarborgen.",
+      "Hij laat zien dat het selectief verlagen van de verzadiging (Saturation) een van de meest effectieve methoden is om storende lichtvervuiling aan de horizon onzichtbaar te maken."
+    ]
   }
 ]

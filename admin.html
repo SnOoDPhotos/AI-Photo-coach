@@ -490,13 +490,38 @@ function validateAndAdd() {
     if (exists) { showAddError('Entry met deze titel bestaat al'); return; }
     localKnowledge.push(entry);
     localStorage.setItem('snood_knowledge_base', JSON.stringify(localKnowledge));
-    document.getElementById('addSuccess').textContent = '✓ Entry toegevoegd! Ga naar Exporteren om knowledge-base.json te downloaden en op GitHub te uploaden.';
-    document.getElementById('addSuccess').classList.remove('hidden');
     document.getElementById('newEntryJson').value = '';
     renderAll();
+
+    document.getElementById('addSuccess').textContent = '✓ Entry toegevoegd — wordt naar database gestuurd...';
+    document.getElementById('addSuccess').classList.remove('hidden');
+    autoPushToDatabase(entry.video_title);
   } catch(e) {
     showAddError('Ongeldige JSON: ' + e.message);
   }
+}
+
+
+function autoPushToDatabase(addedTitle) {
+  fetch('/api/knowledge', {
+    method: 'POST',
+    headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({ action: 'save_all', token: authToken, entries: localKnowledge })
+  })
+  .then(function(r) { return r.json(); })
+  .then(function(d) {
+    var el = document.getElementById('addSuccess');
+    if (d.success) {
+      el.textContent = '✓ "' + addedTitle + '" toegevoegd en opgeslagen in database! (' + d.count + ' entries totaal)';
+    } else {
+      el.classList.add('hidden');
+      showAddError('Entry lokaal toegevoegd maar database update mislukt: ' + (d.error || 'onbekende fout'));
+    }
+  })
+  .catch(function(e) {
+    document.getElementById('addSuccess').classList.add('hidden');
+    showAddError('Entry lokaal toegevoegd maar database update mislukt: ' + e.message);
+  });
 }
 
 function showAddError(msg) {

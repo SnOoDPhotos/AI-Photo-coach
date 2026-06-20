@@ -180,7 +180,7 @@ module.exports = async function handler(req, res) {
                 { text: GEMINI_PROMPT }
               ]
             }],
-            generationConfig: { maxOutputTokens: 4096, temperature: 0.4 }
+            generationConfig: { maxOutputTokens: 8192, temperature: 0.4 }
           })
         });
         const d = await r.json();

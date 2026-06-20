@@ -167,7 +167,8 @@ module.exports = async function handler(req, res) {
 
     const results = { added: [], skipped: [], failed: [] };
 
-    for (const url of youtubeUrls) {
+    // Verwerk alle video's PARALLEL (niet na elkaar) om de Vercel timeout te vermijden
+    async function analyzeOne(url) {
       try {
         const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`, {
           method: 'POST',
@@ -185,44 +186,48 @@ module.exports = async function handler(req, res) {
         const d = await r.json();
 
         if (d.error) {
-          results.failed.push({ url, error: d.error.message });
-          continue;
+          return { type: 'failed', url, error: d.error.message };
         }
 
         let text = d.candidates?.[0]?.content?.parts?.map(p => p.text || '').join('') || '';
-        // Strip eventuele markdown code blocks
         text = text.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
 
         let entry;
         try {
           entry = JSON.parse(text);
         } catch(parseErr) {
-          results.failed.push({ url, error: 'JSON parse fout: ' + parseErr.message });
-          continue;
+          return { type: 'failed', url, error: 'JSON parse fout: ' + parseErr.message };
         }
 
-        // Zorg dat youtube_url klopt
         entry.youtube_url = entry.youtube_url || url;
 
-        // Duplicate check
         if (existingTitles.has(entry.video_title)) {
-          results.skipped.push({ url, title: entry.video_title, reason: 'bestaat al' });
-          continue;
+          return { type: 'skipped', url, title: entry.video_title, reason: 'bestaat al' };
         }
 
-        // Kwaliteitsvalidatie
         const issues = validateEntry(entry);
         if (issues.length) {
-          results.failed.push({ url, title: entry.video_title, error: 'Kwaliteit onvoldoende: ' + issues.join('; ') });
-          continue;
+          return { type: 'failed', url, title: entry.video_title, error: 'Kwaliteit onvoldoende: ' + issues.join('; ') };
         }
 
-        existingKnowledge.push(entry);
-        existingTitles.add(entry.video_title);
-        results.added.push({ url, title: entry.video_title, techniques: entry.techniques.length, insights: entry.unique_insights.length });
+        return { type: 'added', url, entry, title: entry.video_title, techniques: entry.techniques.length, insights: entry.unique_insights.length };
 
       } catch(videoErr) {
-        results.failed.push({ url, error: videoErr.message });
+        return { type: 'failed', url, error: videoErr.message };
+      }
+    }
+
+    const outcomes = await Promise.all(youtubeUrls.map(analyzeOne));
+
+    for (const outcome of outcomes) {
+      if (outcome.type === 'added') {
+        existingKnowledge.push(outcome.entry);
+        existingTitles.add(outcome.title);
+        results.added.push({ url: outcome.url, title: outcome.title, techniques: outcome.techniques, insights: outcome.insights });
+      } else if (outcome.type === 'skipped') {
+        results.skipped.push({ url: outcome.url, title: outcome.title, reason: outcome.reason });
+      } else {
+        results.failed.push({ url: outcome.url, title: outcome.title, error: outcome.error });
       }
     }
 

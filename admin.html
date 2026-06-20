@@ -122,19 +122,18 @@ input:focus,textarea:focus{border-color:var(--accent)}
   "techniques": [...],
   ...
 }'></textarea>
-        <div style="display:flex;align-items:center;gap:10px;margin-top:10px">
-          <label class="btn btn-sm btn-outline" style="cursor:pointer;position:relative;overflow:hidden">
-            \u2191 IMPORTEER JSON BESTAND
-            <input type="file" accept=".json,.txt,application/json,text/plain" id="jsonFileInput" onchange="handleJsonFileImport(this.files[0])" style="position:absolute;inset:0;opacity:0;cursor:pointer">
-          </label>
-          <span style="font-family:monospace;font-size:10px;color:var(--muted)">Accepteert .json en .txt \u2014 laadt het bestand in het tekstveld hierboven, omzeilt clipboard-limieten op mobiel</span>
-        </div>
-
         <div id="addError" class="error hidden" style="margin-top:10px"></div>
         <div id="addSuccess" class="success-msg hidden" style="margin-top:10px"></div>
         <div style="display:flex;gap:10px;margin-top:12px">
           <button class="btn btn-sm" onclick="validateAndAdd()">VALIDEREN & TOEVOEGEN</button>
           <button class="btn btn-sm btn-outline" onclick="document.getElementById('newEntryJson').value=''">LEEGMAKEN</button>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;margin-top:14px;padding-top:14px;border-top:1px solid var(--border)">
+          <label class="btn btn-sm btn-outline" style="cursor:pointer;position:relative;overflow:hidden">
+            ↑ IMPORTEER JSON BESTAND
+            <input type="file" accept=".json,.txt,application/json,text/plain" id="jsonFileInput" onchange="handleJsonFileImport(this.files[0])" style="position:absolute;inset:0;opacity:0;cursor:pointer">
+          </label>
+          <span style="font-family:monospace;font-size:10px;color:var(--muted)">Accepteert .json/.txt — omzeilt clipboard-limieten op mobiel</span>
         </div>
       </div>
     </div>

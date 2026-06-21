@@ -45,7 +45,7 @@ function verifyAdminToken(token) {
     const parts   = decoded.split(':');
     if (parts.length < 3) return false;
     const ts = parseInt(parts[1]);
-    if (Date.now() - ts > 24 * 60 * 60 * 1000) return false;
+    if (Date.now() - ts > 7 * 24 * 60 * 60 * 1000) return false;
     return parts[0] === process.env.ADMIN_USERNAME && parts.slice(2).join(':') === secret;
   } catch(e) { return false; }
 }

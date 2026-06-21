@@ -599,6 +599,16 @@ select option,select optgroup{background:#1e1e1e;color:#f0ede8}
 
 </main>
 <script>
+// ── Veilige localStorage wrapper (werkt ook als localStorage geblokkeerd is) ──
+function safeGet(key, fallback) {
+  try { var v = localStorage.getItem(key); return v !== null ? v : fallback; }
+  catch(e) { return fallback; }
+}
+function safeSet(key, value) {
+  try { localStorage.setItem(key, value); } catch(e) { /* stil negeren */ }
+}
+
+
 // ── State ──────────────────────────────────────────────────────────────────
 var apiKey = '';
 var software = 'lightroom';
@@ -782,7 +792,7 @@ async function deleteSession(id) {
 initDB().then(function(){loadSessionChips(); checkDisclaimer(); checkTour(); applyLanguage();});
 
 // ── Language ───────────────────────────────────────────────────────────────
-var appLanguage = localStorage.getItem('snood_language') || 'nl';
+var appLanguage = safeGet('snood_language', 'nl');
 var cumulativeAnalysis = []; // tracks all advice across all phases
 
 var uiText = {
@@ -838,7 +848,7 @@ var uiText = {
 
 function setLanguage(lang) {
   appLanguage = lang;
-  localStorage.setItem('snood_language', lang);
+  safeSet('snood_language', lang);
   document.getElementById('langNL').classList.toggle('active', lang === 'nl');
   document.getElementById('langEN').classList.toggle('active', lang === 'en');
   applyLanguage();
@@ -969,11 +979,11 @@ function nextTourStep() {
 function endTour() {
   document.getElementById('tourHighlight').style.display = 'none';
   document.getElementById('tourTooltip').style.display = 'none';
-  localStorage.setItem('snood_tour_done', '1');
+  safeSet('snood_tour_done', '1');
 }
 
 function checkTour() {
-  var done = localStorage.getItem('snood_tour_done');
+  var done = safeGet('snood_tour_done', null);
   if (!done) {
     setTimeout(function() { startTour(); }, 1200);
   }
@@ -983,15 +993,15 @@ function checkTour() {
 
 // ── Disclaimer ─────────────────────────────────────────────────────────────
 function checkDisclaimer() {
-  var accepted = localStorage.getItem('snood_disclaimer_accepted');
+  var accepted = safeGet('snood_disclaimer_accepted', null);
   if (!accepted) {
     document.getElementById('disclaimerModal').classList.add('visible');
   }
 }
 function acceptDisclaimer() {
   var consent = document.getElementById('trainingConsent').checked;
-  localStorage.setItem('snood_disclaimer_accepted', '1');
-  localStorage.setItem('snood_training_consent', consent ? '1' : '0');
+  safeSet('snood_disclaimer_accepted', '1');
+  safeSet('snood_training_consent', consent ? '1' : '0');
   document.getElementById('disclaimerModal').classList.remove('visible');
 }
 

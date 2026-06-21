@@ -83,6 +83,7 @@ const SOFTWARE_ID_MAP = {
   'rawtherapee':    'rawtherapee',
   'snapseed':       'snapseed',
   'vsco':           'vsco',
+  'googlephotos':   'google_photos',
   'gimp':           null  // geen capabilities entry voor GIMP
 };
 

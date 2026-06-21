@@ -1,0 +1,228 @@
+[
+  {
+    "id": "lightroom_classic",
+    "name": "Adobe Lightroom Classic",
+    "short": "Lightroom Classic",
+    "platform": "Windows/Mac",
+    "type": "professioneel",
+    "version_checked": "2025/2026",
+    "capabilities": {
+      "basis": {"belichting": true, "contrast": true, "hooglichten": true, "schaduwen": true, "witten": true, "zwarten": true, "witbalans": true, "tint": true},
+      "kleur": {"levendigheid": true, "verzadiging": true, "hsl_kleurmixer": true, "kleurverloop": true, "camerakalibratie": true},
+      "toon": {"toonkromme": true, "puntcurve": true},
+      "detail": {"verscherpen": true, "ruisreductie": true, "ai_denoise": true},
+      "lokaal": {"radiaal_verloop": true, "lineair_verloop": true, "penseel": true, "auto_mask": true, "ai_onderwerp_masker": true, "ai_lucht_masker": true, "ai_achtergrond_masker": true, "ai_persoon_masker": true, "kleurenbereik_masker": true, "heldheidsbereik_masker": true, "dieptebereik_masker": true},
+      "effecten": {"vignettage": true, "korrel": true, "ontwaas": true, "helderheid_clarity": true},
+      "transformatie": {"lenscorrecties": true, "transformatie": true, "uitsnijden": true, "rechtzetten": true},
+      "geavanceerd": {"lagen": false, "healing_brush": false, "blending_modes": false, "smart_objects": false}
+    },
+    "notes": "Volledig professioneel RAW-bewerkingsprogramma met geavanceerde AI-maskers en AI Denoise. Geen lagenwerk zoals Photoshop.",
+    "not_possible": ["Lagen (Layers)", "Blending modes", "Content-Aware Fill", "Frequency Separation"],
+    "alternatives": {
+      "Lagen (Layers)": "Gebruik meerdere lokale maskers in plaats van lagen",
+      "Content-Aware Fill": "Niet beschikbaar, gebruik Photoshop hiervoor"
+    }
+  },
+  {
+    "id": "lightroom_mobile",
+    "name": "Adobe Lightroom Mobile",
+    "short": "Lightroom Mobile",
+    "platform": "iOS/Android",
+    "type": "professioneel mobiel",
+    "version_checked": "2025/2026",
+    "capabilities": {
+      "basis": {"belichting": true, "contrast": true, "hooglichten": true, "schaduwen": true, "witten": true, "zwarten": true, "witbalans": true, "tint": true},
+      "kleur": {"levendigheid": true, "verzadiging": true, "kleurmixer": true},
+      "toon": {"toonkromme": true},
+      "detail": {"verscherpen": true, "ruisreductie": true, "ai_denoise": true},
+      "lokaal": {"radiaal_verloop": true, "lineair_verloop": true, "penseel": true, "ai_maskers": true},
+      "effecten": {"vignettage": true, "korrel": true, "helderheid_clarity": true},
+      "transformatie": {"uitsnijden": true, "rechtzetten": true},
+      "geavanceerd": {"lagen": false, "camerakalibratie": false}
+    },
+    "notes": "Sterk vereenvoudigde maar krachtige mobiele versie. Mist camerakalibratie en sommige geavanceerde paneel-opties van Classic.",
+    "not_possible": ["Camerakalibratie", "Lagen", "Geavanceerde HSL per-kanaal precisie"],
+    "alternatives": {
+      "Camerakalibratie": "Niet beschikbaar op mobiel, gebruik Lightroom Classic hiervoor"
+    }
+  },
+  {
+    "id": "photoshop",
+    "name": "Adobe Photoshop",
+    "short": "Photoshop",
+    "platform": "Windows/Mac",
+    "type": "professioneel",
+    "version_checked": "2025/2026",
+    "capabilities": {
+      "raw": {"camera_raw_filter": true, "camera_raw_alle_sliders": true, "ai_denoise": true},
+      "aanpassingslagen": {"curves": true, "levels": true, "hue_saturation": true, "color_balance": true, "selective_color": true, "vibrance": true, "photo_filter": true},
+      "lagen": {"layer_masks": true, "luminosity_masks": true, "blending_modes": true, "smart_objects": true, "clipping_masks": true},
+      "ai": {"select_subject": true, "select_sky": true, "remove_background": true, "neural_filters": true, "generative_fill": true},
+      "retouche": {"healing_brush": true, "clone_stamp": true, "content_aware_fill": true, "dodge_burn": true, "frequency_separation": true},
+      "geavanceerd": {"gradient_map": true, "channel_mixer": true}
+    },
+    "notes": "Volledig lagen-gebaseerd systeem, fundamenteel anders dan Lightroom. Voor RAW-bewerking gebruikt men Camera Raw Filter; geavanceerde retouche en compositing via lagen.",
+    "not_possible": [],
+    "alternatives": {}
+  },
+  {
+    "id": "capture_one",
+    "name": "Capture One",
+    "short": "Capture One",
+    "platform": "Windows/Mac",
+    "type": "professioneel",
+    "version_checked": "2025/2026",
+    "capabilities": {
+      "basis": {"belichting": true, "contrast": true, "helderheid": true, "niveaus": true, "witbalans": true},
+      "kleur": {"kleurbalans": true, "kleureditor_hsl": true, "kleurenwiel": true},
+      "toon": {"krommen": true, "selectieve_toon": true, "luma_bereik": true},
+      "detail": {"helderheid_clarity": true, "structuur": true, "verscherpen": true, "ruisreductie": true},
+      "lokaal": {"lagen": true, "linear_gradient_masker": true, "radial_gradient_masker": true, "luma_masker": true, "penseel_masker": true, "ai_skin_tone_masker": true},
+      "effecten": {"vignettering": true, "korrel": true},
+      "tethering": {"live_view_tethering": true}
+    },
+    "notes": "Gebruikt eigen 'Lagen' systeem voor lokale aanpassingen (anders dan Photoshop lagen) en heeft uitstekende kleurgereedschappen, populair bij studiofotografen.",
+    "not_possible": ["AI Denoise (zoals Lightroom)", "Generative Fill"],
+    "alternatives": {
+      "AI Denoise": "Gebruik de reguliere ruisreductie sliders"
+    }
+  },
+  {
+    "id": "dxo_photolab",
+    "name": "DxO PhotoLab",
+    "short": "DxO PhotoLab",
+    "platform": "Windows/Mac",
+    "type": "professioneel",
+    "version_checked": "2025/2026",
+    "capabilities": {
+      "basis": {"smartlighting": true, "belichting": true, "contrast": true},
+      "kleur": {"hsl": true, "kleurbalans": true},
+      "toon": {"toonkromme": true, "selectieve_toon": true},
+      "detail": {"clearview_plus": true, "deepprime_xd_ruisreductie": true, "lens_sharpness": true},
+      "lokaal": {"controlepunten_u_point": true, "automatisch_masker": true, "lokale_aanpassingen": true},
+      "effecten": {"vignettering": true, "korrel": true},
+      "geavanceerd": {"lens_modules": true, "geometrische_correcties": true}
+    },
+    "notes": "Beroemd om DeepPRIME XD, een van de beste AI-ruisreductie engines op de markt. Gebruikt U Point technologie voor lokale aanpassingen via controlepunten.",
+    "not_possible": ["Lagen", "Tekst toevoegen"],
+    "alternatives": {}
+  },
+  {
+    "id": "luminar_neo",
+    "name": "Luminar Neo",
+    "short": "Luminar Neo",
+    "platform": "Windows/Mac",
+    "type": "professioneel/hobbyist",
+    "version_checked": "2025/2026",
+    "capabilities": {
+      "basis": {"belichting": true, "contrast": true, "hooglichten": true, "schaduwen": true},
+      "kleur": {"temperatuur": true, "verzadiging": true, "levendigheid": true},
+      "detail": {"scherpte": true, "ruis": true, "small_details": true},
+      "ai": {"sky_ai": true, "relight_ai": true, "structure_ai": true, "bokeh_ai": true, "accent_ai": true, "portrait_bokeh_ai": true, "skin_ai": true, "body_ai": true},
+      "lokaal": {"paint_mask": true, "radial_mask": true, "luminosity_mask": true},
+      "effecten": {"vignet": true}
+    },
+    "notes": "Sterk gericht op AI-gestuurde one-click verbeteringen zoals Sky AI en Relight AI. Populair voor snelle, indrukwekkende resultaten.",
+    "not_possible": ["Camerakalibratie", "Geavanceerde curves per kanaal"],
+    "alternatives": {}
+  },
+  {
+    "id": "darktable",
+    "name": "darktable",
+    "short": "darktable",
+    "platform": "Windows/Mac/Linux",
+    "type": "gratis open source",
+    "version_checked": "2025/2026",
+    "capabilities": {
+      "basis": {"belichting": true, "filmische_rgb": true},
+      "kleur": {"kleurkalibratie": true, "kleurzones": true},
+      "toon": {"toonequalizer": true},
+      "detail": {"verscherpen": true, "ruisonderdrukking_profiled": true, "denoise_profiled": true},
+      "lokaal": {"lokaal_contrast": true, "parametrisch_masker": true, "tekenmasker": true, "verloopmasker": true},
+      "effecten": {"vignettering": true}
+    },
+    "notes": "Krachtig gratis alternatief met module-gebaseerde workflow. Gebruikt geheel eigen terminologie (Filmic RGB, Color Calibration) die afwijkt van Lightroom/Photoshop.",
+    "not_possible": ["AI-gestuurde maskers zoals in Lightroom", "Lagen zoals Photoshop"],
+    "alternatives": {
+      "AI maskers": "Gebruik parametrische of getekende maskers handmatig"
+    }
+  },
+  {
+    "id": "rawtherapee",
+    "name": "RawTherapee",
+    "short": "RawTherapee",
+    "platform": "Windows/Mac/Linux",
+    "type": "gratis open source",
+    "version_checked": "2025/2026",
+    "capabilities": {
+      "basis": {"belichting": true},
+      "toon": {"toonkromme": true, "lab_aanpassingen": true},
+      "kleur": {"hsv_equalizer": true, "kleurbewerking": true},
+      "detail": {"verscherpen": true, "ruisreductie": true},
+      "lokaal": {"lokaal_lab": true, "penseel": true}
+    },
+    "notes": "Gratis RAW-converter met geavanceerde Lab-kleurruimte bewerkingen, technisch maar krachtig.",
+    "not_possible": ["AI maskers", "Lagen"],
+    "alternatives": {}
+  },
+  {
+    "id": "snapseed",
+    "name": "Snapseed",
+    "short": "Snapseed",
+    "platform": "iOS/Android",
+    "type": "gratis mobiel",
+    "version_checked": "2025/2026",
+    "capabilities": {
+      "basis": {"helderheid": true, "contrast": true, "verzadiging": true, "ambiance": true, "hooglichten": true, "schaduwen": true, "warmte": true},
+      "detail": {"structuur": true, "verscherpen": true},
+      "kromme": {"krommen": true},
+      "lokaal": {"selectief_puntgewijs": true, "genezen_healing": true},
+      "effecten": {"vignet": true}
+    },
+    "notes": "Eenvoudige, gratis mobiele app. Het 'Selectief' gereedschap werkt puntgewijs, geen echte maskers zoals professionele software.",
+    "not_possible": ["Maskers (echte penseel/radiaal maskers)", "Lagen", "HSL kleurmixer", "RAW ondersteuning beperkt"],
+    "alternatives": {
+      "Maskers": "Gebruik het Selectief gereedschap met meerdere puntjes als benadering"
+    }
+  },
+  {
+    "id": "vsco",
+    "name": "VSCO",
+    "short": "VSCO",
+    "platform": "iOS/Android",
+    "type": "gratis/freemium mobiel",
+    "version_checked": "2025/2026",
+    "capabilities": {
+      "presets": {"filmische_presets": true},
+      "basis": {"belichting": true, "contrast": true, "verzadiging": true, "temperatuur": true},
+      "detail": {"scherpte": true, "korrel": true},
+      "effecten": {"vervaging_fade": true, "vignet": true, "gesplitste_toon": true}
+    },
+    "notes": "Bekend om filmische presets. Waarden lopen meestal van -12 tot +12 in plaats van -100 tot +100.",
+    "not_possible": ["Lokale maskers", "Lagen", "HSL kleurmixer"],
+    "alternatives": {}
+  },
+  {
+    "id": "google_photos",
+    "name": "Google Foto's",
+    "short": "Google Foto's",
+    "platform": "Web/iOS/Android",
+    "type": "gratis, ingebouwd",
+    "version_checked": "2025/2026",
+    "capabilities": {
+      "basis": {"licht": true, "highlights": true, "schaduwen": true, "wit_punt": true, "zwart_punt": true},
+      "kleur": {"kleur": true, "verzadiging": true, "warmte": true, "tint": true, "pop": true},
+      "filters": {"voorinstellingen_looks": true, "zwart_wit": true},
+      "detail": {"scherpte": false},
+      "lokaal": {"maskers": false, "penseel": false, "radiaal": false},
+      "geavanceerd": {"curves": false, "hsl": false, "ruisreductie_sliders": false, "lenscorrecties": false},
+      "overig": {"automatisch_verbeteren": true, "uitsnijden_roteren": true, "portret_vervaging": true, "markeren_tekenen": true}
+    },
+    "notes": "Zeer eenvoudige, ingebouwde editor met alleen globale schuifregelaars. Geen lokale aanpassingen, geen curves, geen HSL. Goed toegankelijk omdat iedereen het al heeft, maar beperkt qua precisie. Adviezen moeten zich beperken tot de globale Licht- en Kleur-schuifregelaars.",
+    "not_possible": ["Lokale maskers/penselen", "Curves", "HSL kleurmixer per kanaal", "Losse ruisreductie", "Lenscorrecties", "Vignettering instelbaar", "Korrel toevoegen"],
+    "alternatives": {
+      "Lokale maskers": "Niet mogelijk in Google Foto's; voor lokale aanpassingen is Snapseed (ook gratis) een goede stap omhoog",
+      "Curves": "Gebruik de globale Licht-schuifregelaars (Highlights/Shadows/Witpunt/Zwartpunt) als benadering"
+    }
+  }
+]

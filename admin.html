@@ -198,7 +198,11 @@ input:focus,textarea:focus{border-color:var(--accent)}
     <div id="tab-software" class="hidden">
       <div class="section">
         <h3>SOFTWARE CAPABILITIES</h3>
-        <p style="font-size:13px;color:var(--muted);margin-bottom:20px;line-height:1.7">Overzicht van alle software pakketten en hun beschikbare tools. Dit bepaalt welke adviezen de AI geeft.</p>
+        <p style="font-size:13px;color:var(--muted);margin-bottom:14px;line-height:1.7">Overzicht van alle software pakketten en hun beschikbare tools. Dit bepaalt welke adviezen de AI geeft.</p>
+        <div style="display:flex;gap:10px;margin-bottom:20px;flex-wrap:wrap">
+          <button class="btn btn-sm" onclick="syncSoftwareToDatabase()">↻ SYNC NAAR DATABASE</button>
+          <span id="syncSoftwareResult" style="font-family:monospace;font-size:11px;color:var(--accent);align-self:center"></span>
+        </div>
         <div id="softwareGrid" style="display:grid;gap:12px"></div>
       </div>
     </div>
@@ -846,7 +850,7 @@ function loadSoftwareCapabilities() {
   var grid = document.getElementById('softwareGrid');
   if (!grid) return;
   grid.innerHTML = '<div style="color:var(--muted);font-size:13px;padding:20px">Laden...</div>';
-  fetch('/software-capabilities.json')
+  fetch('/api/software')
     .then(function(r) { return r.json(); })
     .then(function(data) {
       if (!Array.isArray(data)) { grid.innerHTML = '<div style="color:var(--error)">Geen data</div>'; return; }
@@ -968,6 +972,33 @@ function handleJsonFileImport(file) {
   };
   reader.readAsText(file);
   document.getElementById('jsonFileInput').value = '';
+}
+
+
+function syncSoftwareToDatabase() {
+  var el = document.getElementById('syncSoftwareResult');
+  el.style.color = 'var(--accent)';
+  el.textContent = 'Bezig...';
+  fetch('/api/software', {
+    method: 'POST',
+    headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({ action: 'init_from_file', token: authToken })
+  })
+  .then(function(r) { return r.json(); })
+  .then(function(d) {
+    if (d.success) {
+      el.style.color = 'var(--success)';
+      el.textContent = '\u2713 ' + d.message;
+      loadSoftwareCapabilities();
+    } else {
+      el.style.color = 'var(--error)';
+      el.textContent = '\u2717 ' + (d.error || 'Fout');
+    }
+  })
+  .catch(function(e) {
+    el.style.color = 'var(--error)';
+    el.textContent = '\u2717 ' + e.message;
+  });
 }
 
 

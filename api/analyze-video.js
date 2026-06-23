@@ -125,6 +125,18 @@ function validateEntry(entry) {
   if (!entry.philosophy) issues.push('philosophy ontbreekt');
   if (!entry.workflow_order || !entry.workflow_order.length) issues.push('workflow_order ontbreekt');
   if (!entry.color_approach) issues.push('color_approach ontbreekt');
+  // Weiger nep/gegenereerde entries waarbij Gemini de video niet kon analyseren
+  const fakePhrases = ['kon niet worden geanalyseerd', 'kon niet direct worden geanalyseerd',
+    'video-informatie niet beschikbaar', 'niet toegankelijk', 'could not be analyzed',
+    'unable to analyze', 'onbekende video'];
+  const philosophy = (entry.philosophy || '').toLowerCase();
+  const title = (entry.video_title || '').toLowerCase();
+  if (fakePhrases.some(p => philosophy.includes(p) || title.includes(p))) {
+    issues.push('video kon niet worden geanalyseerd door Gemini — entry is onbetrouwbaar');
+  }
+  if (!entry.photographer_name || ['onbekend', 'unknown', ''].includes(entry.photographer_name.toLowerCase().trim())) {
+    issues.push('photographer_name ontbreekt of is onbekend');
+  }
 
   // Genre check tegen vaste lijst
   if (entry.genre) {

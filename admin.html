@@ -487,8 +487,26 @@ function validateAndAdd() {
   document.getElementById('addSuccess').classList.add('hidden');
   if (!jsonStr) { showAddError('Plak eerst JSON van Gemini'); return; }
 
+  // Auto-repareer veelvoorkomende Gemini JSON-fouten
+  function repairJson(str) {
+    // Verwijder markdown code blocks
+    str = str.replace(/```json\s*/gi, '').replace(/```\s*/g, '').trim();
+    // Verwijder trailing commas voor } of ]
+    str = str.replace(/,\s*([}\]])/g, '$1');
+    // Vervang JavaScript comments
+    str = str.replace(/\/\/[^\n]*/g, '').replace(/\/\*[\s\S]*?\*\//g, '');
+    return str;
+  }
+
   try {
-    var parsed = JSON.parse(jsonStr);
+    var cleaned = repairJson(jsonStr);
+    var parsed;
+    try {
+      parsed = JSON.parse(cleaned);
+    } catch(e1) {
+      // Probeer ook met de originele string als de gerepareerde versie niet werkt
+      parsed = JSON.parse(jsonStr);
+    }
     var entries = Array.isArray(parsed) ? parsed : [parsed];
 
     var required = ['video_title', 'genre', 'techniques', 'philosophy', 'unique_insights'];

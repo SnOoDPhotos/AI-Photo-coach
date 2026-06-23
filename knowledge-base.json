@@ -12116,84 +12116,96 @@
   {
     "video_title": "7 BEGINNER Steps to EDIT BETTER Landscape PHOTOS in Lightroom",
     "photographer_name": "Mark Denney",
-    "youtube_url": "https://youtu.be/_vSfm-GCdcc",
+    "youtube_url": "https://www.youtube.com/watch?v=_vSfm-GCdcc",
     "genre": [
       "landschap"
     ],
     "light_conditions": [
-      "natuurlijk"
+      "daglicht"
     ],
     "mood": [
-      "rustig"
+      "levendig"
     ],
     "software": [
       "Lightroom Classic"
     ],
-    "style_description": "Natural Landscape Edit",
-    "philosophy": "Het bewerken van landschapsfoto's doorloopt zeven eenvoudige, herhaalbare stappen. Begin met een schone lei, breng de tonen en kleuren in balans, en voeg lokaal contrast en verscherping toe voor een professioneel en natuurlijk resultaat.",
+    "style_description": "Vibrant Structured Landscape Workflow",
+    "philosophy": "Een vaste, logische opeenvolging van zeven stappen vormt de basis voor elke succesvolle landschapsbewerking. Door eerst het canvas perfect voor te bereiden en de globale tonen mathematisch/technisch te temmen, ontstaat er rust en structuur. Pas als de globale basis onwrikbaar staat, is er ruimte voor creatieve, lokale finesses.",
     "workflow_order": [
-      "stap 1: Verwijder chromatische aberratie en schakel lensprofielcorrecties in.",
-      "stap 2: Snijd de afbeelding bij en lijn de horizon uit.",
-      "stap 3: Pas de globale belichting en witbalans aan (gebruik de shift-dubbelklik als richtlijn).",
-      "stap 4: Pas hooglichten en schaduwen aan om details terug te brengen.",
-      "stap 5: Verfijn het wit- en zwartpunt.",
-      "stap 6: Voeg contrast toe via de Tooncurve (bijv. de sterke/medium contrast templates).",
-      "stap 7: Optimaliseer de aanwezigheid (Presence) via helderheid, nevelverwijdering en levendigheid.",
-      "stap 8: Verscherp het beeld met een masker om de lucht en zachte structuren te sparen."
+      "Stap 1: Toepassen van lensprofielen, uitsnijden van compositiestoringen en de horizon rechttrekken.",
+      "Stap 2: Bepalen van de basisbelichting en de gewenste kleurtemperatuur.",
+      "Stap 3: Corrigeren van de uiterste histogramwaarden via Hooglichten en Schaduwen.",
+      "Stap 4: Vastzetten van het zwart- en witpunt, gevolgd door contrastmodellering via de toonkromme.",
+      "Stap 5: Aanpassen van de Presentie-schuifregelaars en afsluiten met selectieve verscherping."
     ],
     "techniques": [
       {
-        "name": "Lenscorrectie als basis",
-        "description": "Het automatisch corrigeren van lensvervorming en chromatische aberratie voordat de bewerking begint.",
-        "when_to_use": "Altijd als allereerste stap bij het openen van een RAW-bestand.",
+        "name": "Eliminerend Uitsnijden",
+        "description": "Snijd storende elementen aan de uiterste randen van het frame (zoals een halve struik of een reling) resoluut weg om de focus op de leidende lijnen te leggen.",
+        "when_to_use": "Zodra het canvas wordt geopend om de compositie direct te zuiveren.",
         "tools": [
-          "Lens Correction Panel"
+          "Uitsnijden"
         ],
-        "effect": "Een optisch gecorrigeerde en neutrale basis om op te bouwen."
+        "effect": "Een opgeruimd beeld waarin de blik direct naar de hoofdlijnen en het centrale onderwerp getrokken wordt."
       },
       {
-        "name": "De Shift-klik richtlijn",
-        "description": "De shift-toets ingedrukt houden en dubbelklikken op een schuifregelaar om Lightroom automatisch een suggestie te laten doen voor de waarde.",
-        "when_to_use": "Wanneer je twijfelt over de hoeveelheid belichting, contrast, of witbalans die nodig is.",
+        "name": "Sneltoets voor Technisch Startpunt",
+        "description": "Houd Shift ingedrukt en dubbelklik op de tekst van de belichtingsregelaars om Lightroom automatisch het technisch ideale startpunt te laten berekenen.",
+        "when_to_use": "Bij de start van de tonale bewerking om snel een neutrale nulmeting te krijgen.",
         "tools": [
-          "Develop Sliders",
-          "Shift + Double Click"
+          "Standaard"
         ],
-        "effect": "En startwaarde die helpt bij het inschatten van de nodige correctie."
+        "effect": "De schuifregelaars springen direct naar een positie die clipping voorkomt en de belichting corrigeert."
       },
       {
-        "name": "S-curve via templates",
-        "description": "Gebruikmaken van de ingebouwde presets in de tooncurve (zoals medium of strong contrast) om contrast toe te voegen.",
-        "when_to_use": "Bij het instellen van het globale contrast in plaats van de algemene contrastschuifregelaar.",
+        "name": "Toonkromme-sjablonen voor Contrast",
+        "description": "Verander de Puntcurve van Lineair naar 'Gemiddeld contrast' of 'Sterk contrast' om direct een klassieke S-curve toe te passen.",
+        "when_to_use": "Wanneer handmatige toonkromme-aanpassingen nog te intimiderend zijn voor een beginner.",
         "tools": [
-          "Tone Curve Panel",
-          "Medium/Strong Contrast preset"
+          "Toonkromme"
         ],
-        "effect": "Gecontroleerde en filmische contrastverhoging."
+        "effect": "Het beeld krijgt direct beduidend meer pit en diepte in de middentonen zonder dat schaduwen direct dichtlopen."
       },
       {
-        "name": "Verscherping met maskering",
-        "description": "Verscherping toevoegen en via de optie/alt-toets maskeren zodat alleen de randen worden verscherpt en zachte vlakken zoals luchten worden overgeslagen.",
-        "when_to_use": "Als afronding van de bewerking.",
+        "name": "De Presentie-Jojo",
+        "description": "Combineer een positieve verhoging van de Levendigheid (Vibrance) met een lichte negatieve verlaging van de Verzadiging (Saturation).",
+        "when_to_use": "Bij kleurrijke landschappen, zoals herfstscènes, om de kleuren intens maar beheersbaar te houden.",
         "tools": [
-          "Detail Panel - Sharpening",
-          "Masking slider"
+          "Standaard (Presentie)"
         ],
-        "effect": "Kristalheldere details en structuren zonder ongewenste ruis of korrel in gladde gebieden."
+        "effect": "Brengt minder verzadigde kleuren tot leven, terwijl reeds felle kleuren worden ingetogen om een chemische look te voorkomen."
+      },
+      {
+        "name": "Alt-Maskering bij Verscherping",
+        "description": "Houd de Option/Alt-toets ingedrukt tijdens het verschuiven van de Maskeren-regelaar onder Verscherpen tot alleen de randen wit oplichten.",
+        "when_to_use": "Bij het afronden van de bewerking om ongewenste ruis in egale vlakken tegen te gaan.",
+        "tools": [
+          "Details (Verscherpen)"
+        ],
+        "effect": "De verscherping grijpt uitsluitend aan op harde textuurranden (zoals rotsen en bomen) en laat de vlakke lucht volledig met rust."
+      },
+      {
+        "name": "Contrast-Tegenwerking",
+        "description": "Breng de globale Contrast-schuifregelaar iets naar negatieve waarden nadat een sterke toonkromme is toegepast.",
+        "when_to_use": "Als de schaduwen in diepe dalen of onder watervallen na de toonkromme net iets te donker zijn geworden.",
+        "tools": [
+          "Standaard"
+        ],
+        "effect": "De diepste schaduwen worden subtiel verzacht waardoor microdetails behouden blijven."
       }
     ],
-    "color_approach": "Natuurlijk en gebalanceerd. Witbalans en tint worden globaal aangepast om kleurzwemen te voorkomen, eventueel bijgestuurd met auto-instellingen als referentie, en daarnaast selectief verlevendigd door het effect van hoge vibrance en lagere verzadiging.",
-    "local_adjustments": "Niet specifiek behandeld in de basisstappen; focus ligt op de 7 globale stappen, waarna lokale filters/penselen als optionele verfijning kunnen worden toegepast.",
+    "color_approach": "Kleur wordt gestuurd door een samenspel van automatische suggesties en visuele correctie. De witbalans wordt eerst op 'Auto' getest om te zien welke richting Lightroom kiest, waarna er handmatig warmte wordt toegevoegd om herfsttinten te accentueren, zonder de controle over het tinten-spectrum te verliezen.",
+    "local_adjustments": "Binnen deze specifieke routine worden lokale aanpassingen bewust uitgesteld. Er wordt een subtiel globaal vignet toegepast aan het einde van de rit om de hoeken te verduisteren. Pas nadat deze 7 stappen zijn voltooid, is het de bedoeling om eventueel over te stappen op het HSL-paneel of gradatiefilters.",
     "what_to_avoid": [
-      "Blindelings vertrouwen op de voorgestelde Lightroom-waarden (met name overbelichting bij auto-exposure).",
-      "Het ongemoeid laten van lensvervormingen of chromatische aberraties.",
-      "Overmatig verscherpen van luchten of vlakke delen van het landschap."
+      "Het klakkeloos overnemen van de automatische belichtingscorrectie van Lightroom, aangezien de software landschappen vaak technisch overbelicht.",
+      "Het verscherpen van een egale lucht of wateroppervlak, wat direct leidt tot lelijke digitale ruis.",
+      "Het toepassen van een te sterke Nevel verwijderen (Dehaze) waardoor er artifacts en onnatuurlijke blauwkleuring optreedt."
     ],
-    "best_for": "Landschapsfotografie, natuurfotografie en weidse uitzichten.",
+    "best_for": "Beginnende vrijetijdsfotografen die structuur zoeken in Lightroom en een herhaalbare blauwdruk willen voor elk type landschapsfoto.",
     "unique_insights": [
-      "Gebruik de 'Shift + Dubbelklik' truc op de schuifregelaars in Lightroom om te zien wat de software zelf denkt dat nodig is als richtlijn voor je eigen creatieve aanpassing.",
-      "Voeg contrast toe door middel van de ingebouwde Tonale Curve templates (Medium/Strong Contrast) in plaats van de algemene contrastschuif, voor meer controle over de sfeer.",
-      "Houd de verscherping onder controle en bescherm de lucht door de Masking-schuifregelaar in het Detail-paneel omhoog te trekken terwijl je de Alt/Option-toets ingedrukt houdt."
+      "Lightroom berekent via de Shift-dubbelklik-methode puur de wiskundige perfectie; het houdt geen rekening met de artistieke visie of de gewenste sfeer van de fotograaf.",
+      "Door selectief contrast toe te passen met de Toonkromme-presets, leer je gaandeweg hoe een optimale S-curve visueel is opgebouwd.",
+      "Zodra de zeven stappen zijn doorlopen, dien je direct weer bij stap 1 te beginnen, omdat latere tonale ingrepen (zoals contrast) de eerdere basisbelichting subtiel verschuiven."
     ]
   },
   {
@@ -12804,7 +12816,7 @@
   {
     "video_title": "Editing Landscape Photography in Photoshop — Full Walkthrough!",
     "photographer_name": "Austin James Jackson",
-    "youtube_url": "https://youtu.be/Xcd-MlpUBr8",
+    "youtube_url": "https://www.youtube.com/watch?v=Xcd-MlpUBr8",
     "genre": [
       "landschap"
     ],
@@ -12812,65 +12824,94 @@
       "gouden uur"
     ],
     "mood": [
-      "naturalistisch",
-      "zacht"
+      "rustig",
+      "naturalistisch"
     ],
     "software": [
       "Lightroom Classic",
-      "Photoshop"
+      "Photoshop",
+      "Camera Raw (Photoshop)"
     ],
-    "style_description": "Clean Atmospheric Landscape",
-    "philosophy": "Het combineren van technieken voor een natuurlijk resultaat. De nadruk ligt op het sturen van de kijker door middel van gecontroleerde luminantie, zachte composieteffecten en een asymmetrische lichtinval.",
+    "style_description": "Soft Golden Coastal Glow",
+    "philosophy": "Het openen van een RAW-bestand als slim object is de cruciale eerste stap voor een verfijnde landschapsretouche. Hierdoor blijft de non-destructieve flexibiliteit van Camera Raw behouden, zelfs na het toepassen van complexe Photoshop-lagen. Het doel is om een uiterst zacht, vloeiend en gebalanceerd beeld op te bouwen door het contrast in de middentonen te isoleren.",
     "workflow_order": [
-      "stap 1: Focus stack samenvoegen in Helicon Focus en openen als Smart Object in Photoshop.",
-      "stap 2: Globale basiscorrecties in Camera Raw (Smart Object).",
-      "stap 3: Luminosity masks gebruiken voor selectieve helderheidsaanpassingen.",
-      "stap 4: Selectief ophelderen van specifieke rocks met curves en verzadiging.",
-      "stap 5: Dodging en burning voor zachtheid.",
-      "stap 6: Orton effect toevoegen voor een dromerige gloed.",
-      "stap 7: Retoucheren (verwijderen van ongewenste objecten) en een op maat gemaakt asymmetrisch vignet."
+      "Stap 1: De foto vanuit Lightroom exporteren en openen als slim object in Photoshop.",
+      "Stap 2: Basistonaliteit en witbalans herstellen in de Camera Raw-filter om een realistische nulmeting te krijgen.",
+      "Stap 3: Meerdere luminositeitsmaskers (Darks en Lights) stapelen om specifieke toongraden subtiel te balanceren.",
+      "Stap 4: Handmatige lichtaccenten aanbrengen via dodging met kleur en afronden met een asymmetrisch vignet."
     ],
     "techniques": [
       {
-        "name": "Luminosity Masking (Curves)",
-        "description": "Selecteren van specifieke helderheidsbereiken (lights/darks) om subtiele aanpassingen te doen zonder de rest van de foto te beïnvloeden.",
-        "when_to_use": "Bij landschappen waar je details in schaduwen of highlights wilt terughalen zonder globale contrast-overshoot.",
+        "name": "Smart Object Flexibiliteit",
+        "description": "Open het bestand als slim object om de Camera Raw-parameters op elk moment in de workflow heropenbaar en aanpasbaar te houden.",
+        "when_to_use": "Bij elke landschapsbewerking waarbij tonen later in het proces mogelijk bijgestuurd moeten worden.",
         "tools": [
-          "Curves",
-          "Luminosity masks (Lights/Darks)"
+          "Lagenpaneel"
         ],
-        "effect": "Een gebalanceerd tonaal bereik met behoud van natuurlijke texturen."
+        "effect": "Voorkomt dat basisbewerkingen definitief in de laag worden gebakken, wat maximale fotokwaliteit garandeert."
       },
       {
-        "name": "Warp Vignette",
-        "description": "Een vignet creëren dat niet centraal is geplaatst, maar meebeweegt met de lichtrichting.",
-        "when_to_use": "Wanneer je de kijker wilt leiden naar het onderwerp, maar de lichtbron in de foto niet wilt verdonkeren.",
+        "name": "Witbalans De-magenta",
+        "description": "Verschuif de tint-regelaar weg van magenta naar het groen om een onrealistische roze gloed uit de rotsen te filteren.",
+        "when_to_use": "Wanneer camera-sensoren tijdens het gouden uur de neiging hebben om rotsen te paars of roze te registreren.",
         "tools": [
-          "Elliptical Marquee Tool",
-          "Warp"
+          "Camera Raw (Photoshop)"
         ],
-        "effect": "Een natuurlijke, asymmetrische focus die de lichtinval in de foto versterkt in plaats van tegenwerkt."
+        "effect": "De rotsstructuren krijgen hun natuurlijke, textuurrijke en eerlijke aardetint terug."
       },
       {
-        "name": "Orton Effect (Glow)",
-        "description": "Een vervaagde kopie van de foto toevoegen met een zachte blending mode (Soft Light) op basis van een lights-masker.",
-        "when_to_use": "Voor het toevoegen van een dromerige, bijna etherische sfeer aan een landschap.",
+        "name": "Toonverzachting via Darks-Masker",
+        "description": "Genereer een Darks 4 luminositeitsmasker gekoppeld aan een curvenlaag en trek de middentonen heel licht omhoog.",
+        "when_to_use": "Om diepe, harde schaduwpartijen op een vloeiende manier op te lichten zonder de rest van het beeld te beïnvloeden.",
         "tools": [
-          "Gaussian Blur",
-          "Soft Light blend mode"
+          "Luminositeitsmaskers",
+          "Curven"
         ],
-        "effect": "Zachte glans op de heldere delen van de foto, wat zorgt voor een 'painterly' gevoel."
+        "effect": "De donkerste delen van de foto worden subtiel verzacht en tonen weer fijne details."
+      },
+      {
+        "name": "Snelselectie Sky-Isolatie",
+        "description": "Gebruik de Quick Selection tool langs de contrastrijke grens van de voorgrond om een masker te maken voor gerichte kleur-dodging.",
+        "when_to_use": "Wanneer ingeschilderd licht of kleur uitsluitend in de luchtlaag mag landen en niet mag lekken op de voorgrond.",
+        "tools": [
+          "Snelle selectie",
+          "Laagmasker"
+        ],
+        "effect": "Glow- en lichteffecten blijven strak binnen de hemelpartij begrensd zonder storende randbloeding."
+      },
+      {
+        "name": "Gecodeerde S-Kromme voor Midtonen",
+        "description": "Selecteer een Midtones 2 luminositeitsmasker en pas een subtiele S-curve toe in de curvenlaag.",
+        "when_to_use": "Om het contrast in een landschap te verhogen zonder de uiterste schaduwen te crushen of hooglichten uit te bleken.",
+        "tools": [
+          "Luminositeitsmaskers",
+          "Curven"
+        ],
+        "effect": "Het beeld krijgt direct beduidend meer structuur en punch, uitsluitend in de centrale toongraden."
+      },
+      {
+        "name": "Asymmetrische Warp-Vignet",
+        "description": "Gebruik de transformatie- en warp-tool op een vignetlaag om de donkere randen weg te trekken van de actieve lichtbron.",
+        "when_to_use": "Bij landschappen met een duidelijke, zijdelingse lichtbron om te voorkomen dat de lichte kant onnatuurlijk verduisterd wordt.",
+        "tools": [
+          "Elliptisch selectiekader",
+          "Transformeren",
+          "Warpen"
+        ],
+        "effect": "De schaduwzijden worden dieper aangezet, terwijl de zijde waar het licht vandaan komt volledig helder blijft."
       }
     ],
-    "color_approach": "Streeft naar kleurgetrouwheid door witbalans (magenta/groen tint en warmte) kritisch te beoordelen en saturatie selectief aan te passen om een realistisch, niet-geforceerd beeld te behouden.",
-    "local_adjustments": "Gebruikt Luminosity masks en penselen met lage dekking om specifieke gebieden zoals rotsen of de lucht te accentueren, waarbij vaak groepsmaskers worden gebruikt om te voorkomen dat effecten onbedoeld overvloeien naar andere delen.",
+    "color_approach": "De kleuraanpak is gestoeld op kalmte en eerlijkheid. In plaats van de verzadiging blindelings op te voeren, wordt het beeld juist globaal met ongeveer -10 punten gedempt in verzadiging. Kleurverzadiging wordt uitsluitend lokaal teruggebracht via gerichte luminositeitsmaskers in de zones die door het zonlicht worden geraakt.",
+    "local_adjustments": "Lokale aanpassingen worden uiterst gecontroleerd ingezet. Groepen met daarin gekoppelde laagmaskers worden gebruikt om curven en kleurverzadiging te bundelen. Door de dichtheid (density) van laagmaskers in het eigenschappenvenster handmatig te manipuleren, worden zwart-wit-maskers omgezet in zachte grijstinten voor een vloeiende tonale overgang.",
     "what_to_avoid": [
-      "Het gebruik van algemene globale sliders voor belichting en kleur, omdat dit vaak leidt tot 'modderige' kleuren of onnatuurlijke contrastverhoudingen."
+      "Het te ver verlagen van Highlights in Camera Raw waardoor de witbalans modderig en uitgewassen oogt.",
+      "Het toepassen van een standaard vignet die de hoeken aan de kant van de zonneschijn kunstmatig donker maakt."
     ],
-    "best_for": "Landschapsfoto's waarbij een uitgebalanceerde, dromerige en zachte uitstraling gewenst is met behoud van realisme.",
+    "best_for": "Kust- en rotslandschappen die tijdens het gouden uur zijn gefotografeerd en een dromerige, zachte structuur vereisen.",
     "unique_insights": [
-      "Gebruik Smart Objects in Photoshop zodat je gemaakte aanpassingen in Camera Raw op elk moment tijdens de bewerking opnieuw kunt finetunen zonder kwaliteitsverlies.",
-      "Bij het maken van een vignet: darken niet de kant waar het licht vandaan komt, maar wel de schaduwzijde om de richting van het licht te benadrukken."
+      "Als je door het oplichten van rotsen kleurkracht verliest, kun je het exacte luminositeitsmasker via een Command-klik kopiëren naar een Hue/Saturation-laag om specifiek die tonen op te vangen.",
+      "Door de dichtheid (density) van een masker in Photoshop te verlagen, transformeer je pure zwart-wit-selecties naar grijstinten, wat de intensiteit van de bewerking over de hele linie verzacht.",
+      "Een natuurgetrouw vignet mag nooit symmetrisch zijn; de zijde waar de zon vandaan komt moet via de Warp-tool volledig buiten de donkere selectie worden geduwd."
     ]
   },
   {
@@ -27529,7 +27570,7 @@
   },
   {
     "video_title": "How to Edit Sports Photos in Lightroom Classic",
-    "photographer_name": "Onbekend — URL ontbreekt",
+    "photographer_name": "Onbekend",
     "youtube_url": "",
     "genre": [
       "sport"
@@ -29415,6 +29456,706 @@
       "De fotograaf toont een unieke methode om de paid-plugin van Star Exterminator te gebruiken om via de 'Difference'-mengmodus een onafhankelijke, niet-destructieve sterrenlaag op te bouwen.",
       "Er wordt gedemonstreerd dat door de shift-, control- en alt-toetsen simultaan met 'E' in te drukken, Affinity direct een platte snapshot-laag genereert die de dynamiek van blendmodi bevriest.",
       "De workflow bewijst dat door de sterrenhemel met een simpele curve-dip in het midden te onderdrukken, de verborgen Magelhaense wolken en sterrenstelsels paradoxaal genoeg veel duidelijker contrasteren."
+    ]
+  },
+  {
+    "video_title": "STOP Wasting Time | A SIMPLE Workflow For Editing Landscapes In Lightroom",
+    "photographer_name": "William Patino",
+    "youtube_url": "https://www.youtube.com/watch?v=NskuKe_18-g",
+    "genre": [
+      "landschap"
+    ],
+    "light_conditions": [
+      "daglicht",
+      "bewolkt"
+    ],
+    "mood": [
+      "naturalistisch",
+      "rustig"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Naturalistic Alpine Landscape",
+    "philosophy": "De focus ligt op het efficiënt gebruiken van een select aantal tools om de essentie van het landschap te versterken. Het doel is om een realistisch dynamisch bereik te behouden in plaats van extreme aanpassingen te doen die de werkelijkheid geweld aandoen. Door systematisch van globale naar lokale bewerkingen te gaan, wordt diepte en sfeer gecreëerd zonder kostbare tijd te verliezen.",
+    "workflow_order": [
+      "Stap 1: Toepassen van lenscorrecties om vignettering en aberraties direct te elimineren.",
+      "Stap 2: Uitvoeren van globale basisaanpassingen om de algehele belichting en witbalans in evenwicht te brengen.",
+      "Stap 3: Gebruiken van het aanpassingspenseel voor gerichte lokale contrasten en tonale scheiding.",
+      "Stap 4: Toepassen van kleurgradatie in de schaduwen en hooglichten voor natuurlijke kleurcontrasten."
+    ],
+    "techniques": [
+      {
+        "name": "Lenscorrectie Profiel",
+        "description": "Schakel kleurafwijking verwijderen in en activeer profielcorrecties om lensvervorming en donkere randen te herstellen.",
+        "when_to_use": "Aan het begin van elke landschapsbewerking, vooral bij weidse horizonten.",
+        "tools": [
+          "Lenscorrecties"
+        ],
+        "effect": "Elimineert onnatuurlijke paarse/groene randen en vlakt ongewenste lensvignettering uit."
+      },
+      {
+        "name": "Globaal Belichtingsbereik Balanceren",
+        "description": "Verhoog de algehele belichting om details in de bergen te onthullen, en verlaag de Hooglichten om de luchttekening te herstellen.",
+        "when_to_use": "Bij vlakke RAW-bestanden met een groot contrast tussen de lucht en de voorgrond.",
+        "tools": [
+          "Standaard"
+        ],
+        "effect": "Een gebalanceerd beeld waarin zowel de donkere schaduwen als de lichte wolkenpartijen doortekening hebben."
+      },
+      {
+        "name": "Doseer Levendigheid en Verzadiging",
+        "description": "Verhoog de Levendigheid (tussen +10 en +30) om flauwe kleuren op te halen, en verhoog Verzadiging minimaal (0 tot +10) om oververzadiging te voorkomen.",
+        "when_to_use": "Bij fletse RAW-opnames die kleurkracht missen.",
+        "tools": [
+          "Standaard"
+        ],
+        "effect": "Rijke, sprekende kleuren die toch geloofwaardig en natuurlijk ogen."
+      },
+      {
+        "name": "Zachte Achtergrond Re-haze",
+        "description": "Gebruik het penseel in de achtergrond en verlaag de Nevel verwijderen (Dehaze) naar negatieve waarden samen met het liften van schaduwen.",
+        "when_to_use": "Om atmosferisch perspectief en scheiding tussen lagen in de bergen te creëren.",
+        "tools": [
+          "Maskeren",
+          "Penseel"
+        ],
+        "effect": "Er ontstaat een lichte, dromerige mist in de verte die visuele diepte suggereert."
+      },
+      {
+        "name": "Vignet via Luchtpenseel",
+        "description": "Verlaag de Belichting met een groot, zacht penseel langs de bovenrand van de lucht.",
+        "when_to_use": "Wanneer de bovenkant van de compositie te licht is en de blik wegtrekt.",
+        "tools": [
+          "Maskeren",
+          "Penseel"
+        ],
+        "effect": "De randen worden subtiel donkerder waardoor de blik van de kijker naar het lichte centrum wordt geleid."
+      },
+      {
+        "name": "Kleurgradatie voor Lichtcontrast",
+        "description": "Voeg een warme tint toe aan de Hooglichten en een subtiele blauwe koelte aan de Schaduwen via de kleurwielen.",
+        "when_to_use": "Om het natuurlijke contrast tussen zonlicht en schaduwgebieden te versterken.",
+        "tools": [
+          "Kleurgradatie"
+        ],
+        "effect": "Een harmonieuze kleurverdeling die de driedimensionaliteit van het landschap accentueert."
+      }
+    ],
+    "color_approach": "De kleuraanpak is geworteld in de realiteit. In plaats van de witbalans drastisch te veranderen, wordt de temperatuur handmatig iets verwarmd om strooigras en zonlicht te complimenteren. Grote kleursprongen worden vermeden; subtiele splitsing via kleurgradatie versterkt de reeds aanwezige koele schaduwen en warme hooglichten.",
+    "local_adjustments": "Lokale aanpassingen worden uitsluitend gedaan met het aanpassingspenseel (K). Dit wordt gebruikt als een schilderskwast om selectief schaduwen op te lichten, specifieke planten in de midgrond te accentueren, of een zachte gloed in de achtergrond aan te brengen, altijd met een hoge feather zodat bewerkingen onzichtbaar in elkaar overlopen.",
+    "what_to_avoid": [
+      "Het te extreem herstellen van schaduwen en hooglichten waardoor een plat, onrealistisch HDR-effect ontstaat.",
+      "Urenlang inzoomen en accuraat proberen te maskeren langs objecten, wat ten koste gaat van de vloeiendheid en het plezier.",
+      "Het globaal toepassen van Textuur, Helderheid en Nevel verwijderen op de gehele foto."
+    ],
+    "best_for": "Fotografen die worstelen met een overvloed aan knoppen en zoeken naar een snelle, doeltreffende Lightroom-routine voor landschappen.",
+    "unique_insights": [
+      "Hooglichten in de lucht mogen best een klein beetje clippen (puur wit zijn), omdat dit de felle realiteit van de zon weerspiegelt en het beeld dynamiek geeft.",
+      "Onder het motto 'wit is licht' wordt de 'Witte tinten'-schuifregelaar op het lokale penseel gebruikt om structuren die al door de zon geraakt zijn op een organische manier op te lichten.",
+      "Door de penseelgrootte snel aan te passen met de vierkante haken op het toetsenbord en te werken met een maximale feather, vallen fouten buiten de lijntjes visueel niet op."
+    ]
+  },
+  {
+    "video_title": "Landscape Editing Tutorial - Photoshop",
+    "photographer_name": "Peter Zelinka",
+    "youtube_url": "https://www.youtube.com/watch?v=zjp1p6wVTcQ",
+    "genre": [
+      "landschap"
+    ],
+    "light_conditions": [
+      "gouden uur"
+    ],
+    "mood": [
+      "dramatisch",
+      "moody"
+    ],
+    "software": [
+      "Photoshop",
+      "Camera Raw (Photoshop)"
+    ],
+    "style_description": "Moody Golden Maroon Bells",
+    "philosophy": "Het combineren van meerdere belichtingen via luminositeitsmaskers is essentieel om het volledige dynamische bereik van een uitdagende lichtsituatie vast te leggen. Er wordt strikt non-destructief gewerkt met slimme objecten, zodat de basis-RAW-data altijd toegankelijk blijft. Sfeer wordt opgebouwd door handmatig licht en kleur in te schilderen over bestaande contrasten.",
+    "workflow_order": [
+      "Stap 1: RAW-bestanden optimaliseren in Camera Raw en openen als slimme objecten.",
+      "Stap 2: Lagen handmatig nauwkeurig uitlijnen in Photoshop met behulp van de mengmodus Verschil.",
+      "Stap 3: Genereren van luminositeitsmaskers om overbelichte wolken en storende elementen naadloos te vervangen.",
+      "Stap 4: Schilderen van sfeervol warm licht en het lokaal versterken van contrasten via dodging en burning."
+    ],
+    "techniques": [
+      {
+        "name": "Schaduwherstel in Camera Raw",
+        "description": "Schuif de Schaduwen naar +60 om voorgronddetails in de donkere partijen terug te halen zonder het beeld volledig vlak te slaan.",
+        "when_to_use": "Bij onderbelichte voorgronden die gefotografeerd zijn met een hoogwaardige sensor.",
+        "tools": [
+          "Camera Raw (Photoshop)"
+        ],
+        "effect": "Er worden scherpe details zichtbaar in bomen en bergen die voorheen in het zwart verdwenen."
+      },
+      {
+        "name": "Uitlijning via Mengmodus Verschil",
+        "description": "Zet de mengmodus van de bovenste laag tijdelijk op Verschil (Difference) en gebruik de pijltjestoetsen tot de witte randen verdwijnen.",
+        "when_to_use": "Wanneer belichtingsrappen (bracketing) uit de hand zijn geschoten of de camera licht bewogen is.",
+        "tools": [
+          "Lagenpaneel",
+          "Verplaatsen-tool"
+        ],
+        "effect": "Garandeert een perfecte pixel-op-pixel uitlijning van verschillende opnames, wat ghosting voorkomt."
+      },
+      {
+        "name": "Luminositeitsmasker Blending",
+        "description": "Genereer een Brights 3 masker via het Easy Panel om exact de uitgebleekte wolkendelen te selecteren en schilder hier de donkere belichting in.",
+        "when_to_use": "Wanneer een specifieke felle zone in de lucht details mist en handmatig maskeren mislukt.",
+        "tools": [
+          "Kanalen",
+          "Easy Panel",
+          "Penseel"
+        ],
+        "effect": "De uitgebleekte witte lucht wordt naadloos vervangen door een perfect belichte wolkenpartij zonder randen."
+      },
+      {
+        "name": "Gouden Gloed Schilderen",
+        "description": "Schilder met een feloranje kleur op een lege laag, zet de modus op Zwak licht (Soft Light) en pas een Gaussiaans vervaging toe tussen 60 en 100 pixels.",
+        "when_to_use": "Om flets licht in de buurt van de zon om te toveren tot een krachtige, sfeervolle zonsondergang.",
+        "tools": [
+          "Penseel",
+          "Zwak licht mengmodus",
+          "Gaussiaans vervagen"
+        ],
+        "effect": "Er ontstaat een zachte, dromerige goudgele gloed die over de wolken en bergen straalt."
+      },
+      {
+        "name": "Selectieve Kleuroptimalisatie",
+        "description": "Kies het gele kanaal in Selectieve kleur en verschuif de regelaars om het geel warmer en roder te maken.",
+        "when_to_use": "Bij herfstlandschappen om de bladeren extra warmte en diepte te geven.",
+        "tools": [
+          "Selectieve kleur"
+        ],
+        "effect": "Gele herfstkleuren transformeren in een diepe, intense goud-vlammende tint."
+      },
+      {
+        "name": "Sneeuw-contrast via Selectief Wit",
+        "description": "Selecteer het witte kanaal en verlaag het zwartniveau drastisch om de sneeuw op de bergen op te lichten, maskeer dit lokaal in met 50% ondoorzichtigheid.",
+        "when_to_use": "Wanneer bergtoppen met sneeuw te flets zijn en meer textuur en kracht moeten uitstralen.",
+        "tools": [
+          "Selectieve kleur",
+          "Laagmasker"
+        ],
+        "effect": "De sneeuw springt direct in het oog met een helder, wit contrast ten opzichte van de rotsen."
+      },
+      {
+        "name": "Orton-effect voor Sfeer",
+        "description": "Pas het Orton-effect toe met een straal die gelijkstaat aan het aantal megapixels van de camera en verlaag de laagondoorzichtigheid.",
+        "when_to_use": "Als finishing touch om een dromerige, professionele glans over het landschap te leggen.",
+        "tools": [
+          "Easy Panel",
+          "Filters"
+        ],
+        "effect": "Het beeld krijgt een subtiele, romantische zachtheid in de lichte delen terwijl de details scherp blijven."
+      }
+    ],
+    "color_approach": "De focus ligt op het creëren van een complementair kleurcontrast. De koele blauw- en paarskleuren in de schaduwzijden van de bergen worden bewust versterkt via kleurbalans om te contrasteren met de intens warme, ingeschilderde oranje en gouden tinten in de lucht en op de reflectie van het water.",
+    "local_adjustments": "Lokale aanpassingen vormen de kern van deze workflow. Maskers worden gecorrigeerd met Gaussiaans vervagen om harde penseelstreken onzichtbaar te maken. Daarnaast worden luminositeitsmaskers (Brights en Darks) gekoppeld aan 50% grijze lagen voor uiterst precieze dodging en burning die uitsluitend invloed heeft op specifieke toongradaties.",
+    "what_to_avoid": [
+      "Het direct platvlakken (flatten) van de lagen in een vroeg stadium, waardoor de bewerkingsgeschiedenis en RAW-aanpasbaarheid verloren gaan.",
+      "Het te donker maken van de lucht tijdens het blenden, wat een onnatuurlijke overgang met de horizon oplevert.",
+      "Het direct opslaan en overschrijven van het bronbestand na de destructieve retoucheerstappen."
+    ],
+    "best_for": "Gevorderde landschapsfotografen die de fijne kneepjes van precieze belichtingssamensmelting en sfeerschepping in Photoshop willen beheersen.",
+    "unique_insights": [
+      "Door de Shift-toets ingedrukt te houden tijdens het openen van bestanden vanuit Camera Raw, transformeren ze in Smart Objects waardoor aanpassingen non-destructief gekoppeld blijven.",
+      "De radius voor de perfecte dosering van het Orton-effect kan exact worden afgestemd op de sensorresolutie (bijvoorbeeld een straal van 24 pixels voor een 24-megapixelcamera).",
+      "Sla de gemaakte TIFF/PSD-workflow op en loop minimaal 20 minuten weg van de computer; met een frisse blik zie je kleurafwijkingen of maskeerfouten die je daarvoor over het hoofd zag."
+    ]
+  },
+  {
+    "video_title": "Vibrant Landscape Photography Edit in Lightroom - Step by Step Tutorial",
+    "photographer_name": "Ross Wilson",
+    "youtube_url": "https://www.youtube.com/watch?v=th8u8ZNqWPU",
+    "genre": [
+      "landschap"
+    ],
+    "light_conditions": [
+      "daglicht"
+    ],
+    "mood": [
+      "dramatisch",
+      "levendig"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Vibrant Volcanic Martian Earth",
+    "philosophy": "De basis van deze benadering is om volledig in te zoomen op de reeds aanwezige, verborgen karakteristieken van een landschap en deze extreem te versterken. In plaats van een standaard groen-gele weergave te accepteren, wordt gezocht naar een buitenaards, vulkanisch karakter. Globale tonen worden bewust vlak en onderbelicht gehouden om maximale speelruimte te bewaren voor de kleur- en maskeerfase.",
+    "workflow_order": [
+      "Stap 1: Aanpassen van de compositie naar een brede panoramaverhouding om overtollige en afleidende luchtpartijen te elimineren.",
+      "Stap 2: Extreem verlagen van de hooglichten en verhogen van de schaduwen om een vlakke, controleerbare tonale basis te scheppen.",
+      "Stap 3: Manipuleren van de kleurkalibratie en de HSL-kanalen om groen- en geeltinten volledig om te buigen naar diep vulkanisch oranje.",
+      "Stap 4: Toepassen van split-toning in de kleurgradatie om subtiele tonale scheiding aan te brengen tussen lichte en donkere partijen."
+    ],
+    "techniques": [
+      {
+        "name": "Compositie Zuivering via Panorama-crop",
+        "description": "Snijd de bovenste hemelpartij rigoureus weg om de nadruk volledig op de berglijnen en het ruwe terrein te vestigen.",
+        "when_to_use": "Wanneer de lucht te dominant of saai is en de aandacht wegtrekt van het hoofdonderwerp.",
+        "tools": [
+          "Uitsnijden"
+        ],
+        "effect": "De foto transformeert naar een weids en dynamisch panorama waarin de landschapsstructuur centraal staat."
+      },
+      {
+        "name": "Histogram Vlakmaken",
+        "description": "Verlaag de Hooglichten drastisch richting -100 en lift de Schaduwen om een tijdelijk flets en contrastarm basisbeeld te forceren.",
+        "when_to_use": "Bij rauwe berglandschappen waarbij extreme lokale contrasten en lichteffecten later via maskers worden opgebouwd.",
+        "tools": [
+          "Standaard"
+        ],
+        "effect": "Alle details in zowel de diepste rotsspleten als de lichte wolkenranden worden maximaal zichtbaar en bewerkbaar."
+      },
+      {
+        "name": "Gerichte Structuurversterking",
+        "description": "Verhoog de Helderheid (Clarity) en introduceer een subtiele dosis Nevel verwijderen (Dehaze) om harde, grafische berglijnen te accentueren.",
+        "when_to_use": "Bij rotsachtige of vulkanische landschappen die volledig vrij zijn van fijne vegetatie of storend gebladerte.",
+        "tools": [
+          "Standaard (Presentie)"
+        ],
+        "effect": "De contouren en textuur van de bergen worden direct scherper, krachtiger en dramatischer."
+      },
+      {
+        "name": "Kleurkalibratie Verschuiving",
+        "description": "Verschuif de parameters in het Kalibratie-paneel (vooral bij de blauwe primaire kleuren) om de algehele tonale balans naar warme aardetinten te dwingen.",
+        "when_to_use": "Wanneer een landschap een hardnekkige, ongewenste groen- of geelzweem heeft die via de normale HSL-regelaars niet weggaat.",
+        "tools": [
+          "Kalibratie"
+        ],
+        "effect": "De algehele kleurmatrix verschuift waardoor verborgen oranje- en roodtinten op een organische wijze naar de oppervlakte komen."
+      },
+      {
+        "name": "Luminantie-isolatie van Storend Blauw",
+        "description": "Verhoog de Luminantie van de blauwe en aqua kanalen naar extreem hoge waarden om resterende blauwe luchtplekken op te bleken.",
+        "when_to_use": "Wanneer een klein plukje blauwe lucht in een overwegend bewolkte compositie te veel contrast oplevert en afleidt.",
+        "tools": [
+          "Kleurmenger (HSL)"
+        ],
+        "effect": "Het storende blauw smelt optisch samen met de omringende witte wolkenpartijen, wat rust brengt in de bovenhoeken."
+      },
+      {
+        "name": "Selectieve Toonkromme Fading",
+        "description": "Plaats een controlepunt in de donkere partijen van de Toonkromme en trek het absolute zwartpunt iets omhoog om de diepste schaduwen te matteren.",
+        "when_to_use": "Om een cinematische, zachte sfeer te introduceren in contrastrijke rotspartijen.",
+        "tools": [
+          "Toonkromme"
+        ],
+        "effect": "De diepste zwarte tinten verliezen hun hardheid en transformeren in een zacht, sfeervol donkergrijs."
+      }
+    ],
+    "color_approach": "Er wordt gekozen voor een radicaal, thematisch kleurconcept. De volledige groen-gele matrix van de vegetatie wordt via agressieve HSL-verschuivingen vernietigd en omgezet in een vlammend, vulkanisch oranje en dieprood. Blauwtinten in de lucht worden bewust onderdrukt of geneutraliseerd om een unieke, mars-achtige sfeer te creëren waarin warme aardetinten de absolute hoofdrol spelen.",
+    "local_adjustments": "Globale aanpassingen dienen puur om het kleurenpalet te fixeren en het histogram te temmen. De daadwerkelijke diepte, het contrast en de dramatisering van het licht worden volledig gereserveerd voor een latere, uiterst intensieve maskeerfase met lokale penselen en selectieve lichtaccenten.",
+    "what_to_avoid": [
+      "Het blindelings verhogen van de Helderheid (Clarity) in landschappen met dichte bossen of bladeren, omdat dit een chaotisch en veel te druk beeld oplevert.",
+      "Het behouden van felle, contrasterende blauwe luchtfragmenten als deze de aandacht afleiden van de textuur op de voorgrond."
+    ],
+    "best_for": "Fotografen die kale, rotsachtige of vulkanische landschappen willen transformeren in een surrealistisch, sfeervol kunstwerk.",
+    "unique_insights": [
+      "Door de Nevel verwijderen- en Hooglichten-schuifregelaars direct bij de start naar hun uiterste waarden te trekken, ontdek je direct welke verborgen textuur en detailtekening er werkelijk in de luchtlaag aanwezig is.",
+      "Soms is het verlagen van de algehele Belichting effectiever om contrast te genereren dan het verhogen van de Contrast-schuifregelaar, omdat het de natuurlijke hooglichten beter isoleert.",
+      "Als een specifieke kleurcorrectie in Lightroom te complex wordt vanwege atmosferische imperfecties, is het sneller en efficiënter om de foto direct naar Photoshop te sturen voor Generatieve Vulling of een nauwkeurige kloonstempel-ingreep."
+    ]
+  },
+  {
+    "video_title": "How to Edit Your Landscape Photos in Lightroom & Photoshop",
+    "photographer_name": "Colby Brown",
+    "youtube_url": "https://www.youtube.com/watch?v=V5fZjztyiaU",
+    "genre": [
+      "landschap"
+    ],
+    "light_conditions": [
+      "daglicht",
+      "diffuus licht"
+    ],
+    "mood": [
+      "naturalistisch",
+      "levendig"
+    ],
+    "software": [
+      "Lightroom Classic",
+      "Photoshop",
+      "Camera Raw (Photoshop)"
+    ],
+    "style_description": "Lush Vibrant Forest Waterfall",
+    "philosophy": "Een vlekkeloze synergie tussen Lightroom en Photoshop is de sleutel tot het oplossen van fysieke beperkingen in het veld. Lightroom dient als het perfecte startpunt voor bibliotheekbeheer en subtiele tonale balancering, terwijl de ware creatieve kracht ligt in het combineren van specifieke opnames via geavanceerd laagbeheer in Photoshop. Hierdoor kunnen afzonderlijke optische effecten, zoals verschillende gradaties van polarisatie, in één perfect frame worden gegoten.",
+    "workflow_order": [
+      "Stap 1: Analyseren van de RAW-bestanden op kritieke scherpte en het selecteren van de frames met de meeste potentie.",
+      "Stap 2: Uitvoeren van minimale basiscorrecties op schaduwen en hooglichten in het Standaard-paneel van Lightroom.",
+      "Stap 3: Direct exporteren en openen van de geselecteerde opnames als afzonderlijke lagen binnen één Photoshop-document.",
+      "Stap 4: Combineren van de gewenste beeldelementen met de Lasso-tool en het toepassen van een progressieve feather op het laagmasker."
+    ],
+    "techniques": [
+      {
+        "name": "Optische Polarisatie Blending",
+        "description": "Combineer een opname met volledige polarisatie (voor maximale verzadiging in het loof) met een opname die de reflectie in het water intact laat via laagmaskers.",
+        "when_to_use": "Bij bos- en watervalfotografie waarbij een fysiek polarisatiefilter niet tegelijkertijd de reflectie én het natte blad optimaal kan filteren.",
+        "tools": [
+          "Lagenpaneel",
+          "Lasso-tool",
+          "Laagmasker"
+        ],
+        "effect": "Het uiteindelijke beeld toont zowel een diepe, reflectievrije verzadiging in het bos als een spiegelgladde, detailrijke reflectie in de waterpoel."
+      },
+      {
+        "name": "Progressieve Masker-Vezeling",
+        "description": "Maak een ruwe selectie met de Lasso-tool en verhoog de Feather-schuifregelaar in de maskereigenschappen om de harde overgangsranden volledig weg te smelten.",
+        "when_to_use": "Bij het samenvoegen van twee belichtingen of filtereffecten met onregelmatige, natuurlijke grenzen zoals waterlijnen.",
+        "tools": [
+          "Eigenschappen",
+          "Feather-regelaar"
+        ],
+        "effect": "Er ontstaat een uiterst vloeiende en onzichtbare overgang tussen de verschillende opnames zonder dat er harde randen ontstaan."
+      },
+      {
+        "name": "Luminantie-Demping voor Kleurkracht",
+        "description": "Verlaag de Luminantie van de groene en gele kanalen in de kleurmixer om de helderheid van de bladeren te temperen, alvorens de verzadiging te verhogen.",
+        "when_to_use": "Bij weelderige boslandschappen om te voorkomen dat felgroen licht reflecteert en de bladeren uitgebleekt overkomen.",
+        "tools": [
+          "Color Mixer (HSL)",
+          "Luminantie"
+        ],
+        "effect": "De bladeren krijgen een diepere, rijkere basistoon waardoor de opvolgende kleurverzadiging veel natuurlijker en voller oogt."
+      },
+      {
+        "name": "Gerichte Midtoon Verscherping",
+        "description": "Pas verscherping toe via de ingebouwde Camera Raw-plug-in binnen Photoshop, specifiek gericht op de middentonen van de textuurrijke elementen.",
+        "when_to_use": "Om de textuur en scherpte in rotspartijen en boomschors te optimaliseren zonder egale vlakken aan te tasten.",
+        "tools": [
+          "Camera Raw (Photoshop)",
+          "Details (Sharpening)"
+        ],
+        "effect": "De details in de rotsen worden messcherp geaccentueerd, terwijl er geen storende korrel of artifacts ontstaan."
+      },
+      {
+        "name": "Micro Retouche via Spot Healing",
+        "description": "Gebruik een klein ingestelde Spot Healing Brush om zwevende bladeren, felle takjes of storende schuimstrepen in het water stapsgewijs weg te poetsen.",
+        "when_to_use": "Bij het opschonen van stromend water om de blik van de kijker ongestoord naar de hoofdwaterval te geleiden.",
+        "tools": [
+          "Snel herstel-penseel (Spot Healing)"
+        ],
+        "effect": "Alle kleine, contrasterende lichtvlekjes in de voorgrond verdwijnen, waardoor een sereen en opgeruimd beeld ontstaat."
+      }
+    ],
+    "color_approach": "De focus ligt op het isoleren en verrijken van de natuurlijke, organische tinten in een vochtig bosecosysteem. Door de helderheid (luminantie) van de groen- en geelkanalen bewust te verlagen en tegelijkertijd de verzadiging gecontroleerd op te voeren, ontstaat een diepe, weelderige sfeer. Levendigheid (Vibrance) geniet altijd de voorkeur boven globale verzadiging om de delicate overgangen in het loof te beschermen.",
+    "local_adjustments": "Lokale aanpassingen worden binnen deze methodiek ingezet om de wetten van de natuur te respecteren. In plaats van fysiek in te grijpen in de natuur, worden storende elementen achteraf via uiterst precieze retoucheerlagen en masker-feathering opgelost, waarbij Photoshop-lagen de ultieme controle bieden om de intensiteit van elke afzonderlijke bewerking traploos te doseren.",
+    "what_to_avoid": [
+      "Het te ver doorschieten met verscherping en verzadiging in een vroeg stadium, wat direct leidt tot lelijke digitale randen en een onnatuurlijk resultaat.",
+      "Het overschilderen of retoucheren met een te groot penseel bij de Spot Healing tool, waardoor de omringende pixelstructuur vervormt en wazig wordt."
+    ],
+    "best_for": "Fotografen die complexe boscenario's en watervallen bewerken en de overstap van Lightroom naar Photoshop effectief willen maken.",
+    "unique_insights": [
+      "RAW-bestanden zijn essentieel omdat ze fungeren als onbewerkte, pure datawolk; ze geven je de cruciale tonale elasticiteit die nodig is om diepe schaduwen op te trekken zonder directe kwaliteitsafname.",
+      "De ingebouwde Adobe Camera Raw-filter binnen Photoshop gebruikt exact dezelfde broncode als Lightroom, waardoor je direct binnen je lagenstructuur geavanceerde tonale correcties kunt uitvoeren.",
+      "Bij het wegpoetsen van storende elementen met de Spot Healing brush moet je uitsluitend in kleine, opeenvolgende segmenten werken; de algoritmes kunnen grote selecties niet accuraat interpreteren en creëren dan patronen die er onnatuurlijk uitzien."
+    ]
+  },
+  {
+    "video_title": "FINALLY! Lightroom Just Made Landscape Editing Way Smarter!",
+    "photographer_name": "Mark Denney",
+    "youtube_url": "https://www.youtube.com/watch?v=l_WDBtM0w-g",
+    "genre": [
+      "landschap"
+    ],
+    "light_conditions": [
+      "bewolkt",
+      "gouden uur"
+    ],
+    "mood": [
+      "moody",
+      "dramatisch"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Smart Local AI Landscape",
+    "philosophy": "Lokale aanpassingen bepalen het cruciale verschil tussen een degelijke registratie en een meesterlijk landschapsbeeld. Dankzij moderne, contextbewuste AI-algoritmes hoeft het opbouwen van complexe, gesegmenteerde maskers niet langer tijdrovend of frustrerend te zijn. De focus verschuift van technisch handmatig selecteren naar puur creatieve controle over de afzonderlijke elementen in de compositie.",
+    "workflow_order": [
+      "Stap 1: Activeren van de intelligente landschapsdetectie binnen de maskeermodule van Lightroom.",
+      "Stap 2: Selecteren van de specifiek herkende elementen en deze laten genereren als afzonderlijke, unieke maskers.",
+      "Stap 3: Uitvoeren van gerichte tonale correcties op de individueel geïsoleerde zones zoals bergen, water en architectuur.",
+      "Stap 4: Verfijnen van de automatische AI-selecties door ongewenste overlap handmatig te subtraheren met een penseel."
+    ],
+    "techniques": [
+      {
+        "name": "Automatische Landschap-Segmentatie",
+        "description": "Gebruik de ingebouwde 'Landschap'-knop binnen de maskeermodule om de foto direct te laten scannen op autonome geografische structuren.",
+        "when_to_use": "Bij complexe weidse landschappen die bestaan uit duidelijke, losse lagen zoals een bergketen, een waterpartij en de lucht.",
+        "tools": [
+          "Maskeren",
+          "Landschap AI"
+        ],
+        "effect": "Lightroom isoleert de afzonderlijke onderdelen feilloos en creëert automatisch perfect benoemde laagmaskers."
+      },
+      {
+        "name": "Gerichte Berg-Dramatisering",
+        "description": "Selecteer het automatisch gegenereerde bergmasker en open de Schaduwen om structuren op te lichten, gecombineerd met een verhoging van het lokale contrast.",
+        "when_to_use": "Wanneer bergketens in de midgrond te donker uitvallen en los moeten komen van de achtergrond.",
+        "tools": [
+          "Maskeren",
+          "Bergen-masker"
+        ],
+        "effect": "De bergen krijgen direct meer textuur, diepte en visuele kracht zonder dat de omliggende lucht wordt aangetast."
+      },
+      {
+        "name": "Water-Textuur Optimalisatie",
+        "description": "Isoleer het water via het automatische AI-masker, verhoog de Helderheid (Clarity) licht en pas gerichte aanpassingen toe op de witte tinten.",
+        "when_to_use": "Bij gletsjermeren, rivieren of zee-oppervlakken die vlak overkomen en meer dynamiek vereisen.",
+        "tools": [
+          "Maskeren",
+          "Water-masker"
+        ],
+        "effect": "De stroming, reflecties en rimpelingen in het water worden met extreme precisie scherpgesteld en geaccentueerd."
+      },
+      {
+        "name": "AI-Overlap Subtractie",
+        "description": "Kies een automatisch gegenereerd masker (zoals vegetatie), druk op 'Subtraheren' en poets foutieve selectiezones in de bergen handmatig weg met een penseel.",
+        "when_to_use": "Wanneer het AI-algoritme door verwarrende lichtval organische elementen op de verkeerde plek in de foto heeft meegemaskerd.",
+        "tools": [
+          "Maskeren",
+          "Subtraheren",
+          "Penseel"
+        ],
+        "effect": "Het masker wordt gecorrigeerd en grijpt uitsluitend aan op de exacte geografische zone waar de bewerking bedoeld is."
+      },
+      {
+        "name": "Isolatie van Menselijke Bouwwerken",
+        "description": "Activeer het specifieke architectuur-masker dat door de landschaps-AI is herkend en verhoog lokaal het Witpunt en de Belichting.",
+        "when_to_use": "Wanneer er een kleine kerk, berghut of vuurtoren in het landschap staat die als visueel ankerpunt moet fungeren.",
+        "tools": [
+          "Maskeren",
+          "Architectuur-masker"
+        ],
+        "effect": "Het bouwwerk l some direct op uit de donkere omgeving en trekt onmiddellijk de aandacht van de kijker."
+      }
+    ],
+    "color_approach": "Door de introductie van afzonderlijke AI-maskers voor vegetatie en natuurlijke grond kunnen kleurbewerkingen uiterst lokaal worden toegepast. In plaats van globale kleurverschuivingen, worden de groentinten in de vegetatie specifiek geïsoleerd en verwarmd, terwijl de omliggende rotsen en de lucht hun oorspronkelijke, koele tonale integriteit behouden.",
+    "local_adjustments": "Lokale aanpassingen transformeren met deze techniek van een secundaire back-up naar de absolute basis van de workflow. Omdat Lightroom de maskers automatisch herkent, genereert en direct logisch benoemt, start de bewerking direct bij het lokaal finetunen van de afzonderlijke compositie-elementen.",
+    "what_to_avoid": [
+      "Het blindelings vertrouwen op de vegetatie- en grondmaskers zonder de randen te controleren, aangezien deze zones bij complexe structuren soms kunnen overlappen.",
+      "Het handmatig typen en hernoemen van maskers, aangezien de software dit tijdrovende werk nu volledig autonoom uitvoert."
+    ],
+    "best_for": "Landschapsfotografen die complexe, uit meerdere lagen opgebouwde scènes bewerken en hun workflow drastisch willen versnellen.",
+    "unique_insights": [
+      "De nieuwe landschaps-AI is dynamisch en contextafhankelijk; de opties die de software aanbiedt veranderen per foto op basis van de daadwerkelijk gedetecteerde geografische elementen.",
+      "De succesvolle introductie van automatische persoonsselectie bij portretten heeft model gestaan voor deze revolutionaire tonale transformatie binnen de landschapsfotografie.",
+      "Waar voorheen omslachtige workarounds nodig waren (zoals het dupliceren en inverteren van een luchtmasker om de voorgrond te selecteren), levert de software nu met één klik een autonoom, vlijmscherp voorgrond- en bergenmasker."
+    ]
+  },
+  {
+    "video_title": "Photoshop Landscape Editing Tutorial (MUST SEE)",
+    "photographer_name": "Steve Arnold",
+    "youtube_url": "https://www.youtube.com/watch?v=DVFZvWVbqQ0",
+    "genre": [
+      "landschap"
+    ],
+    "light_conditions": [
+      "storm",
+      "nacht"
+    ],
+    "mood": [
+      "dramatisch",
+      "moody"
+    ],
+    "software": [
+      "Lightroom Classic",
+      "Photoshop"
+    ],
+    "style_description": "Moody Dark Lightning Landscape",
+    "philosophy": "Zelfs als een RAW-bestand technisch perfect naar rechts is belicht (ETTR), ligt de ware kracht van een dramatisch landschap vaak in het drastisch verduisteren van de tonen. Door de algehele belichting te drukken, ontstaat er ruimte voor diepe, rijke kleuren en intens contrast. Aanpassingen worden bij voorkeur selectief via handmatige maskering ingeborsteld om delicate landschapselementen te beschermen.",
+    "workflow_order": [
+      "Stap 1: RAW-bestand in Lightroom voorbereiden door de algehele belichting te verlagen en de witbalans te corrigeren.",
+      "Stap 2: De overbelichte, uitgebleekte delen van de lucht herstellen met de kloonstempel op een aparte laag in Photoshop.",
+      "Stap 3: Globale en lokale contrasten stap voor stap opbouwen met opeenvolgende niveasaanpassingen (Levels).",
+      "Stap 4: Toepassen van een gericht Orton-effect op de middentonen en afronden met een op maat gemaakte contrast-vignet."
+    ],
+    "techniques": [
+      {
+        "name": "ETTR Belichtingsreductie",
+        "description": "Verlaag de Belichting met -1.60 stop in het basispaneel om de lichte RAW-data om te zetten naar een diepe, donkere sfeer.",
+        "when_to_use": "Bij RAW-bestanden die via 'Expose to the Right' zijn geschoten en een dramatische, duistere sfeer nodig hebben.",
+        "tools": [
+          "Standaard"
+        ],
+        "effect": "Het hele beeld wordt donkerder en er ontstaat direct een mysterieuze, intense basistoon met verzadigde kleuren."
+      },
+      {
+        "name": "Zon-/Lichtgloed Maskering",
+        "description": "Schilder met een zacht penseel (ondoorzichtigheid 30%) een warme lichtkleur, geëxtraheerd uit de bliksem, over de herstelde luchtstructuur.",
+        "when_to_use": "Om lelijke, uitgebleekte overgangen rondom een felle lichtbron of blikseminslag organisch te verhullen.",
+        "tools": [
+          "Penseel",
+          "Lagenpaneel"
+        ],
+        "effect": "Er ontstaat een natuurlijke, sfeervolle nevel die de indruk wekt van binnendringend, sfeervol licht."
+      },
+      {
+        "name": "Gescheiden Niveas Contrast",
+        "description": "Gebruik een Niveas-aanpassingslaag (Levels) om hooglichten en schaduwen naar elkaar toe te schuiven, en maskeer dit specifiek in de voorgrond.",
+        "when_to_use": "Wanneer globale contrasten de bergen of lucht te donker maken en specifieke landschapslagen scheiding vereisen.",
+        "tools": [
+          "Niveaus",
+          "Laagmasker"
+        ],
+        "effect": "De voorgrond krijgt direct diepte en definitie zonder dat de omliggende luchtlagen worden aangetast."
+      },
+      {
+        "name": "Luminositeitsmasker Schaduwbescherming",
+        "description": "Genereer een Shadows 5 luminositeitsmasker en schilder met zwart op de contrastlaag om de diepste rotsschaduwen te beschermen tegen dichtlopen.",
+        "when_to_use": "Bij contrastrijke structuren waarbij de fijne doortekening in de donkerste rotsen behouden moet blijven.",
+        "tools": [
+          "Luminositeitsmaskers",
+          "Penseel"
+        ],
+        "effect": "Het contrast wordt verhoogd in de middentonen, maar de diepste schaduwen blijven open en zacht."
+      },
+      {
+        "name": "Orton-effect op Middentonen",
+        "description": "Pas een Orton-laag toe met 50% ondoorzichtigheid en koppel hier direct een Midtones 3 luminositeitsmasker aan.",
+        "when_to_use": "Om een sprookjesachtige, zachte gloed te introduceren zonder de uiterste hooglichten of diepste schaduwen te vervuilen.",
+        "tools": [
+          "Luminositeitsmaskers",
+          "Orton-effect"
+        ],
+        "effect": "De landschapselementen krijgen een dromerige, sfeervolle uitstraling terwijl de scherpte behouden blijft."
+      },
+      {
+        "name": "Contrast-Vignet Modellering",
+        "description": "Maak een kromme-aanpassing die de hoeken verduistert, maar trek tegelijkertijd het absolute zwartpunt iets omhoog.",
+        "when_to_use": "Als finishing touch om de randen van het frame subtiel te verzachten en de blik naar het midden te dwingen.",
+        "tools": [
+          "Curven",
+          "Penseel"
+        ],
+        "effect": "De randen worden donkerder, maar verliezen hun harde contrast, wat een rustiger en harmonieuzer beeld oplevert."
+      }
+    ],
+    "color_approach": "De kleuraanpak is gericht op het versterken van de natuurlijke, stormachtige dramatiek. In plaats van de kleuren te neutraliseren, wordt de witbalans handmatig verwarmd en wordt er een flinke dosis magenta aan de tint toegevoegd om de paars-blauwe sfeer rondom de bliksem te accentueren en de warme aardetonen in de grond te complementeren.",
+    "local_adjustments": "Lokale maskering is de ruggengraat van deze methode. Grote contraststappen worden nooit globaal losgelaten; via precieze luminositeitsmaskers (Brights, Shadows en specifieke Midtones) worden tonen zorgvuldig geïsoleerd. Hierdoor kan er met een groot, zacht penseel gewerkt worden zonder dat de bewerkingen over de randen van delicate landschapslijnen heen lekken.",
+    "what_to_avoid": [
+      "Het globaal verhogen van contrast waardoor de diepste rotsschaduwen onherstelbaar naar puur zwart worden gedrukt.",
+      "Het simpelweg donkerder maken van overbelichte luchtpartijen zonder structuurherstel, wat een fletse, grijze vlek oplevert."
+    ],
+    "best_for": "Fotografen die dramatische stormsituaties, bliksemopnames of contrastrijke avondlandschappen willen omvormen tot een schilderachtig kunstwerk.",
+    "unique_insights": [
+      "Een technisch perfect naar rechts belichte foto (ETTR) oogt vaak flets; de ware dramatiek ontstaat pas door de belichting achteraf bewust met meer dan 1.5 stop te verlagen.",
+      "Lelijke, uitgebleekte gaten in de lucht waar geen RAW-data meer in zit, kunnen effectief worden gecamoufleerd door een textuurkloon te combineren met een ingeborstelde kleurhazelook.",
+      "Het koppelen van een specifiek Midtones-luminositeitsmasker aan een Orton-laag voorkomt dat de hooglichten uitbleken of de schaduwen modderig worden."
+    ]
+  },
+  {
+    "video_title": "How to Edit Landscape Photography in Photoshop 2023",
+    "photographer_name": "Austin James Jackson",
+    "youtube_url": "https://www.youtube.com/watch?v=kcKGsYLEdYI",
+    "genre": [
+      "landschap"
+    ],
+    "light_conditions": [
+      "diffuus licht",
+      "daglicht"
+    ],
+    "mood": [
+      "rustig",
+      "levendig"
+    ],
+    "software": [
+      "Photoshop",
+      "Camera Raw (Photoshop)",
+      "Nik Collection"
+    ],
+    "style_description": "Vibrant Structured Forest River",
+    "philosophy": "Een consistente, herhaalbare volgorde van bewerkingstappen is de absolute sleutel tot succesvolle landschapsfotografie. Voordat er ook maar één kleur- of contrastknop wordt aangeraakt, moet de fysieke compositie via geavanceerde transformatietools perfect in balans worden gebracht. De bulk van de bewerking bestaat uit het maken van uiterst subtiele, minuscule aanpassingen die samen de foto naar een hoger niveau tillen.",
+    "workflow_order": [
+      "Stap 1: Compositiefouten en lensvervormingen direct corrigeren met de Warp-transformatie op een gekloonde laag.",
+      "Stap 2: De laag omzetten naar een slim object en de globale dynamiek balanceren in Camera Raw.",
+      "Stap 3: Toepassen van gerichte micro-contrasten met externe plugins zoals Color Efex Pro.",
+      "Stap 4: Witbalans perfectioneren via Kleurbalans en selectieve verzadiging toepassen op geïsoleerde kleurkanalen."
+    ],
+    "techniques": [
+      {
+        "name": "Compositie-Warping vooraf",
+        "description": "Gebruik de Warp-transformatie (Command/Control + T, gevolgd door Warp) om de randen van een panorama recht te trekken en objecten te herschalen.",
+        "when_to_use": "Direct aan het begin van de workflow bij vervormde panorama's of groothoekopnames.",
+        "tools": [
+          "Transformeren",
+          "Warpen"
+        ],
+        "effect": "De weidse elementen worden krachtiger in het frame geplaatst zonder dat de compositie flets overkomt."
+      },
+      {
+        "name": "Drievoudige Tonal Contrast Isolatie",
+        "description": "Zero alle standaardschuiven in de Tonal Contrast plugin en verhoog selectief de hooglichten en middentonen, terwijl je de schaduwen verlaagt.",
+        "when_to_use": "Om fijne structuren in bossen en rivieren te accentueren zonder de schaduwen ruizig te maken.",
+        "tools": [
+          "Nik Collection (Color Efex Pro)"
+        ],
+        "effect": "Er ontstaat een krachtige micro-textuur in het water en de bladeren, terwijl de donkere partijen rustig blijven."
+      },
+      {
+        "name": "Kleurbalans Witbalans-Correctie",
+        "description": "Gebruik de pijltoetsen in de Kleurbalans-aanpassingslaag om heel gericht cyaan, blauw of magenta toe te voegen aan specifieke toongraden.",
+        "when_to_use": "Voor een uiterst nauwkeurige kleurcorrectie die veel verder gaat dan de standaard Lightroom-temperatuurschuiven.",
+        "tools": [
+          "Kleurbalans"
+        ],
+        "effect": "De algehele kleurzweem verdwijnt en maakt plaats voor een loepzuivere, neutrale en realistische tonale balans."
+      },
+      {
+        "name": "Waterval Blauw-Demping",
+        "description": "Selecteer het blauwkanaal in de Hue/Saturation-laag en verlaag de verzadiging drastisch, maskeer dit lokaal uit de omgeving.",
+        "when_to_use": "Bij watervallen en schaduwrijke rivieren waar het opspattende water door omgevingslicht onnatuurlijk blauw uitslaat.",
+        "tools": [
+          "Kleurmenger (HSL)",
+          "Laagmasker"
+        ],
+        "effect": "Het stromende water krijgt zijn pure, heldere witte uitstraling terug zonder de rest van het bos te ontkleuren."
+      },
+      {
+        "name": "Kleurgerichte Smeding",
+        "description": "Gebruik de doel-eyedropper binnen de Hue/Saturation-laag om exact de kleur van de bladeren te isoleren (vaak verschuivend naar geel) en pas hier de tint en verzadiging op aan.",
+        "when_to_use": "Om subtiele, realistische variaties in vegetatie aan te brengen.",
+        "tools": [
+          "Kleurmenger (HSL)",
+          "Pipet"
+        ],
+        "effect": "De bladeren transformeren naar een geloofwaardige, frisse tint zonder een kunstmatige indruk achter te laten."
+      },
+      {
+        "name": "Matte S-Curve Afwerking",
+        "description": "Breng een klassieke S-curve aan, maar trek het alleronderste zwarte punt omhoog tot een outputwaarde van 5 tot 10.",
+        "when_to_use": "Om een modern, tonaal afgerond en analoog gevoel aan de schaduwpartijen mee te geven.",
+        "tools": [
+          "Curven"
+        ],
+        "effect": "De diepste schaduwen worden omgezet in een zacht, diep donkergrijs wat het beeld een hoogwaardige afwerking geeft."
+      },
+      {
+        "name": "30-40-0 Detail Pop",
+        "description": "Maak een platte stempel-laag (Command + Option + Shift + E), pas een Unsharp Mask toe met Hoeveelheid 30, Straal 40, Drempel 0, en zet de laagondoorzichtigheid op 30%.",
+        "when_to_use": "Als een van de allerlaatste stappen om het algehele contrast en de helderheid van details een subtiele boost te geven.",
+        "tools": [
+          "Onscherp masker",
+          "Lagenpaneel"
+        ],
+        "effect": "Het landschap krijgt van een afstand bekeken extra definitie en een heldere, professionele uitstraling."
+      }
+    ],
+    "color_approach": "Kleurbeheer draait om de kracht van minimalisme. Grote, brute kleursprongen worden resoluut vermeden; in plaats daarvan worden uitsluitend kleine, selectieve verschuivingen toegepast. Door specifieke stoorkleuren (zoals blauwreflecties in wit water) te elimineren en de overige vegetatietinten zacht aan te zetten, blijft het resultaat te allen tijde geloofwaardig.",
+    "local_adjustments": "Lokale maskers worden met grote voorzichtigheid ingezet via zachte penselen met een ondoorzichtigheid van 10% tot 30% om effecten traploos in te sferen. Daarnaast wordt een handgemaakte vignet-groep opgebouwd uit twee afzonderlijke overlay-lagen (één ingevuld met wit met 1000 pixels feather, en één met zwart) om het licht in het centrum via een warp-transformatie perfect te sturen.",
+    "what_to_avoid": [
+      "Het misbruiken van de 'Lichtheid'-schuifbalk in het Hue/Saturation-paneel, omdat dit kleuren direct uitwasst en een lelijke grijze waas veroorzaakt.",
+      "Het te ver doortrekken van de Warp-transformatie aan de randen waardoor bomen en verticale lijnen onnatuurlijk scheef komen te staan."
+    ],
+    "best_for": "Bosrijke landschappen met rivieren en watervallen waarbij fijne structuren en delicate kleurnuances bewaard moeten blijven.",
+    "unique_insights": [
+      "De transformatietool (Warp) moet direct als allereerste stap worden ingezet op een gekloonde laag, omdat latere aanpassingen en maskers anders niet meer synchroon lopen met de pixelstructuur.",
+      "De 'Lichtheid'-regelaar in het Hue/Saturation-paneel vernietigt de tonale integriteit van een kleur; gebruik deze schuif daarom nagenoeg nooit voor landschapsvegetatie.",
+      "Een perfect uitgebalanceerde vignet-groep in Photoshop bouw je op door een centrale witte cirkel (30% ondoorzichtigheid) te combineren met een gewarpte zwarte buitenring, beide gezegend met een extreme feather van 1000 pixels."
     ]
   }
 ]

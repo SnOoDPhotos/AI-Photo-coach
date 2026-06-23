@@ -26090,5 +26090,917 @@
       "Zonder het schieten van flat frames ben je genoodzaakt om strak te croppen om zo hardnekkige sensorvlekken en vignettering te omzeilen.",
       "Elke keer dat je exact dezelfde astro-afbeelding handmatig bewerkt, zal het resultaat en de balans van de kern onbewust toch weer anders uitpakken."
     ]
+  },
+  {
+    "video_title": "How to Master Landscape Editing in Lightroom",
+    "photographer_name": "Nigel Danson",
+    "youtube_url": "https://www.youtube.com/watch?v=9x040xW4nX0",
+    "genre": [
+      "landschap"
+    ],
+    "light_conditions": [
+      "gouden uur",
+      "bewolkt"
+    ],
+    "mood": [
+      "naturalistisch",
+      "sfeervol"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Naturalistisch Sfeervol Landschap Editor",
+    "philosophy": "De focus ligt op het herstellen van het natuurlijke licht zoals het ter plekke aanvoelde, in plaats van het creëren van een oververzadigd beeld. Kleine, subtiele aanpassingen in toonwaarden hebben cumulatief een groot effect op de dieptewerking.",
+    "workflow_order": [
+      "stap 1: Corrigeer de witbalans en pas de basisbelichting aan tot het histogram gebalanceerd is.",
+      "stap 2: Voer globale toonwaardecorrecties uit door highlights te verlagen en schaduwen subtiel te liften.",
+      "stap 3: Pas gerichte radiale en lineaire verloopmaskers toe om de blik te leiden.",
+      "stap 4: Verfijn de kleurverzadiging en luminantie per kanaal in het HSL-paneel."
+    ],
+    "techniques": [
+      {
+        "name": "Highlights herstellen voor luchttekening",
+        "description": "Verlaag de Highlights naar -45 om verloren details in de bewolking terug te halen zonder de middentonen donkerder te maken.",
+        "when_to_use": "Bij landschapsfoto's met een groot contrast tussen heldere lucht en donkere voorgrond.",
+        "tools": [
+          "Highlights"
+        ],
+        "effect": "Meer structuur in wolkenpartijen, lucht minder uitgebleekt."
+      },
+      {
+        "name": "Schaduwen liften voor dieptedetails",
+        "description": "Verhoog de Schaduwen naar +30 om subtiele details in rotsen en vegetatie zichtbaar te maken.",
+        "when_to_use": "Wanneer de voorgrond dichtloopt door hard tegenlicht.",
+        "tools": [
+          "Schaduwen"
+        ],
+        "effect": "Donkere partijen openen zich, microcontrast en textuur worden zichtbaar."
+      },
+      {
+        "name": "Witte tinten stretchen",
+        "description": "Verhoog Witte tinten naar +15 met Option/Alt-toets tot net voor clipping.",
+        "when_to_use": "Na highlights verlagen om een grauwe uitstraling te voorkomen.",
+        "tools": [
+          "Witte tinten"
+        ],
+        "effect": "Helderheid en sprankeling terug zonder uitbijten."
+      },
+      {
+        "name": "Lineair verloopmasker voor voorgrondverduistering",
+        "description": "Trek masker van onderkant omhoog, verlaag belichting met -0.30.",
+        "when_to_use": "Wanneer onderkant te licht is en aandacht afleidt.",
+        "tools": [
+          "Lineair verloop",
+          "Belichting"
+        ],
+        "effect": "Onderkant subtiel donkerder, oog trekt dieper het beeld in."
+      },
+      {
+        "name": "Luminantie van groen en geel verlagen",
+        "description": "Verlaag luminantie van groene en gele kanalen met -15 in HSL.",
+        "when_to_use": "Wanneer felgroen gras te reflecterend is.",
+        "tools": [
+          "HSL / Kleur",
+          "Luminantie"
+        ],
+        "effect": "Groen- en geeltinten dieper en rijker, minder neon-achtig."
+      }
+    ],
+    "color_approach": "De kleurbenadering richt zich op het scheiden van analoge tinten. Door verzadiging te dempen en luminantie te verlagen ontstaat een organisch kleurenpalet.",
+    "local_adjustments": "Zachte, overlappende verloopmaskers verfijnd met luminantiebereiken voor alleen lichte of donkere zones.",
+    "what_to_avoid": [
+      "Te ver doorschieten met Clarity waardoor halo-effecten ontstaan.",
+      "Globaal oververzadigen waardoor kleuren textuur verliezen."
+    ],
+    "best_for": "Landschapsfotografie tijdens de overgang van gouden uur naar bewolkt.",
+    "unique_insights": [
+      "Witte tinten verhogen na highlights verlagen herstelt contrast natuurlijker dan de contrastregelaar.",
+      "Lokale maskers die richting van bestaand zonlicht kopiëren geven realistischer lichtval.",
+      "Kleine kleurtemperatuur-aanpassingen in schaduwen suggereren diepte effectiever dan oplichten."
+    ]
+  },
+  {
+    "video_title": "Secrets of Moody Photography and Color Grading",
+    "photographer_name": "Mads Peter Iversen",
+    "youtube_url": "https://www.youtube.com/watch?v=isFzGQQcl00",
+    "genre": [
+      "landschap"
+    ],
+    "light_conditions": [
+      "overcast",
+      "mist"
+    ],
+    "mood": [
+      "dramatisch",
+      "moody"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Moody Dark Nordic Landscape",
+    "philosophy": "Het doel is om de sfeer van een locatie te dramatiseren door mysterie en melancholie te accentueren. Contrast wordt gebruikt om mist en atmosferische diepte vorm te geven. Kleuren worden minimalistisch gehouden om textuur en vormen te laten spreken.",
+    "workflow_order": [
+      "stap 1: Onderbelicht het beeld globaal voor een donkere, mystieke basissfeer.",
+      "stap 2: Gebruik de tooncurve om zwartpunten te liften voor een matte uitstraling.",
+      "stap 3: Desatureer felle kleuren in HSL voor een monochroom-achtige balans.",
+      "stap 4: Pas radiale filters toe om nevelige hotspots als sfeerlicht te creëren."
+    ],
+    "techniques": [
+      {
+        "name": "Matte zwarte tinten via de Tooncurve",
+        "description": "Trek het linker-onderpunt van de RGB-tooncurve verticaal omhoog naar circa 8% om pure zwarttinten in donkergrijs te omzetten.",
+        "when_to_use": "Bij het creëren van een dromerige, mistige of melancholische sfeer.",
+        "tools": [
+          "Tooncurve"
+        ],
+        "effect": "Diepste schaduwen verliezen hardheid en krijgen een zachte, matte uitstraling."
+      },
+      {
+        "name": "Dehaze verlagen voor kunstmatige mist",
+        "description": "Pas een radiaal filter toe op de achtergrond en verlaag Dehaze naar -20.",
+        "when_to_use": "In landschappen met nevel waar scheiding voor-/achtergrond versterkt moet worden.",
+        "tools": [
+          "Radiaalfilter",
+          "Dehaze"
+        ],
+        "effect": "Zachte, diffuse sfeer waarbij details in de verte mysterieus vervagen."
+      },
+      {
+        "name": "Blauwe schaduwen via Color Grading",
+        "description": "Voeg in Color Grading een koele tint toe aan Schaduwen (Hue 215, Saturation 12).",
+        "when_to_use": "Bij foto's onder zwaar bewolkte lucht, in de sneeuw of donkere bossen.",
+        "tools": [
+          "Color Grading",
+          "Schaduwen"
+        ],
+        "effect": "Donkere partijen krijgen een subtiele blauwe zweem die kou en isolatie overbrengt."
+      },
+      {
+        "name": "Clarity reduceren in de middentonen",
+        "description": "Verlaag Clarity globaal naar -10 en compenseer met Textuur +15.",
+        "when_to_use": "Om harde digitale scherpte weg te nemen en een schilderachtig effect te bewerkstelligen.",
+        "tools": [
+          "Clarity",
+          "Textuur"
+        ],
+        "effect": "Middentooncontrast verzacht, microdetails in texturen blijven scherp."
+      },
+      {
+        "name": "Doelgerichte desaturatie van storende tinten",
+        "description": "Verlaag verzadiging van Groen en Blauw met -40 in HSL.",
+        "when_to_use": "Wanneer felle natuurkleuren de moody sfeer doorbreken.",
+        "tools": [
+          "HSL / Kleur",
+          "Verzadiging"
+        ],
+        "effect": "Kleuren worden ingetogen en koel, compositie krijgt high-art uitstraling."
+      }
+    ],
+    "color_approach": "Zwaar leunend op een analoog schema waarbij verzadiging drastisch beperkt wordt. Warme tinten in highlights en koude tinten in schaduwen creëren cinematic kleurcontrast.",
+    "local_adjustments": "Maskers worden gebruikt om lichtbanen of nevelvlekken te schilderen die verborgen lichtbronnen simuleren.",
+    "what_to_avoid": [
+      "Felle kleuren zoals neon-groen behouden waardoor melancholische sfeer doorbreekt.",
+      "Te donkere zwarte tinten waardoor alle textuur in schaduwen verloren gaat."
+    ],
+    "best_for": "Minimalistische landschappen, mistige ochtenden en dramatische berglandschappen.",
+    "unique_insights": [
+      "Mist oogt realistischer wanneer je Textuur verhoogt maar Clarity en Dehaze verlaagt binnen hetzelfde masker.",
+      "Het liften van het zwartpunt in de tooncurve creëert visuele rust waardoor donkere foto's niet als mislukt aanvoelen.",
+      "Door verzadiging van alle kleuren te verlagen gaan subtiele luminantie-nuances plotseling sterker als contrastmiddel fungeren."
+    ]
+  },
+  {
+    "video_title": "Advanced Editing Workflow for Landscape Photography",
+    "photographer_name": "Thomas Heaton",
+    "youtube_url": "https://www.youtube.com/watch?v=iu0si9pjUQc",
+    "genre": [
+      "landschap"
+    ],
+    "light_conditions": [
+      "gouden uur",
+      "tegenlicht"
+    ],
+    "mood": [
+      "naturalistisch",
+      "rustig"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Clean Naturalistic Golden Landscape",
+    "philosophy": "Pure, documentaire-achtige benadering waarbij de werkelijkheid wordt geoptimaliseerd en niet vervormd. Aanpassingen moeten onzichtbaar zijn. Het histogram is leidend voor technische perfectie voor creatieve keuzes.",
+    "workflow_order": [
+      "stap 1: Pas lenscorrecties toe en zet de horizon exact recht.",
+      "stap 2: Breng hooglichten en schaduwen binnen het dynamisch bereik.",
+      "stap 3: Gebruik HSL-paneel uiterst selectief voor kleurscheiding.",
+      "stap 4: Pas selectieve verscherping en ruisonderdrukking toe via maskeren."
+    ],
+    "techniques": [
+      {
+        "name": "Witbalans afstemmen op de sfeer ter plekke",
+        "description": "Verschuif Temp handmatig naar warmere waarde (+8) om gouden gloed accuraat te reproduceren.",
+        "when_to_use": "Wanneer automatische witbalans warme tonen van gouden uur neutraliseert.",
+        "tools": [
+          "Witbalans",
+          "Temperatuur"
+        ],
+        "effect": "Gehele foto krijgt warme, uitnodigende gloed die strookt met de emotie."
+      },
+      {
+        "name": "Zwartpunt handmatig instellen via clipping-waarschuwing",
+        "description": "Houd Option/Alt ingedrukt en schuif Zwarte tinten naar -12 tot eerste zwarte pixels verschijnen.",
+        "when_to_use": "In beginfase om solide basiscontrast zonder dichtlopen schaduwen te creëren.",
+        "tools": [
+          "Zwarte tinten"
+        ],
+        "effect": "Beeld krijgt meer diepte en stevigheid doordat tonaal bereik optimaal benut wordt."
+      },
+      {
+        "name": "Gele tinten verschuiven naar oranje",
+        "description": "Verschuif in HSL onder Kleurtoon de gele schuifregelaar met -10 richting oranje.",
+        "when_to_use": "Bij herfstlandschappen of gouden uur voor warmere, rijpere tint.",
+        "tools": [
+          "HSL / Kleur",
+          "Kleurtoon"
+        ],
+        "effect": "Groen-gele tonen veranderen in zachte, warme goud-oranje nuance."
+      },
+      {
+        "name": "Selectieve verscherping met maskeren",
+        "description": "Verhoog Verscherpen naar 40 en Maskeren naar 60 met Option/Alt om egale vlakken uit te sluiten.",
+        "when_to_use": "Vaste eindafwerkingsstap bij landschapsfoto's met fijne details.",
+        "tools": [
+          "Verscherpen",
+          "Maskeren"
+        ],
+        "effect": "Alleen harde randen worden verscherpt, lucht blijft vrij van digitale ruis."
+      },
+      {
+        "name": "Radiaal filter voor subtiel vignet",
+        "description": "Trek groot omgekeerd radiaal filter over centrum met Feather 70, verlaag belichting randen met -0.20.",
+        "when_to_use": "Aan het einde van de workflow voor subtiele compositiebegeleiding.",
+        "tools": [
+          "Radiaalfilter",
+          "Belichting"
+        ],
+        "effect": "Randen vloeien onmerkbaar donkerder weg, omsluit compositie natuurlijk."
+      }
+    ],
+    "color_approach": "Kleur behandeld met oog op realisme. Vibrance ophalen van onderverzadigde tinten voorkomt dat reeds verzadigde kleuren gaan clippen.",
+    "local_adjustments": "Minimaal en uiterst subtiel, enkel voor kleine oneffenheden in lichtverdeling of specifieke elementen.",
+    "what_to_avoid": [
+      "Standaard vignet-tool die hoeken te mechanisch donker maakt.",
+      "Te agressief schaduwen opentrekken waardoor HDR-look ontstaat."
+    ],
+    "best_for": "Klassieke, pure landschapsfotografie gericht op realistische weergave en printkwaliteit.",
+    "unique_insights": [
+      "Storende felle kleurelementen aan randen desatureren is krachtiger dan croppen.",
+      "Vibrance is veiliger voor landschappen dan Saturation, het voorkomt oversturing van groen en blauw.",
+      "Horizon secuur rechtzetten kalmeert het beeld waardoor tonale aanpassingen beter te beoordelen zijn."
+    ]
+  },
+  {
+    "video_title": "Mastering Lightroom's Most Powerful Color Tools",
+    "photographer_name": "Serge Ramelli",
+    "youtube_url": "https://www.youtube.com/watch?v=36ol7-RZYUI",
+    "genre": [
+      "cinematisch"
+    ],
+    "light_conditions": [
+      "gouden uur",
+      "blauwe uur"
+    ],
+    "mood": [
+      "dramatisch",
+      "levendig"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Vibrant Cinematic Fine Art",
+    "philosophy": "De werkelijkheid dient als canvas voor een dramatische, cinematische visie. Foto's transformeren tot indrukwekkende schilderachtige kunstwerken met hoog contrast en verzadigde complementaire kleuren.",
+    "workflow_order": [
+      "stap 1: Activeer een specifiek cameraprofiel voor directe boost in contrast en kleur.",
+      "stap 2: Agressieve toonwaardecorrectie: highlights extreem verlagen, schaduwen fors openen.",
+      "stap 3: AI-luchtselectie voor drama en kleur in de luchtpartij.",
+      "stap 4: Complementaire kleurfiltering via Color Grading (oranje/blauw)."
+    ],
+    "techniques": [
+      {
+        "name": "Profielwissel naar Adobe Landscape",
+        "description": "Wissel standaardprofiel Adobe Color naar Adobe Landscape voor directe boost in kleurverzadiging.",
+        "when_to_use": "Eerste stap bij foto's die dramatische, indrukwekkende uitstraling nodig hebben.",
+        "tools": [
+          "Profiel"
+        ],
+        "effect": "Rode, gele en blauwe tinten krijgen oppepper, basiscontrast vergroot."
+      },
+      {
+        "name": "Extreme Highlight-reductie voor dramatiek",
+        "description": "Schuif Highlights naar links tussen -80 en -100 om wolkenstructuren in lucht bloot te leggen.",
+        "when_to_use": "Bij epische zonsondergangen of stadsgezichten met fel verlichte lucht.",
+        "tools": [
+          "Highlights"
+        ],
+        "effect": "Felle delen drastisch gedempt, intense oranje en rode tinten worden zichtbaar."
+      },
+      {
+        "name": "AI Luchtselectie met Dehaze en Contrast",
+        "description": "Selecteer Lucht via AI, verhoog Contrast met +25 en voeg +20 Dehaze toe.",
+        "when_to_use": "Wanneer lucht te flets is en episch karakter vereist.",
+        "tools": [
+          "Maskeren",
+          "Lucht selecteren",
+          "Dehaze"
+        ],
+        "effect": "Luchtpartij donkerder, contrastrijker met zware driedimensionale dynamiek."
+      },
+      {
+        "name": "Teal and Orange Color Grading",
+        "description": "Color Grading: Middentonen Hue 35 Sat 20 (oranje), Schaduwen Hue 210 Sat 15 (blauw).",
+        "when_to_use": "Voor moderne Hollywood-achtige cinematische sfeer in stedelijke of reisopnames.",
+        "tools": [
+          "Color Grading"
+        ],
+        "effect": "Krachtig complementair kleurcontrast met professionele filmische look."
+      },
+      {
+        "name": "Gouden gloed via Radiaal filter met Temp",
+        "description": "Groot radiaal filter aan zonszijde, Temperatuur +15 en Belichting +0.40.",
+        "when_to_use": "Om invallend zonlicht te versterken of kunstmatige lichtbron te simuleren.",
+        "tools": [
+          "Radiaalfilter",
+          "Temperatuur",
+          "Belichting"
+        ],
+        "effect": "Warme, zachte lichtgloed verspreidt zich over deel van de foto."
+      }
+    ],
+    "color_approach": "Gewaagd en cinematisch, gestoeld op complementaire kleurentheorie. Warme kleuren in lichte delen clashen met koude kleuren in schaduwen.",
+    "local_adjustments": "AI-selecties voor luchten en onderwerpen isoleren specifieke delen voor contrasterende bewerkingen.",
+    "what_to_avoid": [
+      "Globale Saturation verhogen na kleurrijk profiel, veroorzaakt oversturing.",
+      "Schaduwen te ver opentrekken met Dehaze, geeft onnatuurlijke HDR-look."
+    ],
+    "best_for": "Stadsfotografie, landschappen bij zonsondergang en reisfotografie voor transformatie naar schilderachtige stijl.",
+    "unique_insights": [
+      "Cameraprofiel handmatig wijzigen vóór bewerking verandert hoe alle andere sliders op pixels reageren.",
+      "Dehaze op een lokale AI-luchtselectie werkt vele malen effectiever dan globaal toegepast.",
+      "Verzadiging in middentonen via Color Grading verhogen geeft meer controle over huidtinten dan globale verzadiging."
+    ]
+  },
+  {
+    "video_title": "Pro Workflow for Street and Urban Photography",
+    "photographer_name": "Sean Tucker",
+    "youtube_url": "https://www.youtube.com/watch?v=mD3L4pOf3vA",
+    "genre": [
+      "straatfotografie"
+    ],
+    "light_conditions": [
+      "harde zon",
+      "schaduw"
+    ],
+    "mood": [
+      "dramatisch",
+      "grafisch ontwerp"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "High Contrast Graphic Urban",
+    "philosophy": "Straatfotografie draait om de eliminatie van chaos. Extreem contrast duwt overbodige details naar zuiver zwart, waardoor een grafisch lijnenspel ontstaat waarin het onderwerp door licht wordt geïsoleerd.",
+    "workflow_order": [
+      "stap 1: Belichting omlaag voor highlights beschermen en sfeer verduisteren.",
+      "stap 2: Contrast verhogen via tooncurve met steile S-bocht.",
+      "stap 3: Schaduwen en zwarte tinten bewust naar beneden drukken.",
+      "stap 4: Lokaal penseel om licht op hoofdpersonage te benadrukken."
+    ],
+    "techniques": [
+      {
+        "name": "Schaduwen opofferen voor negatieve ruimte",
+        "description": "Verlaag Schaduwen drastisch naar -50 en Zwarte tinten naar -25 om rommelige achtergronddetails te elimineren.",
+        "when_to_use": "Bij straatfotografie in hard zonlicht met duidelijk contrast tussen verlichte straten en schaduwen.",
+        "tools": [
+          "Schaduwen",
+          "Zwarte tinten"
+        ],
+        "effect": "Schaduwpartijen veranderen in diepe egale zwarte vlakken, minimalistisch grafisch effect."
+      },
+      {
+        "name": "Steile S-Curve voor hard contrast",
+        "description": "Creëer uitgesproken S-vorm in Tooncurve: verlaag schaduwen in curve, verhoog hooglichten.",
+        "when_to_use": "Voor krachtige, rauwe en contrastrijke stadslook.",
+        "tools": [
+          "Tooncurve"
+        ],
+        "effect": "Overgang licht/donker extreem hard, vormen en silhouetten steken scherp af."
+      },
+      {
+        "name": "Luminantie van warme tinten verhogen",
+        "description": "Verhoog luminantie van Rood, Oranje en Geel met +20 in HSL.",
+        "when_to_use": "Bij stedelijke fotografie om zonlichtreflectie op bakstenen te accentueren.",
+        "tools": [
+          "HSL / Kleur",
+          "Luminantie"
+        ],
+        "effect": "Warme tonen reflecteren feller uit donkere achtergrond, natuurlijke spot-light."
+      },
+      {
+        "name": "Globale desaturatie van secundaire kleuren",
+        "description": "Verlaag verzadiging van Aqua, Blauw, Paars en Magenta naar -60 tot -80.",
+        "when_to_use": "Wanneer willekeurige stadsachtergrondkleuren compositie rommelig maken.",
+        "tools": [
+          "HSL / Kleur",
+          "Verzadiging"
+        ],
+        "effect": "Foto nadert tweekleurig palet, grafische structuur versterkt."
+      },
+      {
+        "name": "Lokaal Penseel voor onderwerp-isolatie",
+        "description": "Schilder over gezicht of silhouet, verhoog Belichting +0.40 en Clarity +15.",
+        "when_to_use": "Wanneer persoon niet genoeg opvalt ten opzichte van verlichte elementen.",
+        "tools": [
+          "Penseel",
+          "Belichting",
+          "Clarity"
+        ],
+        "effect": "Onderwerp springt direct in het oog met extra presence."
+      }
+    ],
+    "color_approach": "Reductionistisch. Kleur alleen toegestaan als het een compositorisch doel dient. Alle niet-essentiële kleuren worden hard weggefilterd.",
+    "local_adjustments": "Kleine, precieze penseelstreken om puur het licht op te vangen waar het personage loopt.",
+    "what_to_avoid": [
+      "Details in schaduw proberen te redden, haalt kracht en grafische impact weg.",
+      "Te veel verscherping op korrel geeft digitaal krassig resultaat."
+    ],
+    "best_for": "Straatfotografie met harde schaduwen, architectonische uitsnedes en contrastrijke zwart-wit urban platen.",
+    "unique_insights": [
+      "Wat je in de schaduw verbergt is in straatfotografie vaak belangrijker voor het verhaal dan wat zichtbaar is.",
+      "Luminantie van huidtinten verhogen en verzadiging dempen creëert breekbare focus op de mens in de stad.",
+      "Harde clipping in het zwart is geen technische fout maar een krachtig compositorisch sturingsmiddel."
+    ]
+  },
+  {
+    "video_title": "Fine Art Editing in Photoshop and Lightroom",
+    "photographer_name": "Brooke Shaden",
+    "youtube_url": "https://www.youtube.com/watch?v=x7E2F_m9qA4",
+    "genre": [
+      "fine-art"
+    ],
+    "light_conditions": [
+      "diffuus licht",
+      "schaduw"
+    ],
+    "mood": [
+      "dramatisch",
+      "moody"
+    ],
+    "software": [
+      "Photoshop",
+      "Lightroom Classic"
+    ],
+    "style_description": "Dark Painterly Fine Art",
+    "philosophy": "Fotografie is slechts het startpunt; het einddoel is een schilderachtig, conceptueel kunstwerk dat ontspringt aan de verbeelding. Textuur, toon en schaduw worden handmatig gemanipuleerd om diepte, mysterie en tijdloze sfeer te creëren.",
+    "workflow_order": [
+      "stap 1: Breng in Lightroom basiscontrasten terug naar vlak beeld voor maximale flexibiliteit.",
+      "stap 2: Open in Photoshop voor ingewikkelde composities of uitsnedes.",
+      "stap 3: Breng textuur-overlays aan via mengmodi om digitale scherpte te breken.",
+      "stap 4: Uitgebreide handmatige Dodge and Burn-technieken voor schilderachtig licht."
+    ],
+    "techniques": [
+      {
+        "name": "Textuur overlay integratie via Soft Light",
+        "description": "Plaats textuurbestand als laag boven foto in Photoshop, mengmodus Zacht licht (Soft Light) 40% dekking.",
+        "when_to_use": "Om egale digitale foto om te toveren tot tastbaar organisch kunstwerk.",
+        "tools": [
+          "Lagen",
+          "Mengmodus",
+          "Zacht licht"
+        ],
+        "effect": "Subtiele korrelige textuur verzacht harde digitale details en veroudert de sfeer."
+      },
+      {
+        "name": "Handmatige Dodge and Burn op 50% Grijze laag",
+        "description": "Nieuwe laag gevuld met 50% grijs, mengmodus Bedekken (Overlay), zacht wit/zwart penseel 3% dekking.",
+        "when_to_use": "Om contouren van gezicht, kledingplooien of achtergrond minutieus te boetseren.",
+        "tools": [
+          "Penseel",
+          "Mengmodus",
+          "Bedekken"
+        ],
+        "effect": "Lichte delen opgelicht en schaduwen dieper, schilderachtig clair-obscur effect."
+      },
+      {
+        "name": "Kleurharmonisatie via Gradiëntkaarten",
+        "description": "Aanpassingslaag Gradiëntkaart (Gradient Map) donkerbruin naar zacht beige, Zacht licht 15% dekking.",
+        "when_to_use": "Einde workflow om losse kleurelementen in compositie naadloos samen te smelten.",
+        "tools": [
+          "Gradiëntkaart",
+          "Mengmodus"
+        ],
+        "effect": "Alle tinten worden subtiel naar dit spectrum getrokken voor serene kleurharmonie."
+      },
+      {
+        "name": "Vervagen van de achtergrond voor scherptediepte",
+        "description": "Selecteer achtergrond, Gaussiaans vervagen 15 pixels straal, zacht masker voor overgang.",
+        "when_to_use": "Wanneer achtergrond te scherp is en onderwerp niet loskomt.",
+        "tools": [
+          "Gaussiaans vervagen",
+          "Laagmasker"
+        ],
+        "effect": "Achtergrond vervloeit in dromerige onscherpte, focus direct op fine-art onderwerp."
+      },
+      {
+        "name": "Vignet schilderen met zacht zwart penseel",
+        "description": "Nieuwe lege laag, groot zacht penseel 5% dekking, donkere kleur uit foto, hoeken dichtverf.",
+        "when_to_use": "Om compositie op organische manier te omsluiten.",
+        "tools": [
+          "Penseel"
+        ],
+        "effect": "Randen worden op onregelmatige, natuurlijke manier donkerder voor dromerige sfeer."
+      }
+    ],
+    "color_approach": "Gedempt, aards en melancholisch palet. Kleuren ontdaan van primaire felheid, verschoven naar olijfgroen, oker, sepia en marineblauw.",
+    "local_adjustments": "Kern van het hele proces. Tientallen maskers en lagen in Photoshop voor specifieke details, kleuren muteren en beeldelementen samenvoegen.",
+    "what_to_avoid": [
+      "Standaard digitale scherpte behouden waardoor schilderachtige illusie doorbreekt.",
+      "Te verzadigde kleuren die mysterieuze sfeer tenietdoen."
+    ],
+    "best_for": "Conceptuele fotografie, fine-art portretten en creatieve montages met schilderachtige sfeer.",
+    "unique_insights": [
+      "Textuur toevoegen vóór kleurbewerking laat kleuren van foto en textuur natuurlijker samenversmelten.",
+      "Dodge and burn op aparte grijze laag is superieur omdat het onderliggende pixels niet vernietigt.",
+      "Perfecte fine-art sfeer ontstaat wanneer je de wetten van het licht subtiel tart door schaduwen te schilderen waar ze niet verwacht worden."
+    ]
+  },
+  {
+    "video_title": "The Ultimate Guide to Advanced Wildlife Editing",
+    "photographer_name": "Morton Hilmer",
+    "youtube_url": "https://www.youtube.com/watch?v=yW6Wv_D5H9k",
+    "genre": [
+      "wildlife"
+    ],
+    "light_conditions": [
+      "diffuus licht",
+      "storm"
+    ],
+    "mood": [
+      "naturalistisch",
+      "rustig"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Authentic Nordic Wildlife Editor",
+    "philosophy": "Respect voor het dier en zijn leefomgeving staat centraal. Bewerking accentueert barre omstandigheden en textuur van vacht of veren. De achtergrond wordt zacht gehouden om het dier te isoleren zonder context te verliezen.",
+    "workflow_order": [
+      "stap 1: Belichting secuur aanpassen om textuur van vacht of veren te beschermen.",
+      "stap 2: AI-onderwerpselectie om het dier subtiel los te koppelen van de achtergrond.",
+      "stap 3: Lokaal details en micro-contrasten op het dier verhogen voor maximale scherpte.",
+      "stap 4: Zachte ruisonderdrukking op achtergrond om afleidende elementen te minimaliseren."
+    ],
+    "techniques": [
+      {
+        "name": "AI Onderwerpselectie voor detailverbetering",
+        "description": "Selecteer dier via Onderwerp selecteren, verhoog Textuur +15 en Scherpte +10.",
+        "when_to_use": "Bij wildlife-opnames waar dier scherp moet afsteken tegen zachte achtergrond.",
+        "tools": [
+          "Maskeren",
+          "Onderwerp selecteren",
+          "Textuur"
+        ],
+        "effect": "Haren, veren en oogdetails worden ragfijn geaccentueerd zonder onrustige achtergrond."
+      },
+      {
+        "name": "Achtergrondverzachting via maskerinversie",
+        "description": "Inverteer AI-onderwerpselectie, verlaag Clarity naar -15 en Scherpte naar -20.",
+        "when_to_use": "Wanneer achtergrond te veel storende details bevat door kleine sensor of weinig lichtsterkte.",
+        "tools": [
+          "Maskeren",
+          "Inverteren",
+          "Clarity"
+        ],
+        "effect": "Achtergrond visueel zachter en minder afleidend, dier springt driedimensionaal naar voren."
+      },
+      {
+        "name": "Witte vacht beschermen met Hooglichten",
+        "description": "Verlaag Highlights specifiek op het dier naar -25 om fijne structuren in lichte vachtdelen te bewaren.",
+        "when_to_use": "Bij dieren met witte elementen gefotografeerd in sneeuw of helder licht.",
+        "tools": [
+          "Maskeren",
+          "Highlights"
+        ],
+        "effect": "Overbelichte witte delen krijgen natuurlijke textuur terug."
+      },
+      {
+        "name": "Contrastreductie in de achtergrond",
+        "description": "Selecteer achtergrond via masker, verlaag Contrast met -20.",
+        "when_to_use": "In bossen of ruige landschappen waar achtergrond te veel contrastrijke lijnen vormt.",
+        "tools": [
+          "Maskeren",
+          "Contrast"
+        ],
+        "effect": "Achtergrond trekt visueel terug, rust en betere scheiding met onderwerp."
+      },
+      {
+        "name": "Selectieve ruisonderdrukking op de achtergrond",
+        "description": "Pas Luminantie-ruisonderdrukking +35 toe op geïnverteerde achtergrondselectie.",
+        "when_to_use": "Bij wildlife-foto's geschoten op hoge ISO tijdens slechte lichtomstandigheden.",
+        "tools": [
+          "Maskeren",
+          "Ruisonderdrukking"
+        ],
+        "effect": "Korrelruis verdwijnt uit achtergrondvlakken, dier behoudt vlijmscherpe details."
+      }
+    ],
+    "color_approach": "Strikt trouw aan de natuur. Koude wintertonen (blauw-grijze nuances in sneeuw) bewaard om barre omstandigheden authentiek over te brengen.",
+    "local_adjustments": "Volledig gestuurd door AI-onderwerp- en achtergrondmaskers voor onafhankelijk balanceren van scherpte en ruis.",
+    "what_to_avoid": [
+      "Globaal verscherpen waardoor de bokeh van de achtergrond korrelig en digitaal wordt.",
+      "Omgevingskleuren oververzadigen waardoor dier er onrealistisch ingezet uitziet."
+    ],
+    "best_for": "Wildlife- en vogelfotografie in uitdagende omstandigheden waarbij detailbehoud en realisme centraal staan.",
+    "unique_insights": [
+      "Clarity verlagen op achtergrond simuleert een duurdere lichtsterke lens met mooiere onscherpte.",
+      "De glans in het oog van een dier wekt het tot leven; minuscule lokale belichtingsverhoging in de iris is doorslaggevend.",
+      "Ruisonderdrukking is veel effectiever uitsluitend op de achtergrond, zodat het dier zijn scherpe texturen behoudt."
+    ]
+  },
+  {
+    "video_title": "Chasing the Light: Long Exposure and Coast Editing",
+    "photographer_name": "Elia Locardi",
+    "youtube_url": "https://www.youtube.com/watch?v=kemszFsRhyQ",
+    "genre": [
+      "kust"
+    ],
+    "light_conditions": [
+      "gouden uur",
+      "blauwe uur"
+    ],
+    "mood": [
+      "rustig",
+      "levendig"
+    ],
+    "software": [
+      "Lightroom Classic",
+      "Photoshop"
+    ],
+    "style_description": "Vibrant Clean Long Exposure",
+    "philosophy": "De dynamiek van water en lucht wordt samengevat in een harmonieus, dromerig beeld. Bewerking focust op de balans tussen zachtheid van lange sluitertijd en scherpte van vaste elementen. Kleurgradaties vieren de transitie van warm naar koel licht.",
+    "workflow_order": [
+      "stap 1: Lijn meerdere belichtingen exact uit in Photoshop voor handmatige time-blending.",
+      "stap 2: Verzacht wateroppervlak door gladde delen via maskers te benadrukken.",
+      "stap 3: Kleurtemperatuur gebruiken voor vloeiend verloop tussen warme horizon en koele lucht.",
+      "stap 4: Microcontrast op rotsen versterken met selectieve maskers voor textuur."
+    ],
+    "techniques": [
+      {
+        "name": "Time-Blending van lucht en water",
+        "description": "Combineer twee opnames in Photoshop: perfecte lucht van opname A, vloeiend water van opname B via zacht masker.",
+        "when_to_use": "Bij kustfotografie wanneer lucht op ander moment magischer was dan het water.",
+        "tools": [
+          "Lagen",
+          "Laagmasker",
+          "Penseel"
+        ],
+        "effect": "Beste elementen van verschillende tijdstippen verenigd in één technisch perfect beeld."
+      },
+      {
+        "name": "Lineair kleurverloop voor complementair licht",
+        "description": "Lineair verloopfilter vanuit bovenkant lucht, Tint naar magenta, Temperatuur naar koel blauw.",
+        "when_to_use": "Tijdens blauwe uur om contrast met warme ondergaande zon te maximaliseren.",
+        "tools": [
+          "Lineair verloop",
+          "Temperatuur",
+          "Tint"
+        ],
+        "effect": "Lucht krijgt verloop van warm oranje aan horizon naar diep paars-blauw in het zenit."
+      },
+      {
+        "name": "Rotsen accentueren met Textuur en Clarity",
+        "description": "Lokaal penseel over rotsen, Textuur +20 en Clarity +10.",
+        "when_to_use": "Om harde structuren contrastrijk te laten afsteken tegen melkachtig zacht water.",
+        "tools": [
+          "Penseel",
+          "Textuur",
+          "Clarity"
+        ],
+        "effect": "Details, scheuren en ruwheid van rotsen springen in het oog, tastbaarheid versterkt."
+      },
+      {
+        "name": "Luminantiebereikmasker voor branding-highlights",
+        "description": "Masker op water, Luminance Range op felste witten van schuim, Belichting +0.30.",
+        "when_to_use": "Wanneer opspattend zeewater door lange sluitertijd te dof of grijs is.",
+        "tools": [
+          "Maskeren",
+          "Luminantiebereik"
+        ],
+        "effect": "Wit schuim van golven licht prachtig op, dynamiek en frisheid in het water."
+      },
+      {
+        "name": "Chromatische aberratie verwijderen bij rotsranden",
+        "description": "Vink Chromatische aberratie verwijderen aan in Lenscorrecties, verfijn met defringe-pipet.",
+        "when_to_use": "Standaard bij contrastrijke overgangen tussen donkere rotswanden en felle lucht of zee.",
+        "tools": [
+          "Lenscorrecties",
+          "Kleurrand verwijderen"
+        ],
+        "effect": "Groene en paarse randen langs contouren verdwijnen volledig."
+      }
+    ],
+    "color_approach": "Viert de transitie van licht: interactie tussen warm zonlicht (goud/roze) en koel gereflecteerd licht op nat zand en water (blauw/magenta).",
+    "local_adjustments": "Luminantie- en kleurmaskers zorgen dat bewerkingen op vloeibaar water de solide rotsen niet aantasten.",
+    "what_to_avoid": [
+      "Blauwe tonen te ver verzadigen waardoor water onrealistisch chemisch uitziet.",
+      "Witte tinten te ver doordrukken waardoor schuim effen witte vlekken worden."
+    ],
+    "best_for": "Kustlandschappen, zeegezichten met lange sluitertijden en fotografie tijdens extreme overgangsmomenten.",
+    "unique_insights": [
+      "Time-blending is geen valsspelen maar een methode om dynamisch verloop van de natuur in één beeld te vangen.",
+      "Natte rotsen en zand reflecteren de lucht; kleurverandering in lucht moet lokaal op de reflectie gesynchroniseerd worden.",
+      "Contrast tussen extreem zachte elementen (water) en extreem scherpe elementen (rotsen) verhoogt perceptie van scherpte."
+    ]
+  },
+  {
+    "video_title": "Creative Black and White Landscape Editing",
+    "photographer_name": "Alan Schaller",
+    "youtube_url": "https://www.youtube.com/watch?v=fE6_z8v2hYw",
+    "genre": [
+      "zwart-wit"
+    ],
+    "light_conditions": [
+      "harde zon",
+      "schaduw"
+    ],
+    "mood": [
+      "dramatisch",
+      "grafisch ontwerp"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "High Contrast Timeless Monochrome",
+    "philosophy": "Zwart-wit is geen gebrek aan kleur maar een bewuste keuze voor vorm, textuur en puur licht. De tonale hiërarchie is de basis van de compositie. Diepe zwarten en heldere witten dagen elkaar uit.",
+    "workflow_order": [
+      "stap 1: Zet foto direct om naar zwart-wit profiel voor tonale beoordeling.",
+      "stap 2: Gebruik B&W Mix-schuiven om helderheid van oorspronkelijke kleuren te sturen.",
+      "stap 3: Stevige S-curve in tooncurve voor diepe zwarten en felle witten.",
+      "stap 4: Fijne, organische korrel toevoegen in Effecten-paneel voor analoge textuur."
+    ],
+    "techniques": [
+      {
+        "name": "Zwart-wit mix voor luchtverduistering",
+        "description": "Verschuif in Zwart-witmix de blauwe schuifregelaar naar -45 en aqua naar -30.",
+        "when_to_use": "Bij zwart-wit landschappen met strakke blauwe lucht waar wolken krachtig af moeten steken.",
+        "tools": [
+          "Zwart-witmix",
+          "Blauw"
+        ],
+        "effect": "Blauwe lucht verandert in diepgrijze tot bijna zwarte toon, wolken knallen eruit."
+      },
+      {
+        "name": "Huidtinten oplichten via de Oranje-schuif",
+        "description": "Verhoog in Zwart-witmix de waarde van het oranje kanaal naar +25.",
+        "when_to_use": "Wanneer personen wegvallen tegen achtergrond met vergelijkbare toonwaarde.",
+        "tools": [
+          "Zwart-witmix",
+          "Oranje"
+        ],
+        "effect": "Menselijke huid krijgt luminantie-boost waardoor silhouetten en gezichten meer spreken."
+      },
+      {
+        "name": "Harde Point-Curve voor puur zwart-wit contrast",
+        "description": "Drie punten op Tooncurve: onderste punt stevig omlaag en bovenste punt omhoog.",
+        "when_to_use": "Voor rauwe, tijdloze en grafische stijl met minimale grijstinten.",
+        "tools": [
+          "Tooncurve"
+        ],
+        "effect": "Middentonen gereduceerd, schaduwen gitzwart en hooglichten naderen puur wit."
+      },
+      {
+        "name": "Analoge korrelstructuur toevoegen",
+        "description": "Effecten-paneel: Korrel 35, Grootte 25, Ruwheid 45 voor klassieke textuur.",
+        "when_to_use": "Vaste stap bij contrastrijke zwart-wit conversies om digitale perfectie te doorbreken.",
+        "tools": [
+          "Effecten",
+          "Korrel"
+        ],
+        "effect": "Organische textuur nestelt zich in foto, doet denken aan klassieke Tri-X analoge film."
+      },
+      {
+        "name": "Lineair filter voor selectieve textuurverhoging",
+        "description": "Lineair verloopfilter over voorgrond (kasseien of rotsen), Clarity +30.",
+        "when_to_use": "Om tastbare structuren op voorgrond extra te benadrukken.",
+        "tools": [
+          "Lineair verloop",
+          "Clarity"
+        ],
+        "effect": "Textuur en microcontrasten op voorgrond extreem scherp aangezet, dieptewerking gestimuleerd."
+      }
+    ],
+    "color_approach": "Kleur is afwezig maar oorspronkelijke kleuren bepalen de volledige toonwaarde-indeling via de zwart-witconversiemix. Kleurcontrast vertaald naar helderheidscontrast.",
+    "local_adjustments": "Lineaire en radiale verlopen voor licht herverdelen en blik over zwart-wit canvas loodsen.",
+    "what_to_avoid": [
+      "Foto grijs en futloos laten door te voorzichtig te zijn met witte en zwarte uitersten.",
+      "Te grove korrel in egale lichte vlakken waardoor beeld slordig in plaats van analoog oogt."
+    ],
+    "best_for": "Straatfotografie, minimalistische landschappen en grafische architectuuropnames met krachtig licht.",
+    "unique_insights": [
+      "Direct naar monochroom schakelen traint hersenen om uitsluitend in vormen en lichtintensiteit te denken.",
+      "De blauw-schuif in zwart-witmix gedraagt zich als een fysiek roodfilter op analoge camera.",
+      "Contrast in zwart-wit werkt pas krachtig wanneer er ondanks diepe zwarten nog subtiele textuur in middengrijzen is."
+    ]
+  },
+  {
+    "video_title": "Lightroom Color Theory & Grading Masterclass",
+    "photographer_name": "Joanna Kustra",
+    "youtube_url": "https://www.youtube.com/watch?v=tPrnPQkeUgA",
+    "genre": [
+      "portret"
+    ],
+    "light_conditions": [
+      "kunstlicht",
+      "gemengd licht"
+    ],
+    "mood": [
+      "cinematisch",
+      "fine-art"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Cinematic Fine Art Portrait",
+    "philosophy": "Kleurtheorie is de sleutel tot emotionele binding met een portret. De bewerking streeft naar verfijnde, schilderachtige huidtintverwerking die harmonieert met de achtergrond. Gecontroleerde kleurafstemming transformeert een eenvoudig portret in een high-end filmisch beeld.",
+    "workflow_order": [
+      "stap 1: Kalibreer basiskleuren in Camerakalibratie voor rijke unieke kleurfundering.",
+      "stap 2: Isoleer model met AI-persoonsmasker voor aparte huidtintcorrectie.",
+      "stap 3: HSL-paneel voor verzadiging en luminantie van rode en oranje tinten balanceren.",
+      "stap 4: Drieweg color-grading voor sfeer en kleurharmonie in schaduwen en middentonen."
+    ],
+    "techniques": [
+      {
+        "name": "Camerakalibratie voor analoge kleurindeling",
+        "description": "Camerakalibratie: Blauwe Primaire Kleurtoon naar -15, verzadiging naar +10.",
+        "when_to_use": "Geheim wapen bij start portretbewerking voor unieke, rijke huidskleur en analoge toon.",
+        "tools": [
+          "Camerakalibratie"
+        ],
+        "effect": "Huidtinten krijgen warme gouden gloed, secundaire kleuren in achtergrond mengen harmonieuzer."
+      },
+      {
+        "name": "Huidverzachting via AI Personen-masker",
+        "description": "Maskeren > Persoon > Gezichtshuid: Textuur -15 en Clarity +5.",
+        "when_to_use": "Bij close-up of beauty-portretten voor subtiele, natuurlijke huidverzachting.",
+        "tools": [
+          "Maskeren",
+          "Persoon selecteren",
+          "Textuur"
+        ],
+        "effect": "Huid egaler en zachter zonder plastic gephotoshopte uitstraling."
+      },
+      {
+        "name": "Oranje luminantie voor egale huidoplichting",
+        "description": "HSL-paneel: Luminantie van oranje schuifregelaar naar +12.",
+        "when_to_use": "Wanneer model in schaduw staat of gezicht te donker is.",
+        "tools": [
+          "HSL / Kleur",
+          "Luminantie"
+        ],
+        "effect": "Huid krijgt heldere frisse uitstraling, kleine schaduwvlekken vallen minder op."
+      },
+      {
+        "name": "Complementaire Color Grading in de Middentonen",
+        "description": "Color Grading-wiel Middentonen: warme zacht-oranje tint (Hue 40, Saturation 10).",
+        "when_to_use": "Voor consistent filmisch gevoel over het hele portret.",
+        "tools": [
+          "Color Grading",
+          "Middentonen"
+        ],
+        "effect": "Gezicht van model gehuld in sfeervolle warme cinematic gloed."
+      },
+      {
+        "name": "Achtergrond desatureren voor focus",
+        "description": "Inverteer AI-persoonsmasker voor achtergrond, verlaag verzadiging met -25.",
+        "when_to_use": "Wanneer kleurrijke achtergrond de aandacht opeist.",
+        "tools": [
+          "Maskeren",
+          "Inverteren",
+          "Verzadiging"
+        ],
+        "effect": "Achtergrond treedt tonaal terug, model komt in volle glorie naar voren."
+      }
+    ],
+    "color_approach": "Volledig gestoeld op gecontroleerde kleurharmonieën. De huid (oranje/rood) is het ankerpunt, achtergrondkleuren worden via HSL en Color Grading aangepast om dit te complementeren.",
+    "local_adjustments": "Intensief gebruik van geavanceerde AI-gezichtsmaskers waarbij gezichtshuid, lichaamshuid, lippen en oogwit apart geselecteerd worden.",
+    "what_to_avoid": [
+      "Oranje verzadiging in HSL te ver verhogen waardoor model wortelachtige huidskleur krijgt.",
+      "Overmatig ruisonderdrukking of negatieve textuur op gezicht waardoor alle huidporiën verdwijnen."
+    ],
+    "best_for": "Portretfotografie, beauty- en fashion-shoots en cinematische karakterportretten.",
+    "unique_insights": [
+      "Het Camerakalibratie-paneel is voor analoge huidtinten vaak krachtiger dan het HSL-paneel.",
+      "Echte huidverzachting slaagt als je Textuur verlaagt maar tegelijk een fractie Clarity toevoegt voor micro-vormen.",
+      "Door achtergrond subtiel te desatureren en af te koelen steken warme huidtinten van model prachtig af op kleurcontrast."
+    ]
   }
 ]

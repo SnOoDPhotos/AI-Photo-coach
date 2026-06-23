@@ -511,9 +511,28 @@ function validateAndAdd() {
       if (!entry.workflow_order || !entry.workflow_order.length) warnings.push('geen workflow_order');
       if (!entry.color_approach) warnings.push('geen color_approach');
 
-      var exists = localKnowledge.find(function(e) { return e.video_title === entry.video_title; });
-      if (exists) {
-        skipped.push({ title: entry.video_title, reason: 'bestaat al' });
+      // Check op duplicaat via YouTube URL of video titel
+      var existsIdx = -1;
+      var existsByUrl = entry.youtube_url ? localKnowledge.findIndex(function(e) {
+        return e.youtube_url && e.youtube_url === entry.youtube_url;
+      }) : -1;
+      var existsByTitle = localKnowledge.findIndex(function(e) {
+        return e.video_title === entry.video_title;
+      });
+      existsIdx = existsByUrl !== -1 ? existsByUrl : existsByTitle;
+
+      if (existsIdx !== -1) {
+        var existing = localKnowledge[existsIdx];
+        var existingScore = (existing.techniques || []).length + (existing.unique_insights || []).length;
+        var newScore = (entry.techniques || []).length + (entry.unique_insights || []).length;
+        if (newScore > existingScore) {
+          // Nieuwe entry is beter — overschrijven
+          localKnowledge[existsIdx] = entry;
+          added.push(entry.video_title + ' (verbeterde versie, was ' + existingScore + ' → ' + newScore + ' punten)');
+        } else {
+          // Bestaande entry is even goed of beter — overslaan
+          skipped.push({ title: entry.video_title, reason: 'bestaat al en is even goed of beter (' + existingScore + ' vs ' + newScore + ' punten)' });
+        }
         return;
       }
 

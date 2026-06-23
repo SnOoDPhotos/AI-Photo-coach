@@ -1,68 +1,5 @@
 [
   {
-    "video_title": "Editing Landscape Photography in 5 minutes | Lightroom Editing for Beginners (Part 2)",
-    "genre": [
-      "landschap"
-    ],
-    "light_conditions": [
-      "bewolkt",
-      "vlak licht"
-    ],
-    "mood": [
-      "rustig",
-      "minimalistisch",
-      "naturalistisch"
-    ],
-    "software": [
-      "Lightroom Classic"
-    ],
-    "style_description": "Quick Natural Landscape",
-    "philosophy": "Houd Lightroom eenvoudig. De kernfilosofie is om met een minimale hoeveelheid schuifregelaars (hoofdzakelijk binnen het Standaard-paneel) in minder dan vijf minuten een krachtig resultaat te behalen. Het draait om het leggen van een solide, technisch correcte basis door middel van het maximaliseren van het histogram, waarna de kleuren subtiel worden versterkt zonder de realiteit uit het oog te verliezen.",
-    "workflow_order": [
-      "Stap 1: Het kiezen van het juiste kleurprofiel (bijv. Adobe Landschap).",
-      "Stap 2: Het nauwkeurig corrigeren van de witbalans om kleurzweem (veroorzaakt door ND-filters) te elimineren.",
-      "Stap 3: Het maximaliseren van het histogram (het bepalen van het witte en zwarte punt).",
-      "Stap 4: Globale tooncorrecties toepassen (hooglichten verminderen en schaduwen openen).",
-      "Stap 5: Het algehele contrast verhogen.",
-      "Stap 6: Lokale aanwezigheid en kleurlevendigheid versterken (Lokaal contrast en Levendigheid/Verzadiging)."
-    ],
-    "techniques": [
-      {
-        "name": "Histogram Maximalisatie (Witte en Zwarte Punten Extrapoleren)",
-        "description": "De fotograaf houdt de Shift-toets ingedrukt en dubbelklikt op de schuifregelaars 'Witte tinten' en 'Zwarte tinten'. Hierdoor rekt Lightroom het histogram automatisch uit tot de uiterste grenzen zonder dat er clipping optreedt.",
-        "when_to_use": "Altijd aan het begin van de tooncorrectie om het maximaal beschikbare dynamische bereik uit de sensor te benutten.",
-        "tools": [
-          "Standaard-paneel (Witte tinten / Zwarte tinten)"
-        ],
-        "effect": "Het creëert een zo breed mogelijk histogram en legt een solide basis voor het verdere contrastverloop, waardoor de foto direct meer diepte krijgt."
-      },
-      {
-        "name": "Gerichte Witbalans Correctie bij Lange Sluitertijden",
-        "description": "Met behulp van de pipet (White Balance Selector) zoekt de fotograaf naar een neutraal doel (grijs, zwart of wit) in de foto, terwijl hij de navigatie-preview aan de linkerkant gebruikt om het live effect te beoordelen.",
-        "when_to_use": "Wanneer er gebruik is gemaakt van sterke grijsfilters (zoals een 10-stops ND-filter) die een sterke blauwe of onnatuurlijke kleurzweem achterlaten.",
-        "tools": [
-          "Witbalans-pipet (Target tool)",
-          "Navigator-paneel"
-        ],
-        "effect": "Het elimineert de blauwe kleurzweem en herstelt de natuurlijke, warme tinten van het landschap zoals ze in werkelijkheid waren."
-      }
-    ],
-    "color_approach": "De fotograaf kiest allereerst voor een specifiek kleurprofiel ('Adobe Landschap') in plaats van de standaardinstelling om de kleuren direct een betere basis te geven. Daarnaast maakt hij een belangrijk onderscheid tussen 'Levendigheid' (Vibrance) en 'Verzadiging' (Saturation). Levendigheid wordt gebruikt om de minder verzadigde, gedempte kleuren subtiel op te halen, waarna een heel kleine hoeveelheid algehele verzadiging wordt toegevoegd voor een gebalanceerd en kleurrijk, maar realistisch resultaat.",
-    "local_adjustments": "In deze specifieke video worden er geen maskers of lokale aanpassingen gebruikt; de fotograaf beperkt zich bewust tot het toepassen van globale aanpassingen binnen het Standaard-paneel om te bewijzen hoe effectief een snelle, basisworkflow kan zijn.",
-    "what_to_avoid": [
-      "Het doorschieten met de 'Helderheid' (Clarity) slider, omdat een waarde van 100 de foto een volledig surrealistische en onnatuurlijke look geeft.",
-      "Het handmatig gissen naar witte en zwarte punten, om clipping (het verliezen van details in pure highlights of schaduwen) te voorkomen.",
-      "Het over-verzadigen van alle kleuren tegelijkertijd door enkel de verzadigingsknop te gebruiken."
-    ],
-    "best_for": "Beginnende landschapsfotografen die overweldigd raken door de complexiteit van Lightroom en snel een efficiënte, kwalitatieve basisbewerking willen toepassen op hun RAW-bestanden (met name foto's gemaakt met lange sluitertijden of onder egale lichtomstandigheden).",
-    "unique_insights": [
-      "Door de Shift-toets ingedrukt te houden en te dubbelklikken op de Witte/Zwarte sliders, berekent Lightroom exact de grens tot waar je de witten en zwarten kunt pushen zonder detailverlies.",
-      "Bij het gebruik van de witbalans-pipet helpt het openhouden van het Navigator-paneel linksboven om direct de impact op de gehele compositie te zien voordat je daadwerkelijk klikt."
-    ],
-    "photographer_name": "",
-    "youtube_url": ""
-  },
-  {
     "video_title": "How to Edit Sports Photography in Lightroom",
     "genre": [
       "sport",
@@ -21132,9 +21069,9 @@
     ]
   },
   {
-    "video_title": "Video-informatie niet beschikbaar",
-    "photographer_name": "Onbekend",
-    "youtube_url": "https://youtu.be/BEYoERJm1Wo",
+    "video_title": "Professional Pre-Wedding Photo Editing Workflow | Lightroom 2026",
+    "photographer_name": "CREATIVE DC",
+    "youtube_url": "https://www.youtube.com/watch?v=BEYoERJm1Wo",
     "genre": [
       "algemeen"
     ],

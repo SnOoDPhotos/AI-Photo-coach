@@ -1885,16 +1885,34 @@ function showHistoryItem(index){
 // ── Learning moment ────────────────────────────────────────────────────────
 async function triggerLearningMoment(){
   var src=document.getElementById('currentPhoto').src;
-  if(!src) return;
-  document.getElementById('analysisOutput').innerHTML='<div style="text-align:center;padding:40px 20px"><div style="font-family:sans-serif;letter-spacing:2px;font-weight:bold;font-size:20px;letter-spacing:3px;color:var(--accent)">FOTO IS KLAAR!</div><div style="margin-top:10px;font-size:12px;color:var(--muted)">Eindoordeel wordt geladen...</div></div>';
-  if (!src || !src.startsWith('data:')) { document.getElementById('learningText').innerHTML='<p style="color:var(--muted)">Upload de eindversie van je foto om het eindoordeel te zien.</p>'; document.getElementById('learningBox').classList.add('visible'); return; }
-  var base64=src.split(',')[1];
-  var mm=src.match(/data:(image\/[a-z]+);/);
-  var mimeType=mm?mm[1]:'image/jpeg';
-  var r=await callAI((appLanguage === 'en' ? 'You are a professional photographer and editing coach. Language: English. Use ## FINAL VERDICT and ## PHOTOGRAPHY TIP as headings.' : 'Je bent een professionele fotograaf en bewerkingscoach. Taal: Nederlands. Gebruik ## EINDOORDEEL en ## FOTOGRAFIETIP als koppen.'),
-    [{inline_data:{mime_type:mimeType,data:base64}},{text:'Volledig bewerkte foto. Geef: 1) ## EINDOORDEEL over de bewerking. 2) ## FOTOGRAFIETIP voor de volgende foto van dit genre. Max 150 woorden.'}],600);
-  document.getElementById('learningText').innerHTML=renderMarkdown(r.text||'');
   document.getElementById('learningBox').classList.add('visible');
+  document.getElementById('learningText').innerHTML='<div style="color:var(--muted);font-size:12px;text-align:center;padding:20px">Eindoordeel laden...</div>';
+  document.getElementById('analysisOutput').innerHTML='<div style="text-align:center;padding:40px 20px"><div style="font-family:sans-serif;letter-spacing:2px;font-weight:bold;font-size:20px;letter-spacing:3px;color:var(--accent)">FOTO IS KLAAR!</div><div style="margin-top:10px;font-size:12px;color:var(--muted)">Eindoordeel wordt geladen...</div></div>';
+
+  if(!src||!src.startsWith('data:')){
+    document.getElementById('learningText').innerHTML='<p style="color:var(--muted);font-size:13px">Foto niet beschikbaar. Upload de foto opnieuw voor het eindoordeel.</p>';
+    document.getElementById('analysisOutput').innerHTML='<div style="text-align:center;padding:28px 20px"><div style="font-family:sans-serif;letter-spacing:2px;font-weight:bold;font-size:20px;color:var(--success)">✓ BEWERKINGSTRAJECT VOLTOOID</div></div>';
+    return;
+  }
+
+  var b64=src.split(',')[1];
+  var mm=src.match(/data:(image\/[a-z+]+);/);
+  var mimeType=mm?mm[1]:'image/jpeg';
+  var lang=appLanguage==='en';
+  var sysPrompt=lang?'You are a professional photography coach. Use ## FINAL VERDICT and ## PHOTOGRAPHY TIP as headings. No slider values or technical adjustments.':'Je bent een professionele fotobewerkingscoach. Gebruik ## EINDOORDEEL en ## FOTOGRAFIETIP als koppen. Geen slider-waarden of technische aanpassingen meer.';
+  var userText=lang?'Fully edited photo. Give: 1) ## FINAL VERDICT: what worked well, what makes this photo strong. 2) ## PHOTOGRAPHY TIP: one concrete tip for the next photo of this genre. Max 200 words total.':'Volledig bewerkte foto. Geef: 1) ## EINDOORDEEL: wat is goed gelukt, wat maakt deze foto sterk. 2) ## FOTOGRAFIETIP: één concrete tip voor de volgende foto van dit genre. Max 200 woorden totaal.';
+
+  try {
+    var r=await callAI(sysPrompt,[{inline_data:{mime_type:mimeType,data:b64}},{text:userText}],1200);
+    if(r&&r.text){
+      document.getElementById('learningText').innerHTML=renderMarkdown(r.text);
+    } else {
+      document.getElementById('learningText').innerHTML='<p style="color:var(--error);font-size:12px">Eindoordeel kon niet worden geladen'+(r&&r.error?': '+r.error:'')+'. Probeer opnieuw.</p>';
+    }
+  } catch(e) {
+    document.getElementById('learningText').innerHTML='<p style="color:var(--error);font-size:12px">Fout: '+e.message+'</p>';
+  }
+
   document.getElementById('analysisOutput').innerHTML='<div style="text-align:center;padding:28px 20px"><div style="font-family:sans-serif;letter-spacing:2px;font-weight:bold;font-size:20px;letter-spacing:3px;color:var(--success)">✓ BEWERKINGSTRAJECT VOLTOOID</div><div style="margin-top:8px;font-size:12px;color:var(--muted)">Bekijk het eindoordeel hieronder</div></div>';
 }
 

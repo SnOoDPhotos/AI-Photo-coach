@@ -1317,31 +1317,7 @@ function goToPreviousPhase() {
 
 
 // ── Learning moment ────────────────────────────────────────────────────────
-async function triggerLearningMoment() {
-  var currentSrc = document.getElementById('currentPhoto').src;
-  if (!currentSrc) return;
-  document.getElementById('analysisOutput').innerHTML =
-    '<div style="text-align:center;padding:40px 20px">'
-    + '<div style="font-family:sans-serif;letter-spacing:2px;font-weight:bold;font-size:20px;letter-spacing:3px;color:var(--accent)">FOTO IS KLAAR!</div>'
-    + '<div style="margin-top:10px;font-size:12px;color:var(--muted);font-family:\'DM Mono\',monospace">Fotografietip wordt geladen...</div>'
-    + '</div>';
-  var base64 = currentSrc.split(',')[1];
-  var mimeMatch = currentSrc.match(/data:(image\/[a-z]+);/);
-  var mimeType = mimeMatch ? mimeMatch[1] : 'image/jpeg';
-  var learningParts = [
-    {inline_data:{mime_type:mimeType,data:base64}},
-    {text:'Dit is de volledig bewerkte eindversie van de foto. Geef: 1) Een kort eindoordeel over de bewerking als geheel - wat is goed gelukt, wat maakt de foto sterk. 2) Een persoonlijke fotografietip voor de VOLGENDE foto van dit genre, gericht op compositie, licht, timing of perspectief die specifiek passen bij wat je in DEZE foto ziet. Wees concreet en enthousiast. Max 150 woorden totaal.'}
-  ];
-  var aiResult = await callAI('Je bent een professionele fotograaf, bewerkingscoach en docent. Geef een eindoordeel en fotografietip. Gebruik ## EINDOORDEEL en ## FOTOGRAFIETIP als koppen. Taal: Nederlands.', learningParts, 600);
-  var text = aiResult.text || '';
-  document.getElementById('learningText').innerHTML = renderMarkdown(text);
-  document.getElementById('learningBox').classList.add('visible');
-  document.getElementById('analysisOutput').innerHTML =
-    '<div style="text-align:center;padding:28px 20px">'
-    + '<div style="font-family:sans-serif;letter-spacing:2px;font-weight:bold;font-size:20px;letter-spacing:3px;color:var(--success)">\u2713 BEWERKINGSTRAJECT VOLTOOID</div>'
-    + '<div style="margin-top:8px;font-size:12px;color:var(--muted)">Bekijk de fotografietip hieronder</div>'
-    + '</div>';
-}
+
 
 // ── Universal AI caller (via backend) ────────────────────────────────────
 async function callAI(systemPrompt, parts, maxTokens) {
@@ -1438,6 +1414,7 @@ async function triggerLearningMoment(){
   var src=document.getElementById('currentPhoto').src;
   if(!src) return;
   document.getElementById('analysisOutput').innerHTML='<div style="text-align:center;padding:40px 20px"><div style="font-family:sans-serif;letter-spacing:2px;font-weight:bold;font-size:20px;letter-spacing:3px;color:var(--accent)">FOTO IS KLAAR!</div><div style="margin-top:10px;font-size:12px;color:var(--muted)">Eindoordeel wordt geladen...</div></div>';
+  if (!src || !src.startsWith('data:')) { document.getElementById('learningText').innerHTML='<p style="color:var(--muted)">Upload de eindversie van je foto om het eindoordeel te zien.</p>'; document.getElementById('learningBox').classList.add('visible'); return; }
   var base64=src.split(',')[1];
   var mm=src.match(/data:(image\/[a-z]+);/);
   var mimeType=mm?mm[1]:'image/jpeg';

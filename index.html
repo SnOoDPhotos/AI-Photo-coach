@@ -1180,6 +1180,7 @@ function handleUpload(file) {
 var pendingNextPhaseFile = null;
 var userFeedback = '';
 var previousAnalysisText = '';
+var phaseAnalysisHistory = {}; // Bewaart analyse per fase
 
 // ── Refine modal (knop 1: nog aanpassen) ──────────────────────────────────
 function openRefineModal() {
@@ -1230,6 +1231,7 @@ function submitNextPhase() {
   if (!pendingNextPhaseFile) return;
   var file = pendingNextPhaseFile;
   closeNextPhaseModal();
+  phaseAnalysisHistory[currentPhase] = document.getElementById('analysisOutput').innerHTML;
   currentPhase++;
   updatePhaseUI();
   document.getElementById('phaseAdvanceBtn').disabled = true;
@@ -1494,7 +1496,7 @@ async function analyzePhoto(dataUrl,isFirst){
       prevAdvice = ' DE EXACTE ADVIEZEN VAN FASE ' + (currentPhase-1) + ' DIE GECONTROLEERD MOETEN WORDEN: [' + previousAnalysisText.replace(/<[^>]*>/g,'').slice(0,1500) + ']. ';
     }
     var ph = hasEditCheck && currentPhase > 1
-      ? ' FASE OVERGANG naar fase ' + currentPhase + '. Doe ## EDIT CHECK: vergelijk de bewerkte foto met de adviezen van fase ' + (currentPhase-1) + ' en benoem per advies of het is toegepast, gedeeltelijk toegepast of overgeslagen (benoem dit als een mogelijke creatieve keuze, dwing niets af). Daarna door met fase ' + currentPhase + ' adviezen.'
+      ? ' FASE OVERGANG naar fase ' + currentPhase + '. Doe een korte ## EDIT CHECK: bekijk de foto visueel en vergelijk met de adviezen van fase ' + (currentPhase-1) + '. Wees welwillend in je beoordeling — kleine aanpassingen kunnen subtiel zijn. Benoem wat je ziet, niet wat je niet ziet. Beschouw niet-toegepaste adviezen altijd als een bewuste creatieve keuze van de fotograaf, niet als een fout. Maximaal 3 zinnen. Daarna direct door met fase ' + currentPhase + ' adviezen.'
       : 'Gebruik ## EDIT CHECK om te benoemen wat je ziet. Benoem afwijkingen als creatieve keuze.';
     parts.push({text:'Dit is versie '+iteration+'. '+ph+prevAdvice+' Geef adviezen voor fase '+currentPhase+' in '+swName+'.'+fb+cumHistory+absoluteValues+denoiseNote});
   }

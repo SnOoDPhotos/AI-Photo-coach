@@ -1895,8 +1895,10 @@ async function triggerLearningMoment(){
     return;
   }
 
-  var b64=src.split(',')[1];
-  var mm=src.match(/data:(image\/[a-z+]+);/);
+  // Comprimeer de foto eerst (zelfde als rest van de app) om 413 te voorkomen
+  var compressedSrc = await compressImage(src, 3, 0.85);
+  var b64=compressedSrc.split(',')[1];
+  var mm=compressedSrc.match(/data:(image\/[a-z+]+);/);
   var mimeType=mm?mm[1]:'image/jpeg';
   var lang=appLanguage==='en';
   var sysPrompt=lang?'You are a professional photography coach. Use ## FINAL VERDICT and ## PHOTOGRAPHY TIP as headings. No slider values or technical adjustments.':'Je bent een professionele fotobewerkingscoach. Gebruik ## EINDOORDEEL en ## FOTOGRAFIETIP als koppen. Geen slider-waarden of technische aanpassingen meer.';

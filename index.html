@@ -1297,23 +1297,18 @@ function goToPreviousPhase() {
   updatePhaseUI();
   document.getElementById('phaseAdvanceBtn').disabled = false;
   document.getElementById('phaseRefineBtn').disabled = false;
-  // Voeg ook onderaan een knop toe
-  var existingWrap = document.getElementById('bottomPhaseBtnWrap');
-  if (existingWrap) existingWrap.parentNode.removeChild(existingWrap);
-  var btnDiv = document.createElement('div');
-  btnDiv.id = 'bottomPhaseBtnWrap';
-  btnDiv.style.cssText = 'text-align:right;padding:16px 0 8px;border-top:1px solid var(--border);margin-top:16px';
-  btnDiv.innerHTML = '<button class="phase-advance-btn" id="bottomPhaseBtn" onclick="openNextPhaseModal()" style="font-size:13px">VOLGENDE FASE &rarr;</button>';
-  var ao = document.getElementById('analysisOutput');
-  if (ao) ao.appendChild(btnDiv);
   document.getElementById('phaseRefineBtn').classList.add('active-phase');
-  // Show prev button only if not on phase 1
   document.getElementById('phasePrevBtn').style.display = currentPhase > 1 ? '' : 'none';
-  document.getElementById('analysisOutput').innerHTML =
-    '<div style="text-align:center;padding:30px 20px">'
-    + '<div style="font-family:sans-serif;letter-spacing:2px;font-weight:bold;font-size:20px;letter-spacing:3px;color:var(--accent)">TERUG NAAR FASE ' + currentPhase + '</div>'
-    + '<div style="margin-top:10px;font-size:13px;color:var(--muted)">Upload een nieuwe versie of klik op NOG AANPASSEN voor nieuwe adviezen.</div>'
-    + '</div>';
+
+  if (phaseAnalysisHistory[currentPhase]) {
+    document.getElementById('analysisOutput').innerHTML = phaseAnalysisHistory[currentPhase];
+  } else {
+    document.getElementById('analysisOutput').innerHTML =
+      '<div style="text-align:center;padding:30px 20px">'
+      + '<div style="font-family:sans-serif;letter-spacing:2px;font-weight:bold;font-size:20px;color:var(--accent)">TERUG NAAR FASE ' + currentPhase + '</div>'
+      + '<div style="margin-top:10px;font-size:13px;color:var(--muted)">Geen eerdere analyse bewaard. Klik op NOG AANPASSEN voor nieuwe adviezen.</div>'
+      + '</div>';
+  }
 }
 
 

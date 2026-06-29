@@ -687,7 +687,7 @@ function pushToDatabase() {
   })
   .then(function(r) { return r.json(); })
   .then(function(d) {
-    if (d.success) { el.textContent = '✓ ' + d.count + ' entries opgeslagen' + (d.previewsPreserved ? ' (' + d.previewsPreserved + ' stijl previews behouden)' : ''); }
+    if (d.success) { var msg = '✓ ' + d.count + ' entries opgeslagen' + (d.previewsPreserved ? ' (' + d.previewsPreserved + ' previews)' : ''); if (d.github && d.github.success) msg += ' \u2014 GitHub backup ' + d.github.commit; else if (d.github && !d.github.success) msg += ' (GitHub: ' + d.github.reason + ')'; el.textContent = msg; }
     else { el.style.color = 'var(--error)'; el.textContent = '✗ ' + (d.error || 'Fout'); }
   })
   .catch(function(e) { el.style.color = 'var(--error)'; el.textContent = '✗ ' + e.message; });

@@ -187,7 +187,9 @@ module.exports = async function handler(req, res) {
       }
 
       const merged = entries.map(function(e) {
-        if (!e.style_preview || e.style_preview.length < 10) {
+        // Alleen preview terugplaatsen als het veld NIET aanwezig is (undefined)
+        // Als het leeg is ('') of een expliciete waarde heeft, die keuze respecteren
+        if (e.style_preview === undefined) {
           const key = ((e.youtube_url || '') + '|' + (e.video_title || '')).toLowerCase();
           if (previewMap[key]) {
             return Object.assign({}, e, { style_preview: previewMap[key] });

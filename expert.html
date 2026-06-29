@@ -983,7 +983,7 @@ function loadStyles() {
   fetch('/api/knowledge', {
     method: 'POST',
     headers: {'Content-Type':'application/json'},
-    body: JSON.stringify({ action: 'list', token: authToken || '' })
+    body: JSON.stringify({ action: 'styles' })
   })
   .then(function(r) { return r.json(); })
   .then(function(resp) {

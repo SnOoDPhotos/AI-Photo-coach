@@ -1936,6 +1936,44 @@ async function triggerLearningMoment(){
   }
 
   document.getElementById('analysisOutput').innerHTML='<div style="text-align:center;padding:28px 20px"><div style="font-family:sans-serif;letter-spacing:2px;font-weight:bold;font-size:20px;letter-spacing:3px;color:var(--success)">✓ BEWERKINGSTRAJECT VOLTOOID</div><div style="margin-top:8px;font-size:12px;color:var(--muted)">Bekijk het eindoordeel hieronder</div></div>';
+
+  // Toon rating UI als er een bewerkingsstijl geselecteerd was
+  if (currentEditStyle) {
+    setTimeout(function() { showRatingUI(); }, 1500);
+  }
+}
+
+function showRatingUI() {
+  var ratingBox = document.getElementById('ratingBox');
+  if (ratingBox) ratingBox.classList.add('visible');
+}
+
+async function submitRating(stars) {
+  var comment = document.getElementById('ratingComment') ? document.getElementById('ratingComment').value : '';
+  var genre = document.getElementById('photoTypeInput') ? document.getElementById('photoTypeInput').value : '';
+  var photographer = currentEditStyle ? currentEditStyle.photographer_name : '';
+  var style = currentEditStyle ? currentEditStyle.style_description : '';
+
+  // Highlight selected stars
+  for (var i = 1; i <= 5; i++) {
+    var star = document.getElementById('star' + i);
+    if (star) star.style.color = i <= stars ? 'var(--accent)' : 'var(--border)';
+  }
+
+  try {
+    var r = await fetch('/api/ratings', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({ photographer: photographer, style: style, genre: genre, rating: stars, comment: comment })
+    });
+    var d = await r.json();
+    if (d.success) {
+      document.getElementById('ratingThanks').style.display = 'block';
+      document.getElementById('ratingForm').style.display = 'none';
+    }
+  } catch(e) {
+    console.error('Rating error:', e);
+  }
 }
 
 // ── Analyse ────────────────────────────────────────────────────────────────

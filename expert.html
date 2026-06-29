@@ -547,18 +547,24 @@ select option,select optgroup{background:#1e1e1e;color:#f0ede8}
         <option value="landschap">Landschap</option>
         <option value="wildlife">Wildlife</option>
         <option value="portret">Portret</option>
-        <option value="straat">Straat</option>
+        <option value="straatfotografie">Straatfotografie</option>
         <option value="reisfotografie">Reisfotografie</option>
         <option value="sport">Sport / Actie</option>
         <option value="macro">Macro</option>
-        <option value="nacht">Nacht</option>
+        <option value="nacht & astro">Nacht & Astro</option>
         <option value="architectuur">Architectuur</option>
-        <option value="aerial">Drone / Aerial</option>
-        <option value="documentair">Documentair</option>
+        <option value="luchtfotografie">Drone / Luchtfotografie</option>
+        <option value="documentaire">Documentaire</option>
         <option value="product">Product / Studio</option>
-        <option value="astrofotografie">Astrofotografie</option>
-        <option value="infrarood">Infrarood</option>
+        <option value="infraroodfotografie">Infraroodfotografie</option>
         <option value="trouwfotografie">Trouwfotografie</option>
+        <option value="kust">Kust</option>
+        <option value="fine-art">Fine-Art</option>
+        <option value="zwart-wit">Zwart-Wit</option>
+        <option value="cinematisch">Cinematisch</option>
+        <option value="experimenteel">Experimenteel</option>
+        <option value="grafisch ontwerp">Grafisch Ontwerp</option>
+        <option value="algemeen">Algemeen</option>
       </select>
     </div>
 
@@ -2079,7 +2085,7 @@ async function analyzePhoto(dataUrl,isFirst){
   if(mainText) cumulativeAnalysis.push('FASE '+currentPhase+': '+mainText.slice(0,500));
   output.innerHTML=renderMarkdown(mainText);
   currentAnalysis=output.innerHTML;
-  setTimeout(function(){ output.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 100);
+  setTimeout(function(){ var scrollTarget = document.getElementById('analysisSection') || output; scrollTarget.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 100);
   statusText.textContent='V'+iteration+' GEANALYSEERD';
   document.getElementById('phaseLabel').textContent=PHASE_LABELS[currentPhase]||'';
   document.getElementById('phaseAdvanceBtn').disabled=currentPhase>=5;

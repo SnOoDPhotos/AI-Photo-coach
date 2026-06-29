@@ -58,6 +58,19 @@ module.exports = async function handler(req, res) {
       return res.status(401).json({ error: 'Geen toegang' });
     }
 
+    if (action === 'reset_previews') {
+      // Verwijder alle bestaande style_previews zodat ze opnieuw gegenereerd worden
+      await kv('SET', 'style_previews:map', JSON.stringify({}));
+      const kb = await loadKnowledge();
+      const cleaned = kb.map(function(e) {
+        const c = Object.assign({}, e);
+        delete c.style_preview;
+        return c;
+      });
+      await saveKnowledge(cleaned);
+      return res.status(200).json({ success: true, message: 'Alle style previews gereset' });
+    }
+
     if (action !== 'generate_previews') {
       return res.status(400).json({ error: 'Onbekende actie' });
     }
@@ -87,7 +100,7 @@ module.exports = async function handler(req, res) {
     for (let i = 0; i < unique.length; i += PARALLEL) {
       const batch = unique.slice(i, i + PARALLEL);
       await Promise.all(batch.map(async function(entry) {
-        const prompt = 'Schrijf een stijlomschrijving van 3 tot 5 zinnen voor de bewerkingsstijl van fotograaf ' + (entry.photographer_name||'') + ' (stijlnaam: "' + (entry.style_description||'') + '"). Gebruik deze informatie: Filosofie: ' + (entry.philosophy||'').slice(0,250) + '. Beste voor: ' + (entry.best_for||'') + '. Genre: ' + (entry.genre||[]).join(', ') + '. Beschrijf: (1) de visuele sfeer en toon, (2) de kernfilosofie in gewone taal, (3) voor welk type foto en lichtomstandigheden deze stijl het beste werkt, (4) het verwachte visuele effect. Schrijf als lopende tekst, geen opsomming, vanuit het perspectief van een fotograaf die overweegt deze stijl te gebruiken.';
+        const prompt = 'Schrijf een stijlomschrijving van 3 tot 5 zinnen voor de bewerkingsstijl genaamd "' + (entry.style_description||'') + '". Gebruik deze informatie: Filosofie: ' + (entry.philosophy||'').slice(0,250) + '. Beste voor: ' + (entry.best_for||'') + '. Genre: ' + (entry.genre||[]).join(', ') + '. BELANGRIJK: Noem NOOIT de naam van een fotograaf, persoon of youtuber. Verwijs altijd naar "deze stijl" of "deze bewerkingsfilosofie". Beschrijf: (1) de visuele sfeer en toon, (2) de kernfilosofie in gewone taal, (3) voor welk type foto en lichtomstandigheden deze stijl het beste werkt, (4) het verwachte visuele effect. Schrijf als lopende tekst, geen opsomming, vanuit het perspectief van een fotograaf die overweegt deze stijl te gebruiken.';
 
         try {
           const r = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=' + GEMINI_API_KEY, {

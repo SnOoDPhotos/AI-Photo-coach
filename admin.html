@@ -100,6 +100,10 @@ input:focus,textarea:focus{border-color:var(--accent)}
     <div id="tab-overview">
       <div class="section">
         <h3>KENNISBANK ENTRIES</h3>
+        <div style="display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap;align-items:center">
+          <button class="btn btn-sm" onclick="generateStylePreviews()">✨ GENEREER STIJL PREVIEWS</button>
+          <span id="previewBatchStatus" style="font-family:monospace;font-size:11px;color:var(--muted)"></span>
+        </div>
         <div class="filter-bar">
           <input type="text" id="filterSearch" placeholder="Zoeken op titel of fotograaf..." oninput="renderEntries()">
           <select id="filterGenre" onchange="renderEntries()">
@@ -1045,6 +1049,58 @@ function syncSoftwareToDatabase() {
     el.style.color = 'var(--error)';
     el.textContent = '\u2717 ' + e.message;
   });
+}
+
+
+async function generateStylePreviews() {
+  var statusEl = document.getElementById('previewBatchStatus');
+  if (!authToken) { statusEl.textContent = 'Niet ingelogd'; return; }
+
+  // Find entries without style_preview
+  var missing = localKnowledge.filter(function(e) { return !e.style_preview || e.style_preview.length < 10; });
+  if (!missing.length) {
+    statusEl.style.color = 'var(--success)';
+    statusEl.textContent = '\u2713 Alle entries hebben al een stijl preview!';
+    return;
+  }
+
+  statusEl.style.color = 'var(--accent)';
+  statusEl.textContent = 'Bezig... 0/' + missing.length + ' gegenereerd';
+
+  // Process in groups of 50
+  var BATCH = 50;
+  var totalGenerated = 0;
+  for (var i = 0; i < missing.length; i += BATCH) {
+    var batch = missing.slice(i, i + BATCH);
+    try {
+      var r = await fetch('/api/style-preview', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ action: 'generate_previews', token: authToken, entries: batch })
+      });
+      var d = await r.json();
+      if (d.success) {
+        totalGenerated += d.generated;
+        statusEl.textContent = 'Bezig... ' + Math.min(i + BATCH, missing.length) + '/' + missing.length + ' verwerkt, ' + totalGenerated + ' gegenereerd';
+        // Reload knowledge to get updated previews
+        await loadKnowledge();
+      } else {
+        statusEl.style.color = 'var(--error)';
+        statusEl.textContent = 'Fout: ' + (d.error || 'onbekend');
+        break;
+      }
+    } catch(e) {
+      statusEl.style.color = 'var(--error)';
+      statusEl.textContent = 'Fout: ' + e.message + ' (druk opnieuw voor verdere verwerking)';
+      break;
+    }
+  }
+
+  if (statusEl.style.color !== 'var(--error)') {
+    statusEl.style.color = 'var(--success)';
+    statusEl.textContent = '\u2713 Klaar! ' + totalGenerated + ' stijl previews gegenereerd';
+    renderEntries();
+  }
 }
 
 

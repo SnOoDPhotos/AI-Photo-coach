@@ -1912,7 +1912,7 @@ async function triggerLearningMoment(){
   var userText=lang?'Fully edited photo. Give: 1) ## FINAL VERDICT: what worked well, what makes this photo strong. 2) ## PHOTOGRAPHY TIP: one concrete tip for the next photo of this genre. Max 200 words total.':'Volledig bewerkte foto. Geef: 1) ## EINDOORDEEL: wat is goed gelukt, wat maakt deze foto sterk. 2) ## FOTOGRAFIETIP: één concrete tip voor de volgende foto van dit genre. Max 200 woorden totaal.';
 
   try {
-    var r=await callAI(sysPrompt,[{inline_data:{mime_type:mimeType,data:b64}},{text:userText}],1200);
+    var r=await callAI(sysPrompt,[{inline_data:{mime_type:mimeType,data:b64}},{text:userText}],2500);
     if(r&&r.text){
       document.getElementById('learningText').innerHTML=renderMarkdown(r.text);
     } else {

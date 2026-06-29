@@ -568,6 +568,10 @@ select option,select optgroup{background:#1e1e1e;color:#f0ede8}
       <select id="styleSelect" onchange="setEditStyle(this.value)" style="width:100%;background:var(--bg);border:1px solid var(--border);color:var(--text);padding:11px 14px;font-family:'DM Sans',sans-serif;font-size:13px;outline:none;cursor:pointer">
         <option value="">— Geen stijlvoorkeur —</option>
       </select>
+      <div id="stylePreviewPanel" style="display:none;margin-top:10px;padding:12px 14px;background:var(--bg);border:1px solid var(--border);border-left:3px solid var(--accent);font-size:12px;line-height:1.7;color:var(--muted)">
+        <div style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1px;color:var(--accent);margin-bottom:6px">ℹ STIJLOMSCHRIJVING</div>
+        <div id="stylePreviewText"></div>
+      </div>
     </div>
   </div>
 
@@ -1081,12 +1085,21 @@ function adminFilterChanged() {
 
 
 function setEditStyle(val) {
+  var previewPanel = document.getElementById('stylePreviewPanel');
+  var previewText = document.getElementById('stylePreviewText');
   if (val === '' || val === null) {
     currentEditStyle = null;
+    if (previewPanel) previewPanel.style.display = 'none';
     return;
   }
   var entries = window._knowledgeEntries || [];
   currentEditStyle = entries[parseInt(val)] || null;
+  if (currentEditStyle && currentEditStyle.style_preview && previewPanel) {
+    previewText.innerHTML = currentEditStyle.style_preview;
+    previewPanel.style.display = 'block';
+  } else if (previewPanel) {
+    previewPanel.style.display = 'none';
+  }
 }
 
 // ── State ──────────────────────────────────────────────────────────────────

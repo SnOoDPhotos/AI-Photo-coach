@@ -116,6 +116,21 @@ module.exports = async function handler(req, res) {
           });
           if (updated) {
             await saveKnowledge(kb);
+            // Sla ook op in aparte previews map (overleeft export naar database)
+            try {
+              const previewsRaw = await kv('GET', 'style_previews:map');
+              const previewMap = previewsRaw ? JSON.parse(previewsRaw) : {};
+              const pk = ((entry.photographer_name||'') + '|' + (entry.style_description||'')).toLowerCase();
+              previewMap[pk] = text;
+              // Sla ook op per entry keys voor snelle lookup
+              kb.forEach(function(e) {
+                if ((e.photographer_name||'').toLowerCase() === pg && (e.style_description||'').toLowerCase() === sg) {
+                  const ek = ((e.youtube_url||'') + '|' + (e.video_title||'')).toLowerCase();
+                  previewMap[ek] = text;
+                }
+              });
+              await kv('SET', 'style_previews:map', JSON.stringify(previewMap));
+            } catch(e2) { console.log('Preview map save error:', e2.message); }
             generated++;
           }
         } catch(e) {

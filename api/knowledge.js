@@ -141,8 +141,29 @@ module.exports = async function handler(req, res) {
       const { entries } = req.body;
       if (!Array.isArray(entries)) return res.status(400).json({ error: 'entries array vereist' });
 
-      await saveKnowledge(entries);
-      return res.status(200).json({ success: true, count: entries.length });
+      // Merge: behoud style_preview uit Redis voor bestaande entries
+      const existing = await loadKnowledge();
+      const previewMap = {};
+      existing.forEach(function(e) {
+        if (e.style_preview && e.style_preview.length > 10) {
+          const key = ((e.youtube_url || '') + '|' + (e.video_title || '')).toLowerCase();
+          previewMap[key] = e.style_preview;
+        }
+      });
+
+      const merged = entries.map(function(e) {
+        if (!e.style_preview || e.style_preview.length < 10) {
+          const key = ((e.youtube_url || '') + '|' + (e.video_title || '')).toLowerCase();
+          if (previewMap[key]) {
+            return Object.assign({}, e, { style_preview: previewMap[key] });
+          }
+        }
+        return e;
+      });
+
+      const preserved = merged.filter(e => e.style_preview && e.style_preview.length > 10).length;
+      await saveKnowledge(merged);
+      return res.status(200).json({ success: true, count: merged.length, previewsPreserved: preserved });
     }
 
     // ── ENTRY VERWIJDEREN ─────────────────────────────────────────────────

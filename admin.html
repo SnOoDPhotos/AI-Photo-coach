@@ -101,9 +101,17 @@ input:focus,textarea:focus{border-color:var(--accent)}
       <div class="section">
         <h3>KENNISBANK ENTRIES</h3>
         <div class="filter-bar">
-          <input type="text" id="filterSearch" placeholder="Zoeken op titel..." oninput="renderEntries()">
+          <input type="text" id="filterSearch" placeholder="Zoeken op titel of fotograaf..." oninput="renderEntries()">
           <select id="filterGenre" onchange="renderEntries()">
             <option value="">Alle genres</option>
+          </select>
+          <select id="filterSort" onchange="renderEntries()" style="font-family:monospace;font-size:11px">
+            <option value="">Sortering: standaard</option>
+            <option value="tech_asc">Technieken: laag → hoog</option>
+            <option value="tech_desc">Technieken: hoog → laag</option>
+            <option value="insights_asc">Insights: laag → hoog</option>
+            <option value="insights_desc">Insights: hoog → laag</option>
+            <option value="photographer">Fotograaf A → Z</option>
           </select>
         </div>
         <div class="entry-grid" id="entryGrid"></div>
@@ -374,23 +382,34 @@ function renderGenreFilter() {
 function renderEntries() {
   var search = document.getElementById('filterSearch').value.toLowerCase();
   var genre = document.getElementById('filterGenre').value;
+  var sortVal = (document.getElementById('filterSort')||{}).value || '';
   var filtered = localKnowledge.filter(function(e) {
-    var ms = !search || (e.video_title||'').toLowerCase().includes(search);
+    var ms = !search || (e.video_title||'').toLowerCase().includes(search) || (e.photographer_name||'').toLowerCase().includes(search);
     var mg = !genre || (e.genre||[]).includes(genre);
     return ms && mg;
   });
-  document.getElementById('entryGrid').innerHTML = filtered.length ? filtered.map(function(e, i) {
+
+  // Sorting
+  if (sortVal === 'tech_asc') filtered.sort(function(a,b){ return (a.techniques||[]).length - (b.techniques||[]).length; });
+  else if (sortVal === 'tech_desc') filtered.sort(function(a,b){ return (b.techniques||[]).length - (a.techniques||[]).length; });
+  else if (sortVal === 'insights_asc') filtered.sort(function(a,b){ return (a.unique_insights||[]).length - (b.unique_insights||[]).length; });
+  else if (sortVal === 'insights_desc') filtered.sort(function(a,b){ return (b.unique_insights||[]).length - (a.unique_insights||[]).length; });
+  else if (sortVal === 'photographer') filtered.sort(function(a,b){ return (a.photographer_name||'').localeCompare(b.photographer_name||''); });
+
+  document.getElementById('entryGrid').innerHTML = filtered.length ? filtered.map(function(e) {
     var idx = localKnowledge.indexOf(e);
+    var hasPreview = e.style_preview && e.style_preview.length > 10;
     return '<div class="entry-card" onclick="showDetail('+idx+')">'
-      + '<div>'
+      + '<div style="flex:1;min-width:0">'
       + '<div class="entry-title">' + (e.video_title||'Geen titel') + '</div>'
+      + '<div style="font-size:11px;color:var(--accent);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">' + (e.photographer_name||'') + ' — ' + (e.style_description||'') + '</div>'
       + '<div class="entry-meta" style="margin-top:4px">'
       + (e.genre||[]).map(function(g){return '<span class="tag">'+g+'</span>';}).join('')
-      + (e.mood||[]).slice(0,2).map(function(m){return '<span class="tag" style="opacity:0.6">'+m+'</span>';}).join('')
       + '</div></div>'
-      + '<div style="font-family:monospace;font-size:10px;text-align:right">'
+      + '<div style="font-family:monospace;font-size:10px;text-align:right;flex-shrink:0">'
       + '<span style="color:' + ((e.techniques||[]).length >= 3 ? 'var(--success)' : 'var(--error)') + '">' + (e.techniques||[]).length + ' tech</span><br>'
-      + '<span style="color:' + ((e.unique_insights||[]).length >= 2 ? 'var(--success)' : 'var(--error)') + '">' + (e.unique_insights||[]).length + ' insights</span>'
+      + '<span style="color:' + ((e.unique_insights||[]).length >= 2 ? 'var(--success)' : 'var(--error)') + '">' + (e.unique_insights||[]).length + ' ins</span><br>'
+      + '<span style="color:' + (hasPreview ? 'var(--success)' : 'var(--muted)') + '" title="' + (hasPreview ? 'Style preview aanwezig' : 'Geen style preview') + '">' + (hasPreview ? '✓ prev' : '○ prev') + '</span>'
       + '</div></div>';
   }).join('') : '<div style="color:var(--muted);font-size:13px;padding:20px;text-align:center">Geen entries gevonden</div>';
 }

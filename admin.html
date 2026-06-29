@@ -1063,7 +1063,7 @@ async function generateStylePreviews() {
   await loadKnowledge();
 
   // Find entries without style_preview
-  var missing = localKnowledge.filter(function(e) { return !e.style_preview || e.style_preview.length < 10 || (!e.style_preview.trim().endsWith('.') && !e.style_preview.trim().endsWith('!') && !e.style_preview.trim().endsWith('?') && e.style_preview.length < 300); });
+  var missing = localKnowledge.filter(function(e) { return !e.style_preview || e.style_preview.length < 10 || (!e.style_preview.trim().endsWith('.') && !e.style_preview.trim().endsWith('!') && !e.style_preview.trim().endsWith('?')); });
   statusEl.textContent = missing.length + ' entries zonder preview gevonden...';
 
   if (!missing.length) {

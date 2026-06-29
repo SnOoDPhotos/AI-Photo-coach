@@ -2009,6 +2009,7 @@ async function analyzePhoto(dataUrl,isFirst){
   if(mainText) cumulativeAnalysis.push('FASE '+currentPhase+': '+mainText.slice(0,500));
   output.innerHTML=renderMarkdown(mainText);
   currentAnalysis=output.innerHTML;
+  setTimeout(function(){ output.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 100);
   statusText.textContent='V'+iteration+' GEANALYSEERD';
   document.getElementById('phaseLabel').textContent=PHASE_LABELS[currentPhase]||'';
   document.getElementById('phaseAdvanceBtn').disabled=currentPhase>=5;

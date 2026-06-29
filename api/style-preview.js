@@ -78,7 +78,14 @@ module.exports = async function handler(req, res) {
     const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
     if (!GEMINI_API_KEY) return res.status(500).json({ error: 'Gemini API key niet geconfigureerd' });
 
-    const toProcess = (entries || []).filter(e => !e.style_preview || e.style_preview.length < 10 || (!e.style_preview.trim().endsWith('.') && !e.style_preview.trim().endsWith('!') && !e.style_preview.trim().endsWith('?')));
+    const toProcess = (entries || []).filter(function(e) {
+      var p = e.style_preview || '';
+      if (!p || p.length < 10) return true;
+      if (!p.trim().endsWith('.') && !p.trim().endsWith('!') && !p.trim().endsWith('?')) return true;
+      // Opnieuw genereren als fotografnaam in de preview staat
+      if (e.photographer_name && p.toLowerCase().includes(e.photographer_name.toLowerCase())) return true;
+      return false;
+    });
     if (!toProcess.length) {
       return res.status(200).json({ success: true, generated: 0, skipped: 0, message: 'Alle entries hebben al een preview' });
     }

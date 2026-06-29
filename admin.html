@@ -686,7 +686,7 @@ function pushToDatabase() {
   })
   .then(function(r) { return r.json(); })
   .then(function(d) {
-    if (d.success) { el.textContent = '✓ ' + d.count + ' entries opgeslagen'; }
+    if (d.success) { el.textContent = '✓ ' + d.count + ' entries opgeslagen' + (d.previewsPreserved ? ' (' + d.previewsPreserved + ' stijl previews behouden)' : ''); }
     else { el.style.color = 'var(--error)'; el.textContent = '✗ ' + (d.error || 'Fout'); }
   })
   .catch(function(e) { el.style.color = 'var(--error)'; el.textContent = '✗ ' + e.message; });

@@ -92,6 +92,23 @@ module.exports = async function handler(req, res) {
       return res.status(200).json({ success: true, entries });
     }
 
+    // ── RESET STYLE PREVIEWS ──────────────────────────────────────────────────
+    if (action === 'reset_previews') {
+      const token = getToken(req);
+      if (!verifyAdminToken(token)) return res.status(403).json({ error: 'Geen toegang' });
+      // Leeg de aparte previews map
+      await kv('SET', 'style_previews:map', JSON.stringify({}));
+      // Verwijder style_preview uit alle kennisbank entries
+      const kb = await loadKnowledge();
+      const cleaned = kb.map(function(e) {
+        const c = Object.assign({}, e);
+        delete c.style_preview;
+        return c;
+      });
+      await saveKnowledge(cleaned);
+      return res.status(200).json({ success: true, message: 'Alle style previews gewist', count: cleaned.length });
+    }
+
     // ── PUBLIEKE STIJLENLIJST (geen auth nodig, voor expert stijl dropdown) ──
     if (action === 'styles') {
       const entries = await loadKnowledge();

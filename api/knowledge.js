@@ -66,6 +66,46 @@ function getToken(req) {
 }
 
 // ── Handler ───────────────────────────────────────────────────────────────
+
+// ── GitHub backup via Git Data API ────────────────────────────────────────
+async function pushToGitHub(entries) {
+  const ghToken = process.env.GITHUB_TOKEN;
+  const repo = process.env.GITHUB_REPO || 'SnOoDPhotos/AI-Photo-coach';
+  if (!ghToken) return { success: false, reason: 'geen GITHUB_TOKEN' };
+
+  const api = 'https://api.github.com/repos/' + repo;
+  const headers = {
+    'Authorization': 'token ' + ghToken,
+    'Content-Type': 'application/json',
+    'Accept': 'application/vnd.github.v3+json'
+  };
+
+  try {
+    const ref = await fetch(api + '/git/refs/heads/main', { headers }).then(r => r.json());
+    const commit = await fetch(api + '/git/commits/' + ref.object.sha, { headers }).then(r => r.json());
+    const content = Buffer.from(JSON.stringify(entries, null, 2)).toString('base64');
+    const blob = await fetch(api + '/git/blobs', {
+      method: 'POST', headers,
+      body: JSON.stringify({ content, encoding: 'base64' })
+    }).then(r => r.json());
+    const tree = await fetch(api + '/git/trees', {
+      method: 'POST', headers,
+      body: JSON.stringify({ base_tree: commit.tree.sha, tree: [{ path: 'knowledge-base.json', mode: '100644', type: 'blob', sha: blob.sha }] })
+    }).then(r => r.json());
+    const newCommit = await fetch(api + '/git/commits', {
+      method: 'POST', headers,
+      body: JSON.stringify({ message: 'Auto-backup: kennisbank bijgewerkt via admin', tree: tree.sha, parents: [ref.object.sha] })
+    }).then(r => r.json());
+    await fetch(api + '/git/refs/heads/main', {
+      method: 'PATCH', headers,
+      body: JSON.stringify({ sha: newCommit.sha })
+    });
+    return { success: true, commit: newCommit.sha.slice(0, 7) };
+  } catch(e) {
+    return { success: false, reason: e.message };
+  }
+}
+
 module.exports = async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
@@ -189,7 +229,9 @@ module.exports = async function handler(req, res) {
 
       const preserved = merged.filter(e => e.style_preview && e.style_preview.length > 10).length;
       await saveKnowledge(merged);
-      return res.status(200).json({ success: true, count: merged.length, previewsPreserved: preserved });
+      // Auto-backup naar GitHub
+      const ghResult = await pushToGitHub(merged);
+      return res.status(200).json({ success: true, count: merged.length, previewsPreserved: preserved, github: ghResult });
     }
 
     // ── ENTRY VERWIJDEREN ─────────────────────────────────────────────────

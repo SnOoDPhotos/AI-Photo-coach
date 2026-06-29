@@ -160,40 +160,29 @@ module.exports = async function handler(req, res) {
 
       const { force_reset } = req.body;
 
-      // Haal previews op uit aparte Redis key (nooit overschreven door export)
-      let previewMap = {};
+      // Merge: haal bestaande previews op uit Redis via youtube_url als sleutel
+      const previewMap = {};
       if (force_reset) {
-        // Reset modus: geen previews bewaren, ook aparte map leegmaken
-        await kv('SET', 'style_previews:map', JSON.stringify({}));
+        // Reset modus: geen previews bewaren
         await saveKnowledge(entries);
         return res.status(200).json({ success: true, count: entries.length, previewsPreserved: 0, reset: true });
       }
       try {
-        const previewsRaw = await kv('GET', 'style_previews:map');
-        if (previewsRaw) previewMap = JSON.parse(previewsRaw);
-      } catch(e) { console.log('Geen aparte previews key, probeer uit entries'); }
-
-      // Fallback: haal ook previews uit bestaande Redis entries
-      if (Object.keys(previewMap).length === 0) {
-        try {
-          const existing = await loadKnowledge();
-          existing.forEach(function(e) {
-            if (e.style_preview && e.style_preview.length > 10) {
-              const key = ((e.youtube_url || '') + '|' + (e.video_title || '')).toLowerCase();
-              previewMap[key] = e.style_preview;
-            }
-          });
-        } catch(e) {}
-      }
+        const existing = await loadKnowledge();
+        existing.forEach(function(e) {
+          if (e.style_preview && e.style_preview.length > 10) {
+            if (e.youtube_url) previewMap[e.youtube_url.toLowerCase().trim()] = e.style_preview;
+            if (e.video_title) previewMap[e.video_title.toLowerCase().trim()] = e.style_preview;
+          }
+        });
+      } catch(e) { console.log('Merge preview error:', e.message); }
 
       const merged = entries.map(function(e) {
-        // Alleen preview terugplaatsen als het veld NIET aanwezig is (undefined)
-        // Als het leeg is ('') of een expliciete waarde heeft, die keuze respecteren
-        if (e.style_preview === undefined) {
-          const key = ((e.youtube_url || '') + '|' + (e.video_title || '')).toLowerCase();
-          if (previewMap[key]) {
-            return Object.assign({}, e, { style_preview: previewMap[key] });
-          }
+        if (!e.style_preview || e.style_preview.length < 10) {
+          var preview = null;
+          if (e.youtube_url) preview = previewMap[e.youtube_url.toLowerCase().trim()];
+          if (!preview && e.video_title) preview = previewMap[e.video_title.toLowerCase().trim()];
+          if (preview) return Object.assign({}, e, { style_preview: preview });
         }
         return e;
       });

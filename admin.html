@@ -1104,6 +1104,9 @@ async function generateStylePreviews() {
   }
 
   if (statusEl.style.color !== 'var(--error)') {
+    // Herlaad localKnowledge vanuit Redis zodat previews zichtbaar zijn in overzicht
+    statusEl.textContent = 'Previews opgeslagen, kennisbank herladen...';
+    await loadKnowledge();
     statusEl.style.color = 'var(--success)';
     statusEl.textContent = '\u2713 Klaar! ' + totalGenerated + ' stijl previews gegenereerd';
     renderEntries();

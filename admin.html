@@ -102,6 +102,7 @@ input:focus,textarea:focus{border-color:var(--accent)}
         <h3>KENNISBANK ENTRIES</h3>
         <div style="display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap;align-items:center">
           <button class="btn btn-sm" onclick="generateStylePreviews()">✨ GENEREER STIJL PREVIEWS</button>
+          <button class="btn btn-sm btn-outline" onclick="resetStylePreviews()" style="font-size:10px">↺ RESET ALLE PREVIEWS</button>
           <span id="previewBatchStatus" style="font-family:monospace;font-size:11px;color:var(--muted)"></span>
         </div>
         <div class="filter-bar">
@@ -1110,6 +1111,34 @@ async function generateStylePreviews() {
     statusEl.style.color = 'var(--success)';
     statusEl.textContent = '\u2713 Klaar! ' + totalGenerated + ' stijl previews gegenereerd';
     renderEntries();
+  }
+}
+
+
+async function resetStylePreviews() {
+  if (!confirm('Alle bestaande stijl previews wissen? Ze worden zonder fotografnamen opnieuw gegenereerd.')) return;
+  var statusEl = document.getElementById('previewBatchStatus');
+  statusEl.style.color = 'var(--accent)';
+  statusEl.textContent = 'Bezig met resetten...';
+  try {
+    var r = await fetch('/api/style-preview', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({ action: 'reset_previews', token: authToken })
+    });
+    var d = await r.json();
+    if (d.success) {
+      await loadKnowledge();
+      statusEl.style.color = 'var(--success)';
+      statusEl.textContent = '✓ Alle previews gewist. Druk nu op GENEREER STIJL PREVIEWS.';
+      renderEntries();
+    } else {
+      statusEl.style.color = 'var(--error)';
+      statusEl.textContent = '✗ ' + (d.error || 'Fout');
+    }
+  } catch(e) {
+    statusEl.style.color = 'var(--error)';
+    statusEl.textContent = '✗ ' + e.message;
   }
 }
 

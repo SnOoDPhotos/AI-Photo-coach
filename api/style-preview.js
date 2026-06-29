@@ -65,7 +65,7 @@ module.exports = async function handler(req, res) {
     const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
     if (!GEMINI_API_KEY) return res.status(500).json({ error: 'Gemini API key niet geconfigureerd' });
 
-    const toProcess = (entries || []).filter(e => !e.style_preview || e.style_preview.length < 10);
+    const toProcess = (entries || []).filter(e => !e.style_preview || e.style_preview.length < 10 || (!e.style_preview.trim().endsWith('.') && !e.style_preview.trim().endsWith('!') && !e.style_preview.trim().endsWith('?') && e.style_preview.length < 300));
     if (!toProcess.length) {
       return res.status(200).json({ success: true, generated: 0, skipped: 0, message: 'Alle entries hebben al een preview' });
     }

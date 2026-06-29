@@ -1063,7 +1063,7 @@ async function generateStylePreviews() {
   await loadKnowledge();
 
   // Find entries without style_preview
-  var missing = localKnowledge.filter(function(e) { return !e.style_preview || e.style_preview.length < 10 || (!e.style_preview.trim().endsWith('.') && !e.style_preview.trim().endsWith('!') && !e.style_preview.trim().endsWith('?')); });
+  var missing = localKnowledge.filter(function(e) { return (function(e) { var p = e.style_preview || ''; if (!p || p.length < 10) return true; if (!p.trim().endsWith('.') && !p.trim().endsWith('!') && !p.trim().endsWith('?')) return true; if (e.photographer_name && p.toLowerCase().includes(e.photographer_name.toLowerCase())) return true; return false; })(e); });
   statusEl.textContent = missing.length + ' entries zonder preview gevonden...';
 
   if (!missing.length) {
@@ -1108,9 +1108,24 @@ async function generateStylePreviews() {
     // Herlaad localKnowledge vanuit Redis zodat previews zichtbaar zijn in overzicht
     statusEl.textContent = 'Previews opgeslagen, kennisbank herladen...';
     await loadKnowledge();
-    statusEl.style.color = 'var(--success)';
-    statusEl.textContent = '\u2713 Klaar! ' + totalGenerated + ' stijl previews gegenereerd';
+    statusEl.style.color = 'var(--accent)';
+    statusEl.textContent = '\u2713 Klaar! ' + totalGenerated + ' previews gegenereerd \u2014 automatisch opslaan...';
     renderEntries();
+    // Auto-export naar database
+    var exportEl = document.getElementById('initResult');
+    if (exportEl) { exportEl.style.color = 'var(--accent)'; exportEl.textContent = 'Bezig...'; }
+    fetch('/api/knowledge', {
+      method: 'POST', headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({ action: 'save_all', token: authToken, entries: localKnowledge })
+    })
+    .then(function(r) { return r.json(); })
+    .then(function(d) {
+      if (d.success) {
+        statusEl.textContent = '\u2713 Klaar! ' + totalGenerated + ' previews gegenereerd \u2014 ' + d.count + ' entries opgeslagen (' + (d.previewsPreserved||0) + ' previews bewaard)';
+        if (exportEl) exportEl.textContent = '\u2713 ' + d.count + ' entries automatisch opgeslagen';
+      }
+    })
+    .catch(function(e) { statusEl.textContent += ' (auto-export mislukt: ' + e.message + ')'; });
   }
 }
 

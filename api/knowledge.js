@@ -92,6 +92,13 @@ module.exports = async function handler(req, res) {
       return res.status(200).json({ success: true, entries });
     }
 
+    // ── PUBLIEKE STIJLENLIJST (geen auth nodig, voor expert stijl dropdown) ──
+    if (action === 'styles') {
+      const entries = await loadKnowledge();
+      // Return all fields needed for style selection
+      return res.status(200).json(entries);
+    }
+
     // ── ENTRY TOEVOEGEN ───────────────────────────────────────────────────
     if (action === 'add') {
       const token = getToken(req);

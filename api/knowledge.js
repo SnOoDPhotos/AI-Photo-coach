@@ -141,15 +141,25 @@ module.exports = async function handler(req, res) {
       const { entries } = req.body;
       if (!Array.isArray(entries)) return res.status(400).json({ error: 'entries array vereist' });
 
-      // Merge: behoud style_preview uit Redis voor bestaande entries
-      const existing = await loadKnowledge();
-      const previewMap = {};
-      existing.forEach(function(e) {
-        if (e.style_preview && e.style_preview.length > 10) {
-          const key = ((e.youtube_url || '') + '|' + (e.video_title || '')).toLowerCase();
-          previewMap[key] = e.style_preview;
-        }
-      });
+      // Haal previews op uit aparte Redis key (nooit overschreven door export)
+      let previewMap = {};
+      try {
+        const previewsRaw = await kv('GET', 'style_previews:map');
+        if (previewsRaw) previewMap = JSON.parse(previewsRaw);
+      } catch(e) { console.log('Geen aparte previews key, probeer uit entries'); }
+
+      // Fallback: haal ook previews uit bestaande Redis entries
+      if (Object.keys(previewMap).length === 0) {
+        try {
+          const existing = await loadKnowledge();
+          existing.forEach(function(e) {
+            if (e.style_preview && e.style_preview.length > 10) {
+              const key = ((e.youtube_url || '') + '|' + (e.video_title || '')).toLowerCase();
+              previewMap[key] = e.style_preview;
+            }
+          });
+        } catch(e) {}
+      }
 
       const merged = entries.map(function(e) {
         if (!e.style_preview || e.style_preview.length < 10) {

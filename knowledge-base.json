@@ -558,8 +558,7 @@
   {
     "video_title": "The Secret to Color in Lightroom (That Most Photographers Miss)",
     "genre": [
-      "landschap",
-      "bos"
+      "landschap"
     ],
     "light_conditions": [
       "gouden uur",
@@ -13139,8 +13138,7 @@
     "youtube_url": "https://youtube.com/watch?v=O3N_mcXh8L4",
     "genre": [
       "landschap",
-      "kust",
-      "bos"
+      "kust"
     ],
     "light_conditions": [
       "gouden uur",
@@ -14403,7 +14401,7 @@
     "youtube_url": "https://youtube.com/watch?v=TdAjIh1PAx8",
     "genre": [
       "portret",
-      "fantasy"
+      "experimenteel"
     ],
     "light_conditions": [
       "studio"
@@ -15320,7 +15318,7 @@
     "software": [
       "Lightroom Classic"
     ],
-    "style_description": "Een natuurlijke maar krachtige landschapsstijl waarbij de nadruk ligt op het herstellen van details in de lucht en het behouden van realistische overgangen langs complexe randen zoals bergen en bomen.",
+    "style_description": "Natural Sky Detail",
     "philosophy": "Het streven naar een realistische weergave van lichtsterkte. In de echte natuur verschilt de helderheid van de lucht aan de horizon van die aan de bovenkant van het frame; maskers moeten deze natuurlijke lichtafval nabootsen om overbewerkte effecten te voorkomen.",
     "workflow_order": [
       "Sky Mask selectie",
@@ -15405,7 +15403,7 @@
     "youtube_url": "https://youtu.be/mfJeFDrboKI",
     "genre": [
       "algemeen",
-      "grafisch"
+      "grafisch ontwerp"
     ],
     "light_conditions": [
       "Studio",
@@ -15419,7 +15417,7 @@
     "software": [
       "Photoshop"
     ],
-    "style_description": "Een gestructureerde en uiterst efficiënte bewerkingsstijl die gericht is op een georganiseerde workspace, naadloze objectverwijdering en gelaagde composities waarbij tekst en grafische elementen vloeiend worden geïntegreerd.",
+    "style_description": "Structured Photoshop Composite",
     "philosophy": "Photoshop is simpel zodra je de kernconcepten begrijpt. Het draait niet om het uit je hoofd leren van stappen, maar om het beheersen van het canvas, de tools en de panelen om volledige creatieve controle te krijgen.",
     "workflow_order": [
       "Workspace inrichten en opslaan",
@@ -15518,7 +15516,7 @@
     "software": [
       "Luminar Neo"
     ],
-    "style_description": "Een snelle, toegankelijke en AI-gestuurde bewerkingsstijl die specifiek is ontworpen om vlakke dronebeelden binnen enkele seconden om te zetten in levendige, contrastrijke en deelwaardige composities zonder complexe handmatige maskers.",
+    "style_description": "Fast AI Drone Edit",
     "philosophy": "Fotobewerking hoeft voor beginners niet intimiderend of tijdrovend te zijn. Door de kracht van AI-tools slim in te zetten, kun je de compositie versterken en sfeer toevoegen in een fractie van de tijd die traditionele software vereist.",
     "workflow_order": [
       "Compositie herstructureren via AI-cropping",
@@ -15614,7 +15612,7 @@
     "software": [
       "Lightroom Classic"
     ],
-    "style_description": "Een minimalistische, dromerige en zachte landschapsstijl die gekenmerkt wordt door subtiele contrasten, pastelachtige vloeiende kleurovergangen en het elimineren van harde, afleidende texturen ten gunste van een sfeervolle, schilderachtige sfeer.",
+    "style_description": "Soft Dreamy Landscape",
     "philosophy": "Minder is meer in de nabewerking van zachte landschappen. Het doel is niet om de realiteit te forceren met harde structuren en felle verzadiging, maar om de natuurlijke vloeiendheid van het licht en de sfeer te versterken door bewuste verzachting en tonale rust.",
     "workflow_order": [
       "Basisbelichting en witbalans kalibreren",
@@ -15712,7 +15710,7 @@
       "Camera Raw (Photoshop)",
       "Photoshop"
     ],
-    "style_description": "Een krachtige, cinematografische landschapsstijl die gericht is op het herstellen van dynamisch bereik uit vlakke RAW-bestanden, het accentueren van natuurlijke lichtbanen (crepusculaire stralen) en het sturen van de blik via een sterke panoramische uitsnede en diepe vignetten.",
+    "style_description": "Cinematic RAW Recovery",
     "philosophy": "Fotobewerking is geen zwarte magie maar een logisch systeem. Door een gestructureerd proces te volgen van compositie, tonale balans en gerichte lokale accenten, transformeer je een vlak RAW-bestand in een indrukwekkend beeld dat de ware sfeer van het moment overbrengt.",
     "workflow_order": [
       "Tijdelijke belichtingslaag aanmaken voor visuele controle",
@@ -15812,7 +15810,7 @@
     "software": [
       "Lightroom Classic"
     ],
-    "style_description": "Een technisch onderbouwde en loepzuivere landschapsstijl die steunt op optimale dataverzameling in het veld. De nadruk ligt op het maximaliseren van de signaal-ruisverhouding om in de nabewerking schone, ruisvrije schaduwen en rijke middentonen te realiseren.",
+    "style_description": "Technical Clean Landscape",
     "philosophy": "De camera-sensor verzamelt de helft van al zijn tonale data in de allerlichtste stop van het histogram. Door ETTR (Expose to the Right) toe te passen, dwing je de sensor om met maximale efficiëntie lichtdeeltjes te vangen, waardoor digitale ruis in de schaduwpartijen bij de nabewerking effectief wordt geminimaliseerd.",
     "workflow_order": [
       "In-camera histogram analyseren in het veld",
@@ -15911,7 +15909,7 @@
     "software": [
       "Lightroom Classic"
     ],
-    "style_description": "Een sterk impressionistische en abstracte fine-art benadering van bosfotografie, waarbij de natuurlijke chaos van verbrande en dichte bossen wordt gereduceerd tot pure vorm, ritme en grafische patronen door middel van gelaagde meervoudige belichtingen.",
+    "style_description": "Abstract ICM Forest",
     "philosophy": "Fotografische inspiratie en creativiteit floreren door experimenten, juist wanneer de omstandigheden niet optimaal zijn. In plaats van te wachten op 'perfect' dramatisch licht, kun je met in-camera technieken de visuele complexiteit van de natuur vereenvoudigen en transformeren naar abstracte kunst.",
     "workflow_order": [
       "Selectie van een grafisch patroon of textuur in een bosrijke omgeving",
@@ -16010,7 +16008,7 @@
     "software": [
       "Lightroom Classic"
     ],
-    "style_description": "Een minimalistische en schilderachtige fine-art stijl die de grenzen van traditionele landschapsfotografie doorbreekt. Door middel van bewuste camerabewegingen (ICM) worden textuur, kleur en ritme belangrijker gemaakt dan scherpte en herkenbaarheid.",
+    "style_description": "Painterly ICM Fine Art",
     "philosophy": "Wanneer je vastloopt in de traditionele regels van compositie en scherpte, biedt ICM een uitweg om emotie en abstractie voorrang te geven. Fotografie hoeft de realiteit niet letterlijk te registreren; het mag fungeren als een canvas voor pure kleurvlakken en impressionistische vormen.",
     "workflow_order": [
       "Locatie selecteren met sterke contrasterende kleurvlakken of grafische lijnen",
@@ -16104,7 +16102,7 @@
     "software": [
       "Lightroom Classic"
     ],
-    "style_description": "Een verfijnde, gebalanceerde landschapsstijl die de nadruk legt op het creëren van diepte en visuele paden. De focus ligt op het geleidelijk sturen van het oog van de kijker door de scène met behulp van natuurlijke lichtovergangen en gecontroleerde kleurtonen.",
+    "style_description": "Balanced Depth Landscape",
     "philosophy": "Succesvolle fotobewerking draait niet om het willekeurig verplaatsen van schuifregelaars totdat het beeld er 'leuk' uitziet. Het vereist een doelgerichte visie waarbij elke aanpassing, hoe subtiel ook, direct bijdraagt aan de visuele hiërarchie en de dieptewerking binnen de compositie.",
     "workflow_order": [
       "Globaal profiel kiezen en lenscorrecties toepassen",
@@ -16207,7 +16205,7 @@
       "Photoshop",
       "DNG Profile Editor"
     ],
-    "style_description": "Een surrealistische en buitenaardse fine-art stijl gekenmerkt door sneeuwwitte vegetatie (het Wood-effect) en diepe, contrastrijke luchten, waarbij valse kleuren via kanaalwisselingen nauwkeurig worden gestuurd.",
+    "style_description": "Surreal Infrared Wood Effect",
     "philosophy": "Infraroodfotografie maakt het onzichtbare zichtbaar. Het dwingt de fotograaf om traditionele opvattingen over kleur en licht los te laten en te vertrouwen op de reflectiviteit van chlorofyl en de textuur van het onzichtbare lichtspectrum.",
     "workflow_order": [
       "Aangepast DNG-kleurprofiel maken voor extreme witbalansuitbreiding",
@@ -16308,7 +16306,7 @@
       "Lightroom Classic",
       "Photoshop"
     ],
-    "style_description": "Een diep minimalistische, hoog-contrast zwart-witstijl die de nadruk legt op grafische structuren, geometrische patronen in het landschap en grote vlakken van tonale rust (zoals diepe zwarten en helder wit) om een schilderachtige abstractie te bereiken.",
+    "style_description": "Minimal Graphic Monochrome",
     "philosophy": "Zwart-witfotografie is niet het simpelweg weghalen van kleur; het is het deconstrueren van de realiteit tot de essentie van vorm, licht en schaduw. Door kleur te elimineren, dwing je de kijker om de onderliggende geometrie en de poëtische stilte van een scène te ervaren.",
     "workflow_order": [
       "Kleurprofiel omzetten naar een monochrome basis",
@@ -16407,7 +16405,7 @@
       "Lightroom Classic",
       "Photoshop"
     ],
-    "style_description": "Een strakke, technisch verantwoorde en efficiënte bewerkingsstijl die gericht is op het behouden van maximale beeldkwaliteit tijdens het naadloos schakelen tussen Lightroom en Photoshop, zonder onnodige schijfruimte te verspillen.",
+    "style_description": "Clean LR PS Workflow",
     "philosophy": "Software moet je workflow dienen, niet vertragen. Door de exacte werking van de koppeling tussen Lightroom en Photoshop te begrijpen, voorkom je destructieve bewerkingen, dubbele bestanden en verlies van kostbare bitdiepte.",
     "workflow_order": [
       "Basis RAW-correcties uitvoeren in Lightroom Classic",
@@ -18718,7 +18716,7 @@
     "youtube_url": "https://youtu.be/WN5ncWPpjjI?is=YnRHSSmjIv-EPkCu",
     "genre": [
       "portret",
-      "event",
+      "documentaire",
       "architectuur",
       "landschap"
     ],
@@ -18816,8 +18814,8 @@
     "photographer_name": "Mike Jeffrey",
     "youtube_url": "https://youtu.be/yDYGUeojEQY?is=L62dy-msIBw5Pk_j",
     "genre": [
-      "wedding",
-      "portrait"
+      "trouwfotografie",
+      "portret"
     ],
     "light_conditions": [
       "binnenlicht",
@@ -18915,9 +18913,8 @@
     "photographer_name": "Athena and Camron",
     "youtube_url": "https://youtu.be/uMXl6v6qY5c?is=Rgp09hfAsnfDGIyW",
     "genre": [
-      "wedding",
-      "portrait",
-      "elopement"
+      "trouwfotografie",
+      "portret"
     ],
     "light_conditions": [
       "natuurlijk licht",
@@ -19011,8 +19008,7 @@
     "photographer_name": "Mads Peter Iversen",
     "youtube_url": "https://youtu.be/mpJmT_nyyus?is=Y-895TFXWaI6hRaw",
     "genre": [
-      "landschap",
-      "bosfotografie"
+      "landschap"
     ],
     "light_conditions": [
       "mistig",
@@ -19112,8 +19108,8 @@
     "photographer_name": "Danny Bligh",
     "youtube_url": "https://youtu.be/x1OIe-9ngyo?is=YQv6JSppxr81PmWw",
     "genre": [
-      "wedding",
-      "event"
+      "trouwfotografie",
+      "documentaire"
     ],
     "light_conditions": [
       "gemengd licht",
@@ -19207,9 +19203,9 @@
     "photographer_name": "Luke Cleland",
     "youtube_url": "https://youtu.be/VyWW5mwjJGM?is=i5sx2-VTfo26KdSk",
     "genre": [
-      "wedding",
-      "portrait",
-      "travel"
+      "trouwfotografie",
+      "portret",
+      "reisfotografie"
     ],
     "light_conditions": [
       "direct zonlicht",
@@ -19307,8 +19303,7 @@
     "photographer_name": "Nicos Photography Show",
     "youtube_url": "https://youtu.be/mISr551np6g?is=TfRsWR8y-TOi97Xu",
     "genre": [
-      "wildlife",
-      "vogeloverzicht"
+      "wildlife"
     ],
     "light_conditions": [
       "diffuus licht",
@@ -19407,9 +19402,9 @@
     "photographer_name": "Allie Chambers",
     "youtube_url": "https://youtu.be/8cHFHCdghw4?is=334UHKZ5PwPCwhUK",
     "genre": [
-      "wedding",
-      "portrait",
-      "editorial"
+      "trouwfotografie",
+      "portret",
+      "documentaire"
     ],
     "light_conditions": [
       "gouden uur",
@@ -19511,7 +19506,6 @@
     "youtube_url": "https://youtu.be/Qs5VMyQVJ8o?is=_YBgfokJcAtOywZ6",
     "genre": [
       "wildlife",
-      "vogelonline",
       "landschap"
     ],
     "light_conditions": [
@@ -19609,8 +19603,7 @@
     "photographer_name": "Duade Paton",
     "youtube_url": "https://youtu.be/Ige8ElakSdA?is=wf1SiHkyc3qwCiFt",
     "genre": [
-      "wildlife",
-      "vogeloverzicht"
+      "wildlife"
     ],
     "light_conditions": [
       "tegenlicht",
@@ -19706,7 +19699,7 @@
     "photographer_name": "James",
     "youtube_url": "https://youtu.be/u9Jepx1MsjQ?is=yAYx480QWEkkhYJX",
     "genre": [
-      "bruiloft",
+      "trouwfotografie",
       "portret"
     ],
     "light_conditions": [
@@ -19794,7 +19787,7 @@
     "photographer_name": "Magic",
     "youtube_url": "https://youtu.be/dk3okZaQgEM?is=WDxpuGOoEJ5ll4bs",
     "genre": [
-      "bruiloft",
+      "trouwfotografie",
       "portret"
     ],
     "light_conditions": [
@@ -19888,7 +19881,7 @@
     "photographer_name": "Smart Graphics",
     "youtube_url": "https://www.youtube.com/watch?v=wOAuLWy-Awc",
     "genre": [
-      "bruiloft",
+      "trouwfotografie",
       "portret"
     ],
     "light_conditions": [

@@ -1121,7 +1121,7 @@ async function resetStylePreviews() {
   statusEl.style.color = 'var(--accent)';
   statusEl.textContent = 'Bezig met resetten...';
   try {
-    var r = await fetch('/api/style-preview', {
+    var r = await fetch('/api/knowledge', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({ action: 'reset_previews', token: authToken })

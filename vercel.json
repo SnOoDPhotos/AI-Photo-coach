@@ -40,6 +40,5 @@
       "maxDuration": 60,
       "memory": 512
     }
-  },
-  "_comment": "Deploy triggered voor cache refresh admin.html"
+  }
 }

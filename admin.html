@@ -1056,8 +1056,15 @@ async function generateStylePreviews() {
   var statusEl = document.getElementById('previewBatchStatus');
   if (!authToken) { statusEl.textContent = 'Niet ingelogd'; return; }
 
+  // Zorg dat we de laatste versie uit Redis hebben (niet de lokale cache)
+  statusEl.style.color = 'var(--accent)';
+  statusEl.textContent = 'Kennisbank laden uit Redis...';
+  await loadKnowledge();
+
   // Find entries without style_preview
   var missing = localKnowledge.filter(function(e) { return !e.style_preview || e.style_preview.length < 10; });
+  statusEl.textContent = missing.length + ' entries zonder preview gevonden...';
+
   if (!missing.length) {
     statusEl.style.color = 'var(--success)';
     statusEl.textContent = '\u2713 Alle entries hebben al een stijl preview!';

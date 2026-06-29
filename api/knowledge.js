@@ -158,8 +158,16 @@ module.exports = async function handler(req, res) {
       const { entries } = req.body;
       if (!Array.isArray(entries)) return res.status(400).json({ error: 'entries array vereist' });
 
+      const { force_reset } = req.body;
+
       // Haal previews op uit aparte Redis key (nooit overschreven door export)
       let previewMap = {};
+      if (force_reset) {
+        // Reset modus: geen previews bewaren, ook aparte map leegmaken
+        await kv('SET', 'style_previews:map', JSON.stringify({}));
+        await saveKnowledge(entries);
+        return res.status(200).json({ success: true, count: entries.length, previewsPreserved: 0, reset: true });
+      }
       try {
         const previewsRaw = await kv('GET', 'style_previews:map');
         if (previewsRaw) previewMap = JSON.parse(previewsRaw);

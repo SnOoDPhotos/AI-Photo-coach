@@ -35493,5 +35493,186 @@
       "Hij gebruikt de originele foto enkel als 'mal' voor de horizonlijn, om perspectivische fouten in zijn virtuele studio te voorkomen."
     ],
     "style_preview": "Deze stijl transformeert een simpel shot tot een klinische, high-end e-commerce render. Het proces leunt meer op grafisch ontwerp dan op traditionele bewerking. Het resultaat is een hyperglad, perfect gebalanceerd beeld met een premium uitstraling, uitermate geschikt voor cosmetica en verzorgingsproducten. Fotografen die streven naar een 'perfecte' studio-look zullen veel hebben aan deze virtuele constructiemethode."
+  },
+  {
+    "video_title": "Transform your Product Images Part 1",
+    "photographer_name": "Gary McIntyre Photographer",
+    "youtube_url": "https://www.youtube.com/watch?v=pSR9R78RFQ4",
+    "genre": [
+      "product"
+    ],
+    "light_conditions": [
+      "kunstlicht"
+    ],
+    "mood": [
+      "natuurlijk",
+      "clean"
+    ],
+    "software": [
+      "Photoshop",
+      "Lightroom Classic"
+    ],
+    "style_description": "Clean Realistische Productfotografie",
+    "philosophy": "Professionele productfotografie is vaak het resultaat van het oplossen van onvolkomenheden in een krappe studioruimte. Het combineren van Photoshop voor rigoureuze retouche en Lightroom voor de sfeerzetting is essentieel. Focus ligt op het 'faken' van een professionele studio-look met beperkte middelen door slim gebruik van maskers en gradiënten.",
+    "workflow_order": [
+      "stap 1: Verwijder afleidende reflecties en vlekken op het product in Photoshop.",
+      "stap 2: Corrigeer vervormingen in de basisvorm door gebruik van Warp en maskerovergangen.",
+      "stap 3: Bouw een kunstmatig lichtoppervlak door gradiënten en lagen te combineren.",
+      "stap 4: Gebruik maskers in Lightroom voor lokale belichtingscontrole en sfeer."
+    ],
+    "techniques": [
+      {
+        "name": "Vervormingscorrectie via Warp",
+        "description": "Selecteer een recht gedeelte van de vorm, kopieer naar een nieuwe laag, en gebruik 'Warp' om de curve naadloos aan te sluiten op de rest van het object.",
+        "when_to_use": "Wanneer een productvorm onnatuurlijke knikken of vervormingen vertoont door de opnamehoek.",
+        "tools": [
+          "Warp Tool",
+          "Layer Mask"
+        ],
+        "effect": "Het object krijgt zijn ideale, vloeiende geometrische vorm terug."
+      },
+      {
+        "name": "Kunstmatige Lichtgradiënt",
+        "description": "Teken met de Gradient tool op een nieuwe laag (perceptueel) en pas de opaciteit aan om een lichtval na te bootsen die er in werkelijkheid niet was.",
+        "when_to_use": "Wanneer de productfoto een saaie of egale achtergrond heeft en 'pop' mist.",
+        "tools": [
+          "Gradient Tool",
+          "Opacity"
+        ],
+        "effect": "Een schijnbaar professionele belichting (spotlight-effect) die diepte toevoegt."
+      },
+      {
+        "name": "Randverzachting met Eraser",
+        "description": "Gebruik een grote, zachte gum (op 50-70% opaciteit) en trek een lijn met Shift ingedrukt om harde overgangen in retouchelagen te verzachten.",
+        "when_to_use": "Wanneer retouche-aanpassingen te harde, zichtbare randen achterlaten.",
+        "tools": [
+          "Eraser Tool"
+        ],
+        "effect": "De bewerkte delen vloeien onzichtbaar over in het originele beeld."
+      },
+      {
+        "name": "Masker Intersectie",
+        "description": "Intersteer het subjectmasker met een lineair verloopfilter om de belichting alleen op specifieke productdelen toe te passen.",
+        "when_to_use": "Wanneer je een product wilt oplichten zonder de omliggende achtergrond of schaduwen te beïnvloeden.",
+        "tools": [
+          "Masking (Intersect)"
+        ],
+        "effect": "Gerichte belichting die alleen het product naar voren haalt."
+      },
+      {
+        "name": "Kleurreflectie in Schaduw",
+        "description": "Voeg een lichte blauwe tint toe aan de schaduwen in de achtergrond voor een koud/warm contrast.",
+        "when_to_use": "Wanneer de achtergrond te neutraal of 'dood' oogt.",
+        "tools": [
+          "Masking (Exposure & Temp)"
+        ],
+        "effect": "Een cinematisch contrast tussen de diepe schaduwen en het productlicht."
+      }
+    ],
+    "color_approach": "Hij houdt de basis neutraal en 'clean', maar voegt in de eindfase via Lightroom-maskers subtiele koelere blauwtinten toe aan de schaduwen om diepte en professionele sfeer te creëren.",
+    "local_adjustments": "Maskers zijn de ruggengraat; hij gebruikt ze in Lightroom om de achtergrond te scheiden van het product (Subject Select) en gebruikt gradiënten om spotlight-effecten te simuleren.",
+    "what_to_avoid": [
+      "Het inschakelen van 'Snap' tijdens precisiewerk (zoals Warp en uitlijnen), want dit belemmert vrije correctie",
+      "Hardere eraser-instellingen bij het blenden van retouche-lagen"
+    ],
+    "best_for": "Voor productfotografen die in een beperkte ruimte (zoals een thuissituatie) werken en de 'looks' van een grote studio willen nabootsen.",
+    "unique_insights": [
+      "Hij gebruikt de Eraser-tool met de Shift-toets om perfect rechte, zachte overgangen te maken in zijn retouche-lagen, wat vaak natuurlijker oogt dan een masker.",
+      "Bij het corrigeren van lijnen maakt hij een 'revealing' masker en schildert hij in plaats van te gummen, omdat dit altijd de mogelijkheid tot correctie openhoudt.",
+      "Hij merkt op dat als je als fotograaf 'oefent' met editing, je sneller leert welke fouten je in de camera (tijdens het schieten) moet vermijden."
+    ],
+    "style_preview": "Deze fotograaf streeft naar een zeer verzorgde, commerciële 'clean' look. Het proces is technisch en geduldig, waarbij elk detail van de productvorm wordt geoptimaliseerd. Het resultaat is een beeld dat eruitziet alsof het in een dure studio is geschoten, terwijl het in werkelijkheid het resultaat is van slimme composiet-technieken en gedisciplineerde retouche."
+  },
+  {
+    "video_title": "Product Photography editing TRICK that might save your photo!",
+    "photographer_name": "Skyler Ewing Photography",
+    "youtube_url": "https://www.youtube.com/watch?v=wfIjADQBPak",
+    "genre": [
+      "product"
+    ],
+    "light_conditions": [
+      "kunstlicht"
+    ],
+    "mood": [
+      "symmetrisch",
+      "helder"
+    ],
+    "software": [
+      "Photoshop",
+      "Lightroom Classic"
+    ],
+    "style_description": "Symmetrische Product Glamour",
+    "philosophy": "Symmetrie is de sleutel tot een luxe, commerciële uitstraling. Wanneer een kant van het product beter is verlicht dan de andere, is spiegeling en het slim terugbrengen van details (zoals een straw of textuur) de snelste weg naar perfectie. Het doel is een beeld dat esthetisch in balans is, zelfs als de originele opname imperfect was.",
+    "workflow_order": [
+      "stap 1: Basis-edit in Lightroom voor algemeen contrast en kleur.",
+      "stap 2: Selecteer de beste helft van het product en spiegel deze voor perfecte symmetrie.",
+      "stap 3: Breng noodzakelijke details (zoals een rietje of bubbels) terug via een masker op een duplicaatlaag.",
+      "stap 4: Voeg een 'sun flare' toe via Screen blend modus.",
+      "stap 5: Verwijder de lelijke bounding box van de flare met een Levels adjustment layer."
+    ],
+    "techniques": [
+      {
+        "name": "Symmetrische Spiegeling",
+        "description": "Gebruik de Rectangular Marquee tool om de helft van de foto te selecteren, dupliceer, transformeer (Cmd+T), verplaats het ankerpunt naar het midden en flip horizontaal.",
+        "when_to_use": "Wanneer één kant van het product een veel betere lichtinval heeft dan de andere.",
+        "tools": [
+          "Rectangular Marquee Tool",
+          "Transform Tool"
+        ],
+        "effect": "Het product krijgt een perfect symmetrische, professionele balans."
+      },
+      {
+        "name": "Details Terughalen via Masker",
+        "description": "Dupliceer de achtergrondlaag, zet deze op 50% opacity, maak een zwart masker en schilder met wit de originele details (zoals het rietje) terug.",
+        "when_to_use": "Wanneer spiegeling van een product essentiële details (transparantie, rietjes, vloeistof) laat verdwijnen.",
+        "tools": [
+          "Layer Mask",
+          "Brush Tool"
+        ],
+        "effect": "Het product ziet er weer 3D en transparant uit, alsof het niet alleen maar gespiegeld is."
+      },
+      {
+        "name": "Bounding Box Fix",
+        "description": "Voeg een Levels adjustment laag toe als clipping mask aan de flare-laag en schuif de zwarte input naar rechts tot de kader-rand verdwijnt.",
+        "when_to_use": "Wanneer je een flare-afbeelding toevoegt die een zichtbare, vierkante rand (bounding box) heeft.",
+        "tools": [
+          "Levels",
+          "Clipping Mask"
+        ],
+        "effect": "De flare versmelt perfect met de achtergrond zonder dat de digitale rand zichtbaar is."
+      },
+      {
+        "name": "Smetten Verwijderen",
+        "description": "Gebruik de Spot Healing brush op een lege nieuwe laag om luchtbubbels of onzuiverheden op het product weg te poetsen.",
+        "when_to_use": "Na het spiegelen van een object, waardoor onzuiverheden ineens dubbel en onnatuurlijk aanwezig zijn.",
+        "tools": [
+          "Spot Healing Brush"
+        ],
+        "effect": "Een vlekkeloos en strak productoppervlak."
+      },
+      {
+        "name": "Screen Flare Compositing",
+        "description": "Plaats een flare-afbeelding, verander de blendmodus naar 'Screen' en schaal de flare naar de lichtbron in de foto.",
+        "when_to_use": "Om een saaie achtergrond te voorzien van een sprankelend, sfeervol lichteffect.",
+        "tools": [
+          "Place Embedded",
+          "Blend Modes (Screen)"
+        ],
+        "effect": "Een dromerige, professionele lichtinval die de sfeer naar een hoger plan tilt."
+      }
+    ],
+    "color_approach": "Kleur wordt in Lightroom ingesteld voor een krachtige basis (contrast, helderheid, verzadiging), waarna in Photoshop de flare wordt gebruikt om de sfeer te bepalen zonder de productkleuren aan te tasten.",
+    "local_adjustments": "Lokale maskers worden specifiek ingezet om 'verloren' onderdelen (zoals een rietje in vloeistof) terug te halen in een symmetrische compositie.",
+    "what_to_avoid": [
+      "Het vergeten dat een rietje of logo verdwijnt bij een spiegeling (altijd dubbelchecken)",
+      "Flare-bestanden toevoegen zonder de zwarte randen weg te werken via Levels"
+    ],
+    "best_for": "Voor productfotografen die producten zoals parfums, flessen of drank fotograferen en streven naar een high-end, symmetrische esthetiek.",
+    "unique_insights": [
+      "Hij spiegelt de 'goede' helft van een product om perfectie te forceren, maar corrigeert de 'leugen' direct door via een 50% opaciteit-laag de originele, dieper gelegen details (het rietje) terug te schilderen.",
+      "De 'Levels-truc' om een bounding box van een flare weg te werken is een cruciale redding wanneer je flare-overlays gebruikt die niet perfect transparant zijn.",
+      "Het verplaatsen van het 'ankerpunt' naar het midden vóór het flippen (transformeren) is de meest efficiënte manier om objecten symmetrisch te spiegelen in Photoshop."
+    ],
+    "style_preview": "Deze fotograaf hanteert een stijl die draait om esthetische perfectie en symmetrie. Het proces is gericht op 'tricks' en slimme shortcuts om onvolkomenheden direct uit te wissen. Het resultaat is een beeld dat er zeer gepolijst en commercieel uitziet, ideaal voor cosmetica of high-end dranken. Het is een uitstekende stijl voor fotografen die liever slim editen dan uren in de studio perfectioneren."
   }
 ]

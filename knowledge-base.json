@@ -34962,5 +34962,264 @@
       "Hij kiest er soms bewust voor om 'Profile Corrections' (lenscorrectie) uit te laten staan, omdat de vervormingscorrectie objecten (zoals een klein huisje) kan uitrekken (stretching), wat er onnatuurlijk uitziet."
     ],
     "style_preview": "De bewerkingsstijl is moody, gecontroleerd en technisch zuiver. Het is een stijl die rust uitstraalt door de koele kleuren, maar tegelijkertijd veel diepte en drama biedt door gericht gebruik van contrast en textuur. Dit is perfect voor fotografen die houden van klassieke landschapsfotografie waarbij elk detail in de compositie – van rots tot wolk – de aandacht van de kijker vasthoudt."
+  },
+  {
+    "video_title": "Lightroom Tutorial | How to Edit a Seascape Photo in Lightroom",
+    "photographer_name": "GfixU",
+    "youtube_url": "https://www.youtube.com/watch?v=Tzcr3wmFaOM",
+    "genre": [
+      "kust"
+    ],
+    "light_conditions": [
+      "daglicht"
+    ],
+    "mood": [
+      "levendig",
+      "dramatisch"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Kleurrijke Dramatische Kust",
+    "philosophy": "De basis van een goede edit is eerst het oplossen van technische fouten (horizon, witbalans) voordat je creatief aan de slag gaat. Daarna wordt het dynamisch bereik maximaal opgerekt en worden specifieke kleuren selectief verzadigd om een levendig maar realistisch beeld te creëren.",
+    "workflow_order": [
+      "Stap 1: Toepassen van lenscorrecties en het perfect waterpas zetten van de horizon.",
+      "Stap 2: Witbalans kalibreren op een neutraal grijze zone.",
+      "Stap 3: Hooglichten dempen en schaduwen opentrekken voor maximaal dynamisch bereik.",
+      "Stap 4: HSL-paneel gebruiken om specifieke blauw- en groentinten in het water te versterken."
+    ],
+    "techniques": [
+      {
+        "name": "Lenscorrecties inschakelen",
+        "description": "Vink 'Enable Profile Corrections' aan om automatische lensvervorming en lichtafval te verwijderen.",
+        "when_to_use": "Als eerste stap bij RAW-bestanden, vooral bij groothoekopnames van landschappen.",
+        "tools": [
+          "Lens Corrections"
+        ],
+        "effect": "Het beeld wordt vlakker en eventuele donkere randen verdwijnen."
+      },
+      {
+        "name": "Target Witbalans",
+        "description": "Gebruik het pipet om een neutraal grijze (niet puur witte) zone aan te klikken voor een nauwkeurige kleurtemperatuur.",
+        "when_to_use": "Wanneer de algehele kleurzweem van de foto onnatuurlijk oogt door gemengd licht of verkeerde camera-instellingen.",
+        "tools": [
+          "Basic (White Balance Selector)"
+        ],
+        "effect": "Kleurzwemen verdwijnen en kleuren ogen direct natuurgetrouw."
+      },
+      {
+        "name": "Alt-toets Clipping",
+        "description": "Houd de Alt-toets ingedrukt tijdens het verschuiven van de Whites en Blacks sliders tot er net kleurspikkels verschijnen.",
+        "when_to_use": "Om het absolute maximale contrast te bereiken zonder essentiële textuur te verliezen in lichte of donkere delen.",
+        "tools": [
+          "Basic (Whites & Blacks)"
+        ],
+        "effect": "De foto krijgt maximale punch en diepte zonder uitgebeten of dichtgelopen pixels."
+      },
+      {
+        "name": "Middentonen S-curve",
+        "description": "Plaats drie controlepunten in het middengedeelte van de Tone Curve en maak een subtiele S-vorm.",
+        "when_to_use": "Voor het toevoegen van contrast in de middentonen nadat de schaduwen en hooglichten zijn genormaliseerd.",
+        "tools": [
+          "Tone Curve"
+        ],
+        "effect": "Het contrast neemt toe zonder de extreme lichte en donkere delen aan te tasten."
+      },
+      {
+        "name": "Waterkleur Versterking",
+        "description": "Verhoog de saturatie van groen, aqua en blauw specifiek in het HSL-paneel en versleep de tinten iets richting cyaan.",
+        "when_to_use": "Bij zeelandschappen waar het water flets oogt en de hoofdkleur van de compositie moet dragen.",
+        "tools": [
+          "HSL/Color"
+        ],
+        "effect": "Het water krijgt een rijke, levendige en uitnodigende kleur die contrasteert met de omgeving."
+      }
+    ],
+    "color_approach": "Hij richt zich op een realistische basis met een gecontroleerde boost. In plaats van algemene verzadiging te gebruiken, kalibreert hij eerst de witbalans strikt op neutraal grijs en duwt hij daarna via HSL alleen de kleuren van de zee (blauw en groen) naar voren.",
+    "local_adjustments": "In deze workflow ligt de nadruk op globale aanpassingen via curven en HSL; lokale maskers worden geminimaliseerd om het beeld als één consistent, levendig geheel te houden.",
+    "what_to_avoid": [
+      "Het pipet voor de witbalans op puur wit klikken in plaats van op lichtgrijs, wat leidt tot extreme kleurverschuivingen",
+      "De algemene saturation slider misbruiken in plaats van specifieke HSL-aanpassingen te doen"
+    ],
+    "best_for": "Voor kleurrijke kustfoto's bij daglicht waar de natuurlijke kleuren een extra, maar realistische, impuls nodig hebben.",
+    "unique_insights": [
+      "Hij waarschuwt expliciet om bij de witbalans-picker nooit op 100% wit te klikken, omdat dit de kleuren drastisch vervalst; zoek altijd een muisgrijze referentie in beeld.",
+      "Bij het bouwen van de S-curve plaatst hij eerst drie vaste ankerpunten voordat hij schuift, wat voorkomt dat de curve onbedoeld uitschiet en de belichting ruïneert.",
+      "Hij gebruikt de lensprofielcorrectie niet alleen voor vignet-verwijdering, maar ziet het als noodzakelijke 'stretching' om de ware proporties van het landschap te herstellen."
+    ],
+    "style_preview": "Deze stijl is direct, kleurrijk en krachtig zonder onrealistisch te worden. De kernfilosofie draait om het technisch perfectioneren van de RAW-data voordat er creatieve punch aan wordt toegevoegd. Dit werkt uitzonderlijk goed voor daglichtopnames aan de kust, waarbij de zee een heldere, levendige uitstraling moet krijgen. Het resultaat is een loepzuiver, dynamisch beeld dat direct geschikt is voor print of portfolio."
+  },
+  {
+    "video_title": "Transform Tool for seascape in Lightroom Classic",
+    "photographer_name": "Vincent MacNamara Photography",
+    "youtube_url": "https://www.youtube.com/watch?v=PW4kVqmz-jE",
+    "genre": [
+      "kust"
+    ],
+    "light_conditions": [
+      "daglicht"
+    ],
+    "mood": [
+      "moody",
+      "dramatisch"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Gestructureerde Grootse Kust",
+    "philosophy": "Het perspectief en de schaal van een groothoekopname moeten worden gecorrigeerd om het gevoel van de originele scène (zoals het menselijk oog die zag) te herstellen. Daarna wordt diepte gecreëerd door uiterst precieze maskers toe te passen op individuele structuren zoals water en rotsen.",
+    "workflow_order": [
+      "Stap 1: Gebruik de Transform tools om de krimpende werking van een groothoeklens op verre rotsen te corrigeren.",
+      "Stap 2: Verander het cameraprofiel naar Adobe Landscape voor direct meer kleur en open schaduwen.",
+      "Stap 3: Isoleer opspattend water via een Color Range Mask om textuur toe te voegen zonder de lucht te raken.",
+      "Stap 4: Selecteer rotsen via een Luminance Range Mask en verhoog Clarity en warme tinten."
+    ],
+    "techniques": [
+      {
+        "name": "Visuele Schaalcorrectie",
+        "description": "Schuif de 'Aspect' slider naar rechts en de 'Vertical' slider naar links in het Transform paneel om verre objecten groter en indrukwekkender te maken.",
+        "when_to_use": "Bij groothoek-landschappen (bijv. 16mm) waar verre bergen of rotsen onnatuurlijk klein en ver weg lijken.",
+        "tools": [
+          "Transform"
+        ],
+        "effect": "Onderwerpen in de verte krijgen hun oorspronkelijke, imposante proporties terug."
+      },
+      {
+        "name": "Lucht Maskeren via Subtract",
+        "description": "Maak een Color Range Mask voor het witte water in de branding, en kies daarna 'Subtract > Select Sky' om overlappende witte wolken uit de selectie te halen.",
+        "when_to_use": "Wanneer je water wilt verscherpen maar de kleur van de golven overeenkomt met de bewolking.",
+        "tools": [
+          "Masking (Color Range + Subtract)"
+        ],
+        "effect": "Een perfect isolerend masker over uitsluitend de golven, waardoor de lucht onaangetast blijft."
+      },
+      {
+        "name": "Rotsen Accentueren",
+        "description": "Gebruik een Luminance Range Mask op de donkere rotsen en verhoog de Clarity en Temperatuur sliders.",
+        "when_to_use": "Om ruwe texturen te benadrukken en kleurcontrast (warm versus koud) in een blauw zeelandschap te brengen.",
+        "tools": [
+          "Masking (Luminance Range)"
+        ],
+        "effect": "De rotsen knallen los van het water door toegenomen microscherpte en warmte."
+      },
+      {
+        "name": "Handmatige Geleide Vignet",
+        "description": "Trek een gigantisch Radial Gradient over de hele foto waarbij de buitenste randen net de foto raken, invert het masker en verlaag de belichting.",
+        "when_to_use": "Om de blik van de kijker organisch naar het centrum te sturen zonder een goedkoop 'bol'-effect.",
+        "tools": [
+          "Masking (Radial Gradient)"
+        ],
+        "effect": "De randen van het beeld worden op een subtiele, niet-destructieve manier afgedonkert."
+      },
+      {
+        "name": "Kaderen via 4x5 Uitsnede",
+        "description": "Snijd de foto bij naar een 4x5 verhouding om storende elementen aan de uiterste randen resoluut af te knippen.",
+        "when_to_use": "Wanneer randelementen (zoals halve rotsen) de blik uit de foto trekken.",
+        "tools": [
+          "Crop Overlay"
+        ],
+        "effect": "Een veel strakker, gefocust beeld met een sterk centraal ankerpunt."
+      }
+    ],
+    "color_approach": "Hij bouwt een sterk kleurcontrast door koele watertinten af te zetten tegen warmere rotspartijen. Hij gebruikt het 'Adobe Landscape' profiel en het Camera Calibration paneel (Blauw Primair saturatie verhogen) om direct een krachtige, punchy kleuren basis neer te zetten.",
+    "local_adjustments": "Zeer geavanceerd maskergebruik vormt de kern. Hij maakt geen gebruik van penseelstreken, maar vertrouwt volledig op Color Range en Luminance Range maskers om water, rotsen en lucht fysiek van elkaar te scheiden voor onafhankelijke behandeling.",
+    "what_to_avoid": [
+      "Het gebruik van 'Clarity' op water (maakt het hard); gebruik in plaats daarvan 'Texture' voor fijne schuimdetails",
+      "De Transform tool alleen zien als middel voor rechte lijnen, waardoor je creatieve schaalcorrectie mist"
+    ],
+    "best_for": "Voor weidse kustlijnen, panorama's en rotsachtige scènes geschoten met een groothoeklens waar diepte en schaal cruciaal zijn.",
+    "unique_insights": [
+      "Hij gebruikt 'Aspect' en 'Vertical' in het Transform-paneel niet om architectonische perspectieffouten te herstellen, maar om de perceptuele krimp van een groothoeklens op verre rotsen te compenseren.",
+      "Hij maakt een bewust onderscheid in micro-contrast: hij gebruikt de krachtige 'Clarity' voor grove rotsen, maar uitsluitend de zachtere 'Texture' slider voor fijn opspattend wit water.",
+      "Hij snijdt bewust bij naar een 4x5 verhouding (en gebruikt content-aware remove) puur om visuele ontsnappingsroutes aan de randen van het kader te blokkeren."
+    ],
+    "style_preview": "Deze stijl richt zich op het creëren van diepte, structuur en imposante schaal. De benadering is gestructureerd en sterk gericht op lokale aanpassingen waarbij rotsen en water gescheiden worden behandeld voor maximaal detail. Dit is perfect voor dynamische kustfotografie waar texturen (harde rotsen versus zacht, bewegend water) het verhaal vertellen. Het resultaat is een krachtig, punchy beeld dat de kijker het landschap intrekt."
+  },
+  {
+    "video_title": "Full Edit with Free Macros: TST Seascape, using Affinity Photo",
+    "photographer_name": "InAffinity for Affinity Photo",
+    "youtube_url": "https://www.youtube.com/watch?v=29aVH-3VGA8",
+    "genre": [
+      "kust"
+    ],
+    "light_conditions": [
+      "daglicht"
+    ],
+    "mood": [
+      "cinematisch",
+      "moody"
+    ],
+    "software": [
+      "Affinity Photo"
+    ],
+    "style_description": "Subtiele TST Macro Kust",
+    "philosophy": "Bewerking moet niet-destructief en in lagen worden opgebouwd waarbij subtiliteit regeert over extremen. Door gebruik te maken van opeenvolgende macro's (Tint, Shade, Tone) voeg je gecontroleerde kleurzweem en contrast toe, resulterend in een cinematisch, atmosferisch eindbeeld.",
+    "workflow_order": [
+      "Stap 1: Toepassen van de Tint macro en toevoegen van een warm Oranje Lens Filter op de hooglichten.",
+      "Stap 2: Toepassen van de Shade macro met een Paars Lens Filter om de donkere partijen te kleuren.",
+      "Stap 3: Activeren van de Tone macro op Overlay-blendmodus voor globale contrastverbetering.",
+      "Stap 4: Te zware schaduwen lokaal terugschilderen via maskers en de foto horizontaal spiegelen voor flow."
+    ],
+    "techniques": [
+      {
+        "name": "Tint Split-Toning",
+        "description": "Voeg een Lens Filter laag toe in de 'Tint' macro en stel deze in op Oranje met verminderde opaciteit.",
+        "when_to_use": "Om de lichte delen van het water en de lucht een subtiele, warme sfeergloed te geven zonder de schaduwen te vergelen.",
+        "tools": [
+          "Lens Filter"
+        ],
+        "effect": "Lichte delen krijgen een zachte, warme gloed die niet opvalt als harde bewerking."
+      },
+      {
+        "name": "Shade Kleuring",
+        "description": "Pas een donkerpaars Lens Filter toe binnen de 'Shade' macrolaag om de schaduwen te koelen.",
+        "when_to_use": "Als tegenhanger van de warme hooglichten om een cinematisch kleurcontrast in rotsen of donker water te creëren.",
+        "tools": [
+          "Lens Filter"
+        ],
+        "effect": "De schaduwen voelen dieper en rijker aan door de paarse/koele ondertoon."
+      },
+      {
+        "name": "Overlay Contrast",
+        "description": "Gebruik een 'Tone' macrolaag ingesteld op de blendmodus Overlay om het contrast tussen licht en donker te versterken.",
+        "when_to_use": "Wanneer de opbouw van kleuren leidt tot een gebrek aan 'bite' of dynamiek in het landschap.",
+        "tools": [
+          "Blend Modes (Overlay)"
+        ],
+        "effect": "De lichte delen lichten verder op en de donkere delen worden dieper, wat resulteert in een punchy uitstraling."
+      },
+      {
+        "name": "Masker Verzwakking",
+        "description": "Gebruik een zachte verfkwast (40% opaciteit) op het laagmasker van de Shade macro om handmatig dichtgelopen zwarte hoeken terug te halen.",
+        "when_to_use": "Wanneer de toegepaste macro's of contrastlagen in specifieke hoeken (zoals randen) te ver doorslaan.",
+        "tools": [
+          "Paint Brush",
+          "Layer Mask"
+        ],
+        "effect": "Lokale herstelling van schaduwdetails zonder het algemene macro-effect te verliezen."
+      },
+      {
+        "name": "Psychologische Spiegeling",
+        "description": "Flip het hele document horizontaal via Document > Flip Horizontal.",
+        "when_to_use": "Aan het einde van de bewerking wanneer het visuele gewicht niet goed balanceert of blokkeert.",
+        "tools": [
+          "Flip Horizontal"
+        ],
+        "effect": "Het verandert de manier waarop de kijker de afbeelding 'leest', waardoor de compositie logischer aanvoelt."
+      }
+    ],
+    "color_approach": "Hij hanteert een uiterst subtiele variant van split-toning. In plaats van extreme kleuropbouw, gebruikt hij klassieke fotografische 'Lens Filters' binnen macro-lagen (oranje voor hooglichten, donkerpaars voor schaduwen) voor een rijke, gelaagde filmlook.",
+    "local_adjustments": "De lokale aanpassingen beperken zich voornamelijk tot het selectief uitpoetsen van overmatige effecten. Hij laat de slimme macro's de selecties maken (Tint voor hoog, Shade voor laag) en maskeert alleen handmatig weg wat storend is.",
+    "what_to_avoid": [
+      "Alle macro's tegelijk aan laten staan tijdens het configureren; isoleer ze om precies te zien wat de slider doet",
+      "Harde randen maskeren met 100% kwast-opaciteit in plaats van zacht opbouwen (40%)"
+    ],
+    "best_for": "Voor fotografen die houden van een systematische, gelaagde workflow en op zoek zijn naar een subtiele, cinematische sfeer in hun landschappen.",
+    "unique_insights": [
+      "Hij flipt de foto aan het einde fysiek horizontaal op basis van Westerse leesrichting (links naar rechts); het donkere gedeelte aan de rechterkant fungeert bewust als 'visuele stop' voor het oog.",
+      "Bij het fijnregelen van macro-effecten zet hij consequent alle andere effectlagen uit (solo-modus), omdat het menselijk oog anders de subtiliteit van de verandering niet kan registreren.",
+      "Hij mijdt standaard kleur-grading tools en bouwt zijn split-toning op door klassieke 'Lens Filters' te integreren in afzonderlijke macro-groepen, wat een veel zachtere overgang biedt."
+    ],
+    "style_preview": "Deze bewerkingsstijl ademt controle en subtiliteit. Door het stapelen van gespecialiseerde macro's ontstaat een beeld dat bijna cinematisch of filmisch aanvoelt, zonder ooit oververzadigd te lijken. Het contrast is gelaagd en de kleuren vloeien organisch in elkaar over dankzij het slimme gebruik van warme en koele filters. Dit is de perfecte benadering voor fotografen die houden van een atmosferische, ietwat moody sfeer waarbij de techniek onzichtbaar blijft."
   }
 ]

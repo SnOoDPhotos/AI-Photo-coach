@@ -35221,5 +35221,97 @@
       "Hij mijdt standaard kleur-grading tools en bouwt zijn split-toning op door klassieke 'Lens Filters' te integreren in afzonderlijke macro-groepen, wat een veel zachtere overgang biedt."
     ],
     "style_preview": "Deze bewerkingsstijl ademt controle en subtiliteit. Door het stapelen van gespecialiseerde macro's ontstaat een beeld dat bijna cinematisch of filmisch aanvoelt, zonder ooit oververzadigd te lijken. Het contrast is gelaagd en de kleuren vloeien organisch in elkaar over dankzij het slimme gebruik van warme en koele filters. Dit is de perfecte benadering voor fotografen die houden van een atmosferische, ietwat moody sfeer waarbij de techniek onzichtbaar blijft."
+  },
+  {
+    "video_title": "EDIT With Me! | Product Photography Editing Tutorial in Photoshop",
+    "photographer_name": "Stephanie's Haus",
+    "youtube_url": "https://www.youtube.com/watch?v=oQ1MO5gmtRA",
+    "genre": [
+      "product"
+    ],
+    "light_conditions": [
+      "kunstlicht"
+    ],
+    "mood": [
+      "levendig",
+      "warm"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Warme Gelaagde Productcomposities",
+    "philosophy": "De kern is het onzichtbaar combineren van verschillende shots (compositing) om het perfecte moment te creëren, gecombineerd met een uiterst schone en gecontroleerde afwerking van de omgeving. Elke afleiding, of het nu een vlek op de achtergrond is of een verkeerde lichtval op de tafelrand, wordt via selecties en solid colors gladgestreken voordat er sfeer wordt toegevoegd.",
+    "workflow_order": [
+      "Stap 1: Afzonderlijke beelden (zoals de perfecte schenk, stoom en druppels) via lagen samenvoegen tot één compositie.",
+      "Stap 2: Achtergrondfouten wegwerken met de Clone Stamp tool (binnen een geïnverteerde selectie).",
+      "Stap 3: Vervorming in de muur rechttrekken door deze te selecteren met de Pen Tool en te vullen met een Solid Color laag.",
+      "Stap 4: Originele schaduwen op de egale achtergrond terughalen door het Solid Color masker zachtjes weg te poetsen met zwart.",
+      "Stap 5: De voorste rand van de tafel egaliseren door kleuren op een lage opaciteit over de vouw te schilderen."
+    ],
+    "techniques": [
+      {
+        "name": "Gecontroleerd Klonen",
+        "description": "Selecteer het onderwerp met de Object Selection Tool, inverteer de selectie (Ctrl+Shift+I) en kloon in de achtergrond.",
+        "when_to_use": "Wanneer je vlekken of apparatuur nabij het onderwerp wilt wegstempelen zonder per ongeluk het product te overschrijven.",
+        "tools": [
+          "Object Selection Tool",
+          "Clone Stamp Tool"
+        ],
+        "effect": "Een schone rand tussen de gekloonde achtergrond en het product."
+      },
+      {
+        "name": "Pen Tool Muur Correctie",
+        "description": "Trek met de Pen Tool een exacte, rechte lijn langs de muur, selecteer deze, en vul met een Solid Color laag.",
+        "when_to_use": "Wanneer lensvervorming lijnen buigt of de achtergrond splotchy is door slechte of onegale belichting.",
+        "tools": [
+          "Pen Tool",
+          "Solid Color Adjustment Layer"
+        ],
+        "effect": "Een superstrakke, rechte muur met een perfect gladde kleur."
+      },
+      {
+        "name": "Schaduw Reconstructie",
+        "description": "Verlaag de opaciteit van de effen Solid Color achtergrond, pak een zwarte kwast met zachte rand en poets de originele schaduw terug in het masker.",
+        "when_to_use": "Om te voorkomen dat een kunstmatig gekleurde muur of achtergrond vlak en onrealistisch ('geplakt') oogt.",
+        "tools": [
+          "Brush Tool",
+          "Layer Mask"
+        ],
+        "effect": "De schaduwen van de objecten en reflecties verschijnen weer in de muur, wat het beeld direct geloofwaardig maakt."
+      },
+      {
+        "name": "Tafelrand Blending",
+        "description": "Maak een selectie van alle props (en inverteer), pak met Alt een kleur van de tafel en schilder met een zachte kwast (18-20% opaciteit) over de aflopende tafelrand.",
+        "when_to_use": "Wanneer de voorgrond/papierrol naar beneden buigt en daardoor lichte of donkere vouwen toont in plaats van een egale vloer.",
+        "tools": [
+          "Brush Tool",
+          "Eyedropper"
+        ],
+        "effect": "De overgang tussen de vlakke tafel en de vallende rand wordt naadloos uitgesmeerd."
+      },
+      {
+        "name": "Selectieve Contrast Correctie",
+        "description": "Voeg een Brightness/Contrast laag toe, stel deze sterk in, en poets het effect met 30% opaciteit weg op overbelichte props (zoals een wit bord).",
+        "when_to_use": "Wanneer het verhogen van de algemene levendigheid specifieke lichte props 'uitbijt' (clipping).",
+        "tools": [
+          "Brightness/Contrast",
+          "Layer Mask"
+        ],
+        "effect": "De foto krijgt een stevige algemene punch, terwijl de lichte producten hun zachte details behouden."
+      }
+    ],
+    "color_approach": "Kleur is het bindmiddel. Ze maakt de rekwisieten warmer met Solid Color-lagen en blend modes, en smeert standaard adjustment presets ('Pop', 'Sunshine') op een lage opaciteit (bijv. 20%) over de hele compositie om alles samen te smelten.",
+    "local_adjustments": "Er is vrijwel geen enkele globale handeling die niet direct in een lokaal masker wordt gezet. Alle acties, of het nu stempelen, kleuren of schilderen is, vinden uitsluitend plaats binnen keiharde geselecteerde grenzen (zoals de geïnverteerde Object Selection) om overlopen te voorkomen.",
+    "what_to_avoid": [
+      "Klonen zonder een masker/selectie, wat de randen van je product aantast",
+      "De Object Selection tool vertrouwen voor rechte of strakke randen zoals muren (gebruik daarvoor de Pen tool)"
+    ],
+    "best_for": "Voor product- en foodfotografen die in een (thuis)studio werken en via compositing een perfect maar complex eindbeeld willen opbouwen.",
+    "unique_insights": [
+      "In plaats van de achtergrond schoon te stempelen (wat textuur kan verraden), vult ze deze volledig met een 100% effen Solid Color en 'gumt' ze de originele schaduw zachtjes weer terug.",
+      "Bij het gladstrijken van de tafel met de brush, zoekt ze actief de natuurlijke belichtingsgradiënt op; ze schildert dus niet één effen kleur, maar pikt met de eyedropper de lokaal heersende tint op.",
+      "Ze gebruikt de ingebouwde Photoshop 'Adjustments Presets' als een soort Master-LUT op lage opaciteit (15-30%) helemaal bovenaan haar laagstapel om alle gekunstelde onderdelen in hetzelfde kleurbad te trekken."
+    ],
+    "style_preview": "Deze workflow combineert zwaar digitaal timmerwerk (compositing en selecties) met een warme, uitnodigende 'food & lifestyle' esthetiek. Ondanks dat het beeld uit vele lagen en kunstmatige elementen (Solid Colors) is opgebouwd, zorgt de extreme precisie van de maskers en het slim terughalen van originele schaduwen voor een levensecht, professioneel eindresultaat."
   }
 ]

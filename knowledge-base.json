@@ -34169,5 +34169,187 @@
       "Hij bewijst dat een gegradueerd filter inferieur is aan een Control Line zodra er een object (zoals een arch) boven de horizon uitsteekt, omdat een verloopfilter onherroepelijk de schaduwzijde van de rots vernietigt."
     ],
     "style_preview": "Deze stijl is somber, dreigend en diep geworteld in een rauwe, moody esthetiek. De kernfilosofie weigert om een slechte weerdag digitaal op te vrolijken en kiest er juist voor om de gure melancholie van de natuur te versterken. Contrasten zijn tastbaar en textuurrijk, terwijl het kleurenpalet ingetogen en aards blijft. Fotografen die deze stijl hanteren, kunnen een sfeervol en krachtig eindresultaat verwachten waarin diffuse tonen transformeren in een mystiek, filmisch landschap."
+  },
+  {
+    "video_title": "How to edit long exposure. Landscape photography . Seascape photography.",
+    "photographer_name": "Skyler Ewing",
+    "youtube_url": "https://www.youtube.com/watch?v=XMXjxfq_f0E",
+    "genre": [
+      "kust",
+      "landschap"
+    ],
+    "light_conditions": [
+      "daglicht",
+      "bewolkt"
+    ],
+    "mood": [
+      "rustig",
+      "levendig"
+    ],
+    "software": [
+      "Lightroom Classic",
+      "Photoshop"
+    ],
+    "style_description": "Clean Colorful Long Exposure",
+    "philosophy": "Het doel is de kalmerende esthetiek van een extreem lange sluitertijd te behouden, terwijl krachtige kleuren en scherpte in statische ankerpunten worden hersteld. Door handmatige maskertechnieken te gebruiken, blijft de zachtheid van de wolken en het water intact, terwijl rotsen hypergedetailleerd naar voren komen. Er wordt gestreefd naar een heldere balans tussen de gladde elementen en de harde structuren.",
+    "workflow_order": [
+      "Stap 1: In Lightroom de basisbelichting balanceren en een uitsnede maken om lensvignettering van het 15-stops ND-filter te reduceren.",
+      "Stap 2: Het bestand openen in Photoshop en de patch tool inzetten om randvervuiling zoals takken te verwijderen.",
+      "Stap 3: Een High Pass filter op een Overlay-laag lokaal over de rotsen borstelen voor extreme scherpte.",
+      "Stap 4: Een Selective Color aanpassingslaag toevoegen om op organische wijze rijke kleuren en contrasten in de zee en lucht te pompen."
+    ],
+    "techniques": [
+      {
+        "name": "High Pass Rots Verscherping",
+        "description": "Kopieer de basislaag, pas een High Pass filter toe met een radius van 2.2 en zet de overvloeimodus op Overlay om details te versterken. Gebruik een zwart laagmasker en schilder met een zacht wit penseel uitsluitend over de statische rotsen.",
+        "when_to_use": "Wanneer foto's met bewegingsonscherpte gerichte verscherping op vaste elementen nodig hebben zonder het gladde water aan te tasten.",
+        "tools": [
+          "High Pass Filter",
+          "Overvloeimodus / Blend Mode (Overlay)"
+        ],
+        "effect": "Harde rotsstructuren krijgen een haarscherpe en gearticuleerde tekening, terwijl wolken en het zijdezachte water onaangetast blijven."
+      },
+      {
+        "name": "Complementaire Color Boost",
+        "description": "Voeg een Selective Color aanpassingslaag toe en verminder de cyaanwaarde in de rode kanalen en verhoog geel in het geelkanaal naar +100 om kleuren zuiverder aan te zetten.",
+        "when_to_use": "Om kleuren rijker en natuurlijker aan te zetten zonder dat de pixels clippen of oververzadigd raken.",
+        "tools": [
+          "Selectieve kleur / Selective Color"
+        ],
+        "effect": "De foto toont direct diepe, filmische en heldere kleurcontrasten waarbij blauwe golven en warme hooglichten mooi gescheiden blijven."
+      },
+      {
+        "name": "Lucht Detail Herstel via Select Sky",
+        "description": "Kies het automatische Select Sky masker in de raw-ontwikkeling en verlaag de belichting uitsluitend binnen deze maskering om doortekening in lichte wolken te herstellen.",
+        "when_to_use": "Als een dynamische wolkenlucht door de basisbelichting flets of bijna wit uitslaat en textuur ontbeert.",
+        "tools": [
+          "Maskeren (Select Sky) / Masking"
+        ],
+        "effect": "De hemel hervindt zijn structuur en wolkenpatronen worden direct zichtbaar als contrasterend element voor de kalme zee."
+      },
+      {
+        "name": "Patch Tool Randopschoning",
+        "description": "Selecteer the Patch Tool, trek losjes een lijn rond randvervuiling of vignetteringsresten in de hoeken en sleep dit naar een schoon, egaal stuk nabijgelegen lucht of water.",
+        "when_to_use": "Wanneer zware ND-filters hardnekkige vignettering in de uiterste hoeken creëren na een crop.",
+        "tools": [
+          "Reparatie / Patch Tool"
+        ],
+        "effect": "Harde, donkere of afleidende hoeken fuseren naadloos met de omringende, natuurlijke achtergrond."
+      },
+      {
+        "name": "Subtiel Lineair Focus Verloop",
+        "description": "Plaats een lineair verloop van de bovenrand richting het centrum en verlaag de belichting heel mild om de blik te sturen.",
+        "when_to_use": "Om de blik van de toeschouwer dwingend naar de horizon en het eiland in het centrum van het kader te trekken.",
+        "tools": [
+          "Lineair verloop / Linear Gradient"
+        ],
+        "effect": "Onderdelen aan de randen vallen subtiel weg in een zachte schaduw, waardoor de lichte oceaangolven in het midden meer nadruk krijgen."
+      }
+    ],
+    "color_approach": "Kleur wordt als sluitstuk beschouwd en pas helemaal op het einde in Photoshop via Selective Color gemanipuleerd. Er wordt gewerkt door kleurkanalen complementair tegen elkaar uit te spelen en geel uit het blauwkanaal te onttrekken, wat zuiverdere blauwtinten oplevert zonder globale kleurruis.",
+    "local_adjustments": "Globale maskers worden enkel gebruikt om de luchttoon te corrigeren. Zodra de foto in Photoshop komt, gebeurt de maskering handmatig met zachte penselen op zwarte maskers om de rimpelloze vlakken van de lange belichting te beschermen en enkel de statische rotspartijen te lichten en te scherpen.",
+    "what_to_avoid": [
+      "Het lokaal verscherpen in Lightroom over de gehele opname, wat minder controle biedt op een bewuste scheiding tussen rots en stromend water.",
+      "Het blind wegklonen van een ghost-verschijning van een persoon; deze vervaging brengt juist schaal en een poëtisch element in het landschap."
+    ],
+    "best_for": "Foto's met extreem lange sluitertijden en ND-filters waarbij statische elementen een haarscherp contract moeten vormen met zacht water.",
+    "unique_insights": [
+      "Het selectief boosten van kleur via de Selective Color-tool is superieur aan de Saturation of Vibrance, omdat je kleur opbouwt door het tegenovergestelde kleurenspectrum uit een pixel te onttrekken.",
+      "De extreme lange sluitertijd van 4 minuten wordt niet alleen ingezet voor zacht water, maar expliciet als natuurlijk filter om grote groepen aanwezige toeristen volledig uit de foto te laten wegsmelten.",
+      "De verscherping wordt strikt aan het allerlaatste toegepast via een High Pass-laag in Photoshop, zodat de rimpelloze vlakken van een lange belichting niet worden geruineierd door micro-contrast algoritmen van Camera Raw."
+    ],
+    "style_preview": "De bewerkingsstijl focust op het maximaliseren van het theatraal en sereen potentieel van de lange sluitertijd. De kernfilosofie is dat de techniek organisch moet overkomen, waardoor lokaal maskeren met zachte penselen essentieel is. Deze werkwijze past perfect bij zonnige en levendige kustfoto's waar water en harde steen elkaar ontmoeten. Het uiteindelijke beeld voelt ongelofelijk schoon, helder, dynamisch gekleurd en in de statische objecten ragfijn gedetailleerd."
+  },
+  {
+    "video_title": "Simple Seascape Workflow - Photoshop, Lumenzia & Raw Therapee",
+    "photographer_name": "Andy Astbury",
+    "youtube_url": "https://www.youtube.com/watch?v=ofOENbeGck8",
+    "genre": [
+      "kust",
+      "landschap"
+    ],
+    "light_conditions": [
+      "bewolkt",
+      "diffuus licht"
+    ],
+    "mood": [
+      "dramatisch",
+      "natuurlijk"
+    ],
+    "software": [
+      "Photoshop",
+      "RawTherapee"
+    ],
+    "style_description": "Geavanceerd Gemaskerd Kustlandschap",
+    "philosophy": "Er wordt gekozen voor foutloze, pixel-gebaseerde maskering in Photoshop zodra een landschap een complexe horizon heeft. Door de voorgrond volledig te isoleren van de lucht via verfijnde selecties, kunnen zware curves en aanpassingen worden doorgevoerd zonder dat er halo's ontstaan. Het draait om absolute precisie en het respecteren van natuurlijke contrastovergangen.",
+    "workflow_order": [
+      "Stap 1: Zet de verscherping in de base-file volledig uit om halo's te vermijden en selecteer de lucht met de Quick Selection en Refine Edge tool.",
+      "Stap 2: Maak de lucht donkerder door een Alpha Channel te koppelen aan een Curves-aanpassingslaag.",
+      "Stap 3: Gebruik het composiet RGB-kanaal om een luminantielaag te maken, stel deze in op Screen Blend en voorzie deze van een gradiëntmasker voor een geleidelijke voorgrond-opluchting.",
+      "Stap 4: Sla het werk op en open de TIF in RawTherapee om uiterst precieze Richardson-Lucy Deconvolution verscherping toe te passen op specifieke tonale grenswaarden."
+    ],
+    "techniques": [
+      {
+        "name": "Alpha Channel Lucht Isolatie",
+        "description": "Selecteer de lucht met de Quick Selection tool, inverteer deze en ga naar Refine Edge om fijne vegetatie en rotsranden af te zonderen. Bewaar deze selectie permanent in het Channels-paneel als een Alpha-masker voor latere aanpassingen.",
+        "when_to_use": "Wanneer je een horizon of kustlijn wilt bewerken die niet recht is, maar is bezaaid met begroeiing of grillige rotsformaties.",
+        "tools": [
+          "Randen verfijnen / Refine Edge",
+          "Kanalen / Channels"
+        ],
+        "effect": "De scheidslijn tussen lucht en steen wordt optisch perfect beschermd, waardoor je zware curves kunt doorvoeren zonder lichtgevende randen."
+      },
+      {
+        "name": "Screen Blend RGB Voorgrond Oplichting",
+        "description": "Ctrl-klik op het RGB-composietkanaal, kopieer deze luminantieselectie naar een nieuwe laag via Ctrl+J, verander de overvloeimodus naar Screen en verberg de lucht deels via een zacht verloopmasker.",
+        "when_to_use": "Om een donkere, grauwe voorgrond in het landschap op te peppen op basis van de lokaal aanwezige helderheid.",
+        "tools": [
+          "Kanalen / Channels",
+          "Overvloeimodus / Blend Mode (Screen)"
+        ],
+        "effect": "De voorgrond baadt in een natuurlijk, stralend licht dat organisch meevloeit met het originele dynamisch bereik en diepte creëert door langzaam weg te faden richting zee."
+      },
+      {
+        "name": "Middentonen Saturation Masking",
+        "description": "Genereer een masker dat enkel de middentonen pakt. Breng hier een Hue/Saturation laag op aan en voer de verzadiging lokaal stevig op, terwijl je dit met een verloop in de lucht weer afzwakt.",
+        "when_to_use": "Als je de aardse kleuren en reflecties op rotsen wilt oppeppen zonder dat schaduwen kleurruis vertonen of de lucht een felle blauwtint krijgt.",
+        "tools": [
+          "Kanalen / Channels",
+          "Kleurtoon/Verzadiging / Hue/Saturation"
+        ],
+        "effect": "Kleur verschijnt precies in de gebieden die texturen dragen, terwijl de uitersten (diepzwart en wit) volledig kleurvrij en zuiver blijven."
+      },
+      {
+        "name": "Drempelwaarde Deconvolution Verscherping",
+        "description": "Open het bestand in RawTherapee, kies RL Deconvolution verscherping met een hoge waarde tot 450 en knijp het contrastbereik met the slider-grafiek af zodat diepe schaduwen en hoge hooglichten niet verscherpt worden.",
+        "when_to_use": "Als ultieme finale verscherping, waarbij de harde grenzen en heldere wolken in je bewerkte TIF-bestand vrij moeten blijven van pixelartefacten.",
+        "tools": [
+          "RawTherapee (RL Deconvolution Sharpening)"
+        ],
+        "effect": "Rotsstructuren en microdetails exploderen met scherpte, terwijl wolken en de zeemist zijdezacht, ruisvrij en klinisch schoon blijven."
+      },
+      {
+        "name": "Pre-Sharpening Uitschakeling",
+        "description": "Verlaag nog voordat je de raw-file bewerkt alle globale pre-sharpening radius-sliders naar nul (0.5 radius) met een detail-slider op 100% om randen clean te houden.",
+        "when_to_use": "Een preventieve basisstap om randen ongeschonden te houden vóórdat je complexe Photoshop-maskers gaat snijden.",
+        "tools": [
+          "Details (Lightroom/Camera Raw) / Detail"
+        ],
+        "effect": "Hoog-contrast randen zijn vrij van wittere pixelhalo's, wat een naadloze selectie met de selectietools in Photoshop verzekert."
+      }
+    ],
+    "color_approach": "Verzadiging mag alleen bestaan op plekken waar textuur te vinden is. Er wordt kleur versterkt uitsluitend door gebruik te maken van specifieke midtone-maskers, waardoor de diepe schaduwen van de rotspartijen hun duistere, neutrale grafietkleur behouden zonder onnatuurlijke kleurzwemen.",
+    "local_adjustments": "Elke aanpassing is strikt locaal verankerd aan een Alpha-kanaal of een nauwkeurig middentonenmasker. Dit voorkomt dat aanpassingen zoals een Screen-blend doorlopen in de lucht, en maakt het mogelijk om de voorgrond onafhankelijk van de wolkenpartij op te lichten.",
+    "what_to_avoid": [
+      "Het blind toepassen van een standaard verloopfilter in Lightroom over een complexe horizon met begroeiing; dit resulteert in donkere, gehavende boomranden.",
+      "Standaard verscherping gebruiken waarbij ruis in de schaduwen onnodig omhoog wordt getrokken; kies altijd voor methoden met contrastdrempels."
+    ],
+    "best_for": "Technische landschapsfotografen die weigeren concessies te doen aan kwaliteit, printwerk op groot formaat voorbereiden en geavanceerde horizon-scheiding moeten realiseren.",
+    "unique_insights": [
+      "De pre-sharpening in Lightroom moet volledig worden uitgeschakeld om Photoshop-selectietools de best mogelijke 'schone rand' aan te bieden zonder in te bijten op witte randartefacten.",
+      "Het kopiëren van het samengevoegde RGB-kanaal om deze vervolgens als een luminantie-gestuurde basis voor een Screen blend-laag te gebruiken, vormt een verbluffend responsieve dodging methode.",
+      "De keuze om Photoshop na een zware bewerking tijdelijk te verlaten, enkel en alleen om de geavanceerde RL Deconvolution drempel-verscherping van het programma RawTherapee te kunnen benutten, toont hoe je microcontrast maximaal beschermt."
+    ],
+    "style_preview": "De fotograaf stelt precisie en professionaliteit boven snelheid. Zijn aanpak steunt volledig op foutloze masking in Photoshop en weigert het ruwe, globale schuifwerk van Lightroom. Deze stijl werkt uitzonderlijk goed voor dramatische kusten en rotslandschappen met diffuse belichting. Je kunt een hyper-gedetailleerd, volstrekt halo-vrij beeld verwachten dat een enorme tonale rijkdom en diepte bezit en perfect voorbereid is voor grootschalige print."
   }
 ]

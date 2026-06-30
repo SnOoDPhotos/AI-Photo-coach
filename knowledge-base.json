@@ -34703,5 +34703,264 @@
       "Bij het Orton-effect in Photoshop deelt hij de Blend If-sliders met de Alt-toets op in twee helften, omdat deze gradatie de dromerige gloed vloeiend laat wegsterven in de middentonen."
     ],
     "style_preview": "Deze stijl balanceert meesterlijk tussen adembenemende dramatiek en absolute visuele geloofwaardigheid. De kernfilosofie dicteert dat post-productie er is om het bestaande licht te vieren en te versterken, nooit om het te verzinnen. De visuele sfeer is warm, volumineus en gezegend met een etherische, zachte gloed die dankzij de Blend If-techniek de scherpte van het landschap intact laat. Fotografen kunnen een high-end, professioneel eindresultaat verwachten waarin de zonreflecties op het natte zand de kijker diep de foto in trekken."
+  },
+  {
+    "video_title": "How To Make Painter-Like Photos Using Luminar NEO (landscape photography)",
+    "photographer_name": "Mark Houde Photography",
+    "youtube_url": "https://www.youtube.com/watch?v=mLjK-vX3LCs",
+    "genre": [
+      "landschap"
+    ],
+    "light_conditions": [
+      "gouden uur"
+    ],
+    "mood": [
+      "rustig",
+      "naturalistisch"
+    ],
+    "software": [
+      "Luminar Neo"
+    ],
+    "style_description": "Zacht impressionistisch landschap",
+    "philosophy": "Het creëren van een dromerige, schilderachtige sfeer door structuren in de foto subtiel te verzachten zonder details te verliezen. Belangrijk hierbij is het isoleren van de lucht, zodat deze scherp blijft terwijl de voorgrond een artistieke 'glow' krijgt. Het proces draait om balans en weten wanneer je moet stoppen met effecten.",
+    "workflow_order": [
+      "Stap 1: Ontwikkel de RAW-afbeelding in de 'Develop' tool (hooglichten omlaag).",
+      "Stap 2: Verwijder stof en ongewenste objecten met de 'Erase' tool.",
+      "Stap 3: Verlaag 'Structure' naar negatieve waarden voor het schilderachtige effect (met maskering).",
+      "Stap 4: Voeg sfeer toe met 'Mystical' en 'Matte' filters, exclusief voor de voorgrond."
+    ],
+    "techniques": [
+      {
+        "name": "Ontwikkeling met Highlights",
+        "description": "Verlaag de Highlights in de 'Develop' tool om details in de lucht te redden en de belichting in balans te brengen.",
+        "when_to_use": "Bij landschapsfoto's met lichte luchtpartijen.",
+        "tools": [
+          "Develop Tool"
+        ],
+        "effect": "Meer doortekening in de lucht en een gebalanceerde belichting."
+      },
+      {
+        "name": "Stofverwijdering",
+        "description": "Gebruik 'Remove Dust Spots' in de 'Erase' tool voor een snelle, automatische opschoning.",
+        "when_to_use": "Bij elke foto met sensorvlekken.",
+        "tools": [
+          "Erase"
+        ],
+        "effect": "Schone, egale lucht zonder storende vlekken."
+      },
+      {
+        "name": "Structure verlaging",
+        "description": "Zet 'Structure' op negatieve waarden (richting -100) om een zachte, schilderachtige look te creëren.",
+        "when_to_use": "Voor een impressionistisch of dromerig effect op landschappen.",
+        "tools": [
+          "Structure"
+        ],
+        "effect": "Verzachting van texturen, waardoor een 'schilderij'-gevoel ontstaat."
+      },
+      {
+        "name": "AI Maskering",
+        "description": "Gebruik 'Mask AI' (natuurlijke ondergrond + flora) om specifieke gebieden aan te wijzen en de lucht uit te sluiten van bewerkingen.",
+        "when_to_use": "Wanneer je bewerkingen wilt toepassen op de grond zonder de lucht aan te tasten.",
+        "tools": [
+          "Mask AI"
+        ],
+        "effect": "Gerichte bewerkingen waarbij de lucht scherp en onaangetast blijft."
+      },
+      {
+        "name": "Mystical sfeer",
+        "description": "Voeg 'Mystical' toe voor een dromerige gloed, waarbij het effect wordt gemaskeerd zodat de lucht niet uitwast.",
+        "when_to_use": "Voor een magische of dromerige sfeer in de natuur.",
+        "tools": [
+          "Mystical"
+        ],
+        "effect": "Een zachte, bijna etherische gloed over de flora en grond."
+      }
+    ],
+    "color_approach": "Hij houdt de kleuren grotendeels natuurlijk, maar versterkt ze subtiel in het middengebied met de 'Landscape Golden Hour' slider. Hij waarschuwt voor overmatige verzadiging bij de sky-enhancer, omdat dit het realisme kan vernietigen.",
+    "local_adjustments": "Hij gebruikt uitgebreid Mask AI om effecten zoals 'Structure' en 'Mystical' los te koppelen van de lucht. Dit is cruciaal omdat deze effecten de lucht anders te onrealistisch en 'vlak' maken.",
+    "what_to_avoid": [
+      "Het 'cranken' van de Sky Enhancer (resulteert in onnatuurlijke luchten)",
+      "Het ongemaskeerd toepassen van Mystical-filters"
+    ],
+    "best_for": "Voor landschapsfotografen die een zachte, sfeervolle of impressionistische uitstraling zoeken in hun beelden.",
+    "unique_insights": [
+      "Hij verlaagt de 'Structure' slider volledig naar negatieve waarden als basis, in plaats van te vertrouwen op filters of effecten alleen.",
+      "Bij het testen van effecten (zoals 'Mystical') schuift hij de slider eerst volledig naar 100% om het effect extreem te zien, om daarna pas terug te schalen naar de juiste dosering.",
+      "Hij adviseert om bij bewerkingen met zachte effecten (zoals Orton-stijl) even pauze te nemen, omdat het brein went aan de bewerking en je ongemerkt te ver gaat."
+    ],
+    "style_preview": "Deze stijl kenmerkt zich door een zachte, dromerige en bijna schilderachtige benadering van landschappen. Het resultaat is een 'painterly' beeld dat niet over-gescherpt is, maar juist een zachte, sfeervolle uitstraling heeft. Deze stijl werkt het beste in landschappen met goede compositie en natuurlijke elementen zoals flora, waar een beetje 'magic' de kijker meer kan raken dan een puur realistische foto."
+  },
+  {
+    "video_title": "The Best Way to Edit Vacation Photos FAST! - Photoshop Tutorial",
+    "photographer_name": "Unmesh Dinda (Piximperfect)",
+    "youtube_url": "https://www.youtube.com/watch?v=q4St6DOE26E",
+    "genre": [
+      "algemeen"
+    ],
+    "light_conditions": [
+      "gemengd licht"
+    ],
+    "mood": [
+      "levendig"
+    ],
+    "software": [
+      "Camera Raw (Photoshop)",
+      "Photoshop"
+    ],
+    "style_description": "Efficiënte, heldere vakantiefoto's",
+    "philosophy": "Het doel is het snel verbeteren van vakantiefoto's voor social media, niet het maken van high-end art. De focus ligt op een snelle workflow van groot naar klein: eerst de algemene belichting corrigeren, daarna pas lokale aanpassingen en specifieke problemen aanpakken.",
+    "workflow_order": [
+      "Stap 1: Open de foto als Smart Object in Camera Raw voor niet-destructieve bewerking.",
+      "Stap 2: Los de 'grote problemen' eerst op: belichting van schaduwen en hooglichten.",
+      "Stap 3: Gebruik AI-maskers (onderwerp/achtergrond) voor lokale aanpassingen.",
+      "Stap 4: Verwijder resterende kleurzwemen met selectieve Hue/Saturation correcties."
+    ],
+    "techniques": [
+      {
+        "name": "Shift-Auto Correctie",
+        "description": "Houd de Shift-toets ingedrukt terwijl je op de Auto-knoppen voor Wit en Zwart klikt om het optimale clipping-punt te vinden.",
+        "when_to_use": "Wanneer je snel een gebalanceerd histogram wilt zonder details te verliezen.",
+        "tools": [
+          "Camera Raw Basic Panel"
+        ],
+        "effect": "Snel bereik van het maximale contrast en dynamiek."
+      },
+      {
+        "name": "AI Onderwerp Selectie",
+        "description": "Gebruik 'Select Subject' voor een snelle maskering, en verfijn dit met de 'Subtract' brush + 'Auto Mask'.",
+        "when_to_use": "Wanneer mensen op de foto staan en je hen wilt laten 'poppen'.",
+        "tools": [
+          "Masking (Select Subject)"
+        ],
+        "effect": "Onderwerp wordt geïsoleerd voor specifieke verlichting/contrast."
+      },
+      {
+        "name": "Invert Masker",
+        "description": "Dupliceer het onderwerpmasker en kies 'Invert' om direct een masker voor de gehele achtergrond te maken.",
+        "when_to_use": "Voor snelle correcties op de achtergrond zonder het onderwerp te raken.",
+        "tools": [
+          "Masking (Invert)"
+        ],
+        "effect": "Gedetailleerde controle over de achtergrondomgeving."
+      },
+      {
+        "name": "Kleurzweem correctie",
+        "description": "Gebruik een Hue/Saturation aanpassingslaag met de 'Hand'-tool om specifiek de kleur en verzadiging van ongewenste tinten (bijv. groen op huid) aan te passen.",
+        "when_to_use": "Bij onnatuurlijke kleurzwemen door omgevingslicht.",
+        "tools": [
+          "Hue/Saturation"
+        ],
+        "effect": "Huidtonen worden neutraal en natuurlijk."
+      },
+      {
+        "name": "Dehaze (lokaal)",
+        "description": "Verhoog de Dehaze slider op de achtergrond voor extra diepte en helderheid.",
+        "when_to_use": "Wanneer de achtergrond wat flets of 'mistig' oogt.",
+        "tools": [
+          "Dehaze"
+        ],
+        "effect": "Meer helderheid en kleur in de achtergrond."
+      }
+    ],
+    "color_approach": "Hij benadert kleur pragmatisch. Hij maakt kleuren 'pop' in de algemene bewerking door verzadiging en contrast, maar corrigeert storende kleurzwemen (zoals groen op huid) met chirurgische precisie via de 'Hand'-tool in HSL.",
+    "local_adjustments": "Zeer uitgebreid. Hij gebruikt AI-maskers (Select Subject/Sky) als basis, maar verfijnt deze altijd handmatig met 'Subtract' of 'Add' om 'lekkage' van effecten te voorkomen.",
+    "what_to_avoid": [
+      "Het vergeten van de volgorde: beginnen bij kleine details in plaats van algemene belichting",
+      "Het te ver doorslaan in 'high-end' retoucheren voor simpele vakantiekiekjes"
+    ],
+    "best_for": "Voor fotografen die snel een grote hoeveelheid vakantiefoto's willen optimaliseren voor social media of albums.",
+    "unique_insights": [
+      "Hij adviseert de Shift-toets in te houden bij de Auto-knoppen (Wit/Zwart); dit is een ondergewaardeerde 'shortcut' voor het instellen van het perfecte dynamische bereik.",
+      "Hij gebruikt de 'Subtract' methode met 'Select Subject' bij het maskeren van luchten, om te voorkomen dat het onderwerp (bijv. haar) wordt meegenomen in de lucht-aanpassing.",
+      "De focus ligt op 'fixes', niet op 'art'. Hij benadrukt dat je voor vakantiefoto's niet moet streven naar perfectie, maar naar een snelle workflow die de foto's 'goed genoeg' maakt voor publicatie."
+    ],
+    "style_preview": "Dit is een 'clean', heldere en zeer professionele stijl voor dagelijks gebruik. De bewerkingen zijn onzichtbaar maar effectief: de mensen in de foto zien er natuurlijk uit en de omgeving heeft net dat beetje extra contrast en verzadiging. Het is ideaal voor het 'oppoetsen' van vakantiefoto's zodat ze er professioneel uitzien zonder dat de kijker ziet dat ze zwaar bewerkt zijn."
+  },
+  {
+    "video_title": "Lightroom Bits #5 - Seascape editing. (Lightroom Tutorial for photographers)",
+    "photographer_name": "Orange Elephant Photography",
+    "youtube_url": "https://www.youtube.com/watch?v=xjgVZ025urM",
+    "genre": [
+      "kust"
+    ],
+    "light_conditions": [
+      "tegenlicht"
+    ],
+    "mood": [
+      "moody"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Moody, koel kustlandschap",
+    "philosophy": "Een doordachte aanpak voor tegenlicht-kustfotografie, waarbij de kijker door de foto wordt geleid. Hij stelt dat je bij tegenlicht moet compenseren voor contrastverlies, en gebruikt lokale aanpassingen om specifieke elementen (zoals voorgrond of lucht) te accentueren.",
+    "workflow_order": [
+      "Stap 1: Horizon rechtzetten en compositie bepalen (pano-uitsnede).",
+      "Stap 2: Basis aanpassingen: kleurtemperatuur koeler maken en contrast verhogen.",
+      "Stap 3: Lokale filters gebruiken voor lucht (drama) en voorgrond (textuur).",
+      "Stap 4: Finale verscherping met selectieve maskering om ruis te minimaliseren."
+    ],
+    "techniques": [
+      {
+        "name": "Kleurtemperatuur koelen",
+        "description": "Verlaag de kleurtemperatuur om tegenlicht-oranje tinten te balanceren en het water blauwer/natuurlijker te maken.",
+        "when_to_use": "Bij tegenlicht-scènes die te warm of 'oranje' ogen.",
+        "tools": [
+          "Temp Slider"
+        ],
+        "effect": "Een koelere, natuurlijke sfeer in het water."
+      },
+      {
+        "name": "Graduated Filter (Lucht)",
+        "description": "Gebruik een verloopfilter op de lucht om belichting te verlagen en contrast/verzadiging te verhogen.",
+        "when_to_use": "Wanneer de lucht te licht is en drama mist.",
+        "tools": [
+          "Graduated Filter"
+        ],
+        "effect": "Meer dramatiek en kleur in de wolkenpartijen."
+      },
+      {
+        "name": "Graduated Filter (Voorgrond)",
+        "description": "Gebruik een verloopfilter met extra 'Clarity' op de voorgrond om rotsstructuren en details te benadrukken.",
+        "when_to_use": "Bij natte rotsen of structuren in de voorgrond die extra definitie nodig hebben.",
+        "tools": [
+          "Graduated Filter",
+          "Clarity"
+        ],
+        "effect": "Scherpere, rijkere textuur in de rotsen."
+      },
+      {
+        "name": "Selectieve Verscherping",
+        "description": "Houd 'Alt' ingedrukt tijdens het schuiven van de 'Masking'-slider in het Details-paneel om alleen de randen te verscherpen.",
+        "when_to_use": "Bij elke verscherping om ruis in egale vlakken (lucht/water) te voorkomen.",
+        "tools": [
+          "Details",
+          "Masking"
+        ],
+        "effect": "Alleen de contouren worden verscherpt; geen extra ruis in vlakke delen."
+      },
+      {
+        "name": "Contrast Herstel",
+        "description": "Verhoog het algemene contrast handmatig omdat fotograferen in tegenlicht dit natuurlijk vermindert.",
+        "when_to_use": "Bij tegenlicht-opnames die 'uitgewassen' of 'flets' ogen.",
+        "tools": [
+          "Contrast"
+        ],
+        "effect": "Een krachtigere, meer diepgaande foto."
+      }
+    ],
+    "color_approach": "Hij richt zich op het afkoelen van de kleuren om de 'hitte' van het tegenlicht in toom te houden. Hij verhoogt verzadiging subtiel, maar vermijdt het overmatig verzadigen van specifieke kleuren die er niet zijn, tenzij het de hoofdelementen helpt.",
+    "local_adjustments": "Cruciaal onderdeel. Hij verdeelt de foto in 'voorgrond' en 'lucht' met verloopfilters. Dit stelt hem in staat om de voorgrond textuur te geven en de lucht drama, zonder dat de aanpassingen elkaar tegenwerken.",
+    "what_to_avoid": [
+      "Het vertrouwen op de horizon die optisch misleidend kan zijn bij heuvels",
+      "Het onnodig toepassen van lenscorrectie als dit leidt tot 'stretching' van objecten (zoals een huisje)"
+    ],
+    "best_for": "Voor fotografen die kust- of tegenlichtlandschappen fotograferen en een moody, gedetailleerde look willen bereiken.",
+    "unique_insights": [
+      "Hij adviseert om de horizon niet blind te vertrouwen als je aan de kust staat met heuvels; de helling van het land kan je oog misleiden bij het rechtzetten.",
+      "Bij verscherpen gebruikt hij de 'Masking' slider met de Alt-toets om visueel te zien wat wordt verscherpt; dit is de enige manier om ruis in een egale lucht of wateroppervlak te voorkomen.",
+      "Hij kiest er soms bewust voor om 'Profile Corrections' (lenscorrectie) uit te laten staan, omdat de vervormingscorrectie objecten (zoals een klein huisje) kan uitrekken (stretching), wat er onnatuurlijk uitziet."
+    ],
+    "style_preview": "De bewerkingsstijl is moody, gecontroleerd en technisch zuiver. Het is een stijl die rust uitstraalt door de koele kleuren, maar tegelijkertijd veel diepte en drama biedt door gericht gebruik van contrast en textuur. Dit is perfect voor fotografen die houden van klassieke landschapsfotografie waarbij elk detail in de compositie – van rots tot wolk – de aandacht van de kijker vasthoudt."
   }
 ]

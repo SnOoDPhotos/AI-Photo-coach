@@ -34351,5 +34351,96 @@
       "De keuze om Photoshop na een zware bewerking tijdelijk te verlaten, enkel en alleen om de geavanceerde RL Deconvolution drempel-verscherping van het programma RawTherapee te kunnen benutten, toont hoe je microcontrast maximaal beschermt."
     ],
     "style_preview": "De fotograaf stelt precisie en professionaliteit boven snelheid. Zijn aanpak steunt volledig op foutloze masking in Photoshop en weigert het ruwe, globale schuifwerk van Lightroom. Deze stijl werkt uitzonderlijk goed voor dramatische kusten en rotslandschappen met diffuse belichting. Je kunt een hyper-gedetailleerd, volstrekt halo-vrij beeld verwachten dat een enorme tonale rijkdom en diepte bezit en perfect voorbereid is voor grootschalige print."
+  },
+  {
+    "video_title": "How to edit BEACH PHOTOGRAPHY | Photoshop Walk-through Tutorial",
+    "photographer_name": "Emerson Visuals",
+    "youtube_url": "https://www.youtube.com/watch?v=X43Ed7Eg-OU",
+    "genre": [
+      "kust",
+      "cinematisch"
+    ],
+    "light_conditions": [
+      "bewolkt",
+      "gouden uur"
+    ],
+    "mood": [
+      "dramatisch",
+      "cinematisch"
+    ],
+    "software": [
+      "Photoshop",
+      "Camera Raw (Photoshop)"
+    ],
+    "style_description": "Cinematic Sunset Transformation",
+    "philosophy": "Er wordt meer waarde gehecht aan een theatraal en cinematisch gevoel dan aan de strikte realiteit van de opname-omstandigheden. Een bewolkte, fletse grijze middag wordt omgetoverd tot een dramatisch strandtafereel met 'teal and orange' kleurmanipulatie, kunstmatig ingespoten mistflarden en krachtige radiale zonnestralen. Het visuele resultaat moet de kijker direct emotioneren.",
+    "workflow_order": [
+      "Stap 1: In Photoshop de basis opschonen door de Clone Stamp te gebruiken voor het verwijderen van voetafdrukken en een verafgelegen boot.",
+      "Stap 2: Strak de foto uitsnijden op een Rule of Thirds grid om de menselijke schaal van de surfer dramatischer in beeld te plaatsen.",
+      "Stap 3: Het beeld via de Camera Raw Filter extreem opwarmen, contrast aanpassen met curves en HSL color-grading inzetten voor cyaan luchten.",
+      "Stap 4: Een neppe zon en theatraal licht inborstelen via Radiale filters in Camera Raw, en finishen in Photoshop met een custom Fog Brush voor zeemist."
+    ],
+    "techniques": [
+      {
+        "name": "Clone Stamp Purificatie",
+        "description": "Selecteer de Clone Stamp met een zachte rand en schilder ongewenste ruis zoals een vrachtschip en modderige voetafdrukken weg in een nieuwe lege laag.",
+        "when_to_use": "Wanneer je een foto met een breed perspectief hebt waarbij elk minuscuul spoor de dromerige isolatie van het moment verstoort.",
+        "tools": [
+          "Kloonstempel / Clone Stamp Tool"
+        ],
+        "effect": "Visuele rommel verdwijnt, en het strand transformeert in een oneindige, verlaten en ongerepte spiegel voor de zee."
+      },
+      {
+        "name": "Radiale Gouden Uur Simulatie",
+        "description": "Plaats asymmetrisch een immens Radiaal Verloop in Camera Raw op één kant van de horizon en verhoog hierin de Temperatuur en Exposure enorm, terwijl je de Dehaze verlaagt.",
+        "when_to_use": "Om dynamiek, diepte en een epische lichtbron aan de horizon te creëren in een foto die tijdens volstrekt plat, saai grijs weer is gemaakt.",
+        "tools": [
+          "Radiaal verloop / Radial Gradient"
+        ],
+        "effect": "De linkerhelft van de lucht vult zich met een intense, uitwaaierende zonne-uitbarsting, wat het beeld in één klap theatraal en volumineus maakt."
+      },
+      {
+        "name": "Custom Fog Brush Masking",
+        "description": "Laad een custom mist-penseel, voeg een nieuwe laag toe, zet deze op de overvloeimodus Screen en stempel zachte witte wolkige texturen net boven de branding.",
+        "when_to_use": "Als de lijn tussen zee en land droog of te hard afkapt en je dromerige zeemist of opspattend water wilt simuleren.",
+        "tools": [
+          "Penseel / Brush tool",
+          "Overvloeimodus / Blend Mode (Screen)"
+        ],
+        "effect": "Mistflarden drijven laag over het strand, hetgeen extra structuur op de grond legt en de overgang tussen zee en zand mysterieus vervaagt."
+      },
+      {
+        "name": "Extreme Temperatuur Push",
+        "description": "Gebruik het basispaneel in de Camera Raw Filter om de globale witbalans-slider massaal naar de gele en ietwat magenta kant te trekken om warmte te forceren.",
+        "when_to_use": "Om af te rekenen met de kille, grauwe blauwgrijze tonen van een bewolkte stranddag.",
+        "tools": [
+          "Basis / Basic (Temperature)"
+        ],
+        "effect": "De grijze wolken holidays en kille reflecties in het zand slorpen warme zonsondergangstinten op, waardoor het hele tafereel broeierig wordt."
+      },
+      {
+        "name": "Teal and Orange Color Mixing",
+        "description": "Verschuif binnen de HSL/Color Mixer de Hue van blauwtinten ver richting cyaan, en gebruik Color Grading om warme oranjetinten specifiek in de highlights te injecteren.",
+        "when_to_use": "Voor het simuleren van de zeer populaire Hollywood cinematische filmlook waarbij koud en warm hevig contrasteren.",
+        "tools": [
+          "Kleurverloop / Color Grading",
+          "Kleurmixer / Color Mixer"
+        ],
+        "effect": "De luchten krijgen een modieuze 'teal' kleur die fel afsteekt tegen de warme oranje zonnegloed in het zand en rond de wolken."
+      }
+    ],
+    "color_approach": "Kleur fungeert niet als een afspiegeling van de werkelijkheid, maar als een canvas voor de 'Teal and Orange' look. Het saaie middaggrijs wordt gedwongen naar oranje en warme tinten via de witbalans, gasgegeven en alle overgebleven blauwen schuiven om naar een diep cyaan, in navolging van blockbustercinematografie.",
+    "local_adjustments": "Hoewel de globale kleurtonen eerst worden gezet, maakt hij nadrukkelijk gebruik van maskers via immense radiale lichtfilters in Camera Raw en custom fog brushes in Photoshop om lokaal theatraal tegenlicht, lichtafval en structuur op te wekken.",
+    "what_to_avoid": [
+      "Het laten staan van storende ankerpunten zoals een groot schip op de achtergrond, wat de dromerige isolatie van het menselijke onderwerp direct in de weg staat.",
+      "Een geveinsde zonnestraling op de foto plakken zonder tegelijkertijd de algemene witbalans stevig op te warmen; dit leidt tot een uiterst nep, niet-complementair lichteffect."
+    ],
+    "best_for": "Bewerkers en composite artists die weersomstandigheden durven te manipuleren en streven naar een sterk gestileerd, theatraal en filmisch moodboard vanuit een fletse basis.",
+    "unique_insights": [
+      "Een volstrekt grijze, kille namiddag kan getransformeerd worden in een broeierige zonsondergang door niet alleen de witbalans aan te passen, maar asymmetrische zonnestralen te forceren met radiale gradients.",
+      "Het gebruik van een apart gedownloade 'fog brush' levert textuurrijke, gelaagde zeemist op, wat visueel vele malen authentieker overkomt dan een platte verlaging van de globale Dehaze-slider.",
+      "Door de afbeelding eerst om te zetten naar een Smart Object, zorgt hij ervoor dat alle Camera Raw-bewerkingen als Smart Filters worden opgeslagen, wat totale flexibiliteit tijdens de verbouwing toelaat."
+    ],
+    "style_preview": "Deze stijl neemt resoluut afscheid van documentaire fotografie en leunt over naar digitale landschapscreatie en cinematografie. De visuele esthetiek zweert bij dramatische 'Teal and Orange' contrasten en zware, gefingeerde atmosferische effecten. Deze theatraal gerichte benadering is bij uitstek inzetbaar als je met saai fotoweer te kampen hebt en je foto toch die majestueuze blockbuster-look wilt meegeven. Je resulteert in een zinderend, episch strandbeeld met perfect theatraal licht."
   }
 ]

@@ -35313,5 +35313,185 @@
       "Ze gebruikt de ingebouwde Photoshop 'Adjustments Presets' als een soort Master-LUT op lage opaciteit (15-30%) helemaal bovenaan haar laagstapel om alle gekunstelde onderdelen in hetzelfde kleurbad te trekken."
     ],
     "style_preview": "Deze workflow combineert zwaar digitaal timmerwerk (compositing en selecties) met een warme, uitnodigende 'food & lifestyle' esthetiek. Ondanks dat het beeld uit vele lagen en kunstmatige elementen (Solid Colors) is opgebouwd, zorgt de extreme precisie van de maskers en het slim terughalen van originele schaduwen voor een levensecht, professioneel eindresultaat."
+  },
+  {
+    "video_title": "FOOD AND DRINK PHOTOGRAPHY EDITING TUTORIAL | How I edit Hard Light Images | Lightroom and Photoshop",
+    "photographer_name": "AM Photographer",
+    "youtube_url": "https://www.youtube.com/watch?v=p7bch4kmpI4",
+    "genre": [
+      "product"
+    ],
+    "light_conditions": [
+      "harde zon"
+    ],
+    "mood": [
+      "levendig",
+      "dramatisch"
+    ],
+    "software": [
+      "Lightroom Classic",
+      "Photoshop"
+    ],
+    "style_description": "Crisp Contrast Hard Licht",
+    "philosophy": "De bewerking is gericht op het maximaliseren van de textuur en grafische kwaliteit van hard licht. Door diepe contrasten aan te brengen en achtergrondkleuren complementair te verschuiven, wordt het product losgesneden van de omgeving. Het doel is een verfrissend, commercieel beeld met een hoogwaardige afwerking van het glaswerk.",
+    "workflow_order": [
+      "Stap 1: Lenscorrecties toepassen en chromatische aberratie verwijderen.",
+      "Stap 2: Achtergrondkleur in HSL-paneel verschuiven voor kleurcontrast met het product.",
+      "Stap 3: Algemene belichting in Basics balanceren door zwarte punten te verlagen en witte punten te verhogen.",
+      "Stap 4: Lokale verscherping en contrast toevoegen met maskers op de ice cubes.",
+      "Stap 5: Stofjes en krassen op achtergrond en glas in Photoshop wegwerken met Patch tool."
+    ],
+    "techniques": [
+      {
+        "name": "Complementaire Achtergrondshift",
+        "description": "Schuif de Aqua en Blue sliders in het HSL-paneel volledig naar groen/turquoise en verhoog de Luminance met +10.",
+        "when_to_use": "Bij een saaie achtergrondkleur die niet contrasteert met het warme product.",
+        "tools": [
+          "HSL/Color"
+        ],
+        "effect": "Het product springt los van de achtergrond door een sterk kleurcontrast."
+      },
+      {
+        "name": "Harde Schaduw Optimalisatie",
+        "description": "Verlaag de Blacks slider naar -40 en breng de Shadows iets omhoog tot +20 voor behoud van detail.",
+        "when_to_use": "Wanneer slagschaduwen in hard licht te flets zijn of detail missen in de donkerste delen.",
+        "tools": [
+          "Basic (Shadows/Blacks)"
+        ],
+        "effect": "Grafische, krachtige schaduwen met behoud van textuur."
+      },
+      {
+        "name": "IJsblokjes Textuur Boost",
+        "description": "Verhoog de Clarity slider naar +35 om de oppervlaktestructuur van ijs en druppels te benadrukken.",
+        "when_to_use": "Bij dranken met condens, druppels en ijsblokjes.",
+        "tools": [
+          "Basic (Clarity)"
+        ],
+        "effect": "Het ijs en de druppels ogen knisperend scherp en verfrissend."
+      },
+      {
+        "name": "Selectieve Randverscherping",
+        "description": "Houd Alt ingedrukt bij de Masking slider in het Detail-paneel en trek naar rechts tot alleen de randen wit zijn.",
+        "when_to_use": "Wanneer je alleen het hoofdonderwerp wilt verscherpen zonder ruis in de achtergrond te genereren.",
+        "tools": [
+          "Detail (Masking)"
+        ],
+        "effect": "Alleen het product is scherp, de bokeh-achtergrond blijft zuiver."
+      },
+      {
+        "name": "S-Curve Contrast",
+        "description": "Trek in de Tone Curve de linksonder hoek iets omlaag en rechtsboven iets omhoog voor een subtiele S-vorm.",
+        "when_to_use": "Als laatste stap om algemene kleurdiepte en punch toe te voegen.",
+        "tools": [
+          "Tone Curve"
+        ],
+        "effect": "Meer diepte in de hele compositie door versterkt contrast."
+      }
+    ],
+    "color_approach": "Kleur wordt gebruikt als separatiemiddel: warme productkleuren krijgen een complimentaire turquoise achtergrond. Er wordt niet gestreefd naar puur realisme, maar naar esthetische impact via HSL-manipulatie.",
+    "local_adjustments": "Lokale aanpassingen via Adjustment Brush worden ingezet om specifieke details, zoals een donker fruitpartje, lokaal op te lichten zonder de globale balans van de foto te verstoren.",
+    "what_to_avoid": [
+      "Het toepassen van verscherping op de hele foto zonder masker",
+      "Het proberen te retouchen van glas in Lightroom in plaats van Photoshop"
+    ],
+    "best_for": "Voor food- en dranken-fotografie onder harde studiolampen of direct zonlicht.",
+    "unique_insights": [
+      "Hij verschuift de kleur van de achtergrond als eerste stap omdat deze bepalend is voor de sfeer van alle volgende keuzes.",
+      "Bij het corrigeren van belichting verlaagt hij de Highlights voor detail, maar verhoogt hij de Whites fors voor sprankeling in glas.",
+      "Hij gebruikt Lightroom voor de kleur- en basisbelichting, maar zweert bij Photoshop voor alle 'schone' retouche-taken op glas."
+    ],
+    "style_preview": "Deze stijl is uitermate geschikt voor fotografen die houden van gedurfde, knallende kleuren en een scherpe, commerciële look. Door hard licht niet te proberen te verzachten, maar juist te omarmen, ontstaat een beeld dat er zeer dynamisch en 'vers' uitziet. Het is een krachtige stijl voor social media, waarbij het onderwerp direct de aandacht van de kijker grijpt door contrast en kleurverzadiging."
+  },
+  {
+    "video_title": "How To Create High-End Product Photos With Photoshop!",
+    "photographer_name": "Brendan Williams",
+    "youtube_url": "https://www.youtube.com/watch?v=4575M1Le1VE",
+    "genre": [
+      "product"
+    ],
+    "light_conditions": [
+      "kunstlicht"
+    ],
+    "mood": [
+      "grafisch ontwerp",
+      "cinematisch"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Digitale Virtuele Product Studio",
+    "philosophy": "Deze aanpak draait om het volledig digitaal construeren van een professionele productstudio. Omdat producten ruw worden gefotografeerd, wordt de omgeving (achtergrond, voetstuk, schaduw) volledig opgebouwd uit geometrische vormen en gradiënten in Photoshop. Dit geeft de fotograaf absolute controle over elk aspect van de compositie.",
+    "workflow_order": [
+      "Stap 1: Producten en schaduwen vrijstaand maken met de Pen Tool.",
+      "Stap 2: Virtueel voetstuk en achtergrond creëren met Shape layers in perspectief.",
+      "Stap 3: Schaduwen op Multiply-modus over de nieuwe achtergrond plaatsen.",
+      "Stap 4: Kleuren van de achtergrond afstemmen op product-highlights via het pipet.",
+      "Stap 5: Contactschaduwen handmatig bijverven voor een natuurlijk grondcontact."
+    ],
+    "techniques": [
+      {
+        "name": "Schaduw Extractie op Multiply",
+        "description": "Selecteer de schaduw met de Pen Tool, kopieer naar een nieuwe laag en zet de blendmodus op Multiply.",
+        "when_to_use": "Wanneer je een product vrijstaand hebt gemaakt en de natuurlijke schaduw wilt behouden voor in een nieuwe omgeving.",
+        "tools": [
+          "Pen Tool",
+          "Blend Modes (Multiply)"
+        ],
+        "effect": "De witte achtergrond van de schaduw verdwijnt en de schaduw mengt naadloos met de nieuwe laag."
+      },
+      {
+        "name": "Perspectief Voetstuk",
+        "description": "Trek een rechthoek en vervorm deze met Cmd/Ctrl+T door de ankerpunten te verplaatsen naar de perspectieflijnen van de foto.",
+        "when_to_use": "Wanneer je een object op een realistische 'tafel' of 'platform' wilt plaatsen in een digitale compositie.",
+        "tools": [
+          "Rectangle Tool",
+          "Free Transform"
+        ],
+        "effect": "Een 3D-effect waarbij het product op een vlak lijkt te staan."
+      },
+      {
+        "name": "Clipping Mask voor Schaduw Contrast",
+        "description": "Voeg een Curves-laag toe als Clipping Mask boven de schaduwlaag en trek de hooglichten omhoog.",
+        "when_to_use": "Om grijs vuil of kleurzwemen uit een geïmporteerde schaduwlaag op Multiply te verwijderen.",
+        "tools": [
+          "Curves",
+          "Clipping Mask"
+        ],
+        "effect": "Alleen de pure schaduw blijft over; de randinformatie is neutraal."
+      },
+      {
+        "name": "Contactschaduw Schilderen",
+        "description": "Schilder met een zachte kwast een donker vlekje en druk Cmd/Ctrl+T om dit met Shift verticaal plat te drukken.",
+        "when_to_use": "Wanneer een object digitaal is geplaatst maar lijkt te 'zweven' boven de ondergrond.",
+        "tools": [
+          "Brush Tool",
+          "Free Transform"
+        ],
+        "effect": "Een geloofwaardige spleet-schaduw precies waar het product de grond raakt."
+      },
+      {
+        "name": "Virtuele Achtergrond Gradiënt",
+        "description": "Gebruik een Radial Gradient met de Eyedropper (gepikt uit het product) voor een zachtere overgang naar wit.",
+        "when_to_use": "Om een saaie, vlakke achtergrond te vervangen door een luxe ogende studio-gradiënt.",
+        "tools": [
+          "Gradient Tool",
+          "Eyedropper"
+        ],
+        "effect": "Een zachte, cinematische achtergrond die de kleurbalans van het product ondersteunt."
+      }
+    ],
+    "color_approach": "De fotograaf gebruikt een strikte kleur-matchingsmethode: hij haalt zowel zijn lichtste als donkerste kleuren voor de achtergrond en voetstukken rechtstreeks uit de pixels van het product zelf.",
+    "local_adjustments": "De nadruk ligt op Clipping Masks; door elk adjustment effect direct aan een specifieke shape of laag te koppelen, worden fouten in de compositie of kleur voorkomen.",
+    "what_to_avoid": [
+      "Het proberen te faken van schaduwen met Drop Shadow stijlen",
+      "Het overslaan van de 'perspectief-check' van de tafelrand"
+    ],
+    "best_for": "Voor e-commerce en productfotografen die een luxe uitstraling willen zonder dure set-opbouw.",
+    "unique_insights": [
+      "Hij tekent zijn voetstukken niet op gevoel, maar snapt de vorm letterlijk vast aan de perspectieflijnen van de originele referentiefoto.",
+      "Een zachte verfkwast-stip platdrukken met Shift+Transform is de snelste methode om contactschaduwen (grounding) te simuleren.",
+      "Hij gebruikt de originele foto enkel als 'mal' voor de horizonlijn, om perspectivische fouten in zijn virtuele studio te voorkomen."
+    ],
+    "style_preview": "Deze stijl transformeert een simpel shot tot een klinische, high-end e-commerce render. Het proces leunt meer op grafisch ontwerp dan op traditionele bewerking. Het resultaat is een hyperglad, perfect gebalanceerd beeld met een premium uitstraling, uitermate geschikt voor cosmetica en verzorgingsproducten. Fotografen die streven naar een 'perfecte' studio-look zullen veel hebben aan deze virtuele constructiemethode."
   }
 ]

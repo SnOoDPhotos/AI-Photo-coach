@@ -34442,5 +34442,266 @@
       "Door de afbeelding eerst om te zetten naar een Smart Object, zorgt hij ervoor dat alle Camera Raw-bewerkingen als Smart Filters worden opgeslagen, wat totale flexibiliteit tijdens de verbouwing toelaat."
     ],
     "style_preview": "Deze stijl neemt resoluut afscheid van documentaire fotografie en leunt over naar digitale landschapscreatie en cinematografie. De visuele esthetiek zweert bij dramatische 'Teal and Orange' contrasten en zware, gefingeerde atmosferische effecten. Deze theatraal gerichte benadering is bij uitstek inzetbaar als je met saai fotoweer te kampen hebt en je foto toch die majestueuze blockbuster-look wilt meegeven. Je resulteert in een zinderend, episch strandbeeld met perfect theatraal licht."
+  },
+  {
+    "video_title": "Working a seascape in DxO Photolab 8",
+    "photographer_name": "DxFlow",
+    "youtube_url": "https://www.youtube.com/watch?v=x1wMiLf8HL4",
+    "genre": [
+      "kust"
+    ],
+    "light_conditions": [
+      "gouden uur",
+      "daglicht"
+    ],
+    "mood": [
+      "naturalistisch",
+      "rustig"
+    ],
+    "software": [
+      "DxO PhotoLab"
+    ],
+    "style_description": "Vibrant Clean Blue Ocean",
+    "philosophy": "De essentie is het behouden van een heldere, natuurlijke toonwaarde-verdeling waarbij de bewuste koelte van het water behouden blijft. Door de belichting als vertrekpunt fors te verhogen en schaduwen te herstructureren, ontstaat er een fris beeld. Bewerking dient om de vloeiende dynamiek van de sluitertijd te ondersteunen zonder de geloofwaardigheid aan te tasten.",
+    "workflow_order": [
+      "Stap 1: Camerarendering omzetten naar Velvia 50 filmpositief en de kleurtemperatuur handmatig afkoelen naar 5300K.",
+      "Stap 2: De globale belichting fors verhogen en middentonen asymmetrisch via de toonsliders corrigeren.",
+      "Stap 3: De horizon waterpas zetten en sensorvlekken wegpoetsen met een hoge vederwaarde op de retoucheringstool.",
+      "Stap 4: Lokale controlepunten plaatsen op het water om gerichte micro-scherpte en textuur via ClearView te injecteren."
+    ],
+    "techniques": [
+      {
+        "name": "Velvia Kleurprofilering",
+        "description": "Zet de kleurrendering in het kleurpaneel op een specifiek filmpositief profiel, Velvia 50, om direct krachtige basissaturatie en contrast te laden.",
+        "when_to_use": "Bij vlakke kustopnames vroeg in de ochtend die een levendige, analoge kleurinjectie kunnen gebruiken.",
+        "tools": [
+          "Kleurweergave / Color Rendering"
+        ],
+        "effect": "Kleuren winnen direct aan diepte en microcontrast, waarbij met name groen- en blauwtinten levendiger worden."
+      },
+      {
+        "name": "Oceaan Temperatuur Koeling",
+        "description": "Verlaag de globale kleurtemperatuur handmatig naar 5300K en druk de tintwaarde dicht naar het nulpunt om blauwtinten te zuiveren.",
+        "when_to_use": "Tijdens vroege zonsopkomsten aan zee wanneer je de kille, frisse sfeer van het stromende water wilt benadrukken.",
+        "tools": [
+          "Witbalans / White Balance"
+        ],
+        "effect": "Harde gele en modderige zwemen verdwijnen uit het schuim, waardoor het water een heldere, diepblauwe toon aanneemt."
+      },
+      {
+        "name": "Retouchering Veder-Blending",
+        "description": "Activeer de retoucheringstool, schroef de feather-waarde (veder) flink omhoog en klik op een sensorvlek in een complex patroon.",
+        "when_to_use": "Bij het verwijderen van stofvlekken in uiterst complexe, actieve structuren zoals kolkend water of schuimlijnen.",
+        "tools": [
+          "Retoucheren / Retouching Tool"
+        ],
+        "effect": "De correctie blendt naadloos met de omringende textuur zonder dat er een scherpe, zichtbare digitale rand achterblijft."
+      },
+      {
+        "name": "Gerichte ClearView Waterisolatie",
+        "description": "Plaats lokale controlepunten (Control Points) op het stromende water met een luma/chromawaarde van 50% en schuif ClearView omhoog.",
+        "when_to_use": "Wanneer je de wervelingen en schuimlijnen in het water extra definitie wilt geven zonder de lucht korrelig te maken.",
+        "tools": [
+          "Lokale aanpassingen (Controlepunten) / Local Adjustments"
+        ],
+        "effect": "De textuur en micro-contrasten in de waterstroming exploderen met scherpte, waardoor de dynamiek tastbaar wordt."
+      },
+      {
+        "name": "Asymmetrische Hooglichten Compensatie",
+        "description": "Trek een gegradueerd filter over de lucht, verlaag de highlights fors en verhoog gelijktijdig de midtones om grijsheid te voorkomen.",
+        "when_to_use": "Wanneer het verminderen van hooglichten in een lichte lucht ervoor zorgt dat de wolken een doffe, grauwe uitstraling krijgen.",
+        "tools": [
+          "Gegradueerd filter / Graduated Filter"
+        ],
+        "effect": "Details in de wolken worden hersteld, maar de lucht behoudt een heldere, stralende en natuurlijke toonwaarde."
+      }
+    ],
+    "color_approach": "Er wordt gekozen voor een koele, rustgevende basis door de witbalans bewust naar de blauwe zijde te sturen. Lokale aanpassingen via een omgekeerd verloopfilter verhogen de verzadiging van de oranjetinten in de voorgrond, waarna met een gum het effect op specifieke rock-vlakken weer wordt getemd om overvloeiing te voorkomen.",
+    "local_adjustments": "Lokale maskers vormen het hart om contrastverlies tegen te gaan. Controlepunten worden selectief op de branding geplaatst om uitsluitend de wervelingen van het water te behandelen met ClearView, terwijl lineaire verlopen de lucht en de voorgrond onafhankelijk tonen.",
+    "what_to_avoid": [
+      "Het globaal toepassen van ClearView over de gehele foto, wat leidt tot een onrealistisch harde lucht en lelijke ruisartefacten.",
+      "Het behouden van een scheve horizonlijn, wat de geometrische rust in een weidse kustcompositie direct doorbreekt."
+    ],
+    "best_for": "Kustlandschappen geschoten met matig korte sluitertijden (een derde tot een halve seconde) waarbij schuimwervelingen maximale micro-scherpte vereisen.",
+    "unique_insights": [
+      "Hij past de Velvia filmprofilering toe nog vóórdat hij belichtingscorrecties doorvoert, omdat dit analoge profiel de toonwaardeverdeling direct dicteert.",
+      "Bij bewolkte luchten compenseert hij de reductie van Highlights standaard met een injectie van Midtones in hetzelfde masker om de gevreesde 'grijze deken' te omzeilen.",
+      "Hij gebruikt de feather-schuif van de retoucheringstool op een extreem hoge waarde in bewegend water, omdat harde kloonranden direct opvallen in organische schuimlijnen."
+    ],
+    "style_preview": "Deze stijl kenmerkt zich door een heldere, frisse en haarscherpe uitstraling waarbij de focus ligt op natuurlijke koele tonen. De kernfilosofie zweert bij het behouden van helderheid en het lokaal boetseren van waterstructuren met controlepunten. Deze benadering werkt uitstekend voor kustlijnen met actieve branding tijdens de overgangsuren. Als fotograaf kun je een eindresultaat verwachten waarin het water glanst met diepe blauwtinten en schuimlijnen haarscherp door het frame snijden."
+  },
+  {
+    "video_title": "Seascape Composites - In Post #546",
+    "photographer_name": "Scott Davenport",
+    "genre": [
+      "kust"
+    ],
+    "light_conditions": [
+      "diffuus licht"
+    ],
+    "mood": [
+      "dramatisch",
+      "levendig"
+    ],
+    "software": [
+      "ON1 Photo RAW"
+    ],
+    "style_description": "Gelaagd Actierijk Dynamisch Kustlandschap",
+    "philosophy": "Een enkele opname is ontoereikend om de cumulatieve energie en dramatiek van de oceaan te vangen. Door opeenvolgende actiemomenten van brekende golven handmatig samen te voegen, ontstaat een geperfectioneerd tijdsdocument. De basisfoto met de beste algemene compositie vormt het fundament, waarna spectaculaire spatten uit andere frames handmatig worden geïntegreerd via zachte maskers.",
+    "workflow_order": [
+      "Stap 1: De reeks opeenvolgende wave-opnames vanuit Lightroom selecteren en rechtstreeks openen als lagen in ON1.",
+      "Stap 2: De laag met de beste algemene branding en lijnenspel onderop plaatsen als de actieve basislaag.",
+      "Stap 3: De overige actielagen voorzien van een volledig geïnverteerd zwart masker om alle pixels tijdelijk te verbergen.",
+      "Stap 4: Met een groot, zacht penseel de specifieke wave-splashes op 100% dekking inschilderen en de randen vloeiend uitfaden."
+    ],
+    "techniques": [
+      {
+        "name": "Omgekeerde Actiemaskering",
+        "description": "Voeg een laagmasker toe aan een specifieke wave-opname, inverteer het masker direct naar zwart en schilder met een zacht wit penseel op 100% dekking uitsluitend de opspattende schuimkraag in.",
+        "when_to_use": "Wanneer je een krachtige golfexplosie uit een ander frame wilt overvloeien in je hoofdcompositie.",
+        "tools": [
+          "Laagmasker / Layer Mask",
+          "Penseel / Brush tool"
+        ],
+        "effect": "De spectaculaire golf verschijnt exact op de gewenste locatie zonder de omringende compositie van de basislaag te verstoren."
+      },
+      {
+        "name": "Vloeiende Surfline Fading",
+        "description": "Schilder de overgang tussen twee watermassa's in het masker met een verlaagde penseeldekking (Opacity) en wissel regelmatig tussen zwart en wit om de schuimlijnen te ritsen.",
+        "when_to_use": "Bij het blenden van bewegend water uit verschillende opnames waar harde overgangen onnatuurlijk zouden overkomen.",
+        "tools": [
+          "Penseel / Brush tool"
+        ],
+        "effect": "De golven en schuimpatronen smelten organisch samen tot één logische zeestroming zonder harde montageranden."
+      },
+      {
+        "name": "Globale Masker-Verzachting",
+        "description": "Gebruik de globale Feather-slider in het maskereigenschappen-paneel om de randen van het zojuist geschilderde masker achteraf zachter te maken.",
+        "when_to_use": "Wanneer er subtiele toonwaardeverschillen in de lucht of zee rondom het ingeschilderde object zichtbaar zijn.",
+        "tools": [
+          "Laagmasker / Layer Mask (Feather)"
+        ],
+        "effect": "De randen van de selectie vervagen over het gehele masker, waardoor eventuele abrupte helderheidssprongen onzichtbaar wegvloeien."
+      },
+      {
+        "name": "Asymmetrische Rand Shaving",
+        "description": "Zet het penseel in de 'Paint Out'-modus met een uiterst lage flow en scheer heel voorzichtig langs de randen van een donkere schuimband.",
+        "when_to_use": "Wanneer een ingeschilderde golf aan de randen een onnatuurlijk donkere of harde contrastlijn vertoont ten opzichte van de onderlaag.",
+        "tools": [
+          "Penseel / Brush tool"
+        ],
+        "effect": "De harde contrastrand wordt weggesneden, waardoor de overgang tussen de twee belichtingen volledig transparant wordt."
+      },
+      {
+        "name": "Nieuwe Gestempelde Compositielaag",
+        "description": "Klik met de rechtermuisknop op de lagenstapel en kies 'New Stamped Layer' om alle actieve, gemaskeerde lagen te versmelten tot één nieuwe pixellaag.",
+        "when_to_use": "Als finale stap na het compositen, om een schoon startpunt te hebben voor de algehele kleurgrading en sensorreparaties.",
+        "tools": [
+          "Lagen / Layers (New Stamped Layer)"
+        ],
+        "effect": "Alle maskers worden definitief ingebakken in een nieuwe bovenliggende laag, waardoor de software sneller reageert bij volgende bewerkingen."
+      }
+    ],
+    "color_approach": "De focus ligt volledig op het tonale beheer tijdens het samenvoegen van de lagen. Er wordt streng op toegezien dat de ingeschilderde golfpartijen qua helderheid en kleurtemperatuur exact matchen met de omringende zee van de basislaag, om een breuk in de natuurlijke lichtval te voorkomen.",
+    "local_adjustments": "Lokale aanpassingen vormen de absolute spil van deze workflow. Er worden geen automatische selectietools gebruikt; de fotograaf vertrouwt puur op handmatig schilderwerk met een grote vederwaarde op het penseel om de verschillende weerelementen en golven zone voor zone in elkaar te vlechten.",
+    "what_to_avoid": [
+      "Het blijven doorschilderen in een masker tot buiten de actiezone, waardoor grote delen van de secundaire belichting ongewenst de basislaag overschrijven.",
+      "Het stylen of rechtzetten van de foto vóórdat de wave-blend is voltooid, wat kan leiden tot microscopische uitlijningsfouten tussen de lagen."
+    ],
+    "best_for": "Kustfotografie met een stabiel statief waarbij opeenvolgende golven op verschillende plekken tegen de rotsen slaan en je het ultieme moment wilt regisseren.",
+    "unique_insights": [
+      "Hij bouwt de compositie op door de 'base-layer' bewust onderop te leggen en de effecten via zwarte maskers naar binnen te halen, in plaats van delen weg te poetsen op een wit masker.",
+      "In plaats van complexe randverfijningstools te openen, gebruikt hij de simpele Feather-slider van het masker om tonale verschillen in egale vlakken zoals de lucht glad te strijken.",
+      "Hij voert retouches van vogels of sensorvlekken pas uit op een 'Stamped Layer' ná het blenden, om te voorkomen dat je dezelfde fout in drie verschillende lagen afzonderlijk moet herstellen."
+    ],
+    "style_preview": "Deze stijl ademt pure dynamiek, actie en gecontroleerde kracht. De kernfilosofie stelt dat de fotograaf de regisseur is die het perfecte moment samenstelt uit een tijdsreeks, in plaats van te hopen op één enkel lucky shot. De visuele sfeer is intens en rijk aan textuur, waarbij elke golfexplosie strategisch is geplaatst. Fotografen kunnen een haarscherp, geloofwaardig maar maximaal spectaculair eindresultaat verwachten waarin de zee de compositie dwingend leidt."
+  },
+  {
+    "video_title": "Simple Landscape Photo Editing: Dramatic & Natural Sunset",
+    "photographer_name": "Paul Farace",
+    "genre": [
+      "kust"
+    ],
+    "light_conditions": [
+      "gouden uur"
+    ],
+    "mood": [
+      "dramatisch",
+      "zacht"
+    ],
+    "software": [
+      "Lightroom Classic",
+      "Photoshop"
+    ],
+    "style_description": "Dramatic Natural Sunset Glow",
+    "philosophy": "Diepte in een landschap ontstaat door het accentueren van het reeds aanwezige, natuurlijke licht in plaats van het kunstmatig te fabriceren. Sliders mogen nooit blind naar extremen worden getrokken. Door subtiele raw-ontwikkeling te koppelen aan een geavanceerd lokaal luminantie-intersectiemasker en een dromerig Orton-effect blijft het beeld krachtig doch volkomen geloofwaardig.",
+    "workflow_order": [
+      "Stap 1: De horizon exact waterpas zetten en de algehele belichting opbouwen met strikte controle over hooglichten en witclipping.",
+      "Stap 2: De globale verscherping in Lightroom volledig uitschakelen om digitale artefacten in volgende stappen te blokkeren.",
+      "Stap 3: Een lineair verloop over de lucht trekken en de getijdepoelen oplichten met een complex intersectie-luminantiemasker.",
+      "Stap 4: De foto overbrengen naar Photoshop voor een handgemaakt Orton-effect via een gesplitst Blend If-masker."
+    ],
+    "techniques": [
+      {
+        "name": "Luminantie Intersectie Boetseren",
+        "description": "Schilder met een lokaal penseel over het water en de zandruggen, kies voor Intersect Mask With > Luminance Range en sluit de diepste schaduwen volledig uit van de selectie.",
+        "when_to_use": "Wanneer je de glans en reflecties op nat zand of getijdepoelen wilt oplichten zonder de donkere rotspartijen flets te maken.",
+        "tools": [
+          "Maskeren (Luminantiebereik) / Masking"
+        ],
+        "effect": "Uitsluitend de door de zon beschenen waterlijnen en natte zandruggen worden lichter en springen met veel dieptewerking naar voren."
+      },
+      {
+        "name": "Orton Blend-If Bescherming",
+        "description": "Kopieer de laag in Photoshop, pas Gaussian Blur toe en zet de modus op Soft Light. Open de Layer Style, ga naar Blend If (Underlying Layer) en splits de zwarte slider met Alt om de schaduwen uit te sluiten.",
+        "when_to_use": "Bij het toepassen van een Orton-effect om een dromerige gloed in de hooglichten te forceren zonder dat schaduwen modderig dichtlopen.",
+        "tools": [
+          "Overvloeimodus / Blend Mode (Soft Light)",
+          "Gaussian Blur / Gaussiaans vervagen",
+          "Overvloeien als / Blend If"
+        ],
+        "effect": "Er ontstaat een sprookjesachtige, zachte gloed rondom de zonsondergang en de reflecties, terwijl de donkere rotsen haarscherp en diepzwart blijven."
+      },
+      {
+        "name": "Sharpening-Freeze voor Workflow",
+        "description": "Zet de globale verscherping (Sharpening Amount) in het detailpaneel volledig op nul tijdens de initiële ontwikkelingsfase.",
+        "when_to_use": "Als vaste preventieve stap bij elke landschapsfoto die later zware contrast- of maskerbewerkingen ondergaat.",
+        "tools": [
+          "Details / Detail"
+        ],
+        "effect": "Harde randen blijven vrij van digitale ruis en micro-halo's, waardoor maskers naadloos aansluiten en overvloeien."
+      },
+      {
+        "name": "Lineaire Horizon Dekking",
+        "description": "Trek een lineair verloop vanaf de bovenrand tot net boven de horizonlijn en verlaag de belichting en de hooglichten.",
+        "when_to_use": "Wanneer een felle zonsondergang de wolkenstructuren overstraalt en je de dramatiek in de lucht wilt herstellen.",
+        "tools": [
+          "Lineair verloop / Linear Gradient"
+        ],
+        "effect": "De lucht wint direct aan doertekening en dramatiek zonder dat er een lelijke, lichte rand (halo) langs de horizon ontstaat."
+      },
+      {
+        "name": "Subtiele Tooncurve Dieptewerking",
+        "description": "Maak een uiterst milde S-curve in het tooncurvepaneel door de witten een fractie te liften en de schaduwen heel zacht te drukken.",
+        "when_to_use": "Om de foto een subtiele punch en driedimensionale uitstraling te geven na de globale belichtingscorrectie.",
+        "tools": [
+          "Tooncurve / Tone Curve"
+        ],
+        "effect": "Middentonen blijven vloeiend, maar het algehele beeld krijgt net iets meer visuele diepte en contrast."
+      }
+    ],
+    "color_approach": "Kleur wordt gestuurd door het respecteren van de natuurlijke witbalans zoals die in het veld werd ervaren. Verzadiging en levendigheid worden uiterst spaarzaam ingezet; de fotograaf laat de intense kleuren hoofdzakelijk ontstaan door de lokale verdonkering van de lucht en de selectieve oplichting van reflecties via luminantiemaskers.",
+    "local_adjustments": "Lokale maskers zijn de sleutel tot het succes. In plaats van te vertrouwen op volautomatische AI-selecties, kiest hij voor lineaire verlopen om de horizon clean te houden en combineert hij penselen met luminantie-intersecties om het licht op het natte strand handmatig te boetseren.",
+    "what_to_avoid": [
+      "Het blind gebruiken van de AI-sky tool op een strakke horizon, wat vaak resulteert in onnatuurlijke, scherpe overgangslijnen.",
+      "Het openschuiven van schaduwen tot +100, waardoor het landschap zijn natuurlijke schaduwrichting en driedimensionaliteit verliest."
+    ],
+    "best_for": "Groothoek kustlandschappen tijdens een intense zonsondergang met veel reflecties op het strand en getijdepoelen in de voorgrond.",
+    "unique_insights": [
+      "Hij deactiveert de globale verscherping in Lightroom direct bij de start, omdat hij stelt dat pre-sharpening micro-artefacten genereert die lokale maskers later lelijk verharden.",
+      "Hij gebruikt de intersectie-optie van maskers om een handmatig penseel te verfijnen met een luminantiebereik, wat een organischere overvloeiing geeft dan een puur digitaal masker.",
+      "Bij het Orton-effect in Photoshop deelt hij de Blend If-sliders met de Alt-toets op in twee helften, omdat deze gradatie de dromerige gloed vloeiend laat wegsterven in de middentonen."
+    ],
+    "style_preview": "Deze stijl balanceert meesterlijk tussen adembenemende dramatiek en absolute visuele geloofwaardigheid. De kernfilosofie dicteert dat post-productie er is om het bestaande licht te vieren en te versterken, nooit om het te verzinnen. De visuele sfeer is warm, volumineus en gezegend met een etherische, zachte gloed die dankzij de Blend If-techniek de scherpte van het landschap intact laat. Fotografen kunnen een high-end, professioneel eindresultaat verwachten waarin de zonreflecties op het natte zand de kijker diep de foto in trekken."
   }
 ]

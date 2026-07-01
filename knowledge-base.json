@@ -38378,5 +38378,879 @@
       "Het exporteren van een product als een transparante PNG is de ultieme service die je een commerciële klant kunt bieden voor hun lay-outs."
     ],
     "style_preview": "Deze stijl straalt een ongekende, goudgele warmte en pure luxe uit, speciaal ontwikkeld voor high-end verpakkings- en voedselmedia. De filosofie stoelt op het fysiek boetseren van licht van achteren en rondom het product om een adembenemende interne gloed te forceren. Het werkt magistraal bij glazen flessen en stroperige substanties onder gecontroleerd kunstlicht en resulteert in een driedimensionaal, vlijmscherp meesterwerk. Fotografen die deze methodiek hanteren, leveren topkwaliteit assets af."
+  },
+  {
+    "video_title": "How To Edit Your Product Photos Fast with Lightroom & Photoshop / TUP: Episode 4 / Product Edit",
+    "photographer_name": "Tales",
+    "youtube_url": "https://www.youtube.com/watch?v=4_jdaJLyHfY",
+    "genre": [
+      "product"
+    ],
+    "light_conditions": [
+      "diffuus licht"
+    ],
+    "mood": [
+      "natuurlijk",
+      "clean"
+    ],
+    "software": [
+      "Lightroom Classic",
+      "Photoshop"
+    ],
+    "style_description": "Clean, professionele productfotografie",
+    "philosophy": "Het doel is een zo natuurlijk mogelijke weergave van het product met een perfect schone achtergrond. Snelheid is hierbij cruciaal door het synchroniseren van instellingen over meerdere foto's. Correcties in Photoshop worden alleen toegepast waar echt nodig voor een strak eindresultaat.",
+    "workflow_order": [
+      "Stap 1: Witbalans corrigeren met de eyedropper op een neutraal vlak",
+      "Stap 2: Algemene belichting en contrast aanpassen in Lightroom",
+      "Stap 3: Synchroon instellingen toepassen op de gehele serie foto's",
+      "Stap 4: Achtergrond opschonen en uitlijnen in Photoshop"
+    ],
+    "techniques": [
+      {
+        "name": "Witbalans Eye-dropper",
+        "description": "Gebruik de eyedropper op een wit of grijs object om de meest natuurlijke kleurweergave te krijgen.",
+        "when_to_use": "Bij elke productfoto waar de kleuren niet 100% accuraat lijken.",
+        "tools": [
+          "White Balance Selector (Lightroom)"
+        ],
+        "effect": "Verwijdert ongewenste kleurzwemen en zorgt voor een neutrale basis."
+      },
+      {
+        "name": "Content-Aware Fill",
+        "description": "Selecteer de ongewenste achtergrondranden en vul deze met Content-Aware Fill voor een egale witte achtergrond.",
+        "when_to_use": "Als het product niet de hele achtergrond beslaat.",
+        "tools": [
+          "Lasso Tool",
+          "Content-Aware Fill (Photoshop)"
+        ],
+        "effect": "Creëert een naadloze, egale achtergrond rond het product."
+      },
+      {
+        "name": "Patch Tool",
+        "description": "Handmatig oneffenheden op de achtergrond wegwerken door te slepen naar een schoon gebied.",
+        "when_to_use": "Voor kleine correcties nadat Content-Aware Fill is gebruikt.",
+        "tools": [
+          "Patch Tool (Photoshop)"
+        ],
+        "effect": "Verwijdert laatste imperfecties op de achtergrond."
+      },
+      {
+        "name": "Mixer Brush Tool",
+        "description": "Vloeiend blenden van grijstinten op de achtergrond met een schone brush.",
+        "when_to_use": "Als de achtergrond nog vlekkerig is na basiscorrecties.",
+        "tools": [
+          "Mixer Brush Tool (Photoshop)"
+        ],
+        "effect": "Zorgt voor een egaal verloop in de achtergrond."
+      },
+      {
+        "name": "Synchroniseren",
+        "description": "Instellingen kopiëren naar alle geselecteerde foto's in de serie.",
+        "when_to_use": "Bij fotoshoots met een consistente lichtopstelling.",
+        "tools": [
+          "Sync Settings (Lightroom)"
+        ],
+        "effect": "Bespaart veel tijd bij het bewerken van grote series."
+      }
+    ],
+    "color_approach": "Focus op natuurlijke kleurweergave door strikte witbalanscorrectie. Daarna wordt het beeld 'gepopt' via contrast en textuur, zonder de kleuren te overdrijven.",
+    "local_adjustments": "Geen expliciet gebruik van maskers in de video; de focus ligt op globale bewerkingen in Lightroom en compositie-reparatie in Photoshop.",
+    "what_to_avoid": [
+      "Onnatuurlijke witbalans",
+      "Een vlekkerige of onafgewerkte achtergrond"
+    ],
+    "best_for": "E-commerce en commerciële productfotografie waar een schone look vereist is.",
+    "unique_insights": [
+      "Hij gebruikt de Mixer Brush Tool bewust zonder 'sample all layers' aangevinkt om tones op de achtergrond te blenden zonder het product te beïnvloeden.",
+      "Bij het fotograferen van producten laat hij bewust extra ruimte boven het product om later in Photoshop flexibeler te kunnen croppen voor social media.",
+      "Hij raadt aan om producten te fotograferen op een volledig vlakke ondergrond om later in Photoshop zo min mogelijk uitlijn-werk te hebben."
+    ],
+    "style_preview": "Deze stijl is gericht op een commerciële, 'e-commerce-ready' look. De beelden zijn helder, scherp en hebben een smetteloze witte achtergrond. Het is de ideale stijl voor webshops waarbij het product centraal staat en er geen afleiding mag zijn van de omgeving. Verwacht een zeer strak, professioneel en helder resultaat."
+  },
+  {
+    "video_title": "Product Photography Simple Lightroom Editing Tips",
+    "photographer_name": "Nelson",
+    "youtube_url": "https://www.youtube.com/watch?v=1tqtfZZbiFU",
+    "genre": [
+      "product"
+    ],
+    "light_conditions": [
+      "kunstlicht"
+    ],
+    "mood": [
+      "dramatisch",
+      "clean"
+    ],
+    "software": [
+      "Lightroom Classic",
+      "Photoshop"
+    ],
+    "style_description": "Clean, Commercieel, Contrastrijk",
+    "philosophy": "Productfoto's moeten zo min mogelijk nabewerking nodig hebben als de studio-opstelling klopt. De focus ligt op het accentueren van details in labels en het verzachten van huidtinten indien handen in beeld zijn. Consistentie in de look is belangrijker dan extreme retouche.",
+    "workflow_order": [
+      "Stap 1: Croppen voor social media formats",
+      "Stap 2: Basisbelichting en witbalans instellen",
+      "Stap 3: Textuur en noise reduction toepassen",
+      "Stap 4: Lokale retouche (huid/vlekken) in Photoshop"
+    ],
+    "techniques": [
+      {
+        "name": "Textuur accentuering",
+        "description": "Verhoog de Textuur-slider voor meer definitie in het product, maar pas op bij huid.",
+        "when_to_use": "Bij producten met veel details of texturen (label, materiaal).",
+        "tools": [
+          "Texture (Lightroom)"
+        ],
+        "effect": "Geeft het product meer visuele 'punch' en detail."
+      },
+      {
+        "name": "Luminance Noise Reduction",
+        "description": "Gebruik Luminance noise reduction om ruis te verminderen zonder al te veel detail te verliezen.",
+        "when_to_use": "Bij opnames met een hoge ISO-waarde (low light).",
+        "tools": [
+          "Detail / Noise Reduction (Lightroom)"
+        ],
+        "effect": "Maakt korrelige foto's weer bruikbaar en gladder."
+      },
+      {
+        "name": "Blemish Removal",
+        "description": "Gebruik de Spot Healing Brush om vuil, vingerafdrukken of imperfecties te verwijderen.",
+        "when_to_use": "Bij productfotografie waar het product perfect moet ogen.",
+        "tools": [
+          "Spot Healing Brush (Photoshop)"
+        ],
+        "effect": "Verwijdert storende elementen van het productoppervlak."
+      },
+      {
+        "name": "Blur tool",
+        "description": "Zacht vervagen van rimpels of huidstructuur op de handen om de focus op het product te houden.",
+        "when_to_use": "Als handen in beeld zijn en de textuur van de huid te grof oogt door hogere verscherping.",
+        "tools": [
+          "Blur Tool (Photoshop)"
+        ],
+        "effect": "Maakt de huid er aantrekkelijker/gladder uit."
+      },
+      {
+        "name": "Radiaal masker voor labels",
+        "description": "Gebruik een radiaal masker om alleen het label op het product lichter/scherper te maken.",
+        "when_to_use": "Als het label op het product donker is of niet leesbaar genoeg.",
+        "tools": [
+          "Radial Mask (Lightroom)"
+        ],
+        "effect": "Zorgt dat de tekst op het product beter leesbaar wordt en naar voren springt."
+      }
+    ],
+    "color_approach": "De fotograaf geeft de voorkeur aan een natuurlijke witbalans, maar is niet bang voor een warmere sfeer als dat beter past bij het product (bijv. drank/koffie).",
+    "local_adjustments": "Worden ingezet via Radiale maskers in Lightroom voor productaccenten, en via Photoshop voor huidretouche.",
+    "what_to_avoid": [
+      "Te veel contrast (gebruik textuur in plaats daarvan)",
+      "Onnatuurlijke huid door hoge texture-instellingen"
+    ],
+    "best_for": "Social media productfotografie waar snelheid en impact belangrijker zijn dan extreme retouche.",
+    "unique_insights": [
+      "Hij verlaagt de textuur-slider bij handen/huid, zelfs als hij de textuur voor het product zelf juist verhoogt.",
+      "Hij gebruikt bewust het 'Blur Tool' in Photoshop om huid van de handen die het product vasthouden minder 'in focus' te krijgen, wat de aandacht terug naar het product dwingt.",
+      "Hij voert lenscorrectie altijd als eerste uit om te zien hoe de lens het beeld vervormt of corrigeert voordat hij verder bewerkt."
+    ],
+    "style_preview": "De stijl van deze fotograaf is gericht op commerciële social media content. De foto's zijn strak, gedetailleerd en hebben een goede balans tussen product-punch en een aangename presentatie van eventueel aanwezige handen. Deze stijl is zeer geschikt voor merken die snel 'populaire' beelden nodig hebben voor platforms als Instagram."
+  },
+  {
+    "video_title": "How to edit in Lightroom: Mobile + Desktop",
+    "photographer_name": "Mandy",
+    "youtube_url": "https://www.youtube.com/watch?v=WNDi7P3dpYY",
+    "genre": [
+      "product"
+    ],
+    "light_conditions": [
+      "daglicht"
+    ],
+    "mood": [
+      "levendig",
+      "helder"
+    ],
+    "software": [
+      "Lightroom Classic",
+      "Lightroom Mobile"
+    ],
+    "style_description": "Helder, Commercieel, Natuurlijk",
+    "philosophy": "Het basisprincipe is dat geen enkele foto 'out of camera' perfect is. De bewerkingsstijl is gebaseerd op het behouden van detail in lichte en donkere delen door het consequent toepassen van een vaste richting in sliders: highlights en blacks naar links, de rest naar rechts.",
+    "workflow_order": [
+      "Stap 1: Belichting corrigeren met exposure (kleine aanpassing)",
+      "Stap 2: Contrast verhogen voor drama",
+      "Stap 3: Highlights en Black punt verlagen voor detailbehoud",
+      "Stap 4: Kleur en verzadiging finetunen via Color Mixer"
+    ],
+    "techniques": [
+      {
+        "name": "Consistentie Slider-richting",
+        "description": "Highlights en Blacks altijd naar links, de rest van de lichte-tab naar rechts.",
+        "when_to_use": "Bijna elke product- of foodfoto voor een consistente basis.",
+        "tools": [
+          "Light Panel (Lightroom)"
+        ],
+        "effect": "Zorgt voor een consistent 'heldere' uitstraling en goed detailbehoud."
+      },
+      {
+        "name": "Dehaze voor achtergronden",
+        "description": "Gebruik Dehaze naar rechts om hot-spots op donkere backdrops te verminderen.",
+        "when_to_use": "Bij ongelijkmatige belichting op donkere achtergronden.",
+        "tools": [
+          "Effects Tab / Dehaze (Lightroom)"
+        ],
+        "effect": "Maakt de achtergrond uniformer en vermindert 'glare'."
+      },
+      {
+        "name": "Blue Hue removal",
+        "description": "Verlaag verzadiging van blauwe en paarse tinten om blauwe zweem op witte achtergronden te verwijderen.",
+        "when_to_use": "Bij productfoto's op witte achtergronden die door daglicht blauw ogen.",
+        "tools": [
+          "Color Mixer / Saturation (Lightroom)"
+        ],
+        "effect": "Maakt een blauwachtige achtergrond weer neutraal wit."
+      },
+      {
+        "name": "Targeted Color Adjustments",
+        "description": "Gebruik de 'Target' tool om kleuren in een specifiek object te selecteren en aan te passen.",
+        "when_to_use": "Als je kleuren in het product wilt versterken of juist verzwakken.",
+        "tools": [
+          "Color Mixer / Target Tool (Lightroom)"
+        ],
+        "effect": "Geeft precieze controle over de verzadiging van specifieke kleuren in de foto."
+      },
+      {
+        "name": "Coco Chanel regel",
+        "description": "Verlaag de verzadiging met een paar punten voor het opslaan om 'over-editing' tegen te gaan.",
+        "when_to_use": "Bij de allerlaatste stap van het bewerkingsproces.",
+        "tools": [
+          "Saturation (Lightroom)"
+        ],
+        "effect": "Voorkomt dat foto's er onnatuurlijk of 'plastic' uitzien."
+      }
+    ],
+    "color_approach": "De fotograaf focust op het neutraliseren van ongewenste kleurzwemen (vooral blauw/paars) op de achtergrond. Daarna worden de kleuren van het product zelf (bijv. tomaten/korst) selectief versterkt via de Color Mixer.",
+    "local_adjustments": "De nadruk ligt op globale bewerkingen; maskers worden niet in detail behandeld in deze video.",
+    "what_to_avoid": [
+      "Blauwe zwemen op witte achtergronden",
+      "Over-verzadigde kleuren ('Oompa Loompa' effect)"
+    ],
+    "best_for": "Beginnende fotografen die een consistente workflow zoeken voor product- en foodfotografie op zowel mobiel als desktop.",
+    "unique_insights": [
+      "Ze adviseert foto's in de camera bewust licht te onderbelichten omdat data in overbelichte delen ('blown-out') permanent verloren gaat en niet te redden is in Lightroom.",
+      "De 'Dehaze' slider kan worden gebruikt als een creatieve oplossing voor 'ongelijke belichting' op donkere backdrops, wat een veel snellere oplossing is dan licht opnieuw opstellen.",
+      "Ze benadrukt dat je voor het corrigeren van witte backdrops met blauwe zweem eerst de kleur moet aanpassen (blues/purples omlaag) en daarna pas de belichting (highlights/blacks)."
+    ],
+    "style_preview": "Deze stijl levert heldere, 'frisse' en commercieel aantrekkelijke foto's op. De kernfilosofie is dat bewerking moet dienen om de werkelijkheid te verbeteren en producten er appetijtelijk uit te laten zien. Ideaal voor wie consistentie in een feed wil bereiken zonder te complexe workflows."
+  },
+  {
+    "video_title": "Frequency Separation For Product Photography - PHOTOSHOP TUTORIAL",
+    "photographer_name": "Photoshop Pro",
+    "youtube_url": "https://www.youtube.com/watch?v=suzEMI9stXs",
+    "genre": [
+      "product"
+    ],
+    "light_conditions": [
+      "kunstlicht"
+    ],
+    "mood": [
+      "clean",
+      "professioneel"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Retouche, Technisch, Strak",
+    "philosophy": "Frequency separation is niet alleen voor portretfotografie. Het is een krachtig middel om complexe storende elementen (zoals luchtbellen in flessen) te verwijderen zonder de textuur aan te tasten. Door kleur en textuur te scheiden, kun je agressiever retoucheren waar nodig.",
+    "workflow_order": [
+      "Stap 1: Afbeelding twee keer kopiëren (één voor texture, één voor color)",
+      "Stap 2: Median blur op de color-laag toepassen",
+      "Stap 3: Apply Image op de texture-laag voor correcte scheiding",
+      "Stap 4: Retoucheren op de afzonderlijke lagen"
+    ],
+    "techniques": [
+      {
+        "name": "Frequency Separation",
+        "description": "Het beeld opsplitsen in een kleurlaag (blur) en een textuurlaag voor onafhankelijke bewerking.",
+        "when_to_use": "Voor complexe retouche waarbij je kleurvlekken wilt verwijderen zonder textuur te verliezen.",
+        "tools": [
+          "Median Blur",
+          "Apply Image (Photoshop)"
+        ],
+        "effect": "Maakt het mogelijk om kleuren te blenden terwijl de textuur behouden blijft."
+      },
+      {
+        "name": "Healing Brush op Color Layer",
+        "description": "Vlekken of kleurafwijkingen wegwerken op de geblurde kleurlaag.",
+        "when_to_use": "Om kleuroneffenheden te verwijderen zonder de textuur te vervormen.",
+        "tools": [
+          "Healing Brush Tool (Photoshop)"
+        ],
+        "effect": "Verwijdert vlekken in de kleur zonder de details aan te tasten."
+      },
+      {
+        "name": "Clone Stamp op Texture Layer",
+        "description": "Clone alleen de textuur (krassen, lijnen) op de bovenste laag.",
+        "when_to_use": "Om lijnen of krassen op een product weg te werken zonder de kleurvlakken te verpesten.",
+        "tools": [
+          "Clone Stamp Tool (Photoshop)"
+        ],
+        "effect": "Verwijdert fysieke imperfecties (krassen/lijnen) op het product."
+      },
+      {
+        "name": "Handmatige Highlight toevoeging",
+        "description": "Een nieuwe laag aanmaken en met een zachte witte brush highlights in het product schilderen.",
+        "when_to_use": "Als het product extra diepte of 'pop' nodig heeft na retouche.",
+        "tools": [
+          "Brush Tool",
+          "Soft Light Blending Mode (Photoshop)"
+        ],
+        "effect": "Geeft het product extra dimensie en een professionele glans."
+      },
+      {
+        "name": "Masking of Highlights",
+        "description": "Een masker toevoegen aan de handgetekende highlight-laag om de dekking te verfijnen.",
+        "when_to_use": "Om de handmatig toegevoegde highlights natuurlijk te laten overvloeien.",
+        "tools": [
+          "Layer Mask",
+          "Brush Tool (Photoshop)"
+        ],
+        "effect": "Zorgt voor een subtiele en geloofwaardige integratie van de highlights."
+      }
+    ],
+    "color_approach": "Kleur wordt apart behandeld van textuur om vlekken in het materiaal glad te strijken zonder dat het product er onnatuurlijk uitziet.",
+    "local_adjustments": "Geavanceerd gebruik van lagen, maskers en blending modes voor lokale retouche en highlight-versterking.",
+    "what_to_avoid": [
+      "Het product er 'plat' uit laten zien na retouche",
+      "Onnatuurlijke overgangen door te agressief klonen"
+    ],
+    "best_for": "Professionele reclamefotografie waarbij producten (glas, flessen) perfect moeten zijn.",
+    "unique_insights": [
+      "Hij gebruikt frequency separation tijdens het proces met verschillende opacities van de clone stamp (bijv. 20%) om subtiele overgangen te creëren in plaats van direct 100%.",
+      "Na de frequency separation voegt hij handmatig highlights toe met een 'soft light' laag, wat suggereert dat retouche meer is dan alleen schoonmaken, maar ook het 'vormgeven' van licht.",
+      "Hij raadt aan om tussen opacities te schakelen en continu uit te zoomen om het effect in context van het gehele product te bekijken."
+    ],
+    "style_preview": "Deze stijl is technisch en gericht op perfectie. Het is een 'high-end' benadering waarbij producten worden gezuiverd van alle mogelijke foutjes. Verwacht een zeer gepolijst resultaat, ideaal voor luxe producten waarbij elk detail telt en 'echtheid' ondergeschikt is aan visuele perfectie."
+  },
+  {
+    "video_title": "How I Edit EPIC Product Photography - Tutorial",
+    "photographer_name": "Justin Graziano",
+    "youtube_url": "https://www.youtube.com/watch?v=lY1bpHSmg6g",
+    "genre": [
+      "product"
+    ],
+    "light_conditions": [
+      "kunstlicht"
+    ],
+    "mood": [
+      "dramatisch",
+      "levendig"
+    ],
+    "software": [
+      "Lightroom Classic",
+      "Photoshop"
+    ],
+    "style_description": "Composiet, Actie, Impactvol",
+    "philosophy": "Productfotografie moet een verhaal vertellen en actie tonen. Nabewerking draait hier om het samenvoegen van verschillende opnames (composieten) tot één beeld met diepte, actie (spetters) en een commercieel aantrekkelijke uitstraling.",
+    "workflow_order": [
+      "Stap 1: Basiscorrecties en selectie in Lightroom",
+      "Stap 2: Openen als lagen in Photoshop",
+      "Stap 3: Onderwerpen maskeren met de Pen Tool",
+      "Stap 4: Composiet opbouwen met bewegende elementen en blur voor diepte"
+    ],
+    "techniques": [
+      {
+        "name": "Composieten via Lagen",
+        "description": "Verschillende opnames (spetters, vliegende ingrediënten) direct als lagen in één document openen.",
+        "when_to_use": "Bij het bouwen van een complexe composietfoto.",
+        "tools": [
+          "Edit in -> Open as Layers (Photoshop)"
+        ],
+        "effect": "Voegt dynamiek en actie toe aan een statisch product."
+      },
+      {
+        "name": "Pen Tool voor Maskers",
+        "description": "De Pen Tool gebruiken voor zeer nauwkeurige selecties van producten en spetters.",
+        "when_to_use": "Bij ingewikkelde objecten die strak uitgesneden moeten worden.",
+        "tools": [
+          "Pen Tool (Photoshop)"
+        ],
+        "effect": "Zorgt voor extreem strakke randen zonder artefacten."
+      },
+      {
+        "name": "Blend Mode Difference voor uitlijning",
+        "description": "Gebruik de 'Difference' blend mode om lagen exact op elkaar uit te lijnen.",
+        "when_to_use": "Als je een product-foto moet uitlijnen op een spetter-foto (zelfde setup).",
+        "tools": [
+          "Blending Mode 'Difference' (Photoshop)"
+        ],
+        "effect": "Maakt uitlijning van meerdere lagen visueel zeer eenvoudig."
+      },
+      {
+        "name": "Diepte door Blur",
+        "description": "Voeg een blur toe aan elementen die in de voorgrond of achtergrond staan.",
+        "when_to_use": "Om diepte en 'beweging' in een composiet te suggereren.",
+        "tools": [
+          "Blur Tool / Filter (Photoshop)"
+        ],
+        "effect": "Creëert een gevoel van driedimensionaliteit en actie naar de camera toe."
+      },
+      {
+        "name": "Patch Tool voor retouche",
+        "description": "Lijnen en onzuiverheden wegwerken door te slepen naar schone delen.",
+        "when_to_use": "Voor kleine imperfecties in glas of productoppervlaktes.",
+        "tools": [
+          "Patch Tool (Photoshop)"
+        ],
+        "effect": "Zorgt voor een schoon en onberispelijk eindresultaat."
+      }
+    ],
+    "color_approach": "Kleurcorrectie begint in Lightroom voor een goede basis, maar in de compositie draait het om het laten knallen van het product door contrast en achtergrondkeuze.",
+    "local_adjustments": "Veelvuldig gebruik van maskers (layer masks) en feathering om elementen naadloos in elkaar over te laten lopen.",
+    "what_to_avoid": [
+      "Slechte uitlijning van composiet-elementen",
+      "Te veel aandacht voor vliegende elementen ten koste van het hoofdproduct"
+    ],
+    "best_for": "Reclame- en marketingfotografie die 'Epic' en actievol moet ogen.",
+    "unique_insights": [
+      "Hij gebruikt de 'Difference' blend mode om lagen (met vloeistofspetters en glas) perfect uit te lijnen; wanneer de laag exact matcht met de basislaag, wordt het beeld zwart op die plekken.",
+      "Bij het toevoegen van 'vliegende' elementen voor diepte, past hij niet alleen blur toe, maar schaalt hij ze ook verschillend in grootte om een gevoel van beweging naar de lens toe te versterken.",
+      "Hij raadt aan om producten (zoals noten) aan een dunne draad te fotograferen voor actie-effecten, en die draad later in Photoshop weg te clonen."
+    ],
+    "style_preview": "Dit is een stijl voor wie 'wow-factor' wil. Het beeld wordt opgebouwd uit verschillende lagen en is zeer technisch. Ideaal voor merken die hun producten willen presenteren als dynamisch, energiek en premium. Verwacht een zeer professioneel resultaat dat eruitziet als een echte advertentie."
+  },
+  {
+    "video_title": "Editing Food in Photoshop + Capture One",
+    "photographer_name": "Joni Simon",
+    "youtube_url": "https://www.youtube.com/watch?v=MywC-PIxJog",
+    "genre": [
+      "product"
+    ],
+    "light_conditions": [
+      "diffuus licht"
+    ],
+    "mood": [
+      "natuurlijk",
+      "vrolijk"
+    ],
+    "software": [
+      "Capture One",
+      "Photoshop"
+    ],
+    "style_description": "Heldere, Fris, Gedetailleerd",
+    "philosophy": "Het doel is een summery, vrolijke sfeer. Ze combineert Capture One voor sterke basis-tethered correcties (goede controle over contrast en kleur) met Photoshop voor het precisiewerk, zoals het vervangen van achtergronden om de focus 100% op het product te houden.",
+    "workflow_order": [
+      "Stap 1: Witbalans en basisbelichting in Capture One",
+      "Stap 2: Contrast en diepte met levels en curves",
+      "Stap 3: Lokale retouche met lagen in Capture One",
+      "Stap 4: Achtergrond vervangen in Photoshop"
+    ],
+    "techniques": [
+      {
+        "name": "Lagen in Capture One",
+        "description": "Gebruik aparte lagen om delen van de foto (zoals het ijsje vs. de hand) apart te bewerken.",
+        "when_to_use": "Als verschillende delen van het beeld verschillende correcties nodig hebben.",
+        "tools": [
+          "Layers Panel (Capture One)"
+        ],
+        "effect": "Geeft extreme controle zonder globale aanpassingen te ruïneren."
+      },
+      {
+        "name": "Levels voor diepte",
+        "description": "De middentonen-slider naar rechts schuiven voor diepere schaduwen.",
+        "when_to_use": "Bij beelden die te 'flat' ogen.",
+        "tools": [
+          "Levels (Capture One)"
+        ],
+        "effect": "Geeft direct meer diepte en definitie aan de foto."
+      },
+      {
+        "name": "Clariteitstypes",
+        "description": "Gebruik de 'Punch' clariteitsstijl voor een minimalistische en grafische uitstraling.",
+        "when_to_use": "Bij minimalistische composities waar het product eruit moet springen.",
+        "tools": [
+          "Clarity / Punch Style (Capture One)"
+        ],
+        "effect": "Geeft een krachtige, bijna grafische scherpte aan het product."
+      },
+      {
+        "name": "Quick Selection + Masking",
+        "description": "Gebruik 'Select Subject' (cloud-based) om het product in één klik los te maken van de achtergrond.",
+        "when_to_use": "Voor het vlot vervangen van achtergronden bij productfotografie.",
+        "tools": [
+          "Quick Selection Tool / Select Subject (Photoshop)"
+        ],
+        "effect": "Maakt het product snel los van de achtergrond voor vervanging."
+      },
+      {
+        "name": "Color Theory voor achtergrond",
+        "description": "Kies een achtergrondkleur die contrasteert met het product voor maximale visuele impact.",
+        "when_to_use": "Wanneer de originele achtergrond niet het gewenste effect geeft.",
+        "tools": [
+          "Solid Color Layer / Paint Bucket (Photoshop)"
+        ],
+        "effect": "Verandert de sfeer en de focus van het beeld volledig."
+      }
+    ],
+    "color_approach": "Zeer zorgvuldige kleurcontrole. Ze neutraliseert algemene kleuren, maar versterkt de 'ster-kleuren' van het product (zoals ijs) via lokale verzadiging en specifieke kleur-aanpassingen in de Color Editor.",
+    "local_adjustments": "Integraal onderdeel van haar workflow; ze maakt voor elk essentieel deel (hand, product) een aparte laag met eigen belichting en kleur.",
+    "what_to_avoid": [
+      "Oranje/bruine huidtinten (door te veel saturatie op het product)",
+      "Verlies van details in schaduwgebieden"
+    ],
+    "best_for": "Foodfotografie en commerciële productfotografie die er 'vers' en aantrekkelijk uit moet zien.",
+    "unique_insights": [
+      "Ze gebruikt een tandenstoker in het ijsje om de scoops te stabiliseren tijdens het shooten – dit is een cruciale 'niet-bewerkings' tip die het bewerken vele malen makkelijker maakt.",
+      "Capture One biedt 4 verschillende 'clarity' methoden; zij gebruikt 'Natural' voor dagelijks werk en 'Punch' voor die grafische, minimalistische productlook.",
+      "Bij het vervangen van de achtergrond kiest ze niet alleen een kleur die past, maar ze 'eyedroppt' de kleur van het product zelf als startpunt en past die dan aan naar een complementaire tint."
+    ],
+    "style_preview": "Deze stijl is fris, vrolijk en zeer technisch correct. Het draait om het creëren van een beeld dat direct de aandacht trekt door een sterke compositie en kleurbalans. Ideaal voor food- en lifestyle-producten waarbij het product er 'eetbaar' of 'hebberig' uit moet zien."
+  },
+  {
+    "video_title": "E-Series | Ep. 26: How To Edit Product Photos",
+    "photographer_name": "RoDerica B",
+    "youtube_url": "https://www.youtube.com/watch?v=FRH55ZO8GmY",
+    "genre": [
+      "product"
+    ],
+    "light_conditions": [
+      "daglicht"
+    ],
+    "mood": [
+      "levendig",
+      "dramatisch"
+    ],
+    "software": [
+      "VSCO"
+    ],
+    "style_description": "Contrastrijk, Kleurrijk, Mobiel",
+    "philosophy": "Eenvoud is de sleutel. Ze gebruikt enkel VSCO voor een snelle, consistente workflow. De focus ligt op het versterken van contrast en verzadiging om logo's en kleuren van het product 'pop' te geven, ideaal voor een snelle social media presentatie.",
+    "workflow_order": [
+      "Stap 1: Foto importeren in VSCO",
+      "Stap 2: Exposure verhogen voor een lichtere look",
+      "Stap 3: Contrast en helderheid (clarity) verhogen voor 'pop'",
+      "Stap 4: Verzadiging versterken en tint aanpassen",
+      "Stap 5: Edits kopiëren naar vergelijkbare foto's"
+    ],
+    "techniques": [
+      {
+        "name": "Batch editing",
+        "description": "Kopieer bewerkingen van één foto en plak deze op de hele serie.",
+        "when_to_use": "Bij meerdere foto's met dezelfde lichtomstandigheden.",
+        "tools": [
+          "Copy/Paste Edits (VSCO)"
+        ],
+        "effect": "Zorgt voor een consistente feed en bespaart veel tijd."
+      },
+      {
+        "name": "Clarity voor crispness",
+        "description": "Verhoog de clarity om details in het product scherper en 'crisper' te maken.",
+        "when_to_use": "Bij producten met veel tekst of kleine details (business cards).",
+        "tools": [
+          "Clarity (VSCO)"
+        ],
+        "effect": "Maakt lijnen en details in het beeld scherper."
+      },
+      {
+        "name": "Saturatie voor 'Logo Pop'",
+        "description": "Verhoog de saturatie om gouden details of kleuren in een logo eruit te laten springen.",
+        "when_to_use": "Bij productfoto's met branding.",
+        "tools": [
+          "Saturation (VSCO)"
+        ],
+        "effect": "Versterkt de kleuren en maakt branding visueel krachtiger."
+      },
+      {
+        "name": "Subtle Tinting",
+        "description": "Voeg een subtiele roze tint toe voor een sfeervol effect.",
+        "when_to_use": "Als er roze elementen in de foto zitten die versterkt moeten worden.",
+        "tools": [
+          "Tint (VSCO)"
+        ],
+        "effect": "Geeft de foto een warme, eigen sfeer."
+      },
+      {
+        "name": "Contrastversterking",
+        "description": "Contrast verhogen om zwarte elementen 'bolder' te maken.",
+        "when_to_use": "Bij producten met donkere elementen die er anders saai uitzien.",
+        "tools": [
+          "Contrast (VSCO)"
+        ],
+        "effect": "Maakt donkere delen in het beeld krachtiger en dieper."
+      }
+    ],
+    "color_approach": "Sterk verzadigingsgericht. Ze verhoogt de saturatie flink om logo's en details te laten opvallen, en voegt een lichte tint toe voor een persoonlijke touch.",
+    "local_adjustments": "Niet beschikbaar in deze workflow; alles is globaal.",
+    "what_to_avoid": [
+      "Te hoge clarity (het ziet er al snel 'teveel' uit)",
+      "Foto's er 'dull' of grijs uit laten zien"
+    ],
+    "best_for": "Mobiele productfotografie voor Instagram en social media.",
+    "unique_insights": [
+      "Ze gebruikt bewust contrastverhoging in plaats van exposure-verhoging bij foto's met zwarte elementen (zoals zwarte visitekaartjes), om de kaartjes er 'sleek' en 'bold' uit te laten zien zonder ze grijs/vaag te maken.",
+      "Bij het bewerken van een serie met exact dezelfde setup, kopieert ze de edit van de eerste foto en past deze op alle andere toe, wat de basis is van haar efficiënte workflow.",
+      "Ze negeert vaak de kant-en-klare filters in VSCO en stelt alles handmatig in voor een eigen look."
+    ],
+    "style_preview": "De stijl is direct, contrastrijk en kleurrijk. Het is ideaal voor wie zijn producten snel en aantrekkelijk op Instagram wil zetten zonder diepe technische kennis van Adobe software. Het resultaat is levendig, met een duidelijke focus op branding."
+  },
+  {
+    "video_title": "Working on a still life in DxO Photolab 5",
+    "photographer_name": "Don",
+    "youtube_url": "https://www.youtube.com/watch?v=BrGvS6RzHfg",
+    "video_length": "PT21M58S",
+    "genre": [
+      "product"
+    ],
+    "light_conditions": [
+      "kunstlicht"
+    ],
+    "mood": [
+      "naturalistisch",
+      "moody"
+    ],
+    "software": [
+      "DxO PhotoLab"
+    ],
+    "style_description": "Natuurlijk, Textuurrijk, Subtiel",
+    "philosophy": "Editing is het proces van het versterken van de natuurlijke kwaliteiten van het onderwerp. De fotograaf verkiest DxO PhotoLab vanwege de krachtige 'smart lighting' en lokale aanpassingsmogelijkheden, waarbij hij vaak bewerkingen uitvoert die doen denken aan portretbelichting op stilleven-objecten.",
+    "workflow_order": [
+      "Stap 1: Smart Lighting (Spot Weighted) voor balans",
+      "Stap 2: Contrast en micro-contrast toevoegen",
+      "Stap 3: Kleur corrigeren en versterken (HSL)",
+      "Stap 4: Lokale aanpassingen voor vorm en diepte"
+    ],
+    "techniques": [
+      {
+        "name": "Spot-Weighted Smart Lighting",
+        "description": "Gebruik Smart Lighting met een spot-weging in plaats van uniform om de focus op het onderwerp te leggen.",
+        "when_to_use": "Wanneer je een onderwerp uit een donkere achtergrond wilt tillen zonder de rest over te belichten.",
+        "tools": [
+          "Smart Lighting / Spot Weighted (DxO PhotoLab)"
+        ],
+        "effect": "Verlicht selectief het onderwerp met behoud van een donkere, moody sfeer."
+      },
+      {
+        "name": "Micro-contrast smoothing",
+        "description": "Verlaag micro-contrast (lokaal) om de achtergrond 'warbly' textuur glad te strijken.",
+        "when_to_use": "Als de achtergrond te veel ongewenste textuur laat zien.",
+        "tools": [
+          "Local Adjustments / Micro-contrast (DxO PhotoLab)"
+        ],
+        "effect": "Maakt de achtergrond rustiger en schoner."
+      },
+      {
+        "name": "HSL Color Expansion",
+        "description": "Gebruik de eyedropper in HSL om de kleur van het object te selecteren en het bereik te verbreden.",
+        "when_to_use": "Als de natuurlijke kleur van het product in meerdere tinten (bijv. groen/geel) verdeeld is.",
+        "tools": [
+          "HSL / Color Editor (DxO PhotoLab)"
+        ],
+        "effect": "Zorgt voor een natuurlijkere en vollere kleurweergave."
+      },
+      {
+        "name": "Lokale belichting (Portret-stijl)",
+        "description": "Licht de achtergrond op de tegenovergestelde zijde van de hoofdlichtbron op.",
+        "when_to_use": "Voor het toevoegen van diepte en dimensie in stillevenfotografie.",
+        "tools": [
+          "Local Adjustments / Adjustment Brush (DxO PhotoLab)"
+        ],
+        "effect": "Geeft het object een driedimensionale vorm en diepte."
+      },
+      {
+        "name": "Grain Overlay",
+        "description": "Voeg subtiele korrel toe voor textuur.",
+        "when_to_use": "Als het beeld te 'schoon' aanvoelt na digitale bewerking.",
+        "tools": [
+          "FilmPack / Grain (DxO PhotoLab)"
+        ],
+        "effect": "Geeft het beeld een filmisch en organisch gevoel."
+      }
+    ],
+    "color_approach": "Natuurlijk. Hij streeft naar kleurdensiteit en saturatie, maar altijd met het oog op wat realistisch is voor het object.",
+    "local_adjustments": "Cruciaal. Hij gebruikt lokale maskers om gericht schaduwen terug te halen of highlights te versterken voor 'vormgeving'.",
+    "what_to_avoid": [
+      "Overbelichte achtergronden door globale exposure",
+      "Het beeld te 'schoon' maken (digitale look)"
+    ],
+    "best_for": "Still-life fotografie die een organische, bijna filmische sfeer moet hebben.",
+    "unique_insights": [
+      "Hij behandelt stilleven-objecten als portretten: hij belicht de achtergrond aan de zijde tegenover het hoofdlicht, wat een klassieke portret-techniek is om diepte te creëren.",
+      "Hij is geen voorstander van 'digitale perfectie'; hij verwijdert vaak imperfecties en voegt dan bewust korrel toe om die te 'natuurlijke' textuur weer terug te krijgen.",
+      "Bij het corrigeren van de achtergrond gebruikt hij 'minus micro-contrast' om onregelmatigheden glad te strijken, wat een zeer elegante manier is om een imperfecte achtergrond te 'repareren'."
+    ],
+    "style_preview": "Deze stijl is moody, textuurrijk en zeer organisch. Het draait om het behouden van het gevoel van een echt fysiek object. Deze stijl is uitermate geschikt voor stilleven-fotografen die een 'fine-art' benadering kiezen en de kijker een tastbaar beeld willen voorschotelen."
+  },
+  {
+    "video_title": "Object photography processing with darktable and GIMP (English)",
+    "photographer_name": "Boris Hajdukovic",
+    "youtube_url": "https://www.youtube.com/watch?v=ULqLAzrI-LE",
+    "genre": [
+      "product"
+    ],
+    "light_conditions": [
+      "overcast"
+    ],
+    "mood": [
+      "naturalistisch",
+      "clean"
+    ],
+    "software": [
+      "darktable",
+      "GIMP"
+    ],
+    "style_description": "Clean, Technisch, Extractie",
+    "philosophy": "In museum- en catalogusfotografie is de extractie van het object en de plaatsing op een neutrale achtergrond essentieel. De workflow is technisch en methodisch, waarbij RAW-processing in darktable wordt gebruikt voor basiscorrecties en GIMP voor de complexe 'uitsnede' en integratie van schaduwen.",
+    "workflow_order": [
+      "Stap 1: Belichting (onderbelicht als startpunt) en witbalans in darktable",
+      "Stap 2: Lokale contrast- en lenscorrecties",
+      "Stap 3: Object extraheren in GIMP (Foreground Extraction Tool)",
+      "Stap 4: Achtergrond en natuurlijke schaduwen creëren"
+    ],
+    "techniques": [
+      {
+        "name": "Onderbelichten voor veiligheid",
+        "description": "Foto's bewust 1 stop onderbelichten bij de opname.",
+        "when_to_use": "Bij high-contrast productfotografie om uitbijters (clipping) in de highlights te voorkomen.",
+        "tools": [
+          "Camera Instellingen"
+        ],
+        "effect": "Behoudt detail in de highlights die anders onherstelbaar zouden zijn."
+      },
+      {
+        "name": "Wavelet Denoise",
+        "description": "Gebruik wavelets voor ruisonderdrukking in plaats van lokale middeling.",
+        "when_to_use": "Bij beelden met ruis, voor behoud van details.",
+        "tools": [
+          "Denoise / Wavelets (darktable)"
+        ],
+        "effect": "Vermindert ruis met behoud van textuur."
+      },
+      {
+        "name": "Foreground Extraction Tool",
+        "description": "Gebruik de foreground extraction tool voor complexe selecties.",
+        "when_to_use": "Bij objecten die zeer lastig handmatig uit te snijden zijn.",
+        "tools": [
+          "Foreground Extraction Tool (GIMP)"
+        ],
+        "effect": "Maakt een extreem precieze selectie van het object."
+      },
+      {
+        "name": "Natuurlijke schaduw-reconstructie",
+        "description": "Schaduwen uit de originele foto behouden en blenden in een nieuwe achtergrond.",
+        "when_to_use": "Om te voorkomen dat het product 'zweeft' op een nieuwe achtergrond.",
+        "tools": [
+          "Gaussian Blur",
+          "Brush Tool (GIMP)"
+        ],
+        "effect": "Geeft het object een realistische 'gronding' en schaduw."
+      },
+      {
+        "name": "Parametric Masking",
+        "description": "Maskers gebruiken op basis van kleur (rood/geel) om specifieke delen van een object op te lichten.",
+        "when_to_use": "Als een object in delen belicht moet worden.",
+        "tools": [
+          "Parametric Mask (darktable)"
+        ],
+        "effect": "Geeft lokaal licht aan het onderwerp zonder de achtergrond te beïnvloeden."
+      }
+    ],
+    "color_approach": "Technisch neutraal. Het doel is een catalogus-waardige weergave, dus kleurcorrectie is gericht op accuraatheid.",
+    "local_adjustments": "Zeer geavanceerd; via maskers in darktable en lagen in GIMP.",
+    "what_to_avoid": [
+      "Het product er laten 'zweven' (zonder schaduw)",
+      "Onnatuurlijke selectieranden"
+    ],
+    "best_for": "Catalogus- en museumfotografie waar precisie het allerbelangrijkst is.",
+    "unique_insights": [
+      "Hij adviseert het werken in een 'linear light' color space in GIMP (16-bit float) om overgangen (zoals bij het brushen van schaduwen) zachter en zonder artefacten te maken.",
+      "Bij de foreground extraction tool gebruikt hij eerst de 'matting global' (snel) en daarna 'matting 11' (precies) om de beste selectie te krijgen.",
+      "Hij reconstrueert schaduwen in GIMP door de originele schaduwlaag te gebruiken, de figuren eruit te maskeren, en dan Gaussian blur toe te passen voor een zachte, realistische schaduw."
+    ],
+    "style_preview": "Deze stijl is puur functioneel, professioneel en technisch. Het is de standaard voor catalogi en archieven. Het resultaat is een perfect vrijstaand product dat er natuurlijk en tastbaar uitziet dankzij de behouden schaduwen. Dit is een workflow voor wie op zoek is naar maximale kwaliteit en precisie."
+  },
+  {
+    "video_title": "Post-Processing with Open-Source Software",
+    "photographer_name": "Garrett",
+    "youtube_url": "https://www.youtube.com/watch?v=UlnCx5cx0w4",
+    "genre": [
+      "architectuur"
+    ],
+    "light_conditions": [
+      "gemengd licht"
+    ],
+    "mood": [
+      "dramatisch",
+      "moody"
+    ],
+    "software": [
+      "GIMP",
+      "RawTherapee"
+    ],
+    "style_description": "HDR, Dramatisch, Composiet",
+    "philosophy": "Het gebruik van open-source software (GIMP, RawTherapee) kan professionele resultaten opleveren vergelijkbaar met dure pakketten. Zijn aanpak is gericht op het maximaliseren van dynamisch bereik (HDR) en het creatief toepassen van blending modes en maskers voor een dramatische architectuur-look.",
+    "workflow_order": [
+      "Stap 1: HDR-creatie via command line",
+      "Stap 2: Basis compositie en blending in GIMP",
+      "Stap 3: Masking voor specifieke delen (lucht vs. gebouw)",
+      "Stap 4: Finishing touches in RawTherapee (verscherping/ruis)"
+    ],
+    "techniques": [
+      {
+        "name": "HDR Infusion",
+        "description": "Combineer bracketed beelden tot een HDR-image voor maximaal dynamisch bereik.",
+        "when_to_use": "Bij scènes met een extreem verschil tussen licht en donker (bijv. architectuur).",
+        "tools": [
+          "HDR-software / Command line"
+        ],
+        "effect": "Brengt details terug in zowel de highlights als de schaduwen."
+      },
+      {
+        "name": "Gradient Map Overlay",
+        "description": "Pas een gradient map toe op 'overlay' modus om de kleuren in het beeld te sturen.",
+        "when_to_use": "Voor het toevoegen van kleurgradiënten aan een beeld.",
+        "tools": [
+          "Gradient Map (GIMP)"
+        ],
+        "effect": "Geeft het beeld een specifieke kleur-look en meer diepte."
+      },
+      {
+        "name": "Path-based Masking",
+        "description": "Gebruik paden om zeer nauwkeurige selecties te maken voor laagmaskers.",
+        "when_to_use": "Voor complexe scheidingen tussen lucht en architectuur.",
+        "tools": [
+          "Path Tool (GIMP)"
+        ],
+        "effect": "Zorgt voor strakke overgangen zonder halo-effecten."
+      },
+      {
+        "name": "Digital Vignetting",
+        "description": "Maak een nieuwe laag en schilder met een zachte brush langs de randen.",
+        "when_to_use": "Om de aandacht van de kijker naar het midden van de foto te trekken.",
+        "tools": [
+          "Brush Tool / Blur (GIMP)"
+        ],
+        "effect": "Creëert een subtiele focus op het hoofdonderwerp."
+      },
+      {
+        "name": "Selection Feathering",
+        "description": "Verzacht de randen van een selectie met feathering.",
+        "when_to_use": "Bij het blenden van verschillende belichtingen om harde lijnen te voorkomen.",
+        "tools": [
+          "Select -> Feather (GIMP)"
+        ],
+        "effect": "Zorgt voor vloeiende, natuurlijke overgangen."
+      }
+    ],
+    "color_approach": "Creatief en dramatisch. Hij gebruikt gradient maps en kleurlagen in 'overlay' modus om de kleurstemming te bepalen, in plaats van alleen realisme na te streven.",
+    "local_adjustments": "Zeer intensief gebruik van paden, maskers en kleurlagen voor lokale controle over licht en kleur.",
+    "what_to_avoid": [
+      "Hardnekkige halo-effecten (vaak een nadeel van HDR)",
+      "Powerlines en storende elementen (clonen is een must)"
+    ],
+    "best_for": "Architectuurfotografie en landschappen waarbij een dramatische look gewenst is.",
+    "unique_insights": [
+      "Hij gebruikt vaak de 'Overlay' blending mode voor meerdere lagen (bijv. voor kleur/contrast), wat een kenmerkende 'punchy' look geeft.",
+      "Bij het maskeren van lucht/architectuur gebruikt hij niet alleen paden, maar past hij na het creëren van het masker een Gaussian blur toe op het masker zelf om die vervelende 'harde rand' weg te werken.",
+      "In plaats van het beeld direct te flattenen, kopieert hij lagen als 'nieuwe laag van zichtbaar' (new from visible), wat hem de flexibiliteit geeft om altijd naar de vorige stap terug te gaan."
+    ],
+    "style_preview": "Deze stijl is gedurfd, dramatisch en zeer 'geconstrueerd'. Het is een creatieve benadering waarbij de fotograaf de regie volledig in handen neemt. Ideaal voor wie van een filmische, ietwat overdreven maar visueel verbluffende architectuurstijl houdt."
   }
 ]

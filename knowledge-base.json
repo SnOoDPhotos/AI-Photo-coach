@@ -44582,5 +44582,94 @@
       "Het gebruik van een muis met een fysiek scrollwiel is essentieel in Lightroom om tijdens het maskeren razendsnel de penseelgrootte aan te kunnen passen zonder de workflow te onderbreken."
     ],
     "style_preview": "Deze bewerkingsstijl ademt een sfeer van grootschalige, cinematische dramatiek met diepe contrasten en rijke, verzadigde kleuren. De kernfilosofie draait volledig om het transformeren van vlak, globaal licht naar een dynamisch spel van licht en schaduw door middel van geavanceerde maskeringstechnieken. Deze aanpak werkt het beste voor weidse stadsgezichten en landschappen die tijdens de overgangsuren van de dag zijn vastgelegd. Als fotograaf kun je een spectaculair visueel effect verwachten waarbij de compositie direct rust uitstralend oogt, maar tegelijkertijd een enorme impact maakt doordat de blik van de kijker feilloos langs de belangrijkste lichtaccenten wordt geleid."
+  },
+  {
+    "video_title": "A guide to architecture Tools in Luminar Neo",
+    "photographer_name": "James Kerwin",
+    "youtube_url": "https://www.youtube.com/watch?v=OixiF5YdL3U",
+    "genre": [
+      "architectuur"
+    ],
+    "light_conditions": [
+      "gouden uur",
+      "daglicht",
+      "gemengd licht"
+    ],
+    "mood": [
+      "dramatisch",
+      "levendig",
+      "moody"
+    ],
+    "software": [
+      "Luminar Neo"
+    ],
+    "style_description": "Vibrant Moody Architecture",
+    "philosophy": "Architectuurfotografie vereist een efficiënte workflow die krachtige HDR-samenvoegingen combineert met gerichte, sfeervolle lichtsturing om de structuur van gebouwen optimaal te benadrukken. Het doel is om door middel van gelaagde bewerkingen en doordacht kleurbeheer een dynamisch beeld te creëren zonder dat het er onrealistisch of overbewerkt uitziet. Door slimme automatiseringen te combineren met handmatige verfijning, krijgt het bouwwerk een tastbare diepte en een heldere, sprekende uitstraling.",
+    "workflow_order": [
+      "Stap 1: Het importeren en via batch-verwerking opschonen van belichtingstrappen in de HDR Merge module.",
+      "Stap 2: Het toepassen van basiscorrecties in het Develop-paneel met een sterke focus op het verhogen van het contrast en de levendigheid.",
+      "Stap 3: Het lokaal sturen van lichtinval en sfeer met behulp van AI-gestuurde dieptetools en maskers.",
+      "Stap 4: Handmatige retoucheerwerkzaamheden uitvoeren voor het wegwerken van ongewenste elementen en storende beeldfoutjes."
+    ],
+    "techniques": [
+      {
+        "name": "Batch HDR Merge met Foutcontrole",
+        "description": "Selecteer groepen van opeenvolgende belichtingsopnames (bijvoorbeeld series van 5 opeenvolgende foto's) en sleep deze gezamenlijk in de HDR Merge module. Activeer de batch-optie en controleer in de voorvertoning kritisch op foutieve bestanden, zoals abusievelijk meegeleverde DNG- of hulpbestanden, om deze direct handmatig te verwijderen met de cross-knop alvorens het definitieve samenvoegingsproces te starten.",
+        "when_to_use": "Bij contrastrijke architectuurscènes waarbij grote reeksen bracketing-opnames tegelijkertijd en efficiënt moeten worden samengevoegd.",
+        "tools": [
+          "Luminar Neo"
+        ],
+        "effect": "Een perfect gebalanceerde basisfoto met een maximaal dynamisch bereik zonder dat het systeem vastloopt op corrupte of onjuiste bestanden."
+      },
+      {
+        "name": "Gerichte Lichtsturing met de Light Depth Graph",
+        "description": "Open het Light Depth paneel en verhoog de hoeveelheid (Amount) tot een waarde tussen de 40 en 45. Versleep vervolgens de handvaten in de grafische interface om de kunstmatige lichtbaan nauwkeurig door het frame te verplaatsen en over het gebouw te positioneren, waarbij de randen zacht worden afgesteld met de Softness slider om harde overgangen te vermijden.",
+        "when_to_use": "In donkere, sfeervolle interieurs of bij vlakke buitenopnames waar subtiel extra strijklicht langs de muren of ramen vereist is.",
+        "tools": [
+          "Luminar Neo"
+        ],
+        "effect": "Er ontstaat een overtuigende, zachte lichtstraal of gloed die specifieke delen van de architectuur accentueert alsof er een extra lichtbron aanwezig was."
+      },
+      {
+        "name": "Kleurzweemverwijdering op Bouwmaterialen",
+        "description": "Gebruik de specifieke functie 'Remove Color Cast' binnen de kleurinstellingen om ongewenste omgevingsreflecties of kunstlichtkleuren van de gevels te filteren, terwijl gelijktijdig de algehele levendigheid (Vibrancy) wordt verhoogd om de lucht krachtig blauw te maken.",
+        "when_to_use": "Wanneer reflecties van bomen, omliggende wegen of felle lampen de natuurlijke, neutrale tinten van beton, glas of marmer verstoren.",
+        "tools": [
+          "Luminar Neo"
+        ],
+        "effect": "De architectonische structuren krijgen hun pure, oorspronkelijke materiaalkleur terug zonder dat de intensiteit van de blauwe lucht verloren gaat."
+      },
+      {
+        "name": "Massale Objectverwijdering met de Erase Tool",
+        "description": "Selecteer met de Erase tool in één doorlopende werkgang alle storende elementen in de lucht of op de achtergrond, zoals condensstrepen van vliegtuigen, elektriciteitskabels of sensorvlekken, door ze paars te markeren en druk daarna eenmalig op de 'Erase' knop om de gehele selectie in één batch te laten berekenen.",
+        "when_to_use": "Wanneer een strakke, minimalistische architectuurplaat wordt ontsierd door een veelvoud aan kleine, storende omgevingsfactoren.",
+        "tools": [
+          "Luminar Neo"
+        ],
+        "effect": "Alle geselecteerde onzuiverheden verdwijnen tegelijkertijd en de software vult de achtergrond naadloos en onzichtbaar in."
+      },
+      {
+        "name": "Lokaal Verscherpen via AI Object Select",
+        "description": "Activeer binnen het detailpaneel de optie 'Object Select' om de scène automatisch te laten analyseren door de AI. Klik vervolgens specifiek op de door de software herkende architectonische elementen en pas uitsluitend op die selectie een gerichte verscherping of contrastverbetering toe via de Medium of Large details sliders.",
+        "when_to_use": "Wanneer je specifieke structurele elementen of lijnen van een gebouw extra wilt laten spreken zonder dat de egale delen (zoals de lucht) korrelig of ruisachtig worden.",
+        "tools": [
+          "Luminar Neo"
+        ],
+        "effect": "De geselecteerde bouwdelen tonen aanzienlijk meer microcontrast en scherpte, terwijl de omliggende luchtpartijen volledig glad en gevrijwaard van artefacten blijven."
+      }
+    ],
+    "color_approach": "De benadering van kleur is gericht op het creëren van een levendige maar gecontroleerde sfeer. Er wordt bewust gekozen voor het verhogen van de levendigheid (Vibrancy) in plaats van de brute verzadiging (Saturation), om subtiele nuances in luchten en reflecties te versterken. Kleurzwemen worden direct actief onderdrukt om te garanderen dat de natuurlijke tinten van de bouwmaterialen neutraal en realistisch blijven ogen onder wisselende lichtomstandigheden.",
+    "local_adjustments": "Lokale aanpassingen worden ingezet om de kijker door de strakke lijnen van het bouwwerk te loodsen. Dit gebeurt via AI-gestuurde objectselecties en geavanceerde dieptemaskers, waarmee de fotograaf het licht handmatig door de compositie kan sturen. Hierdoor kunnen scherpte, contrast en lichtintensiteit uiterst secuur per bouwdeel worden gedoseerd zonder handmatige overvloeifouten.",
+    "what_to_avoid": [
+      "Het blindelings samenvoegen van HDR-belichtingstrappen zonder vooraf de batch-bestanden te controleren op corrupte of ongewenste DNG-hulpbestanden.",
+      "Het te hard of scherp instellen van de randen bij het toepassen van de Light Depth tool, wat leidt tot onnatuurlijke en storende lichtlijnen rondom architectonische hoeken."
+    ],
+    "best_for": "Deze methodiek is uitermate waardevol voor professionele architectuur- en interieurfotografen die werken met complexe belichtingssituaties en die hun workflow aanzienlijk willen versnellen zonder in te boeten op precisie en sfeer.",
+    "unique_insights": [
+      "De HDR Merge module is in staat om fouten te voorkomen en tijd te besparen door de gebruiker de kans te geven om handmatig afwijkende 'rogue' bestanden direct uit een batch-selectie te gooien nog vóórdat het rekenproces start.",
+      "De innovatieve 'Light Depth' tool maakt het mogelijk om een lichtstraal driedimensionaal door een platte foto te verplaatsen en de breedte ervan aan te passen via een interactieve grafiek, wat een unieke controle geeft over de sfeervatting.",
+      "Luminar Neo beschikt over een specifieke, ingebouwde catalogus-importtool waarmee complete fotostructuren, waarderingen en basisbewerkingen rechtstreeks vanuit Lightroom kunnen worden overgezet zonder dat de originele database wordt beschadigd."
+    ],
+    "style_preview": "Deze stijl kenmerkt zich door een krachtige balans tussen modern minimalisme en dramatische, sfeervolle belichting. De kernfilosofie rust op het transformeren van complexe belichtingssituaties naar strakke, contrastrijke beelden met heldere lijnvoeringen en levendige, natuurgetrouwe kleuren. Het is bij uitstek geschikt voor indrukwekkende buitenopnames van moderne bouwwerken en sfeervolle interieurfoto's tijdens het gouden uur of helder daglicht. Als fotograaf mag je een eindresultaat verwachten dat direct professionaliteit uitstraalt, waarbij storende elementen volledig zijn geëlimineerd en de unieke vormen van het gebouw op een dynamische, bijna driedimensionale wijze uit het beeld springen."
   }
 ]

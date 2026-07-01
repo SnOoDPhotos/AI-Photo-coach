@@ -42684,5 +42684,105 @@
       "Split toning kan fungeren als een visuele lijm: door exact dezelfde kleurwaarden in highlights en shadows toe te passen op foto's met afwijkende camera-instellingen of belichtingen, dwing je direct een ijzersterke seriële cohesie af."
     ],
     "style_preview": "Deze stijl is uitgesproken cinematisch en sfeervol, sterk leunend op de expressieve kracht van kleurcontrasten in de toonschalen. Grijze, futloze landschappen en kustlijnen transformeren onder deze benadering in dramatische scènes met een bijna schilderachtige of sci-fi-achtige ondertoon. Het werkt het allerbest bij foto's die zijn gemaakt tijdens het blauwe uur of onder een zwaar, egaal wolkendek, waar het natuurlijke licht vlak is. Het verwachte visuele effect is een beeld met diepe, sfeervol gekleurde schaduwen en subtiel contrasterende hooglichten, waardoor de foto direct aan diepte en emotionele impact wint."
+  },
+  {
+    "video_title": "Complete Lightroom Masterclass: EDIT PHOTOS like a PRO with my 12-step process!",
+    "photographer_name": "Simon d'Entremont",
+    "youtube_url": "https://www.youtube.com/watch?v=SfIMa_2zYN4",
+    "genre": [
+      "wildlife",
+      "landschap",
+      "algemeen"
+    ],
+    "light_conditions": [
+      "schaduw",
+      "diffuus licht",
+      "bewolkt"
+    ],
+    "mood": [
+      "naturalistisch",
+      "sfeervol",
+      "levendig"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Natural Sharp Vibrant Nature",
+    "philosophy": "Fotobewerking moet de natuurlijke realiteit respecteren, maar tegelijkertijd de diepte en structuur herstellen die een raw-bestand mist. Door selectieve lokale aanpassingen te maken, worden de sterke elementen benadrukt en de storende elementen subtiel naar de achtergrond gedrukt. Technische hulpmiddelen zoals maskers en clipping-waarschuwingen moeten de visuele visie ondersteunen, niet beperken.",
+    "workflow_order": [
+      "stap 1: Culling en importeren met embedded previews voor maximale snelheid",
+      "stap 2: Uitsnede en horizon rechttrekken om de compositie direct te bepalen",
+      "stap 3: Globale witbalans, tint en basisexposure nauwkeurig instellen",
+      "stap 4: Lokale maskers toepassen met verloopfilters en radiaalfilters om onderwerpen te isoleren",
+      "stap 5: Fijnafstemming van kleuren, gerichte verscherping met maskering en exportoptimalisatie per platform"
+    ],
+    "techniques": [
+      {
+        "name": "Kleurverzadiging Witbalans-check",
+        "description": "Verhoog de Vibrance en Saturation tijdelijk naar +100 om kleurzwemen extreem te vergroten, pas de Temp-slider aan tot blauw en oranje optisch in evenwicht zijn, en zet de verzadiging daarna terug naar nul.",
+        "when_to_use": "Bij twijfel over een subtiele kleurzweem in neutrale vlakken zoals stromend water of sneeuw.",
+        "tools": [
+          "Vibrance",
+          "Saturation",
+          "Temp"
+        ],
+        "effect": "Verwijdert onzichtbare kleurafwijkingen en geeft een perfect neutrale kleurbalans als startpunt."
+      },
+      {
+        "name": "Alt-Sleutel Bereikoptimalisatie",
+        "description": "Houd de Alt-toets (Windows) of Option-toets (Mac) ingedrukt tijdens het verschuiven van de Blacks en Whites sliders om de exacte clipping-grenzen visueel op een zwart of wit masker te controleren.",
+        "when_to_use": "Tijdens de basisfase van de belichting om de maximale dynamische omvang te benutten zonder data te verliezen.",
+        "tools": [
+          "Whites",
+          "Blacks"
+        ],
+        "effect": "Toont exact waar hooglichten uitbijten of schaduwen dichtlopen via gekleurde pixels op het scherm."
+      },
+      {
+        "name": "Zachte Achtergrond-Haze",
+        "description": "Trek een lineair verloopfilter over de achtergrond, verlaag de Clarity naar -30 en schuif Dehaze licht naar de negatieve kant om de achtergrond zachter en minder opvallend te maken.",
+        "when_to_use": "Bij landschappen of bossen waar de achtergrond te scherp is en afleidt van het hoofdonderwerp in de voorgrond.",
+        "tools": [
+          "Linear Gradient",
+          "Clarity",
+          "Dehaze"
+        ],
+        "effect": "De achtergrond vervaagt heel subtiel in een zachte, dromerige sfeer waardoor er diepte ontstaat."
+      },
+      {
+        "name": "Omgekeerd Radiaalvignet",
+        "description": "Plaats een groot radiaalfilter over het midden, klik op 'Invert' om de buitenzijde te selecteren, en verlaag de Exposure met -0.30 om een asymmetrisch, organisch verloop te creëren.",
+        "when_to_use": "Wanneer het standaard vignet de compositie hindert omdat een van de hoeken helder moet blijven.",
+        "tools": [
+          "Radial Gradient",
+          "Invert",
+          "Exposure"
+        ],
+        "effect": "De randen worden donkerder, behalve in de specifieke hoeken of zones die bewust buiten het filter zijn gedraaid."
+      },
+      {
+        "name": "Alt-Maskering Scharpness",
+        "description": "Druk op de Alt/Option-toets tijdens het verhogen van de Masking-slider in het verscherpingspaneel tot alleen de randen wit oplichten en de egale vlakken zwart blijven.",
+        "when_to_use": "Bij elke foto tijdens de eindfase om te voorkomen dat er ongewenste ruis in egale partijen wordt geïntroduceerd.",
+        "tools": [
+          "Sharpening",
+          "Masking"
+        ],
+        "effect": "De verscherping grijpt uitsluitend aan op de contrastrijke randen en details, terwijl ruisgevoelige vlakken onaangetast blijven."
+      }
+    ],
+    "color_approach": "Kleur wordt gecontroleerd en verfijnd door selectieve aanpassingen in het Color Mixer-paneel, waarbij de focus ligt op het scheiden van complementaire tinten. In plaats van globale verzadiging te misbruiken, past de fotograaf de luminantie en hue van specifieke storende kleuren aan (zoals het temperen van felle groentinten) om rust in de compositie te brengen.",
+    "local_adjustments": "Lokale maskers vormen de absolute kern van deze workflow. Door lineaire verloopfilters, radiaalfilters en onderwerpsmaskers te combineren, krijgt de voorgrond meer textuur en pop via Clarity, terwijl de achtergrond bewust wordt verzacht om de blik van de kijker direct naar het onderwerp te geleiden.",
+    "what_to_avoid": [
+      "Het gebruik van de zware Whites en Blacks sliders voor de hoofdbalans in plaats van de subtielere Highlights en Shadows",
+      "Het globally verhogen van Clarity over de gehele foto, wat leidt tot een onnatuurlijk, korzelig en plat effect in de achtergrond"
+    ],
+    "best_for": "Wildlife- en landschapsfotografie waarbij het isoleren van het onderwerp en het creëren van diepte in complexe natuuromgevingen essentieel is.",
+    "unique_insights": [
+      "Globale contrast- en helderheidsaanpassingen introduceren ongemerkt extra kleurverzadiging; pas daarom de definitieve Vibrance en kleurgradatie pas helemaal aan het einde van de workflow toe.",
+      "Het handmatig importeren van de 'Embedded & Sidecar' previews in plaats van het laten genereren van nieuwe smart previews door Lightroom bespaart enorm veel processortijd tijdens de culling-fase.",
+      "Blauwe kleurzwemen in stromend water of schaduwpartijen kunnen effectief worden geneutraliseerd via de Highlights-slider in het Color Grading-paneel, zonder dat de warme herfstkleuren in de rest van de foto verschuiven."
+    ],
+    "style_preview": "Deze stijl biedt een zeer verfijnde, heldere en detailrijke blik op de natuur, waarbij de integriteit van de oorspronkelijke opname gewaarborgd blijft. Het is een methodische benadering die uitblinkt in het creëren van driedimensionale diepte via zorgvuldig uitgebalanceerde microcontrasten. Deze stijl werkt fantastisch voor bossen, watervallen en wildlife onder zachte, bewolkte omstandigheden waar het natuurlijke licht vlak is. Het verwachte visuele effect is een gestructureerd, levendig en scherp beeld waarin het onderwerp direct loskomt van een rustige, schilderachtige achtergrond."
   }
 ]

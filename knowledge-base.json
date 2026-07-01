@@ -42839,5 +42839,106 @@
       "Het rigide vasthouden aan een vaste panelenvolgorde in Lightroom verstikt de creativiteit; succesvolle top-editoren passen instellingen zoals witbalans en belichting soms wel vijf tot tien keer opnieuw aan tijdens één bewerking."
     ],
     "style_preview": "De bewerkingsstijl ademt een sfeervolle, schilderachtige dynamiek uit waarbij het dier op een bijna cinematische wijze uit de achtergrond losbreekt. Door de harmonieuze interactie tussen diepe, koele schaduwen en een warme, dromerige lichtgloed krijgt het beeld een ongekende diepte. Deze aanpak is perfect voor de ambitieuze wildlife-fotograaf die pure registratie wil transformeren naar een krachtig, sfeervol kunstwerk. Het resultaat is een loepzuiver, contrastrijk beeld waarin de kijker onvermijdelijk naar de ziel van het dier wordt getrokken."
+  },
+  {
+    "video_title": "How I Edit Photos in Lightroom (complete workflow tutorial)",
+    "photographer_name": "THAT ICELANDIC GUY",
+    "youtube_url": "https://www.youtube.com/watch?v=mPvJkhnB4xg",
+    "genre": [
+      "landschap"
+    ],
+    "light_conditions": [
+      "bewolkt",
+      "diffuus licht"
+    ],
+    "mood": [
+      "moody",
+      "dramatisch"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Moody Cinematic Icelandic Landscape",
+    "philosophy": "De kernfilosofie draait om het creëren van een meeslepende, filmische sfeer door de focus strak op het hoofdonderwerp te leggen en storende elementen radicaal te elimineren. Kleur en contrast worden niet zomaar versterkt, maar strategisch gestuurd via kalibratie en lokale maskers om diepte en een duidelijke lichtrichting te veinzen. Het doel is een gestileerd beeld dat dramatischer aanvoelt dan de rauwe realiteit, geoptimaliseerd voor een sterke visuele impact.",
+    "workflow_order": [
+      "stap 1: Schakel Lenscorrecties in en snijd de foto handmatig bij naar een 4:5 verhouding voor een sterke compositie.",
+      "stap 2: Pas de basistoongebieden aan in het basispaneel door Highlights te verlagen en Schaduwen selectief te openen.",
+      "stap 3: Gebruik de Camerakalibratie (Calibration) om de primaire blauw- en groentinten te verschuiven voor een filmische basis.",
+      "stap 4: Pas gerichte HSL- en Kleurgradatie (Color Grading) aan om de sfeer te bepalen, gevolgd door geavanceerde lokale maskers om lichtinval te creëren."
+    ],
+    "techniques": [
+      {
+        "name": "Lens- en Compositiecorrectie",
+        "description": "Schakel Profielcorrecties in om lensvervorming en vignettering te elimineren, en snijd het beeld direct bij naar 4:5 om de compositie te optimaliseren voor platformen zoals Instagram.",
+        "when_to_use": "Altijd aan het begin van de workflow bij elk type opname om met een zuivere basis te starten.",
+        "tools": [
+          "Lenscorrecties",
+          "Uitsnijden"
+        ],
+        "effect": "De foto wordt rechtgetrokken, ongewenste lensvervorming verdwijnt en de compositie wordt strakker rond het onderwerp getrokken."
+      },
+      {
+        "name": "Scherpte Maskeren",
+        "description": "Verhoog de Verscherping naar een waarde rond de 50-55 en houd de Option/Alt-toets ingedrukt tijdens het schuiven van Maskeren (naar circa 70-80) om alleen de harde randen te verscherpen.",
+        "when_to_use": "Bij detailrijke landschapsfoto's waarbij ruis in egale vlakken zoals de lucht voorkomen moet worden.",
+        "tools": [
+          "Details"
+        ],
+        "effect": "Alleen de essentiële contouren en structuren worden scherp, terwijl vlakke delen zoals wolkenluchten zacht en ruisvrij blijven."
+      },
+      {
+        "name": "Filmische Camerakalibratie",
+        "description": "Pas de Camerakalibratie aan door de Blue Primary Hue te verschuiven en de Saturation aan te passen om de algehele kleurmatrix direct een teal-and-orange of diepe filmische toon te geven.",
+        "when_to_use": "Bij landschappen met overheersende groen-, geel- of blauwtinten die een sfeervolle, gestileerde look vereisen.",
+        "tools": [
+          "Kalibratie"
+        ],
+        "effect": "Alle kleuren in de foto verschuiven subtiel mee, waardoor er direct een harmonieus, filmisch kleurpalet ontstaat dat met reguliere HSL niet te bereiken is."
+      },
+      {
+        "name": "De-saturatie van storende natuurkleuren",
+        "description": "Verlaag de verzadiging van groen (Greens) en geel (Yellows) drastisch in het HSL-paneel om de felle, onnatuurlijke tinten uit het gras en mos te halen.",
+        "when_to_use": "Bij Noordelijke of IJslandse landschappen waar het groen te fel reflecteert en afleidt van de sfeer.",
+        "tools": [
+          "HSL / Kleur"
+        ],
+        "effect": "Het felle groen en geel transformeert in een gedempt, smaakvol en moody palet dat rustiger oogt."
+      },
+      {
+        "name": "Omgekeerd Radiaal Masker voor Omgevingslicht",
+        "description": "Plaats een Radiaal verloop over het onderwerp, inverteer het masker en verlaag de belichting (Exposure) licht om de omgeving subtiel te verduisteren.",
+        "when_to_use": "Wanneer het hoofdonderwerp (zoals een eenzaam huis of persoon) te veel opgaat in een lichte achtergrond.",
+        "tools": [
+          "Maskeren",
+          "Radiaal verloop"
+        ],
+        "effect": "Er ontstaat een natuurlijk ogend vignet dat de blik van de kijker dwingend naar het heldere centrum van de foto trekt."
+      },
+      {
+        "name": "Gerichte Luminantie in Kleurgradatie",
+        "description": "Voeg een blauwe/teal tint toe aan de Schaduwen in het Kleurgradatie-wiel en verlaag tegelijkertijd de Luminantie binnen datzelfde wiel om de donkere tonen extra diepte te geven.",
+        "when_to_use": "Bij koele, schaduwrijke landschappen om een 'cleane' maar diepe schaduwpartij te genereren.",
+        "tools": [
+          "Kleurgradatie"
+        ],
+        "effect": "De schaduwen krijgen een koele, rijke ondertoon en worden voller, wat het contrast met de warmere middentonen vergroot."
+      }
+    ],
+    "color_approach": "De fotograaf hanteert een strikt selectieve kleuraanpak die leunt op de 'Teal & Orange' harmonie. Natuurlijke groen- en geeltinten worden bewust onderdrukt door ze te de-satureren, terwijl de oranje/huidtinten en blauwe tonen juist worden geisoleerd en versterkt via Kalibratie en Kleurgradatie om een harmonieus, cinematic contrast te creëren.",
+    "local_adjustments": "Lokale aanpassingen zijn cruciaal in zijn workflow. Hij gebruikt complexe, geïnverteerde radiale maskers en penseelmaskers om de achtergrond donkerder te maken, mist/gloed toe te voegen en specifieke onderdelen (zoals een huis of de lucht) individueel te bewerken, waardoor hij de lichtval volledig naar zijn hand zet.",
+    "what_to_avoid": [
+      "Het over-verzadigen van natuurlijke groen- en geeltinten, wat de zoemende, moody sfeer direct tenietdoet.",
+      "Te veel verscherping toepassen op egale vlakken zoals wolkenluchten, waardoor storende korrel en digitale ruis ontstaan."
+    ],
+    "best_for": "Landschaps- en reisfotografie in Scandinavische of bewolkte omgevingen waar een dramatische, verhalende en filmische sfeer gewenst is.",
+    "unique_insights": [
+      "Hij past de Camerakalibratie (Calibration) toe als een fundamentóle creatieve stap vóórdat hij de reguliere HSL-schuiven aanraakt, omdat kalibratie de basiskleuren van de camerasensor op een unieke manier mengt.",
+      "Hij creëert handmatig een 'valse' lichtrichting door met lineaire en radiale verlopen mist en belichting aan te passen, waardoor een saaie, egale bewolkte lucht toch dynamische schaduwen op de grond werpt.",
+      "Hij verwijdert rigoureus kleine storende elementen (zoals verkeersborden of hekken) niet alleen om de foto op te schonen, maar beargumenteert dat dit de foto transformeert van 'een registratie van de werkelijkheid' naar een puur 'grafisch kunstwerk'."
+    ],
+    "style_preview": "Deze stijl kenmerkt zich door een diepe, melancholische en filmische sfeer die doet denken aan cinematic landschapsbeelden uit het Noorden. De visuele toon is koel in de schaduwen met zorgvuldig gecontroleerde, warme accenten op het onderwerp, waarbij felle natuurkleuren bewust zijn getemd. Voor een fotograaf die deze stijl overweegt, werkt dit het beste op beelden geschoten tijdens bewolkte dagen of het blauwe uur met een duidelijk centraal object. Het verwachte visuele effect is een mysterieus, contrastrijk beeld dat direct de aandacht grijpt en een krachtig verhaal vertelt zonder dat de kleuren onnatuurlijk fel ogen.",
+    "_warnings": [
+      "naam volledig in hoofdletters"
+    ]
   }
 ]

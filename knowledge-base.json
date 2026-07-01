@@ -35674,5 +35674,620 @@
       "Het verplaatsen van het 'ankerpunt' naar het midden vóór het flippen (transformeren) is de meest efficiënte manier om objecten symmetrisch te spiegelen in Photoshop."
     ],
     "style_preview": "Deze fotograaf hanteert een stijl die draait om esthetische perfectie en symmetrie. Het proces is gericht op 'tricks' en slimme shortcuts om onvolkomenheden direct uit te wissen. Het resultaat is een beeld dat er zeer gepolijst en commercieel uitziet, ideaal voor cosmetica of high-end dranken. Het is een uitstekende stijl voor fotografen die liever slim editen dan uren in de studio perfectioneren."
+  },
+  {
+    "video_title": "Product Photography Retouching CRASH COURSE",
+    "photographer_name": "Brittany + Ryan",
+    "youtube_url": "https://www.youtube.com/watch?v=-9QODH_7m7E",
+    "genre": [
+      "product"
+    ],
+    "light_conditions": [
+      "kunstlicht"
+    ],
+    "mood": [
+      "dramatisch",
+      "moody"
+    ],
+    "software": [
+      "Lightroom Classic",
+      "Photoshop"
+    ],
+    "style_description": "Moody Styled Product Composites",
+    "philosophy": "De fotografe combineert ruwe sfeer met geavanceerde digitale trucages. Ze bouwt een sfeervol beeld op door imperfecties meedogenloos op te ruimen, kleuren van props drastisch aan te passen en visuele lagen zoals vuur, rook en raam-schaduwen digitaal toe te voegen voor een lifestyle gevoel.",
+    "workflow_order": [
+      "stap 1: Globale toon en sfeer bepalen in Lightroom met basis belichtingscorrecties",
+      "stap 2: Naar Photoshop voor achtergrond-uitbreiding via Content-Aware Fill",
+      "stap 3: Rigoureuze cleanup van stof op oppervlaktes en het herstellen van de productranden",
+      "stap 4: Digitaal overschilderen van prop- en productkleuren met de Color Replacement tool",
+      "stap 5: Toevoegen en blenden van sfeer-overlays zoals vlammen, rook en plantenschaduwen"
+    ],
+    "techniques": [
+      {
+        "name": "Achtergrond Uitbreiden",
+        "description": "Selecteer de lege of ontbrekende stukken achtergrond met de Polygonal Lasso en gebruik Edit > Fill > Content-Aware om de naadloze rol digitaal verder te trekken.",
+        "when_to_use": "Wanneer je decor niet groot genoeg was voor het shot en je de zijkanten moet invullen.",
+        "tools": [
+          "Polygonal Lasso",
+          "Content-Aware Fill"
+        ],
+        "effect": "Een eindeloze, vloeiende achtergrond zonder zichtbare studioranden."
+      },
+      {
+        "name": "Structuur Beschermen tijdens Cleanup",
+        "description": "Kopieer de laag, pas een Dust & Scratches filter toe (radius 2) om de vloer schoon te maken, en gebruik vervolgens de Object Selection tool op het product om het filter daar lokaal te verwijderen.",
+        "when_to_use": "Wanneer een ondergrond (steen/hout) vol kruimels of stof ligt, maar het product vlijmscherp moet blijven.",
+        "tools": [
+          "Dust & Scratches Filter",
+          "Object Selection Tool"
+        ],
+        "effect": "Een schone ondergrond in enkele seconden, zonder verlies van detail in het hoofdonderwerp."
+      },
+      {
+        "name": "Product Kleur Overschilderen",
+        "description": "Kies de Color Replacement tool, verlaag de tolerantie en schilder met de juiste tint direct over een ongelijk gekleurd productvat heen, verlaag daarna de dekking om het realistisch te houden.",
+        "when_to_use": "Wanneer een product door reflecties of slechte verf een ongewenste kleurzweem heeft.",
+        "tools": [
+          "Color Replacement Tool"
+        ],
+        "effect": "Een egale, matte en perfect kloppende kleur voor het hele object."
+      },
+      {
+        "name": "Lichtcast van Vlammen Simuleren",
+        "description": "Na het plaatsen van een digitaal vuur-element (PNG), open je de Camera Raw Filter en trek je een warme Radiale Gradiënt rond de lont om echt licht na te bootsen.",
+        "when_to_use": "Wanneer je digitale lichtbronnen zoals vuur, lampen of zonlicht in een compositie plaatst.",
+        "tools": [
+          "Camera Raw Filter (Radial Gradient)"
+        ],
+        "effect": "Het toegevoegde vuur ziet er echt uit omdat het daadwerkelijk een oranje gloed op het product werpt."
+      },
+      {
+        "name": "Schaduwen Transponeren",
+        "description": "Kopieer en plak een digitale raam- of plantenschaduw, gebruik Free Transform om het perspectief te rekken, en kleur deze schaduw exact in de tint van bestaande schaduwen in de set.",
+        "when_to_use": "Om extra sfeer en diepte te creëren door de illusie van een raam of plant buiten beeld te wekken.",
+        "tools": [
+          "Free Transform",
+          "Eyedropper Tool"
+        ],
+        "effect": "Een dramatische en authentiek ogende lifestyle-sfeer in een verder simpele studio-opstelling."
+      }
+    ],
+    "color_approach": "Haar kleurbenadering is manipulatief maar sfeervol. Ze is niet bang om de kleur van een echte prop (zoals een steen) digitaal aan te passen aan de warme, moody achtergrondkleur om het beeld als één samenhangend kleurenpalet te laten voelen.",
+    "local_adjustments": "Ze leunt constant op de Object Selection Tool om razendsnel 'barrières' op te werpen. Hierdoor kan ze grove aanpassingen doen (zoals stempelen of schilderen) zonder per ongeluk het product te raken.",
+    "what_to_avoid": [
+      "Digitale schaduwen of lichten in een beeld plakken zonder de dekking en kleur af te stemmen op de al aanwezige omgevingsfactoren",
+      "Vlekken proberen weg te poetsen met een zachte kwast vlakbij scherpe randen zonder eerst een selectie te maken"
+    ],
+    "best_for": "Kaarsen, lifestyle objecten, en producten die baat hebben bij een warme, knusse of dramatische presentatie.",
+    "unique_insights": [
+      "Ze gebruikt de 'Dust & Scratches' filter als een botte bijl voor de hele foto om de vloer te reinigen, en wist daarna puur het product uit die laag; een enorme tijdsbesparing vergeleken met losse stofjes stempelen.",
+      "Bij het toevoegen van een fake plantenschaduw gebruikt ze de pipet om de kleur van de échte schaduw van de kaars op te pakken en kleurt daar de fake schaduw mee in, voor absolute realisme.",
+      "Om kneedgum (sticky tack) onder een product weg te halen, splitst ze het probleem: ze maakt een selectie van het contactpunt, repareert eerst de binnenkant van de cirkel, keert de selectie dan om, en repareert de buitenkant om uitsmeren te voorkomen."
+    ],
+    "style_preview": "Deze stijl kenmerkt zich door een moody, rijke en sfeervolle toon. De kernfilosofie is dat de fotostudio slechts een ruw canvas is; de ware sfeer en props (zoals vuur, schaduwen, rook) worden digitaal opgebouwd. Dit werkt uitzonderlijk goed voor productfotografie die inspeelt op emotie en gezelligheid. Het resultaat is een betoverende, commercieel aantrekkelijke lifestyle foto."
+  },
+  {
+    "video_title": "SECRET TIPS to Adding Light Effects to Photos in Mobile | Snapseed Tutorial",
+    "photographer_name": "Chris Graphix Tutorials",
+    "youtube_url": "https://www.youtube.com/watch?v=Q1Jiz6YHCB8",
+    "genre": [
+      "grafisch ontwerp"
+    ],
+    "light_conditions": [
+      "kunstlicht"
+    ],
+    "mood": [
+      "grafisch",
+      "experimenteel"
+    ],
+    "software": [
+      "Snapseed"
+    ],
+    "style_description": "Mobile Light Flare Compositing",
+    "philosophy": "Deze mobiele workflow richt zich op snelheid en visuele impact voor ontwerpers. Door slim gebruik te maken van specifieke overvloeimodi (blend modes) in Snapseed, worden willekeurige licht-effecten vanaf het internet naadloos over portretten of objecten gelegd.",
+    "workflow_order": [
+      "stap 1: Achtergrond van het originele beeld verwijderen via een externe app (PhotoRoom)",
+      "stap 2: Beeld op een pure witte achtergrond plaatsen en importeren in Snapseed",
+      "stap 3: Lens flare met een zwarte achtergrond importeren via Double Exposure",
+      "stap 4: Blending mode wijzigen naar 'Add' om het zwart te laten verdwijnen",
+      "stap 5: Details (Structure) verhogen om het gecombineerde beeld af te ronden"
+    ],
+    "techniques": [
+      {
+        "name": "Pre-Isolatie voor Blending",
+        "description": "Verwijder eerst de achtergrond in een app als PhotoRoom en plaats het onderwerp op zuiver wit, voordat je lichteffecten toevoegt in Snapseed.",
+        "when_to_use": "Om te voorkomen dat complexe achtergronden door de toegevoegde lensflare heen schijnen en de compositie rommelig maken.",
+        "tools": [
+          "External BG Remover"
+        ],
+        "effect": "Een schoon canvas waarop lichteffecten maximaal voorspelbaar reageren."
+      },
+      {
+        "name": "Zwarte Achtergronden Filteren",
+        "description": "Open de Double Exposure tool, importeer een lichteffect met een puur zwarte achtergrond en verander de overvloeimodus (Blend Mode) naar 'Add'.",
+        "when_to_use": "Wanneer je vlammen, rook, lens flares of bokeh van internet (Pinterest) wilt integreren zonder ze zelf uit te hoeven knippen.",
+        "tools": [
+          "Double Exposure",
+          "Blend Modes"
+        ],
+        "effect": "De zwarte pixels verdwijnen volledig en alleen het sprankelende lichteffect blijft over de foto liggen."
+      },
+      {
+        "name": "Textuur Versterken (Structure)",
+        "description": "Ga naar het Details paneel en verhoog de Structure (Structuur) lichtjes nadat het effect is toegevoegd.",
+        "when_to_use": "Om als laatste stap het originele beeld en de nieuwe lensflare visueel samen te binden door het microcontrast te verhogen.",
+        "tools": [
+          "Details Tool (Structure)"
+        ],
+        "effect": "Het totaalbeeld oogt scherper en de lichtstralen knallen meer van het scherm."
+      },
+      {
+        "name": "Overlay Positionering",
+        "description": "Verplaats en schaal de geïmporteerde lens flare handmatig naar de rand of hoek van de foto in de Double Exposure modus.",
+        "when_to_use": "Om te simuleren dat het kunstmatige licht daadwerkelijk van buiten de cameralens komt.",
+        "tools": [
+          "Double Exposure (Transform)"
+        ],
+        "effect": "Een realistischere compositie waarbij het licht natuurlijk het beeld in lijkt te lekken."
+      }
+    ],
+    "color_approach": "De kleur wordt volledig gedicteerd door de geïmporteerde lens flare (vaak warme, gouden of neon tinten). Er is geen complexe kleurcorrectie, de flare kleurt simpelweg de highlights van het beeld door de 'Add' blend mode.",
+    "local_adjustments": "Er worden geen specifieke maskers getoond; de aanpak vertrouwt op het slim positioneren van de Double Exposure en de automatische maskering die de blend mode 'Add' verzorgt.",
+    "what_to_avoid": [
+      "Blend modes zoals 'Overlay' of 'Lighting' gebruiken voor effecten op een zwarte achtergrond, omdat dit de originele kleuren vertroebelt of donker maakt"
+    ],
+    "best_for": "Flyer designs, social media graphics en het experimenteel toevoegen van drama op mobiel.",
+    "unique_insights": [
+      "Hij raadt bewust aan om afbeeldingen met lichteffecten als gewone JPG's via Pinterest te downloaden; omdat je de 'Add' blend mode gebruikt, heb je helemaal geen lastige transparante PNG's nodig.",
+      "Hij adviseert om het te bewerken onderwerp éérst op een spierwitte achtergrond te plaatsen voor het toevoegen van flares, zodat de afbeelding later perfect uitgesneden kan worden voor een flyer.",
+      "Hij vermijdt alle andere overvloeimodi in Snapseed voor lichteffecten, omdat in zijn ervaring uitsluitend 'Add' een schoon resultaat geeft zonder de originele helderheid aan te tasten."
+    ],
+    "style_preview": "Deze stijl is direct, grafisch en zeer geschikt voor mobiele ontwerpers. De filosofie is dat complexe fotomanipulaties (zoals lichteffecten) met de juiste kennis van 'blend modes' in enkele tikken op een telefoon kunnen worden bereikt. Dit werkt het beste voor promotiemateriaal of portretten die extra flair nodig hebben. Het verwachte effect is een opvallende, dynamische afbeelding klaar voor verdere grafische verwerking."
+  },
+  {
+    "video_title": "Beginner Affinity Photo Tutorial with Free Canva Account (Pixel Studio Edit)",
+    "photographer_name": "Aperlust",
+    "youtube_url": "https://www.youtube.com/watch?v=Fx3kvlTWkdI",
+    "genre": [
+      "algemeen"
+    ],
+    "light_conditions": [
+      "daglicht"
+    ],
+    "mood": [
+      "naturalistisch",
+      "rustig"
+    ],
+    "software": [
+      "Affinity Photo"
+    ],
+    "style_description": "Clean Foundational Editing",
+    "philosophy": "Een gedegen, non-destructieve benadering van fotobewerking in Affinity Photo. De nadruk ligt op laagsgewijs werken, het correct begrijpen van maskers (zwart en wit), en het subtiel versterken van wat er al is zonder het beeld over-de-top te maken.",
+    "workflow_order": [
+      "stap 1: Raw-ontwikkeling (tonaal bereik herstellen) en transitie naar Pixel Studio",
+      "stap 2: Uitsnijden volgens de regel van derden en horizon rechtzetten",
+      "stap 3: Globale aanpassingslagen (Contrast, HSL, Curves) toevoegen",
+      "stap 4: Lokale saturatie en contrast inbrengen via zwarte maskers en zachte witte penselen",
+      "stap 5: Retoucheren op een lege laag, ruisonderdrukking en gerichte verscherping"
+    ],
+    "techniques": [
+      {
+        "name": "Midtones Oplichten via Curves",
+        "description": "Voeg een Curves aanpassingslaag toe en trek het middelpunt van de curve iets omhoog om de middentonen te verhelderen zonder de hooglichten of schaduwen te clippen.",
+        "when_to_use": "Wanneer een foto over het algemeen te vlak of donker aanvoelt, maar er geen dataverlies mag optreden.",
+        "tools": [
+          "Curves Adjustment Layer"
+        ],
+        "effect": "Een helderder, sprekender beeld met behoud van het volledige dynamische bereik."
+      },
+      {
+        "name": "Lokale Verzadiging via Maskers",
+        "description": "Voeg een HSL laag toe, inverteer het masker (Cmd+I) naar zwart, en schilder met een zacht wit penseel lokaal kleur terug in (bijv. treinrails).",
+        "when_to_use": "Wanneer je leading lines of specifieke onderwerpen wilt benadrukken zonder de hele foto (zoals de lucht) te versterken.",
+        "tools": [
+          "HSL Adjustment",
+          "Layer Mask",
+          "Brush Tool"
+        ],
+        "effect": "Het oog van de kijker wordt subtiel naar het verzadigde gedeelte van de foto getrokken."
+      },
+      {
+        "name": "Non-destructief Retoucheren",
+        "description": "Maak een nieuwe lege Pixel Layer aan (Shift+Cmd+N), selecteer de Inpainting Brush Tool, zet de instelling op 'Current Layer & Below' en poets stofjes weg.",
+        "when_to_use": "Bij het verwijderen van sensordust of kleine vlekjes, waarbij je je bronlaag 100% intact wilt houden.",
+        "tools": [
+          "Pixel Layer",
+          "Inpainting Brush Tool"
+        ],
+        "effect": "Vlekken verdwijnen naadloos, met de mogelijkheid om het effect altijd ongedaan te maken door de laag uit te zetten."
+      },
+      {
+        "name": "Slimme Ruisonderdrukking",
+        "description": "Plaats een Live Denoise filter en schuif de Luminance Luminance noise slider omhoog in een ingezoomd gebied met hoog contrast, pas daarna de Color noise iets aan.",
+        "when_to_use": "Bij foto's met zichtbare korrel geschoten met hoge ISO of in donkere omstandigheden.",
+        "tools": [
+          "Live Denoise Filter"
+        ],
+        "effect": "Gladde vlakken zonder ruis, terwijl randen nog voldoende detail behouden."
+      },
+      {
+        "name": "Geselecteerde Verscherping",
+        "description": "Gebruik de Object Selection tool om een dier te isoleren, en pas dan een Unsharp Mask filter toe (Radius ~10px) zodat alleen het dier verscherpt wordt.",
+        "when_to_use": "Wanneer het onderwerp scherpte mist, maar je weigert om ruis in een out-of-focus achtergrond te versterken.",
+        "tools": [
+          "Object Selection Tool",
+          "Unsharp Mask"
+        ],
+        "effect": "Het onderwerp springt naar voren met scherpe details, tegen een onverstoorde achtergrond."
+      }
+    ],
+    "color_approach": "De benadering is realistisch en behoudend. Aanpassingen via HSL (zoals een subtiele verschuiving van rode tinten) worden vaak in dekking verlaagd of lokaal weggemaskeerd om het landschap of de setting natuurlijk te houden.",
+    "local_adjustments": "Zeer methodisch: aanpassingslagen (zoals contrast) krijgen direct een geïnverteerd zwart masker, waarna het effect er met een wit penseel op lage 'Flow' langzaam wordt ingeschilderd waar nodig.",
+    "what_to_avoid": [
+      "Verscherpingsfilters globaal over het hele beeld gooien, wat resulteert in lelijke ruis in de achtergrond",
+      "De volgorde van filters negeren: ruisonderdrukking moet altijd ónder of vóór de verscherping in de lagenstructuur staan"
+    ],
+    "best_for": "Fotografen die overstappen naar Affinity Photo en een solide, gelaagde basisworkflow voor landschappen of reisfotografie willen leren.",
+    "unique_insights": [
+      "Hij hanteert de handige geheugensteun 'White reveals, Black conceals' om te allen tijde te begrijpen hoe de kleur van je kwast samenwerkt met het masker in Affinity.",
+      "Hij demonstreert expliciet dat de volgorde van de Live Filters essentieel is; een ruisonderdrukkingslaag moet onder een verscherpingslaag staan, anders versterk je de ruis.",
+      "Hij gebruikt bewust het 'Current Layer & Below' commando bij de Inpainting Brush; zonder dit commando doet het gereedschap letterlijk niets op een non-destructieve, transparante laag."
+    ],
+    "style_preview": "Deze educatieve stijl biedt een rustig, non-destructief en robuust fundament voor beeldbewerking. De filosofie is om altijd in lagen en maskers te werken, zodat elke beslissing later kan worden teruggedraaid. Deze aanpak is perfect voor reisfotografie, landschappen en beginnende retoucheurs. Het resultaat is een schoon, gebalanceerd en visueel verfijnd beeld zonder de gevaren van destructieve bewerking."
+  },
+  {
+    "video_title": "How to do professional photo editing in Affinity Photo full guide 2026",
+    "photographer_name": "How To Solve Pro",
+    "youtube_url": "https://www.youtube.com/watch?v=Kf1Cyaf04Hc",
+    "genre": [
+      "algemeen"
+    ],
+    "light_conditions": [
+      "daglicht"
+    ],
+    "mood": [
+      "cinematisch"
+    ],
+    "software": [
+      "Affinity Photo"
+    ],
+    "style_description": "High-Speed General Enhancements",
+    "philosophy": "Een ultrasnelle high-level overzicht van de bewerkingscyclus, waarin gesteld wordt dat een perfect schone basis en correcte belichting de absolute voorwaarden zijn voordat er met filmische kleuren gewerkt mag worden.",
+    "workflow_order": [
+      "stap 1: Bestand openen in Affinity Photo",
+      "stap 2: Foto direct schoonmaken van stof en objecten met Healing/Clone tools",
+      "stap 3: Fundering leggen door belichting, contrast en schaduwen te corrigeren",
+      "stap 4: Color grading toepassen (Curves/LUTs) voor een filmische sfeer",
+      "stap 5: Zeer milde verscherping toepassen, finale check doen, en exporteren als JPG"
+    ],
+    "techniques": [
+      {
+        "name": "Basis Cleanup",
+        "description": "Gebruik de Healing Brush of Clone Tool als allereerste stap om stofvlekken op de lens of storende elementen te verwijderen.",
+        "when_to_use": "Altijd, voordat er ook maar iets aan belichting of contrast wordt gedaan.",
+        "tools": [
+          "Healing Brush Tool",
+          "Clone Tool"
+        ],
+        "effect": "Een vlekkeloos canvas dat klaar is voor verdere bewerking."
+      },
+      {
+        "name": "Fundamentele Belichtingscorrectie",
+        "description": "Breng Exposure, Brightness en Shadows in balans om de kernverlichting van de foto correct neer te zetten.",
+        "when_to_use": "Om een vlak of slecht belicht beeld een solide technisch fundament te geven.",
+        "tools": [
+          "Exposure",
+          "Shadows/Highlights"
+        ],
+        "effect": "Een perfect gebalanceerd beeld waarin alle details in donker en licht zichtbaar zijn."
+      },
+      {
+        "name": "Cinematische Tinten Toevoegen",
+        "description": "Voeg een Color Balance laag of een geïmporteerde LUT toe om de kleurbalans bewust te sturen (warm voor filmisch, koel voor dramatisch).",
+        "when_to_use": "Om de emotie of sfeer van een klinisch perfecte foto een specifieke richting in te sturen.",
+        "tools": [
+          "Color Balance",
+          "LUTs"
+        ],
+        "effect": "De foto krijgt een herkenbare, gestileerde en professionele sfeer."
+      },
+      {
+        "name": "Voorzichtige Textuurverbetering",
+        "description": "Pas een zeer lichte verscherping toe via Unsharp Mask om fijne details uit de verf te laten komen, zonder het door te drukken.",
+        "when_to_use": "Als allerlaatste bewerkingsstap voordat de afbeelding geëxporteerd wordt.",
+        "tools": [
+          "Unsharp Mask"
+        ],
+        "effect": "De elementen in de foto lijken net iets tastbaarder en scherper."
+      },
+      {
+        "name": "De Finale Kwaliteitscheck",
+        "description": "Zoom in op 100% en controleer de foto nog één keer volledig nadat verscherping en kleur zijn toegepast.",
+        "when_to_use": "Altijd direct voor de export naar JPG of PNG.",
+        "tools": [
+          "Zoom Tool"
+        ],
+        "effect": "Voorkomt dat overgebleven artefacten per ongeluk gepubliceerd worden."
+      }
+    ],
+    "color_approach": "Trendgevoelig en sfeergedreven. De maker raadt aan om te vertrouwen op LUTs (Look-Up Tables) om snel te switchen tussen een 'warme, cinematische' sfeer en een 'koele, dramatische of moderne' uitstraling.",
+    "local_adjustments": "Lokale aanpassingen worden in deze snelle workflow niet in detail besproken; de focus ligt op grote, globale stappen.",
+    "what_to_avoid": [
+      "Overmatig verscherpen van details, waardoor de foto onmiddellijk een korrelige, onnatuurlijke en amateuristische uitstraling krijgt",
+      "Kleur toevoegen voordat de belichting en helderheid in de basis gecorrigeerd zijn"
+    ],
+    "best_for": "Absolute beginners die snel de chronologische volgorde van een fotobewerking willen begrijpen.",
+    "unique_insights": [
+      "De tutorial stelt als harde regel dat correcte belichting het onmisbare fundament is; zonder dit zal elke professionele color grade mislukken.",
+      "Het inzetten van pre-gebouwde LUTs direct in Affinity wordt gezien als de ultieme snelkoppeling voor beginners om complexe cinematische kleurschema's te evenaren.",
+      "Er wordt benadrukt dat een 'final check' absoluut ná de verscherping moet plaatsvinden, omdat het verscherpingsproces vaak verborgen foutjes of ruis plotseling zichtbaar maakt."
+    ],
+    "style_preview": "Deze stijl is extreem methodisch maar gericht op snelheid. De filosofie stelt dat een professionele edit simpel is: opruimen, belichten, sfeer toevoegen, verscherpen en klaar. Deze workflow is het meest waardevol voor makers die grote hoeveelheden beelden moeten verwerken. Het verwachte effect is een klinisch schone, modern gekleurde foto met een commerciële uitstraling."
+  },
+  {
+    "video_title": "Snapseed 3.0 for Product Photography | What’s New & How It Affects Your Edits (iPhone + iPad)",
+    "photographer_name": "By Kristina Nicole",
+    "youtube_url": "https://www.youtube.com/watch?v=0PzCAlIVu8c",
+    "genre": [
+      "product"
+    ],
+    "light_conditions": [
+      "daglicht"
+    ],
+    "mood": [
+      "algemeen"
+    ],
+    "software": [
+      "Snapseed"
+    ],
+    "style_description": "Mobile Product Prep",
+    "philosophy": "Een technische UI-navigatiegids voor productfotografen die vanaf hun mobiel werken. De kernfilosofie is het inrichten van een supersnelle, gepersonaliseerde workflow en het strikt instellen van exportparameters zodat e-commerce foto's snel laden zonder kwaliteitsverlies.",
+    "workflow_order": [
+      "stap 1: Foto openen via het nieuwe visuele grid-scherm",
+      "stap 2: Het 'Favorites' tabblad inrichten met specifieke, veelgebruikte gereedschappen",
+      "stap 3: Export-instellingen configureren via het (verborgen) menu",
+      "stap 4: Bewerken met omgedraaide swipe-gestures op de Light Theme interface",
+      "stap 5: De juiste export-methode (Export/Save a Copy) selecteren om metadata te behouden"
+    ],
+    "techniques": [
+      {
+        "name": "Custom Favorites Setup",
+        "description": "Open het Tools-menu en sleep je vier belangrijkste tools (bijv. Crop, Curves, White Balance, Tune Image) in je Favorites-balk.",
+        "when_to_use": "Wanneer je honderden productfoto's moet bewerken en de snelst mogelijke mobiele workflow wilt creëren.",
+        "tools": [
+          "Favorites Menu"
+        ],
+        "effect": "Extreem snelle toegang tot de meest essentiële bewerkingen voor online verkoop."
+      },
+      {
+        "name": "Witbalans Controle via Light Theme",
+        "description": "Zet de app via de instellingen op 'Light Theme', waardoor je afbeelding op een puur witte achtergrond komt te staan.",
+        "when_to_use": "Tijdens het bepalen van de White Balance en Exposure in Snapseed voor productfoto's geschoten op witte achtergronden.",
+        "tools": [
+          "Settings (Light Theme)"
+        ],
+        "effect": "Het zuiver witte canvas van de app fungeert als referentiepunt, waardoor de wittinten in de foto exact kloppen."
+      },
+      {
+        "name": "E-commerce Export Optimalisatie",
+        "description": "Navigeer naar Settings (drie puntjes op home screen), zet Image Sizing op 2000px, Quality op 80% en zet de EXIF metadata schuifjes AAN.",
+        "when_to_use": "Altijd, om te garanderen dat de bewerkte foto's online razendsnel laden onder de 1MB grens.",
+        "tools": [
+          "Settings (Format & Quality)"
+        ],
+        "effect": "Bestanden die direct klaar zijn voor platforms zoals Etsy of Shopify."
+      },
+      {
+        "name": "Reversed Swiping",
+        "description": "Swipe in de app naar links om verzadiging/helderheid te verhogen, en naar rechts om te verlagen (de nieuwe gesture setup van Snapseed 3.0).",
+        "when_to_use": "Tijdens elke aanpassing in het Tune Image of vergelijkbaar menu.",
+        "tools": [
+          "Touch Gestures"
+        ],
+        "effect": "Effectieve en gecontroleerde toepassing van de tools na update 3.0."
+      },
+      {
+        "name": "Veilige Export",
+        "description": "Druk op de Export-knop (rechtsboven) en kies uitsluitend 'Export' of 'Save a copy' en negeer de 'Save to original' optie.",
+        "when_to_use": "Wanneer de edit compleet is en weggeschreven moet worden naar de camerarol.",
+        "tools": [
+          "Export Menu"
+        ],
+        "effect": "Behoud van de onaangetaste originele bestanden voor latere, afwijkende uitsneden of verzoeken."
+      }
+    ],
+    "color_approach": "Haar hoofddoel is absolute kleurechtheid (true to real life). Ze raadt aan White Balance in je favorieten te zetten en de Light Theme interface te gebruiken om te zorgen dat het product online niet afwijkt van de werkelijkheid.",
+    "local_adjustments": "De focus ligt in deze tutorial puur op app-architectuur, globale tools en UI-optimalisatie in plaats van maskeringstechnieken.",
+    "what_to_avoid": [
+      "Kiezen voor 'Save to Original', waarmee je onherroepelijk het originele basismateriaal vernietigt",
+      "Werken in Dark Theme bij e-commerce foto's, omdat het referentiekader voor puur wit dan ontbreekt in de app"
+    ],
+    "best_for": "Etsy-verkopers, mobiele productfotografen en iedereen die Snapseed gebruikt voor e-commerce content.",
+    "unique_insights": [
+      "Ze dwingt haar cursisten om uitsluitend in 'Light Theme' te editen, omdat de interface dan puur wit wordt; dit is essentieel om op het blote oog te kunnen controleren of de product-achtergrond daadwerkelijk wit is.",
+      "Ze onthult een frustrerende UX-wijziging in Snapseed 3.0: de swipe gestures zijn omgedraaid (naar links is nu een waarde verhogen, terwijl dit vroeger naar rechts was).",
+      "Ze raadt expliciet aan om kwaliteit op 80% te zetten, niet om kwaliteit in te leveren, maar om specifiek onder de magische 1MB grens van snelle web-laadtijden te blijven zonder zichtbaar detailverlies."
+    ],
+    "style_preview": "Deze gids vertegenwoordigt een uiterst pragmatische, datagerichte mobiele stijl. De filosofie is niet het maken van grote kunstwerken, maar het stroomlijnen van een foutloze app-ervaring om grote volumes foto's klaar te maken voor verkoop. Dit werkt het best voor solopreneurs en online winkeliers. Het resultaat is een kleurecht, lichtgewicht en web-klaar beeld."
+  },
+  {
+    "video_title": "How to Retouch Product Photos - 14 Basic Product Retouching Tutorial in Photoshop",
+    "photographer_name": "ProGlobalBusinessSolutions",
+    "youtube_url": "https://www.youtube.com/watch?v=NR8DZvvU_-I",
+    "genre": [
+      "product"
+    ],
+    "light_conditions": [
+      "kunstlicht"
+    ],
+    "mood": [
+      "schoon",
+      "grafisch"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Clinical E-commerce Retouch",
+    "philosophy": "Een zeer directe, technische en meedogenloze benadering van product-retouche. Het doel is maximale helderheid, uiterst scherpe randen en het genadeloos poetsen van elke stof- of schadeplek, resulterend in een catalogus-klaar, clean beeld.",
+    "workflow_order": [
+      "stap 1: Dupliceer de basislaag en snijd het beeld strak bij",
+      "stap 2: Globaal contrast stevig aanzetten via de middentonen (Levels)",
+      "stap 3: Details opschonen met de Clone Stamp (zachte kwast, 100% dekking)",
+      "stap 4: Extreme schades overschrijven via Quick Mask, Blur en specifieke blend modes",
+      "stap 5: Kleurzweem en modderige achtergronden neutraliseren met Replace Color en Color Balance",
+      "stap 6: Afsluitende verscherping (Unsharp Mask) en DPI verhogen voor print/web"
+    ],
+    "techniques": [
+      {
+        "name": "Middentoon Contrast (Levels)",
+        "description": "Open Levels (Image > Adjustments) en verplaats uitsluitend de grijze (middentoon) slider aanzienlijk om direct een zeer hard contrast te genereren.",
+        "when_to_use": "Wanneer catalogus/e-commerce foto's vlak of flets uit de camera komen.",
+        "tools": [
+          "Levels (Midpoint Slider)"
+        ],
+        "effect": "Het product knalt onmiddellijk agressiever los van de achtergrond."
+      },
+      {
+        "name": "Snelle Retouche via Quick Mask Blur",
+        "description": "Zet Quick Mask aan (Q), schilder over een zwaar gekraste regio, kopieer dit naar een nieuwe laag, pas Gaussian Blur (8px) toe en zet de laag op 'Darken' of 'Linear Dodge'.",
+        "when_to_use": "Om een regio met extreem veel krassen of putten te 'egaliseren' zonder uren te stempelen.",
+        "tools": [
+          "Quick Mask",
+          "Gaussian Blur",
+          "Blending Modes"
+        ],
+        "effect": "Een zwaar gehavende textuur wordt vervangen door een digitaal strakke gradient."
+      },
+      {
+        "name": "Achtergrond Egaliseren (Replace Color)",
+        "description": "Gebruik 'Replace Color', klik met het pipetje op een donkere/modderige vlek in de witte achtergrond en schuif de 'Lightness' slider stevig omhoog.",
+        "when_to_use": "Wanneer je witte achtergrond lokaal grijze vlekken of kleurzweem bevat, zonder het product aan te willen tasten.",
+        "tools": [
+          "Replace Color"
+        ],
+        "effect": "Een spierwitte achtergrond op specifieke probleemzones."
+      },
+      {
+        "name": "Neutraliseren (Color Balance)",
+        "description": "Open Color Balance, vink 'Preserve Luminosity' aan en corrigeer zachtjes de Highlights, Midtones en Shadows om lelijke kleurreflecties tegen te gaan.",
+        "when_to_use": "Om een perfect neutrale productkleur te garanderen voor in een webshop.",
+        "tools": [
+          "Color Balance"
+        ],
+        "effect": "Een product met kleurechte tinten zonder invloed van studiolamp-kleurzweem."
+      },
+      {
+        "name": "E-commerce Unsharp Mask",
+        "description": "Pas het filter Unsharp Mask toe (Amount op 100%, Threshold op 0, Radius vanaf 2.6 pixels) op de samengevoegde afbeelding.",
+        "when_to_use": "Als allerlaatste actie voordat de afbeelding de webshop of drukkerij in gaat.",
+        "tools": [
+          "Unsharp Mask Filter"
+        ],
+        "effect": "Gegarandeerd knisperende, ultra-scherpe randen, kenmerkend voor commerciële productfoto's."
+      }
+    ],
+    "color_approach": "De benadering is volkomen neutraal, klinisch en kleur-gekalibreerd. De nadruk ligt op de (wat oudere) 'Replace Color' en 'Color Balance' tools om de achtergrond naar puur wit te pushen en de productkleuren volstrekt objectief en zuiver te maken.",
+    "local_adjustments": "Men maakt gebruik van Quick Masks (Q) om uiterst snel en gericht probleemzones te isoleren en lokaal te blurren of verhelderen, zonder zich druk te maken over complexe adjustment layers (destructieve workflow).",
+    "what_to_avoid": [
+      "Vergeten de afbeeldingsresolutie om te zetten naar 300 DPI vóór de export",
+      "Stofjes over het hoofd zien door niet continu ver op het beeld in te zoomen tijdens de retouche-fase"
+    ],
+    "best_for": "Massa-retouche van e-commerce beelden, catalogus werk, strakke studio productfotografie.",
+    "unique_insights": [
+      "In plaats van het met de hand wegstempelen van zware krassen of deuken, schildert de retoucheur een Quick Mask over het gebied, blurret de uitsnede extreem (Gaussian Blur) en plaatst dit via Darken/Linear Dodge blend modes glad terug over de deuk.",
+      "Er wordt volledig destructief gewerkt via 'Image > Adjustments' (zoals Replace Color) om snelheid te genereren, wat typisch is voor snelle bulk-productretouchebureaus.",
+      "Voor het direct opfrissen van een vuile, onegale witte achtergrond vertrouwt deze retoucheur niet op maskers, maar op de snelle 'Replace Color' tool door specifiek de donkere/grauwe tint aan te wijzen en lokaal de helderheid (Lightness) omhoog te sleuren."
+    ],
+    "style_preview": "Deze retoucheerstijl is Spartaans, commercieel en extreem doelgericht. De filosofie stelt dat e-commerce perfectie bereikt wordt door strakke randen, puur wit en 100% stofvrije pixels. Dit is ideaal voor catalogi en Amazon/webshop presentaties. Het visuele effect is een klinisch, vlijmscherp, foutloos object dat direct aanzet tot kopen."
+  },
+  {
+    "video_title": "How to Retouch Product Photos: CLEAN UP your images! Basic Photoshop Product Retouching Tutorial",
+    "photographer_name": "Amanda Campeanu",
+    "youtube_url": "https://www.youtube.com/watch?v=hubVrIwNf-Q",
+    "genre": [
+      "product"
+    ],
+    "light_conditions": [
+      "kunstlicht"
+    ],
+    "mood": [
+      "schoon",
+      "grafisch"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Flawless Studio Cleanup",
+    "philosophy": "De absolute kern van luxe productfotografie is 'cleanup' vóórdat er überhaupt naar kleur wordt gekeken. Amanda pleit voor chirurgische precisie bij het verwijderen van horizonlijnen, het reconstrueren van achtergrondnaden en het uitgummen van storende studioreflecties uit glanzende objecten.",
+    "workflow_order": [
+      "stap 1: Dupliceer de basislaag voor veiligheid",
+      "stap 2: Gebruik Spot Healing en Patch Tool voor het verwijderen van stof- en watervlekjes",
+      "stap 3: Kloon ongewenste randen en studiolijnen (zoals acrylblokken) weg met Polygonal Lasso",
+      "stap 4: Verwijder lelijke vierkante softbox/raam-reflecties in het glas met de Clone Stamp",
+      "stap 5: Construeer scheve, slecht uitgelijnde kartonnen achtergrondnaden digitaal recht met tools"
+    ],
+    "techniques": [
+      {
+        "name": "Structuur Mengen (Patch Tool)",
+        "description": "Trek simpelweg een cirkel rond een watervlek of kras met de Patch tool en sleep deze naar een schoon vlak; Photoshop mengt de structuur automatisch.",
+        "when_to_use": "Bij grotere, opvallende vlekken op achtergronden met een lichte structuur.",
+        "tools": [
+          "Patch Tool"
+        ],
+        "effect": "Naadloze verwijdering van oneffenheden waarbij lichtval en textuur intact blijven."
+      },
+      {
+        "name": "Horizon Fade-Out",
+        "description": "Kies een zachte Clone Stamp borstel (circa 90% dekking) en schilder de harde grenslijn van een lelijk acryl-blok uit, zodat de overgang zacht samensmelt in de achtergrond.",
+        "when_to_use": "Wanneer je de harde 'tafelrand' in een set wilt laten verdwijnen in de horizon.",
+        "tools": [
+          "Clone Stamp Tool"
+        ],
+        "effect": "Een eindeloos, vloeiend perspectief dat de illusie van oneindige ruimte opwekt."
+      },
+      {
+        "name": "Protectie 'Bumpers' Maken",
+        "description": "Trek met de Polygonal Lasso een strakke selectie exact langs de rand van het product om te functioneren als een bumper; stempel vervolgens veilig de omgeving weg zonder het product te raken.",
+        "when_to_use": "Wanneer je zwaar moet clonen dicht bij het label of de rand van de fles.",
+        "tools": [
+          "Polygonal Lasso Tool",
+          "Clone Stamp Tool"
+        ],
+        "effect": "Een perfect opgeschoonde achtergrond, met een flitsende, vlijmscherpe rand van het product."
+      },
+      {
+        "name": "Reflectie Reconstructie",
+        "description": "Om een raam- of softbox-reflectie uit glas te halen: maak een selectie binnen de productlijnen en gebruik de Clone Stamp (zacht penseel) om het glanzende cilinder-oppervlak te imiteren door er domweg overheen te schilderen.",
+        "when_to_use": "Bij sterk reflecterende ronde objecten die onbedoelde studiolampen of ramen weerspiegelen.",
+        "tools": [
+          "Clone Stamp Tool",
+          "Polygonal Lasso Tool"
+        ],
+        "effect": "Het flesje toont de natuurlijke cilinder-glans in plaats van een rommelige studio-setting."
+      },
+      {
+        "name": "Digitale Rechthoek Constructie",
+        "description": "Trek een perfect rechte rechthoek (Polygonal Lasso) over een scheve naad tussen twee kartonnen borden. Kloon binnenin het lichte gebied schoon, klik 'Select Inverse' en kloon vervolgens het donkere gebied schoon.",
+        "when_to_use": "Wanneer achtergrondplaten, muren of kleurvlakken op de set scheef op elkaar stonden.",
+        "tools": [
+          "Polygonal Lasso Tool",
+          "Clone Stamp Tool"
+        ],
+        "effect": "Een loepzuivere, architecturaal rechte, 90-graden splitsing tussen kleuren en schaduwen op de achtergrond."
+      }
+    ],
+    "color_approach": "Kleurcorrectie speelt in dit proces geen rol. Het is een puur 'cleanup'-gedreven workflow, gericht op het egaal en perfect maken van texturen, glans en schaduwen, waarmee het canvas strak wordt getrokken voordat een color grade wordt geprobeerd.",
+    "local_adjustments": "Ze leunt intens zwaar op de Polygonal Lasso Tool. Ze trekt harde selecties over delen heen en gebruikt die selecties continu als virtueel 'schilderstape', zodat ze zeer drastische Clone Stamp acties kan uitvoeren zonder details kwijt te raken.",
+    "what_to_avoid": [
+      "Clone Stamping doen met een harde (Hardness) kwast, want dit achterlaat onmiddellijk zichtbare cirkelvormige repeterende afdrukken in het resultaat",
+      "Proberen ronde glazen producten te 'redden' door reflecties van ramen te bewaren, in plaats van de beslissing te nemen om ze compleet dicht te klonen voor perfectie"
+    ],
+    "best_for": "Luxe cosmetica, skincare, dranken en commerciële still-life fotografie.",
+    "unique_insights": [
+      "Ze weigert scheve of lelijke randen in de achtergrond digitaal te 'warpen'. In plaats daarvan tekent ze letterlijk het béste geometrische vlak met een Lasso-tool en schildert de schaduw en naad digitaal opnieuw met haar stempel voor totale strakheid.",
+      "Wanneer ze een complexe naad aanpakt (een lichte en een donkere kartonnen plaat die samenkomen), gebruikt ze de lasso voor één kant, repareert die, en gebruikt briljant 'Select Inverse' om direct de ándere plaat te stempelen, zonder te overlappen in de net gemaakte lijn.",
+      "Bij het herstellen van reflecties in flessen geeft ze de voorkeur aan de zachte kant van de Clone Stamp boven geavanceerde selectietools, leunend op haar eigen visuele inzicht van hoe de bolling en het licht van glas zich visueel hoort te gedragen."
+    ],
+    "style_preview": "Dit is de belichaming van chirurgische, hyper-commerciële retouche. De focus ligt compleet op het fixeren van lijnen, vlekken en weerspiegelingen, onder de filosofie dat perfectie is opgebouwd uit het weghalen van ongewenste ruis. Uitstekend geschikt voor high-end e-commerce of reclamecampagnes rond skincare en cosmetica. Het eindresultaat is klinisch perfect en extreem glad."
   }
 ]

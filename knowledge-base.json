@@ -39252,5 +39252,947 @@
       "In plaats van het beeld direct te flattenen, kopieert hij lagen als 'nieuwe laag van zichtbaar' (new from visible), wat hem de flexibiliteit geeft om altijd naar de vorige stap terug te gaan."
     ],
     "style_preview": "Deze stijl is gedurfd, dramatisch en zeer 'geconstrueerd'. Het is een creatieve benadering waarbij de fotograaf de regie volledig in handen neemt. Ideaal voor wie van een filmische, ietwat overdreven maar visueel verbluffende architectuurstijl houdt."
+  },
+  {
+    "video_title": "EDIT PHOTOS Like a Pro // Complete LIGHTROOM Tutorial",
+    "photographer_name": "Anthony Gugliotta",
+    "youtube_url": "https://www.youtube.com/watch?v=owStZxm9DIA",
+    "genre": [
+      "landschap"
+    ],
+    "light_conditions": [
+      "gouden uur"
+    ],
+    "mood": [
+      "levendig"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Warme, gedetailleerde, natuurlijke look",
+    "philosophy": "De kernfilosofie draait om het perfectioneren van belichting en contrast in maskers vóórdat kleurcorrecties worden toegepast. Dit zorgt voor een gecontroleerde basis waarin kleuren naadloos samensmelten. De fotograaf streeft naar een gebalanceerd histogram en maakt gebruik van subtiele aanpassingen om details te behouden zonder het beeld te oversturen.",
+    "workflow_order": [
+      "stap 1: Basisbelichting en witbalans instellen",
+      "stap 2: Maskers toepassen om specifieke gebieden zoals onderwerp en lucht aan te passen",
+      "stap 3: HSL en kleurovergangen verfijnen",
+      "stap 4: Creatieve kleurgradatie via curven en color grading voor sfeer"
+    ],
+    "techniques": [
+      {
+        "name": "Select Subject Masking",
+        "description": "Gebruik AI-selectie om het onderwerp te isoleren, verhoog schaduwen voor detail en verlaag highlights voor belichtingsbalans.",
+        "when_to_use": "Bij portretten of onderwerpen met uitdagend tegenlicht.",
+        "tools": [
+          "Masking"
+        ],
+        "effect": "Onderwerp is perfect belicht ten opzichte van de achtergrond zonder clipping."
+      },
+      {
+        "name": "Clarity Reduction",
+        "description": "Verlaag de Clarity (-10 tot -20) om een zachtere, filmische uitstraling te creëren.",
+        "when_to_use": "Bij digitale foto's die te scherp ogen.",
+        "tools": [
+          "Basic Panel"
+        ],
+        "effect": "Vermindert de digitale scherpte en geeft een zachte, dromerige textuur."
+      },
+      {
+        "name": "Linear Gradient Foreground",
+        "description": "Verlaag de belichting van de voorgrond om de focus op het onderwerp te leggen.",
+        "when_to_use": "Bij landschappen of scènes met storende voorgrondselementen.",
+        "tools": [
+          "Linear Gradient"
+        ],
+        "effect": "Leidt de kijker direct naar het onderwerp."
+      },
+      {
+        "name": "Dehaze Sun Flare",
+        "description": "Gebruik een radiale gradiënt, verlaag de Dehaze, verhoog belichting en warmte om kunstmatige zonnestralen toe te voegen.",
+        "when_to_use": "Bij landschappen met een lichtbron buiten beeld.",
+        "tools": [
+          "Radial Gradient"
+        ],
+        "effect": "Voegt diepte en een zonnig, warm gevoel toe."
+      },
+      {
+        "name": "Curves Flattening",
+        "description": "Vlak de zwarte en witte punten van de curve af door de hoekpunten omhoog te verplaatsen voor een matte look.",
+        "when_to_use": "Voor een vintage, flat-black esthetiek.",
+        "tools": [
+          "Tone Curve"
+        ],
+        "effect": "Verliest pure zwart- en witwaarden voor een zachtere, filmische toon."
+      }
+    ],
+    "color_approach": "De fotograaf focust op het behouden van warme, natuurlijke tinten door Vibrance te verhogen boven verzadiging. Hij benut de Color Grading tools om specifieke tinten in schaduwen en highlights aan te brengen voor extra kleurseparatie.",
+    "local_adjustments": "Maskers (Subject, Radial, Linear) worden vroeg in het proces ingezet om belichting en sfeer lokaal te sturen, waardoor globale aanpassingen minder ingrijpend hoeven te zijn.",
+    "what_to_avoid": [
+      "Het overmatig gebruik van verzadiging op alle kleuren",
+      "Het te ver doordrukken van de witbalans bij kleurcorrectie"
+    ],
+    "best_for": "Fotografen die een professionele, filmische look willen met behoud van natuurlijke details.",
+    "unique_insights": [
+      "Hij past de Tone Curve pas aan het einde van de workflow toe omdat dit effect boven de HSL en basiskleurinstellingen in de hiërarchie staat.",
+      "Bij tegenlicht gebruikt hij maskers om eerst de schaduwen op te lichten voordat hij de kleurbalans corrigeert.",
+      "Hij gebruikt Virtual Copies in de bibliotheek om verschillende crops te testen zonder het originele bestand te wijzigen."
+    ],
+    "style_preview": "Deze stijl kenmerkt zich door een warme, dromerige sfeer met veel aandacht voor belichtingsbalans. Het is ideaal voor reisfotografie of portretten die een filmisch, zacht karakter moeten uitstralen. Het resultaat is een beeld dat eruitziet alsof het tijdens een gouden uur is vastgelegd met een moderne, professionele afwerking."
+  },
+  {
+    "video_title": "Photo Editing Software that s better than Photoshop and Lightroom?",
+    "photographer_name": "Anthony Turnham",
+    "youtube_url": "https://www.youtube.com/watch?v=GhGwp7nxYGk",
+    "genre": [
+      "landschap"
+    ],
+    "light_conditions": [
+      "diffuus licht"
+    ],
+    "mood": [
+      "moody"
+    ],
+    "software": [
+      "Luminar Neo"
+    ],
+    "style_description": "Herfstachtige warme sfeer, dromerig",
+    "philosophy": "De fotograaf combineert AI-gestuurde filters met handmatige precisie. Hij gelooft dat software sneller moet zijn in het creëren van complexe lichteffecten zonder dat dit ten koste gaat van de artistieke intentie. Het doel is om het gevoel van het moment van opname te vertalen naar een sfeervol, herfstig beeld.",
+    "workflow_order": [
+      "stap 1: Accent AI filter voor initiële contrast- en belichtingsverbetering",
+      "stap 2: Foliage enhancer en Hue shifting voor herfsttinten",
+      "stap 3: Sunrays filter toevoegen voor sfeer en diepte",
+      "stap 4: Color toning via LUTs voor de final look"
+    ],
+    "techniques": [
+      {
+        "name": "Accent AI Boost",
+        "description": "Verhoog de Accent AI slider om automatisch belichting, contrast en verzadiging te optimaliseren.",
+        "when_to_use": "Voor snelle verbeteringen bij landschapsfoto's.",
+        "tools": [
+          "Accent AI"
+        ],
+        "effect": "Brengt het beeld tot leven met gebalanceerde tonen."
+      },
+      {
+        "name": "Foliage Hue Shift",
+        "description": "Verschuif de kleur van groen naar geel/oranje via de foliage hue slider.",
+        "when_to_use": "Bij herfstlandschappen waarbij groen dominant is.",
+        "tools": [
+          "Foliage Enhancer"
+        ],
+        "effect": "Transformeert groene vegetatie naar warme herfstkleuren."
+      },
+      {
+        "name": "Sunrays Simulation",
+        "description": "Plaats kunstmatige zonnestralen op een strategisch punt in het beeld en pas warmte/gloeien aan.",
+        "when_to_use": "Om licht en sfeer toe te voegen aan landschappen.",
+        "tools": [
+          "Sunrays"
+        ],
+        "effect": "Creëert een dromerig lichteffect dat diepte toevoegt."
+      },
+      {
+        "name": "Image Radiance",
+        "description": "Verhoog de radiance om een zachte gloed over de foto te leggen.",
+        "when_to_use": "Voor een dromerige, etherische look in landschappen.",
+        "tools": [
+          "Image Radiance"
+        ],
+        "effect": "Voegt een subtiele glans toe aan de highlights."
+      },
+      {
+        "name": "Fog Atmosphere",
+        "description": "Voeg subtiele mist toe om de zonnestralen geloofwaardiger te maken.",
+        "when_to_use": "In combinatie met zonnestralen-effecten.",
+        "tools": [
+          "Fog"
+        ],
+        "effect": "Verhoogt het gevoel van diepte en sfeer in de lucht."
+      }
+    ],
+    "color_approach": "De focus ligt op het verschuiven van kleuren naar een warm palet. Hij gebruikt specifieke filters om foliage aan te passen en LUTs om een consistente kleurtoon over het hele beeld te leggen.",
+    "local_adjustments": "Gebruikt lokale maskers en gradiënten voor het apart aanpassen van voorgrond en achtergrond, vaak om de horizon beter te contrasteren.",
+    "what_to_avoid": [
+      "Extreme Orton-effecten die onrealistisch ogen",
+      "Overmatige schaduw-oppomping waardoor mysterie verloren gaat"
+    ],
+    "best_for": "Landschapsfotografen die snel sfeer en licht willen toevoegen met AI-ondersteuning.",
+    "unique_insights": [
+      "Hij past een klein beetje fog toe omdat zonnestralen alleen natuurlijk ogen als er een medium is om het licht te verstrooien.",
+      "Hij gebruikt de Hue shift voor foliage als een krachtige tool om het seizoen van een foto te veranderen.",
+      "Hij benadrukt het belang van het gebruik van LUTs in combinatie met de amount slider om kleuren subtiel te mengen."
+    ],
+    "style_preview": "De stijl is warm, herfstig en sfeervol, gericht op het versterken van licht. Het is perfect voor natuur- en landschapsfoto s waarbij de kijker zich in het moment moet wanen. Het visuele effect is een dromerig, verlicht landschap met rijke herfsttinten."
+  },
+  {
+    "video_title": "An Advanced LIGHTROOM TO LUMINAR 3 Workflow",
+    "photographer_name": "Rich Engine",
+    "youtube_url": "https://www.youtube.com/watch?v=E9vzDj7fbTM",
+    "genre": [
+      "landschap"
+    ],
+    "light_conditions": [
+      "gouden uur"
+    ],
+    "mood": [
+      "naturalistisch"
+    ],
+    "software": [
+      "Lightroom Classic",
+      "Luminar Neo"
+    ],
+    "style_description": "Gebalanceerd, HDR-landschap, gedetailleerd",
+    "philosophy": "De workflow benut de kracht van Lightroom voor beheer en stitching, en de creatieve filters van Luminar voor verfijning. De focus ligt op het behouden van een natuurlijke uitstraling terwijl de dynamiek van HDR wordt benut.",
+    "workflow_order": [
+      "stap 1: HDR-panoramastitching in Lightroom",
+      "stap 2: Overdracht via Plugin Extras naar Luminar",
+      "stap 3: AI-gestuurde verbetering van lucht en vegetatie",
+      "stap 4: Lokale aanpassingen met gradiënten en vignettering voor focus"
+    ],
+    "techniques": [
+      {
+        "name": "Sky Enhancer",
+        "description": "Verhoogt definitie en contrast in wolken en lucht.",
+        "when_to_use": "Bij landschapsfoto s met een saaie of vlakke lucht.",
+        "tools": [
+          "Sky Enhancer"
+        ],
+        "effect": "Geeft dramatische definitie aan wolkenpartijen."
+      },
+      {
+        "name": "Adjustable Gradient",
+        "description": "Target de horizon voor aparte belichtingsaanpassingen in lucht en voorgrond.",
+        "when_to_use": "Als er een groot contrastverschil is tussen lucht en grond.",
+        "tools": [
+          "Adjustable Gradient"
+        ],
+        "effect": "Brengt balans in de algehele helderheid van het beeld."
+      },
+      {
+        "name": "Smart Tone Exposure",
+        "description": "Past belichting aan in middentonen zonder de verzadiging te beïnvloeden.",
+        "when_to_use": "Bij onderbelichte middentonen in landschappen.",
+        "tools": [
+          "Smart Tone"
+        ],
+        "effect": "Verheldert het beeld en behoudt de natuurlijke kleuren."
+      },
+      {
+        "name": "Details Enhancer",
+        "description": "Target medium details zonder ruis te introduceren.",
+        "when_to_use": "Voor het toevoegen van scherpte in specifieke texturen.",
+        "tools": [
+          "Details Enhancer"
+        ],
+        "effect": "Maakt het beeld scherper zonder het risico op ruis."
+      },
+      {
+        "name": "Vignette with Inner Light",
+        "description": "Verdonkert de hoeken en licht het midden op voor focus.",
+        "when_to_use": "Voor het benadrukken van het hoofdonderwerp in een landschap.",
+        "tools": [
+          "Vignette"
+        ],
+        "effect": "Trekt de aandacht van de kijker naar het centrum."
+      }
+    ],
+    "color_approach": "Kleurbeheer gebeurt via een combinatie van globale presets en lokale aanpassingen in de gradiënten om voorgrond warmte en lucht koelte mee te geven.",
+    "local_adjustments": "Veelvuldig gebruik van gradiëntfilters om horizon en lucht te scheiden, en lokale aanpassingen in Lightroom na de Luminar-export.",
+    "what_to_avoid": [
+      "Het overbelasten van de Luminance slider die banding kan veroorzaken",
+      "Het toevoegen van lenscorrecties bij nachtopnames"
+    ],
+    "best_for": "Fotografen die het beste van twee werelden willen combineren.",
+    "unique_insights": [
+      "Hij adviseert de Transfer functie via plug-in extras voor RAW/DNG bestanden om de dynamiek te behouden in plaats van een TIFF-bestand te exporteren.",
+      "Smart Tone is de sleutel tot het aanpassen van de belichting zonder dat kleuren verschuiven.",
+      "Na de export terug naar Lightroom kan de Develop-module nog steeds worden gebruikt voor fijnmazige correcties."
+    ],
+    "style_preview": "De bewerkingsstijl is gericht op maximale detailweergave en gebalanceerde belichting, ideaal voor HDR-fotografie en grote panoramas. De stijl is naturalistisch met een verhoogd contrast in wolken en textuur, perfect voor indrukwekkende natuurtaferelen."
+  },
+  {
+    "video_title": "Photo Editing Challenge and FREE FILE - Luminar AI",
+    "photographer_name": "Anthony Morganti",
+    "youtube_url": "https://www.youtube.com/watch?v=2FvyV_3-1DI",
+    "genre": [
+      "landschap"
+    ],
+    "light_conditions": [
+      "daglicht"
+    ],
+    "mood": [
+      "naturalistisch"
+    ],
+    "software": [
+      "Luminar Neo"
+    ],
+    "style_description": "Clean, gedetailleerd, natuurlijk contrast",
+    "philosophy": "De fotograaf hanteert een methodische workflow waarbij de foto in verschillende apps wordt verwerkt om resultaten te vergelijken. De kernfilosofie is om het beeld zo natuurlijk mogelijk te houden, waarbij belichting en kleur subtiel worden versterkt voor een gebalanceerd eindresultaat.",
+    "workflow_order": [
+      "stap 1: Basisbelichting en schaduw/highlight herstel",
+      "stap 2: Kleurcorrectie via HSL voor specifieke tinten",
+      "stap 3: Detailverbetering met detail-sliders",
+      "stap 4: Lokale maskers voor specifieke gebieden"
+    ],
+    "techniques": [
+      {
+        "name": "Accent AI Enhancer",
+        "description": "Verhoog accent slider om schaduwen te openen en highlights te temperen.",
+        "when_to_use": "Voor algemene verbetering van het dynamisch bereik.",
+        "tools": [
+          "Enhance AI"
+        ],
+        "effect": "Betere balans tussen licht en donker."
+      },
+      {
+        "name": "Clipping Indicator Adjustment",
+        "description": "Gebruik de J toets om clipping te zien en pas highlights/schaduwen aan op basis van indicatoren.",
+        "when_to_use": "Bij het optimaliseren van wit- en zwartpunten.",
+        "tools": [
+          "Clipping Indicators"
+        ],
+        "effect": "Voorkomt verlies van details in uiterste hooglichten en schaduwen."
+      },
+      {
+        "name": "HSL Luminance Control",
+        "description": "Verlaag de helderheid van specifieke kleuren zoals oranje/blauw voor kleurdiepte.",
+        "when_to_use": "Voor het toevoegen van rijkdom aan specifieke kleuren.",
+        "tools": [
+          "HSL Color"
+        ],
+        "effect": "Verhoogt de kleurintensiteit en geeft meer diepte."
+      },
+      {
+        "name": "Large Medium Detail Enhancement",
+        "description": "Verhoog medium detail slider voor betere textuurweergave in landschappen.",
+        "when_to_use": "Voor subtiele verscherping van texturen.",
+        "tools": [
+          "Details"
+        ],
+        "effect": "Geeft structuur aan objecten zonder kunstmatige verscherping."
+      },
+      {
+        "name": "Radial Vignette Inner Light",
+        "description": "Plaats een vignette en gebruik inner light om het onderwerp te belichten.",
+        "when_to_use": "Voor het benadrukken van specifieke elementen.",
+        "tools": [
+          "Vignette"
+        ],
+        "effect": "Leidt de aandacht naar het onderwerp."
+      }
+    ],
+    "color_approach": "Houdt het kleurgebruik dicht bij de realiteit. Hij gebruikt HSL om de verzadiging van warme tinten te verhogen en de helderheid ervan te verlagen voor een rijkere toon.",
+    "local_adjustments": "Gebruikt lokale maskers met penseel om specifieke onderbelichte delen op te lichten zonder de rest van de foto te beïnvloeden.",
+    "what_to_avoid": [
+      "Het verhogen van de verscherping wat onnatuurlijk oogt",
+      "Onnodige ruisonderdrukking op beelden met lage ISO"
+    ],
+    "best_for": "Fotografen die een natuurlijke, bijna straight-out-of-camera uitstraling nastreven met lichte retouche.",
+    "unique_insights": [
+      "Hij gebruikt de J toets om clipping indicators aan en uit te zetten, wat hem helpt om de grenzen van de belichting op te zoeken zonder data te verliezen.",
+      "Bij het brushen van maskers gebruikt hij de Alt/Option-toets om overschilderingen te wissen.",
+      "Hij stelt dat als je een goede foto hebt gemaakt, cropping of grote wijzigingen vaak niet nodig zijn."
+    ],
+    "style_preview": "Deze stijl is clean, natuurlijk en informatief. Het is ideaal voor landschapsfotografie waarbij authenticiteit voorop staat. De bewerkingen zijn subtiel en gericht op het onthullen van de data die al in het RAW-bestand aanwezig was."
+  },
+  {
+    "video_title": "Lightroom Only Users Should do THIS in Photoshop",
+    "photographer_name": "Anthony Morganti",
+    "youtube_url": "https://www.youtube.com/watch?v=WofGoGOT-Fs",
+    "genre": [
+      "architectuur"
+    ],
+    "light_conditions": [
+      "daglicht"
+    ],
+    "mood": [
+      "strak"
+    ],
+    "software": [
+      "Photoshop",
+      "Lightroom Classic"
+    ],
+    "style_description": "Rechte lijnen, clean, retouche",
+    "philosophy": "De fotograaf laat zien hoe Lightroom-gebruikers met eenvoudige Photoshop-tools complexe problemen zoals vervorming kunnen oplossen. Zijn filosofie is dat integratie tussen apps essentieel is voor een efficiënte workflow.",
+    "workflow_order": [
+      "stap 1: Transformatie in Lightroom voor rechte lijnen",
+      "stap 2: Edit in Photoshop voor pixels opvullen",
+      "stap 3: Content-Aware fill voor ontbrekende pixels",
+      "stap 4: Terugkeer naar Lightroom voor laatste aanpassingen"
+    ],
+    "techniques": [
+      {
+        "name": "Content-Aware Fill Selection",
+        "description": "Selecteer transparante pixels en expand de selectie met 5 pixels voor een naadloze vulling.",
+        "when_to_use": "Bij lege hoeken na het corrigeren van perspectief.",
+        "tools": [
+          "Content-Aware Fill"
+        ],
+        "effect": "Vult lege randen in met gegenereerde pixels die matchen."
+      },
+      {
+        "name": "Magic Wand Selection",
+        "description": "Gebruik magic wand op blanke pixels met add-mode voor snelle selectie.",
+        "when_to_use": "Bij het vullen van grote transparante gebieden.",
+        "tools": [
+          "Magic Wand"
+        ],
+        "effect": "Selecteert snel de te bewerken gebieden."
+      },
+      {
+        "name": "Custom Content-Aware Sampling",
+        "description": "Gebruik de custom sample optie om handmatig aan te geven welke gebieden als bron dienen.",
+        "when_to_use": "Als automatische vulling niet nauwkeurig genoeg is.",
+        "tools": [
+          "Content-Aware Fill Custom"
+        ],
+        "effect": "Biedt meer controle over de vulling."
+      },
+      {
+        "name": "Spot Healing Brush Cleanup",
+        "description": "Gebruik de spot healing brush om kleine oneffenheden of storende objecten te verwijderen.",
+        "when_to_use": "Bij het opschonen van kleine onvolkomenheden.",
+        "tools": [
+          "Spot Healing Brush"
+        ],
+        "effect": "Verwijdert afleidingen."
+      },
+      {
+        "name": "History Backstepping",
+        "description": "Ga in de history terug voor je de foto cropt, zodat je de lege pixels nog hebt.",
+        "when_to_use": "Bij het corrigeren van perspectief zonder verlies van beeldruimte.",
+        "tools": [
+          "History Panel"
+        ],
+        "effect": "Behoudt de compositie terwijl je extra ruimte voor vulling krijgt."
+      }
+    ],
+    "color_approach": "De focus ligt op het herstellen van de foto-integriteit. Hij doet weinig aan kleurcorrectie in Photoshop, aangezien hij de basis al heeft gelegd in Lightroom.",
+    "local_adjustments": "Lokaal wordt ingezoomd om met Photoshop pixels te manipuleren om het perspectief strak te krijgen.",
+    "what_to_avoid": [
+      "Het te krap croppen van beelden in Lightroom voor het corrigeren van lijnen",
+      "Het opslaan van beelden zonder ze vanuit Lightroom te beheren"
+    ],
+    "best_for": "Architectuur- en vastgoedfotografen die last hebben van perspectiefvervorming door groothoeklenzen.",
+    "unique_insights": [
+      "Hij adviseert om bij het opvullen van pixels altijd de selectie met 5 pixels te expanden om een dunne lijn bij de randen te voorkomen.",
+      "Bij het werken in Photoshop benadrukt hij het belang van non-destructive editing door het dupliceren van de background layer.",
+      "Hij vindt de workflow van quit-en-save vanuit Photoshop naar Lightroom de meest efficiënte methode."
+    ],
+    "style_preview": "De bewerkingsstijl is professioneel, strak en technisch gericht op het corrigeren van geometrische fouten in architectuurfoto s. Het visuele effect is een strak, recht beeld dat eruitziet alsof het met een perfecte camera en lenscombinatie is genomen."
+  },
+  {
+    "video_title": "Which is the BEST Photo EDITOR?",
+    "photographer_name": "Anthony Morganti",
+    "youtube_url": "https://www.youtube.com/watch?v=09OlTLUIXFU",
+    "genre": [
+      "wildlife"
+    ],
+    "light_conditions": [
+      "diffuus licht"
+    ],
+    "mood": [
+      "naturalistisch"
+    ],
+    "software": [
+      "Lightroom Classic",
+      "Capture One",
+      "Luminar Neo"
+    ],
+    "style_description": "Natuurgetrouw, scherp, neutraal",
+    "philosophy": "De fotograaf voert een vergelijkend onderzoek uit om fotografen te helpen hun eigen beste editor te vinden. Zijn filosofie is dat de beste editor subjectief is en afhangt van de persoonlijke workflow.",
+    "workflow_order": [
+      "stap 1: Basisbelichting en kleur",
+      "stap 2: Verscherping en ruisonderdrukking",
+      "stap 3: Lokaal brushen voor specifieke details",
+      "stap 4: Vignettering en laatste finetuning"
+    ],
+    "techniques": [
+      {
+        "name": "Local Brush Brightening",
+        "description": "Gebruik een brush met verhoogde exposure om de ogen van het dier te accentueren.",
+        "when_to_use": "Bij portretten van dieren met donkere ogen.",
+        "tools": [
+          "Adjustment Brush"
+        ],
+        "effect": "Trekt de aandacht naar het belangrijkste punt."
+      },
+      {
+        "name": "Basic Tone and Color",
+        "description": "Voer basisaanpassingen uit voor contrast en kleur om een neutrale, correcte look te krijgen.",
+        "when_to_use": "Voorafgaand aan elk ander retoucheren.",
+        "tools": [
+          "Basic Panel"
+        ],
+        "effect": "Creëert een solide basis voor het beeld."
+      },
+      {
+        "name": "Sharpening and Noise Reduction",
+        "description": "Pas verscherping en ruisonderdrukking toe afhankelijk van de ISO-waarde.",
+        "when_to_use": "Essentieel voor elke wildlife foto voor detailbehoud.",
+        "tools": [
+          "Detail Panel"
+        ],
+        "effect": "Verhoogt de kwaliteit en scherpte van het onderwerp."
+      },
+      {
+        "name": "Vignette for Subject Focus",
+        "description": "Voeg een donkere vignettering toe om de aandacht in het midden te houden.",
+        "when_to_use": "Voor elk portret of dier-opname.",
+        "tools": [
+          "Vignette"
+        ],
+        "effect": "Isoleert het onderwerp van de omgeving."
+      },
+      {
+        "name": "RAW File Handling",
+        "description": "Test RAW-verwerking van verschillende fabrikanten op hetzelfde bestand.",
+        "when_to_use": "Bij twijfel over welke software het beste is voor jouw camera.",
+        "tools": [
+          "RAW Engine"
+        ],
+        "effect": "Bepaalt de kleur- en scherpte-interpretatie."
+      }
+    ],
+    "color_approach": "Kleurbeheer blijft neutraal gericht op accuraatheid van de originele kleuren.",
+    "local_adjustments": "Gebruikt penselen voor lokale verlichting, vooral op ogen.",
+    "what_to_avoid": [
+      "Het creëren van een over-processed look",
+      "Het blindelings aannemen van een preset"
+    ],
+    "best_for": "Fotografen die willen experimenteren met verschillende software om hun ideale workflow te bepalen.",
+    "unique_insights": [
+      "Fuji RAW-bestanden worden door veel editors anders verwerkt, wat voor fotografen een reden is om software te vergelijken.",
+      "Bij wildlife fotografie is het oplichten van de ogen de meest cruciale lokale stap.",
+      "Hij adviseert om RAW-bestanden te downloaden en ze in verschillende trials te testen."
+    ],
+    "style_preview": "De stijl is neutraal, accuraat en gericht op detailweergave. Het is perfect voor wildlife-fotografen die de essentie van het dier willen vangen. Het visuele effect is een natuurlijk, scherp beeld zonder onnodige artistieke toevoegingen."
+  },
+  {
+    "video_title": "Commercial Photo Editing with Daniel Livingstone - 1 of 2",
+    "photographer_name": "Daniel Livingstone",
+    "youtube_url": "https://www.youtube.com/watch?v=HOvitSAf1T8",
+    "genre": [
+      "portret"
+    ],
+    "light_conditions": [
+      "schaduw"
+    ],
+    "mood": [
+      "dramatisch"
+    ],
+    "software": [
+      "Lightroom Classic",
+      "Photoshop"
+    ],
+    "style_description": "Editorial, gritty, warm, krachtig",
+    "philosophy": "De fotograaf combineert een commerciële aanpak met een persoonlijke touch, gericht op efficiëntie door middel van uitgebreide organisatie en batch-editing. Hij gelooft dat schilderen met licht cruciaal is voor het creëren van drama en focus in commerciële fitness-editorialen.",
+    "workflow_order": [
+      "stap 1: Basis-belichting en contrastverlaging",
+      "stap 2: Kleurgradatie met color grading-wielen",
+      "stap 3: Lokale masking voor lichteffecten",
+      "stap 4: Retouche in Photoshop voor clean up"
+    ],
+    "techniques": [
+      {
+        "name": "Contrast Reduction for Color Depth",
+        "description": "Verlaag het algemene contrast om meer kleurdiepte in schaduwen en highlights te krijgen.",
+        "when_to_use": "Voor een minder harde, meer redactionele uitstraling.",
+        "tools": [
+          "Basic Panel"
+        ],
+        "effect": "Voorkomt kleurverlies dat vaak optreedt bij hoog contrast."
+      },
+      {
+        "name": "Radial Gradient Light Shaping",
+        "description": "Gebruik radial gradients om belichting en warmte toe te voegen voor het simuleren van flare.",
+        "when_to_use": "Om dynamisch licht te creëren in vlakke beelden.",
+        "tools": [
+          "Radial Gradient"
+        ],
+        "effect": "Voegt diepte en een kunstmatige lichtbron toe."
+      },
+      {
+        "name": "Inverted Subject Masking",
+        "description": "Selecteer het onderwerp met AI en inverseer het masker om de achtergrond te dimmen.",
+        "when_to_use": "Voor betere scheiding tussen onderwerp en achtergrond.",
+        "tools": [
+          "Select Subject",
+          "Invert"
+        ],
+        "effect": "Maakt het onderwerp visueel sterker en meer gefocust."
+      },
+      {
+        "name": "Color Complementary Shadow Grading",
+        "description": "Gebruik complementaire kleuren in highlights en schaduwen voor meer scheiding.",
+        "when_to_use": "Voor een gelaagd, commercieel kleurenpalet.",
+        "tools": [
+          "Color Grading"
+        ],
+        "effect": "Verhoogt de visuele impact en sfeer."
+      },
+      {
+        "name": "Vignette for Focus Shift",
+        "description": "Vignette met maximale rondheid en zware feather om focus naar het onderwerp te sturen.",
+        "when_to_use": "Voor dramatiek in fitness/portretfotografie.",
+        "tools": [
+          "Vignette"
+        ],
+        "effect": "Dwingt de kijker naar het hoofdonderwerp te kijken."
+      }
+    ],
+    "color_approach": "Hij zoekt naar warme tinten en magenta-tints. Hij gebruikt complementaire kleuren voor betere beeldseparatie.",
+    "local_adjustments": "Intensief gebruik van maskers om licht en focus in de foto te schilderen.",
+    "what_to_avoid": [
+      "Het verhogen van verzadiging als de kleuren al vol zijn",
+      "Het vergeten van organisatie in bestanden"
+    ],
+    "best_for": "Commerciële fitness- en editorialfotografen die drama en diepte aan hun werk willen toevoegen.",
+    "unique_insights": [
+      "Hij verlaagt bewust het contrast in de basisedit om de kleurverzadiging te behouden.",
+      "Hij gebruikt percentages bij communicatie met klanten omdat dit concreter is dan vage feedback.",
+      "Zijn batch-workflow is gebaseerd op het front-loaden van al het werk op de eerste foto en deze dan naar de rest te kopiëren."
+    ],
+    "style_preview": "De bewerkingsstijl is gedurfd, warm en redactioneel. Het is perfect voor commerciële shoots waarbij de kracht van het onderwerp centraal staat. Het resultaat is een beeld met diepe kleuren, dramatische lichtinval en een perfecte focus op de geportretteerde persoon."
+  },
+  {
+    "video_title": "Product Photography and Changing Colors! Darktable Editing Tips and Tricks",
+    "photographer_name": "Rico Resolves",
+    "youtube_url": "https://www.youtube.com/watch?v=q0nNFi5HDeY",
+    "genre": [
+      "product"
+    ],
+    "light_conditions": [
+      "diffuus licht"
+    ],
+    "mood": [
+      "strak"
+    ],
+    "software": [
+      "darktable"
+    ],
+    "style_description": "Kleurveranderend, strak, functioneel",
+    "philosophy": "De fotograaf focust op efficiënte kleurverandering voor productfotografie. De kernfilosofie is dat je met minimale ingrepen één masker en één slider complexe taken kunt uitvoeren.",
+    "workflow_order": [
+      "stap 1: Masker tekenen over het product",
+      "stap 2: Masker vervagen en verzachten",
+      "stap 3: Color balance RGB module selecteren",
+      "stap 4: Hue shift slider gebruiken voor kleurverandering"
+    ],
+    "techniques": [
+      {
+        "name": "Masked Color Shift",
+        "description": "Teken een masker rond het product en verander de tint met de hue-slider.",
+        "when_to_use": "Voor productfotografie met meerdere kleurvariaties.",
+        "tools": [
+          "Color Balance RGB"
+        ],
+        "effect": "Verandert de kleur van een object zonder de rest van de foto te beïnvloeden."
+      },
+      {
+        "name": "Mask Blurring",
+        "description": "Gebruik blurring op het masker voor vloeiende overgangen bij randen.",
+        "when_to_use": "Voor een natuurlijk ogende selectie.",
+        "tools": [
+          "Masking"
+        ],
+        "effect": "Zorgt voor een naadloze overgang tussen onderwerp en achtergrond."
+      },
+      {
+        "name": "Feathering",
+        "description": "Pas feathering toe op het masker om scherpe randen te vermijden.",
+        "when_to_use": "Bij alle complexe maskers.",
+        "tools": [
+          "Masking"
+        ],
+        "effect": "Vermindert de hardheid van de selectie."
+      },
+      {
+        "name": "Hue Range Adjustment",
+        "description": "Verschuif de hue-slider voor subtiele tot extreme kleurveranderingen.",
+        "when_to_use": "Voor creatieve kleurvariaties.",
+        "tools": [
+          "Color Balance RGB"
+        ],
+        "effect": "Maakt het mogelijk om kleuren direct aan te passen."
+      },
+      {
+        "name": "Instance Management",
+        "description": "Beheer meerdere kleurinstanties voor verschillende kleurversies van het product.",
+        "when_to_use": "Bij e-commerce waarbij één foto voor vele productkleuren dient.",
+        "tools": [
+          "Darktable Module Instance"
+        ],
+        "effect": "Zorgt voor een gestroomlijnde e-commerce workflow."
+      }
+    ],
+    "color_approach": "Gericht op kleurmanipulatie via Hue Shift. Hij gebruikt maskers om de invloed strikt te beperken tot het product.",
+    "local_adjustments": "Masker-gebaseerde kleurwijzigingen zijn de volledige focus van deze workflow.",
+    "what_to_avoid": [
+      "Het niet vervagen van maskerranden",
+      "Het veranderen van de gehele foto-kleur zonder masker"
+    ],
+    "best_for": "E-commerce productfotografen die snel kleurvariaties moeten opleveren.",
+    "unique_insights": [
+      "Je hebt slechts één specifieke module nodig om de kleur van een item volledig te transformeren.",
+      "Door het masker te vervagen na het tekenen voorkom je zichtbare randen rondom het product.",
+      "Deze techniek is ideaal voor AI-modellen waarbij je een kledingstuk in elke gewenste kleur kunt presenteren."
+    ],
+    "style_preview": "De stijl is praktisch, strak en resultaatgericht. Het is perfect voor commerciële catalogi. Het visuele effect is een productfoto die nauwkeurig van kleur is veranderd, klaar voor online listing."
+  },
+  {
+    "video_title": "Making your photos POP with RawTherapee",
+    "photographer_name": "WhipLite",
+    "youtube_url": "https://www.youtube.com/watch?v=aPgv5DFCOtU",
+    "genre": [
+      "landschap"
+    ],
+    "light_conditions": [
+      "daglicht"
+    ],
+    "mood": [
+      "levendig"
+    ],
+    "software": [
+      "RawTherapee"
+    ],
+    "style_description": "Helder, punchy, levendig",
+    "philosophy": "De fotograaf focust op het geven van pop aan landschappen via een systematische workflow van links naar rechts. Zijn filosofie is dat een goede basisbewerking kan worden opgeslagen als een profile om de workflow te versnellen.",
+    "workflow_order": [
+      "stap 1: Exposure compensation en shadow/highlight check",
+      "stap 2: Tone equalizer voor subtiel contrast",
+      "stap 3: Sharpening en vignette toevoegen",
+      "stap 4: Vibrance en soft light voor kleur en pop"
+    ],
+    "techniques": [
+      {
+        "name": "Exposure Compensation",
+        "description": "Pas een compensatie van +0.35 toe voor een heldere basislook.",
+        "when_to_use": "Bij onderbelichte of grauwe foto s.",
+        "tools": [
+          "Exposure"
+        ],
+        "effect": "Maakt de foto direct helderder en aantrekkelijker."
+      },
+      {
+        "name": "Shadow Highlight Correction",
+        "description": "Controleer op clipping en verminder de highlights/schaduwen waar nodig.",
+        "when_to_use": "Bij scènes met een hoog contrast.",
+        "tools": [
+          "Shadows and Highlights"
+        ],
+        "effect": "Herstelt details in overbelichte en onderbelichte delen."
+      },
+      {
+        "name": "Tone Equalizer Contrast",
+        "description": "Verlaag schaduwen via de tone equalizer voor een iets dramatischer, donkerder beeld.",
+        "when_to_use": "Voor extra diepte in de schaduwpartijen.",
+        "tools": [
+          "Tone Equalizer"
+        ],
+        "effect": "Geeft het beeld een fijnere tonale balans."
+      },
+      {
+        "name": "Soft Light Pop",
+        "description": "Gebruik het soft light filter voor een subtiele pop in contrast.",
+        "when_to_use": "Voor een levendig resultaat in landschappen.",
+        "tools": [
+          "Soft Light"
+        ],
+        "effect": "Verhoogt de visuele intensiteit op een zachte manier."
+      },
+      {
+        "name": "Profile Saving",
+        "description": "Sla een bewerkingsprofiel op om het op toekomstige foto s met dezelfde lichtomstandigheden toe te passen.",
+        "when_to_use": "Bij een fotoserie in dezelfde setting.",
+        "tools": [
+          "Processing Profiles"
+        ],
+        "effect": "Versnelt de workflow enorm en zorgt voor consistentie."
+      }
+    ],
+    "color_approach": "Hij zoekt naar levendigheid door Vibrance te verhogen specifiek om groen natuurlijker en intenser te maken.",
+    "local_adjustments": "Beperkt, de nadruk ligt op globale aanpassingen voor snelheid.",
+    "what_to_avoid": [
+      "Het volledig wegwerken van overbelichte highlights",
+      "Te ver doorvoeren van contrast"
+    ],
+    "best_for": "Fotografen die een snelle, consistente workflow willen voor hun landschapsfoto s.",
+    "unique_insights": [
+      "Hij raadt aan om van links naar rechts door de tools te werken zoals de software is ingedeeld.",
+      "Het opslaan van profiles is een must voor fotografen die veel foto s in dezelfde omgeving schieten.",
+      "Bij het controleren van schaduwen/highlights gebruikt hij de ingebouwde clipping-indicatoren."
+    ],
+    "style_preview": "Deze stijl is levendig, fris en helder. Het is perfect voor landschappen die een wow-factor nodig hebben. Het visuele effect is een helder en krachtig beeld met rijke kleuren en gedetailleerde texturen."
+  },
+  {
+    "video_title": "Simple Trick To Make Your Product Photos STAND OUT on Amazon",
+    "photographer_name": "Skyline FBA",
+    "youtube_url": "https://www.youtube.com/watch?v=cUgvf8yclao",
+    "genre": [
+      "product"
+    ],
+    "light_conditions": [
+      "kunstlicht"
+    ],
+    "mood": [
+      "commercieel"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Commercieel, actiegericht, studio",
+    "philosophy": "De fotograaf benadrukt dat e-commerce succes afhangt van opvallen in een oververzadigde markt. Zijn filosofie is dat je actie en dimensie moet toevoegen om de kijker tot een klik te verleiden.",
+    "workflow_order": [
+      "stap 1: Focus-stacking van meerdere beelden",
+      "stap 2: Product isoleren via pen-tool",
+      "stap 3: Schatten verfijnen met maskers",
+      "stap 4: Retouche en verscherping voor de finale look"
+    ],
+    "techniques": [
+      {
+        "name": "Focus Stacking",
+        "description": "Combineer drie beelden met verschillende focuspunten voor maximale scherpte.",
+        "when_to_use": "Bij productfoto s waarbij alles scherp moet zijn.",
+        "tools": [
+          "Merge Focus Stack"
+        ],
+        "effect": "Geeft het hele product een ongekende scherpte."
+      },
+      {
+        "name": "Pen Tool Knockout",
+        "description": "Gebruik de pen-tool voor een uiterst nauwkeurige selectie.",
+        "when_to_use": "Voor een perfecte, strakke isolatie van het product.",
+        "tools": [
+          "Pen Tool"
+        ],
+        "effect": "Creëert een strakke, professionele rand."
+      },
+      {
+        "name": "Masked Shadow Blending",
+        "description": "Gebruik maskers om de shadow-laag subtiel te mengen met de achtergrond.",
+        "when_to_use": "Om schaduwen natuurlijk te laten integreren in de compositie.",
+        "tools": [
+          "Layer Mask"
+        ],
+        "effect": "Geeft het product dimensie en realisme."
+      },
+      {
+        "name": "Spot Healing for Specks",
+        "description": "Heal stof en onvolkomenheden van het product en schaduw.",
+        "when_to_use": "Voor een perfecte studiovrije afwerking.",
+        "tools": [
+          "Spot Healing Brush"
+        ],
+        "effect": "Verwijdert afleidingen en verhoogt de kwaliteit."
+      },
+      {
+        "name": "Sharpening Secret Sauce",
+        "description": "Subtiele verscherping om het product te laten poppen.",
+        "when_to_use": "Bij e-commerce fotografie voor extra detail.",
+        "tools": [
+          "Sharpening"
+        ],
+        "effect": "Maakt het product scherper en aantrekkelijker."
+      }
+    ],
+    "color_approach": "Zeer neutraal en commercieel. Kleur is niet het hoofdpunt, maar wel de scherpte en het contrast in texturen.",
+    "local_adjustments": "Maakt maskers voor het perfect blenden van schaduwen onder het product.",
+    "what_to_avoid": [
+      "Het laten staan van stof of onvolkomenheden op het product",
+      "Een slechte compositie in een competitieve markt"
+    ],
+    "best_for": "Amazon- en e-commerce verkopers die op zoek zijn naar een professionele hoog-converterende uitstraling.",
+    "unique_insights": [
+      "Hij raadt aan om een screenshot van de Amazon-zoekresultaten te maken en je eigen foto daarin te plaatsen om te zien of je opvalt.",
+      "Het casten van een schaduw op een foam-core board voegt een specifieke textuur en dimensie toe die het product realistischer maakt.",
+      "Actie toevoegen aan een scène is een simpele manier om op te vallen in een statische catalogus."
+    ],
+    "style_preview": "Deze stijl is commercieel, strak en professioneel. Het is perfect voor webwinkels waar kwaliteit vertrouwen opwekt. Het visuele effect is een haarscherp, perfect geïsoleerd product met een natuurlijke, gelaagde schaduw die de aandacht trekt."
+  },
+  {
+    "video_title": "Edit PRODUCT PHOTOS on YOUR PHONE",
+    "photographer_name": "TrickyPhotoshop",
+    "youtube_url": "https://www.youtube.com/watch?v=yJvlAffF3wY",
+    "genre": [
+      "product"
+    ],
+    "light_conditions": [
+      "diffuus licht"
+    ],
+    "mood": [
+      "strak"
+    ],
+    "software": [
+      "Snapseed"
+    ],
+    "style_description": "Clean, commercieel, strak",
+    "philosophy": "De fotograaf gebruikt een mobiele workflow voor professionele productfotografie. De kernfilosofie is toegankelijkheid: een professionele e-commerce uitstraling kan worden bereikt met enkel een smartphone en de juiste bewerkingsstappen.",
+    "workflow_order": [
+      "stap 1: Achtergrond verwijderen met cutout-tools",
+      "stap 2: Een gekleurde achtergrondlaag toevoegen",
+      "stap 3: Schatten toevoegen voor realisme",
+      "stap 4: Basisbelichting en kleur finetunen"
+    ],
+    "techniques": [
+      {
+        "name": "AI Product Cutout",
+        "description": "Gebruik de AI-selectie om het product uit de achtergrond te isoleren.",
+        "when_to_use": "Voor een clean product shot op een gekleurde achtergrond.",
+        "tools": [
+          "Cutout"
+        ],
+        "effect": "Creëert een perfecte uitsnede voor productpresentatie."
+      },
+      {
+        "name": "Manual Shadow Creation",
+        "description": "Maak een aparte laag voor de schaduw en gebruik een zachte brush voor realisme.",
+        "when_to_use": "Om het product geaard op de achtergrond te laten lijken.",
+        "tools": [
+          "Brush",
+          "Layers"
+        ],
+        "effect": "Geeft diepte en voorkomt dat het product zweeft."
+      },
+      {
+        "name": "Color Correction for E-commerce",
+        "description": "Pas kleurinstellingen aan om het product er fris en helder uit te laten zien.",
+        "when_to_use": "Voor het verbeteren van de uitstraling van het product.",
+        "tools": [
+          "Adjust"
+        ],
+        "effect": "Geeft het product een commerciële high-end look."
+      },
+      {
+        "name": "Background Replacement",
+        "description": "Vervang de originele achtergrond door een effen kleur voor e-commerce listings.",
+        "when_to_use": "Voor professionele product catalogi.",
+        "tools": [
+          "Background"
+        ],
+        "effect": "Zorgt voor een rustige, focus-gerichte achtergrond."
+      },
+      {
+        "name": "Clarity and Saturation Boost",
+        "description": "Verhoog Clarity en Saturation voor een frisse presentatie.",
+        "when_to_use": "Voor kleine aanpassingen aan het uiterlijk van het product.",
+        "tools": [
+          "Adjust"
+        ],
+        "effect": "Maakt kleuren sprekender en texturen duidelijker."
+      }
+    ],
+    "color_approach": "Gericht op commerciële helderheid om de kleur van het product optimaal uit te laten komen tegenover een gekleurde achtergrond.",
+    "local_adjustments": "Gebruikt lokale maskers en brushes voor het creëren van schaduwen onder het product.",
+    "what_to_avoid": [
+      "Onnatuurlijk harde schaduwen",
+      "Een cutout-rand die niet goed aansluit"
+    ],
+    "best_for": "E-commerce ondernemers die professionele productfoto s nodig hebben zonder dure apparatuur.",
+    "unique_insights": [
+      "Zelfs op een mobiel apparaat kun je schaduwen met de hand nabootsen voor een verbluffend realistisch effect.",
+      "Het toevoegen van een simpele gekleurde achtergrond achter een cutout van het product is vaak genoeg om het een premium uitstraling te geven.",
+      "Clarity is je beste vriend om e-commerce foto s er scherper en professioneler uit te laten zien."
+    ],
+    "style_preview": "Deze stijl is clean, commercieel en strak. Het is perfect voor online webshops. Het visuele effect is een productfoto die eruitziet alsof deze in een studio is genomen, klaar om direct te worden gebruikt in een webshop of marktplaats."
   }
 ]

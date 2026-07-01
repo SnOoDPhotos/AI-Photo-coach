@@ -42224,5 +42224,103 @@
       "Een perfecte isolatie van een centraal architectonisch object (zoals een toren) wordt bereikt door een AI-luchtmasker te dupliceren, te inverteren en vervolgens via de 'intersect'-functie te snijden met een lokaal radiaalmasker."
     ],
     "style_preview": "Deze stijl biedt een adembenemende, magische sfeer die het midden houdt tussen high-end landschapsfotografie en digitale schilderkunst. De visuele toon is extreem levendig met een herkenbare, dromerige lichtbloei die over daken en langs lantaarns strijkt. De filosofie richt zich op het creëren van een utopisch beeld van de werkelijkheid door schaduwen volledig open te breken en te hullen in rijke, koele blauwtinten, contrasterend met gloeiend gouden hooglichten. Deze benadering werkt perfect voor avondopnames en tegenlichtsituaties tijdens het gouden uur. Als fotograaf kun je een spectaculair eindresultaat verwachten met een ongekende dieptewerking, vloeiende contrastovergangen en een betoverende uitstraling."
+  },
+  {
+    "video_title": "6 TIPS that make you a BETTER Landscape Photographer",
+    "photographer_name": "Albert Dros",
+    "youtube_url": "https://www.youtube.com/watch?v=HADcZUZTlZs",
+    "genre": [
+      "landschap",
+      "reisfotografie",
+      "luchtfotografie",
+      "kust",
+      "algemeen"
+    ],
+    "light_conditions": [
+      "gouden uur",
+      "blauwe uur",
+      "storm",
+      "diffuus licht"
+    ],
+    "mood": [
+      "dramatisch",
+      "moody",
+      "levendig",
+      "naturalistisch",
+      "rustig"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Atmospheric Wide Compressed Landscape",
+    "philosophy": "De werkelijkheid dient als basis, maar het ruwe camerabestand is slechts een platte registratie die via nabewerking tot leven moet worden gewekt. Door het uiterste te vragen van extreme brandpuntsafstanden wordt een uniek perspectief gecreëerd dat afwijkt van de standaard ooghoogte. Het nauwgezet plannen en anticiperen op atmosferische omstandigheden is essentieel om vluchtige, magische lichtmomenten succesvol vast te leggen. Nabewerking is een legitiem en historisch geworteld verlengstuk van het creatieve proces om de emotie van het moment over te dragen.",
+    "workflow_order": [
+      "Stap 1: Toonwaardebalans herstellen door hooglichten in de lucht terug te halen en donkere schaduwen selectief te liften",
+      "Stap 2: De diepe sfeer en kleurgradaties van het vroege schemeringsuur accentueren",
+      "Stap 3: Scherpte en diepte maximaliseren door focus-stacking opnames samen te voegen voor een haarscherp verloop",
+      "Stap 4: Lokale lichtbloei en sfeereffecten fijnregelen om de dramatiek en het contrast te versterken"
+    ],
+    "techniques": [
+      {
+        "name": "Extreme Groothoek Invoering",
+        "description": "Gebruik een brandpuntsafstand van 10mm tot 14mm en positioneer de camera extreem laag bij de grond (soms slechts centimeters). Dit vergroot kleine structuren in de voorgrond, zoals ijsbellen of patronen, tot monumentale proporties en dwingt krachtige leidende lijnen af.",
+        "when_to_use": "Bij weidse landschappen of kustlijnen met interessante texturen of lijnen in de directe voorgrond",
+        "tools": [
+          "Standaard-paneel (Transformeren / Lenscorrecties)"
+        ],
+        "effect": "De voorgrond krijgt een enorme dynamiek en dieptewerking, waardoor de kijker fysiek het beeld in wordt getrokken"
+      },
+      {
+        "name": "Telelens Landschapscompressie",
+        "description": "Fotografeer het landschap met een brandpuntsafstand van 400mm of meer om ver weg gelegen elementen, zoals bergtoppen, schepen of vuurtorens, te isoleren. Dit vlakt het perspectief af en trekt de achtergrond visueel dicht naar de voorgrond toe.",
+        "when_to_use": "Bij verre bergketens, atmosferische gletsjers of een woeste zee waarbij de grootsheid van de achtergrond benadrukt moet worden",
+        "tools": [
+          "Standaard-paneel (Uitsnijden)"
+        ],
+        "effect": "De achtergrond oogt gigantisch en de lagen in het landschap worden grafisch op elkaar geperst"
+      },
+      {
+        "name": "Focus Stacking voor Oneindige Scherpte",
+        "description": "Combineer meerdere opnames met opeenvolgende focuspunten van de extreme voorgrond tot de verre achtergrond in post-processing. Dit heft de optische beperkingen van scherptediepte op bij een open diafragma of extreme dichtbij-composities.",
+        "when_to_use": "Wanneer de camera extreem dicht op een voorgrondobject (zoals paddenstoelen of ijsstructuren) staat en ook de achtergrond haarscherp moet zijn",
+        "tools": [
+          "Lightroom Classic (Foto samenvoegen / Bewerken in Photoshop als lagen)"
+        ],
+        "effect": "De resulterende afbeelding is van de allereerste millimeter in de voorgrond tot de horizon volledig scherp en helder"
+      },
+      {
+        "name": "Twilight Gradiënt Herstel",
+        "description": "Herstel de subtiele, diepe kleurgradaties van de vroege schemering door de belichting van de lucht met een lineair verloopfilter gericht te verlagen (bijvoorbeeld -0,75 EV) en de subtiele blauw- en purpertinten handmatig aan te zetten.",
+        "when_to_use": "Voor opnames die 30 tot 60 minuten vóór zonsopkomst zijn gemaakt om de herkenbare, diepe schemeringssfeer te vangen",
+        "tools": [
+          "Lineair verloop (Maskers)",
+          "Belichting",
+          "Verzadiging"
+        ],
+        "effect": "Er ontstaat een vloeiend, diep verzadigd kleurverloop in de lucht dat de mystieke overgang van nacht naar dag perfect weergeeft"
+      },
+      {
+        "name": "Belichtingsvlak herstel uit Raw",
+        "description": "Trek de Highlights fors terug (tussen -50 en -100) om de felle details in een lichte zonsondergangslucht te herstellen, en open gelijktijdig de Shadows (tussen +40 en +80) om de onderbelichte voorgrondtekening volledig terug te halen zonder ruis te introduceren.",
+        "when_to_use": "Bij raw-bestanden met een groot dynamisch bereik waarbij de camera is ingesteld om de hooglichten te beschermen tegen dichtlopen",
+        "tools": [
+          "Standaard-paneel (Hooglichten, Schaduwen)"
+        ],
+        "effect": "Het doffe, vlakke raw-bestand transformeert in een contrastrijk beeld met detailtekening in zowel de felste luchtpartijen als de donkerste schaduwen"
+      }
+    ],
+    "color_approach": "Kleur wordt benaderd vanuit het principe van natuurlijke versterking. In plaats van het willekeurig toevoegen van niet-bestaande tinten, worden de verborgen, diepe tonen uit de raw-data (zoals de delicate blauw-, purper- en magenta-gradaties van het vroege schemeringsuur) via selectieve belichtingscorrecties en maskers zorgvuldig naar voren gehaald en geaccentueerd.",
+    "local_adjustments": "Lokale aanpassingen worden ingezet om de natuurlijke dynamiek van het licht te ondersteunen. Er wordt veelvuldig gebruikgemaakt van lineaire verloopmaskers om de belichtingsverschillen tussen de lucht en de voorgrond vloeiend te overbruggen, en gerichte maskers om ijsstructuren of paddenstoelen in de voorgrond extra contrast en helderheid mee te geven.",
+    "what_to_avoid": [
+      "Het direct opzetten van een statief op de eerste de beste overzichtelijke plek bij aankomst, wat leidt tot dertien-in-een-dozijn composities.",
+      "Het onderschatten van de post-processing fase uit angst om de realiteit te verliezen, waardoor het raw-bestand zijn volledige potentieel aan dynamiek en verborgen kleuren misloopt."
+    ],
+    "best_for": "Landschapsfotografen die de stap willen maken van statische registraties naar dynamische, gelaagde composities met een sterke visuele dieptewerking en een verfijnde omgang met sfeerlicht.",
+    "unique_insights": [
+      "De meest impactvolle composities ontstaan niet door meters te verplaatsen, maar door simpelweg één stap naar voren te doen en de camera extreem laag te positioneren, waardoor de schaal van de voorgrond radicaal kantelt.",
+      "De zo kenmerkende, diepe 'signature' schemeringssfeer is niet het resultaat van complexe filters, maar van pure discipline: minstens een uur vóór de feitelijke zonsopkomst op de locatie aanwezig zijn wanneer het menselijk oog de kleuren nog amper waarneemt.",
+      "Zelfs de grootste historische pioniers in de landschapsfotografie, zoals Ansel Adams, pasten in de analoge donkere kamer al extreme doordruk- en tegenhoudtechnieken toe; nabewerking is dus geen moderne digitale truc, maar een fundamenteel onderdeel van de discipline."
+    ],
+    "style_preview": "Deze stijl ademt een grootse, atmosferische en meeslepende sfeer uit die de kijker direct overmeestert. De visuele signatuur combineert de weidse, dynamische lijnen van extreme groothoeklenzen met de gelaagde, samengeperste abstractie van krachtige telelenzen. De kernfilosofie richt zich op het vangen van zeldzame, perfect getimede licht- en weersomstandigheden, waarbij de post-processing wordt ingezet om de mystieke schemering en rijke contrasten volledig te ontplooien. Deze benadering werkt magistraal bij ongerepte natuurlandschappen, mistige ochtenden en ruige kustlijnen. Als fotograaf kun je een spectaculair eindresultaat verwachten met een feilloze scherpte van millimeter tot horizon en een diepe, schilderachtige dramatiek."
   }
 ]

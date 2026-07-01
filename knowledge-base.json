@@ -42504,5 +42504,94 @@
       "Er wordt bewust gekozen voor een complementaire split-toning (warm in de hooglichten, koud in de middentonen) specifiek om te voorkomen dat de algehele foto door de intense zonsondergangkleuren te homogeen oranje uitslaat."
     ],
     "style_preview": "Deze stijl kenmerkt zich door een magische, schilderachtige sfeer met extreem levendige kleuren en een dromerige gloed. De visuele sfeer combineert de mystiek van het gouden uur met de helderheid van een HDR-opname, waardoor elk detail van de voorgrond tot de horizon sprankelt. Het werkt het beste voor weidse landschappen met een sterke lichtbron van voren of opzij. Als fotograaf kun je een sprookjesachtig eindresultaat verwachten waarin licht écht lijkt te stralen en kleuren van het scherm spatten."
+  },
+  {
+    "video_title": "Defish Photoshop Tutorial",
+    "photographer_name": "Albert Dros",
+    "youtube_url": "https://www.youtube.com/watch?v=Dca0AA-Cq6s",
+    "genre": [
+      "landschap",
+      "architectuur",
+      "reisfotografie"
+    ],
+    "light_conditions": [
+      "gouden uur",
+      "blauwe uur"
+    ],
+    "mood": [
+      "dramatisch",
+      "levendig"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Defished Ultra Wide Cityscape",
+    "philosophy": "Het doel is om de enorme creatieve voordelen van een fisheye-lens te benutten in stadsfotografie, zonder de storende bolle vervorming in het eindresultaat te behouden. Door geavanceerde softwarematige correcties worden gebogen lijnen en horizonnen volledig rechtgetrokken tot een strak, ultra-groothoekbeeld. Het behoud van zo veel mogelijk sensorresolutie is hierbij een kritieke factor.",
+    "workflow_order": [
+      "stap 1: Pas de Hemi Fisheye-plugin toe om de eerste grove bolle vervorming van de lens automatisch recht te trekken.",
+      "stap 2: Selecteer de specifieke zones (zoals wolkenkrabbers) die extra perspectiefcorrectie nodig hebben.",
+      "stap 3: Gebruik de Photoshop Distort-transformatietool om de buitenste gebouwen handmatig loodrecht langs de schermrand te trekken.",
+      "stap 4: Start bij een gekantelde camera de Adaptive Wide Angle-filter en trek handmatig een lijn over de gebogen horizon om deze met één klik horizontaal te dwingen."
+    ],
+    "techniques": [
+      {
+        "name": "Hemi Fisheye Pre-correctie",
+        "description": "Pas de Hemi Fisheye-plugin toe op een gedupliceerde laag om de karakteristieke halfronde lenslijnen van een full-frame fisheye direct om te zetten naar rechte lijnen met minimaal resolutieverlies.",
+        "when_to_use": "Als basisstap voor elke foto die is gemaakt met een full-frame fisheye-lens (zoals een 12mm) om de zware vervorming direct te neutraliseren.",
+        "tools": [
+          "Photoshop"
+        ],
+        "effect": "Gebogen gebouwen en structuren veranderen onmiddellijk in rechte, gelijnde objecten, met name aan de zijkanten van het frame."
+      },
+      {
+        "name": "Geïsoleerde Bovenkant Transformatie",
+        "description": "Selecteer met de lasso- of rechthoektool alleen het bovenste gedeelte van de foto met de gebouwen, activeer de Distort-tool (Edit > Transform > Distort) en trek de buitenste hoeken naar buiten tot de randen loodrecht lopen.",
+        "when_to_use": "Wanneer de voorgrond of de onderkant van de foto al een mooie, acceptabele vorm heeft en je enkel de vallende gebouwen in de lucht wilt corrigeren.",
+        "tools": [
+          "Photoshop"
+        ],
+        "effect": "De wolkenkrabbers aan de uiterste linker- en rechterzijde worden kaarsrecht getrokken, terwijl de lagere structuren en de geometrie van de voorgrond volledig intact blijven."
+      },
+      {
+        "name": "Handmatige Brandpuntsafstand Overschrijving",
+        "description": "Overschrijf in het Adaptive Wide Angle-filter handmatig de brandpuntsafstand (Focal Length) naar bijvoorbeeld 14mm of 16mm in plaats van de werkelijke 12mm om de interne wiskundige berekening van Photoshop te corrigeren.",
+        "when_to_use": "Wanneer er met een handmatige fisheye-lens zonder EXIF-data wordt geschoten, waardoor Photoshop een verkeerde inschatting van de vervorming maakt.",
+        "tools": [
+          "Photoshop"
+        ],
+        "effect": "De rasterberekening verandert, waardoor de getrokken correctielijnen naderhand exact de juiste kromming van de horizon grijpen."
+      },
+      {
+        "name": "Horizon Uitlijning via Aanpassingslijn",
+        "description": "Trek met de Adaptive Wide Angle-tool een flexibele lijn van de uiterste linkerkant van de gebogen horizon naar de rechterkant, zodat de tool de kromming herkent en deze met één klik rechttrekt.",
+        "when_to_use": "Bij extreme vervorming waarbij de camera omhoog of omlaag was gekanteld en de horizon als een zware boog door het beeld loopt.",
+        "tools": [
+          "Photoshop"
+        ],
+        "effect": "De gebogen horizon wordt over de gehele breedte direct getransformeerd in een perfecte, kaarsrechte horizontale lijn."
+      },
+      {
+        "name": "Gebouw-Specifieke Verticaal Correctie",
+        "description": "Trek in het Adaptive Wide Angle-venster korte, verticale lijnen strak langs de gevels van gebouwen die na de horizoncorrectie nog steeds een lichte kromming vertonen.",
+        "when_to_use": "Wanneer individuele wolkenkrabbers aan de randen van het frame na de globale correctie nog restvervorming bevatten.",
+        "tools": [
+          "Photoshop"
+        ],
+        "effect": "Photoshop dwingt de geselecteerde constructies lokaal in een perfecte verticale as, waardoor alle resterende lensafwijkingen verdwijnen."
+      }
+    ],
+    "color_approach": "Omdat deze video puur gericht is op de geometrische transformatie en het herstellen van lensvervormingen, wordt er geen specifieke creatieve kleurbehandeling gedemonstreerd. De focus ligt volledig op het behouden van de originele tonen en pixels tijdens de zware pixelverschuivingen van het defishen.",
+    "local_adjustments": "Lokale aanpassingen worden hier toegepast in de vorm van geometrische selecties. In plaats van de hele foto te vervormen, wordt er gewerkt met een selectie van enkel de bovenste helft van het frame. Hierdoor kan het perspectief van de skyline handmatig worden gecorrigeerd via 'Distort' zonder de structuur en compositie van de voorgrond aan te tasten.",
+    "what_to_avoid": [
+      "Het blindelings vertrouwen op de automatische lensprofielherkenning van Photoshop bij handmatige fisheye-lensen, wat leidt tot misvormde correcties.",
+      "Het defishen van zwaar gekantelde composities als er met een lage resolutie sensor wordt gewerkt, omdat het extreme uitsnijden de beeldkwaliteit te sterk reduceert."
+    ],
+    "best_for": "Ultra-groothoek stadsgezichten met wolkenkrabbers waarbij een traditionele groothoeklens niet genoeg beeldhoek biedt om de hele scène te vangen.",
+    "unique_insights": [
+      "Door de horizon exact in het geometrische midden van het frame te plaatsen tijdens de opname met een fisheye-lens, blijft de horizon nagenoeg recht. Dit minimaliseert het resolutieverlies tijdens het latere defish-proces in Photoshop aanzienlijk.",
+      "Het handmatig overschrijven van de brandpuntsafstand in Photoshops Adaptive Wide Angle-tool naar een iets langere waarde dan de werkelijke lens (bijv. 14mm invoeren voor een 12mm lens) is noodzakelijk om te zorgen dat de getrokken correctielijnen de fysieke kromming accuraat corrigeren.",
+      "Bij extreem vervormde beelden waarbij de camera gekanteld is, kan de resolutie door het rechttrekken en de daaropvolgende crop met 30% tot wel 50% afnemen. Het gebruik van een camera met een hoge resolutie (zoals een 42 megapixel sensor) is daarom een cruciale factor om een bruikbaar, scherp eindresultaat over te houden."
+    ],
+    "style_preview": "Deze stijl transformeert de dynamische en extreme weidsheid van een fisheye-lens in een strak, hyper-groothoek stadslandschap zonder storende lensbuigingen. De visuele sfeer is groots en indrukwekkend, waarbij wolkenkrabbers kaarsrecht staan en de horizon perfect horizontaal loopt. De techniek is ideaal voor architectuur- en stadsfotografen die in krappe ruimtes maximale weidsheid willen vastleggen, met als eindresultaat een indrukwekkend panorama dat de kijker diep in de scène zuigt."
   }
 ]

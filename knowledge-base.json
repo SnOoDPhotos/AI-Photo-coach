@@ -44671,5 +44671,94 @@
       "Luminar Neo beschikt over een specifieke, ingebouwde catalogus-importtool waarmee complete fotostructuren, waarderingen en basisbewerkingen rechtstreeks vanuit Lightroom kunnen worden overgezet zonder dat de originele database wordt beschadigd."
     ],
     "style_preview": "Deze stijl kenmerkt zich door een krachtige balans tussen modern minimalisme en dramatische, sfeervolle belichting. De kernfilosofie rust op het transformeren van complexe belichtingssituaties naar strakke, contrastrijke beelden met heldere lijnvoeringen en levendige, natuurgetrouwe kleuren. Het is bij uitstek geschikt voor indrukwekkende buitenopnames van moderne bouwwerken en sfeervolle interieurfoto's tijdens het gouden uur of helder daglicht. Als fotograaf mag je een eindresultaat verwachten dat direct professionaliteit uitstraalt, waarbij storende elementen volledig zijn geëlimineerd en de unieke vormen van het gebouw op een dynamische, bijna driedimensionale wijze uit het beeld springen."
+  },
+  {
+    "video_title": "The 'Secret' (and Honestly Boring) Sauce Behind My Street Photo Editing",
+    "photographer_name": "Eduardo Ortiz",
+    "youtube_url": "https://www.youtube.com/watch?v=lDFcP__z6EI",
+    "genre": [
+      "straatfotografie"
+    ],
+    "light_conditions": [
+      "diffuus licht",
+      "gemengd licht",
+      "schaduw"
+    ],
+    "mood": [
+      "moody",
+      "naturalistisch",
+      "dramatisch"
+    ],
+    "software": [
+      "Capture One"
+    ],
+    "style_description": "Moody Filmic Gritty Street",
+    "philosophy": "De beste foto's worden direct in de camera gemaakt, waardoor de nabewerking uitsluitend dient om de reeds aanwezige sfeer subtiel te versterken. Een efficiënte en snelle workflow van maximaal vijf minuten per beeld voorkomt overbewerking en behoudt het natuurlijke karakter. Door te werken met gelaagde aanpassingen en specifieke ankerpunten in curven worden cruciale elementen zoals huidtinten beschermd tegen extreme contrasten.",
+    "workflow_order": [
+      "Stap 1: Het cameraprofiel (zoals Fujifilm Provia of Astia) selecteren als de tonale basis voor de raw-file.",
+      "Stap 2: De globale belichting corrigeren en huidtinten isoleren met ankerpunten in de Luma-curve.",
+      "Stap 3: Handmatige dodge and burn lagen toepassen om de visuele hiërarchie en het onderwerp te versterken.",
+      "Stap 4: Gerichte helderheid (Clarity) toevoegen op specifieke texturen en eindigen met subtiele kleurgrading in curven en de Color Balance tool."
+    ],
+    "techniques": [
+      {
+        "name": "Huidtinten Beschermen via Luma-curve Ankerpunten",
+        "description": "Plaats met de pipet gerichte ankerpunten op de exacte helderheidswaarden van de aanwezige huidtinten in de Luma-curve. Voer daarna pas contrastwijzigingen door in de overige delen van de curve om de middentonen te manipuleren zonder de textuur en helderheid van gezichten of armen te vervormen.",
+        "when_to_use": "Bij contrastrijke straatscènes met duidelijke menselijke onderwerpen waarbij de sfeer versterkt moet worden zonder dat gezichten onnatuurlijk donker of uitgebeten raken.",
+        "tools": [
+          "Capture One"
+        ],
+        "effect": "Het algehele contrast in de omgeving neemt toe terwijl de gemarkeerde huidtinten volledig onaangetast en natuurlijk blijven."
+      },
+      {
+        "name": "Intensiteit via Handmatige Burn Lagen",
+        "description": "Maak een nieuwe aanpassingslaag aan, verlaag de belichting met 1.5 stops en schilder met een zacht penseel heel grof over de achtergrond of lichtere kledingstukken om de omgevingsafleidingen te minimaliseren.",
+        "when_to_use": "Wanneer de achtergrond of secundaire elementen in het frame te veel licht vangen en de aandacht van het hoofdonderwerp afleiden.",
+        "tools": [
+          "Capture One"
+        ],
+        "effect": "De achtergrond wordt op een zachte wijze verduisterd waardoor de kleuren van het hoofdonderwerp intenser en krachtiger naar voren springen."
+      },
+      {
+        "name": "Snoet-accentuering via Radial Filter Contrast",
+        "description": "Plaats een radiaal verloopmasker rondom het centrale personage in de scène om de focus te isoleren. Pas hierbinnen een sterke contrastverhoging toe terwijl de belangrijkste huidtint via een ankerpunt op de curve wordt beschermd om een korrelige, rauwe look te creëren.",
+        "when_to_use": "Bij flitsopnames of harde straatportretten waar het onderwerp direct uit een drukke of rommelige omgeving moet breken.",
+        "tools": [
+          "Capture One"
+        ],
+        "effect": "Het onderwerp krijgt een rauwe, karakteristieke pop die direct de aandacht van de kijker opeist."
+      },
+      {
+        "name": "Lokale Textuuraccentuering met Clarity",
+        "description": "Maak een lege aanpassingslaag aan en schilder handmatig en grof met de Clarity-tool over specifieke onderdelen zoals oude muren, graffiti, kledingtexturen of tatoeages om microcontrast toe te voegen.",
+        "when_to_use": "Wanneer een straatbeeld interessante stedelijke patronen bevat die extra textuur vereisen zonder de hele plaat een harde uitstraling te geven.",
+        "tools": [
+          "Capture One"
+        ],
+        "effect": "De geselecteerde materialen en details worden tastbaarder en scherper, terwijl egale vlakken gevrijwaard blijven van harde artefacten."
+      },
+      {
+        "name": "Filmic Red Shift in de Geavanceerde Kleureditor",
+        "description": "Selecteer de rode tinten in de basisfoto, verschuif de tint (Hue) handmatig een fractie richting oranje, verlaag de verzadiging (Saturation) lichtjes en verhoog de helderheid (Lightness) marginaal.",
+        "when_to_use": "Bij straatfotografie waarbij rode elementen of kledingstukken te digitaal en fel ogen en getransformeerd moeten worden naar een klassieke analoge look.",
+        "tools": [
+          "Capture One"
+        ],
+        "effect": "De harde rode kleuren transformeren in een zachte, esthetische oranje-rode tint die sterk doet denken aan klassieke filmrollen."
+      }
+    ],
+    "color_approach": "Kleur wordt behandeld als een verlengstuk van de natuurlijke sfeer die tijdens de opname heerste. In plaats van een volledig nieuw palet te forceren, worden bestaande tonen versterkt door complementaire contrasten aan te brengen, zoals het toevoegen van koude cyaantinten in de diepe schaduwen via de RGB-curven en warme, subtiele tinten in de hooglichten om een filmische balans te waarborgen.",
+    "local_adjustments": "Lokale maskers worden bewust heel grof en intuïtief met de hand geschilderd om een te klinische of kunstmatige uitstraling te voorkomen. Er wordt gewerkt met aparte lagen voor belichting, dodge, burn en helderheid, zodat de dekking (Opacity) per bewerkingsstap achteraf handmatig kan worden fijngeregeld voor een naadloze overvloeiing.",
+    "what_to_avoid": [
+      "Het blindelings toepassen van helderheid (Clarity) op de gehele compositie, waardoor egale vlakken onnatuurlijk hard en korrelig worden.",
+      "Het overmatige gebruik van commerciële presets die niet zijn afgestemd op de specifieke lichtomstandigheden van het unieke moment."
+    ],
+    "best_for": "Deze technieken zijn bij uitstek geschikt voor straatfotografen die werken met natuurlijk of gemengd licht en die streven naar een rauwe, filmische en karaktervolle weergave van hun onderwerpen.",
+    "unique_insights": [
+      "Het plaatsen van een ankerpunt op de Luma-curve met behulp van de pipet is de meest effectieve methode om huidtinten volledig te isoleren en te beschermen tegen extreme contrastverschuivingen.",
+      "Bij het bewerken van silhouetten is het behoud van de herkenbaarheid van de gelaatstrekken ondergeschikt aan de grafische kracht en textuur van de algehele vorm.",
+      "Een vast cameraprofiel (zoals Fujifilm Astia bij scènes met weinig blauwtinten) vormt een stabielere en snellere basis voor een consistente analoge look dan het constant wisselen van externe presets."
+    ],
+    "style_preview": "Deze stijl straalt een doorleefde, filmische en licht korrelige sfeer uit die perfect aansluit bij het rauwe karakter van het stadsleven. De kernfilosofie draait om het minimaliseren van de digitale bewerkingstijd om de pure, in-camera vastgelegde realiteit te beschermen. Dit werkt optimaal bij straatbeelden met krachtige schaduwpartijen, silhouetten en diffuus omgevingslicht. Als fotograaf kun je een contrastrijk eindresultaat verwachten waarin de menselijke onderwerpen op een natuurlijke wijze opvallen en stedelijke texturen subtiel worden geaccentueerd zonder dat het beeld zijn authentieke documentairerelevantie verliest."
   }
 ]

@@ -150,9 +150,7 @@ function getEntryWarnings(entry) {
   // Mood typo check
   for (const m of (entry.mood || [])) {
     const ml = m.toLowerCase().trim();
-    const isEnglish = ENGLISH_ONLY.has(ml);
-    if (isEnglish) warnings.push('Engelse mood: ' + m);
-    else if (ml === 'not_applicable' || ml === 'n/a') warnings.push('ongeldige mood: ' + m);
+    if (ml === 'not_applicable' || ml === 'n/a') warnings.push('ongeldige mood: ' + m);
   }
 
   // Weinig technieken

@@ -43963,5 +43963,91 @@
       "Als een vogel tijdens het fotograferen te krap in het kader is geplaatst, kun je Generative Expand in Photoshop gebruiken met de instelling 'Original Ratio' zonder tekstprompt om de compositie achteraf meer ademruimte te geven."
     ],
     "style_preview": "De stijl kenmerkt zich door een levendige en sfeervolle uitstraling waarin wildlife op een dromerige manier wordt geïsoleerd van de achtergrond. De kernfilosofie is om de technische perfectie van een telelensopname te combineren met schilderachtige lichteffecten zoals een warme ochtendgloed. Deze stijl werkt het beste voor actiebeelden van dieren tijdens het gouden uur, waarbij de achtergrond relatief rustig is. Het verwachte resultaat is een vlijmscherp onderwerp dat baadt in een zacht, warm licht met prachtig gecontroleerde contrasten in de schaduwen."
+  },
+  {
+    "video_title": "How to Edit HDR Real Estate Photos with AI | Faster, Better & Cheaper",
+    "photographer_name": "FullTimeREP",
+    "youtube_url": "https://www.youtube.com/watch?v=HFMtueRrTTw",
+    "genre": [
+      "architectuur"
+    ],
+    "light_conditions": [
+      "daglicht"
+    ],
+    "mood": [
+      "naturalistisch"
+    ],
+    "software": [
+      "Lightroom Classic",
+      "Photoshop"
+    ],
+    "style_description": "Natural Bright Real Estate",
+    "philosophy": "Vastgoedfotografie vereist een perfecte balans tussen snelheid, consistentie en natuurgetrouwe belichting. Door AI-gestuurde HDR-verwerking te combineren met subtiele handmatige verfijningen, worden harde contrasten tussen binnenruimtes en buitenramen geëlimineerd. De focus ligt op het behouden van kleurechtheid, het neutraliseren van storende kleurzweem op muren en plafonds, en het creëren van een helder, uitnodigend beeld zonder dat het resultaat er overmatig bewerkt of kunstmatig gaat uitzien.",
+    "workflow_order": [
+      "Stap 1: Upload de RAW-bestanden in bracket-sets en laat de software de belichtingen automatisch groeperen.",
+      "Stap 2: Scheid handmatig de interieur- en exterieuropnames om de specifieke AI-modellen correct toe te wijzen.",
+      "Stap 3: Activeer automatische perspectiefcorrectie, luchtvervanging en kleurzweem-neutralisatie.",
+      "Stap 4: Verfijn het resultaat in het post-processing dashboard met presets voor helderheid en contrast-herstel."
+    ],
+    "techniques": [
+      {
+        "name": "Gescheiden interieur- en exterieur-modellering",
+        "description": "Wijs interieur- en exterieurfoto's handmatig toe aan hun respectievelijke AI-modellen in plaats van één globale HDR-samenvoeging te gebruiken, om interieurs perfect egaal te belichten en exterieurs extra levendigheid te geven.",
+        "when_to_use": "Bij het bewerken van vastgoedprojecten waarbij zowel binnenopnames als buitenaanzichten in dezelfde batch zitten.",
+        "tools": [
+          "AI Model Selection (Interiors vs Exteriors)"
+        ],
+        "effect": "Binnenruimtes krijgen een egale witbalans zonder donkere hoeken, terwijl buitenfoto's een krachtigere verzadiging en microcontrast behouden."
+      },
+      {
+        "name": "Automatische kleurzweem-isolatie",
+        "description": "Activeer de kleurzweem-verwijderingsfunctie om ongewenste reflecties van flitslicht, lampen of buitenomgevingen op witte plafonds en muren te detecteren en lokaal te desatureren.",
+        "when_to_use": "In ruimtes met gemengd licht, zoals felle binnenverlichting gecombineerd met daglicht, of kamers met veel hout- en groentinten.",
+        "tools": [
+          "Color Cast Removal"
+        ],
+        "effect": "Plafonds en wanden worden zuiver wit en neutraal, waardoor de werkelijke kleuren van het interieur sterker naar voren komen."
+      },
+      {
+        "name": "Geautomatiseerde Window Pull maskering",
+        "description": "Pas de 'Natural' of 'Signature' stijlverwerking toe om ramen met complexe elementen zoals lamellen, vitrages of planten automatisch te maskeren en de buitenzonwering te herstellen naar een lagere luminantiewaarde.",
+        "when_to_use": "Bij HDR-opnames van kamers met grote raampartijen waarbij het uitzicht naar buiten toe volledig is uitgebleekt.",
+        "tools": [
+          "Window Pull AI Engine"
+        ],
+        "effect": "Het uitzicht door het raam wordt perfect zichtbaar en scherp, zonder dat er vreemde randen of halo's rondom meubels of bladeren ontstaan."
+      },
+      {
+        "name": "Luminantie-optimalisatie via Airy-preset",
+        "description": "Pas de 'Airy'-instelling toe in het nabewerkingsdashboard om de middentonen en schaduwen van de samengevoegde HDR-foto globaal op te lichten, zonder de hooglichten of ramen te overbelichten.",
+        "when_to_use": "Wanneer de standaard AI-samenvoeging in donkere interieurs of kamers met weinig daglicht nog te flets of te donker oogt.",
+        "tools": [
+          "Post-Processing Dashboard (Airy Preset)"
+        ],
+        "effect": "De gehele ruimte oogt direct lichter, ruimer en visueel aantrekkelijker voor potentiële kopers."
+      },
+      {
+        "name": "Drone RAW-contrastinjectie",
+        "description": "Creëer een aangepaste preset die de globale verzadiging met +15 en het contrast met +20 verhoogt, specifiek om de vlakke en fletse look van onbewerkte drone-bestanden direct te corrigeren.",
+        "when_to_use": "Bij het bewerken van luchtfoto's die vanaf grote hoogte zijn genomen en last hebben van atmosferische waas.",
+        "tools": [
+          "Custom Presets (Saturation & Contrast sliders)"
+        ],
+        "effect": "De kleuren van het gras, de daken en de lucht krijgen direct hun natuurlijke punch en diepte terug."
+      }
+    ],
+    "color_approach": "De kleurbenadering is strikt naturalistisch en gericht op commerciële perfectie. Het belangrijkste doel is om alle muren en plafonds volledig te ontdoen van storende kleurzweem die veroorzaakt wordt door kunstlicht of reflecties van buitenaf. Er wordt gekozen voor een 'Natural'-benadering waarbij kleuren getrouw blijven aan de werkelijkheid, maar wel zo fris en helder mogelijk worden gepresenteerd.",
+    "local_adjustments": "Lokale aanpassingen worden grotendeels door de AI-gestuurde maskers opgevangen, specifiek bij de ramen (window pulls). Daarnaast worden slimme, gelokaliseerde maskers ingezet voor het automatisch detecteren van televisieschermen en open haarden om deze met één klik te voorzien van een strakke, digitale scherminvulling of een sfeervol vuureffect.",
+    "what_to_avoid": [
+      "Het blind vertrouwen op AI bij high-end vastgoed met exclusieve uitzichten (zoals een oceaanzicht), omdat de automatische herkenning het water kan desatureren.",
+      "Het toepassen van de Twilight-bètafunctie op buitenzonweringen zolang de resultaten nog inconsistenties en onrealistische overgangen vertonen."
+    ],
+    "best_for": "Commerciële vastgoedfotografie, woningpresentaties voor de huizenmarkt en interieurrapportages waarbij een hoge volume-output met constante kwaliteit vereist is.",
+    "unique_insights": [
+      "Het handmatig sorteren en splitsen van interieur- en exterieurfoto's vóór de HDR-samenvoeging levert een drastisch beter resultaat op dan wanneer een algoritme alles met dezelfde instellingen verwerkt.",
+      "Vlakke drone-opnames van een Mavic-platform reageren heel anders op HDR-algoritmes dan camera-RAW-bestanden van binnenruimtes, en vereisen altijd een aparte, handmatige contrast- en verzadigingsinjectie achteraf.",
+      "Werken met een vast tarief per vastgoedproject in plaats van een tarief per foto verandert de psychologie van de fotograaf; het stimuleert je om meer hoeken en detailopnames te leveren, wat de klanttevredenheid direct vergroot."
+    ],
+    "style_preview": "Deze stijl biedt een uiterst heldere, frisse en uitnodigende look die perfect aansluit bij de hoge standaarden van de moderne vastgoedmarkt. De visuele sfeer is open en ruimtelijk, waarbij kamers baden in een egaal en zacht daglicht zonder harde schaduwpartijen. De filosofie richt zich op een perfecte balans tussen efficiëntie en kwaliteit: ramen zijn perfect doortekend en de witbalans op muren is vlijmscherp gecorrigeerd. Voor een fotograaf die deze stijl hanteert, betekent dit dat interieurfoto's direct professioneel, strak en verkoopklaar ogen, met een minimale noodzaak voor tijdrovende handmatige maskers in Photoshop."
   }
 ]

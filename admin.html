@@ -1176,10 +1176,7 @@ function computeWarnings(entries) {
     }
     (e.mood || []).forEach(function(m) {
       var ml = m.toLowerCase().trim();
-      // Waarschuw alleen bij Engelse moods (hoofdletter of bekende Engelse woorden)
-      var isEnglish = ENGLISH_ONLY.includes(ml) || (m !== m.toLowerCase() && m === m[0].toUpperCase() + m.slice(1).toLowerCase() && ENGLISH_ONLY.includes(ml));
-      if (isEnglish) w.push('Engelse mood: ' + m);
-      else if (ml === 'not_applicable' || ml === 'n/a') w.push('ongeldige mood: ' + m);
+      if (ml === 'not_applicable' || ml === 'n/a') w.push('ongeldige mood: ' + m);
     });
     if ((e.techniques || []).length < 3) w.push('< 3 technieken');
     if ((e.unique_insights || []).length < 2) w.push('< 2 insights');

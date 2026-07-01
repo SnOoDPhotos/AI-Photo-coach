@@ -44493,5 +44493,94 @@
       "Een zware, globale kleurzweem over een hele foto vernietigt de natuurlijke toongradaties van planten en huid, terwijl een subtiele verschuiving in uitsluitend de schaduwen juist een herkenbare, nostalgische handtekening oplevert zonder de realiteit te schaden."
     ],
     "style_preview": "Deze stijl ademt pure high-fashion en cinematische dramatiek uit. De visuele sfeer balanceert tussen een dromerige fantasie en een strakke, redactionele realiteit, waarbij kleuren strategisch worden ingezet om de emotionele toon van het verhaal te dicteren. De kernfilosofie draait om het loslaten van de werkelijkheid ten gunste van een sfeer die ofwel intens warm en nostalgisch, ofwel koel en melancholisch is. Deze benadering werkt het beste bij portretten die met een doordacht lichtplan zijn geschoten. Het verwachte resultaat is een beeld met een krachtige visuele impact waarin het model en de kleding naadloos opgaan in een high-end, schilderachtige kleurwereld."
+  },
+  {
+    "video_title": "Why Every Pro Photographer Uses THIS Lightroom Tool",
+    "photographer_name": "Serge Ramelli",
+    "youtube_url": "https://www.youtube.com/watch?v=vtrZ5kh6P5c",
+    "genre": [
+      "landschap"
+    ],
+    "light_conditions": [
+      "gouden uur",
+      "blauwe uur",
+      "tegenlicht"
+    ],
+    "mood": [
+      "dramatisch",
+      "levendig",
+      "cinematisch"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Vibrant Cinematic Dramatic Landscape",
+    "philosophy": "De belangrijkste techniek voor professionele beeldbewerking is het lokaal sturen van licht en kleur via maskers om de blik van de kijker diep in de foto te trekken. Door delen van een landschap selectief lichter of donkerder te maken (dodge and burn) ontstaat er diepte en dramatiek die met globale aanpassingen onbereikbaar is. Het doel is niet om de realiteit perfect te kopiëren, maar om de sfeer en verborgen kleuren te versterken die tijdens de opname aanwezig waren.",
+    "workflow_order": [
+      "Stap 1: Globale basiscorrecties toepassen op schaduwen, hooglichten en de algehele witbalans.",
+      "Stap 2: De horizon rechtzetten en de compositie optimaliseren via de uitsnijtool.",
+      "Stap 3: AI-gestuurde maskers genereren voor specifieke onderdelen zoals de lucht, bergen en vegetatie.",
+      "Stap 4: Lokale aanpassingen verfijnen en overvloeien met handmatige penselen en lineaire/radiale verlopen."
+    ],
+    "techniques": [
+      {
+        "name": "Lucht Verloop Maskeren met Intersectie",
+        "description": "Trek een lineair verloop over de bovenkant van de foto en verlaag de belichting om de lucht donkerder te maken. Gebruik vervolgens de functie 'Intersect mask with sky' om te zorgen dat de aanpassing uitsluitend de lucht beïnvloedt en niet de gebouwen of bergen die erdoorheen steken.",
+        "when_to_use": "Wanneer de lucht te licht is en storend afleidt van het hoofdonderwerp, terwijl omliggende objecten al de juiste helderheid hebben.",
+        "tools": [
+          "Lightroom Classic"
+        ],
+        "effect": "Een dramatisch verloop in de lucht zonder onnatuurlijke donkere randen of vlekken op gebouwen en bergen."
+      },
+      {
+        "name": "Kleurherstel achter Objecten via Radiaal Masker",
+        "description": "Plaats een radiaal verloop rondom een specifiek object (zoals een brug of horizon) en verhoog de waarden voor magenta, geel of verzadiging om verloren gegane zonsondergangskleuren terug te halen. Pas daarna 'Intersect mask with sky' toe.",
+        "when_to_use": "Bij tegenlichtopnames of zonsondergangen waarbij subtiele kleurtonen rond de horizon verloren zijn gegaan in de originele raw-file.",
+        "tools": [
+          "Lightroom Classic"
+        ],
+        "effect": "De sfeervolle warme kleuren lichten subtiel en selectief op, puur in de lucht achter de silhouetten van objecten."
+      },
+      {
+        "name": "Gerichte Structuur op Architectuur",
+        "description": "Selecteer de gebouwen via het AI-architectuurmasker en verhoog de helderheid (Clarity) om lokaal microcontrast en detail toe te voegen zonder de omliggende lucht of zachte structuren te beïnvloeden.",
+        "when_to_use": "Bij stadslandschappen waarbij gebouwen er scherper, tastbaarder en interessanter uit moeten springen.",
+        "tools": [
+          "Lightroom Classic"
+        ],
+        "effect": "Gebouwen krijgen een opvallende, grafische textuur en poppen visueel meer naar voren uit de achtergrond."
+      },
+      {
+        "name": "Vignettering via AI-Grondmaskers",
+        "description": "Selecteer de kunstmatige of natuurlijke voorgrond via AI-maskering en verlaag de belichting licht om de onderkant van het beeld doelbewust te verduisteren.",
+        "when_to_use": "Bij landschaps- of stadsfotografie waarbij de voorgrond te licht is en de blik van de kijker wegtrekt van het centrum.",
+        "tools": [
+          "Lightroom Classic"
+        ],
+        "effect": "Het menselijk oog wordt automatisch weggeleid van de donkere randen en dieper naar het heldere centrum van de compositie getrokken."
+      },
+      {
+        "name": "Subtiel Licht Schilderen met Zacht Penseel",
+        "description": "Gebruik het penseel met een maximale zachtheid (Feather 100) en een lage vloeibaarheid en dichtheid (Flow/Density rond de 70%). Verhoog de belichting marginaal en schilder handmatig over reflecties in het water of lichtaccenten.",
+        "when_to_use": "Wanneer specifieke glinsteringen, lichtbanen of reflecties in de foto extra nadruk nodig hebben om de dynamiek te versterken.",
+        "tools": [
+          "Lightroom Classic"
+        ],
+        "effect": "Er ontstaan natuurlijke, vloeiende highlights op het water die eruitzien alsof ze ter plekke zo zijn vastgelegd."
+      }
+    ],
+    "color_approach": "Kleur wordt ingezet om een warme, uitnodigende en cinematische sfeer te creëren. Door de witbalans globaal naar 'Schaduw' te zetten, krijgt de hele plaat een gouden gloed, waarna met lokale maskers specifieke complementaire kleuren zoals blauw in de schaduwen of magenta/geel rond de lichtbronnen handmatig worden aangezet voor maximaal kleurcontrast.",
+    "local_adjustments": "Lokale aanpassingen vormen de absolute basis van de bewerkingsstijl. Er wordt direct gegrepen naar AI-maskers voor lucht, vegetatie en architectuur, waarna deze via intersecties en zachte penselen handmatig worden gecorrigeerd en gecombineerd om het licht volledig naar de hand te zetten.",
+    "what_to_avoid": [
+      "Aanpassingen zo sterk doorvoeren dat ze direct zichtbaar zijn voor de kijker; als je de bewerking meteen opmerkt, ben je te ver gegaan.",
+      "Het verwaarlozen van de 'Feather' en 'Flow' instellingen bij penselen, wat leidt tot harde, onrealistische lichtvlekken in de foto."
+    ],
+    "best_for": "Deze technieken zijn bij uitstek geschikt voor weidse landschappen en stadsgezichten die tijdens het gouden of blauwe uur zijn gefotografeerd en die extra diepte, dramatiek en visuele sturing vereisen.",
+    "unique_insights": [
+      "Het combineren van een lineair of radiaal verloop met een AI-luchtmasker via de 'Intersect'-functie is dé manier om complexe filters toe te passen zonder dat gebouwen of bergen onnatuurlijk donker worden meegekleurd.",
+      "Lokale aanpassingen zijn effectiever wanneer je ze bewust overschrijft en pas de volgende dag met een frisse blik controleert of de bewerking niet te intens is uitgevallen.",
+      "Het gebruik van een muis met een fysiek scrollwiel is essentieel in Lightroom om tijdens het maskeren razendsnel de penseelgrootte aan te kunnen passen zonder de workflow te onderbreken."
+    ],
+    "style_preview": "Deze bewerkingsstijl ademt een sfeer van grootschalige, cinematische dramatiek met diepe contrasten en rijke, verzadigde kleuren. De kernfilosofie draait volledig om het transformeren van vlak, globaal licht naar een dynamisch spel van licht en schaduw door middel van geavanceerde maskeringstechnieken. Deze aanpak werkt het beste voor weidse stadsgezichten en landschappen die tijdens de overgangsuren van de dag zijn vastgelegd. Als fotograaf kun je een spectaculair visueel effect verwachten waarbij de compositie direct rust uitstralend oogt, maar tegelijkertijd een enorme impact maakt doordat de blik van de kijker feilloos langs de belangrijkste lichtaccenten wordt geleid."
   }
 ]

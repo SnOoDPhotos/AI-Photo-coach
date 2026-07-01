@@ -43780,5 +43780,92 @@
       "Het handmatig corrigeren van automatische AI-maskers met de rechthoekige object-wisser (Subtract Objects) is vele malen sneller en effectiever voor het herstellen van foutieve selecties dan handmatig penselen op de pixelranden."
     ],
     "style_preview": "Deze stijl biedt een zeer cleane, natuurgetrouwe en rustige blik op wildlife-fotografie. De visuele sfeer is zacht naturalistisch met een verfijnde matte toets in de schaduwpartijen, waardoor harde digitale contrasten worden vermeden. Het werkt uitstekend voor opnames die onder egale, bewolkte luchten zijn gemaakt en waarbij de natuurlijke dynamiek van het dier centraal staat. Door de gecontroleerde kleurbehandeling en focus op textuur in plaats van harde verscherping, krijgt de foto een hoogwaardige, redactionele uitstraling die direct de aandacht grijpt."
+  },
+  {
+    "video_title": "RAW Photo Editing Basics: Fix EXPOSURE the Right Way!",
+    "photographer_name": "Mark Denney",
+    "youtube_url": "https://www.youtube.com/watch?v=PXsD5IedbKw",
+    "genre": [
+      "landschap"
+    ],
+    "light_conditions": [
+      "tegenlicht"
+    ],
+    "mood": [
+      "levendig",
+      "naturalistisch"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Balanced High Dynamic Landscape",
+    "philosophy": "In plaats van een onderbelichte foto blindelings op te lichten met de belichtingsschuifregelaar, richt de aanpak zich op het herstellen van de natuurlijke lichtbalans via gerichte toonsegmenten. Door de belichtingsregelaar te omzeilen, wordt voorkomen dat kleuren flets worden en contrasten modderig dichtlopen. Het doel is om het dynamisch bereik optimaal te benutten met behoud van diepte, driedimensionaliteit en kleurharmonie.",
+    "workflow_order": [
+      "Stap 1: Analyseren van het histogram en het lokaal corrigeren van de middentonen via het Color Grading-paneel.",
+      "Stap 2: Gerichte aanpassingen doorvoeren in de schaduwen en zwarte tinten om diepe details terug te halen.",
+      "Stap 3: Handmatig balanceren van hooglichten en witte tinten om de helderheid te herstellen zonder clipping.",
+      "Stap 4: Toepassen van lokale maskers (gradiënten en objectselectie) om specifieke gebieden lokaal te finetunen."
+    ],
+    "techniques": [
+      {
+        "name": "Middentonen belichten via Color Grading",
+        "description": "Verhoog de Luminance-waarde specifiek in de Midtones van het Color Grading-paneel in plaats van de globale Exposure-schuifbalk te gebruiken om de algehele helderheid te corrigeren.",
+        "when_to_use": "Bij onderbelichte RAW-bestanden waar globale belichting de foto flets en contrastarm maakt.",
+        "tools": [
+          "Color Grading"
+        ],
+        "effect": "De algehele helderheid stijgt op een natuurlijke manier zonder dat de wit- of zwartpunten uit balans raken."
+      },
+      {
+        "name": "Gerichte schaduwreconstructie",
+        "description": "Verhoog handmatig de Shadows- en Blacks-schuifregelaars in het basispaneel tot een gebalanceerde waarde om details in donkere bosjes of rotspartijen zichtbaar te maken.",
+        "when_to_use": "Wanneer een landschapsfoto grote, diepe schaduwpartijen bevat die details maskeren.",
+        "tools": [
+          "Basic panel"
+        ],
+        "effect": "Donkere partijen worden subtiel geopend zonder dat er een onrealistische HDR-look ontstaat."
+      },
+      {
+        "name": "Luchtbalans via lineair verloop",
+        "description": "Plaats een Linear Gradient over de lucht, verlaag de lokale Exposure en Highlights marginaal en voeg wat extra contrast toe.",
+        "when_to_use": "Wanneer de voorgrond wordt opgelicht en de lucht daardoor relatief te helder of flets oogt.",
+        "tools": [
+          "Masking",
+          "Linear Gradient"
+        ],
+        "effect": "De lucht krijgt haar natuurlijke dramatiek, structuur en kleurverzadiging weer terug."
+      },
+      {
+        "name": "Kleursynchronisatie via kleurtint",
+        "description": "Stel de Temperature-regelaar iets koeler in en corrigeer dit met een subtiele verschuiving van de Tint naar magenta.",
+        "when_to_use": "Bij foto's waarbij het oplichten van de schaduwen een ongewenste gele of groene zweem introduceert.",
+        "tools": [
+          "White Balance"
+        ],
+        "effect": "De algehele kleurtoon wordt geneutraliseerd en krijgt een frisse, natuurlijke uitstraling."
+      },
+      {
+        "name": "Matte afwerking via de tooncurve",
+        "description": "Bouw een subtiele S-bocht in de Point Curve en lift het uiterste linker zwartpunt een fractie omhoog.",
+        "when_to_use": "Als laatste stap om de digitale hardheid uit de contrasten te halen en diepte te creëren.",
+        "tools": [
+          "Point Curve"
+        ],
+        "effect": "De diepste schaduwen transformeren in een zachte, matte donkergrijze toon."
+      }
+    ],
+    "color_approach": "De kleuraanpak richt zich op het bewaken van de kleurharmonie door oververzadiging te voorkomen. Wanneer schaduwen intensief worden opgelicht, reageren de kleuren vaak te heftig. Door storende of te felle kleuren selectief te neutraliseren via de Hue en Saturation sliders, blijft het palet minimalistisch en perfect afgestemd op het landschap.",
+    "local_adjustments": "Lokale aanpassingen worden ingezet om de kijker door het landschap te loodsen. Naast lineaire verlopen voor de lucht, wordt er gebruikgemaakt van objectselecties om belangrijke ankerpunten (zoals een boot of een specifieke rots) te isoleren. Deze maskers worden verfijnd met een Color Range om puur de toonaarden te corrigeren en het onderwerp los te snijden.",
+    "what_to_avoid": [
+      "Het klakkeloos openschuiven van de globale Exposure-regelaar om een onderbelichte foto te herstellen, wat leidt tot een platte lichtval.",
+      "Het hanteren van de extreme '-100 Highlights en +100 Shadows' methode, wat resulteert in modderige contrasten en futloze kleuren."
+    ],
+    "best_for": "Landschapsfotografen die te maken hebben met onderbelichte RAW-bestanden en de dynamiek en driedimensionaliteit in het licht willen behouden.",
+    "unique_insights": [
+      "Omdat Lightroom geen directe schuifregelaar heeft voor de middentonen, fungeert de Luminance-regelaar binnen de Midtones van het Color Grading-paneel als de perfecte, schone belichtingsknop zonder de uitersten van het histogram te beschadigen.",
+      "Het corrigeren van belichting via de afzonderlijke toon-sliders (Blacks, Shadows, Whites, Highlights) in plaats van de Exposure-slider behoudt de micro-contrasten en voorkomt de typische fletse 'digitale sluier'.",
+      "Het toepassen van een klein beetje negatieve Dehaze in combinatie met een verhoogde Texture-waarde zorgt ervoor dat een landschap wel haar scherpte behoudt, maar tegelijkertijd een zachte, atmosferische uitstraling krijgt."
+    ],
+    "style_preview": "Deze stijl biedt een uiterst gebalanceerde, driedimensionale en natuurgetrouwe blik op uitgestrekte landschappen. De visuele sfeer is levendig maar gecontroleerd, waarbij extreme contrasten vloeiend worden opgevangen zonder dat het beeld zijn natuurlijke karakter verliest. Het werkt perfect voor opnames met uitdagend tegenlicht of stevige onderbelichting, omdat het de verborgen details in de schaduwen herstelt met behoud van de sfeer. Fotografen kunnen een eindresultaat verwachten met rijke structuren, heldere middentonen en een harmonieus kleurenpalet dat rust uitstralend oogt."
   }
 ]

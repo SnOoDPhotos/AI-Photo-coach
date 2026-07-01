@@ -442,6 +442,15 @@ function showDetail(idx) {
   document.getElementById('detailTitle').textContent = e.video_title || 'Entry';
   var html = '';
 
+  // Waarschuwingsblok
+  if (e._warnings && e._warnings.length > 0) {
+    html += '<div style="background:rgba(240,165,0,0.08);border:1px solid rgba(240,165,0,0.4);border-left:4px solid #f0a500;padding:14px;margin-bottom:16px">';
+    html += '<div style="font-family:monospace;font-size:10px;color:#f0a500;letter-spacing:2px;margin-bottom:8px">⚠ WAARSCHUWINGEN</div>';
+    html += '<ul style="margin:0;padding-left:18px;font-size:12px;color:var(--text);line-height:1.8">';
+    e._warnings.forEach(function(w) { html += '<li>' + w + '</li>'; });
+    html += '</ul></div>';
+  }
+
   // Bewerkbaar blok
   html += '<div style="background:rgba(232,197,71,0.04);border:1px solid rgba(232,197,71,0.2);padding:16px;margin-bottom:16px">';
   html += '<div style="font-family:monospace;font-size:10px;color:var(--accent);letter-spacing:2px;margin-bottom:12px">BEWERKEN</div>';

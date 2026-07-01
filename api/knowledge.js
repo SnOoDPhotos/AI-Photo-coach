@@ -348,8 +348,39 @@ module.exports = async function handler(req, res) {
       if (!entry || !entry.video_title) return res.status(400).json({ error: 'Ongeldige entry' });
 
       const entries = await loadKnowledge();
-      const exists = entries.find(e => e.video_title === entry.video_title);
-      if (exists) return res.status(409).json({ error: 'Entry met deze titel bestaat al' });
+
+      // Normaliseer YouTube URL voor vergelijking (youtube.com/watch?v=X == youtu.be/X)
+      function extractVideoId(url) {
+        if (!url) return null;
+        const m = url.match(/(?:v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
+        return m ? m[1] : url.toLowerCase().trim();
+      }
+      const newId = extractVideoId(entry.youtube_url);
+      const newTitle = (entry.video_title || '').toLowerCase().trim();
+
+      const existingIdx = entries.findIndex(e => {
+        const eId = extractVideoId(e.youtube_url);
+        if (newId && eId && newId === eId) return true;
+        return (e.video_title || '').toLowerCase().trim() === newTitle;
+      });
+
+      if (existingIdx !== -1) {
+        // Vergelijk kwaliteit - behoud de betere versie
+        const existing = entries[existingIdx];
+        const existingScore = (existing.techniques||[]).length + (existing.unique_insights||[]).length;
+        const newScore = (entry.techniques||[]).length + (entry.unique_insights||[]).length;
+        if (newScore > existingScore) {
+          // Behoud style_preview van bestaande entry
+          if (existing.style_preview && !entry.style_preview) {
+            entry.style_preview = existing.style_preview;
+          }
+          entries[existingIdx] = entry;
+          await saveKnowledge(entries);
+          return res.status(200).json({ success: true, updated: true, count: entries.length, message: 'Betere versie vervangt bestaande entry' });
+        } else {
+          return res.status(409).json({ error: 'Bestaande entry is al beter (score: ' + existingScore + ' vs ' + newScore + ')', existing_score: existingScore, new_score: newScore });
+        }
+      }
 
       entries.push(entry);
       await saveKnowledge(entries);

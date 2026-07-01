@@ -120,6 +120,8 @@ function normalizeSoftware(software) {
 
 // ── Kwaliteitscheck voor waarschuwingen ────────────────────────────────────
 const CHANNEL_NAME_INDICATORS = ['studio', 'photography', 'films', 'productions', 'official', 'channel', 'media', 'creative', 'visuals', 'guys', 'brothers', 'labs'];
+const ENGLISH_ONLY = new Set(['dreamy','ethereal','calm','soft','cinematic','clean','dramatic','professional','technical','educational','experimental','artistic','melancholic','serene','vibrant','atmospheric','moody','creative','natural','warm','balanced','surreal','minimalist','timeless','epic','rugged','mysterious','abstract','impressionistic','stark','filmic','painterly','grungy','faded','dusk']);
+
 const KNOWN_MOODS = ['moody','dramatisch','rustig','levendig','naturalistisch','cinematisch','romantisch','donker','licht','mystiek','energiek','melancholisch','strak','commercieel','speels','surrealistisch','minimalistisch','nostalgisch','filmisch','sfeervol','harmonieus','luxueus','luxueuze','abstract','experimenteel','grafisch','documentair','intiem','episch','vintage','modern','warm','koel','helder','zacht','hard','natuurlijk','artistiek','expressief','sereen','dynamisch','klassiek','tijdloos','rauw','rauwe','clean','punchy','technisch','surreeel','surreëel','krachtig','contrastrijk','creatief','cinematic','dreamy','dromerig','analytisch','atmosferisch','atmospheric','verhalend','gedetailleerd','kleurrijk','gepolijst','educatief','mysterieus','professioneel','fine art','informatief','praktisch','ethereal','calm','soft','etherisch','kalm','elegant','moody','grafisch','sterk','vriendelijk','somber','vrolijk','neutraal','zakelijk','speels','romantisch','poëtisch','rauwe','clean','punchy','helder','donker','warm','koel'];
 
 function getEntryWarnings(entry) {
@@ -147,9 +149,10 @@ function getEntryWarnings(entry) {
 
   // Mood typo check
   for (const m of (entry.mood || [])) {
-    if (!KNOWN_MOODS.includes(m.toLowerCase())) {
-      warnings.push('onbekende mood: ' + m);
-    }
+    const ml = m.toLowerCase().trim();
+    const isEnglish = ENGLISH_ONLY.has(ml);
+    if (isEnglish) warnings.push('Engelse mood: ' + m);
+    else if (ml === 'not_applicable' || ml === 'n/a') warnings.push('ongeldige mood: ' + m);
   }
 
   // Weinig technieken

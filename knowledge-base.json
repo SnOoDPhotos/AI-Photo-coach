@@ -44317,5 +44317,90 @@
       "Door een luchtmasker te dupliceren en te inverteren, bespaar je kostbare tijd en voorkom je dat er vreemde halo-effecten of harde overgangen langs de bergrand ontstaan."
     ],
     "style_preview": "Deze stijl kenmerkt zich door een heldere, frisse en naturalistische landschapsesthetiek die de nadruk legt op levendige groentinten en doortekende wolkenluchten. De visuele sfeer is open en contrastrijk, waarbij schaduwen krachtig worden opengebroken om elk detail in het landschap zichtbaar te maken. De filosofie is gestoeld op het herstellen van de werkelijkheid door digitale onderbelichting effectief te compenseren met slimme AI-maskers. Deze aanpak werkt het beste voor weidse landschappen onder wisselende bewolking, waarbij het verwachte resultaat een uiterst levendig, helder en natuurgetrouw beeld is dat de kijker direct aanspreekt."
+  },
+  {
+    "video_title": "Reblum AI the Best Retouching Tool for Photographers",
+    "photographer_name": "Shane",
+    "youtube_url": "https://www.youtube.com/watch?v=lUGf2ixbF0I",
+    "genre": [
+      "portret"
+    ],
+    "light_conditions": [
+      "diffuus licht"
+    ],
+    "mood": [
+      "naturalistisch"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Natural High Detail Portrait",
+    "philosophy": "De kernfilosofie is gericht op het maximaliseren van efficiëntie en consistentie door middel van AI-gestuurde lokale retouchering, zonder de authentieke kenmerken van het model te verliezen. Het doel is om handmatig tijdrovend werk zoals huidbewerking en oogoptimalisatie te automatiseren, zodat de fotograaf zich kan focussen op het fotograferen zelf. De resultaten moeten herhaalbaar zijn over grote batches met behoud van een professionele publicatiekwaliteit. Privacy en snelheid zijn hierbij cruciaal door alles lokaal op de computer te verwerken.",
+    "workflow_order": [
+      "stap 1: Start de Reblum AI plugin binnen Photoshop via een vooraf gebouwde handmatige Photoshop-actie.",
+      "stap 2: Selecteer de gewenste retoucheermodus (Natural of Fashion) om de intensiteit van de algehele huidverzachting te bepalen.",
+      "stap 3: Isoleer of koppel de aanpassingen voor het gezicht en het lichaam om de mate van huidtextuur en poriën lokaal te finetunen.",
+      "stap 4: Optimaliseer de ogen handmatig via de specifieke oog-tools voor helderheid en glans, en pas de tandenbleking aan tot een natuurlijk niveau."
+    ],
+    "techniques": [
+      {
+        "name": "Ooghelderheid Optimalisatie",
+        "description": "Verhoog de Clarity slider in het oogpaneel om de structuren in de iris scherper te maken en verkleuringen in het oogwit te verminderen.",
+        "when_to_use": "Bij portretten waarbij de ogen de nadruk moeten krijgen en expressie missen.",
+        "tools": [
+          "Clarity (Eyes panel)"
+        ],
+        "effect": "De iris krijgt meer definitie en het oogwit oogt frisser en schoner."
+      },
+      {
+        "name": "Oogglans Verhogen",
+        "description": "Verhoog de Brilliance slider naar een gemiddelde waarde om kunstmatige of natuurlijke reflecties in de ogen subtiel op te lichten.",
+        "when_to_use": "Wanneer de ogen in een portret dof ogen door een gebrek aan direct catchlight.",
+        "tools": [
+          "Brilliance (Customer Eye tool)"
+        ],
+        "effect": "Er ontstaat een levendige glans en 'sparkle' in de pupillen van het model."
+      },
+      {
+        "name": "Oogader Verwijdering",
+        "description": "Schuif de Vessel tool omhoog om fijne rode adertjes en onzuiverheden in het sclera-gedeelte (oogwit) automatisch te minimaliseren.",
+        "when_to_use": "Bij close-up portretten waarbij vermoeidheid of rode aders in het oogwit storend zichtbaar zijn.",
+        "tools": [
+          "Vessel remove"
+        ],
+        "effect": "Het oogwit wordt egaal wit zonder dat het er onnatuurlijk of uitgebleekt uitziet."
+      },
+      {
+        "name": "Gescheiden Gezicht en Lichaam Retouchering",
+        "description": "Ontkoppel de Face en Body sliders om de intensiteit van de huidverzachting op het gezicht sterker aan te zetten dan op de armen of het lichaam.",
+        "when_to_use": "Bij modelfotografie waarbij het gezicht een vlekkeloze high-fashion uitstraling vereist, maar de rest van het lichaam zijn natuurlijke textuur moet behouden.",
+        "tools": [
+          "Refine tools (Face / Body split)"
+        ],
+        "effect": "Het gezicht krijgt een verfijnde, zachte textuur terwijl de armen en benen er realistisch blijven uitzien."
+      },
+      {
+        "name": "Gecontroleerd Tanden Bleken",
+        "description": "Verhoog de Teeth Whitening slider tot een gematigd niveau om gele tinten uit het gebit te filteren zonder de omliggende lippen of het tandvlees te demaskeren.",
+        "when_to_use": "Bij portretten met een lachend model waarbij de tanden door omgevingslicht een gele of doffe zweem hebben gekregen.",
+        "tools": [
+          "Teeth whitening"
+        ],
+        "effect": "De tanden worden subtiel witter en lichten natuurlijk op, met een vloeiende overgang bij de randen van het tandvlees."
+      }
+    ],
+    "color_approach": "De kleurbenadering richt zich op een nauwkeurige en gebalanceerde weergave van natuurlijke huidtinten met behulp van de Tone Balance tool. Door kleurafwijkingen in de huid automatisch te corrigeren, ontstaat er een egale en gezonde teint die perfect past bij modelfotografie en portretten onder diffuus licht. De software zorgt ervoor dat de verzadiging in delicate zones zoals de lippen en de overgang naar het tandvlees intact blijft.",
+    "local_adjustments": "Lokale aanpassingen worden door de AI-algoritmen automatisch via intelligente maskers toegepast op specifieke gelaatstrekken zoals de ogen, tanden en de achtergrond. De fotograaf gebruikt deze maskers om handmatig de intensiteit per zone (zoals enkel de iris of de mate van glans) bij te sturen, en kan bovendien kiezen om aanpassingen tussen het gezicht en het lichaam volledig te splitsen.",
+    "what_to_avoid": [
+      "Het te hoog opschroeven van de Teeth Whitening slider, waardoor de tanden onnatuurlijk fel oplichten en de overgang met het tandvlees verloren gaat.",
+      "Het volledig wegpoetsen van karakteristieke kenmerken zoals moedervlekken of schoonheidsvlekjes, aangezien dit de identiteit van het model schaadt."
+    ],
+    "best_for": "Deze technieken zijn het meest waardevol voor portret-, mode- en commerciële fotografen die grote hoeveelheden foto's (batches) efficiënt moeten retoucheren met behoud van een hoogwaardige, natuurlijke textuur.",
+    "unique_insights": [
+      "De software is zo geprogrammeerd dat deze bij de automatische blemish-verwijdering bewust structuren zoals moedervlekken en 'beauty spots' intact laat, omdat deze essentieel zijn voor de identiteit van een persoon.",
+      "In tegenstelling tot veel cloud-gebaseerde AI-tools verwerkt deze software alle algoritmen volledig lokaal op de computer van de fotograaf, wat zorgt voor absolute privacy van de klantgegevens en extreme snelheid bij batch-verwerking.",
+      "Het algoritme voor tandenbleken past een unieke randdetectie toe die een fractie buiten de tanden overvloeit om harde selectieranden te voorkomen, zonder dat de kleur van het tandvlees aangetast wordt."
+    ],
+    "style_preview": "De bewerkingsstijl kenmerkt zich door een feilloze balans tussen high-end retouchering en het behoud van authentieke, menselijke details. De visuele sfeer is professioneel, helder en clean, waarbij de focus ligt op sprekende ogen en een egale huidtextuur zonder dat er een 'plastic' effect optreedt. Deze benadering werkt optimaal voor portret- en modeopnamen onder gecontroleerde lichtomstandigheden. Als fotograaf kun je erop vertrouwen dat je beelden een vlijmscherpe, publicatiewaardige afwerking krijgen die de natuurlijke schoonheid van het model versterkt."
   }
 ]

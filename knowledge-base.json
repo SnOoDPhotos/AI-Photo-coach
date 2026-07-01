@@ -14191,80 +14191,94 @@
   {
     "video_title": "My Wildlife Photography Workflow // Postprocessing Wildlife Photography",
     "photographer_name": "Nick Page",
-    "youtube_url": "https://youtube.com/watch?v=YxOYHYDPKVo",
+    "youtube_url": "https://www.youtube.com/watch?v=YxOYHYDPKVo",
     "genre": [
       "wildlife"
     ],
     "light_conditions": [
       "bewolkt",
-      "zonsopgang"
+      "overcast",
+      "daglicht"
     ],
     "mood": [
-      "dimensionaal",
-      "gepolijst",
-      "sfeervol"
+      "moody",
+      "dramatisch",
+      "naturalistisch"
     ],
     "software": [
-      "Photoshop",
       "Lightroom Classic",
+      "Photoshop",
       "Topaz Photo AI"
     ],
-    "style_description": "Advanced Wildlife Compositing",
-    "philosophy": "Wildlife-fotografie is een geweldige aanvulling op landschapsfotografie. Het vereist een andere workflow waarbij 'culling' (keuzes maken in actiemomenten) cruciaal is. Het doel van de nabewerking is om het onderwerp te isoleren via kleurcontrast (warm onderwerp tegen koude achtergrond) en licht, en om de textuur van het dier te accentueren.",
+    "style_description": "Landscape Style Fine-Art Wildlife",
+    "philosophy": "De kern van deze bewerkingsfilosofie is het toepassen van een doordachte landschaps-workflow op wildlife-beelden om maximale diepte en sfeer te creëren. In plaats van een simpele registratie, ligt de focus op het scheiden van het onderwerp en de achtergrond door middel van complementair kleur- en lichtcontrast. De integriteit van het dier blijft behouden, maar de omgevingsfactoren worden subtiel gemanipuleerd om een schilderachtig, driedimensionaal effect te bereiken.",
     "workflow_order": [
-      "stap 1: Culling: kies de meest actievolle en scherpe opname uit een burst.",
-      "stap 2: Crop voor focus: onderwerp dominant in het frame plaatsen.",
-      "stap 3: Dual processing (als Smart Object): bewerk één keer voor het onderwerp (warmte/detail) en één keer voor de achtergrond (koeler/noise reduction).",
-      "stap 4: Subtiele selectie en maskering (Refine Edge) om het dier perfect te isoleren.",
-      "stap 5: Dodging & Burning met luminosity masks om dimensionaliteit in veren/vacht aan te brengen.",
-      "stap 6: AI-verscherping en noise reduction voor de finishing touch."
+      "stap 1: Selecteer de scherpste actie-opname direct na de shoot en pas een compositiesnede toe met voldoende kijkruimte",
+      "stap 2: Tweak de basisscherpte en maskering in de RAW-fase om ruisvlakken in egale delen direct te ontzien",
+      "stap 3: Open het bestand als een Slim Object in Photoshop en splits de workflow via onafhankelijke kopieën voor dier en achtergrond",
+      "stap 4: Pas lokale luminantiemaskers, dodging en burning en geavanceerde AI-verscherping toe voor de ultieme detaillering"
     ],
     "techniques": [
       {
-        "name": "Warm-Cool Color Contrast",
-        "description": "De achtergrond koeler maken en het dier warmer (kleurtemperatuur), zodat het onderwerp van de foto 'afspringt'.",
-        "when_to_use": "Bij wildlife-foto's met een neutrale of koude achtergrond (bijv. winter/sneeuw).",
+        "name": "Ruisvrij Maskeren van Verscherping",
+        "description": "Houd de Alt-toets ingedrukt en schuif de Maskeren-slider in het detailscherm naar rechts tot de egale lucht of achtergrond volledig zwart kleurt",
+        "when_to_use": "Bij foto's die met hoge ISO-waarden zijn geschoten om te voorkomen dat de korrel in de achtergrond onnodig wordt verscherpt",
         "tools": [
-          "White Balance",
-          "Smart Objects"
+          "Details > Verscherpen > Maskeren"
         ],
-        "effect": "Het onderwerp krijgt extra diepte en visuele dominantie ten opzichte van de achtergrond."
+        "effect": "Alleen de harde randen van het dier worden verscherpt, terwijl de egale achtergrond volledig zacht en ruisarm blijft"
       },
       {
-        "name": "Refine Edge bij Subject Selection",
-        "description": "De automatische 'Select Subject' keuze handmatig verfijnen met de 'Refine Edge' tool om artefacten te voorkomen.",
-        "when_to_use": "Bij elk dier met ingewikkelde details zoals veren of vacht.",
+        "name": "Slim Object Splitsing via Kopie",
+        "description": "Kies via de rechtermuisknop op de laag voor 'Nieuw slim object via kopiëren' om twee onafhankelijk aanpasbare RAW-lagen te genereren",
+        "when_to_use": "Wanneer je de achtergrond extreem koud/zacht wilt bewerken en het dier juist warm, helder en gedetailleerd wilt houden",
         "tools": [
-          "Refine Edge tool",
-          "Layer Mask"
+          "Lagenpaneel > Nieuw slim object via kopiëren"
         ],
-        "effect": "Een professionele en onzichtbare overgang tussen onderwerp en achtergrond."
+        "effect": "Je kunt de RAW-instellingen van de achtergrond en de voorgrond afzonderlijk aanpassen zonder destructieve pixelbewerkingen"
       },
       {
-        "name": "Catch-light Emphasizing",
-        "description": "Lokaal oplichten van de reflectie in het oog van het dier.",
-        "when_to_use": "Wanneer het oog van het dier dof of levenloos oogt.",
+        "name": "Kleurgerichte Luminantie Selectie",
+        "description": "Genereer een Lights-luminantiemasker en manipuleer de kleurconversie door blauw/magenta te verduisteren en geel/rood maximaal op te lichten",
+        "when_to_use": "Om een perfecte, vlekvrije selectie (stencil) te maken van warme dierentinten tegen een koude, besneeuwde of blauwe achtergrond",
         "tools": [
-          "Dodge & Burn layer",
-          "Brush tool"
+          "Lumensia / TK Actions > Lights + Kleurconversie"
         ],
-        "effect": "Het dier krijgt een 'ziel' en de kijker maakt directer contact."
+        "effect": "Er ontstaat een masker waarin alleen de warme verendelen of vacht puur wit oplichten, waardoor handmatig schilderen overbodig wordt"
+      },
+      {
+        "name": "Warmtegeoriënteerd Kleur-Doding",
+        "description": "Stel een penseel in op een zachte, warme oranje-gele tint met een dekking van 40% en schilder binnen een zachte mengmodus-laag op de lichte verendelen",
+        "when_to_use": "Om de natuurlijke textuur en driedimensionaliteit in de schaduw- en middentonen van de vacht of veren subtiel te versterken",
+        "tools": [
+          "Penseel > Modus: Zwak licht (Soft Light)"
+        ],
+        "effect": "De reeds aanwezige lichte delen worden niet alleen helderder, maar krijgen ook een diepere, sfeervolle warme kleurverzadiging"
+      },
+      {
+        "name": "Oog- Catchlight Accentulering",
+        "description": "Zoom diep in op het oog, gebruik een penseel met witte kleur op een aparte overlay-laag en klik heel gericht een paar keer exact op de natuurlijke lichtreflectie",
+        "when_to_use": "Wanneer het oog van het dier door schaduw of diffuus licht dof, levenloos of vlak overkomt",
+        "tools": [
+          "Penseel > Modus: Bedekken (Overlay)"
+        ],
+        "effect": "Het dier krijgt direct een levendige, alerte en sprekende uitdrukking die de blik van de kijker onmiddellijk vasthoudt"
       }
     ],
-    "color_approach": "Hij werkt met een bewuste splitsing: de achtergrond krijgt een 'cobalty blue' tint (koud), terwijl het onderwerp (zoals een adelaar) warmere, neutrale tot gouden tinten behoudt. Dit wordt bereikt door dual processing en het gericht opwarmen van de 'eagle-laag'.",
-    "local_adjustments": "Luminosity masks (met name 'Lights' voor warmte/hooglichten) worden gebruikt om alleen de warme delen van de veren op te lichten. Hij gebruikt ook 'overlay'-lagen voor subtiele Dodge & Burn op veren.",
+    "color_approach": "De kleuraanpak leunt zwaar op de wetten van de complementaire kleurcontrasten. De achtergrond wordt bewust extreem koel, richting kobaltblauw en magenta getrokken, terwijl het dier in de gescheiden laag juist naar de warme, goudgele kant wordt gestuurd. Dit zorgt voor een krachtige kleurseparatie die het dier visueel loskoppelt van de omgeving zonder de verzadiging onnatuurlijk hoog op te hoeven schroeven.",
+    "local_adjustments": "Lokale aanpassingen vormen het fundament van deze methode. In plaats van globale sliders in Lightroom, wordt de foto naar Photoshop gebracht voor pixel-precieze maskering met de 'Refine Edge'-tool om fijne haren en veren perfect vrij te maken. Daarnaast worden luminantiemaskers ingezet om bewerkingen zoals contrastverhoging of het sfeervolle Orton-effect strikt te beperken tot respectievelijk de hooglichten of de middentonen.",
     "what_to_avoid": [
-      "Het simpelweg overnemen van de 'auto white balance' uit de camera; die is zelden correct voor de beoogde 'mood'.",
-      "Slechte maskering (jagged edges) rondom veren of vacht.",
-      "Het verwarren van ruisreductie in de achtergrond met verscherping van het onderwerp (doe dit altijd gescheiden)."
+      "Het blind vertrouwen op de standaard 'Select Subject' maskers van Lightroom zonder de randen handmatig te verfijnen, wat leidt tot lelijke digitale halo's",
+      "Het creëren van een te extreem belichtingsverschil tussen het dier en de achtergrond, waardoor de montage onrealistisch en gephotoshopt oogt",
+      "Het toepassen van zware globale verscherping over de hele foto, wat de ruis in egale achtergronden of waterpartijen enorm versterkt"
     ],
-    "best_for": "Wildlife in uitdagende lichtomstandigheden (hoge ISO, tegenlicht) waarbij een professionele, gepolijste look gewenst is.",
+    "best_for": "Deze methodiek is het meest geschikt voor wildlife-fotografen die te maken hebben met hoge ISO-waardes, diffuse of kille lichtomstandigheden (zoals winterlandschappen) en die hun beelden willen transformeren naar een hoogwaardig, schilderachtig fine-art niveau.",
     "unique_insights": [
-      "Als je een hoge ISO hebt gebruikt (zoals 2000), gebruik dan de 'Masking'-slider in Lightroom bij verscherpen; hiermee voorkom je dat de ruis in de lucht/achtergrond wordt verscherpt, terwijl de details in het dier wel scherp worden.",
-      "Topaz Photo AI is een krachtig hulpmiddel voor wildlife, vooral de 'enhanced resolution' bij gecropte beelden.",
-      "Besteed extra aandacht aan de 'catch-light' in het oog; zonder sprankeling in de pupil voelt een wildlife-portret vaak levenloos, ongeacht hoe technisch perfect de edit is."
+      "Het direct selecteren en weggooien van onscherpe of mislukte burst-opnames op de avond van de shoot zelf werkt het meest effectief, omdat je op dat moment emotioneel nog niet te sentimenteel gehecht bent aan de foto's",
+      "Door de helderheid (Clarity) en textuur in de RAW-fase van de achtergrondlaag bewust naar beneden te schroeven, creëer je kunstmatig een zachtere onscherpte die de optische kwaliteit van je lens visueel lijkt te upgraden",
+      "Topaz Photo AI kan achteraf, via geavanceerde resolutievergroting, microdetails en texturen in de veren of vacht terugbrengen die door een zware compositiesnede (crop) in eerste instantie verloren waren gegaan"
     ],
-    "style_preview": "Deze bewerkingsfilosofie richt zich op een professionele, gepolijste uitstraling, waarbij het hoofddoel is om het wildlife-onderwerp krachtig te isoleren van zijn omgeving. Dit wordt bereikt door strategisch kleurcontrast te benutten, waarbij het onderwerp warmte uitstraalt tegen een koelere, vaak meer ingetogen achtergrond. Deze aanpak is bijzonder effectief voor wildlife-foto's genomen onder uitdagende lichtomstandigheden, zoals hoge ISO-waarden of sterke tegenlichtsituaties, waar de details van het onderwerp anders verloren zouden gaan. Het resultaat is een dynamisch beeld waarin het dier driedimensionaal lijkt los te komen van de achtergrond, wat zorgt voor een impactvolle en artistieke presentatie."
+    "style_preview": "Deze stijl ademt de sfeer van een high-end natuurdocumentaire, waarbij de grens tussen landschaps- en wildlife-fotografie volledig vervaagt. De visuele toon is sfeervol, contrastrijk en diepgaand driedimensionaal dankzij het krachtige samenspel tussen ijskoude achtergronden en warme subject-accenten. Het werkt optimaal voor actie- en portretopnames van dieren in diffuse, winterse of bewolkte omstandigheden waar de natuurlijke separatie minimaal is. Als fotograaf transformeer je hiermee een vlakke registratie in een adembenemend kunstwerk vol textuur, waarin elk haartje of veertje haarscherp naar voren komt. Het eindresultaat is een verfijnd, schilderachtig beeld dat de kracht en de ziel van het dier perfect isoleert."
   },
   {
     "video_title": "Layers and Layer Masks in Photoshop - Photoshop basics",

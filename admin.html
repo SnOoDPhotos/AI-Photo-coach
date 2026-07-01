@@ -103,6 +103,7 @@ input:focus,textarea:focus{border-color:var(--accent)}
         <div style="display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap;align-items:center">
           <button class="btn btn-sm" onclick="generateStylePreviews()">✨ GENEREER STIJL PREVIEWS</button>
           <button class="btn btn-sm btn-outline" onclick="resetStylePreviews()" style="font-size:10px">↺ RESET ALLE PREVIEWS</button>
+          <button class="btn btn-sm btn-outline" onclick="filterWarnings()" id="warnBtn" style="font-size:10px;display:none">⚠ <span id="warnCount">0</span> WAARSCHUWINGEN</button>
           <span id="previewBatchStatus" style="font-family:monospace;font-size:11px;color:var(--muted)"></span>
         </div>
         <div class="filter-bar">
@@ -117,6 +118,7 @@ input:focus,textarea:focus{border-color:var(--accent)}
             <option value="insights_asc">Insights: laag → hoog</option>
             <option value="insights_desc">Insights: hoog → laag</option>
             <option value="photographer">Fotograaf A → Z</option>
+            <option value="warnings_only">⚠ Alleen waarschuwingen</option>
           </select>
         </div>
         <div class="entry-grid" id="entryGrid"></div>
@@ -349,6 +351,11 @@ function loadKnowledge() {
 }
 
 function renderAll() {
+  var warnCount = computeWarnings(localKnowledge);
+  var warnBtn = document.getElementById('warnBtn');
+  var warnCountEl = document.getElementById('warnCount');
+  if (warnBtn) warnBtn.style.display = warnCount > 0 ? '' : 'none';
+  if (warnCountEl) warnCountEl.textContent = warnCount;
   renderStats();
   renderEntries();
   renderGenreFilter();
@@ -391,7 +398,8 @@ function renderEntries() {
   var filtered = localKnowledge.filter(function(e) {
     var ms = !search || (e.video_title||'').toLowerCase().includes(search) || (e.photographer_name||'').toLowerCase().includes(search);
     var mg = !genre || (e.genre||[]).includes(genre);
-    return ms && mg;
+    var mw = sortVal !== 'warnings_only' || (e._warnings && e._warnings.length > 0);
+    return ms && mg && mw;
   });
 
   // Sorting
@@ -400,11 +408,16 @@ function renderEntries() {
   else if (sortVal === 'insights_asc') filtered.sort(function(a,b){ return (a.unique_insights||[]).length - (b.unique_insights||[]).length; });
   else if (sortVal === 'insights_desc') filtered.sort(function(a,b){ return (b.unique_insights||[]).length - (a.unique_insights||[]).length; });
   else if (sortVal === 'photographer') filtered.sort(function(a,b){ return (a.photographer_name||'').localeCompare(b.photographer_name||''); });
+  else if (sortVal === 'warnings_only') filtered.sort(function(a,b){ return (b._warnings||[]).length - (a._warnings||[]).length; });
 
   document.getElementById('entryGrid').innerHTML = filtered.length ? filtered.map(function(e) {
     var idx = localKnowledge.indexOf(e);
     var hasPreview = e.style_preview && e.style_preview.length > 10;
-    return '<div class="entry-card" onclick="showDetail('+idx+')">'
+    var warnings = e._warnings || [];
+    var warnHtml = warnings.length > 0
+      ? '<span style="color:var(--warning,#f0a500);cursor:help;font-size:13px" title="' + warnings.join(', ') + '">⚠</span>'
+      : '<span style="color:var(--muted);font-size:11px">✓</span>';
+    return '<div class="entry-card" onclick="showDetail('+idx+')" style="' + (warnings.length > 0 ? 'border-left:3px solid var(--warning,#f0a500)' : '') + '">'
       + '<div style="flex:1;min-width:0">'
       + '<div class="entry-title">' + (e.video_title||'Geen titel') + '</div>'
       + '<div style="font-size:11px;color:var(--accent);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">' + (e.photographer_name||'') + ' — ' + (e.style_description||'') + '</div>'
@@ -412,9 +425,10 @@ function renderEntries() {
       + (e.genre||[]).map(function(g){return '<span class="tag">'+g+'</span>';}).join('')
       + '</div></div>'
       + '<div style="font-family:monospace;font-size:10px;text-align:right;flex-shrink:0">'
+      + warnHtml + '<br>'
       + '<span style="color:' + ((e.techniques||[]).length >= 3 ? 'var(--success)' : 'var(--error)') + '">' + (e.techniques||[]).length + ' tech</span><br>'
       + '<span style="color:' + ((e.unique_insights||[]).length >= 2 ? 'var(--success)' : 'var(--error)') + '">' + (e.unique_insights||[]).length + ' ins</span><br>'
-      + '<span style="color:' + (hasPreview ? 'var(--success)' : 'var(--muted)') + '" title="' + (hasPreview ? 'Style preview aanwezig' : 'Geen style preview') + '">' + (hasPreview ? '✓ prev' : '○ prev') + '</span>'
+      + '<span style="color:' + (hasPreview ? 'var(--success)' : 'var(--muted)') + '">' + (hasPreview ? '✓ prev' : '○ prev') + '</span>'
       + '</div></div>';
   }).join('') : '<div style="color:var(--muted);font-size:13px;padding:20px;text-align:center">Geen entries gevonden</div>';
 }
@@ -928,7 +942,7 @@ function loadSoftwareCapabilities() {
 }
 
 
-function autoAnalyzeVideos() {
+async function autoAnalyzeVideos() {
   var urlsText = document.getElementById('autoUrls').value.trim();
   document.getElementById('autoError').classList.add('hidden');
   document.getElementById('autoSuccess').classList.add('hidden');
@@ -1129,6 +1143,36 @@ async function generateStylePreviews() {
   }
 }
 
+
+function filterWarnings() {
+  var sortEl = document.getElementById('filterSort');
+  if (sortEl) {
+    sortEl.value = 'warnings_only';
+    renderEntries();
+  }
+}
+
+function computeWarnings(entries) {
+  var CHANNEL_INDICATORS = ['studio', 'photography', 'films', 'productions', 'official', 'channel', 'media', 'creative', 'visuals', 'guys', 'brothers', 'labs', 'guy'];
+  var KNOWN_MOODS = ['moody', 'dramatisch', 'rustig', 'levendig', 'naturalistisch', 'cinematisch', 'romantisch', 'donker', 'licht', 'mystiek', 'energiek', 'melancholisch', 'strak', 'commercieel', 'speels', 'surrealistisch', 'minimalistisch', 'nostalgisch'];
+  var total = 0;
+  entries.forEach(function(e) {
+    var w = [];
+    var name = (e.photographer_name || '').trim();
+    if (name === name.toUpperCase() && name.length > 3 && name !== name.toLowerCase()) w.push('naam in hoofdletters');
+    var nl = name.toLowerCase();
+    for (var i = 0; i < CHANNEL_INDICATORS.length; i++) {
+      if (nl.includes(CHANNEL_INDICATORS[i])) { w.push('kanaalnaam?'); break; }
+    }
+    (e.mood || []).forEach(function(m) {
+      if (!KNOWN_MOODS.includes(m.toLowerCase())) w.push('onbekende mood: ' + m);
+    });
+    if ((e.techniques || []).length < 3) w.push('< 3 technieken');
+    if ((e.unique_insights || []).length < 2) w.push('< 2 insights');
+    if (w.length > 0) { e._warnings = w; total++; } else { delete e._warnings; }
+  });
+  return total;
+}
 
 async function resetStylePreviews() {
   if (!confirm('Alle bestaande stijl previews wissen? Ze worden zonder fotografnamen opnieuw gegenereerd.')) return;

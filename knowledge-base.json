@@ -5580,97 +5580,91 @@
   {
     "video_title": "RAW Photo Editing Basics: Pro Tips I Wish I Learned Sooner",
     "photographer_name": "Mark Denney",
-    "youtube_url": "https://youtu.be/Aiba1ZM12HY?is=duJbmLSyov2KXfEa",
+    "youtube_url": "https://www.youtube.com/watch?v=Aiba1ZM12HY",
     "genre": [
       "landschap"
     ],
     "light_conditions": [
       "gouden uur",
-      "bewolkt",
-      "tegenlicht"
+      "diffuus licht"
     ],
     "mood": [
-      "naturalistisch",
-      "rustig"
+      "dramatisch",
+      "levendig"
     ],
     "software": [
       "Lightroom Classic"
     ],
-    "style_description": "Natural Balanced Landscape",
-    "philosophy": "De benadering richt zich op een logisch, stapsgewijs proces om de maximale flexibiliteit uit een RAW-bestand te halen zonder te over-editen. In plaats van direct creatieve effecten toe te passen, bouwt de methode systematisch op van lens- en compositiecorrecties naar globale tonen, waarna pas gerichte kleurharmonie en lokale maskers worden ingezet. Dit zorgt voor een schone, realistische en herhaalbare workflow.",
+    "style_description": "Clean Vibrant Mountain Glow",
+    "philosophy": "Een RAW-bestand is als een digitaal negatief dat van nature vlak en contrastarm is; de fotograaf moet de opgeslagen informatie er bewust zelf uithalen. De workflow is gestructureerd van boven naar beneden, waarbij de globale belichting eerst in balans wordt gebracht voordat de creatieve stappen worden gezet. Door herhaalbare en overzichtelijke stappen te volgen, behoud je de maximale beeldkwaliteit en stuur je de blik van de kijker doelgericht naar het hart van de compositie.",
     "workflow_order": [
-      "Stap 1: Optische lensprofielcorrecties toepassen en chromatische aberratie verwijderen",
-      "Stap 2: De compositie perfectioneren (uitsnijden en de horizon handmatig rechtzetten)",
-      "Stap 3: Het cameraprofiel (Color Profile) kiezen als fundamentele kleur- en contrastbasis",
-      "Stap 4: Globale witbalans instellen om de algehele kleurtemperatuur te corrigeren",
-      "Stap 5: De globale basistonen (Exposure, Highlights en Shadows) balanceren",
-      "Stap 6: Wit- en zwartpunten nauwkeurig kalibreren voor het dynamisch bereik",
-      "Stap 7: Globale aanwezigheid (Clarity, Texture en Vibrance) subtiel doseren",
-      "Stap 8: Gerichte sfeer en contrast toevoegen via de Tooncurve (Curves)",
-      "Stap 9: Kleurharmonie finetunen met het HSL-paneel en Color Grading",
-      "Stap 10: Doelgerichte lokale aanpassingen en maskers toepassen voor de definitieve lichtsturing"
+      "stap 1: Balanceer de globale blootstelling in het basispaneel door schaduwen te openen en het wit- en zwartpunt exact vast te leggen.",
+      "stap 2: Voer een initiële uitsnijding (crop) uit om de compositie rondom het onderwerp en storende randelementen strak te zetten.",
+      "stap 3: Versterk en harmoniseer de kleuren via de Camerakalibratie (Calibration) en verfijn de individuele kanalen in de Kleurenmixer.",
+      "stap 4: Corrigeer de witbalans op basis van de aangepaste kleuren en breng lokale maskers aan om diepte, contrast en lichtinval te perfectioneren."
     ],
     "techniques": [
       {
-        "name": "Optical Slate Preparation",
-        "description": "Het direct bij aanvang inschakelen van de ingebouwde lensprofielcorrecties en aberratie-verwijdering om lensvervorming, ongewenste vignetten en kleurrandjes te elimineren.",
-        "when_to_use": "Universeel toepasbaar als de absolute eerste stap op elk RAW-landschapsbestand.",
+        "name": "Exacte Witpuntbepaling",
+        "description": "Houd de Option-toets (Mac) of Alt-toets (Windows) ingedrukt tijdens het verschuiven van de Witte tinten (Whites) totdat de eerste pixels op het zwarte scherm doorbreken om clipping te voorkomen.",
+        "when_to_use": "Tijdens de initiële belichtingsbalans bij landschappen met heldere elementen of sneeuw om maximale helderheid te behalen zonder detailverlies.",
         "tools": [
-          "Lens Corrections Panel / Lenscorrecties"
+          "Basispaneel"
         ],
-        "effect": "Het RAW-bestand wordt optisch geneutraliseerd, waardoor een perfect vlak en betrouwbaar canvas ontstaat voor de verdere tonale bewerking."
+        "effect": "Er wordt een zuiver witpunt in de foto gedefinieerd, waardoor het fletse karakter van het RAW-bestand direct verdwijnt."
       },
       {
-        "name": "Profile-First Foundation Selection",
-        "description": "Het bewust kiezen van een specifiek cameraprofiel (zoals Adobe Landscape of Camera Matching profielen) vóórdat er aan welke andere slider dan ook wordt gedraaid.",
-        "when_to_use": "Cruciaal bij de start van de bewerking om te bepalen hoe de camera-data tonaal wordt geïnterpreteerd.",
+        "name": "Kleurmenging via Blauwe Primaire Kalibratie",
+        "description": "Verhoog de verzadiging (Saturation) van de Blauwe primaire kleur in het kalibratiepaneel aanzienlijk en verschuif de Kleurtoon (Hue) naar links om een rijke, warme gloed in de tegenoverliggende tinten op te wekken.",
+        "when_to_use": "Bij landschapsfoto's tijdens het gouden uur waar warme zonlichtaccenten op bergen of vegetatie extra moeten spreken.",
         "tools": [
-          "Profile Browser / Profielkiezer"
+          "Kalibratie"
         ],
-        "effect": "Het verandert de manier waarop kleuren en contrasten op de sliders reageren, wat overmatige bewerkingen later in de workflow voorkomt."
+        "effect": "De warme tinten in de foto worden intenser en sfeervoller zonder dat afzonderlijke kleuren er onnatuurlijk dik bovenop liggen."
       },
       {
-        "name": "Dynamic Range Clipping Calibration",
-        "description": "Het exact bepalen van de uiterste wit- en zwartpunten door de Option/Alt-toets ingedrukt te houden tijdens het verschuiven van de Whites en Blacks sliders totdat de eerste pixels beginnen te 'clippen'.",
-        "when_to_use": "Bij landschappen met een hoog contrast (zoals tegenlicht of heldere luchten) waar uitgebleekte lichten of dichtgelopen schaduwen vermeden moeten worden.",
+        "name": "Etheerse Sfeerschepping",
+        "description": "Pas subtiele textuur (+10) toe voor microcontrast, maar verlaag tegelijkertijd de Helderheid (Clarity, -5) en de Nevel verwijderen (Dehaze, -10) in het aanwezigheidspaneel.",
+        "when_to_use": "Wanneer een landschap een dromerige, zachte en mistige uitstraling nodig heeft zonder aan scherpte te verliezen op de belangrijkste structuren.",
         "tools": [
-          "Basic Panel / Whites & Blacks Sliders",
-          "Option/Alt-key clipping preview"
+          "Basispaneel"
         ],
-        "effect": "Het dynamisch bereik van de foto wordt maximaal opgerekend zonder dat er cruciale details in de puur witte of gitzwarte partijen verloren gaan."
+        "effect": "De harde digitale overgangen worden verzacht en er ontstaat een sfeervolle, dromerige gloed over het gehele landschap."
       },
       {
-        "name": "Subtle S-Curve Contrast Infusion",
-        "description": "Het plaatsen van strategische punten op de tooncurve om een flauwe S-vorm te maken, waarmee het contrast onafhankelijk van de globale sliders wordt gestileerd.",
-        "when_to_use": "Wanneer de globale tonen in de basis correct zijn ingesteld, maar het beeld nog een verfijnde, tastbare diepte en 'punch' mist.",
+        "name": "Lichtsturing via Radiaal Verloop",
+        "description": "Trek een groot Radiaal verloop over het centrale gedeelte van het beeld, verhoog de belichting met circa +0.20 en voeg extra contrast toe.",
+        "when_to_use": "In combinatie met een globaal vignet om de blik van de kijker dwingend naar het belangrijkste deel van de compositie te leiden.",
         "tools": [
-          "Tone Curve / Tooncurve"
+          "Maskeren",
+          "Radiaal verloop"
         ],
-        "effect": "De middentonen krijgen een gecontroleerde contrastinjectie die veel zachter en vloeiender oogt dan de globale contrast-slider."
+        "effect": "Het centrum van de foto licht subtiel op en krijgt extra punch, waardoor een natuurlijke spotlight-werking ontstaat."
       },
       {
-        "name": "Targeted Color Harmonization",
-        "description": "Het selectief isoleren en bijsturen van specifieke kleurgroepen (zoals het verschuiven van storend flets groen naar warmer geel) en het gecontroleerd doseren van de luminantie per kleurkanaal.",
-        "when_to_use": "Bij landschappen waar bepaalde vegetatie of luchttinten te dominant aanwezig zijn en de rust in de compositie verstoren.",
+        "name": "Omgevingswaas nabootsen",
+        "description": "Plaats een groot radiaal masker over de zijde waar het licht vandaan komt, verhoog de belichting marginaal en schuif Dehaze naar negatieve waarden.",
+        "when_to_use": "Bij foto's met zijlicht of tegenlicht om de natuurlijke aanwezigheid van sfeervol zonlicht in de luchtlagen te accentueren.",
         "tools": [
-          "Color Mixer / HSL Panel"
+          "Maskeren",
+          "Radiaal verloop"
         ],
-        "effect": "Het kleurenpalet wordt versmald en in harmonie gebracht, waardoor het landschap een rustige en professionele uitstraling krijgt."
+        "effect": "Er ontstaat een zachte, sfeervolle lichtwaas die over de bergen en het landschap heen valt, wat de dieptewerking vergroot."
       }
     ],
-    "color_approach": "De kleuraanpak is geworteld in realisme en harmonie. Er wordt bewust gewerkt met Vibrance in plaats van Saturation om huid- en landskleurpartijen die al verzadigd zijn te beschermen. Kleurverschuivingen in het HSL-paneel worden subtiel ingezet om concurrerende natuurkleuren naar elkaar toe te buigen, zodat er een gebalanceerd en samenhangend palet ontstaat.",
-    "local_adjustments": "Maskers en lokale aanpassingen (zoals radiale en lineaire verloopfilters) worden strikt bewaard voor de absolute eindfase van de workflow. Pas wanneer de globale tonen, curven en kleuren perfect in balans zijn, worden deze tools ingezet om de blik van de kijker subtiel door het landschap te geleiden.",
+    "color_approach": "De fotograaf gebruikt een uitgekiende kleurworkflow die start in het kalibratiepaneel om een rijke, harmonieuze basis te leggen. Daarna tempert hij specifieke storende kanalen (zoals het verlagen van oververzadigd blauw met -40) en verhoogt hij de luminantie van warme tinten zoals oranje en geel (+20 tot +30) om het warme zonlicht op de bergwanden te isoleren en eruit te laten springen.",
+    "local_adjustments": "Lokale maskers worden intensief gebruikt om de opname richting te geven. Door de lucht apart te maskeren en de belichting bijna een stop te verlagen, herpakt hij het drama. Met het penseelmasker en een flow van 55% schildert hij handmatig extra licht op de door de zon geraakte bergtoppen, en via objectselectie haalt hij schaduwdetails op in personen om kledingcontrast te scheiden.",
     "what_to_avoid": [
-      "Vermijd het direct gebruiken van creatieve kleurentools of maskers aan het begin van de bewerking; dit verstoort de tonale basis.",
-      "Vermijd de globale Contrast-slider als primaire tool om diepte te creëren; gebruik in plaats daarvan de Tooncurve voor een vloeiendere scheiding.",
-      "Vermijd de globale Saturation-slider om te voorkomen dat kleuren onnatuurlijk hard uitslaan en gaan 'bloeden' in de details."
+      "Het vroegtijdig instellen van de definitieve witbalans; als dit vóór de kleurverzadiging gebeurt, raakt de kleurtemperatuur later in de workflow volledig uit balans.",
+      "Het overmatig globaal verlagen van de hooglichten om de lucht te redden, waardoor de rest van het landschap zijn sprankeling verliest."
     ],
-    "best_for": "Landschapsfotografie, natuurbeelden en reisfotografie waarbij de fotograaf op zoek is naar een gestructureerde, herhaalbare methode om het maximale potentieel uit een RAW-bestand te halen.",
+    "best_for": "Berg- en weidse landschapsfotografie waarbij sprake is van een duidelijke lichtbron en waar structuren en sfeer hand in hand moeten gaan.",
     "unique_insights": [
-      "Het kiezen van je Cameraprofiel (Color Profile) is de belangrijkste beslissing die je kunt nemen: het is de daadwerkelijke fundering van je edit. Als je dit pas halverwege aanpast, reset je onbewust de tonale reactie van al je eerdere slider-aanpassingen.",
-      "Gebruik de Option/Alt-sneltoets bij het kalibreren van je Whites en Blacks. Deze visuele overlay laat je exact zien op welk breekpunt de camera-sensor details verliest, waardoor je het histogram niet eens actief hoeft te monitoren."
+      "De witbalans wordt bewust pas gecorrigeerd nádat de verzadiging in kalibratie en de kleurenmixer is ingesteld, om te voorkomen dat zware kleurverschuivingen de zorgvuldig gekozen temperatuur naderhand weer verruïneren.",
+      "Om de witbalans visueel perfect te controleren, schuift hij Vibrance en Saturation tijdelijk naar +100; hiermee worden kleurzwemen in koude en warme tonen direct pijnlijk zichtbaar, zodat ze accuraat geneutraliseerd kunnen worden.",
+      "Hij hanteert een strikte 'top-down' Lightroom-structuur en dwingt zichzelf via de 'Solo Mode' om slechts één paneel tegelijk open te hebben, wat scrollen elimineert en zorgt dat bewerkingskeuzes elkaar niet onbewust tegenwerken."
     ],
-    "style_preview": "Deze bewerkingsfilosofie streeft naar een natuurlijke en gebalanceerde weergave, waarbij het maximale potentieel uit een RAW-bestand wordt gehaald zonder te overdrijven. In plaats van direct creatieve effecten toe te passen, bouwt deze stijl systematisch op vanuit de basis van de opname, gericht op het benutten van de inherente flexibiliteit van het RAW-bestand. Het werkt uitstekend voor landschaps-, natuur- en reisfotografie, waar het de inherente schoonheid van de scène onder diverse lichtomstandigheden benadrukt. Het verwachte visuele effect is een authentieke, levendige maar realistische weergave met behoud van detail en een natuurlijke diepte, alsof je er zelf bij bent."
+    "style_preview": "Deze stijl kenmerkt sich door een heldere, levendige en diepe visuele sfeer waarin de dynamiek van natuurlijk licht optimaal tot uiting komt. De kernfilosofie draait om het creëren van een strakke lichtrichting en het herstellen van het contrast dat in de vlakke RAW-opname verborgen zit, zonder dat de bewerking geforceerd oogt. Voor een fotograaf die deze benadering toepast, werkt de stijl perfect op berglandschappen met dynamische wolkenluchten en warme zonnestralen. Het uiteindelijke resultaat is een loepzuivere, contrastrijke plaat waarin het onderwerp direct naar voren springt en de kijker subtiel door de compositie wordt geleid."
   },
   {
     "video_title": "No More MASK EDGES with THIS Lightroom TRICK!",

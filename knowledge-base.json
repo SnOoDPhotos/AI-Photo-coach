@@ -41809,5 +41809,93 @@
       "De interface-worsteling die veel fotografen met Lightroom hebben, verdwijnt direct bij de overstap naar een logischer mappen-gebaseerd systeem."
     ],
     "style_preview": "Deze stijl is puur, authentiek, minimalistisch en diep geworteld in een respect voor de gefotografeerde realiteit. Het weigert mee te gaan in overgeproduceerde, kunstmatige AI-looks en focust op pure optische perfectie en snelheid. Ideaal voor de pragmatische fotograaf die de absolute controle over zijn portemonnee én zijn beeldbestanden wil behouden."
+  },
+  {
+    "video_title": "How I Edit My Football Photos: Before and After Lightroom Tutorial",
+    "photographer_name": "Otto Arney",
+    "youtube_url": "https://www.youtube.com/watch?v=qMLQJLaJSV0",
+    "genre": [
+      "sport"
+    ],
+    "light_conditions": [
+      "daglicht"
+    ],
+    "mood": [
+      "levendig",
+      "moody",
+      "cinematisch"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Vibrant Film Sports Photography",
+    "philosophy": "De kern van deze bewerkingsfilosofie is het transformeren van standaard sportregistraties naar gestileerde, dynamische beelden met een analoog filmrandje. Het doel is om afleidende omgevingskleuren te neutraliseren, zodat de nadruk volledig op de atleet en de actie komt te liggen. Door middel van gerichte lokale maskers en specifieke kleurverschuivingen wordt een herkenbare, artistieke handtekening aan de sportfoto meegegeven.",
+    "workflow_order": [
+      "stap 1: Pas een basis-preset toe als startpunt en corrigeer direct de witbalans en de belichting om de juiste toon te zetten",
+      "stap 2: Optimaliseer de compositie door strak in te zoomen op de actie en storende elementen aan de randen weg te snijden",
+      "stap 3: Corrigeer extreme kleurzwemen via het HSL-paneel door verzadiging van storende achtergrondkleuren drastisch te verlagen",
+      "stap 4: Gebruik specifieke maskers om achtergronden zoals de lucht of het veld los van de atleet te balanceren en dramatiseren"
+    ],
+    "techniques": [
+      {
+        "name": "Kleurzweem Compensatie met Tint",
+        "description": "Verschuif de Tint-slider in het basispaneel richting magenta om een overweldigende gele of groenachtige zweem van het sportveld op te vangen",
+        "when_to_use": "Wanneer foto's door reflectie van het kunstgras of felle zon een te sterke geel-groene gloed over het hele beeld hebben",
+        "tools": [
+          "Basispaneel > Witbalans > Tint"
+        ],
+        "effect": "De onnatuurlijke gele gloed verdwijnt en de algehele kleurbalans trekt recht naar natuurlijke huidtinten"
+      },
+      {
+        "name": "Doelgerichte Oranje Reductie",
+        "description": "Verlaag de verzadiging van de kleur oranje in het HSL-paneel aanzienlijk tot waarden rond de -27",
+        "when_to_use": "Bij sportfoto's in de felle zon waar de huidtinten van atleten door de preset of het omgevingslicht te oranje en onnatuurlijk uitslaan",
+        "tools": [
+          "HSL / Kleur > Verzadiging > Oranje"
+        ],
+        "effect": "De huidskleur van de sporters krijgt een veel realistischer, rustiger en professioneler uiterlijk"
+      },
+      {
+        "name": "Dramatische Lucht Selectie",
+        "description": "Pas een masker toe op de lucht, verlaag de belichting en de hooglichten en verhoog de Dehaze met +10 tot +15",
+        "when_to_use": "Wanneer de achtergrond of lucht boven het stadion flets en overbelicht is en de details in de wolken ontbreken",
+        "tools": [
+          "Maskeren > Selecteer lucht"
+        ],
+        "effect": "De wolkenstructuren worden krachtig zichtbaar en de blauwe tinten in de lucht worden dieper zonder de atleet te beïnvloeden"
+      },
+      {
+        "name": "Highlight Bloom via Negatieve Helderheid",
+        "description": "Verlaag de Helderheid (Clarity) in het effectenpaneel naar een negatieve waarde om een zachte gloed rondom lichte delen te creëren",
+        "when_to_use": "Bij close-up sportportretten met een sterk onscherpe achtergrond om een dromerige, analoge filmlook te genereren",
+        "tools": [
+          "Effecten > Helderheid"
+        ],
+        "effect": "De scherpe digitale randen verzachten en de hooglichten lijken subtiel over te vloeien in de schaduwen"
+      },
+      {
+        "name": "Optische Lenscorrectie Activatie",
+        "description": "Vink standaard de opties 'Correctie lensprofiel inschakelen' en 'Chromatische aberratie verwijderen' aan",
+        "when_to_use": "Bij elke sportfoto die met lange telelenzen is geschoten om lensfouten in de basis te elimineren",
+        "tools": [
+          "Optica"
+        ],
+        "effect": "Vervormingen aan de randen en storende paarse of groene randjes rondom de atleten worden automatisch gecorrigeerd"
+      }
+    ],
+    "color_approach": "De kleuraanpak richt zich op het isoleren van de teamkleuren van de jerseys (zoals diep rood of fel geel) en het naar rechts verschuiven van de groene tinten om het speelveld een verzadigde, frisse matting te geven. Storende reflecties in de huidtinten worden gecorrigeerd door selectief oranje en geel te desatureren. Voor een meer filmische uitstraling wordt de kleurtemperatuur bewust naar de koelere, blauwe kant getrokken.",
+    "local_adjustments": "Lokale aanpassingen worden ingezet om de achtergrond te scheiden van de actie op de voorgrond. Door de lucht selectief te maskeren en donkerder te maken, ontstaat er meer contrast met de spelers. Penselen worden gebruikt om de belichting op specifieke details, zoals het vizier van een helm of een logo op het uniform, selectief op te lichten zodat de essentie van het moment extra benadrukt wordt.",
+    "what_to_avoid": [
+      "Het oververzadigd laten van felle achtergrondkleuren waardoor de atleet visueel wegvalt in de omgeving",
+      "Te veel helderheid (Clarity) toepassen op een achtergrond met veel publiek, wat zorgt voor een onrustig en rommelig beeld",
+      "De compositie te ruim laten waardoor de emotie en de details van de speler verloren gaan in de weidsheid van het stadion"
+    ],
+    "best_for": "Deze technieken zijn uitermate waardevol voor sportfotografen die actievolle veldsporten fotograferen, zoals voetbal of American football, en hun foto's een moderne, krachtige en filmische uitstraling willen meegeven voor social media of redactiooneel gebruik.",
+    "unique_insights": [
+      "Het verhogen van de algehele belichting (Exposure) kan paradoxaal genoeg helpen om oververzadigde, modderige oranje tinten in de huid juist op te lichten en zachter te maken",
+      "Bij het bewerken van een sportfoto met een specifieke club- of stadionidentiteit is het belangrijk om herkenbare elementen in de achtergrond, zoals een clublogo of de stadionband, bewust in de uitsnede te behouden in plaats van ze volledig weg te snijden",
+      "De filmische 'glow' op de hooglichten van een sportfoto wordt versterkt door de Helderheid (Clarity) te verlagen en dit te compenseren met een lichte verhoging van de Textuur voor het behoud van de scherpte op de jersey"
+    ],
+    "style_preview": "Deze stijl combineert de rauwe energie van sportfotografie met de esthetiek van een cinematische speelfilm. De visuele toon is energiek, contrastrijk en sfeervol koel met perfect gebalanceerde huidtinten. Het werkt optimaal voor actiefoto's bij helder daglicht waar teamkleuren en expressies de hoofdrol moeten spelen. Als fotograaf transformeer je hiermee een harde, digitale sportplaat in een dynamisch beeld met diepte, sprekende details en een professionele afwerking."
   }
 ]

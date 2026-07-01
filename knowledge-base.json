@@ -44942,5 +44942,94 @@
       "Om te controleren of een lokaal masker perfect aansluit zonder halo's, kun je het masker in ACR tijdelijk dupliceren, inverteren en de exposure extreem verlagen; als er geen gloeiende randen rondom objecten zichtbaar worden, is het masker technisch perfect."
     ],
     "style_preview": "Deze workflowgerichte stijl richt zich op het behoud van de ultieme beeldkwaliteit en creatieve controle over landschapsfoto's. De visuele sfeer is puur naturalistisch en gebalanceerd, omdat het overmatig bewerken of 'platlaan' van het dynamisch bereik actief wordt voorkomen. Deze methodiek werkt het beste voor complexe landschappen met uitdagende overgangen, zoals bomen tegen een felle lucht, waarbij precisie-maskering vereist is. Als fotograaf kun je een workflow verwachten waarin je op elk gewenst moment fouten kunt herstellen, maskers kunt aanpassen en naadloos kunt schakelen tussen globale RAW-kracht en lokale Photoshop-precisie."
+  },
+  {
+    "video_title": "The Best Kept Secret for Colorful Photos",
+    "photographer_name": "Serge Ramelli",
+    "youtube_url": "https://www.youtube.com/watch?v=oATfmYrzYvI",
+    "genre": [
+      "landschap"
+    ],
+    "light_conditions": [
+      "gouden uur",
+      "overcast"
+    ],
+    "mood": [
+      "levendig",
+      "dramatisch"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Kleurrijke, dramatische landschapsstijl",
+    "philosophy": "De fotograaf streeft naar wat hij 'natural drama' noemt: het maximaliseren van de visuele impact binnen de grenzen van de menselijke ervaring. Dit begint bij de opnamefase door te belichten voor de hooglichten om details en kleuren in de lucht te behouden, in plaats van achteraf kleur te forceren. Een gebalanceerde nabewerking zorgt ervoor dat de foto niet over- of onder-geretoucheerd oogt.",
+    "workflow_order": [
+      "stap 1: Belicht tijdens het fotograferen voor de hooglichten/lucht om details en verzadiging te behouden.",
+      "stap 2: Importeer de RAW-bestanden in Lightroom en pas een basis preset toe voor kleur en contrast.",
+      "stap 3: Stel het zwart- en witpunt handmatig in door de optie/Alt-toets ingedrukt te houden tijdens het schuiven.",
+      "stap 4: Gebruik AI-maskering om lokale aanpassingen (zoals een zonne-glow) achter specifieke objecten te plaatsen."
+    ],
+    "techniques": [
+      {
+        "name": "Belichten voor de lucht",
+        "description": "Onderbelicht de foto bewust tijdens de opname om details in de lucht (zoals roze tinten bij zonsopgang) te behouden, omdat sensoren gevoeliger zijn voor donkere dan voor lichte partijen.",
+        "when_to_use": "Tijdens zonsopgang of zonsondergang met een heldere lucht.",
+        "tools": [
+          "Camera (handmatige belichting)"
+        ],
+        "effect": "Behoudt verzadigde kleuren en texturen in de lucht zonder dat deze wit uitbijten."
+      },
+      {
+        "name": "Handmatige instelling Zwart/Witpunt",
+        "description": "Houd de Option/Alt-toets ingedrukt terwijl je de Whites en Blacks schuifregelaars beweegt om het clipping-punt nauwkeurig te bepalen.",
+        "when_to_use": "Direct na het toepassen van een basis preset of bij het starten van een edit.",
+        "tools": [
+          "Lightroom Classic"
+        ],
+        "effect": "Verhoogt het dynamisch bereik en de definitie van de foto, waardoor deze uit 'grijs' en vlak oogt."
+      },
+      {
+        "name": "AI-gestuurde intersectie maskers",
+        "description": "Maak een circulair masker voor een lichteffect en gebruik de 'intersect' functie met 'Select Sky' om het effect achter objecten (zoals bomen) te laten vallen.",
+        "when_to_use": "Wanneer je een lichtbron zoals de zon wilt simuleren zonder dat deze de voorgrond onnatuurlijk beïnvloedt.",
+        "tools": [
+          "Lightroom Classic"
+        ],
+        "effect": "Creëert een realistische, gelaagde lichtinval die achter elementen verdwijnt."
+      },
+      {
+        "name": "Lange sluitertijd voor rust",
+        "description": "Gebruik een ND10-filter bij een sluitertijd van 30 seconden om de beweging van water te verzachten.",
+        "when_to_use": "Bij zeegezichten met saai licht of veel onrustige elementen.",
+        "tools": [
+          "ND-filter",
+          "Statief"
+        ],
+        "effect": "Zorgt voor een minimalistische, dromerige textuur in het wateroppervlak."
+      },
+      {
+        "name": "Dodge & Burn via maskers",
+        "description": "Gebruik een penseel met 100% feather en aangepaste dichtheid om specifieke gebieden donkerder te maken om de focus te verleggen naar het hoofdonderwerp.",
+        "when_to_use": "Wanneer de kijker wordt afgeleid door lichte elementen aan de rand van de compositie.",
+        "tools": [
+          "Lightroom Classic"
+        ],
+        "effect": "Stuurt de aandacht van de kijker effectief naar het belangrijkste onderwerp."
+      }
+    ],
+    "color_approach": "De fotograaf gebruikt een preset als basis om kleurharmonie te creëren, maar voegt daarna handmatig magenta of geel toe afhankelijk van het licht. Hij focust op het behouden van verzadiging door correcte belichting, waarbij hij de schaduwen pas achteraf ophaalt.",
+    "local_adjustments": "Maskers worden essentieel ingezet voor 'Dodge & Burn' en om lichteffecten (zoals de zon) achter objecten te isoleren met AI-intersecties. Dit gebeurt altijd als laatste stap om de diepte in de scène te versterken.",
+    "what_to_avoid": [
+      "Overbelichten van de foto tijdens het fotograferen (waardoor kleur in de lucht verdwijnt)",
+      "Het opnemen van onnodige storende elementen (zoals boten of afval) in de compositie",
+      "Het negeren van de lichtrichting bij het bepalen van de compositie"
+    ],
+    "best_for": "Landschappen en stadsgezichten waarbij dramatisch licht of een indrukwekkende zonsopgang/zonsondergang het hoofdonderwerp vormen.",
+    "unique_insights": [
+      "Hij raadt aan om eerst het licht en de lucht te observeren voordat je op zoek gaat naar een onderwerp, omdat in steden als Parijs het licht de foto maakt, niet het gebouw zelf.",
+      "Bij het fotograferen van zeegezichten met een 30-seconden sluitertijd is het cruciaal om meerdere belichtingen te nemen en direct in te zoomen op 100% om scherpte te controleren; anders riskeer je een gemiste kans.",
+      "Hij gebruikt AI-maskers niet alleen voor verlichting, maar specifiek om lichteffecten achter objecten te laten 'verdwijnen', wat een 3D-effect creëert."
+    ],
+    "style_preview": "De stijl van Serge Ramelli kenmerkt zich door een krachtige, bijna filmische kwaliteit die hij 'natural drama' noemt. Zijn bewerkingen zijn erop gericht om de emotie en de kleuren van het gouden uur te versterken zonder in 'over-processed' territorium te komen. Als fotograaf kun je deze stijl inzetten om alledaagse locaties om te toveren tot galeries-waardige beelden door zorgvuldig te belichten en slim gebruik te maken van AI-maskers voor diepte. Het verwachte resultaat is een foto met een hoge impact, heldere contrasten en een feilloze kleurbalans."
   }
 ]

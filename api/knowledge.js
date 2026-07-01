@@ -71,6 +71,100 @@ const GENRE_NORMALIZATION = {
   'action': 'sport'
 };
 
+// ── Software normalisatie ─────────────────────────────────────────────────
+const SOFTWARE_NORMALIZATION = {
+  'camera raw': 'Photoshop',
+  'camera raw (photoshop)': 'Photoshop',
+  'adobe camera raw': 'Photoshop',
+  'acr': 'Photoshop',
+  'lightroom cc': 'Lightroom Classic',
+  'adobe lightroom classic': 'Lightroom Classic',
+  'adobe lightroom': 'Lightroom Classic',
+  'lr classic': 'Lightroom Classic',
+  'lrc': 'Lightroom Classic',
+  'lightroom mobile': 'Lightroom Mobile',
+  'adobe lightroom mobile': 'Lightroom Mobile',
+  'lr mobile': 'Lightroom Mobile',
+  'adobe photoshop': 'Photoshop',
+  'ps': 'Photoshop',
+  'capture one pro': 'Capture One',
+  'captureone': 'Capture One',
+  'c1': 'Capture One',
+  'dxo': 'DxO PhotoLab',
+  'dxo photolab': 'DxO PhotoLab',
+  'luminar': 'Luminar Neo',
+  'luminar ai': 'Luminar Neo',
+  'luminar 4': 'Luminar Neo',
+  'on1': 'ON1 Photo RAW',
+  'on1 photo raw': 'ON1 Photo RAW',
+  'affinity photo': 'Affinity Photo',
+  'affinity': 'Affinity Photo',
+  'raw therapee': 'RawTherapee',
+  'rawtherapee': 'RawTherapee',
+  'bazaart': null
+};
+
+function normalizeSoftware(software) {
+  if (!Array.isArray(software)) return software;
+  const seen = new Set();
+  return software.map(function(s) {
+    const normalized = SOFTWARE_NORMALIZATION[s.toLowerCase().trim()];
+    if (normalized === null) return null; // verwijder ongeldige software
+    return normalized !== undefined ? normalized : s;
+  }).filter(function(s) {
+    if (s === null || seen.has(s)) return false;
+    seen.add(s);
+    return true;
+  });
+}
+
+// ── Kwaliteitscheck voor waarschuwingen ────────────────────────────────────
+const CHANNEL_NAME_INDICATORS = ['studio', 'photography', 'films', 'productions', 'official', 'channel', 'media', 'creative', 'visuals', 'guys', 'brothers', 'labs'];
+const KNOWN_MOODS = ['moody', 'dramatisch', 'rustig', 'levendig', 'naturalistisch', 'cinematisch', 'romantisch', 'donker', 'licht', 'mystiek', 'energiek', 'melancholisch', 'strak', 'commercieel', 'speels', 'surrealistisch', 'minimalistisch', 'nostalgisch'];
+
+function getEntryWarnings(entry) {
+  const warnings = [];
+  const name = (entry.photographer_name || '').trim();
+
+  // Kanaalnaam indicatoren
+  if (name === name.toUpperCase() && name.length > 3) {
+    warnings.push('naam volledig in hoofdletters');
+  }
+  const nameLower = name.toLowerCase();
+  for (const indicator of CHANNEL_NAME_INDICATORS) {
+    if (nameLower.includes(indicator)) {
+      warnings.push('naam lijkt op kanaalnaam (' + indicator + ')');
+      break;
+    }
+  }
+
+  // Software check
+  for (const s of (entry.software || [])) {
+    if (SOFTWARE_NORMALIZATION[s.toLowerCase()] === null) {
+      warnings.push('ongeldige software: ' + s);
+    }
+  }
+
+  // Mood typo check
+  for (const m of (entry.mood || [])) {
+    if (!KNOWN_MOODS.includes(m.toLowerCase())) {
+      warnings.push('onbekende mood: ' + m);
+    }
+  }
+
+  // Weinig technieken
+  if ((entry.techniques || []).length < 3) {
+    warnings.push('minder dan 3 technieken');
+  }
+
+  // Weinig insights
+  if ((entry.unique_insights || []).length < 2) {
+    warnings.push('minder dan 2 insights');
+  }
+
+  return warnings;
+}
+
 function normalizeGenres(genres) {
   if (!Array.isArray(genres)) return genres;
   const seen = new Set();
@@ -214,6 +308,18 @@ module.exports = async function handler(req, res) {
       return res.status(200).json({ success: true, message: 'Alle style previews gewist', count: cleaned.length });
     }
 
+    // ── WAARSCHUWINGEN OPHALEN (admin) ────────────────────────────────────────
+    if (action === 'get_warnings') {
+      const token = getToken(req);
+      if (!verifyAdminToken(token)) return res.status(403).json({ error: 'Geen toegang' });
+      const kb = await loadKnowledge();
+      const withWarnings = kb.map(function(e, i) {
+        const w = getEntryWarnings(e);
+        return w.length > 0 ? { index: i, youtube_url: e.youtube_url, video_title: e.video_title, photographer_name: e.photographer_name, warnings: w } : null;
+      }).filter(Boolean);
+      return res.status(200).json({ success: true, count: withWarnings.length, entries: withWarnings });
+    }
+
     // ── PUBLIEKE STIJLENLIJST (geen auth nodig, voor expert stijl dropdown) ──
     if (action === 'styles') {
       const entries = await loadKnowledge();
@@ -229,6 +335,14 @@ module.exports = async function handler(req, res) {
       const { entry } = req.body;
       if (entry && Array.isArray(entry.genre)) {
         entry.genre = normalizeGenres(entry.genre);
+      }
+      if (entry && Array.isArray(entry.software)) {
+        entry.software = normalizeSoftware(entry.software);
+      }
+      // Voeg waarschuwingen toe
+      const entryWarnings = getEntryWarnings(entry);
+      if (entryWarnings.length > 0) {
+        entry._warnings = entryWarnings;
       }
       if (!entry || !entry.video_title) return res.status(400).json({ error: 'Ongeldige entry' });
 
@@ -287,10 +401,14 @@ module.exports = async function handler(req, res) {
 
       // Normaliseer genres in alle inkomende entries
       const normalizedEntries = entries.map(function(e) {
-        if (e && Array.isArray(e.genre)) {
-          return Object.assign({}, e, { genre: normalizeGenres(e.genre) });
-        }
-        return e;
+        if (!e) return e;
+        const updated = Object.assign({}, e);
+        if (Array.isArray(updated.genre)) updated.genre = normalizeGenres(updated.genre);
+        if (Array.isArray(updated.software)) updated.software = normalizeSoftware(updated.software);
+        const w = getEntryWarnings(updated);
+        if (w.length > 0) updated._warnings = w;
+        else delete updated._warnings;
+        return updated;
       });
       const merged = normalizedEntries.map(function(e) {
         if (!e.style_preview || e.style_preview.length < 10) {

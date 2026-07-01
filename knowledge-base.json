@@ -44141,5 +44141,93 @@
       "Door de korrelgrootte (Size) bewust heel laag te houden bij een hoge Grain-waarde, kan er een intense textuur worden toegevoegd zonder dat de foto direct zijn scherpte in de details verliest."
     ],
     "style_preview": "Deze stijl straalt een rustige, warme en analoge portretsfeer uit. Door de scherpe digitale randjes weg te nemen en subtiele kleurschakeringen in de schaduwen te stoppen, ontstaat er een uiterst zacht beeld. Het werkt het beste bij portretten die geschoten zijn tijdens het gouden uur of in zacht daglicht. Als fotograaf kun je een look verwachten die erg cinematisch en organic aanvoelt, zonder dat de foto er 'bewerkt' uitziet."
+  },
+  {
+    "video_title": "The Real Reason Your Photography EDITS Look Amateur",
+    "photographer_name": "Evan Ranft",
+    "youtube_url": "https://www.youtube.com/watch?v=J4z9AUi5qcU",
+    "genre": [
+      "algemeen"
+    ],
+    "light_conditions": [
+      "gouden uur",
+      "daglicht"
+    ],
+    "mood": [
+      "naturalistisch",
+      "cinematisch"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Naturalistic Cinematic Clean",
+    "philosophy": "Fotobewerking moet gericht zijn op het verbeteren van de leesbaarheid en het sturen van de blik van de kijker, in plaats van overmatige manipulatie. Het doel is om beelden te creëren die natuurlijk en organisch aanvoelen, vergelijkbaar met film. Minder is vaak meer; het weghalen van afleidingen en het verfijnen van de compositie is net zo belangrijk als de kleuraanpassingen zelf.",
+    "workflow_order": [
+      "stap 1: Pas de Camera Calibration aan om een consistente en gematigde kleurloop te creëren als basis voor het gehele beeld.",
+      "stap 2: Lijn de foto perfect uit met de Transform-module om storende perspectieflijnen te corrigeren.",
+      "stap 3: Gebruik uitsnijden en retoucheren om storende elementen aan de randen en in de compositie volledig te verwijderen.",
+      "stap 4: Pas lokale maskers toe om diepte te creëren en de blik van de kijker direct naar het belangrijkste onderwerp te leiden."
+    ],
+    "techniques": [
+      {
+        "name": "Gematigde Camerakalibratie",
+        "description": "Stel de RGB-kanalen in het kalibratiepaneel in op gematigde waarden om een consistente kleur-basis te creëren voor verschillende camera's zonder dat de kleuren onnatuurlijk doorslaan.",
+        "when_to_use": "Bij de start van elke bewerking, vooral bij het gebruik van presets die heftige kleurveranderingen bevatten.",
+        "tools": [
+          "Calibration"
+        ],
+        "effect": "Zorgt voor een harmonieuze en uniforme kleurweergave over het gehele beeld."
+      },
+      {
+        "name": "Negatieve Helderheid",
+        "description": "Verlaag de Clarity naar negatieve waarden (bijv. -10 tot -20) om de digitale scherpte te verminderen en ruwheid uit de foto te halen.",
+        "when_to_use": "Wanneer een digitale foto te hard of te scherp oogt en een zachtere, analoge film-look gewenst is.",
+        "tools": [
+          "Clarity"
+        ],
+        "effect": "Het beeld oogt minder digitaal, krijgt zachtere overgangen en krijgt een subtiele filmische uitstraling."
+      },
+      {
+        "name": "Automatische Perspectiefcorrectie",
+        "description": "Activeer de Auto of Full transformatie om verticale en horizontale lijnen in de architectuur of omgeving direct recht te zetten.",
+        "when_to_use": "Bij foto's die vanaf een laag standpunt zijn genomen en daardoor convergerende of scheve lijnen vertonen.",
+        "tools": [
+          "Transform"
+        ],
+        "effect": "Lijnen worden perfect loodrecht uitgelijnd, wat resulteert in een professionele en stabiele compositie."
+      },
+      {
+        "name": "Radiale en Lineaire Verlopen voor Focus",
+        "description": "Plaats lokale maskers om specifieke gebieden op te warmen, de hoeken te verduisteren en highlights in de lucht te verfijnen om zo de blik naar het centrum te trekken.",
+        "when_to_use": "Bij vlakke of egale foto's waar het hoofdonderwerp te weinig contrasteert met de omgeving.",
+        "tools": [
+          "Masking"
+        ],
+        "effect": "Het creëert direct visuele diepte, waarbij de achtergrond subtiel wegvalt en het onderwerp naar voren springt."
+      },
+      {
+        "name": "Optimale Exporinstellingen",
+        "description": "Zet de exportkwaliteit handmatig op 100 en verhoog de resolutie naar 300 pixels per inch om compressieverlies buiten de software te voorkomen.",
+        "when_to_use": "Bij het exporteren van de definitieve foto voor web, social media of drukwerk.",
+        "tools": [
+          "Export"
+        ],
+        "effect": "De foto behoudt zijn maximale scherpte, kleurgradaties en detailniveau na de export."
+      }
+    ],
+    "color_approach": "Kleurgradatie moet subtiel en gecontroleerd gebeuren via de globale kalibratie in plaats van agressieve verschuivingen in de HSL-schuifregelaars. Dit voorkomt dat kleurkanalen oververzadigd raken of losbreken van de rest van het palet, wat essentieel is voor het behouden van een geloofwaardige, naturalistische sfeer.",
+    "local_adjustments": "Lokale aanpassingen worden via maskers ingezet als een moderne vorm van doordrukken en tegenhouden (dodge and burn). Er worden gerichte maskers gemaakt om de hoeken van het frame te verduisteren en het centrale focuspunt handmatig op te lichten of te verwarmen, waardoor de kijker intuïtief begrijpt waar de actie plaatsvindt.",
+    "what_to_avoid": [
+      "Het negeren van ingebouwde camerakalibraties in gekochte presets, wat kan leiden tot onvoorspelbare en lelijke kleurafwijkingen.",
+      "Te ver doorschieten met HSL-schuifregelaars waardoor er 'color gaps' (grijze of onsamenhangende vlekken in kleurverlopen zoals luchten) ontstaan.",
+      "Het exporteren met de standaard Lightroom-instellingen van 80% kwaliteit en 240 resolutie, wat de scherpte van het eindproduct onnodig vermindert."
+    ],
+    "best_for": "Fotografen die straat-, reis- of stadsbeelden vastleggen en hun bewerkingen naar een professioneel, consistent niveau willen tillen zonder dat het er 'bewerkt' uitziet.",
+    "unique_insights": [
+      "Het bewerken tegen een witte interface-achtergrond in plaats van een donkere verandert de perceptie van highlights drastisch en helpt om beelden te optimaliseren voor fotoboeken of specifieke fysieke kaders.",
+      "Het verlagen van de Clarity naar negatieve waarden is juist een krachtige manier om de klinische en overdreven scherpte van moderne digitale sensoren tegen te gaan en een organische look te creëren.",
+      "Het beperken van de bestandsgrootte tot bijvoorbeeld 4000-5000KB bij export behoudt de volledige resolutie en kwaliteit, in plaats van de foto fysiek te verkleinen voor social media."
+    ],
+    "style_preview": "Deze stijl kenmerkt zich door een uiterst cleane, gebalanceerde en filmische esthetiek die de realiteit perfectioneert zonder deze geweld aan te doen. Door storende elementen resoluut weg te snijden en perspectieven strak te trekken, ontstaat er direct rust in het beeld. De sfeer leunt zwaar op een organische zachtheid die digitale hardheid elimineert, gecombineerd met een harmonieus kleurpalet. Dit werkt het best bij straat- en stadsfotografie in natuurlijk daglicht of tijdens het gouden uur, waarbij de kijker direct naar de essentie van het verhaal wordt geleid."
   }
 ]

@@ -44402,5 +44402,96 @@
       "Het algoritme voor tandenbleken past een unieke randdetectie toe die een fractie buiten de tanden overvloeit om harde selectieranden te voorkomen, zonder dat de kleur van het tandvlees aangetast wordt."
     ],
     "style_preview": "De bewerkingsstijl kenmerkt zich door een feilloze balans tussen high-end retouchering en het behoud van authentieke, menselijke details. De visuele sfeer is professioneel, helder en clean, waarbij de focus ligt op sprekende ogen en een egale huidtextuur zonder dat er een 'plastic' effect optreedt. Deze benadering werkt optimaal voor portret- en modeopnamen onder gecontroleerde lichtomstandigheden. Als fotograaf kun je erop vertrouwen dat je beelden een vlijmscherpe, publicatiewaardige afwerking krijgen die de natuurlijke schoonheid van het model versterkt."
+  },
+  {
+    "video_title": "COLOR GRADING IN FASHION PHOTOGRAPHY // ft. Mert & Marcus, Alasdair McLellan, and Annie Leibovitz",
+    "photographer_name": "Marco",
+    "youtube_url": "https://www.youtube.com/watch?v=kv1di5U6XVQ",
+    "genre": [
+      "portret"
+    ],
+    "light_conditions": [
+      "diffuus licht",
+      "harde zon",
+      "daglicht"
+    ],
+    "mood": [
+      "cinematisch",
+      "dramatisch",
+      "levendig"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Cinematic Fashion Color Grade",
+    "philosophy": "Kleurgradatie is de stilistische manipulatie van beelden in postproductie om een specifieke emotie op te roepen of een fantasiewereld te creëren. De bewerking moet altijd een overkoepelend verhaal of een duidelijke sfeer ondersteunen in plaats van puur decoratief te zijn. Door bewust de interactie tussen lichtomstandigheden en kleurtonen te plannen, krijgt de fotograaf ultieme controle over het eindresultaat. Een succesvolle kleurbewerking versterkt de visuele impact zonder afbreuk te doen aan de harmonie van de compositie.",
+    "workflow_order": [
+      "stap 1: Analyseer de bestaande licht- en kleurcomponenten in de basisfoto (zoals storende gele of groene ondertonen in de huid en het haar).",
+      "stap 2: Voeg een gerichte aanpassingslaag toe (zoals Kleurbalans) in Photoshop om de algehele sfeer direct om te gooien.",
+      "stap 3: Verschuif de sliders in de middentonen, hooglichten en schaduwen afzonderlijk om gerichte complementaire of thematische kleurzwemen te introduceren.",
+      "stap 4: Pas het algehele contrast en de verzadiging aan om de kleurgradatie meer ademruimte te geven of juist de details in de kleding te accentueren."
+    ],
+    "techniques": [
+      {
+        "name": "Zomertoon Middentoon Verschuiving",
+        "description": "Verhoog de rode en gele waarden in het Kleurbalans-paneel specifiek binnen de middentonen om een zwoele, warme sfeer te creëren.",
+        "when_to_use": "Bij portretten die buiten in natuurlijk licht zijn geschoten en een sexy, warme zomervibe moeten uitstralen.",
+        "tools": [
+          "Color Balance (Midtones)"
+        ],
+        "effect": "De huidtinten en de omgeving krijgen direct een rijke, warme en zonovergoten gloed."
+      },
+      {
+        "name": "Melancholische Schaduw Koeling",
+        "description": "Verhoog de blauw- en cyaantinten in de schaduwen en middentonen om een gevoel van verlies en melancholie over te brengen.",
+        "when_to_use": "Wanneer een portret of modeshoot een koele, emotioneel afstandelijke of trieste ondertoon vereist.",
+        "tools": [
+          "Color Balance (Shadows & Midtones)"
+        ],
+        "effect": "De donkere delen van de foto transformeren naar een koele, kille sfeer die de kijker een gevoel van eenzaamheid geeft."
+      },
+      {
+        "name": "Contrastreductie voor Kleurruimte",
+        "description": "Verlaag het algehele contrast en de verzadiging lichtjes om de opeenvolgende kleurgradaties vloeiender te laten blenden.",
+        "when_to_use": "Bij het opzetten van een melancholische of cinematische sfeer waarbij harde schaduwranden de kleurvloeiing verstoren.",
+        "tools": [
+          "Brightness/Contrast",
+          "Saturation"
+        ],
+        "effect": "Het beeld wordt zachter en vlakker, waardoor subtiele kleurverschuivingen in de schaduwen beter zichtbaar worden."
+      },
+      {
+        "name": "Gele Ondertoon Eliminatie",
+        "description": "Filter ongewenste gele en groene ondertonen uit de huid en het haar door de schuifregelaars richting gedesatureerd rood en ijzig blauw te bewegen.",
+        "when_to_use": "Bij studio- of buitenopnames waarbij kunstlicht, reflecties of pruiken een ongewenste groengelige gloed op het model werpen.",
+        "tools": [
+          "Color Balance",
+          "Selective Color"
+        ],
+        "effect": "De huid krijgt een strakke, modieuze uitstraling en blond haar transformeert in een high-fashion ijzige tint."
+      },
+      {
+        "name": "Warme Schaduw Nostalgie",
+        "description": "Voeg specifiek een diepe rode en warme gloed toe aan de diepste zwart- en schaduwtonen van een buitenopname.",
+        "when_to_use": "Bij het fotograferen in harde, directe zon om een herkenbare, nostalgische handtekening aan de beelden te geven.",
+        "tools": [
+          "Color Balance (Shadows)"
+        ],
+        "effect": "De harde schaduwen breken open met een warme, roodachtige gloed die doet denken aan analoge vintage fotografie."
+      }
+    ],
+    "color_approach": "De kleurbenadering is uiterst selectief en verhalend. In plaats van een globale kleurfilter over de gehele foto te gieten, worden de schaduwen, middentonen en hooglichten onafhankelijk van elkaar gecorrigeerd. Dit zorgt ervoor dat onnatuurlijke kleurzwemen (zoals giftig groen in de natuur) worden vermeden, terwijl complementaire kleurparen zoals ijzig blond haar tegenover subtiele, gedesatureerde rode huidtinten de visuele impact van de mode-items versterken.",
+    "local_adjustments": "Lokale aanpassingen worden ingezet om de aandacht direct naar de kleding en de commerciële producten te trekken. Door te fotograferen met een vlakke, contrastarme lichtopstelling krijgt de fotograaf in Photoshop de ruimte om via maskers lokaal het contrast en de kleurverzadiging op te schroeven op exact die plekken waar de kleding eruit moet springen.",
+    "what_to_avoid": [
+      "Een te grove, globale benadering van kleurgradatie (zoals overmatig groen over de hele scène gieten), waardoor bladeren en planten eruitzien als kunstgras.",
+      "Het blindelings toepassen van een extreme kleurgradatie op foto's die in direct, hard zonlicht met diepe schaduwen zijn genomen, omdat dit de controle over fijne tinten volledig wegneemt."
+    ],
+    "best_for": "Deze technieken zijn bij uitstek geschikt voor high-end modefotografen en redactionele portretfotografen die een sterke, herkenbare artistieke identiteit in hun werk willen leggen.",
+    "unique_insights": [
+      "Topfotografen in de modewereld gebruiken vaak een extreem contrastarme, vlakke lichtopstelling tijdens de opname, niet omdat dit direct mooi is, maar omdat het in Photoshop maximale controle biedt om achteraf lokaal contrast en kleurgradatie toe te voegen.",
+      "Kleurgradatie ver verfijnen werkt alleen als de omgeving en het opnamelicht vooraf zijn afgestemd op de uiteindelijke nabewerking; een koude wintergloed proberen te forceren in een zonovergoten, contrastrijke setting resulteert in een onnatuurlijk en mislukt beeld.",
+      "Een zware, globale kleurzweem over een hele foto vernietigt de natuurlijke toongradaties van planten en huid, terwijl een subtiele verschuiving in uitsluitend de schaduwen juist een herkenbare, nostalgische handtekening oplevert zonder de realiteit te schaden."
+    ],
+    "style_preview": "Deze stijl ademt pure high-fashion en cinematische dramatiek uit. De visuele sfeer balanceert tussen een dromerige fantasie en een strakke, redactionele realiteit, waarbij kleuren strategisch worden ingezet om de emotionele toon van het verhaal te dicteren. De kernfilosofie draait om het loslaten van de werkelijkheid ten gunste van een sfeer die ofwel intens warm en nostalgisch, ofwel koel en melancholisch is. Deze benadering werkt het beste bij portretten die met een doordacht lichtplan zijn geschoten. Het verwachte resultaat is een beeld met een krachtige visuele impact waarin het model en de kleding naadloos opgaan in een high-end, schilderachtige kleurwereld."
   }
 ]

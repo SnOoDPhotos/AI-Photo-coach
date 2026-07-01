@@ -3266,90 +3266,105 @@
   {
     "video_title": "The Editing Trick I Use on Every Wildlife Photo",
     "photographer_name": "Matt Shannon",
-    "youtube_url": "https://youtu.be/QtDxQhFp3UQ",
+    "youtube_url": "https://www.youtube.com/watch?v=QtDxQhFp3UQ",
     "genre": [
       "wildlife"
     ],
     "light_conditions": [
-      "bewolkt"
+      "daglicht",
+      "diffuus licht"
     ],
     "mood": [
-      "levendig",
-      "naturalistisch"
+      "dramatisch",
+      "moody"
     ],
     "software": [
       "Lightroom Classic",
       "Photoshop"
     ],
-    "style_description": "Atmospheric Wildlife Pop",
-    "philosophy": "Het creëren van diepte en visuele hiërarchie door de achtergrond bewust te verduisteren (of koeler te maken) en tegelijkertijd het onderwerp te isoleren en te verlichten met een gerichte sfeervolle lichtbron, waardoor de ogen van de kijker direct naar het onderwerp en de details worden getrokken.",
+    "style_description": "Moody Pop Dramatic Wildlife",
+    "philosophy": "De essentie van een sterke wildlife-opname ligt in het direct grijpen van de aandacht van de kijker naar het oog van het dier. Door de achtergrond bewust te verduisteren en te koelen, ontstaat er een natuurlijk contrast met het onderwerp dat lokaal wordt opgelicht en verwarmd. Nabewerking is bedoeld om een sfeervolle, driedimensionale diepte te boetseren, waardoor het onderwerp op een geloofwaardige maar dramatische manier uit zijn omgeving loskomt.",
     "workflow_order": [
-      "stap 1: Compositie bepalen door uitsnijden (Crop tool)",
-      "stap 2: Globale basisaanpassingen voor kleur en toonbalans (Vibrance, Saturation, Shadows, Highlights)",
-      "stap 3: Achtergrond separeren en verduisteren met maskers",
-      "stap 4: Lokale subjectaanpassingen voor extra contrast en kleur",
-      "stap 5: Atmosfeer/lichtbron simuleren of versterken (Lightroom of Photoshop)",
-      "stap 6: Micro-retouche en details perfectioneren (oog- en veeraccentuering)"
+      "stap 1: Breng globale basiscorrecties aan door de levendigheid, verzadiging en belichting van het RAW-bestand op te voeren.",
+      "stap 2: Voer een strakke uitsnijding (crop) uit, bij voorkeur naar een vierkant formaat, om compositorische rust te creëren.",
+      "stap 3: Breng achtergrondmaskers aan via lineaire verlopen en sluit het dier handmatig uit om de omgeving selectief te verduisteren.",
+      "stap 4: Gebruik radiale verlopen met negatieve nevelreductie (Dehaze) om een sfeervolle, zachte lichtbron te introduceren.",
+      "stap 5: Zoom diep in op de kop en gebruik een fijn penseel om het oog en de catchlight selectief te verhelderen voor de ultieme focus."
     ],
     "techniques": [
       {
-        "name": "Subject-Isolatie via Omgekeerd Verloopmasker",
-        "description": "Er wordt een lineair verloopmasker over het beeld getrokken om de belichting, het contrast en de zwarttinten te verlagen. Vervolgens wordt het onderwerp via de automatische subject-selectie ('Select Subject') van dit masker afgetrokken ('Subtract'), waardoor de achtergrond donkerder wordt maar het dier onaangetast blijft.",
-        "when_to_use": "Wanneer het onderwerp te veel opgaat in een heldere of rommelige achtergrond en visuele scheiding nodig heeft.",
+        "name": "Geïsoleerde Achtergrondverduistering",
+        "description": "Trek een lineair verloop over het beeld, verlaag de belichting, het contrast en de zwarttinten, en gebruik vervolgens de 'Subtract' (Subtraheren) functie om het totale onderwerp automatisch uit dit masker te snijden.",
+        "when_to_use": "Bij wildlife-foto's waar de achtergrond te licht of onrustig is en afleidt van het dier.",
         "tools": [
-          "Masking (Linear Gradient, Subtract Subject)"
+          "Maskeren",
+          "Lineair verloop"
         ],
-        "effect": "Het onderwerp springt direct naar voren en krijgt een driedimensionale look ten opzichte van de verduisterde achtergrond."
+        "effect": "De achtergrond zakt weg in een diepe schaduw, waardoor het onderwerp direct naar voren springt."
       },
       {
-        "name": "Handmatige Masker-Overvloeiing",
-        "description": "Nadat het onderwerp automatisch is afgetrokken van het donkere verloopmasker, wordt met een penseel ('Brush') met een lage dichtheid en flow subtiel wat schaduw teruggeschilderd op de randen en onderkant van het onderwerp.",
-        "when_to_use": "Als de automatische selectie een te harde overgang of een onnatuurlijk 'halo-effect' veroorzaakt rondom veren of vacht.",
+        "name": "Verloop-Halo Handmatig Corrigeren",
+        "description": "Gebruik na een automatische onderwerpsubtractie een zacht penseel met een lage flow en dichtheid (Density) om de donkere achtergrondinstellingen handmatig terug te schilderen over de buitenste randen of veren.",
+        "when_to_use": "Wanneer de automatische AI-selectie een onnatuurlijke lichte rand of halo rondom de vacht of veren van het dier achterlaat.",
         "tools": [
-          "Masking (Brush tool met lage Flow/Density)"
+          "Maskeren",
+          "Penseel"
         ],
-        "effect": "Het gecorrigeerde onderwerp vloeit op een natuurlijke en geloofwaardige manier over in de nieuwe, donkerdere omgevingsverlichting."
+        "effect": "De harde, heldere overgangsranden verdwijnen en het dier smelt vloeiend en realistisch samen met de donkere achtergrond."
       },
       {
-        "name": "Kunstmatige Zonnegloed met Lens Flare-omzetting",
-        "description": "In Photoshop wordt een nieuwe zwarte opvullaag gecreëerd waarop een lensflare-filter ('Render Lens Flare - 105mm Prime') wordt geplaatst in de hoek waar het bestaande licht vandaan komt. Storende glasreflecties worden weggepoetst, de overvloeimodus wordt op 'Bleken' ('Screen') gezet en de kleur wordt via Kleurbalans warm aangepast.",
-        "when_to_use": "Wanneer de foto in vlak, bewolkt licht is genomen en behoefte heeft aan een duidelijke, sfeervolle lichtrichting.",
+        "name": "Sfeervolle Lichtwaas Nabootsen",
+        "description": "Plaats een groot radiaal verloopmasker in de hoek waar het natuurlijke licht vandaan komt, verhoog de belichting en witbalans-warmte, en schuif de Nevel verwijderen (Dehaze) naar negatieve waarden.",
+        "when_to_use": "Bij vlakke, bewolkte opnames om een duidelijke, sfeervolle lichtrichting en omgevingswaas te simuleren.",
         "tools": [
-          "Photoshop (Solid Color Layer, Filter Render Lens Flare, Remove tool, Blend mode Screen, Color Balance)"
+          "Maskeren",
+          "Radiaal verloop"
         ],
-        "effect": "Er ontstaat een zachte, warme en atmosferische lichtstroom in de hoek van het frame die de hele scène meer diepte geeft."
+        "effect": "Er ontstaat een zachte, dromerige lichtgloed die de illusie van invallend zonlicht wekt."
       },
       {
-        "name": "Lichtevel-Simulatie via Dehaze",
-        "description": "Er wordt een radiaal filter geplaatst op de positie van de lichtbron. Naast het verhogen van de belichting en warmte, wordt de slider voor 'Nevel verwijderen' ('Dehaze') naar negatieve waarden getrokken, waarna het subject er weer van wordt afgetrokken.",
-        "when_to_use": "Het Lightroom-alternatief voor de Photoshop lensflare-techniek om een zachte, dromerige lichtwaas te creëren.",
+        "name": "Snoet- en Veren-accentuering",
+        "description": "Maak een nieuw onderwerpsmasker aan, verhoog selectief de belichting en schaduwen, en voeg extra contrast en kleurverzadiging toe om de specifieke texturen te accentueren.",
+        "when_to_use": "Om de doffe en fletse uitstraling van een RAW-bestand op het dier zelf op te heffen.",
         "tools": [
-          "Masking (Radial Gradient, Negatieve Dehaze, Subtract Subject)"
+          "Maskeren",
+          "Onderwerp selecteren"
         ],
-        "effect": "Er ontstaat een zachte, atmosferische lichtgloed die realistisch achter het onderwerp langs schijnt."
+        "effect": "Het dier krijgt meer textuur, kleurintensiteit en een tastbare, driedimensionale aanwezigheid."
       },
       {
-        "name": "Targeted Catchlight Pop",
-        "description": "Er wordt heel ver ingezoomd op het oog van het dier, waarna er met een heel klein penseel lokaal extra belichting en hooglichten op de natuurlijke reflectie (catchlight) worden geschilderd.",
-        "when_to_use": "Bij close-up wildlife portretten waarbij de ogen dof of levenloos overkomen.",
+        "name": "Oog- en Catchlight-optimalisatie",
+        "description": "Zoom extreem diep in op de kop van het dier, selecteer een klein penseel en verhoog lokaal de belichting en hooglichten (Highlights) met subtiele streken op het oog.",
+        "when_to_use": "Altijd als finale stap bij wildlife-portretten om de blik levend en sprekend te maken.",
         "tools": [
-          "Masking (Brush tool, Exposure, Highlights)"
+          "Maskeren",
+          "Penseel"
         ],
-        "effect": "De blik van het dier krijgt direct sprankeling en trekt onmiddellijk de aandacht van de kijker."
+        "effect": "De reflectie (catchlight) in het oog licht krachtig op, wat zorgt voor een vitale en alerte uitstraling."
+      },
+      {
+        "name": "Zonflare via een Solide Zwartlaag",
+        "description": "Maak in Photoshop een nieuwe opvullaag aan in solide zwart, pas via Filter > Render > Lensflare een kunstmatige lichtbron toe (intensiteit circa 135) en zet de overvloeimodus van de laag op Screen (Bleken).",
+        "when_to_use": "Wanneer de softwarematige radiale filters in Lightroom niet voldoende organische lichtbreking kunnen genereren.",
+        "tools": [
+          "Photoshop"
+        ],
+        "effect": "Er wordt een overtuigende, warme zonnegloed in de hoek van het beeld geweven die naadloos over de foto valt."
       }
     ],
-    "color_approach": "De basiskleuren van het raw-bestand worden eerst globaal opgehaald met Vibrance en Saturation om de dofheid te doorbreken. Vervolgens past hij een complementaire kleurstrategie toe via lokale maskers: de achtergrond wordt bewust koeler gemaakt (Richting blauw/cyaan), terwijl de gesimuleerde lichtbron en de hooglichten op het subject juist een flinke dosis warmte (rood/geel) meekrijgen voor maximaal kleurcontrast.",
-    "local_adjustments": "Lokale aanpassingen vormen de absolute essentie van de bewerking. Maskers worden niet alleen gebruikt om licht en donker te verdelen, maar ook om selectief verzadiging te temperen waar het te fel wordt (door een penseel van de subject-selectie af te trekken) en om vitale details zoals ogen en individuele veren extra contrast te geven.",
+    "color_approach": "De kleuraanpak steunt op het creëren van een zwaar chromatisch contrast. In de achtergrondmaskers worden koele, blauwe tonen gestuurd om een rustige en sfeervolle basis te leggen, terwijl op het dier en rondom de gesimuleerde lichtbron juist warme, gouden en rode tinten worden toegevoegd om een krachtig, complementair kleurcontrast op te wekken.",
+    "local_adjustments": "Lokale aanpassingen zijn de absolute spil van de workflow. Er wordt nauwelijks gewerkt met algehele globale schuiven; in plaats daarvan wordt het beeld opgebouwd uit op elkaar gestapelde AI-onderwerpsmaskers, omgekeerde lineaire verlopen voor de omgeving en ragfijne penseelstreken die met een gecontroleerde flow uitsluitend het oog of specifieke verengroepen oplichten.",
     "what_to_avoid": [
-      "Het puur vertrouwen op automatische AI-selecties zonder handmatige controle, omdat dit scherpe, onnatuurlijke overgangen (halos) veroorzaakt rondom veren en vacht.",
-      "Het onbewerkt laten van de catchlights in de ogen, aangezien dit bij wildlife resulteert in een doffe en minder sprekende blik."
+      "Het blindelings vertrouwen op automatische AI-onderwerpselecties zonder de randen te controleren, wat leidt tot storende, heldere halo-effecten.",
+      "Het onbewerkt laten van de secundaire glaseffecten (interne reflectieringen) bij een Photoshop lensflare, omdat deze de montage direct verraden."
     ],
-    "best_for": "Wildlife- en dierenfotografie die is geschoten onder egale of bewolkte lichtomstandigheden en die transformatie nodig heeft naar een sfeervol beeld met een duidelijke focus op het dier.",
+    "best_for": "Wildlife- en vogelportretten die zijn geschoten onder egale of fletse lichtomstandigheden en die transformatie nodig hebben naar een sfeervol beeld.",
     "unique_insights": [
-      "Door een lensflare op een zwarte laag in Photoshop te plaatsen en de blend mode op Screen te zetten, behoud je de volledige controle over de positie, kleur en opacity van je extra lichtbron zonder je originele pixels aan te tasten.",
-      "Negatieve Dehaze is binnen Lightroom een van de meest effectieve manieren om een harde digitale lichtbron om te toveren in een zachte, atmosferische mistvlaag."
+      "In plaats van het dier simpelweg op te lichten, verduistert hij rigoureus de hele achtergrond via een lineair verloop min het dier, om vervolgens met een handmatig penseel de donkere schaduw weer deels over de randen van het dier heen te strijken voor een perfect organische smelting.",
+      "Hij creëert een geavanceerde lichtglorie in Photoshop door een lensflare op een 100% zwarte laag te renderen en deze via 'Screen' in te voegen; hierdoor kan hij de kleurtemperatuur van de lichtstraal via Kleurbalans los van de originele foto opwarmen.",
+      "Hij selecteert de 'Dehaze'-schuif bewust in negatieve richting binnen lokale radiale maskers, omdat dit in tegenstelling tot de 'Clarity'- of 'Exposure'-schuif een perfect zachte, mistachtige atmosferische lichtspreiding genereert."
     ],
-    "style_preview": "Deze bewerkingsfilosofie richt zich op het creëren van een diepe, sfeervolle en vaak dramatische visuele toon. De kern ligt in het bewust verduisteren of koeler maken van de achtergrond, terwijl het hoofdonderwerp, het dier, geïsoleerd en verlicht wordt met een gerichte, sfeervolle lichtbron. Dit maakt deze stijl bijzonder geschikt voor wildlife- en dierenfotografie die is vastgelegd onder egale of bewolkte lichtomstandigheden en die transformatie nodig heeft. Het resultaat is een krachtig beeld met een onmiddellijke visuele hiërarchie, waarbij de ogen van de kijker direct naar het dier worden getrokken en het echt 'pop't' tegen de achtergrond."
+    "style_preview": "Deze stijl ademt een diepe, mysterieuze en uiterst dramatische sfeer waarin het wilde dier op grootse wijze wordt geëerd. De visuele toon is gekenmerkt door een rijke dynamiek tussen koele, donkere achtergronden en een weelderige, warme lichtval die het onderwerp omarmt. Voor een fotograaf die deze werkwijze overweegt, werkt de stijl optimaal op wildlife-portretten met een rustige compositie en een fletse RAW-basis. Het uiteindelijke effect is een fabelachtig, contrastrijk beeld waarin de blik van de kijker onherroepelijk in de ziel van het dier wordt getrokken."
   },
   {
     "video_title": "Lightroom Photo Editing Full Course FREE 🔥 | Beginner to Expert in 2026 | Lightroom photo Editing",

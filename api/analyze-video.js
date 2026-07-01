@@ -163,7 +163,18 @@ module.exports = async function handler(req, res) {
     const token = getToken(req);
     if (!verifyAdminToken(token)) return res.status(403).json({ error: 'Geen toegang' });
 
-    const { youtubeUrls } = req.body;
+    const { youtubeUrls: rawUrls } = req.body;
+    // Normaliseer URL formaten: /live/ en youtu.be naar standaard watch?v= formaat
+    const youtubeUrls = (rawUrls || []).map(function(url) {
+      if (!url) return url;
+      // youtube.com/live/ID -> youtube.com/watch?v=ID
+      const liveMatch = url.match(/youtube\.com\/live\/([a-zA-Z0-9_-]+)/);
+      if (liveMatch) return 'https://www.youtube.com/watch?v=' + liveMatch[1];
+      // youtu.be/ID -> youtube.com/watch?v=ID
+      const shortMatch = url.match(/youtu\.be\/([a-zA-Z0-9_-]+)/);
+      if (shortMatch) return 'https://www.youtube.com/watch?v=' + shortMatch[1];
+      return url;
+    });
     if (!Array.isArray(youtubeUrls) || !youtubeUrls.length) {
       return res.status(400).json({ error: 'youtubeUrls array vereist' });
     }

@@ -43511,5 +43511,100 @@
       "Bij het handmatig bijwerken van donkere partijen op een rotswand met het penseel is het essentieel om 'Auto Mask' in te schakelen en de spatiebalk ingedrukt te houden om snel door het beeld te navigeren; dit voorkomt dat de bewerking per ongeluk overvloeit naar de strakke rand van de aangrenzende zee."
     ],
     "style_preview": "Deze stijl biedt een heldere, levendige en cleane blik op kustlandschappen tijdens het gouden uur. De visuele sfeer is energiek en contrastrijk, gekenmerkt door een perfect uitgebalanceerde tonaalbereik waarin schaduwen volledig spreken en de lucht barst van de warme overgangen. De kernfilosofie is om de dynamiek van het menselijk oog na te bootsen door de technische beperkingen van de camerasensor slim op te vangen met gerichte maskers. Voor de fotograaf die weidse landschappen met krachtig tegenlicht fotografeert, levert deze benadering een uiterst scherp en kleurrijk resultaat op waarbij storende kleurzwemen effectief worden geëlimineerd en de essentie van het vroege ochtendlicht behouden blijft."
+  },
+  {
+    "video_title": "This Editing Workflow Produces Maximum Sharpness",
+    "photographer_name": "Mark Dumbleton",
+    "youtube_url": "https://www.youtube.com/watch?v=qo7WAgQxQ_M",
+    "genre": [
+      "wildlife"
+    ],
+    "light_conditions": [
+      "harde zon"
+    ],
+    "mood": [
+      "naturalistisch",
+      "contrastrijk"
+    ],
+    "software": [
+      "DxO PhotoLab",
+      "Lightroom Classic",
+      "Photoshop"
+    ],
+    "style_description": "Maximum Scherpte Natuurlijke Wildlife",
+    "philosophy": "Het proces begint bij een perfect schone basis door RAW-bestanden eerst door externe demosaicing en ruisreductie software te halen. In Lightroom Classic ligt de nadruk op het scheiden van het onderwerp van de achtergrond door subtiele kleurofsets en het lokaal herstellen van harde schaduwen. De workflow eindigt met een geavanceerde, pixel-precieze verscherping op hoge resolutie in Photoshop om elk detail in de verenstructuur te maximaliseren.",
+    "workflow_order": [
+      "Stap 1: RAW-ontwikkeling, ruisreductie en initiële lensverscherping toepassen in DxO PhotoLab via DeepPRIME XD3.",
+      "Stap 2: Globale belichtings- en tooncorrecties uitvoeren in Lightroom Classic om hooglichten te temperen en schaduwen te openen.",
+      "Stap 3: Subject- en achtergrondmaskers opzetten en via 'intersect' combineren met penselen voor gerichte lokale contrasten.",
+      "Stap 4: Het bestand exporteren naar Photoshop voor een op maat gemaakte High Pass-verscherping op de volledige resolutie."
+    ],
+    "techniques": [
+      {
+        "name": "Scherptevoorbereiding via vroege ruisreductie",
+        "description": "Voer het RAW-bestand als allereerste stap uit in DxO PhotoLab met DeepPRIME XD3 (luminantie rond de 40) en stel de lensverscherping in op Standard om microdetails direct te verstevigen.",
+        "when_to_use": "Bij elke wildlife-opname om een ruisvrij basiselement te creëren, zelfs bij relatief lage ISO-waarden zoals ISO 640.",
+        "tools": [
+          "DeepPRIME XD3",
+          "Lens Sharpness Optimization"
+        ],
+        "effect": "Verwijdert alle fijne korrel in egale vlakken zonder textuurverlies, wat latere verscherping in Lightroom effectiever maakt."
+      },
+      {
+        "name": "Kleur-achtergrondscheiding via witbalans",
+        "description": "Maak een selectie van de achtergrond en verlaag de kleurtemperatuur (White Balance) om de achtergrond koeler te maken en een subtiele magenta-reductie toe te passen.",
+        "when_to_use": "Wanneer de natuurlijke kleuren van het dier erg dicht bij de tinten van de achtergrondomgeving liggen.",
+        "tools": [
+          "Masking",
+          "White Balance"
+        ],
+        "effect": "Het onderwerp komt visueel los van de achtergrond dankzij een sterk complementair kleurcontrast."
+      },
+      {
+        "name": "Micro-contrastverhoging via textuur en helderheid",
+        "description": "Pas op het vogelmasker een gerichte verhoging toe van Clarity (+15) en Texture (+10) om de fijne structuren te accentueren.",
+        "when_to_use": "Bij dierenvachten of verenpakken om de indruk van scherpte te versterken zonder harde randverscherping.",
+        "tools": [
+          "Clarity",
+          "Texture"
+        ],
+        "effect": "Het verhoogt het lokale contrast op de veren waardoor het onderwerp direct tastbaarder en scherper oogt."
+      },
+      {
+        "name": "Lokale schaduwreconstructie in hard licht",
+        "description": "Dupliceer het vogelmasker, snijd het via 'Intersect' met een Radial Gradient over het oog en verhoog de belichting lokaal om harde schaduwpartijen op te vangen.",
+        "when_to_use": "Wanneer er gefotografeerd is onder een felle zon waardoor er diepe schaduwen vallen in het gezicht of rond de ogen van het dier.",
+        "tools": [
+          "Radial Gradient",
+          "Exposure",
+          "Intersect"
+        ],
+        "effect": "Brengt de expressie en de details in het oog van het dier terug zonder de rest van de vogel over te belichten."
+      },
+      {
+        "name": "Hoge Resolutie High Pass Verscherping",
+        "description": "Pas in Photoshop een High Pass-filter toe op een kopieerlaag met een straalwaarde tussen de 0.5 en 1.0 pixel en zet de overvloeimodus van de laag op Linear Light.",
+        "when_to_use": "Als allerlaatste stap in de workflow op de definitieve TIFF- of masterfile voor maximale scherpte.",
+        "tools": [
+          "High Pass",
+          "Linear Light"
+        ],
+        "effect": "Zorgt voor een uiterst fijne, knapperige verscherping van de randen zonder dat er grove artefacten of halo's ontstaan."
+      }
+    ],
+    "color_approach": "De kleuraanpak rust volledig op het creëren van een tonaal contrast tussen het onderwerp en de omgeving. Door het dier subtiel op te warmen via kleurgradatie in de middentonen en de achtergrond kunstmatig te verkoelen, ontstaat er een kleur-vignetwerking. Dit zorgt ervoor dat de natuurlijke kleuren van het dier direct de aandacht opeisen.",
+    "local_adjustments": "Er wordt intensief gewerkt met geavanceerde Lightroom-maskers. Een basismasker van het onderwerp wordt herhaaldelijk gedupliceerd en via de 'Intersect' functie gecombineerd met penselen of verloopfilters. Hierdoor kunnen bewerkingen zoals het oplichten van de veren op de vleugels of het donkerder maken van de onderkant van de achtergrond uiterst vloeiend en onzichtbaar in elkaar overlopen.",
+    "what_to_avoid": [
+      "Blind vertrouwen op de automatische subject-selectie zonder naderhand op 100% in te zoomen om randfouten rondom poten of de snavel te controleren.",
+      "Het hanteren van een te hoge Masking-waarde in Lightroom, wat de effectieve scherpte op de fijne details van het onderwerp blokkeert.",
+      "Het globaal verscherpen van een bestand waar nog ruis in zit, omdat de ruis dan onbedoeld mee wordt verscherpt."
+    ],
+    "best_for": "Gedetailleerde wildlife- en vogelotografie waarbij de nadruk ligt op een loepzuivere weergave van structuren, veren en vachten.",
+    "unique_insights": [
+      "Het elimineren van ruis aan het begin van de workflow met specialistische software is cruciaal voor de scherpte, omdat je hierdoor de 'Masking' schuifregelaar in Lightroom veel lager (bijv. op 15 in plaats van 30) kunt instellen, wat resulteert in substantieel meer detailverscherping op het onderwerp.",
+      "De automatische 'Object Selectie' (waarbij je handig over het onderwerp heen verft) presteert bij complexe randen zoals vogelklauwen significant beter en nauwkeuriger dan de standaard 'Subject Selectie' van Lightroom.",
+      "Door een achtergrondmasker te kruisen met een lineair verloopfilter aan de onderzijde kan een omgekeerde lichtval worden gecreëerd die de natuurlijke belichting (licht van boven) versterkt en het onderwerp extra uit de compositie tilt."
+    ],
+    "style_preview": "Deze stijl richt zich op een uiterst schone, technisch perfecte en natuurgetrouwe weergave van wildlife. De visuele sfeer is contrastrijk en helder, waarbij storende randelementen en achtergrondruis volledig worden geëlimineerd om het dier te laten spreken. Het werkt perfect voor foto's die zijn geschat onder uitdagend, hard daglicht, omdat het de hardheid omzet in gecontroleerde micro-contrasten. Als fotograaf kun je een eindresultaat verwachten met een ongekende scherpte waarin elk minuscuul detail tastbaar wordt."
   }
 ]

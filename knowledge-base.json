@@ -43867,5 +43867,109 @@
       "Het toepassen van een klein beetje negatieve Dehaze in combinatie met een verhoogde Texture-waarde zorgt ervoor dat een landschap wel haar scherpte behoudt, maar tegelijkertijd een zachte, atmosferische uitstraling krijgt."
     ],
     "style_preview": "Deze stijl biedt een uiterst gebalanceerde, driedimensionale en natuurgetrouwe blik op uitgestrekte landschappen. De visuele sfeer is levendig maar gecontroleerd, waarbij extreme contrasten vloeiend worden opgevangen zonder dat het beeld zijn natuurlijke karakter verliest. Het werkt perfect voor opnames met uitdagend tegenlicht of stevige onderbelichting, omdat het de verborgen details in de schaduwen herstelt met behoud van de sfeer. Fotografen kunnen een eindresultaat verwachten met rijke structuren, heldere middentonen en een harmonieus kleurenpalet dat rust uitstralend oogt."
+  },
+  {
+    "video_title": "The One Lightroom Tool That Changed This Whole Wildlife Edit",
+    "photographer_name": "Brian Matiash",
+    "youtube_url": "https://www.youtube.com/watch?v=0-36tQb1tNc",
+    "genre": [
+      "wildlife"
+    ],
+    "light_conditions": [
+      "gouden uur"
+    ],
+    "mood": [
+      "levendig"
+    ],
+    "software": [
+      "Lightroom Classic",
+      "Photoshop"
+    ],
+    "style_description": "Vibrant Sunrise Wildlife Glow",
+    "philosophy": "De kern van de bewerkingsfilosofie is om softwaretools niet alleen klinisch te gebruiken voor correcties, maar ook om creatieve effecten toe te voegen die de sfeer van het moment versterken. Er wordt veel waarde gehecht aan een doordachte volgorde van bewerkingen (order of operations), met name bij AI-gestuurde functies. Het doel is om het hoofdonderwerp perfect te isoleren en te verscherpen terwijl de achtergrond zacht en sfeervol blijft. Tot slot krijgt het beeld letterlijk en figuurlijk de ademruimte die het nodig heeft om optimaal tot zijn recht te komen.",
+    "workflow_order": [
+      "Stap 1: Pas direct AI Denoise toe op het RAW-bestand om ruis te verminderen met behoud van details.",
+      "Stap 2: Activeer het Adaptive Color Profile en pas de algehele belichting en tooncurve handmatig aan.",
+      "Stap 3: Gebruik een Adaptive Subject Mask om de vogel te selecteren, details te verfijnen en de achtergrond subtiel te verzachten.",
+      "Stap 4: Creëer een kunstmatige zonsondergang- of zonsopganggloed met een groot radiaal verloopmasker."
+    ],
+    "techniques": [
+      {
+        "name": "Gerichte AI-ruisonderdrukking",
+        "description": "Verhoog de Denoise-waarde handmatig naar circa 32-35 om storende ruis in egale vlakken effectief te elimineren zonder dat de ragfijne details en texturen van de veren verloren gaan.",
+        "when_to_use": "Bij wildlife- en actiefoto's die met een hoge sluitertijd en een verhoogde ISO-waarde (zoals ISO 800) zijn geschoten.",
+        "tools": [
+          "Denoise (Detail paneel)"
+        ],
+        "effect": "De achtergrond en onscherpe delen worden volledig gladgestreken, terwijl het hoofdonderwerp vlijmscherp blijft."
+      },
+      {
+        "name": "Adaptieve toon- en contrastregeling",
+        "description": "Selecteer het Adaptive Color Profile en verlaag de Amount-slider naar een subtiel niveau vlak boven nul om een gebalanceerd, niet-overbelicht uitgangspunt voor contrast te krijgen.",
+        "when_to_use": "Als alternatief voor de standaard 'Auto'-knop om slimmere, minder agressieve tooncorrecties toe te passen.",
+        "tools": [
+          "Profile",
+          "Amount slider"
+        ],
+        "effect": "De middentonen worden opgelicht en de dynamiek in de foto wordt hersteld zonder uitgebleekte witten."
+      },
+      {
+        "name": "S-Curve met zachte zwartpunten",
+        "description": "Plaats drie controlepunten op de snijlijnen van de tooncurve. Trek het schaduwgebied omlaag voor punch, verhoog de hooglichten en sleep het uiterste linker zwartpunt iets omhoog (introduceren van grijs) om harde contrasten te verzachten.",
+        "when_to_use": "Wanneer je handmatige controle wilt over het contrast in plaats van de standaard contrast-schuifbalk te gebruiken.",
+        "tools": [
+          "Tone Curve"
+        ],
+        "effect": "Er ontstaat een krachtig maar mat contrast met diepe, licht matte schaduwen die de foto een verfijnde look geven."
+      },
+      {
+        "name": "Gescheiden onderwerpscherpte via maskers",
+        "description": "Maak een Adaptive Subject Mask aan voor de vogel, poets ongewenste delen weg met een brush (met Auto Mask ingeschakeld) en verhoog de Texture-slider subtiel om de fijne veertjes extra definitie te geven.",
+        "when_to_use": "Wanneer de vogel los moet komen van de achtergrond en de textuur lokaal versterkt moet worden.",
+        "tools": [
+          "Masking",
+          "Subject",
+          "Brush",
+          "Texture"
+        ],
+        "effect": "De vogel krijgt direct meer tastbare textuur en rimpelingen, terwijl de rest van de omgeving onaangetast blijft."
+      },
+      {
+        "name": "Simulatie van een warme zonsopganggloed",
+        "description": "Plaats een gigantisch radiaal verloopmasker met een maximale feather (zachte rand) in een hoek van het beeld. Verlaag Dehaze naar een negatieve waarde en verhoog de Temp-schuifbalk aanzienlijk om warm licht na te bootsen.",
+        "when_to_use": "Bij foto's die vroeg in de ochtend zijn genomen om de natuurlijke aanwezigheid van zacht, warm zonlicht drastisch te accentueren.",
+        "tools": [
+          "Radial Gradient",
+          "Dehaze",
+          "Temp"
+        ],
+        "effect": "Er verschijnt een prachtige, dromerige warme gloed die over de randen van het onderwerp strijkt en diepte creëert."
+      },
+      {
+        "name": "Extreme detailverscherping",
+        "description": "Zet de Radius handmatig op de minimale waarde van 0.5 en sleep de Detail-schuif helemaal naar 100. Houd de Option/Alt-toets ingedrukt tijdens het maskeren zodat de verscherping puur de contouren pakt.",
+        "when_to_use": "Bij het afronden van de workflow om microcontrast in veren en waterdruppels te maximaliseren.",
+        "tools": [
+          "Sharpening",
+          "Radius",
+          "Detail",
+          "Masking"
+        ],
+        "effect": "De randen van het onderwerp worden extreem gedefinieerd zonder dat er ongewenste artefacten of extra ruis in egale vlakken ontstaan."
+      }
+    ],
+    "color_approach": "De kleurbenadering richt zich op het vermijden van de standaard verzadigingsschuiven in de Color Mixer, omdat deze de kleuren snel 'kapot' maken. In plaats daarvan wordt de Blue Primary Saturation in het Color Calibration-paneel stevig verhoogd om een rijke, diepe maar natuurlijk ogende boost aan de blauw- en watertinten te geven, gecombineerd met een warme temperatuur-injectie via lokale maskers om het gouden uur-gevoel te versterken.",
+    "local_adjustments": "Lokale aanpassingen zijn cruciaal in deze workflow. Er wordt gebruikgemaakt van een AI-onderwerpsmasker dat handmatig wordt verfijnd met een penseel om de vogel te isoleren. Dit masker wordt vervolgens gedupliceerd en geïnverteerd om de achtergrond apart te kunnen bewerken met Dehaze, waardoor het onderwerp visueel loskomt van zijn omgeving.",
+    "what_to_avoid": [
+      "Kijken naar de numerieke waarden of de positie van de schuifbalken in plaats van je ogen strikt op de visuele veranderingen in de foto te houden.",
+      "Het blindelings omhoog jagen van de blauw-verzadiging in de normale Color Mixer, wat resulteert in een onnatuurlijk en lelijk kleureffect."
+    ],
+    "best_for": "Actiefoto's van vogels en wildlife die zijn gemaakt tijdens de vroege ochtenduren met telelenzen, waarbij de compositie net iets te krap is en de actie bevroren moet worden.",
+    "unique_insights": [
+      "Het toepassen van AI Denoise moet direct aan het begin van de workflow gebeuren (Order of Operations) omdat het rechtstreeks op de RAW-data werkt zonder een extra, onbewerkbare DNG te bakken.",
+      "De verfijnde verzadigingsregelaar (Refine Saturation) binnen de tooncurve is perfect om de ongewenste kleurpieken op te vangen die automatisch ontstaan wanneer je de contrastpunten van de curve verschuift.",
+      "Als een vogel tijdens het fotograferen te krap in het kader is geplaatst, kun je Generative Expand in Photoshop gebruiken met de instelling 'Original Ratio' zonder tekstprompt om de compositie achteraf meer ademruimte te geven."
+    ],
+    "style_preview": "De stijl kenmerkt zich door een levendige en sfeervolle uitstraling waarin wildlife op een dromerige manier wordt geïsoleerd van de achtergrond. De kernfilosofie is om de technische perfectie van een telelensopname te combineren met schilderachtige lichteffecten zoals een warme ochtendgloed. Deze stijl werkt het beste voor actiebeelden van dieren tijdens het gouden uur, waarbij de achtergrond relatief rustig is. Het verwachte resultaat is een vlijmscherp onderwerp dat baadt in een zacht, warm licht met prachtig gecontroleerde contrasten in de schaduwen."
   }
 ]

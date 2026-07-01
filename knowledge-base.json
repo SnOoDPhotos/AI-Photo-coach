@@ -44760,5 +44760,96 @@
       "Een vast cameraprofiel (zoals Fujifilm Astia bij scènes met weinig blauwtinten) vormt een stabielere en snellere basis voor een consistente analoge look dan het constant wisselen van externe presets."
     ],
     "style_preview": "Deze stijl straalt een doorleefde, filmische en licht korrelige sfeer uit die perfect aansluit bij het rauwe karakter van het stadsleven. De kernfilosofie draait om het minimaliseren van de digitale bewerkingstijd om de pure, in-camera vastgelegde realiteit te beschermen. Dit werkt optimaal bij straatbeelden met krachtige schaduwpartijen, silhouetten en diffuus omgevingslicht. Als fotograaf kun je een contrastrijk eindresultaat verwachten waarin de menselijke onderwerpen op een natuurlijke wijze opvallen en stedelijke texturen subtiel worden geaccentueerd zonder dat het beeld zijn authentieke documentairerelevantie verliest."
+  },
+  {
+    "video_title": "EASY Editing For Sunrise & Sunset Photos | Step By Step Lesson",
+    "photographer_name": "William Patino",
+    "youtube_url": "https://www.youtube.com/watch?v=FggPVnOAhvk",
+    "genre": [
+      "landschap"
+    ],
+    "light_conditions": [
+      "gouden uur",
+      "tegenlicht"
+    ],
+    "mood": [
+      "naturalistisch",
+      "cinematisch"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Natural Painterly Golden Landscape",
+    "philosophy": "De kerngedachte is het behouden van een natuurlijke en geloofwaardige uitstraling van het landschap zonder te vervallen in overbewerkte effecten. Er wordt gestreefd naar een schilderachtige sfeer door diepte te creëren via atmosferisch perspectief. Het is essentieel om eerst een duidelijk plan te maken voordat er aan schuifjes wordt getrokken. Lokale, subtiele aanpassingen hebben altijd de voorkeur boven agressieve, globale bewerkingen.",
+    "workflow_order": [
+      "stap 1: Analyseer de foto en formuleer een bewerkingsplan op basis van licht en contrast.",
+      "stap 2: Pas het Adobe Landscape profiel toe voor een directe subtiele boost in kleur en schaduwomstandigheden.",
+      "stap 3: Corrigeer de globale tonen (exposure, highlights en shadows) om de dynamische range in balans te brengen.",
+      "stap 4: Gebruik lokale penselen om diepte te schilderen, mist op te lichten en details te accentueren."
+    ],
+    "techniques": [
+      {
+        "name": "Toepassen Landschapsprofiel",
+        "description": "Selecteer het Landscape-profiel in plaats van Adobe Color om direct een natuurlijke verzadiging en subtiele schaduwherstel aan de RAW-data mee te geven.",
+        "when_to_use": "Bij vrijwel elke landschapsfoto direct bij de start van de workflow.",
+        "tools": [
+          "Profile"
+        ],
+        "effect": "Kleuren worden direct levendiger en het contrast in de schaduwen verzacht zonder handmatige verzadiging."
+      },
+      {
+        "name": "Natuurlijke Globale Belichting",
+        "description": "Verhoog de globale Exposure met ongeveer +1.00 stop om de algehele middentonen en schaduwen op een evenredige, organische manier op te lichten.",
+        "when_to_use": "Bij vlakke RAW-bestanden met een groot dynamisch bereik tussen lucht en schaduwpartijen.",
+        "tools": [
+          "Exposure"
+        ],
+        "effect": "De hele foto wordt helderder waardoor structuren zichtbaar worden, al worden lichte delen tijdelijk iets te fel."
+      },
+      {
+        "name": "Milde Highlight en Shadow Balans",
+        "description": "Verlaag de Highlights matig naar -30 en verhoog de Shadows naar +30 om clipping te voorkomen zonder de lokale helderheid plat te slaan.",
+        "when_to_use": "Bij tegenlichtsituaties tijdens zonsopgang of zonsondergang om extreme witten op te vangen.",
+        "tools": [
+          "Highlights",
+          "Shadows"
+        ],
+        "effect": "Extreem lichte delen bij de horizon krijgen weer detail en diepe schaduwen worden net genoeg geopend."
+      },
+      {
+        "name": "Atmosferische Luchtverduistering",
+        "description": "Gebruik een zacht lokaal penseel met Exposure ingesteld op -0.50 stop om de bovenkant van de bewolking subtiel donkerder te maken.",
+        "when_to_use": "In de luchtpartijen die zich het dichtst bij de bovenrand van het frame bevinden.",
+        "tools": [
+          "Brush"
+        ],
+        "effect": "Er ontstaat een natuurlijke driedimensionaliteit en de blik van de kijker wordt actief omlaag naar het centrale onderwerp geleid."
+      },
+      {
+        "name": "Luminositeit Accentueren met Whites",
+        "description": "Gebruik een lokaal penseel en verhoog de Whites om specifiek de delen op te lichten die al door de zon worden geraakt, zoals watervallen of ijzige structuren.",
+        "when_to_use": "Op details in de voorgrond of op nevel in de achtergrond waar natuurlijk licht op reflecteert.",
+        "tools": [
+          "Brush",
+          "Whites"
+        ],
+        "effect": "Zorgt voor een heldere, lumineuze uitstraling van lichte accenten zonder de omringende donkere tonen onnatuurlijk helder te maken."
+      }
+    ],
+    "color_approach": "De focus ligt op het versterken van het natuurlijke kleurcontrast tussen warme highlights en koele schaduwen. Globale aanpassingen in witbalans worden minimaal gehouden om te voorkomen dat schaduwpartijen onnatuurlijk warm of modderig worden. Via subtiele Color Grading worden de lichte delen gecontroleerd voorzien van een warme tint, terwijl de schaduwen hun koele integriteit behouden.",
+    "local_adjustments": "Lokale maskers vormen de absolute basis van de workflow. Er wordt intensief gebruikgemaakt van het penseel (K) met een maximale feather (100) om aanpassingen organisch in elkaar te laten overlopen. Maskers worden ingezet om selectief contrast toe te voegen aan de voorgrond en juist textuur en midtooncontrast te verminderen bij de horizon om diepte te simuleren.",
+    "what_to_avoid": [
+      "Agressief schuiven met de globale Clarity-slider, wat zorgt voor een digitaal en onnatuurlijk uiterlijk in de middentonen.",
+      "Het volledig wegpoetsen van de zon en felle highlights, waardoor het natuurlijke karakter van direct tegenlicht verloren gaat.",
+      "Het direct online plaatsen van een bewerkte foto zonder deze eerst te laten rusten en met frisse ogen te herbeoordelen."
+    ],
+    "best_for": "Landschapsfoto's met een hoog dynamisch bereik, gefotografeerd tijdens zonsopkomst of zonsondergang met direct tegenlicht en atmosferische elementen.",
+    "unique_insights": [
+      "Hij past bewust minder globale warmte toe met de temperatuurschuif, omdat echte visuele impact bij zonsondergangen ontstaat door het contrast tussen warme highlights en koel blijvende schaduwen.",
+      "In plaats van mist of nevel scherper te maken, verlaagt hij lokaal het midtooncontrast met Dehaze (omgekeerd gebruikt) om de atmosferische diepte juist te versterken en objecten verder weg te laten lijken.",
+      "Hij past bewust geen extra digitale verscherping toe op zijn foto's; zolang de focus in-camera goed is, behoudt het weglaten van verscherping een tijdloze, schilderachtige ('painterly') kwaliteit die minder snel veroudert.",
+      "Voorgrond-elementen die dichtbij de lens staan moeten altijd een harder contrast en meer textuur hebben dan elementen in de verte, omdat dit exact nabootst hoe het menselijk brein diepte en afstand interpreteert."
+    ],
+    "style_preview": "Deze stijl ademt een schilderachtige en verfijnde rust uit die de kijker direct meeneemt naar het moment van de opname. Door vast te houden aan een strikte filosofie van natuurlijkheid, vermijdt deze benadering de typische valkuilen van hyper-verzadigde en over-verscherpte digitale landschapsfotografie. Het werkt het beste voor weidse landschappen tijdens het gouden uur waarin nevel, water en harde structuren elkaar ontmoeten. Als fotograaf kun je een subtiel samenspel verwachten van koele, diepe schaduwen en zachte, lumineuze highlights die samen een tastbare dieptewerking creëren."
   }
 ]

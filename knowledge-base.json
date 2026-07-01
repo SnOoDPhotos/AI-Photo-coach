@@ -44851,5 +44851,96 @@
       "Voorgrond-elementen die dichtbij de lens staan moeten altijd een harder contrast en meer textuur hebben dan elementen in de verte, omdat dit exact nabootst hoe het menselijk brein diepte en afstand interpreteert."
     ],
     "style_preview": "Deze stijl ademt een schilderachtige en verfijnde rust uit die de kijker direct meeneemt naar het moment van de opname. Door vast te houden aan een strikte filosofie van natuurlijkheid, vermijdt deze benadering de typische valkuilen van hyper-verzadigde en over-verscherpte digitale landschapsfotografie. Het werkt het beste voor weidse landschappen tijdens het gouden uur waarin nevel, water en harde structuren elkaar ontmoeten. Als fotograaf kun je een subtiel samenspel verwachten van koele, diepe schaduwen en zachte, lumineuze highlights die samen een tastbare dieptewerking creëren."
+  },
+  {
+    "video_title": "Using Smart Objects with Lightroom and Adobe Camera Raw to Take Advantage of ACR 18.4 Enhancements",
+    "photographer_name": "Mickey",
+    "youtube_url": "https://www.youtube.com/watch?v=aGSFClEQ43M",
+    "genre": [
+      "landschap"
+    ],
+    "light_conditions": [
+      "daglicht",
+      "diffuus licht"
+    ],
+    "mood": [
+      "naturalistisch",
+      "helder"
+    ],
+    "software": [
+      "Lightroom Classic",
+      "Photoshop"
+    ],
+    "style_description": "Niet-destructieve Workflow Landschapsfotografie",
+    "philosophy": "De kernfilosofie draait volledig om een geavanceerde, niet-destructieve RAW-workflow tussen Lightroom Classic en Photoshop. Door foto's uitsluitend als Smart Objects over te zetten, behoud je de volledige flexibiliteit over alle eerdere RAW-aanpassingen en maskers. Dit voorkomt dat bewerkingen platgeslagen worden tot een statisch TIFF-bestand. Het doel is om continu te kunnen schakelen en de meest krachtige, exclusieve RAW-functies van Adobe Camera Raw te benutten.",
+    "workflow_order": [
+      "stap 1: Breng basiscorrecties, profielen en initiële maskers (zoals een Sky Mask) aan in Lightroom Classic.",
+      "stap 2: Zet de foto via de sneltoets of het menu over naar Photoshop als een Smart Object (container met RAW-data).",
+      "stap 3: Open Adobe Camera Raw binnen Photoshop door te dubbelklikken op de Smart Object-miniatuur om RAW-exclusieve tools te gebruiken.",
+      "stap 4: Verfijn de maskers met geavanceerde edge-controls, pas bidirectionele verloopfilters toe en sla de wijzigingen op om te synchroniseren."
+    ],
+    "techniques": [
+      {
+        "name": "Niet-destructieve RAW-transfer via Smart Object",
+        "description": "Zet de foto over naar Photoshop met 'Openen als slim object' (sneltoets Option+Command+X op Mac of Alt+Control+X op PC) om alle RAW-data en actieve Lightroom-maskers volledig bewerkbaar te houden in een slimme container.",
+        "when_to_use": "Altijd wanneer je de overstap maakt van Lightroom Classic naar Photoshop voor geavanceerde bewerkingen.",
+        "tools": [
+          "Photoshop Layers"
+        ],
+        "effect": "De foto opent in Photoshop met een Smart Object-icoon, waardoor alle RAW-schuifjes en maskers intact blijven in plaats van te flattenen naar een TIFF."
+      },
+      {
+        "name": "Geavanceerde Maskerrand-verfijning",
+        "description": "Gebruik de exclusieve Edge Control in ACR 18.4 om de Feather en de fysieke uitbreiding van een AI-luchtmasker handmatig aan te passen voor een naadloze overgang.",
+        "when_to_use": "Bij het bewerken van de lucht (Sky Mask) om halo's of onnatuurlijke contrastranden langs bomen of bergen te voorkomen.",
+        "tools": [
+          "Masking",
+          "Edge Control"
+        ],
+        "effect": "De randen van het masker worden perfect zacht uitgelijnd, waardoor extreme belichtingsaanpassingen in de lucht niet doorbloeden naar de voorgrond."
+      },
+      {
+        "name": "Bidirectioneel Lineair Verloopfilter",
+        "description": "Activeer de 'Bidirectional'-optie bij een lineair verloopfilter om de aanpassing vanuit het startpunt symmetrisch naar twee kanten tegelijk te laten uitwaaieren.",
+        "when_to_use": "Bij het lokaal oplichten of aanzetten van schaduwen in specifieke zones zoals een stromende beek of een wegrand.",
+        "tools": [
+          "Linear Gradient"
+        ],
+        "effect": "Het verloop breidt zich vloeiend en evenredig uit naar beide zijden, wat zorgt voor een perfect gebalanceerde lokale oplichting."
+      },
+      {
+        "name": "Generative Expand op Smart Object-randen",
+        "description": "Pas de ingebouwde Generative Expand-functie toe binnen Adobe Camera Raw om lege randen, die ontstaan na een groothoekprojectie of perspectiefcorrectie, automatisch in te vullen met AI.",
+        "when_to_use": "Na het rechttrekken van vervormde randen bij groothoekopnames om de ontbrekende hoeken van het canvas aan te vullen.",
+        "tools": [
+          "Geometry",
+          "Generative Expand"
+        ],
+        "effect": "De witte of transparante hoeken van de foto worden naadloos ingevuld met realistisch gegenereerde landschapselementen die matchen met de rest van de foto."
+      },
+      {
+        "name": "Lucht-subtractie op Lokale Filters",
+        "description": "Gebruik de 'Subtract' (Aftrekken) functie op een bidirectioneel verloopfilter en selecteer 'Sky' om ongewenste lichtlekkage in de lucht direct te elimineren.",
+        "when_to_use": "Wanneer een lokaal verloopfilter in de voorgrond of het middenplan per ongeluk over de horizon heen in de lucht reikt.",
+        "tools": [
+          "Masking",
+          "Subtract Sky"
+        ],
+        "effect": "De belichting of kleur van de lucht blijft volledig onaangetast, zelfs als je de belichting binnen het verloopfilter extreem omhoog schroeft."
+      }
+    ],
+    "color_approach": "De focus ligt op het lokaal versterken en corrigeren van kleuren binnen specifieke RAW-maskers. Door gebruik te maken van het bidirectionele verloopfilter worden subtiele groentinten en reflecties in het water versterkt, zonder dat dit ten koste gaat van de algehele witbalans van de landschapsfoto. De RAW-data in de Smart Object-container garandeert dat kleurgradaties vloeiend blijven zonder artefacten.",
+    "local_adjustments": "Lokale maskers vormen de absolute essentie van deze video. Er wordt gedemonstreerd hoe AI-luchtmaskers, radiale filters en lineaire verlopen via een Smart Object naadloos overgaan naar Photoshop. Maskers worden continu heropend, geïnverteerd ter controle op fouten, en verfijnd met exclusieve ACR-randfuncties om lokaal licht en schaduw perfect te doseren.",
+    "what_to_avoid": [
+      "Het selecteren van de standaard 'Bewerken in Photoshop' optie, wat resulteert in een statisch en platgeslagen TIFF- of PSD-bestand waarbij alle oorspronkelijke maskers verloren gaan.",
+      "Het openen van Adobe Camera Raw in Photoshop via het bovenste Filter-menu (Camera Raw-filter) bij een Smart Object, omdat dit de RAW-data negeert en de laag als een TIFF behandelt."
+    ],
+    "best_for": "Fotografen die het maximale uit hun RAW-bestanden willen halen en een feilloze, niet-destructieve hybride workflow zoeken tussen Lightroom Classic en Photoshop.",
+    "unique_insights": [
+      "Wanneer je een foto als Smart Object opent in Photoshop, mag je NOOIT via het Filter-menu naar Camera Raw gaan; je moet specifiek dubbelklikken op de miniatuur van de laag om de echte RAW-omgeving inclusief je originele Lightroom-maskers te activeren.",
+      "Functies zoals 'Denoise AI' en 'Generative Expand' binnen Camera Raw zijn exclusief voorbehouden aan RAW-data en worden onbruikbaar zodra een foto via de standaardmethode als een plat TIFF-bestand naar Photoshop wordt gestuurd.",
+      "Om te controleren of een lokaal masker perfect aansluit zonder halo's, kun je het masker in ACR tijdelijk dupliceren, inverteren en de exposure extreem verlagen; als er geen gloeiende randen rondom objecten zichtbaar worden, is het masker technisch perfect."
+    ],
+    "style_preview": "Deze workflowgerichte stijl richt zich op het behoud van de ultieme beeldkwaliteit en creatieve controle over landschapsfoto's. De visuele sfeer is puur naturalistisch en gebalanceerd, omdat het overmatig bewerken of 'platlaan' van het dynamisch bereik actief wordt voorkomen. Deze methodiek werkt het beste voor complexe landschappen met uitdagende overgangen, zoals bomen tegen een felle lucht, waarbij precisie-maskering vereist is. Als fotograaf kun je een workflow verwachten waarin je op elk gewenst moment fouten kunt herstellen, maskers kunt aanpassen en naadloos kunt schakelen tussen globale RAW-kracht en lokale Photoshop-precisie."
   }
 ]

@@ -43329,5 +43329,94 @@
       "Hair styling is vaak een intensief proces voor modellen; het niet goed uitlichten van haar is in essentie het negeren van de moeite die de ander in hun presentatie heeft gestoken."
     ],
     "style_preview": "De stijl van Aundre Larrow is diep geworteld in empathie en authenticiteit. Hij streeft naar een eerlijke weergave van het onderwerp door technische precisie in Lightroom te combineren met een diep respect voor de mens achter de lens. Deze stijl is perfect voor portretfotografen die in uitdagende lichtomstandigheden werken en streven naar beelden die niet alleen mooi zijn, maar ook de ziel en de identiteit van de geportretteerde persoon recht doen."
+  },
+  {
+    "video_title": "Luminar Neo 2026 RAW Editing Tutorial (Part 1): 4 Essential Pro Tips",
+    "photographer_name": "Take Better Photos",
+    "youtube_url": "https://www.youtube.com/watch?v=uscGQ-d4q7w",
+    "genre": [
+      "landschap",
+      "reisfotografie"
+    ],
+    "light_conditions": [
+      "harde zon",
+      "tegenlicht"
+    ],
+    "mood": [
+      "naturalistisch",
+      "levendig"
+    ],
+    "software": [
+      "Luminar Neo"
+    ],
+    "style_description": "Gebalanceerd Natuurlijk Dynamisch Landschap",
+    "philosophy": "Fotobewerking draait om het efficiënt herstellen van het dynamisch bereik zonder de visuele puurheid van het beeld te verliezen. De ingebouwde intelligentie van de software moet optimaal worden benut om handmatige handelingen te minimaliseren. Een succesvolle bewerking vereist een strikte naleving van de technische volgorde van aanpassingen om de maximale datakwaliteit uit het RAW-bestand te persen.",
+    "workflow_order": [
+      "stap 1: Importeer de foto's direct via de mapstructuur in de bibliotheek zonder complexe importprocedures",
+      "stap 2: Voer de globale RAW-aanpassingen uit in het Develop-paneel om schaduwen en highlights in balans te brengen",
+      "stap 3: Schakel de RAW-status optioneel uit met een minimale schuifaanpassing om lokale maskers te ontgrendelen",
+      "stap 4: Pas lokale luminantiemaskers toe en verzacht de randen met de feather-optie voor een naadloze overgang"
+    ],
+    "techniques": [
+      {
+        "name": "Intelligente Globale Schaduwherstel",
+        "description": "Verhoog de Shadows-schuifregelaar naar een waarde tussen +40 en +60 om de donkere voorgrond selectief op te lichten zonder de middentonen of de lucht aan te tasten.",
+        "when_to_use": "Bij landschappen met een hoog contrast en een onderbelichte voorgrond veroorzaakt door tegenlicht.",
+        "tools": [
+          "Develop"
+        ],
+        "effect": "De voorgrond wordt helderder en details in de schaduwen worden zichtbaar, terwijl de rest van de belichting ongewijzigd blijft."
+      },
+      {
+        "name": "Gerichte Hooglichten Reductie",
+        "description": "Verlaag de Highlights-schuifregelaar tot ongeveer -50 om overbelichte delen in de lucht te herstellen zonder de algehele contrastbalans van de voorgrond te verstoren.",
+        "when_to_use": "Bij uitgebleekte luchten of felle wolkenpartijen in high-contrast scènes.",
+        "tools": [
+          "Develop"
+        ],
+        "effect": "Details en textuur in de wolkenlucht keren terug, terwijl de schaduwpartijen onaangetast blijven."
+      },
+      {
+        "name": "Halo-preventie door Schuif-matiging",
+        "description": "Verminder de intensiteit van agressieve schaduw- of hooglichten-aanpassingen met 10 tot 15 procent om donkere randen en artefacten te elimineren.",
+        "when_to_use": "Wanneer er scherpe, onnatuurlijke donkere contouren (halos) verschijnen rondom onderwerpen die grenzen aan een lichte achtergrond.",
+        "tools": [
+          "Develop"
+        ],
+        "effect": "De harde artefacten langs de overgangen verdwijnen, wat resulteert in een vloeiend en realistisch beeldverloop."
+      },
+      {
+        "name": "RAW-status Deactivatie voor Maskering",
+        "description": "Verschuif een niet-RAW schuifregelaar zoals Accent minimaal met +1 om de initiële RAW-status te verlaten en het maskeertabblad geforceerd te tonen.",
+        "when_to_use": "Wanneer het maskeertabblad in het Develop-paneel onzichtbaar of geblokkeerd blijft tijdens het openen van een vers RAW-bestand.",
+        "tools": [
+          "Develop"
+        ],
+        "effect": "Het tabblad 'Masking' verschijnt direct in de interface, waardoor lokale gereedschappen beschikbaar worden."
+      },
+      {
+        "name": "Luminantiemasker Randverzachting",
+        "description": "Verhoog de Feather-instelling binnen de Mask Actions naar een waarde van +20 tot +40 om de abrupte overgangen van een helderheidsselectie te verzachten.",
+        "when_to_use": "Bij het lokaal aanpassen van onderwerpen met complexe of harde randen die via een luminantiemasker zijn geselecteerd.",
+        "tools": [
+          "Mask Actions"
+        ],
+        "effect": "De bewerkte gebieden vloeien onzichtbaar over in de rest van de foto, waardoor harde overgangsfouten verdwijnen."
+      }
+    ],
+    "color_approach": "Kleurbeheer start bij een vlekkeloze tonale balans. Door de hooglichten en schaduwen direct in de RAW-fase extreem selectief te scheiden, wordt voorkomen dat kleuren in de schaduwpartijen modderig worden of dat de verzadiging in de lucht onnatuurlijk piekt. Dit zorgt voor een zuivere, realistische kleurweergave die perfect past bij weidse landschappen onder uitdagende omstandigheden.",
+    "local_adjustments": "Lokale aanpassingen worden ingezet zodra globale schuifregelaars de grenzen van hun selectiviteit bereiken en artefacten veroorzaken. Er wordt gebruikgemaakt van luminantiemaskers om specifieke helderheidswaarden te isoleren, waarna een penseel dient om de selectie handmatig te perfectioneren. Maskeracties zoals feathering zijn hierbij cruciaal om de overgangen onzichtbaar te maken.",
+    "what_to_avoid": [
+      "Het aanpassen van creatieve filters zoals Structure vóór de globale RAW-ontwikkeling, wat de dynamic range destructief inperkt",
+      "Het oversturen van de globale schuifregelaars waardoor storende halo-artefacten langs contrastrijke overgangen ontstaan",
+      "Het negeren van de noodzaak om luminantiemaskers te featheren, wat leidt tot scherpe en onrealistische bewerkingsgrenzen"
+    ],
+    "best_for": "Landschapsfotografen die snel en efficiënt opnames met een extreem hoog contrast en uitgebleekte luchten willen corrigeren zonder urenlang handmatige maskers te hoeven tekenen.",
+    "unique_insights": [
+      "In de verwerkingseenheid van deze software verdwijnt de directe toegang tot de pure RAW-data zodra er een niet-RAW slider (zoals Structure) wordt aangeraakt; opeenvolgende hooglichten-correcties verliezen hierdoor direct een aanzienlijk deel van hun herstelkracht.",
+      "In tegenstelling tot concurrerende pakketten bezitten de globale schuifregelaars voor hooglichten en schaduwen een uitzonderlijk hoge isolatiewaarde, waardoor ze nagenoeg functioneren als automatische, perfect sluitende maskers zonder overloop naar de middentonen.",
+      "Het maskeertabblad voor RAW-bestanden zit softwarematig vergrendeld achter een interface-quirk; het kan uitsluitend worden geforceerd door de software via een minimale globale aanpassing te dwingen de initiële RAW-status te verlaten."
+    ],
+    "style_preview": "Deze stijl richt zich op het behoud van een natuurlijke en geloofwaardige balans in foto's met een uitdagend dynamisch bereik. De visuele sfeer is helder en open, waarbij details in zowel de diepste schaduwen als de felste hooglichten volledig tot hun recht komen zonder dat het beeld een kunstmatige HDR-look krijgt. Deze benadering werkt optimaal voor weidse landschappen en reisfotografie die tijdens de felle middagzon of bij krachtig tegenlicht zijn geschoten. Het resultaat is een loepzuivere, contrastrijke plaat waarin de overgangen vloeiend verlopen en de technische ingrepen volledig onzichtbaar blijven voor de kijker."
   }
 ]

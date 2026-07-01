@@ -42416,5 +42416,93 @@
       "Bij het bewerken van bosfoto's wordt het accent verschoven door lineaire verloopmaskers te gebruiken die de vaak rommelige bodem radicaal verduisteren, zodat alle aandacht naar het bladerdek gaat."
     ],
     "style_preview": "Deze stijl transformeert ruwe registraties in betoverende, dromerige kunstwerken. Door het samenspel van zacht oplichtende accenten, warme kleuren en selectieve donkerte, ontstaat een sterk schilderachtig karakter. Er wordt met precisie geselecteerd welke elementen aandacht krijgen en welke verdwijnen in sfeervolle schaduwen. Deze benadering past feilloos bij tegenlicht, zonsopkomsten en macro-onderwerpen in het bos. Als fotograaf kun je rekenen op een eindresultaat dat de fantasie prikkelt en een krachtige, emotionele sfeer neerzet."
+  },
+  {
+    "video_title": "How to Edit Photos like Albert Dros - Photoshop Tutorial",
+    "photographer_name": "Christian Möhrle",
+    "youtube_url": "[https://www.youtube.com/watch?v=2ip7ZH7vfNw](https://www.youtube.com/watch?v=2ip7ZH7vfNw)",
+    "genre": [
+      "landschap"
+    ],
+    "light_conditions": [
+      "gouden uur",
+      "tegenlicht"
+    ],
+    "mood": [
+      "levendig",
+      "dramatisch"
+    ],
+    "software": [
+      "Photoshop",
+      "Nik Collection"
+    ],
+    "style_description": "Vibrant Detailed Golden Landscape",
+    "philosophy": "Het doel is om een zeer levendig beeld te creëren met een maximaal dynamisch bereik door gebruik te maken van HDR-bestanden. Zowel in de diepste schaduwen als in de felste hooglichten moeten alle details behouden blijven. Kleurbalans tussen warme zonsopkomsttinten en koele blauwe luchten staat hierbij centraal.",
+    "workflow_order": [
+      "stap 1: Schakel over naar het Adobe Landschap-profiel en pas de basisbelichting aan door hooglichten maximaal te verlagen en schaduwen te openen.",
+      "stap 2: Pas lokale maskers toe (lineaire en radiale verlopen) in Camera Raw om de lucht te verdonkeren en warme kleurvlekken te versterken.",
+      "stap 3: Voeg handmatig een warme gloed toe op een aparte Hard Licht-laag in Photoshop over lichte delen en straatlantaarns.",
+      "stap 4: Gebruik de Nik Collection Color Efex Pro-plugin voor algehele warmte en contrast, gevolgd door een subtiel Orton-effect."
+    ],
+    "techniques": [
+      {
+        "name": "Profielwissel naar Adobe Landschap",
+        "description": "Wijzig het cameraprofiel naar Adobe Landschap om direct de verzadiging te verhogen en de donkere tonen subtiel op te lichten.",
+        "when_to_use": "Bij landschapsfoto's die direct een levendige basis en betere kleurweergave nodig hebben.",
+        "tools": [
+          "Camera Raw (Photoshop)"
+        ],
+        "effect": "De foto oogt direct kleurrijker en de donkere delen krijgen meer tekening."
+      },
+      {
+        "name": "Extreme Hooglichten Reductie",
+        "description": "Verlaag de Hooglichten volledig naar -100 om verborgen details in de wolken en de verzadiging in de lucht terug te brengen.",
+        "when_to_use": "Bij HDR-opnames met felle luchten waar clipping dreigt.",
+        "tools": [
+          "Camera Raw (Photoshop)"
+        ],
+        "effect": "De lucht krijgt een diepere, rijkere kleur en fijne structuren in de wolken worden zichtbaar."
+      },
+      {
+        "name": "Zachtheid door Clarity-reductie",
+        "description": "Verhoog de Textuur voor microdetails, maar verlaag tegelijkertijd de Lokaal Contrast (Clarity) en Nevel Verwijderen (Dehaze) naar negatieve waarden.",
+        "when_to_use": "Om een dromerige, sprookjesachtige sfeer te creëren in landschappen zonder scherpte te verliezen.",
+        "tools": [
+          "Camera Raw (Photoshop)"
+        ],
+        "effect": "Er ontstaat een zachte, dromerige gloed over de gehele afbeelding terwijl fijne details scherp blijven."
+      },
+      {
+        "name": "Handmatige Gloed Schilderen",
+        "description": "Schilder met een zachte brush (10% dekking) en een warme kleur op een nieuwe laag met de overvloeimodus op Hard Licht.",
+        "when_to_use": "Rondom felle lichtbronnen, de zon, straatlantaarns of reflecties in het water.",
+        "tools": [
+          "Photoshop"
+        ],
+        "effect": "Lichtbronnen lijken realistisch uit te stralen en te gloeien over omliggende objecten en gebouwen."
+      },
+      {
+        "name": "Subtiel Orton-effect via Fade",
+        "description": "Pas een Gaussiaans vervaging toe van ongeveer 30 pixels op een samengevoegde laag, en gebruik direct daarna 'Vervagen vervagen' (Fade) ingesteld op de modus Oplichten (Lighten) met een lage dekking.",
+        "when_to_use": "Als finishing touch om een high-end landschapslook te creëren.",
+        "tools": [
+          "Photoshop"
+        ],
+        "effect": "Er ontstaat een zeer verfijnde, dromerige sfeer in de lichtere delen zonder dat de schaduwen dichtlopen."
+      }
+    ],
+    "color_approach": "Er wordt gekozen voor een sterke complementaire kleurbalans. De gele en oranje tinten van de zonsopkomst worden in de kleurmixer intenser en richting oranje verschoven, terwijl de split-toning warme tinten in de hooglichten introduceert en juist koele, blauwe tinten in de middentonen plaatst om het contrast tussen warm en koud te bewaken.",
+    "local_adjustments": "Maskers worden intensief gebruikt. Lineaire verlopen maken de bovenkant van de lucht donkerder voor dieper blauw, terwijl radiale verlopen gecombineerd met de 'Lucht selecteren'-intersectie worden ingezet om lokaal extreem warme kleurfilters en verzadiging toe te voegen rond de zon.",
+    "what_to_avoid": [
+      "Het gloed-effect te zwaar aanzetten met een te hoge penseeldekking waardoor details wegvagen.",
+      "Het toepassen van contrastverhogingen op de lucht die de subtiele kleurovergangen kunnen verruwen."
+    ],
+    "best_for": "Landschapsfoto's tijdens het gouden uur met reflecterend water en silhouetten van gebouwen of structuren.",
+    "unique_insights": [
+      "Er wordt een omgekeerd nevel-verwijderingseffect toegepast: door lokaal Dehaze en Blacks te verhogen op een lensvlek, wordt de ongewenste lenshaze effectief geneutraliseerd.",
+      "Voor een natuurlijker resultaat worden de waterreflecties handmatig bijgekleurd via een Luminositeitsmasker (Ctrl+Alt+2) dat is ingesteld op de modus 'Kleur', zodat alleen de hooglichten in het water de oranje tint van de lucht overnemen.",
+      "Er wordt bewust gekozen voor een complementaire split-toning (warm in de hooglichten, koud in de middentonen) specifiek om te voorkomen dat de algehele foto door de intense zonsondergangkleuren te homogeen oranje uitslaat."
+    ],
+    "style_preview": "Deze stijl kenmerkt zich door een magische, schilderachtige sfeer met extreem levendige kleuren en een dromerige gloed. De visuele sfeer combineert de mystiek van het gouden uur met de helderheid van een HDR-opname, waardoor elk detail van de voorgrond tot de horizon sprankelt. Het werkt het beste voor weidse landschappen met een sterke lichtbron van voren of opzij. Als fotograaf kun je een sprookjesachtig eindresultaat verwachten waarin licht écht lijkt te stralen en kleuren van het scherm spatten."
   }
 ]

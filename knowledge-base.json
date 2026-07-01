@@ -10973,81 +10973,89 @@
   {
     "video_title": "Monochrome Post Processing - How I Edit My Black and White Portraits",
     "photographer_name": "Paul Reid",
-    "youtube_url": "https://youtu.be/yLVWIgkVY00",
+    "youtube_url": "https://www.youtube.com/watch?v=yLVWIgkVY00",
     "genre": [
       "portret",
-      "straatfotografie"
+      "zwart-wit"
     ],
     "light_conditions": [
-      "bewolkt"
+      "daglicht"
     ],
     "mood": [
-      "dramatisch",
-      "rustig"
+      "naturalistisch"
     ],
     "software": [
-      "Lightroom Classic"
+      "Lightroom Mobile"
     ],
-    "style_description": "Monochrome Portrait Edit",
-    "philosophy": "Een eenvoudige en doeltreffende aanpak voor zwart-wit fotografie. De bewerking is erop gericht om initiële vlakke en onderbelichte RAW-bestanden (zoals die van een Q2 Monochrome) om te zetten naar krachtige, contrastrijke portretten door middel van basisbelichting en gerichte lokale maskers.",
+    "style_description": "Pure, rauwe portretstijl",
+    "philosophy": "Bewerkingsstijl moet eenvoudig zijn. Door te focussen op de ogen en textuur in de huid, behoud je een naturalistisch gevoel dat de essentie van het portret niet verbergt achter te veel techniek.",
     "workflow_order": [
-      "stap 1: Beoordeel het vlakke, ietwat onderbelichte basisbestand.",
-      "stap 2: Verhoog de basisbelichting en het contrast om de tonen in balans te brengen.",
-      "stap 3: Pas de zwart- en witpunten aan (zwarten omlaag, witten omhoog) om de dynamische range te definiëren.",
-      "stap 4: Verhoog lokaal de helderheid (clarity) en textuur in de effectenpanelen.",
-      "stap 5: Bewerk de ogen handmatig met een zachte, geveerde kwast en maak ze lichter/helderder.",
-      "stap 6: Accentueer de gelaatstrekken door textuur en helderheid lokaal over het gezicht te verhogen.",
-      "stap 7: Leid de aandacht weg van de achtergrond door de lichte partijen in de achtergrond lokaal te dimmen.",
-      "stap 8: Voeg eventueel lokaal vignetten toe in de hoeken voor extra scherptediepte."
+      "stap 1: Belichting en contrast verhogen, zwarten omlaag",
+      "stap 2: Clarity en Texture verhogen in het effects-paneel",
+      "stap 3: Lokaal masker op de ogen",
+      "stap 4: Lokaal masker op gezicht/huid voor textuur-pop"
     ],
     "techniques": [
       {
-        "name": "Handmatige oogcorrectie",
-        "description": "Selectief de ogen oplichten en helderder maken met behulp van een handmatig penseel in plaats van geautomatiseerde AI-maskers.",
-        "when_to_use": "Bij portretten in zwart-wit waarbij de ogen het belangrijkste brandpunt van de foto zijn.",
+        "name": "Smartphone-workflow",
+        "description": "Doe de basisbewerking op een mobiel apparaat voor een snelle, instinctieve workflow.",
+        "when_to_use": "Voor fotografen die on-the-go willen bewerken.",
         "tools": [
-          "Brush tool",
-          "Feather slider",
-          "Brightness adjustments"
+          "Lightroom Mobile"
         ],
-        "effect": "De ogen krijgen een opvallende helderheid en diepte, waardoor ze de aandacht van de kijker trekken."
+        "effect": "Sneller, minder over-processed resultaat."
       },
       {
-        "name": "Lokaal textuur en contrast toevoegen in zwart-wit",
-        "description": "Een zacht masker over het gezicht en de hals leggen om lokaal de helderheid (clarity) en structuur (texture) op te krikken.",
-        "when_to_use": "Bij monochrome portretten die van nature vlak beginnen of zachter licht hebben.",
+        "name": "Clarity als contrast-bron",
+        "description": "Gebruik Clarity in plaats van verscherping om contrast te verhogen en textuur in de huid naar voren te halen.",
+        "when_to_use": "Bij portretten met karakteristieke huid.",
         "tools": [
-          "Brush tool",
-          "Clarity slider",
-          "Texture slider"
+          "Effects"
         ],
-        "effect": "De gelaatstrekken en poriën worden scherper en komen meer naar voren, waardoor het portret pit krijgt."
+        "effect": "Perceptuele scherpte zonder artefacten."
       },
       {
-        "name": "Achtergrond verzachten",
-        "description": "Selectief over de lichtere achtergrond schilderen en de hooglichten omlaag trekken om afleiding te voorkomen.",
-        "when_to_use": "Wanneer de achtergrond in een zwart-wit portret te fel of te wit is, waardoor het model wegvalt.",
+        "name": "Ogen-dodging",
+        "description": "Gebruik een penseel met een zachte feather op de ogen en verhoog de belichting.",
+        "when_to_use": "Bij elk portret.",
         "tools": [
-          "Brush tool",
-          "Highlights slider"
+          "Masking (Brush)"
         ],
-        "effect": "De achtergrond wordt minder dominant, waardoor het model beter isoleert in het kader."
+        "effect": "De ogen worden het brandpunt van de foto."
+      },
+      {
+        "name": "Achtergrond-toning",
+        "description": "Verlaag highlights in de achtergrond met een penseel.",
+        "when_to_use": "Wanneer de achtergrond afleidt van het onderwerp.",
+        "tools": [
+          "Masking (Brush)"
+        ],
+        "effect": "Meer focus op het model."
+      },
+      {
+        "name": "Contrastrijk-masker",
+        "description": "Voeg een radiaal masker toe om de belichting aan een kant van het beeld te verlagen.",
+        "when_to_use": "Om onbalans in belichting te corrigeren.",
+        "tools": [
+          "Masking (Radiaal)"
+        ],
+        "effect": "Subtiele sturing van de aandacht."
       }
     ],
-    "color_approach": "Niet van toepassing aangezien het om zwart-wit (monochrome) bewerkingen gaat. De fotograaf focust volledig op luminantie, contrast, lichte partijen en schaduwen.",
-    "local_adjustments": "Worden frequent gebruikt in de vorm van handmatige penselen en gradiënten. De fotograaf geeft de voorkeur aan handmatig borstelen boven AI-maskers, specifiek voor het oplichten van de ogen, het toevoegen van textuur aan het gezicht en het dimmen van de achtergrond.",
+    "color_approach": "De fotograaf negeert kleur in de bewerkingsfase en concentreert zich puur op de monochrome vertaling.",
+    "local_adjustments": "Zeer gericht. Gebruikt penselen met een zachte rand om ogen en gezichttextuur te benadrukken.",
     "what_to_avoid": [
-      "Vertrouwen op onnauwkeurige AI-maskers voor kleine details zoals ogen.",
-      "De achtergrond te fel laten, wat de kijker kan afleiden van het portret.",
-      "De helderheid of lichte partijen over het hele beeld tegelijk te agressief aanzetten."
+      "Het gebruik van AI-maskers die er vaak naast zitten",
+      "Over-sharpening",
+      "Afleidende elementen in de achtergrond"
     ],
-    "best_for": "Zwart-wit portretten, modelfotografie en close-up studio- of locatie-opnames.",
+    "best_for": "Straat- en portretfotografie met een rauw, eerlijk karakter.",
     "unique_insights": [
-      "De fotograaf bewerkt zijn foto's voor het grootste deel onderweg op een smartphone, om tijd te besparen, en gebruikt de computer enkel voor fijne print-tweaks.",
-      "Ondanks de aanwezigheid van AI-maskers in moderne software, verkiest hij handmatige penselen met een zware doezelaar/veer om ogen en gezichtsstructuur te bewerken, omdat AI het nog te vaak mis kan hebben.",
-      "Als de achtergrond bij een portret te wit of te fel is, kun je er met een kwast overheen gaan en de lichte partijen (highlights) verlagen om de aandacht op het gezicht te houden."
+      "Clarity is geen verscherping maar contrast. Gebruik het voor textuur-pop maar overdrijf niet.",
+      "Printen vereist een andere benadering dan digitale schermen omdat schermen zelf licht geven.",
+      "Leica monochrome bestanden zijn van nature erg vlak; ze hebben een stevige boost in contrast nodig."
     ],
-    "style_preview": "Deze bewerkingsfilosofie creëert een krachtige en tijdloze visuele sfeer, gekenmerkt door diepe contrasten en een intense focus op het onderwerp. Het is een doeltreffende aanpak die initiële vlakke of onderbelichte zwart-wit RAW-bestanden transformeert tot indrukwe"
+    "style_preview": "Een stijl die uitblinkt in eenvoud en echtheid. Het resultaat is een authentiek portret met focus op de mens. De stijl is perfect voor wie houdt van een less is more benadering waarbij de techniek het onderwerp dient."
   },
   {
     "video_title": "How to Edit Studio Portraits",
@@ -40194,5 +40202,700 @@
       "Clarity is je beste vriend om e-commerce foto s er scherper en professioneler uit te laten zien."
     ],
     "style_preview": "Deze stijl is clean, commercieel en strak. Het is perfect voor online webshops. Het visuele effect is een productfoto die eruitziet alsof deze in een studio is genomen, klaar om direct te worden gebruikt in een webshop of marktplaats."
+  },
+  {
+    "video_title": "7 Step Advanced Black & White Editing in Lightroom | Master Your Craft",
+    "photographer_name": "Pai",
+    "youtube_url": "https://www.youtube.com/watch?v=itw37I51LAg",
+    "genre": [
+      "landschap",
+      "zwart-wit"
+    ],
+    "light_conditions": [
+      "daglicht"
+    ],
+    "mood": [
+      "dramatisch"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Contrastrijke dramatische zwart-wit",
+    "philosophy": "Het scheiden van kleurtonen vóór de conversie naar zwart-wit geeft ongekende controle over grijstinten. Door kleuren eerst te exaggereren, kan elke kleurzone in de zwart-wit mixer individueel worden aangepast. Dit zorgt voor een rijkere toonbereik en diepte.",
+    "workflow_order": [
+      "stap 1: Pas kleurtemperatuur aan om kleurtonen te scheiden",
+      "stap 2: Gebruik kalibratie-schuiven om specifieke kleurverzadiging te versterken",
+      "stap 3: Converteer naar zwart-wit en verlaag de basisbelichting",
+      "stap 4: Pas lokale aanpassingen toe met gegradueerde en radiale filters"
+    ],
+    "techniques": [
+      {
+        "name": "Kleurkanaal-separatie",
+        "description": "Verander de witbalans en kalibratie-instellingen om kleuren in de raw-file te scheiden voor de conversie.",
+        "when_to_use": "Bij scènes met weinig inherent kleurverschil.",
+        "tools": [
+          "Basispaneel",
+          "Kalibratie"
+        ],
+        "effect": "Meer controle in de zwart-wit mixer over specifieke grijstinten."
+      },
+      {
+        "name": "Dehaze-versterking",
+        "description": "Verhoog de Dehaze-waarde naar +30 om de contrasten van de gemaakte selecties te versterken.",
+        "when_to_use": "Na de zwart-wit conversie voor extra punch.",
+        "tools": [
+          "Presence"
+        ],
+        "effect": "Verhoogt de textuur en definitie in het gehele beeld."
+      },
+      {
+        "name": "Luminantie-gestuurde dodging",
+        "description": "Gebruik een radiaal filter met verhoogde witpunten op specifieke lichte delen.",
+        "when_to_use": "Om aandacht naar specifieke elementen zoals water/golven te trekken.",
+        "tools": [
+          "Radiaal filter"
+        ],
+        "effect": "Het licht lijkt door het water te schijnen."
+      },
+      {
+        "name": "Range Masking op hooglichten",
+        "description": "Beperk lokale aanpassingen tot de lichtste delen van de foto met een luminantie-masker.",
+        "when_to_use": "Bij complexe texturen waar je schaduwen wilt sparen.",
+        "tools": [
+          "Masking (Range Mask)"
+        ],
+        "effect": "Selectieve verlichting zonder donkere details aan te tasten."
+      },
+      {
+        "name": "Post-crop vignettering",
+        "description": "Voeg een lichte, subtiele vignette toe om de aandacht in het midden te houden.",
+        "when_to_use": "Bij landschappen waar het oog moet worden geleid.",
+        "tools": [
+          "Effects"
+        ],
+        "effect": "Subtiele focus-centering."
+      }
+    ],
+    "color_approach": "Kleur wordt gebruikt als een gereedschap voor tooncontrole. Door verzadiging en tinten in de kalibratie aan te passen, worden de grijstinten in de zwart-wit omzetting gestuurd.",
+    "local_adjustments": "Essentieel. Gebruikt radiale filters en penselen met luminantie-maskers om specifiek highlights op te lichten of schaduwen te sturen zonder het hele beeld te beïnvloeden.",
+    "what_to_avoid": [
+      "Het gebruik van de standaard zwart-wit conversie zonder kleur-aanpassingen",
+      "Een te vlakke HDR-achtige bewerking zonder natuurlijk contrast"
+    ],
+    "best_for": "Landschapsfoto's met water of lucht waar details in de highlights en schaduwen behouden moeten blijven.",
+    "unique_insights": [
+      "Laat de afbeelding in kleur tijdens de eerste fase; als het hele beeld geel is, heb je geen controle in de zwart-wit mixer.",
+      "Gebruik kalibratie-verzadiging voor de conversie om de zwart-wit mixer meer controle te geven.",
+      "Dehaze werkt als een versterker van de door jou gekozen grijstinten in de mixer."
+    ],
+    "style_preview": "Deze stijl is gericht op maximale visuele impact en diepte. Het verwachte resultaat is een contrastrijke, filmische zwart-wit foto waarbij de kijker direct naar het onderwerp wordt geleid door zorgvuldige lokale belichting. Ideaal voor wie drama en textuur in landschappen zoekt."
+  },
+  {
+    "video_title": "The Black and White editing technique you need to create a perfect BLACK and WHITE image.",
+    "photographer_name": "Richard Brockwell",
+    "youtube_url": "https://www.youtube.com/watch?v=2xAWvDPvWj4",
+    "genre": [
+      "landschap",
+      "zwart-wit"
+    ],
+    "light_conditions": [
+      "tegenlicht"
+    ],
+    "mood": [
+      "dramatisch"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Contrastrijke, dramatische landschapsstijl",
+    "philosophy": "Zwart-wit fotografie draait om contrast en vorm. Door gebruik te maken van opeenvolgende gegradueerde filters voor globale balans en daarna radiale filters voor selectieve dodging en burning, creëer je een 3D-effect dat flatteuze grijstinten naar een pro-niveau tilt.",
+    "workflow_order": [
+      "stap 1: Basisaanpassingen in exposure-paneel",
+      "stap 2: Meervoudige lineaire gradiënten voor lucht en voorgrond",
+      "stap 3: Intensieve radiale gradiënten voor selectieve belichting (dodging en burning)",
+      "stap 4: Vignettering en curve-aanpassingen voor final polish"
+    ],
+    "techniques": [
+      {
+        "name": "Opeenvolgende gradiënten",
+        "description": "Plaats meerdere lineaire gradiënten over de lucht om de blootstelling stapsgewijs te verlagen.",
+        "when_to_use": "Bij landschappen met een lichte lucht.",
+        "tools": [
+          "Lineair gradiënt"
+        ],
+        "effect": "Soepele overgang in belichting in de lucht."
+      },
+      {
+        "name": "Selectieve radiale dodging",
+        "description": "Plaats kleine radiale gradiënten met verhoogde belichting over de lichtste delen.",
+        "when_to_use": "Voor het creëren van diepte via dodging en burning.",
+        "tools": [
+          "Radiaal gradiënt"
+        ],
+        "effect": "De lichtere delen krijgen een 3D-pop."
+      },
+      {
+        "name": "Histogram-gebaseerde clipping",
+        "description": "Verhoog witten en zwarten tot ze net gaan clippen en trek ze dan terug voor maximaal contrast.",
+        "when_to_use": "Bij elke raw-foto voor optimaal bereik.",
+        "tools": [
+          "Basispaneel"
+        ],
+        "effect": "Het maximaal benutten van het dynamisch bereik."
+      },
+      {
+        "name": "Curve highlight boost",
+        "description": "Verhoog de highlight-curve-instelling voor extra helderheid in de lichtste tinten.",
+        "when_to_use": "Tijdens de afronding van een zwart-wit edit.",
+        "tools": [
+          "Curve tool"
+        ],
+        "effect": "Frisse, heldere hooglichten."
+      },
+      {
+        "name": "Masker-inversie voor vignette",
+        "description": "Maak een grote radiale cirkel, keer deze om en verlaag de belichting voor een vignette.",
+        "when_to_use": "Om de kijker naar het midden te leiden.",
+        "tools": [
+          "Masking (Radiaal gradiënt)"
+        ],
+        "effect": "De aandacht wordt naar het onderwerp getrokken."
+      }
+    ],
+    "color_approach": "De fotograaf zet de foto eerst om naar zwart-wit en focust vervolgens volledig op tonale contrasten.",
+    "local_adjustments": "Zeer uitgebreid. Gebruikt tientallen kleine radiale gradiënten om specifieke texturen in het landschap op te lichten of te verdiepen, analoog aan de traditionele doka-techniek.",
+    "what_to_avoid": [
+      "Het overslaan van dodging en burning",
+      "Alleen vertrouwen op basisinstellingen",
+      "Te veel verscherpen"
+    ],
+    "best_for": "Landschapsfotografie waar je de fotos van vlak naar professioneel wilt tillen met diep contrast.",
+    "unique_insights": [
+      "Gebruik liever radiale gradiënten voor dodging dan een penseel, omdat ze zachtere randen hebben.",
+      "Bij tegenlichtfoto's moet je de exposure voor de gradiënten aanpassen aan de hoek van de zon.",
+      "Hover over maskers om te zien wat je al hebt gedaan; dit voorkomt dubbele bewerkingen."
+    ],
+    "style_preview": "Deze stijl is ideaal voor fotografen die houden van de klassieke, dramatische zwart-wit look. Het proces voelt als beeldhouwen met licht. De stijl is perfect voor landschappen met tegenlicht en biedt een visuele ervaring die rijk is aan diepte, textuur en sterke contrasten."
+  },
+  {
+    "video_title": "A BLACK & WHITE PHOTOGRAPHY editing Process that Transforms your Photos to PRO LEVEL.",
+    "photographer_name": "Richard Brockwell",
+    "youtube_url": "https://www.youtube.com/watch?v=-v8UfVKdC14",
+    "genre": [
+      "landschap",
+      "zwart-wit"
+    ],
+    "light_conditions": [
+      "daglicht"
+    ],
+    "mood": [
+      "dramatisch"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Dramatische, filmische zwart-wit",
+    "philosophy": "Kleurinformatie is een hulpmiddel voor tonale diepte. Door de verzadiging in kleur te maximaliseren voor een zwart-wit conversie via een Gradient Map, behoud je meer karakter in de grijstinten dan met een standaard knop.",
+    "workflow_order": [
+      "stap 1: Verhoog verzadiging en contrast",
+      "stap 2: Gebruik een Gradient Map Classic voor de conversie",
+      "stap 3: Verfijn maskers voor dodging en burning",
+      "stap 4: Gebruik luminantie-bereikmaskers voor de lucht"
+    ],
+    "techniques": [
+      {
+        "name": "Gradient Map conversie",
+        "description": "Gebruik een Gradient Map instel-laag met de Classic preset in plaats van de zwart-wit conversie-knop.",
+        "when_to_use": "Voor een rijkere, meer filmische zwart-wit look.",
+        "tools": [
+          "Gradient Map"
+        ],
+        "effect": "Betere tonale spreiding en natuurlijker contrast."
+      },
+      {
+        "name": "Intersection Masking",
+        "description": "Combineer een lineair gradiënt met een Select Sky masker voor gecontroleerde belichting.",
+        "when_to_use": "Bij complexe voorgronden zoals bomen die niet donkerder mogen worden.",
+        "tools": [
+          "Masking (Intersect)"
+        ],
+        "effect": "Precieze belichtingscorrecties zonder halo's."
+      },
+      {
+        "name": "Luminantie-bereikmaskers",
+        "description": "Selecteer enkel de lichtste delen voor een lichte belichtingsboost.",
+        "when_to_use": "Wanneer je details in highlights wilt behouden.",
+        "tools": [
+          "Range Mask (Luminance)"
+        ],
+        "effect": "Oplichting van highlights zonder schaduwen te beïnvloeden."
+      },
+      {
+        "name": "Selectieve verscherping",
+        "description": "Verscherp alleen de texturen via een penseel en een luminantie-masker.",
+        "when_to_use": "Voorkomen van ruis in de lucht of water.",
+        "tools": [
+          "Masking (Brush)",
+          "Detail"
+        ],
+        "effect": "Scherpe details waar nodig, zachte texturen waar rust gewenst is."
+      },
+      {
+        "name": "Dodge en Burn via radiale gradiënten",
+        "description": "Plaats radiale gradiënten op lichtpunten en verhoog de exposure.",
+        "when_to_use": "Voor het creëren van diepte in landschappen.",
+        "tools": [
+          "Radiaal gradiënt"
+        ],
+        "effect": "Geeft het beeld een 3D-gevoel."
+      }
+    ],
+    "color_approach": "Kleur wordt kunstmatig versterkt voor conversie om de zwart-wit mapping via Gradient Map meer data te geven.",
+    "local_adjustments": "Geavanceerd. Gebruikt intersect-maskers en luminantie-maskers om te voorkomen dat globale aanpassingen op de verkeerde plekken terechtkomen.",
+    "what_to_avoid": [
+      "Het gebruik van de simpele desaturatie-knop",
+      "Algemene verscherping over het hele beeld",
+      "Het negeren van de voorgrond"
+    ],
+    "best_for": "Landschapsfoto's met veel texturen zoals rotsen, bomen en water.",
+    "unique_insights": [
+      "Gebruik Intersect Mask om een gradiënt te beperken tot de lucht zonder de bomen te raken.",
+      "Een Gradient Map Classic mode geeft vaak een natuurlijker resultaat dan een standaard zwart-wit conversie.",
+      "Stel je sharpening op nul in het detail-paneel en gebruik enkel maskers om selectief te verscherpen."
+    ],
+    "style_preview": "Een stijl voor de serieuze landschapsfotograaf die controle wil. Het visuele effect is rijk, scherp op de juiste plekken en zeer gedetailleerd. Het proces vereist wat meer tijd maar beloont met een professionele, diepe zwart-wit esthetiek."
+  },
+  {
+    "video_title": "The Secret To DRAMATIC Black & White Images In Photoshop",
+    "photographer_name": "Brendan Williams",
+    "youtube_url": "https://www.youtube.com/watch?v=q0PwGTFStE0",
+    "genre": [
+      "portret",
+      "zwart-wit"
+    ],
+    "light_conditions": [
+      "gemengd licht"
+    ],
+    "mood": [
+      "dramatisch"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Hoge-contrast, dramatische portret-stijl",
+    "philosophy": "Zwart-wit is geen ontbreken van kleur, maar een andere manier van kijken. Het gebruik van een Gradient Map in Photoshop biedt de meest flexibele manier om contrasten en tonen te controleren.",
+    "workflow_order": [
+      "stap 1: Gradient Map instel-laag aanmaken",
+      "stap 2: Kleurstops aanpassen voor schaduw- en highlight-intensiteit",
+      "stap 3: Dodge en Burn laag aanmaken (Overlay, 50% grijs)",
+      "stap 4: Specifieke kenmerken versterken met Dodge en Burn tool"
+    ],
+    "techniques": [
+      {
+        "name": "Gradient Map contrastcontrole",
+        "description": "Verplaats de zwarte en witte stops naar het midden om het contrastbereik te vergroten.",
+        "when_to_use": "Bij portretten die vlak ogen.",
+        "tools": [
+          "Gradient Map"
+        ],
+        "effect": "Diepere zwarten en frissere witten."
+      },
+      {
+        "name": "Perceptual vs Linear Gradient",
+        "description": "Gebruik Perceptual voor meer contrast en Linear voor een zachtere, lichtere look.",
+        "when_to_use": "Afhankelijk van het type foto.",
+        "tools": [
+          "Gradient Map"
+        ],
+        "effect": "Fundamentele verandering van de tonale sfeer."
+      },
+      {
+        "name": "Dodge en Burn laag",
+        "description": "Maak een 50% grijze laag in Overlay-modus voor niet-destructieve lokale aanpassingen.",
+        "when_to_use": "Voor het accentueren van gezichtskenmerken.",
+        "tools": [
+          "Dodge tool",
+          "Burn tool"
+        ],
+        "effect": "Meer diepte en focus op het onderwerp."
+      },
+      {
+        "name": "Midpoint-aanpassing",
+        "description": "Verschuif het middelpunt van de gradiënt-editor om de dominantie van donkere of lichte tinten te bepalen.",
+        "when_to_use": "Bij foto's met een onevenwichtige belichting.",
+        "tools": [
+          "Gradient Map"
+        ],
+        "effect": "Geeft controle over de toon-balans."
+      },
+      {
+        "name": "Ogenaccentuering",
+        "description": "Gebruik de Dodge tool op Range Highlights op de ogen.",
+        "when_to_use": "Altijd bij portretten voor meer leven in de ogen.",
+        "tools": [
+          "Dodge tool"
+        ],
+        "effect": "De ogen komen naar voren."
+      }
+    ],
+    "color_approach": "De fotograaf gebruikt geen kleur maar tonale mappen. De keuze voor de blend-modus van de Gradient Map bepaalt hoe het kleurbeeld vertaald wordt naar zwart-wit.",
+    "local_adjustments": "Gebeurt in een aparte Overlay-laag voor Dodge en Burn. Dit is de kern van de dramatische look.",
+    "what_to_avoid": [
+      "Het gebruik van de simpele Black and White aanpassingslaag",
+      "Te agressieve Dodge en Burn"
+    ],
+    "best_for": "Portretten waar je de ogen of het gezicht extra wilt laten spreken.",
+    "unique_insights": [
+      "Perceptual mode in Gradient Map is intenser qua contrast, terwijl Linear mode de foto oplicht.",
+      "Door stops in de Gradient Map naar binnen te schuiven dwing je Photoshop om meer contrast te genereren in een kleiner toonbereik.",
+      "Het gebruik van een 50% grijze Overlay-laag voor Dodge en Burn is veiliger dan direct op het beeld werken."
+    ],
+    "style_preview": "Een krachtige, bijna onthullende zwart-wit stijl. Het effect is heel schoon en indrukwekkend door de strakke scheiding van zwart en wit. Ideaal voor wie portretten wil maken die van het scherm lijken te springen."
+  },
+  {
+    "video_title": "5 Best Scenarios for Black and White: Capture One Edit",
+    "photographer_name": "Casey Mastin",
+    "youtube_url": "https://www.youtube.com/watch?v=S-jCDZxynuE",
+    "genre": [
+      "straatfotografie",
+      "zwart-wit"
+    ],
+    "light_conditions": [
+      "harde zon"
+    ],
+    "mood": [
+      "moody"
+    ],
+    "software": [
+      "Capture One"
+    ],
+    "style_description": "Contrastrijke, filmische straatfotografie",
+    "philosophy": "Zwart-wit is ideaal voor het vereenvoudigen van complexe scènes. Door gebruik te maken van film-emulaties en vervolgens de contrasten handmatig te tunen, behoud je een consistentie die de kijker direct naar het onderwerp leidt.",
+    "workflow_order": [
+      "stap 1: Pas een contrastrijke filmstijl toe",
+      "stap 2: Pas exposure aan voor de balans",
+      "stap 3: Gebruik Tone Profiles Hard/Soft voor fijn-tuning van contrast",
+      "stap 4: Pas kleurfilters toe voor tonale sturing"
+    ],
+    "techniques": [
+      {
+        "name": "Film-emulatie stijlen",
+        "description": "Begin je edit met een bewezen zwart-wit filmstijl om een consistente look te krijgen.",
+        "when_to_use": "Voor snelheid en consistentie.",
+        "tools": [
+          "Styles"
+        ],
+        "effect": "Directe, professionele film-look."
+      },
+      {
+        "name": "Tone Profiles",
+        "description": "Gebruik ingebouwde tone profiles in plaats van alleen de contrast-schuif.",
+        "when_to_use": "Voor subtiele contrast-controle.",
+        "tools": [
+          "Tone Profiles"
+        ],
+        "effect": "Behoud van detail terwijl contrast wordt aangepast."
+      },
+      {
+        "name": "Kleurfilters B&W",
+        "description": "Simuleer analoge filters zoals geel, rood en groen om specifieke tinten lichter of donkerder te maken.",
+        "when_to_use": "Om aandacht op huidtonen of achtergronden te sturen.",
+        "tools": [
+          "B&W Panel (Filters)"
+        ],
+        "effect": "Dramatisch betere tonale balans."
+      },
+      {
+        "name": "Aspect Ratio crop",
+        "description": "Crop naar 4:3 voor een klassiekere beeldverhouding.",
+        "when_to_use": "Bij staande beelden voor betere balans.",
+        "tools": [
+          "Crop"
+        ],
+        "effect": "Versterkt de focus op het onderwerp."
+      },
+      {
+        "name": "Lenscorrecties",
+        "description": "Schakel automatische lenscorrecties in voor betere edge-vignettering.",
+        "when_to_use": "Bij scènes met veel vignettering.",
+        "tools": [
+          "Lens Correction"
+        ],
+        "effect": "Egalere belichting over het hele beeld."
+      }
+    ],
+    "color_approach": "Geen bewerking in kleur maar wel het gebruik van B&W Filters die de onderliggende kleurdata herinterpreteren.",
+    "local_adjustments": "Beperkt. De fotograaf leunt sterk op globale stijlen.",
+    "what_to_avoid": [
+      "Afleidende elementen in de achtergrond",
+      "Onnodig kleurgebruik als zwart-wit krachtiger is"
+    ],
+    "best_for": "Straatfotografie waarbij compositie en menselijke interactie centraal staan.",
+    "unique_insights": [
+      "Zwart-wit is de perfecte oplossing als er te veel afleidende kleuren in de scène zijn.",
+      "Een 4:3 crop voelt vaak natuurlijker voor portretten in de straatfotografie.",
+      "Red filters maken de lucht donkerder en het gezicht lichter; de doka-hack voor portretten in hard licht."
+    ],
+    "style_preview": "Een filmische, contrastrijke straatstijl. Het resultaat is een krachtig, sober beeld met een focus op vorm en compositie. Ideaal voor wie emotie in de stad wil vastleggen zonder de afleiding van kleur."
+  },
+  {
+    "video_title": "NEW Black & White Editing HACK - Has anyone else tried this yet?",
+    "photographer_name": "Mark McGee",
+    "youtube_url": "https://www.youtube.com/watch?v=84cKoPi3lj4",
+    "genre": [
+      "portret",
+      "zwart-wit"
+    ],
+    "light_conditions": [
+      "gemengd licht"
+    ],
+    "mood": [
+      "moody"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Moody, high-contrast, film noir",
+    "philosophy": "Zwart-wit fotografie is contrastrijk. Het histogram is een richtlijn, geen wet. Door bewust delen naar zuiver zwart te duwen en met kleurbalans te spelen, creëer je een unieke, filmische sfeer.",
+    "workflow_order": [
+      "stap 1: Desatureer via HSL-sliders in plaats van de B&W-knop",
+      "stap 2: Onderexponeer bewust en crush de zwarten",
+      "stap 3: Verander de witbalans voor een kleur-shift die tonen beïnvloedt",
+      "stap 4: Gebruik de maskeertool voor selectieve achtergrond-donkerte"
+    ],
+    "techniques": [
+      {
+        "name": "De Tint-shift hack",
+        "description": "Versleep de tint- en temp-schuiven naar uiterste hoeken voordat je converteert.",
+        "when_to_use": "Voor een unieke, filmische zwart-wit look.",
+        "tools": [
+          "Basispaneel (Temp/Tint)"
+        ],
+        "effect": "Geeft grijstinten een unieke, filmische textuur."
+      },
+      {
+        "name": "Het crushen van de zwarten",
+        "description": "Verlaag de zwarte schuif tot -35 of meer voor pure zwartwaardes.",
+        "when_to_use": "Voor film-noir effecten.",
+        "tools": [
+          "Basispaneel (Blacks)"
+        ],
+        "effect": "Meer drama en nadruk op licht."
+      },
+      {
+        "name": "Selectieve achtergrondverwijdering",
+        "description": "Selecteer het onderwerp, keer het masker om, en verlaag belichting en texture.",
+        "when_to_use": "Bij rommelige achtergronden.",
+        "tools": [
+          "Masking (Select Subject)"
+        ],
+        "effect": "De achtergrond vervaagt naar puur zwart."
+      },
+      {
+        "name": "Luminantie-sturing via kleurkanalen",
+        "description": "Pas de HSL-sliders aan voor de grijstinten.",
+        "when_to_use": "Na de tint-shift hack.",
+        "tools": [
+          "HSL/Color"
+        ],
+        "effect": "Natuurlijker contrast in huidtinten."
+      },
+      {
+        "name": "Preset-creatie voor consistentie",
+        "description": "Sla je tint-shift en masker-instellingen op als preset.",
+        "when_to_use": "Bij grotere series foto's.",
+        "tools": [
+          "Presets"
+        ],
+        "effect": "Snelle workflow voor een unieke stijl."
+      }
+    ],
+    "color_approach": "Kleur wordt bewust verkeerd ingesteld als creatief middel om de grijstinten te sturen.",
+    "local_adjustments": "De basis voor het film-noir effect. Achtergronden worden doelbewust weggefilterd via maskers.",
+    "what_to_avoid": [
+      "Het gebruik van ingebouwde B&W presets",
+      "Angst voor het clippen van zwarten"
+    ],
+    "best_for": "Portretten die een donkere, moody of filmische uitstraling moeten hebben.",
+    "unique_insights": [
+      "In zwart-wit moet je niet bang zijn om je histogram te breken; onze hersenen vullen zwarte details zelf aan.",
+      "De tint-schuif is je beste vriend voor het sturen van huidtonen in zwart-wit.",
+      "Bij portretten in zwart-wit is het soms beter om de achtergrond volledig naar zwart te laten verdwijnen."
+    ],
+    "style_preview": "Een gedurfde, filmische stijl. Het verwachte resultaat is een zeer contrastrijk portret met een sterke nadruk op licht en schaduw. Perfect voor fotografen die graag de grenzen opzoeken."
+  },
+  {
+    "video_title": "Lightroom Tutorial BASICS Black and White Photo Editing",
+    "photographer_name": "Sawyer Hartman",
+    "youtube_url": "https://www.youtube.com/watch?v=nQTTGikFyuQ",
+    "genre": [
+      "portret",
+      "zwart-wit"
+    ],
+    "light_conditions": [
+      "kunstlicht"
+    ],
+    "mood": [
+      "dramatisch"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Contrastrijke HDR-portretstijl",
+    "philosophy": "Editing is een chronologisch proces: Correctie, Kleur, Finishing. Door deze stappen strikt te volgen en texturen selectief te verscherpen, creëer je een zwart-wit edit die aanvoelt als een 3D-object.",
+    "workflow_order": [
+      "stap 1: Basiscorrectie (belichting, contrast, witten/zwarten)",
+      "stap 2: Kleur-gevoeligheid B&W mixer en Color Grading",
+      "stap 3: Texture/Clarity voor HDR-look",
+      "stap 4: Finishing via lokale maskers voor textuur-pop"
+    ],
+    "techniques": [
+      {
+        "name": "De CCF-methode",
+        "description": "Werk altijd in de volgorde: Correction, Color, Finishing.",
+        "when_to_use": "Voor een gestructureerde en professionele workflow.",
+        "tools": [
+          "Algemeen"
+        ],
+        "effect": "Consistentere resultaten en minder fouten."
+      },
+      {
+        "name": "Selectieve textuur-verbetering",
+        "description": "Verhoog Texture/Clarity lokaal op stoffen en haar voor maximale detail-pop.",
+        "when_to_use": "Bij portretten met uitgesproken kleding.",
+        "tools": [
+          "Masking (Brush)"
+        ],
+        "effect": "Het beeld krijgt een 3D-dieptegevoel."
+      },
+      {
+        "name": "HDR-light effect",
+        "description": "Verhoog Clarity en Sharpening op rook of randlicht voor een dramatische look.",
+        "when_to_use": "Bij portretten met randlicht of rookeffecten.",
+        "tools": [
+          "Masking (Brush)"
+        ],
+        "effect": "Het licht lijkt tot leven te komen."
+      },
+      {
+        "name": "Huid-zacht houden",
+        "description": "Vermijd Clarity op de huid; gebruik het alleen op haar en kleding.",
+        "when_to_use": "Bij elk portret.",
+        "tools": [
+          "Masking (Eraser)"
+        ],
+        "effect": "Flatterende huidtinten gecombineerd met scherpe details."
+      },
+      {
+        "name": "Gezichtshaar-scherpte",
+        "description": "Verhoog Sharpness 20 en Texture 100 selectief op gezichtshaar.",
+        "when_to_use": "Bij portretten met baarden.",
+        "tools": [
+          "Masking (Brush)"
+        ],
+        "effect": "Individuele haren worden zichtbaar voor een 3D-look."
+      }
+    ],
+    "color_approach": "Kleur wordt gebruikt in de B&W-mixer voor grijstinten en Color Grading voor toon om een HDR-achtige sfeer te creëren.",
+    "local_adjustments": "Zeer uitgebreid. Het overgrote deel van de dramatische look komt uit penselen die textures en helderheid lokaal versterken.",
+    "what_to_avoid": [
+      "Het verscherpen van de hele foto",
+      "Clarity op de huid"
+    ],
+    "best_for": "Portretten die gritty, stoer en technisch perfect moeten zijn.",
+    "unique_insights": [
+      "Texture is het belangrijkste element van zwart-wit; zonder textuur blijft het gewoon een grijze foto.",
+      "Als je alles verscherpt zie je alleen je eigen poriën; verscherp alleen de delen die ertoe doen.",
+      "Het CCF-model helpt je om niet te gaan dwalen in de schuiven."
+    ],
+    "style_preview": "Een zeer gestructureerde, bijna technische stijl. Het resultaat is een modern, contrastrijk portret met een HDR-vibe. Ideaal voor wie van een stoere en gedetailleerde look houdt."
+  },
+  {
+    "video_title": "How Beginners Destroy Their Black and White Photography Photos in Editing",
+    "photographer_name": "Richard Brockwell",
+    "youtube_url": "https://www.youtube.com/watch?v=qEu2J6jYrZQ",
+    "genre": [
+      "landschap",
+      "zwart-wit"
+    ],
+    "light_conditions": [
+      "overcast"
+    ],
+    "mood": [
+      "dramatisch"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Klassieke, contrastrijke landschapsstijl",
+    "philosophy": "Fouten maken in zwart-wit is makkelijk: te veel desaturatie, platte beelden en overmatig verscherpen. De sleutel is selectiviteit: bepaal welke gebieden aandacht verdienen en verscherp of belicht alleen die delen.",
+    "workflow_order": [
+      "stap 1: Gradient Map Classic voor conversie in plaats van desaturatie",
+      "stap 2: Curve-aanpassingen voor diepe zwarten en heldere witten",
+      "stap 3: Selectieve verscherping via maskers",
+      "stap 4: Dodging en burning voor 3D-effecten"
+    ],
+    "techniques": [
+      {
+        "name": "Niet-destructieve verscherping",
+        "description": "Zet sharpening op 0 en gebruik enkel penselen om lokaal te verscherpen.",
+        "when_to_use": "Bij landschappen waar water of lucht te korrelig wordt.",
+        "tools": [
+          "Detail",
+          "Masking (Brush)"
+        ],
+        "effect": "Scherpte op de juiste plekken zonder ruis."
+      },
+      {
+        "name": "Contrast-sculpting",
+        "description": "Gebruik Curves of Levels om de grijze midtonen te verminderen.",
+        "when_to_use": "Bij beginnersfoto's die vlak ogen.",
+        "tools": [
+          "Curves"
+        ],
+        "effect": "Krachtig, professioneel contrast."
+      },
+      {
+        "name": "3D Dodging en Burning",
+        "description": "Licht highlights op en verdiep schaduwen via selectieve penselen.",
+        "when_to_use": "Bij elk landschap voor diepte.",
+        "tools": [
+          "Masking (Brush)"
+        ],
+        "effect": "Het landschap krijgt diepte en vorm."
+      },
+      {
+        "name": "Lucht-manipulatie via Gradient Map",
+        "description": "Gebruik een Gradient Map Classic voor betere grijswaarden-verdeling.",
+        "when_to_use": "Vervanging van de standaard desaturatie.",
+        "tools": [
+          "Gradient Map"
+        ],
+        "effect": "Dramatischere lucht en wolken."
+      },
+      {
+        "name": "Selectief texture-brush",
+        "description": "Voeg selectief textuur toe via penselen.",
+        "when_to_use": "Bij details zoals rotsen.",
+        "tools": [
+          "Masking (Brush)"
+        ],
+        "effect": "Subtiele versterking van details."
+      }
+    ],
+    "color_approach": "De fotograaf gebruikt de Gradient Map als een filter om kleuren te vertalen naar tonen.",
+    "local_adjustments": "Fundamenteel. Het vermijden van globale bewerkingen zoals globale verscherping is hier de grootste pro-tip.",
+    "what_to_avoid": [
+      "Het gebruik van de desaturatie-slider",
+      "Global sharpening",
+      "Het vergeten van een goede tonale balans"
+    ],
+    "best_for": "Beginners die hun zwart-wit werk naar een professioneel niveau willen tillen.",
+    "unique_insights": [
+      "De meeste beginners verscherpen hun hele foto wat de lucht en het water lelijk maakt. Verscherp alleen wat je ziet.",
+      "Zwart-wit fotografie draait om beeldhouwen met licht; als je niet dodget en burnt mis je de helft van de techniek.",
+      "Een vlak, grijs beeld ontstaat door een gebrek aan contrast in de midtonen; de curves-tool is je redding."
+    ],
+    "style_preview": "Een heldere, educatieve stijl. Het resultaat is een correct gebalanceerd, scherp zwart-wit landschap. Perfect voor wie wil stoppen met filterniveau-bewerkingen en echt wil leren hoe je een foto opbouwt."
   }
 ]

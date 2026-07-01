@@ -19,6 +19,71 @@ async function kv(...args) {
 
 const REDIS_KEY = 'knowledge:db';
 
+// ── Genre normalisatie ─────────────────────────────────────────────────────
+const GENRE_NORMALIZATION = {
+  'wedding': 'trouwfotografie',
+  'bruiloft': 'trouwfotografie',
+  'elopement': 'trouwfotografie',
+  'portrait': 'portret',
+  'portraits': 'portret',
+  'travel': 'reisfotografie',
+  'travel photography': 'reisfotografie',
+  'bos': 'landschap',
+  'bosfotografie': 'landschap',
+  'forest': 'landschap',
+  'event': 'documentaire',
+  'editorial': 'documentaire',
+  'events': 'documentaire',
+  'fantasy': 'experimenteel',
+  'abstract': 'experimenteel',
+  'grafisch': 'grafisch ontwerp',
+  'graphic': 'grafisch ontwerp',
+  'vogeloverzicht': 'wildlife',
+  'vogelonline': 'wildlife',
+  'birds': 'wildlife',
+  'bird photography': 'wildlife',
+  'wildlife photography': 'wildlife',
+  'nature': 'wildlife',
+  'street': 'straatfotografie',
+  'street photography': 'straatfotografie',
+  'architecture': 'architectuur',
+  'landscape': 'landschap',
+  'macro photography': 'macro',
+  'night': 'nacht & astro',
+  'astrophotography': 'nacht & astro',
+  'astro': 'nacht & astro',
+  'product photography': 'product',
+  'infrared': 'infraroodfotografie',
+  'infrared photography': 'infraroodfotografie',
+  'black and white': 'zwart-wit',
+  'monochrome': 'zwart-wit',
+  'zwart wit': 'zwart-wit',
+  'coastal': 'kust',
+  'seascape': 'kust',
+  'aerial': 'luchtfotografie',
+  'drone': 'luchtfotografie',
+  'drone photography': 'luchtfotografie',
+  'fine art': 'fine-art',
+  'cinematic': 'cinematisch',
+  'documentary': 'documentaire',
+  'sport': 'sport',
+  'sports': 'sport',
+  'action': 'sport'
+};
+
+function normalizeGenres(genres) {
+  if (!Array.isArray(genres)) return genres;
+  const seen = new Set();
+  return genres.map(function(g) {
+    const normalized = GENRE_NORMALIZATION[g.toLowerCase().trim()] || g;
+    return normalized;
+  }).filter(function(g) {
+    if (seen.has(g)) return false;
+    seen.add(g);
+    return true;
+  });
+}
+
 // Laad kennisbank: Redis eerst, dan fallback naar JSON bestand
 async function loadKnowledge() {
   try {
@@ -162,6 +227,9 @@ module.exports = async function handler(req, res) {
       if (!verifyAdminToken(token)) return res.status(403).json({ error: 'Geen toegang' });
 
       const { entry } = req.body;
+      if (entry && Array.isArray(entry.genre)) {
+        entry.genre = normalizeGenres(entry.genre);
+      }
       if (!entry || !entry.video_title) return res.status(400).json({ error: 'Ongeldige entry' });
 
       const entries = await loadKnowledge();
@@ -217,7 +285,14 @@ module.exports = async function handler(req, res) {
         });
       } catch(e) { console.log('Merge preview error:', e.message); }
 
-      const merged = entries.map(function(e) {
+      // Normaliseer genres in alle inkomende entries
+      const normalizedEntries = entries.map(function(e) {
+        if (e && Array.isArray(e.genre)) {
+          return Object.assign({}, e, { genre: normalizeGenres(e.genre) });
+        }
+        return e;
+      });
+      const merged = normalizedEntries.map(function(e) {
         if (!e.style_preview || e.style_preview.length < 10) {
           var preview = null;
           if (e.youtube_url) preview = previewMap[e.youtube_url.toLowerCase().trim()];

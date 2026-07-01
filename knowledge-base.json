@@ -43237,5 +43237,97 @@
       "Hij exporteert de Lightroom-selectie eerst als 16-bits TIFF in de Adobe RGB-kleurruimte naar Luminar Neo in plaats van directe JPEG's, omdat de AI-algoritmen in Neo die extra bitdiepte nodig hebben om slimme, artefactvrije beslissingen per foto te nemen."
     ],
     "style_preview": "Deze stijl kenmerkt zich door een uiterst heldere, strakke en natuurgetrouwe uitstraling waarin interieurruimtes optimaal worden gepresenteerd. De visuele sfeer is open en uitnodigend, met perfect rechte verticale lijnen en gebalanceerde lichtpartijen die donkere hoeken elimineren zonder dat het beeld er 'getekend' of nep uitziet. Voor een fotograaf die deze workflow overweegt, werkt de methode uitstekend op interieur- en exterieuropnames die vanaf een stevig statief met bracketing zijn geschoten. Het verwachte visuele effect is een loepzuivere, heldere serie foto's met een hoogwaardige en professionele vastgoeduitstraling."
+  },
+  {
+    "video_title": "Editing Darker Skin Tones with Aundre Larrow | Photography Tips | Adobe Lightroom",
+    "photographer_name": "Aundre Larrow",
+    "youtube_url": "https://www.youtube.com/watch?v=lxI9ttsisdA",
+    "genre": [
+      "portret"
+    ],
+    "light_conditions": [
+      "gemengd licht",
+      "overcast"
+    ],
+    "mood": [
+      "naturalistisch",
+      "dramatisch"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Inclusief, Huidtint-gericht, Zorgvuldig, Authentiek",
+    "philosophy": "Fotografie is een collaboratief proces waarbij het doel is om de menselijkheid van het onderwerp te vieren. Bewerken is een essentieel onderdeel van equity; het gaat niet om filters, maar om het correct weergeven van iemands unieke kenmerken. De fotograaf moet altijd intentioneel blijven in elke stap, van belichting tot de uiteindelijke kleurgrading.",
+    "workflow_order": [
+      "stap 1: Analyseer de huidtint in evenwichtig licht en bepaal de juiste kleurtemperatuur",
+      "stap 2: Gebruik maskers om specifieke gebieden (zoals haar of schaduwen) te corrigeren zonder de rest te beïnvloeden",
+      "stap 3: Verfijn kleurtonen door tint (tint/groen-magenta balans) aan te passen bij onbedoelde kleurzwemen",
+      "stap 4: Pas lokale aanpassingen toe op de ogen voor een subtiele 'pop' en behoud details in haar en huidtextuur"
+    ],
+    "techniques": [
+      {
+        "name": "Lokale correctie van huid-tinten",
+        "description": "Gebruik maskers om huidtinten te corrigeren als de belichting niet optimaal was. Pas de tint aan met magenta/roze om onbedoelde groene zweem door omgevingslicht of desaturatie te neutraliseren.",
+        "when_to_use": "Bij portretten in gemengd licht of situaties waar de huidskleur onnatuurlijk oogt door verkeerde kleurbalans.",
+        "tools": [
+          "Masking",
+          "Tint"
+        ],
+        "effect": "De huidskleur krijgt een natuurlijke, gezonde uitstraling en de onnatuurlijke kleurzweem verdwijnt."
+      },
+      {
+        "name": "Schaduwherstel in haar",
+        "description": "Verhoog de schaduwen specifiek op het haar met een masker wanneer er geen haarlicht aanwezig was tijdens de opname.",
+        "when_to_use": "Wanneer het haar samensmelt met de donkere achtergrond waardoor textuur en detail verloren gaan.",
+        "tools": [
+          "Masking",
+          "Shadows"
+        ],
+        "effect": "Details in het haar worden zichtbaar, waardoor het kapsel en de vorm beter uitkomen."
+      },
+      {
+        "name": "Versiebeheer voor besluitvorming",
+        "description": "Maak verschillende 'Versies' aan nadat je presets hebt toegepast om objectief te vergelijken welke edit de huidtint het meest accuraat weergeeft.",
+        "when_to_use": "Tijdens het bewerkingsproces wanneer je twijfelt over de impact van een bepaalde preset of instelling op de huidskleur.",
+        "tools": [
+          "Versions"
+        ],
+        "effect": "Stelt je in staat om snel tussen bewerkingen te schakelen zonder data te verliezen of verwarring te scheppen."
+      },
+      {
+        "name": "Retoucheren van de ogen",
+        "description": "Gebruik het masker om alleen de ogen te selecteren en de belichting of helderheid iets te verhogen voor meer definitie.",
+        "when_to_use": "Bij portretfoto's waar de ogen (de vensters van de ziel) wat extra aandacht en licht nodig hebben om het beeld tot leven te wekken.",
+        "tools": [
+          "Enhance Eyes",
+          "Masking"
+        ],
+        "effect": "De ogen krijgen meer glans en diepte, waardoor de kijker meer contact maakt met het onderwerp."
+      },
+      {
+        "name": "Uniforme videobewerking",
+        "description": "Pas dezelfde voorinstellingen en belichtingsaanpassingen uit je fotobewerking toe op achter-de-schermen (BTS) videomateriaal.",
+        "when_to_use": "Wanneer je een consistente visuele stijl (cinematisch universum) wilt creëren tussen je foto's en bijbehorende video's.",
+        "tools": [
+          "Video Editing",
+          "Presets"
+        ],
+        "effect": "Zorgt voor visuele continuïteit tussen je foto's en je videocontent."
+      }
+    ],
+    "color_approach": "Kleur moet intentioneel worden beheerd. Het is cruciaal om kleurzwemen (zoals groen) te vermijden en de balans tussen roze en groene tinten te controleren om huidtinten accuraat weer te geven, in plaats van ze aan te passen naar een generieke esthetiek.",
+    "local_adjustments": "Maskers zijn essentieel om specifieke delen van de foto, zoals haar of huid, te isoleren voor correcties. De fotograaf gebruikt de 'intersect' en 'subtract' functies om maskers nauwkeurig af te bakenen en te voorkomen dat correcties invloed hebben op ongewenste gebieden zoals de achtergrond.",
+    "what_to_avoid": [
+      "Slordig gebruik van presets zonder aandacht voor de huidtint",
+      "Het negeren van haar-detail bij donkerder haar en donkere achtergronden",
+      "Overmatige contrastverhoging die huidtextuur of kleur onnatuurlijk maakt"
+    ],
+    "best_for": "Portretfotografie waarbij het cruciaal is om de authenticiteit en de menselijkheid van het onderwerp te respecteren en accuraat vast te leggen.",
+    "unique_insights": [
+      "Het bewerken van huidtinten is een vorm van equity; een slechte edit kan onbedoeld communiceren dat de persoon niet mooi is.",
+      "Huur mensen in voor je set die op je onderwerpen lijken; dit is geen DEI-beleid, maar een slimme manier om culturele competentie te waarborgen.",
+      "Hair styling is vaak een intensief proces voor modellen; het niet goed uitlichten van haar is in essentie het negeren van de moeite die de ander in hun presentatie heeft gestoken."
+    ],
+    "style_preview": "De stijl van Aundre Larrow is diep geworteld in empathie en authenticiteit. Hij streeft naar een eerlijke weergave van het onderwerp door technische precisie in Lightroom te combineren met een diep respect voor de mens achter de lens. Deze stijl is perfect voor portretfotografen die in uitdagende lichtomstandigheden werken en streven naar beelden die niet alleen mooi zijn, maar ook de ziel en de identiteit van de geportretteerde persoon recht doen."
   }
 ]

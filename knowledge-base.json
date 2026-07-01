@@ -3876,94 +3876,86 @@
     "photographer_name": "Kosta Bratsos",
     "youtube_url": "https://www.youtube.com/watch?v=HXmcv5jvJZ8",
     "genre": [
-      "straatfotografie",
-      "nacht & astro",
-      "landschap"
+      "cinematisch"
     ],
     "light_conditions": [
-      "nacht",
-      "gouden uur",
-      "bewolkt",
-      "tegenlicht"
+      "gemengd licht"
     ],
     "mood": [
-      "cinematic",
-      "moody",
-      "dramatisch",
-      "nostalgisch",
-      "romantisch"
+      "dramatisch"
     ],
     "software": [
       "Lightroom Classic"
     ],
-    "style_description": "Cinematic Mood Street",
-    "philosophy": "Cinematische nabewerking draait om het maken van bewuste en intentionele keuzes om een specifieke emotie en sfeer over te brengen, in plaats van het simpelweg 'corrigeren' of perfectioneren van een foto. Het sturen van kleur en het creëren van visuele hiërarchie staan hierbij centraal.",
+    "style_description": "Moody Cinematic Storytelling Tone",
+    "philosophy": "Cinematische bewerking draait niet om technische perfectie of het slaafs volgen van een vaste formule, maar om het maken van intentionele keuzes die emotie oproepen. In plaats van kleuren te corrigeren naar een neutrale realiteit, gebruikt de fotograaf kleurzwemen om een specifieke psychologische sfeer te regisseren. Het creëren van een duidelijke visuele hiërarchie staat centraal, waarbij storende elementen worden gedimd zodat het oog direct naar het hoofdpersonage wordt geleid. Tot slot is lokale scheiding tussen onderwerp en achtergrond essentieel om het platte beeld te transformeren in een filmisch stilstaand frame.",
     "workflow_order": [
-      "Stap 1: Het sturen van de emotie door middel van de (bewust 'foute') witbalans en tint.",
-      "Stap 2: Het bepalen van de tonale basis en sfeer via het Basics panel (belichting, contrast, curves).",
-      "Stap 3: Het elimineren van storende elementen om de aandacht naar het onderwerp te trekken.",
-      "Stap 4: Het creëren van lokale scheiding (contrast) tussen het onderwerp en de achtergrond."
+      "Stap 1: Manipuleer de witbalans en tint radicaal weg van de realiteit om een emotionele kleurtemperatuur-basis te leggen.",
+      "Stap 2: Bepaal de algehele toonrichting in het basispaneel en gebruik een subtiele S-curve voor gerichte contrastversterking.",
+      "Stap 3: Elimineer achtergronddistracties door verzadiging en helderheid van specifieke stoorzenders lokaal te dempen.",
+      "Stap 4: Isoleer het hoofdonderwerp van de omgeving door het toepassen van lokaal luminantiecontrast met maskers."
     ],
     "techniques": [
       {
-        "name": "Creatieve Witbalans (Intentional Color Cast)",
-        "description": "De fotograaf past de witbalans en tint bewust zo aan dat er een kleurzweem ontstaat die de gewenste emotie versterkt (bijv. koeler maken voor isolatie of warmer voor nostalgie), in plaats van te streven naar neutrale of accurate kleuren.",
-        "when_to_use": "Bij elke foto waar de kleurtemperatuur gebruikt kan worden om een specifiek gevoel of sfeer op te roepen.",
+        "name": "Emotionele witbalansverschuiving",
+        "description": "Verlaag de witbalans drastisch naar bijvoorbeeld 3200 Kelvin op een nachtelijke straatfoto om een intense, futuristische of geïsoleerde sfeer te creëren, in plaats van de kleuren neutraal te corrigeren.",
+        "when_to_use": "Bij avond-, nacht- of straatfotografie waarbij de camera standaard een te warme of neutrale witbalans kiest.",
         "tools": [
-          "Witbalans slider",
-          "Tint slider"
+          "White Balance (Temp)"
         ],
-        "effect": "Verandert de complete sfeer en emotionele lading van het beeld door middel van kleurpsychologie."
+        "effect": "De gehele scène krijgt een diepe, gestileerde blauwe kleurzweem die direct een koude en filmische sfeer oproept."
       },
       {
-        "name": "Sfeer Bepalen met het Basis-paneel",
-        "description": "De fotograaf gebruikt de sliders in het basispaneel om heel bewust te kiezen voor bijvoorbeeld een diepe, dramatische stijl (schaduwen met rust laten, contrast verhogen) of juist een lichte, luchtige stijl. Er wordt gebruikgemaakt van een subtiele S-curve en een vignette.",
-        "when_to_use": "Aan het begin van de bewerking om de algehele tonale sfeer van de foto vast te leggen.",
+        "name": "Complementaire Color Grading contrast",
+        "description": "Voeg een warme oranje tint toe aan de hooglichten en middentonen, en breng een contrasterende blauwe tint aan in de schaduwen om diepte en visuele spanning op te bouwen.",
+        "when_to_use": "Bij opnames rond zonsondergang of in scènes met gemengd licht om de natuurlijke kleurtonen cinematisch te versterken.",
         "tools": [
-          "Basispaneel (Exposure, Contrast, Highlights, Shadows)",
-          "Tone Curve (S-curve)",
-          "Vignette"
+          "Color Grading"
         ],
-        "effect": "Creëert een bewuste tonale sfeer en zorgt ervoor dat de blik van de kijker op het onderwerp gericht blijft."
+        "effect": "Er ontstaat een krachtige kleurcontrast-scheiding (tegenkleuren) tussen de lichte delen en de donkere partijen."
       },
       {
-        "name": "Storende Elementen Dempen",
-        "description": "De fotograaf vermindert de verzadiging en/of de belichting van specifieke felle kleuren of heldere objecten in de omgeving die de aandacht afleiden van het hoofdonderwerp.",
-        "when_to_use": "Wanneer er op locatie onvermijdelijke afleidingen in de achtergrond of randen van het frame aanwezig zijn (zoals felle borden of felle kleuren).",
+        "name": "Selektieve distractie-desaturatie",
+        "description": "Selecteer de kleur van storende achtergrondfactoren, zoals de oranje tinten van felle lantaarns of uithangborden, in de Color Mixer en verlaag de Saturation tot de gebieden visueel naar de achtergrond verdwijnen.",
+        "when_to_use": "Wanneer felle, verzadigde kleuren in de achtergrond de aandacht weghalen van het centrale onderwerp.",
         "tools": [
-          "Color Mixer",
-          "Point Color",
+          "Color Mixer"
+        ],
+        "effect": "De felle omgevingskleuren worden gedempt, waardoor ze niet langer concurreren met het hoofdpersonage."
+      },
+      {
+        "name": "Gelokaliseerde hooglicht-demping",
+        "description": "Plaats een radiaal masker over een bijna uitgebleekt of te fel uithangbord in de achtergrond, pas een ruime feather toe en verlaag de Exposure totdat het bord zacht in de omgeving opgaat.",
+        "when_to_use": "Bij specifieke, heldere lichtvlekken of objecten aan de randen van het frame die de compositie verstoren.",
+        "tools": [
+          "Radial Gradient Mask"
+        ],
+        "effect": "Het felle object verliest zijn visuele dominantie, terwijl de textuur en context in de achtergrond behouden blijven."
+      },
+      {
+        "name": "Tonaliteits-onderwerpscheiding",
+        "description": "Gebruik de objectselectietool om het onderwerp te maskeren. Als het onderwerp donkere kleding draagt, verlaag dan lokaal de Exposure van de achtergrond (of omgekeerd: verhoog de Exposure van de achtergrond) om lokaal contrast te forceren.",
+        "when_to_use": "Wanneer het onderwerp door egale natuurlijke lichtomstandigheden dreigt te versmelten met de directe omgeving.",
+        "tools": [
           "Object Selection Mask",
-          "Radial Mask"
+          "Background Mask"
         ],
-        "effect": "Brengt hiërarchie aan in de compositie, waarbij het onderwerp direct opvalt en de achtergrond slechts context biedt."
-      },
-      {
-        "name": "Onderwerp Scheiding (Subject Separation)",
-        "description": "Het creëren van lokaal contrast in helderheid door het onderwerp lichter te maken ten opzichte van de achtergrond, of juist donkerder als de achtergrond licht is.",
-        "when_to_use": "Wanneer het onderwerp door natuurlijk licht onvoldoende loskomt van de omgeving.",
-        "tools": [
-          "Object Selection tool",
-          "Background Selection tool",
-          "Linear Gradient Mask",
-          "Radial Mask"
-        ],
-        "effect": "Zorgt voor een duidelijke scheiding en diepte, waardoor het onderwerp direct als 'hoofdpersonage' herkenbaar is."
+        "effect": "Het onderwerp springt direct naar voren doordat er een duidelijke scheiding ontstaat tussen licht op donker of donker op licht."
       }
     ],
-    "color_approach": "De fotograaf gelooft dat films kleur gebruiken om emotie te vormen. In plaats van kleuren te corrigeren, focust hij op het 'sturen' ervan. Hij vult de creatieve witbalans aan met color grading (bijvoorbeeld door complementaire contrasten toe te voegen, zoals oranje in de lichten en blauw in de schaduwen).",
-    "local_adjustments": "Maskers worden zeer gericht ingezet na de globale aanpassingen. Object- en achtergrondselecties worden gebruikt om de belichting van specifieke storende elementen te verlagen of om lokaal helderheidscontrast tussen het onderwerp en de achtergrond te creëren. Radiale en lineaire verlopen worden gebruikt voor grotere delen van het frame.",
+    "color_approach": "De fotograaf hanteert een uiterst bewuste, sturende kleurbenadering in plaats van een corrigerende. Kleur wordt ingezet als een psychologisch instrument: warme tonen voor nostalgie of intimiteit, koele tonen voor isolatie, en specifieke tinten zoals groen om onbehagen op te wekken. Er wordt actief gezocht naar complementaire kleurscheidingen in de Color Grading om scènes een driedimensionale filmische diepte te geven.",
+    "local_adjustments": "Lokale maskers worden intensief gebruikt om het oog van de kijker door het frame te loodsen. De fotograaf zet een arsenaal aan tools in — waaronder objectselectie, radiale verlopen en lineaire maskers — niet om elementen volledig te verwijderen, maar om de helderheid en verzadiging van de omgeving rondom het onderwerp subtiel te manipuleren. Hierdoor ontstaat er een strakke visuele hiërarchie.",
     "what_to_avoid": [
-      "Het blindelings volgen van een vaste bewerkingsformule (zoals standaard schaduwen omhoog en highlights omlaag halen).",
-      "Het streven naar een perfecte, technisch correcte of neutrale witbalans, omdat dit de emotie uit een cinematisch beeld kan halen.",
-      "Het volledig verwijderen van de achtergrond; de achtergrond moet context en detail behouden, maar mag niet concurreren met het onderwerp."
+      "Het klakkeloos toepassen van een vaste formule, zoals het standaard oplichten van de schaduwen en verlagen van de hooglichten, zonder eerst de gewenste emotionele sfeer te bepalen.",
+      "Het toelaten dat felle achtergrondkleuren of overbelichte elementen aan de zijkanten van het frame de aandacht van de hoofdrolspeler opeisen."
     ],
-    "best_for": "Straatfotografie, nachtfotografie en narratieve portretten waarbij het vertellen van een verhaal en het overbrengen van een specifieke sfeer of filmische look belangrijker zijn dan een technisch perfecte weergave.",
+    "best_for": "Straatfotografie bij nacht, stedelijke landschappen en portretten in een rauwe omgeving waarbij de originele foto sfeer of een duidelijk focuspunt mist.",
     "unique_insights": [
-      "Begin je bewerking bewust met de 'verkeerde' witbalans om direct een emotionele toon te zetten.",
-      "Cinematische nabewerking gaat niet over het 'beter' maken van je foto of het behalen van technische perfectie, maar over het maken van intentionele keuzes die de emotie en de hiërarchie (onderwerp eerst, de rest daarna) in het beeld dienen."
+      "Cinematische nabewerking start bewust met de 'verkeerde' of technisch incorrecte witbalans, omdat films kleur casts gebruiken om direct een emotie of psychologische reactie bij de kijker te triggeren.",
+      "Harde, diepe schaduwen hoeven niet gecorrigeerd te worden; het bewust met rust laten van de schaduwschuifbalk geeft een foto het zware, dramatische gewicht dat essentieel is voor een filmische sfeer.",
+      "Lokaal luminantiecontrast (het kunstmatig lichter of donkerder maken van de directe omgeving rondom je onderwerp) is vele malen effectiever voor onderwerpsisolatie dan het simpelweg verhogen van de algehele, globale contrastschuif."
     ],
-    "style_preview": "Deze bewerkingsfilosofie richt zich op het creëren van een diepe, vaak enigszins melancholische of dramatische sfeer, met een uitgesproken filmische toon. De kern is niet het technisch perfectioneren van een beeld, maar het bewust sturen van kleur en licht om een specifieke emotie en een visueel verhaal te vertellen. Deze stijl excelleert bij straatfotografie, nachtelijke scènes en narratieve portretten, waar de focus ligt op het overbrengen van een verhaal en sfeer onder vaak uitdagende lichtomstandigheden. Het resultaat is een beeld dat de kijker meeneemt in een gelaagde, filmische wereld, waarbij de emotionele impact en de algehele 'mood' van de scène voorop staan."
+    "style_preview": "De bewerkingsstijl ademt de sfeer van een filmisch meesterwerk, gekenmerkt door diepe contrasten, gedurfde kleurstellingen en een zware, melancholische of dramatische ondertoon. De kernfilosofie is dat elke pixel in dienst moet staan van de emotie van het verhaal, waarbij de werkelijkheid gerust mag wijken voor esthetiek. Deze stijl floreert bij stedelijke nachtscènes en rauwe omgevingsportretten met complex of gemengd licht. Als fotograaf kun je een transformatie verwachten waarbij een rommelige, alledaagse registratie verandert in een mysterieus, sfeervol beeld waarin het onderwerp onmiskenbaar de hoofdrol opeist."
   },
   {
     "video_title": "Photoshop Tutorial for Beginners 2025 | Everything You NEED to KNOW!",

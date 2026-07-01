@@ -42113,5 +42113,116 @@
       "Door een foto na de basisedit te exporteren naar een externe kleurenanalysator (zoals Adobe Color), worden afwijkende pixels die buiten het harmonieuze kleurschema vallen direct zichtbaar op de kleurencirkel, zodat ze in de definitieve bewerking gericht gedempt kunnen worden."
     ],
     "style_preview": "De bewerkingsstijl kenmerkt zich door een uiterst doordachte, levendige en harmonieuze kleurbalans die direct rust uitstraalt. De kernfilosofie draait om het strikt toepassen van complementaire en analoge kleurschema's, waarbij afleidende elementen resoluut worden gedempt. Deze stijl werkt het beste bij weidse landschappen, opnames tijdens het gouden uur en atmosferische omstandigheden zoals mist of storm. Als fotograaf kun je een eindresultaat verwachten met een diepe visuele impact, krachtige contrasten en een perfect uitgebalanceerde verdeling tussen warme lichtaccenten en koele schaduwpartijen."
+  },
+  {
+    "video_title": "How to Edit Photos Like Albert Dros - Photoshop Tutorial",
+    "photographer_name": "Christian Möhrle",
+    "youtube_url": "https://www.youtube.com/watch?v=APT-Qu2dVbo",
+    "genre": [
+      "landschap",
+      "reisfotografie",
+      "architectuur"
+    ],
+    "light_conditions": [
+      "gouden uur",
+      "tegenlicht"
+    ],
+    "mood": [
+      "levendig",
+      "dramatisch",
+      "dromerige gloed"
+    ],
+    "software": [
+      "Lightroom Classic",
+      "Photoshop",
+      "Nik Collection"
+    ],
+    "style_description": "Vibrant Orton Glow Landscape",
+    "philosophy": "De kern van deze bewerkingsstijl draait om het maximaliseren van het dynamisch bereik via HDR-opnames om diepe schaduwen extreem op te lichten zonder een hard zwartpunt te behouden. Kleurverzadiging en extreme witbalansverschuivingen worden gecombineerd met een dromerige, schilderachtige gloed over lichte partijen en dakranden. Het herstellen van microcontrast op strategische structuren staat in contrast met een zachte, dromerige achtergrond om diepte te suggereren.",
+    "workflow_order": [
+      "Stap 1: HDR-belichtingsbalans corrigeren en schaduwen extreem oplichten in de raw-fase",
+      "Stap 2: Witbalans extreem warm instellen en sfeervolle lokale radiaalmaskers voor lichtbloei aanmaken",
+      "Stap 3: Kleurmixer, curven en split-toning afstemmen op warme hooglichten en diepblauwe schaduwen",
+      "Stap 4: In Photoshop handmatig een zachte gloed (Orton-effect) inpenseelproces toepassen en microdetails herstellen via Nik Collection"
+    ],
+    "techniques": [
+      {
+        "name": "HDR Schaduw- en Zwartpunt-liften",
+        "description": "Verhoog de Exposure en sleep de Shadows en Blacks aanzienlijk naar rechts om donkere partijen volledig open te breken en details zichtbaar te maken, terwijl de Highlights worden verlaagd om overbelichting te voorkomen. Er wordt bewust gestreefd naar een zacht, gelift zwartpunt.",
+        "when_to_use": "Bij contrastrijke stadslandschappen of natuurbeelden tijdens zonsondergang met diepe schaduwen en fel tegenlicht",
+        "tools": [
+          "Standaard-paneel (Belichting, Schaduwen, Zwart, Hooglichten)"
+        ],
+        "effect": "Schaduwen worden extreem helder en tonen alle textuur zonder ruis, terwijl de foto een minder hard en meer schilderachtig fundament krijgt"
+      },
+      {
+        "name": "Tweeledige Luchtmenging via Maskeraftrek",
+        "description": "Selecteer de lucht automatisch via AI en trek hier vervolgens met een lineair verloop de onderzijde van af richting de horizon. Verlaag in het resterende topmasker de Exposure en de Temp om de bovenkant van de lucht een diepe, koele blauwe toon te geven.",
+        "when_to_use": "Om een dramatisch kleur- en helderheidsverloop in de lucht te creëren zonder gebouwen of bomen te beïnvloeden",
+        "tools": [
+          "Selecteer lucht (Maskers)",
+          "Lineair verloop",
+          "Aftrekken"
+        ],
+        "effect": "De bovenkant van de lucht wordt diepblauw en donkerder, wat zorgt voor een krachtig contrast met het warme licht bij de horizon"
+      },
+      {
+        "name": "Lokale Lichtbloei-simulatie via Dehaze-reductie",
+        "description": "Plaats kleine, gerichte radiaalmaskers over felle lichtbronnen of dakranden. Verhoog de Blacks fors en verlaag de Dehaze en Clarity aanzienlijk om een mistige lichtuitstraling te creëren. Compenseer kleurverlies door de Temp en Saturation te verhogen.",
+        "when_to_use": "Rondom zonlichtpunten, straatlantaarns of reflecterende randen om een atmosferische lichtgloed na te bootsen",
+        "tools": [
+          "Radiaalfilter (Maskers)",
+          "Nevel verwijderen (Dehaze)",
+          "Lokaliteit (Clarity)",
+          "Zwart",
+          "Temperatuur"
+        ],
+        "effect": "Het licht lijkt fysiek uit te breken en over de randen van gebouwen of objecten heen te bloeden met een warme, zachte tint"
+      },
+      {
+        "name": "Complementaire Stadskleurgradatie",
+        "description": "Stel in het Color Grading paneel de Highlights in op een zeer warme, intens verzadigde oranje/gele tint. Compenseer dit door zowel de Midtones als de Shadows te voorzien van een koele, diepblauwe kleur met stevige verzadiging.",
+        "when_to_use": "Voor stadsgezichten net na zonsondergang om de klassieke 'gouden licht versus blauwe uurtje' dynamiek te forceren",
+        "tools": [
+          "Kleurgradatie (Color Grading)"
+        ],
+        "effect": "De verlichte delen en de luchtgloed stralen intens warmte uit, terwijl de schaduwzijden en straatvlakken een sfeervolle, koele blauwzweem krijgen"
+      },
+      {
+        "name": "Blblendmode Gloed-Inschildering (Orton-glow)",
+        "description": "Maak in Photoshop een nieuwe lege laag aan met de overvloeimodus 'Hard Light'. Gebruik een zeer zacht penseel met 10% dekking, neem met de pipet een warme kleur uit de lucht en schilder handmatig de gloed extra aan over overgangen van daken en lantaarns.",
+        "when_to_use": "In de Photoshop-fase om specifieke lichtstromen en dromerige atmosferen lokaal extra aan te zetten",
+        "tools": [
+          "Penseel (Brush tool)",
+          "Overvloeimodus Hard Light",
+          "Photoshop Lagen"
+        ],
+        "effect": "De lichtranden krijgen een intense, schilderachtige gloed die naadloos opgaat in de omgevingskleuren"
+      },
+      {
+        "name": "Selectieve Orton-laag via Lighter Color",
+        "description": "Dupliceer de samengevoegde laag, pas een sterke Gaussian Blur toe en zet de overvloeimodus op 'Lighter Color'. Verlaag de dekking van de laag om een subtiel en dromerig Orton-effect te integreren dat enkel de lichtere pixels laat uitvloeien.",
+        "when_to_use": "Als finishing touch in Photoshop om het harde digitale karakter van de raw-scherpte op te breken",
+        "tools": [
+          "Gaussiaans vervagen (Gaussian Blur)",
+          "Overvloeimodus Lighter Color",
+          "Photoshop Lagen"
+        ],
+        "effect": "De heldere delen van de foto krijgen een zachte, mistige uitstraling zonder dat fijne donkere structuren of details direct dichtlopen"
+      }
+    ],
+    "color_approach": "De kleurstrategie leunt zwaar op een extreem dualisme tussen warm en koud. Er wordt in de basis gekozen voor de profielinstelling 'Landscape' voor directe kleurkracht. Vervolgens worden via curves (roodkanaal) en kalibratie (blauw primair omlaag) de oranjetinten richting dieprood getrokken, terwijl de schaduwpartijen via split-toning rigoureus in het diepblauw worden gezet om een maximaal complementair kleurcontrast te genereren.",
+    "local_adjustments": "Lokale aanpassingen zijn de motor van deze stijl. Er wordt gewerkt met een fijnmazige keten van radiaalmaskers die elkaar deels overlappen om verschillende gradaties van lichtbloei en nevelreductie te simuleren. Helderheidsmaskers (Luminosity masks via TK-panel) worden ingezet om uitsluitend de natuurlijke reflecties op cobblestones of muren op te lichten zonder de donkere voegen of schaduwzijden te beïnvloeden.",
+    "what_to_avoid": [
+      "Het behouden van een diep, hard zwartpunt, wat de zachte, schilderachtige sfeer en de opgebouwde lichtgloed direct tenietdoet.",
+      "Het egaal toepassen van het Orton-effect of verzadiging over de gehele voorgrond, waardoor structuren zoals straten hun natuurlijke textuur en diepte verliezen."
+    ],
+    "best_for": "Fotografen die dramatische stadsgezichten, sprookjesachtige boslandschappen of contrastrijke zonsondergangen willen transformeren in een schilderachtig, dromerig kunstwerk met intense kleuren.",
+    "unique_insights": [
+      "Door Clarity te verlagen in combinatie met een verhoogde Texture creëer je een unieke optische illusie: details blijven haarscherp, maar de algehele sfeer oogt zacht en dromerig.",
+      "Het toepassen van de overvloeimodus 'Lighter Color' voor een vervaagde Orton-laag zorgt ervoor dat de dromerige gloed zich uitsluitend over de lichte partijen verspreidt, terwijl donkere details en scherpe randen perfect intact blijven.",
+      "Een perfecte isolatie van een centraal architectonisch object (zoals een toren) wordt bereikt door een AI-luchtmasker te dupliceren, te inverteren en vervolgens via de 'intersect'-functie te snijden met een lokaal radiaalmasker."
+    ],
+    "style_preview": "Deze stijl biedt een adembenemende, magische sfeer die het midden houdt tussen high-end landschapsfotografie en digitale schilderkunst. De visuele toon is extreem levendig met een herkenbare, dromerige lichtbloei die over daken en langs lantaarns strijkt. De filosofie richt zich op het creëren van een utopisch beeld van de werkelijkheid door schaduwen volledig open te breken en te hullen in rijke, koele blauwtinten, contrasterend met gloeiend gouden hooglichten. Deze benadering werkt perfect voor avondopnames en tegenlichtsituaties tijdens het gouden uur. Als fotograaf kun je een spectaculair eindresultaat verwachten met een ongekende dieptewerking, vloeiende contrastovergangen en een betoverende uitstraling."
   }
 ]

@@ -41911,5 +41911,111 @@
       "De filmische 'glow' op de hooglichten van een sportfoto wordt versterkt door de Helderheid (Clarity) te verlagen en dit te compenseren met een lichte verhoging van de Textuur voor het behoud van de scherpte op de jersey"
     ],
     "style_preview": "Deze stijl combineert de rauwe energie van sportfotografie met de esthetiek van een cinematische speelfilm. De visuele toon is energiek, contrastrijk en sfeervol koel met perfect gebalanceerde huidtinten. Het werkt optimaal voor actiefoto's bij helder daglicht waar teamkleuren en expressies de hoofdrol moeten spelen. Als fotograaf transformeer je hiermee een harde, digitale sportplaat in een dynamisch beeld met diepte, sprekende details en een professionele afwerking."
+  },
+  {
+    "video_title": "8 Lightroom Editing TIPS You Might NOT Know!",
+    "photographer_name": "Albert Dros",
+    "youtube_url": "https://www.youtube.com/watch?v=emSkVl6APDQ",
+    "genre": [
+      "landschap",
+      "reisfotografie",
+      "algemeen"
+    ],
+    "light_conditions": [
+      "gouden uur",
+      "diffuus licht",
+      "tegenlicht"
+    ],
+    "mood": [
+      "rustig",
+      "levendig",
+      "naturalistisch"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Naturalistisch Kleurrijk Dreamy Landschap",
+    "philosophy": "Het behouden van een natuurlijke balans staat centraal, waarbij extreme lokale ingrepen worden vermeden om artefacten te voorkomen. Het sturen van de blik van de kijker gebeurt op een subtiele manier door te spelen met bestaand licht en sfeer. Nieuwe softwarefuncties worden direct geïntegreerd om de workflow efficiënter en preciezer te maken zonder kwaliteitsverlies. Kleurscheiding en de juiste luminantieverhoudingen vormen de basis voor een geloofwaardig eindresultaat.",
+    "workflow_order": [
+      "Stap 1: Globale belichting en toonwaarden corrigeren via het histogram",
+      "Stap 2: Nauwkeurige witbalans en kleurbalans instellen met de verzadigingsmethode",
+      "Stap 3: Lokale licht- en sfeereffecten toevoegen met zachte verloopmaskers",
+      "Stap 4: Gerichte kleur- en contrastcorrecties toepassen zonder ongewenste verzadiging"
+    ],
+    "techniques": [
+      {
+        "name": "Histogram Toonwaardencorrectie",
+        "description": "Sleep direct binnen de grafische zones van het histogram om specifieke tonen aan te passen. Verhoog de Exposure in het midden en herstel de Highlights door deze naar links te slepen om subtiele controle te houden over de toonwaarden.",
+        "when_to_use": "Bij onderbelichte of vlakke foto's waarbij direct visuele feedback op de toonverdeling gewenst is",
+        "tools": [
+          "Histogram"
+        ],
+        "effect": "De foto wordt lichter en krijgt direct meer tekening in de schaduwen zonder dat sliders handmatig gezocht hoeven te worden"
+      },
+      {
+        "name": "Verzadigde Witbalansbepaling",
+        "description": "Zet de sliders voor Vibrance en Saturation tijdelijk op +100 om alle kleurnuances extreem te versterken. Pas daarna de Temp en Tint sliders minimaal aan tot een perfecte kleurscheiding ontstaat en dubbelklik beide verzadigingssliders weer naar 0.",
+        "when_to_use": "Wanneer een foto geen puur wit- of grijspunt bevat om de witbalanspipet op te plaatsen",
+        "tools": [
+          "Standaard-paneel (Temp, Tint, Levendigheid, Verzadiging)"
+        ],
+        "effect": "Een zeer nauwkeurige en neutrale kleurbalans die de werkelijke sfeer correct weergeeft"
+      },
+      {
+        "name": "Sfeervolle Lichtinval via Negatieve Dehaze",
+        "description": "Plaats een groot en zeer zacht radiaalfilter aan de zijkant van het beeld en verlaag de Dehaze naar negatieve waarden (bijvoorbeeld -30). Voeg een warme kleurwaarde of belichting toe om binnenvallend licht te simuleren.",
+        "when_to_use": "Bij landschappen met bestaand zijlicht of mist waar de atmosferische sfeer versterkt mag worden",
+        "tools": [
+          "Radiaalfilter (Maskers)",
+          "Nevel verwijderen (Dehaze)"
+        ],
+        "effect": "Er ontstaat een zachte, dromerige lichtgloed die subtiel over het landschap bloedt vanaf de zijkant"
+      },
+      {
+        "name": "Natuurlijk Verloop via Maskerdoorsnijding",
+        "description": "Selecteer de lucht met de automatische AI-tool en kies vervolgens voor de optie om het masker te doorsnijden met een lineair verloop. Trek het verloop van boven naar beneden om de correctie geleidelijk te laten afzwakken richting de horizon.",
+        "when_to_use": "Wanneer een automatische luchtselectie te hard of te egaal oogt en een realistisch verloop vereist",
+        "tools": [
+          "Selecteer lucht (Maskers)",
+          "Lineair verloop",
+          "Masker doorsnijden met"
+        ],
+        "effect": "De lucht wordt aan de bovenzijde donkerder en krijgt meer structuur, terwijl de horizon natuurlijk licht blijft en boomtoppen onaangetast blijven"
+      },
+      {
+        "name": "Geisoleerde Point Color Aanpassing",
+        "description": "Teken een lokaal radiaalmasker over een specifiek object en open binnen dat masker de Point Color tool. Selecteer de exacte kleur met de pipet en pas de Hue aan om enkel het object binnen de selectie te transformeren.",
+        "when_to_use": "Wanneer dezelfde kleur op meerdere plekken in de foto voorkomt maar slechts op één specifieke plek gewijzigd mag worden",
+        "tools": [
+          "Radiaalfilter (Maskers)",
+          "Puntkleur (Point Color)"
+        ],
+        "effect": "De geselecteerde kleur binnen het masker verandert van tint, terwijl identieke kleuren daarbuiten volledig ongewijzigd blijven"
+      },
+      {
+        "name": "Contrastcontrole met Verfijnde Verzadiging",
+        "description": "Breng een contrastrijke S-curve aan in het curvenpaneel en verlaag vervolgens de slider voor Refined Saturation naar 0 of een minimale waarde om de opgelopen verzadiging handmatig terug te dringen.",
+        "when_to_use": "Bij kleurrijke composities waar een contrastverhoging via curven leidt tot oververzadigde, onnatuurlijke tinten",
+        "tools": [
+          "Tooncurve (Parametrische curve)",
+          "Verfijnde verzadiging (Refined Saturation)"
+        ],
+        "effect": "De foto krijgt meer pit en contrast zonder dat de kleuren onnatuurlijk fel of dichtgelopen van kleur worden"
+      }
+    ],
+    "color_approach": "Kleur wordt benaderd door eerst een extreme overdrijving op te zoeken om verborgen kleurzwemen te identificeren en te elimineren. Er wordt gestreefd naar een heldere kleurscheiding waarbij complementaire tinten in landschappen elkaar versterken zonder dat het beeld onnatuurlijk oogt.",
+    "local_adjustments": "Lokale aanpassingen worden ingezet om de wetten van het natuurlijke licht te volgen of subtiel te sturen. AI-maskers voor de lucht of landgrond worden vrijwel nooit stand-alone gebruikt, maar gecombineerd met lineaire verloopsfilters of point-color selecties om harde randen en onrealistische helderheidsverschillen te voorkomen.",
+    "what_to_avoid": [
+      "Het direct schuiven aan witbalans op het oog zonder referentie, wat kan leiden tot onopgemerkte kleurzwemen in de middentonen.",
+      "Het overmatig toepassen van negatieve dehaze over de gehele afbeelding, waardoor kostbaar contrast en scherpte in de basiselementen verloren gaan.",
+      "Het negeren van de automatische verzadigingstoename bij het gebruik van de tooncurve, wat kan resulteren in modderige kleuren."
+    ],
+    "best_for": "Landschaps- en reisfotografen die hun bewerkingsworkflow willen versnellen met geavanceerde maskertechnieken en die absolute controle willen over kleur en atmosferisch licht.",
+    "unique_insights": [
+      "Door Vibrance en Saturation tijdelijk naar het maximum te jagen, worden minimale kleurafwijkingen in de witbalans direct zichtbaar die met het blote oog op een neutraal scherm over het hoofd worden gezien.",
+      "Het creëren van een realistisch landschapsverloop werkt het beste door een AI-luchtmasker te 'intersecten' met een lineair verloop, omdat een standaard AI-selectie de natuurlijke oplichting van de horizon negeert.",
+      "De ingebouwde kaartmodule (Map Module) kan effectief worden gebruikt als scoutings- en archiveringstool door smartphone-foto's met actieve GPS-coördinaten te importeren om exacte fotolocaties van jaren her terug te vinden."
+    ],
+    "style_preview": "De bewerkingsstijl kenmerkt zich door een heldere, atmosferische en levendige esthetiek waarin het natuurlijke licht optimaal wordt benut en versterkt. De kernfilosofie richt zich op het creëren van diepte en een subtiele, schilderachtige sfeer zonder dat de bewerking er kunstmatig bovenop ligt. Deze stijl werkt perfect voor weidse landschappen, bosfotografie en opnames tijdens het gouden uur waarbij mist en lichtval een grote rol spelen. Als fotograaf kun je een eindresultaat verwachten met rijke contrasten, verfijnde kleurgradaties en een dromerige, maar loepzuivere uitstraling."
   }
 ]

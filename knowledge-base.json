@@ -43418,5 +43418,98 @@
       "Het maskeertabblad voor RAW-bestanden zit softwarematig vergrendeld achter een interface-quirk; het kan uitsluitend worden geforceerd door de software via een minimale globale aanpassing te dwingen de initiële RAW-status te verlaten."
     ],
     "style_preview": "Deze stijl richt zich op het behoud van een natuurlijke en geloofwaardige balans in foto's met een uitdagend dynamisch bereik. De visuele sfeer is helder en open, waarbij details in zowel de diepste schaduwen als de felste hooglichten volledig tot hun recht komen zonder dat het beeld een kunstmatige HDR-look krijgt. Deze benadering werkt optimaal voor weidse landschappen en reisfotografie die tijdens de felle middagzon of bij krachtig tegenlicht zijn geschoten. Het resultaat is een loepzuivere, contrastrijke plaat waarin de overgangen vloeiend verlopen en de technische ingrepen volledig onzichtbaar blijven voor de kijker."
+  },
+  {
+    "video_title": "How to Edit Sunrise and Sunset Photos for Beginners | Lightroom Tutorial",
+    "photographer_name": "Patrick Vogel",
+    "youtube_url": "https://www.youtube.com/watch?v=UBvX3935_Xw",
+    "genre": [
+      "landschap",
+      "kust"
+    ],
+    "light_conditions": [
+      "gouden uur",
+      "tegenlicht"
+    ],
+    "mood": [
+      "levendig",
+      "naturalistisch"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Vibrant Clean Coastal Sunrise",
+    "philosophy": "Fotobewerking bij zonsopkomsten draait om het herstellen van de natuurlijke balans tussen een heldere, kleurrijke lucht en een donkere voorgrond zonder dat het beeld er onrealistisch uitziet. Het doel is om verborgen details in schaduwpartijen naar voren te halen en tegelijkertijd de verzadiging van de warme lucht- en koele zeetinten op een gecontroleerde manier te versterken. Door gerichte lokale aanpassingen blijft de focus behouden op de structurele elementen in het landschap.",
+    "workflow_order": [
+      "stap 1: Lijn de horizon nauwkeurig uit via het Crop of Transform paneel",
+      "stap 2: Voer globale basiscorrecties uit om schaduwen te openen en hooglichten te dempen",
+      "stap 3: Gebruik de HSL-doeltool om de verzadiging van specifieke kleurtonen selectief te verhogen",
+      "stap 4: Pas lokale maskers toe voor het fijnregelen van de voorgrond, de lucht en het zeeoppervlak"
+    ],
+    "techniques": [
+      {
+        "name": "Maximale Schaduw-opening",
+        "description": "Verhoog de Shadows-schuifregelaar naar +100 om alle verborgen details, structuren en groene tinten in een donkere rotspartij op de voorgrond volledig zichtbaar te maken.",
+        "when_to_use": "Bij tegenlichtopnames tijdens zonsopkomst of zonsondergang waarbij de voorgrond door het extreme contrast bijna volledig silhouet is geworden.",
+        "tools": [
+          "Basic"
+        ],
+        "effect": "De diepe schaduwen worden volledig geopend waardoor structuren, texturen en kleuren in de voorgrond direct zichtbaar worden."
+      },
+      {
+        "name": "Agressieve Hooglichten Reductie",
+        "description": "Verlaag de Highlights-schuifregelaar naar -100 om uitgebleekte delen in de lucht te herstellen en de intensiteit van de opkomende of ondergaande zon af te zwakken.",
+        "when_to_use": "Wanneer de lucht rondom de zon overbelicht dreigt te raken en fijne kleurnuances in de wolken verloren gaan.",
+        "tools": [
+          "Basic"
+        ],
+        "effect": "De lucht krijgt meer structuur en de felle, overbelichte delen worden gedempt waardoor de verzadiging toeneemt."
+      },
+      {
+        "name": "Lokale Tint-correctie tegen Kleurzweem",
+        "description": "Verschuif de Tint-regelaar binnen een lokaal masker naar -13 (richting groen) om een ongewenste paarse of magenta kleurzweem uit rotspartijen te filteren.",
+        "when_to_use": "Wanneer rotspartijen of schaduwgebieden op de voorgrond door reflecterend luchtlicht een onnatuurlijke magenta tint aannemen.",
+        "tools": [
+          "Masking",
+          "Tint"
+        ],
+        "effect": "De paarsachtige zweem verdwijnt en de rotsen krijgen hun oorspronkelijke, natuurlijke aardse en groenachtige tinten terug."
+      },
+      {
+        "name": "Zee-isolatie voor Contrastverhoging",
+        "description": "Selecteer het zeeoppervlak handmatig met een zacht penseel en verlaag de Exposure naar -0.30 om een duidelijke tonale scheiding te creëren tussen de voorgrond en de horizon.",
+        "when_to_use": "Als het wateroppervlak te licht oogt en daardoor de visuele scheiding tussen het hoofdonderwerp en de achtergrond vervaagt.",
+        "tools": [
+          "Masking",
+          "Brush",
+          "Exposure"
+        ],
+        "effect": "De zee wordt subtiel donkerder, waardoor de heldere voorgrond en de kleurrijke lucht sterker contrasteren en loskomen van het water."
+      },
+      {
+        "name": "Doelgerichte HSL-Verzadiging",
+        "description": "Gebruik de handmatige HSL-doeltool (Targeted Adjustment Tool) in het verzadigingsvenster om Oranje en Geel in de lucht te verhogen naar +25 door direct in het beeld te slepen.",
+        "when_to_use": "Wanneer de warme tinten van een zonsopkomst in het RAW-bestand er flets uitzien en extra levendigheid vereisen.",
+        "tools": [
+          "HSL / Color",
+          "Saturation"
+        ],
+        "effect": "De specifieke goudgele en oranje tinten in de lucht worden intenser zonder dat andere kleuren in de foto oververzadigd raken."
+      }
+    ],
+    "color_approach": "De benadering van kleur leunt op het selectief scheiden van warme en koele elementen. In plaats van een globale verzadiging te gebruiken, worden de oranje en gele tinten in de lucht handmatig versterkt om de warmte van het gouden uur te benadrukken, terwijl de blauwtinten in het water subtiel worden gecorrigeerd via camera-kalibratie om de complementaire kleurwerking te maximaliseren.",
+    "local_adjustments": "Lokale aanpassingen zijn cruciaal om de nadelen van extreme globale schuifregelaars (zoals een vlak contrast) op te vangen. Door AI-gestuurde maskers voor de lucht te combineren met handmatige penselen voor het water en specifieke donkere schaduwzijden van rotsen, wordt elk landschapselement afzonderlijk gebalanceerd in helderheid en kleurtemperatuur.",
+    "what_to_avoid": [
+      "Het verhogen van globale schuifregelaars zoals Whites en Blacks zonder de clipping-waarschuwingen (J) te controleren, wat leidt tot uitgebleekte hooglichten of dichtgelopen schaduwen",
+      "Het overslaan van lokale luminantie-ruisonderdrukking (richtwaarde 30) na het extreem openen van de schaduwen, wat storende korrel in de voorgrond achterlaat",
+      "Een onnatuurlijk hoge belichting toepassen op lokale maskers op de voorgrond, waardoor de logische lichtrichting van de zonsopkomst visueel wordt doorbroken"
+    ],
+    "best_for": "Kust- en landschapsfotografen die worstelen met de extreme contrasten van tegenlicht tijdens het gouden uur en een heldere, gestructureerde voorgrond willen combineren met een levendige lucht.",
+    "unique_insights": [
+      "Door in het Camera Calibration-paneel de verzadiging en tint van de Blue Primary aan te passen, verschuiven niet alleen de blauwtinten, maar worden ook de complementaire rood- en oranje-tinten in de lucht aanzienlijk krachtiger en zuiverder zonder dat ze gaan clippen.",
+      "Het extreem opentrekken van de globale Shadows-schuifregelaar naar +100 maakt het beeld in eerste instantie erg vlak; dit verlies aan structuur wordt bewust gecompenseerd door later de Clarity specifiek binnen het lokale luchtmasker te verhogen in plaats van globaal.",
+      "Bij het handmatig bijwerken van donkere partijen op een rotswand met het penseel is het essentieel om 'Auto Mask' in te schakelen en de spatiebalk ingedrukt te houden om snel door het beeld te navigeren; dit voorkomt dat de bewerking per ongeluk overvloeit naar de strakke rand van de aangrenzende zee."
+    ],
+    "style_preview": "Deze stijl biedt een heldere, levendige en cleane blik op kustlandschappen tijdens het gouden uur. De visuele sfeer is energiek en contrastrijk, gekenmerkt door een perfect uitgebalanceerde tonaalbereik waarin schaduwen volledig spreken en de lucht barst van de warme overgangen. De kernfilosofie is om de dynamiek van het menselijk oog na te bootsen door de technische beperkingen van de camerasensor slim op te vangen met gerichte maskers. Voor de fotograaf die weidse landschappen met krachtig tegenlicht fotografeert, levert deze benadering een uiterst scherp en kleurrijk resultaat op waarbij storende kleurzwemen effectief worden geëlimineerd en de essentie van het vroege ochtendlicht behouden blijft."
   }
 ]

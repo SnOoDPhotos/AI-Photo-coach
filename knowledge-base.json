@@ -42940,5 +42940,95 @@
     "_warnings": [
       "naam volledig in hoofdletters"
     ]
+  },
+  {
+    "video_title": "De WORKFLOW van Bas Meelker voor LANDSCHAPSFOTOGRAFIE | Winters Landschap | Zoom.nl",
+    "photographer_name": "Bas Meelker",
+    "youtube_url": "https://www.youtube.com/watch?v=oPflgGhwqc4",
+    "genre": [
+      "landschap"
+    ],
+    "light_conditions": [
+      "bewolkt",
+      "diffuus licht"
+    ],
+    "mood": [
+      "rustig",
+      "dramatisch"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Natuurlijk Contrastrijk Hollands Landschap",
+    "philosophy": "De bewerking moet altijd in dienst staan van het vooraf bedachte eindresultaat, in plaats van lukraak schuiven in de hoop op een mooi effect. Als de opname in het veld met het juiste licht is gemaakt, is een minimalistische en subtiele benadering in de software voldoende. De basis van een krachtig beeld ligt in het zorgvuldig sturen van het contrast tussen licht en donker, zonder de natuurlijke realiteit geweld aan te doen.",
+    "workflow_order": [
+      "stap 1: Schakel de automatische lensprofielcorrecties en kleurafwijkingen in tijdens het importeren om optische fouten direct te elimineren.",
+      "stap 2: Pas een subtiele S-curve toe in de tintcurve om het globale contrast en de kleurintensiteit gecontroleerd te verhogen.",
+      "stap 3: Voeg gericht levendigheid toe in het basispaneel om de subtiele kleuren in de middentonen op te halen.",
+      "stap 4: Gebruik een digitaal verloopfilter over de lucht met een harde overgang om extra drama en lokale helderheid aan te brengen.",
+      "stap 5: Verscherp het beeld selectief via het detailpaneel met behulp van de maskeren-schuif en de Alt-toets."
+    ],
+    "techniques": [
+      {
+        "name": "Automatische Lenscorrectie",
+        "description": "Schakel bij de import 'Profielcorrecties inschakelen' en 'Kleurafwijking verwijderen' in om automatische lensfouten, chromatische aberratie en vignettering op te lossen.",
+        "when_to_use": "Als standaard eerste stap bij elke geïmporteerde landschapsfoto om met een zuivere, vlakke RAW-basis te starten.",
+        "tools": [
+          "Lenscorrecties"
+        ],
+        "effect": "Optische vertekeningen van de lens worden rechtgetrokken en donkere randen in de hoeken verdwijnen."
+      },
+      {
+        "name": "Contraststuring via de Tintcurve",
+        "description": "Pas een subtiele S-curve toe in de RGB-tintcurve door de lichte tonen licht te verhogen en de donkere tonen gecontroleerd te verlagen, in plaats van de globale contrastschuif te gebruiken.",
+        "when_to_use": "Bij vlakke of fletse RAW-bestanden die extra pit en sprekende toonwaarden nodig hebben.",
+        "tools": [
+          "Tintcurve"
+        ],
+        "effect": "Het verschil tussen licht en donker wordt groter, de lucht krijgt meer definitie en de kleuren worden automatisch intenser."
+      },
+      {
+        "name": "Middentoon-verzadiging met Levendigheid",
+        "description": "Verhoog de Levendigheid (Vibrance) naar exact +20 om de minder verzadigde kleuren in de foto selectief op te halen, terwijl de al verzadigde delen worden ontzien.",
+        "when_to_use": "Wanneer subtiele nuances in het landschap versterkt moeten worden zonder dat het hele beeld een onnatuurlijk bonte uitstraling krijgt.",
+        "tools": [
+          "Basispaneel"
+        ],
+        "effect": "De zachtere tinten in de middentonen winnen aan kracht, wat zorgt voor een gebalanceerde en natuurgetrouwe kleurversterking."
+      },
+      {
+        "name": "Gegradueerd Verloopfilter met Harde Overgang",
+        "description": "Plaats een lineair verloopfilter over de lucht, houd Shift ingedrukt voor een perfect rechte lijn, kies een krappe (harde) overgangszone, verlaag de belichting licht en verhoog de helderheid lokaal.",
+        "when_to_use": "Bij landschappen met een heldere wolkenlucht waarbij drama en textuur gewenst zijn zonder de voorgrond te hard te maken.",
+        "tools": [
+          "Maskeren",
+          "Lineair verloop"
+        ],
+        "effect": "De lucht wordt donkerder en krijgt aanzienlijk meer textuur en dramatiek, terwijl de scheidingslijn met de horizon strak blijft."
+      },
+      {
+        "name": "Selectieve Verscherping via Randmaskering",
+        "description": "Zet de verscherping op +50 (bij een 50 megapixel sensor) en schuif de Maskeren-regelaar omhoog met de Alt-toets ingedrukt om egale vlakken uit te sluiten van verscherping.",
+        "when_to_use": "Bij detailrijke landschapsopnames om ruis in egale partijen zoals wolkenluchten of egale sneeuwvlakken te voorkomen.",
+        "tools": [
+          "Details",
+          "Verscherpen"
+        ],
+        "effect": "Alleen de harde randen en fijne structuren op de voorgrond worden haarscherp geaccentueerd, terwijl de lucht volledig zacht en ruisvrij blijft."
+      }
+    ],
+    "color_approach": "De omgang met kleur is ingetogen en realistisch. In plaats van de algehele verzadiging op te schroeven, wordt de intensiteit van de kleuren organisch versterkt als bijproduct van de S-curve in de tintcurve, aangevuld met een voorzichtige verhoging van de levendigheid om enkel de fletse middentonen te stimuleren.",
+    "local_adjustments": "Lokale aanpassingen worden puur functioneel ingezet om de blik te sturen. Er wordt gebruikgemaakt van een strak lineair verloopfilter over de lucht om de belichting te temperen en lokale helderheid toe te voegen, waardoor het drama in de wolken toeneemt zonder de voorgrond negatief te beïnvloeden.",
+    "what_to_avoid": [
+      "Het overmatig gebruik van de globale helderheid-schuif (Clarity) over de gehele foto, omdat dit het beeld een te harde, onnatuurlijke combinatie van contrast en scherpte geeft.",
+      "Het blindelings corrigeren van belichting, hooglichten en schaduwen in de software als het licht in het veld niet optimaal was."
+    ],
+    "best_for": "Weidse landschapsfotografie onder typisch Nederlandse, bewolkte weersomstandigheden waarbij een natuurlijke maar krachtige sfeer behouden moet blijven.",
+    "unique_insights": [
+      "Als de belichtingsschuif in Lightroom substantieel aangepast moet worden, beschouwt hij dit als een persoonlijk leermoment voor de techniek in het veld; het licht ter plekke moet immers al kloppen.",
+      "Hij mijdt de standaard schuiven voor Hooglichten (Highlights), Schaduwen (Shadows) en Contrast in het basispaneel, en geeft de absolute voorkeur aan de handmatige tintcurve om de tonen vloeiender te scheiden.",
+      "Bij het bepalen van de verscherpingswaarde stemt hij deze direct af op de sensorresolutie: een camera met minder megapixels mag aanzienlijk verder verscherpt worden (tot +75) dan een high-res sensor van 50 megapixels (die rond de +50 blijft)."
+    ],
+    "style_preview": "Deze stijl ademt de pure, rustige sfeer van het klassieke landschap, waarbij de echtheid van het moment centraal staat. De visuele toon is gebalanceerd met diepe, gecontroleerde contrasten die via de curve zijn opgebouwd, zonder dat het beeld digitaal of overbewerkt oogt. Voor een fotograaf die deze benadering overweegt, werkt de workflow het beste op zorgvuldig gecomponeerde foto's met diffuus of zacht daglicht. Het verwachte visuele effect is een verfijnde, scherpe plaat waarin de dynamiek tussen de elementen subtiel is versterkt en de kijker een krachtige, natuurgetrouwe registratie van het landschap ervaart."
   }
 ]

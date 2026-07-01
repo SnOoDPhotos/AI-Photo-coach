@@ -37337,5 +37337,184 @@
       "Hij waarschuwt dat deze zware Photoshop-technieken uitsluitend voor eigen oefening of portfolio-vrijheid zijn; voor echte betalende commerciële klanten zouden deze foutieve profielopnames direct worden afgekeurd."
     ],
     "style_preview": "Dit is een uiterst zuivere, symmetrische en strakke commerciële productstijl. De visuele sfeer is helder, objectief en perfect uitgebalanceerd, waarbij de focus volledig ligt op de foutloze geometrie en zuivere randen van het object. Deze stijl werkt uitstekend voor catalogus- en e-commercefotografie waar perfectie vereist is. Het verwachte effect is een feilloos, uitgebalanceerd productbeeld dat direct gereed is voor commerciële publicatie."
+  },
+  {
+    "video_title": "HOW I EDIT MY PRODUCT PHOTOS | Free Photo Editing App",
+    "photographer_name": "Paige",
+    "youtube_url": "https://www.youtube.com/watch?v=y5toAVdGMqs",
+    "genre": [
+      "product"
+    ],
+    "light_conditions": [
+      "daglicht"
+    ],
+    "mood": [
+      "levendig",
+      "naturalistisch"
+    ],
+    "software": [
+      "Snapseed"
+    ],
+    "style_description": "Bright Warm Product Style",
+    "philosophy": "Het doel is om productfoto's snel en efficiënt te verhelderen en aantrekkelijker te maken voor branding. Door de focus te leggen op een consistente lichte en warme uitstraling, vallen de producten beter op. Lokale aanpassingen worden ingezet om specifieke details te accentueren zonder de algehele sfeer van de foto te verstoren.",
+    "workflow_order": [
+      "stap 1: Algehele belichting en contrast optimaliseren via Tune Image",
+      "stap 2: Gerichte helderheid toevoegen aan de achtergrond of labels met de Selective tool",
+      "stap 3: Storende elementen of imperfecties wegwerken met de Healing tool",
+      "stap 4: Dezelfde bewerkingen consistent toepassen op andere foto's uit de sessie via Last Edits"
+    ],
+    "techniques": [
+      {
+        "name": "Algehele helderheid verhogen",
+        "description": "Verhoog de Brightness in het Tune Image paneel om de productfoto een frisse, heldere en professionele uitstraling te geven.",
+        "when_to_use": "Bij productfoto's die binnen of met natuurlijk licht zijn genomen en die wat onderbelicht ogen.",
+        "tools": [
+          "Tune Image"
+        ],
+        "effect": "De gehele foto wordt lichter en de details van het product worden beter zichtbaar."
+      },
+      {
+        "name": "Merkgerichte warmte toevoegen",
+        "description": "Voeg een subtiele hoeveelheid Warmth toe in het Tune Image paneel om aan te sluiten bij de warme visuele identiteit van het merk.",
+        "when_to_use": "Wanneer foto's een consistente, uitnodigende en warme sfeer moeten uitstralen voor een webshop of social media.",
+        "tools": [
+          "Tune Image"
+        ],
+        "effect": "De witten en middentonen krijgen een subtiele, warme gloed."
+      },
+      {
+        "name": "Lokale achtergrondverheldering",
+        "description": "Plaats een selectiepunt op de achtergrond en verhoog de helderheid om de achtergrond witter te maken zonder het product zelf te overbelichten.",
+        "when_to_use": "Bij productfoto's of flatlays waarbij de achtergrond te grauw of donker is uitgevallen.",
+        "tools": [
+          "Selective"
+        ],
+        "effect": "De achtergrond wordt selectief opgelicht, waardoor het product beter loskomt.",
+        "timestamp": "[00:01:16]"
+      },
+      {
+        "name": "Productlabel accentueren",
+        "description": "Gebruik een selectiepunt op het label van het product om de helderheid marginaal te verhogen, zodat tekst en logo beter leesbaar worden.",
+        "when_to_use": "Wanneer belangrijke productdetails of letters op de verpakking in de schaduw vallen.",
+        "tools": [
+          "Selective"
+        ],
+        "effect": "Het label wordt lokaal verhelderd en trekt meer de aandacht van de kijker."
+      },
+      {
+        "name": "Imperfecties wegpoetsen",
+        "description": "Tik met de Healing tool op stofjes, vlekjes of ongewenste randen om deze naadloos te verwijderen met behulp van de omliggende pixels.",
+        "when_to_use": "Bij het opschonen van de achtergrond of de productverpakking van storende elementen.",
+        "tools": [
+          "Healing"
+        ],
+        "effect": "Storende stipjes of oneffenheden verdwijnen alsof ze er nooit zijn geweest."
+      }
+    ],
+    "color_approach": "De kleurvriendelijke aanpak richt zich op het handhaven van een warme merksfeer. Door de verzadiging (Saturation) en de warmte subtiel te verhogen, ogen de kleuren levendiger en consistenter over de gehele productlijn.",
+    "local_adjustments": "Maskers en lokale bewerkingen worden handmatig toegepast met de Selective tool. Dit gebeurt specifiek op de achtergrond om deze op te lichten of op productlabels om de leesbaarheid te vergroten, zonder dat de rest van het beeld flets of overbelicht raakt.",
+    "what_to_avoid": [
+      "Het te dicht naderen van productranden met de Healing tool, wat kan leiden tot vreemde visuele vervormingen en vlekken.",
+      "Het overmatig gebruiken van de Brush tool voor grote vlakken, omdat de opgeslagen penseelstreken bij een volgende foto in de sessie ongewenste vlekken kunnen achterlaten."
+    ],
+    "best_for": "Snel en consistent bewerken van handgemaakte producten, flatlays en webshop-fotografie direct vanaf een smartphone of tablet.",
+    "unique_insights": [
+      "Zet de schermhelderheid van de telefoon of tablet altijd op de maximale stand vóór het bewerken om een foutieve inschatting van de belichting te voorkomen.",
+      "Maak strategisch gebruik van de 'Last Edits' functie om een complete bewerkingssessie direct te kopiëren naar andere foto's uit dezelfde serie voor een naadloze consistentie.",
+      "Vermijd de Brush tool voor het lokaal oplichten van achtergronden bij productseries; de opgeslagen maskerpaden veroorzaken onvoorspelbare artefacten op opeenvolgende foto's."
+    ],
+    "style_preview": "Deze stijl kenmerkt zich door een lichte, heldere en warme sfeer die uitstekend past bij lifestyle- en productfotografie. De kernfilosofie leunt op een snelle, toegankelijke workflow om beelden direct aantrekkelijk te maken voor commerciële doeleinden. Het werkt het best bij foto's die met zacht daglicht zijn genomen en resulteert in een schone, uitnodigende presentatie waarin het product centraal staat. Als fotograaf kun je hiermee rekenen op een frisse en herkenbare esthetiek."
+  },
+  {
+    "video_title": "Portrait Watch Product Edit With Snapseed | Best Snapseed Editing Tutorial 2019 | Snapeed Pro edits",
+    "photographer_name": "Hasibul Haque Bhuiyan",
+    "youtube_url": "https://www.youtube.com/watch?v=lVyCHh4nJGE",
+    "genre": [
+      "product"
+    ],
+    "light_conditions": [
+      "diffuus licht"
+    ],
+    "mood": [
+      "dramatisch",
+      "moody",
+      "cinematisch"
+    ],
+    "software": [
+      "Snapseed"
+    ],
+    "style_description": "Moody Cinematic Product Style",
+    "philosophy": "Er wordt gekozen voor een artistieke en contrastrijke benadering van productfotografie door de nadruk te leggen op textuur en diepte. Door het manipuleren van specifieke toongebieden krijgt het alledaagse object een luxueuze, dramatische uitstraling. Lokale aanpassingen sturen het oog van de kijker nauwkeurig naar de belangrijkste elementen van het product.",
+    "workflow_order": [
+      "stap 1: De basisvignettering en focusgebieden instellen via het Vignette paneel",
+      "stap 2: Lokale helderheidsaccenten aanbrengen op de wijzerplaat met de Selective tool",
+      "stap 3: Micro-contrasten en tonen finetunen in het Tonal Contrast paneel",
+      "stap 4: Een zachte artistieke gloed en sfeer toevoegen met Glamour Glow"
+    ],
+    "techniques": [
+      {
+        "name": "Vignettering voor focussturing",
+        "description": "Verlaag de Outer Brightness naar -50 en verhoog de Inner Brightness om de randen van de foto dramatisch te verduisteren en het centrum te verlichten.",
+        "when_to_use": "Bij close-up productfoto's waar de omgeving moet wegvallen ten gunste van het object.",
+        "tools": [
+          "Vignette"
+        ],
+        "effect": "De randen worden diep donker, waardoor een sterke spotlight-werking op het product ontstaat.",
+        "timestamp": "[00:01:11]"
+      },
+      {
+        "name": "Wijzerplaat lokaal verhelderen",
+        "description": "Plaats een selectiepunt exact op de wijzerplaat en verhoog de helderheid om de details en reflecties in het glas naar voren te halen.",
+        "when_to_use": "Wanneer het belangrijkste onderdeel van een product te donker is door omgevingsschaduwen.",
+        "tools": [
+          "Selective"
+        ],
+        "effect": "De wijzerplaat springt direct in het oog met meer contrast en helderheid.",
+        "timestamp": "[00:02:20]"
+      },
+      {
+        "name": "Micro-contrasten versterken",
+        "description": "Pas het Tonal Contrast aan door de High Tones naar +30 en de Mid Tones naar +50 te brengen om de textuur van het metaal te accentueren.",
+        "when_to_use": "Bij mechanische of metalen producten met fijne details en gravures.",
+        "tools": [
+          "Tonal Contrast"
+        ],
+        "effect": "De texturen, randen en reflecties van het product worden scherper en tastbaarder.",
+        "timestamp": "[00:02:40]"
+      },
+      {
+        "name": "Cinematische sfeergloed",
+        "description": "Voeg een Glamour Glow filter toe met een waarde rond de +50 om de harde digitale randen te verzachten en een dromerige sfeer te creëren.",
+        "when_to_use": "Om een luxe, redactionele of high-end advertentie-uitstraling aan de foto mee te geven.",
+        "tools": [
+          "Glamour Glow"
+        ],
+        "effect": "De lichte delen krijgen een zachte, vloeiende gloed terwijl de schaduwen diep blijven.",
+        "timestamp": "[00:01:47]"
+      },
+      {
+        "name": "Achtergrondvervaging voor diepte",
+        "description": "Gebruik de Lens Blur tool om de overgang en de achtergrond subtiel onscherp te maken met een lage blur-sterkte om de macro-look te simuleren.",
+        "when_to_use": "Wanneer de achtergrond te scherp is en afleidt van het gefotografeerde object.",
+        "tools": [
+          "Lens Blur"
+        ],
+        "effect": "Het product komt driedimensionaal los te staan van een zachte, vloeiende achtergrond.",
+        "timestamp": "[00:04:46]"
+      }
+    ],
+    "color_approach": "De kleuraanpak balanceert tussen dramatiek en realisme. Door de verzadiging in specifieke filters te dempen en te spelen met de warmte (Warmth naar -49), ontstaat een koele, strakke, luxueuze uitstraling die de textuur van metalen materialen complimenteert.",
+    "local_adjustments": "Selectieve punten worden uiterst nauwkeurig gepositioneerd op de glanzende delen van het product. Hierdoor worden highlights en middentonen lokaal aangestuurd om glans en diepte te maximaliseren zonder de diepe schaduwen in de rest van de compositie te verstoren.",
+    "what_to_avoid": [
+      "Het overmatig toepassen van de Healing tool op complexe productranden, wat kan leiden tot het ongewenst wegsnijden van de fysieke productvorm.",
+      "Te hoge waarden in de Lens Blur tool die de overgang tussen het scherpe product en de onscherpe achtergrond onnatuurlijk hard maken."
+    ],
+    "best_for": "Macro- en close-up fotografie van horloges, sieraden en luxe accessoires die een dramatische en hoogwaardige uitstraling vereisen.",
+    "unique_insights": [
+      "Stel de vignettering in als een van de eerste stappen om direct de tonale hiërarchie en de lichtval van de compositie te bepalen.",
+      "Combineer Tonal Contrast met Glamour Glow om een unieke balans te vinden tussen ragscherpe details in de texturen en een dromerige, zachte sfeer in de highlights.",
+      "Gebruik de Double Exposure tool niet alleen voor montages, maar als een subtiele manier om textuur-overlays of specifieke lichtlekken handmatig in te poetsen."
+    ],
+    "style_preview": "Deze stijl ademt pure luxe en dramatiek uit, ideaal voor wie een cinematische en moody sfeer wil meegeven aan detailfoto's. De filosofie draait om het handmatig boetseren van licht en schaduw rondom het object. Het werkt het beste bij gecontroleerd of diffuus licht, waarbij glanzende materialen en fijne texturen transformeren in een mysterieus, high-end beeld. Het verwachte resultaat is een contrastrijke plaat met een diep vignet en een schitterende, zachte gloed op de highlights."
   }
 ]

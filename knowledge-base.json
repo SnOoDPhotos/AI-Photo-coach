@@ -44229,5 +44229,93 @@
       "Het beperken van de bestandsgrootte tot bijvoorbeeld 4000-5000KB bij export behoudt de volledige resolutie en kwaliteit, in plaats van de foto fysiek te verkleinen voor social media."
     ],
     "style_preview": "Deze stijl kenmerkt zich door een uiterst cleane, gebalanceerde en filmische esthetiek die de realiteit perfectioneert zonder deze geweld aan te doen. Door storende elementen resoluut weg te snijden en perspectieven strak te trekken, ontstaat er direct rust in het beeld. De sfeer leunt zwaar op een organische zachtheid die digitale hardheid elimineert, gecombineerd met een harmonieus kleurpalet. Dit werkt het best bij straat- en stadsfotografie in natuurlijk daglicht of tijdens het gouden uur, waarbij de kijker direct naar de essentie van het verhaal wordt geleid."
+  },
+  {
+    "video_title": "Back to Basics, Episode 10 - Fixing Dark High Contrast Landscapes with Lightroom Classic",
+    "photographer_name": "Joe Brady",
+    "youtube_url": "https://www.youtube.com/watch?v=pT1TkdZ7KmQ",
+    "genre": [
+      "landschap"
+    ],
+    "light_conditions": [
+      "gemengd licht",
+      "bewolkt",
+      "daglicht"
+    ],
+    "mood": [
+      "naturalistisch",
+      "levendig"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Natural Bright Vivid Green",
+    "philosophy": "Bij het fotograferen van landschappen met een hoog contrast moet de prioriteit liggen bij het beschermen van de hooglichten in de lucht tijdens de opname, zelfs als de voorgrond daardoor zwaar onderbelicht raakt. In de nabewerking draait het erom deze verborgen details op een natuurlijke manier te herstellen en de sfeer van het oorspronkelijke moment terug te brengen. De focus ligt op een snelle, efficiënte basisverwerking zonder de complexiteit uit het oog te verliezen.",
+    "workflow_order": [
+      "stap 1: Pas de Auto-knop in het basispaneel toe om Lightroom Classic een eerste globale belichtingsbalans te laten berekenen.",
+      "stap 2: Maak een AI-luchtmasker aan om de overbelichte wolkenpartijen handmatig te herstellen en meer detail te geven.",
+      "stap 3: Dupliceer en inverseer het luchtmasker om direct een perfect sluitend masker voor de donkere voorgrond te verkrijgen.",
+      "stap 4: Gebruik de Kleurmixer met de pipetknop om specifieke kleurafwijkingen in de vegetatie lokaal bij te sturen."
+    ],
+    "techniques": [
+      {
+        "name": "AI Lucht-Contrast Herstel",
+        "description": "Selecteer de lucht via de automatische maskeringsfunctie, verlaag de Exposure en Blacks licht om grijstinten te verdiepen, en verhoog gelijktijdig de Whites om de randen van de wolken witter te maken.",
+        "when_to_use": "Bij landschapsfoto's waar de lucht na een globale aanpassing nog te flets en te helder oogt.",
+        "tools": [
+          "Masking"
+        ],
+        "effect": "De textuur en diepte van het wolkendek worden krachtig hersteld zonder dat de middentonen van het landschap veranderen."
+      },
+      {
+        "name": "Atmosferische Dehaze Maskering",
+        "description": "Pas binnen het actieve luchtmasker de Dehaze-slider toe in het effectenpaneel om de textuur van de wolken extra te accentueren.",
+        "when_to_use": "Wanneer er subtiele, lichte wolkenstructuren in de lucht aanwezig zijn die door de felle belichting dreigen te vervagen.",
+        "tools": [
+          "Masking"
+        ],
+        "effect": "Het versterkt de scheiding tussen blauwe luchtdelen en witte wolken, waardoor de lucht dramatischer en tastbaarder wordt."
+      },
+      {
+        "name": "Inversie Maskering voor de Voorgrond",
+        "description": "Dupliceer het bestaande luchtmasker via de drie puntjes en kies voor de optie om het masker te inverteren. Verhoog vervolgens de Exposure aanzienlijk om de schaduwen op te lichten.",
+        "when_to_use": "Om snel en nauwkeurig de onderbelichte grondpartijen aan te pakken zonder handmatig langs de horizon te hoeven schilderen.",
+        "tools": [
+          "Masking"
+        ],
+        "effect": "De voorgrond wordt direct lichter en gedetailleerder, terwijl de lucht volledig onaangetast blijft."
+      },
+      {
+        "name": "Doelgerichte Penseel-Verzadiging",
+        "description": "Verhoog de Saturation-slider binnen het geïnverteerde voorgrondmasker om specifiek de door regen verzadigde vegetatie extra kleurkracht te geven.",
+        "when_to_use": "Bij landschappen die na een zware regenbui zijn gefotografeerd en waarvan de natuurlijke kleurintensiteit in het RAW-bestand is weggevallen.",
+        "tools": [
+          "Masking"
+        ],
+        "effect": "Het gras en de heuvels krijgen een levendige, diepgroene uitstraling die overeenkomt met de herinnering aan de natte omstandigheden."
+      },
+      {
+        "name": "Gerichte Tintcorrectie via de Pipet",
+        "description": "Activeer de Kleurmixer, selecteer de pipet en klik op een felgroen deel van de heuvel. Sleep de muis om de Hue-waarde subtiel te verschuiven van geelgroen naar een puurdere groentint.",
+        "when_to_use": "Wanneer gras of bladeren door de inval van zonlicht een onnatuurlijke of ongewenste gele zweem vertonen.",
+        "tools": [
+          "Color Mixer"
+        ],
+        "effect": "De ongewenste gele gloed verdwijnt en de vegetatie krijgt een realistischere en frissere groene kleur."
+      }
+    ],
+    "color_approach": "De kleurbehandeling is er sterk op gericht om de specifieke sfeer van een nat, Schots landschap te reconstrueren. Door de globale witbalans iets naar het geel te verschuiven, wordt er een subtiele 'zonnige' warmte aan het landschap meegegeven, waarna storende kleurverschuivingen in het gras met de kleurmixer heel nauwkeurig naar het zuivere groen worden gecorrigeerd.",
+    "local_adjustments": "Lokale aanpassingen vormen de basis voor het oplossen van het extreme contrastverschil in de foto. Er wordt slim gebruikgemaakt van de automatische AI-luchtdetectie om de foto in twee afzonderlijke zones te splitsen: de overbelichte lucht wordt selectief verdonkerd, terwijl de onderbelichte voorgrond via een geïnverteerd masker volledig onafhankelijk wordt opgelicht en verzadigd.",
+    "what_to_avoid": [
+      "Het blindelings vertrouwen op de globale Auto-knop zonder daarna lokale correcties toe te passen, waardoor de voorgrond vaak te donker blijft en de lucht te licht.",
+      "Het te ver doorschieten met de witbalans naar het blauw, wat een landschap na een regenbui al snel een te kille en sombere uitstraling geeft."
+    ],
+    "best_for": "Fotografen die snel en efficiënt landschappen met een extreem dynamisch bereik willen corrigeren en moeite hebben met het handmatig maskeren van complexe horizons.",
+    "unique_insights": [
+      "De 'Auto'-knop in het basispaneel is geen eindstation, maar dient puur als een snelle 'jump start' om de uitersten van het histogram direct grof te ordenen.",
+      "Het herstellen van overbelichte wolken werkt het beste door niet alleen de belichting te verlagen, maar juist tegelijkertijd de Whites te verhogen om een frisse, natuurlijke contrastwerking te behouden.",
+      "Door een luchtmasker te dupliceren en te inverteren, bespaar je kostbare tijd en voorkom je dat er vreemde halo-effecten of harde overgangen langs de bergrand ontstaan."
+    ],
+    "style_preview": "Deze stijl kenmerkt zich door een heldere, frisse en naturalistische landschapsesthetiek die de nadruk legt op levendige groentinten en doortekende wolkenluchten. De visuele sfeer is open en contrastrijk, waarbij schaduwen krachtig worden opengebroken om elk detail in het landschap zichtbaar te maken. De filosofie is gestoeld op het herstellen van de werkelijkheid door digitale onderbelichting effectief te compenseren met slimme AI-maskers. Deze aanpak werkt het beste voor weidse landschappen onder wisselende bewolking, waarbij het verwachte resultaat een uiterst levendig, helder en natuurgetrouw beeld is dat de kijker direct aanspreekt."
   }
 ]

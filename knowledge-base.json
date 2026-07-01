@@ -44049,5 +44049,97 @@
       "Werken met een vast tarief per vastgoedproject in plaats van een tarief per foto verandert de psychologie van de fotograaf; het stimuleert je om meer hoeken en detailopnames te leveren, wat de klanttevredenheid direct vergroot."
     ],
     "style_preview": "Deze stijl biedt een uiterst heldere, frisse en uitnodigende look die perfect aansluit bij de hoge standaarden van de moderne vastgoedmarkt. De visuele sfeer is open en ruimtelijk, waarbij kamers baden in een egaal en zacht daglicht zonder harde schaduwpartijen. De filosofie richt zich op een perfecte balans tussen efficiëntie en kwaliteit: ramen zijn perfect doortekend en de witbalans op muren is vlijmscherp gecorrigeerd. Voor een fotograaf die deze stijl hanteert, betekent dit dat interieurfoto's direct professioneel, strak en verkoopklaar ogen, met een minimale noodzaak voor tijdrovende handmatige maskers in Photoshop."
+  },
+  {
+    "video_title": "How I Edit My Portraits (Simple & Beginner Friendly)",
+    "photographer_name": "Julien Azamosa",
+    "youtube_url": "https://www.youtube.com/watch?v=nv-PWblJCQQ",
+    "genre": [
+      "portret"
+    ],
+    "light_conditions": [
+      "gouden uur",
+      "daglicht"
+    ],
+    "mood": [
+      "rustig",
+      "naturalistisch"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Soft Organic Analog Portrait",
+    "philosophy": "De kernfilosofie is dat minder altijd meer is, waarbij de focus ligt op het versterken van de reeds aanwezige kleuren en tonen in plaats van het creëren van een overdreven effect. Digitale foto's zijn van nature vaak te scherp en klinisch door moderne camera's, waardoor een bewuste verzachting nodig is om een organisch gevoel te krijgen. Door extreme wit- en zwartpunten te vermijden, ontstaat er een tijdloze, natuurlijke look. Het doel is een subtiel gestileerd portret dat ook na maanden of jaren nog steeds visueel aantrekkelijk blijft.",
+    "workflow_order": [
+      "stap 1: De afbeelding croppen om de compositie te perfectioneren en overtollige ruimte weg te snijden.",
+      "stap 2: De basisbelichting corrigeren in het Basic-paneel door de exposure te verhogen en de highlights te temperen.",
+      "stap 3: De tooncurve aanpassen met een subtiele S-curve en het liften van de schaduwen voor een zachte look.",
+      "stap 4: Color grading toepassen om complementaire tinten in de highlights en schaduwen te introduceren.",
+      "stap 5: Verscherping verminderen en filmische korrel toevoegen in het Effects-paneel voor een analoge textuur."
+    ],
+    "techniques": [
+      {
+        "name": "Compositie Versmallen en Uitlijnen",
+        "description": "Snijd de foto strakker bij om de compositie te balanceren en positioneer het model bewust aan de zijkant. Dit creëert ademruimte en een gevoel van mysterie in de kijkrichting van het model.",
+        "when_to_use": "Bij portretten die te wijd zijn geschoten en waarbij de achtergrond te veel afleidt van de blik van het model.",
+        "tools": [
+          "Crop Tool"
+        ],
+        "effect": "De kijker wordt direct naar het gezicht en de emotie van het model getrokken, met een betere balans in de negatieve ruimte."
+      },
+      {
+        "name": "Digitale Scherpte Opvangen",
+        "description": "Verlaag Texture naar een milde negatieve waarde en verlaag Clarity licht om de harde, klinische scherpte van moderne digitale sensoren en lenzen te verminderen.",
+        "when_to_use": "Bij close-up portretten om de huidstructuur zachter te maken zonder de echte details volledig te verliezen.",
+        "tools": [
+          "Texture",
+          "Clarity"
+        ],
+        "effect": "De foto krijgt een zachtere, meer organische uitstraling die minder digitaal en prettiger voor de ogen oogt."
+      },
+      {
+        "name": "Highlights en Whites Matten",
+        "description": "Verlaag de Highlights en breng de Whites omlaag in het basispaneel om felle, uitgebleekte plekken te voorkomen en de middentonen teder te houden.",
+        "when_to_use": "Bij portretten in direct zonlicht of met lichte achtergronden om de felle pieken op te vangen.",
+        "tools": [
+          "Highlights",
+          "Whites"
+        ],
+        "effect": "De lichte delen in de foto worden subtieler en zachter, wat bijdraagt aan een analoog gevoel."
+      },
+      {
+        "name": "Matte Schaduwen via Tooncurve",
+        "description": "Plaats drie punten op de tooncurve om een lichte S-bocht te maken voor het contrast, en lift vervolgens het uiterste linker zwartpunt om pure zwarttinten te vermijden.",
+        "when_to_use": "Wanneer een harde digitale schaduwomgeving omgezet moet worden in een zachte, cinematic of filmische sfeer.",
+        "tools": [
+          "Tone Curve"
+        ],
+        "effect": "De diepste schaduwen worden omgezet in een zacht, vervaagd (faded) donkergrijs, wat een analoge filmlocatie nabootst."
+      },
+      {
+        "name": "Fijnkorrelige Textuur Toevoegen",
+        "description": "Verhoog de Grain aanzienlijk tot rond de 45-50, maar verlaag de Size handmatig en schroef de Roughness op om een dichte structuur te bouwen.",
+        "when_to_use": "Als laatste stap in de nabewerking om de egale digitale pixels op te breken met een organische textuur.",
+        "tools": [
+          "Grain",
+          "Size",
+          "Roughness"
+        ],
+        "effect": "De foto krijgt een duidelijke korrelstructuur die echter zo fijn is dat de cruciale details in de foto en het gezicht niet verloren gaan."
+      }
+    ],
+    "color_approach": "De kleuraanpak is minimalistisch en respecteert de bestaande tinten van de opname. In de color mixer worden specifieke kleuren zoals de achtergrond subtiel donkerder gemaakt en de verzadiging van storende rode tinten in de huid handmatig verlaagd. Bij de grading wordt er gekozen voor warme oranje of gele tonen in de highlights om de zonneschijn te accentueren, gecombineerd met complementaire groen- of blauwachtige tinten in de schaduwen.",
+    "local_adjustments": "Er worden in deze workflow vrijwel geen zware lokale maskers gebruikt; de aanpassingen richten zich op globale harmonie. Er wordt uitsluitend een subtiel masker toegepast bij het Detail-paneel om de handmatige verscherping (die bijna naar nul is teruggebracht) puur te beperken tot de belangrijkste randen en contouren van het model.",
+    "what_to_avoid": [
+      "Het overmatig verzadigen of extreem stylen van kleuren waardoor het portret er na een paar maanden onnatuurlijk of gedateerd uitziet.",
+      "De foto te scherp laten staan, wat een te harde en digitale indruk achterlaat op de textuur van de huid."
+    ],
+    "best_for": "Portrenfotografen die met natuurlijk licht werken en op zoek zijn naar een snelle, reproduceerbare methode om een zachte, analoge en minimalistische sfeer te creëren.",
+    "unique_insights": [
+      "Contrast wordt bewust niet met de contrast-slider in het basispaneel gecorrigeerd, maar puur via een gecontroleerde S-curve in de tooncurve om meer grip te houden op de overgangen.",
+      "De verscherping van Lightroom wordt standaard extreem laag gezet (soms tot nul), omdat moderne camera's en lenzen uit zichzelf al veel te scherp presteren voor esthetische portretten.",
+      "Door de korrelgrootte (Size) bewust heel laag te houden bij een hoge Grain-waarde, kan er een intense textuur worden toegevoegd zonder dat de foto direct zijn scherpte in de details verliest."
+    ],
+    "style_preview": "Deze stijl straalt een rustige, warme en analoge portretsfeer uit. Door de scherpe digitale randjes weg te nemen en subtiele kleurschakeringen in de schaduwen te stoppen, ontstaat er een uiterst zacht beeld. Het werkt het beste bij portretten die geschoten zijn tijdens het gouden uur of in zacht daglicht. Als fotograaf kun je een look verwachten die erg cinematisch en organic aanvoelt, zonder dat de foto er 'bewerkt' uitziet."
   }
 ]

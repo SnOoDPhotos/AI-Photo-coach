@@ -42322,5 +42322,99 @@
       "Zelfs de grootste historische pioniers in de landschapsfotografie, zoals Ansel Adams, pasten in de analoge donkere kamer al extreme doordruk- en tegenhoudtechnieken toe; nabewerking is dus geen moderne digitale truc, maar een fundamenteel onderdeel van de discipline."
     ],
     "style_preview": "Deze stijl ademt een grootse, atmosferische en meeslepende sfeer uit die de kijker direct overmeestert. De visuele signatuur combineert de weidse, dynamische lijnen van extreme groothoeklenzen met de gelaagde, samengeperste abstractie van krachtige telelenzen. De kernfilosofie richt zich op het vangen van zeldzame, perfect getimede licht- en weersomstandigheden, waarbij de post-processing wordt ingezet om de mystieke schemering en rijke contrasten volledig te ontplooien. Deze benadering werkt magistraal bij ongerepte natuurlandschappen, mistige ochtenden en ruige kustlijnen. Als fotograaf kun je een spectaculair eindresultaat verwachten met een feilloze scherpte van millimeter tot horizon en een diepe, schilderachtige dramatiek."
+  },
+  {
+    "video_title": "Albert Dros is editing your photos with Luminar AI",
+    "photographer_name": "Albert Dros",
+    "youtube_url": "https://www.youtube.com/watch?v=jYukxyEk2vA",
+    "genre": [
+      "landschap",
+      "architectuur",
+      "macro",
+      "reisfotografie"
+    ],
+    "light_conditions": [
+      "gouden uur",
+      "tegenlicht",
+      "diffuus licht",
+      "nacht"
+    ],
+    "mood": [
+      "dramatisch",
+      "moody",
+      "levendig"
+    ],
+    "software": [
+      "Luminar Neo"
+    ],
+    "style_description": "Dreamy Atmospheric Light Enhancement",
+    "philosophy": "De bewerking is gericht op het versterken van de bestaande sfeer en het toevoegen van een magisch, schilderachtig gevoel. Door gebruik te maken van AI-gestuurde basisaanpassingen wordt snel balans gecreëerd in schaduwen en hooglichten. Vervolgens ligt de focus zwaar op het toevoegen van zachte gloedeffecten en gerichte vignetten om de kijker direct naar het onderwerp te trekken. De realiteit wordt dromeriger gemaakt zonder de geloofwaardigheid volledig los te laten.",
+    "workflow_order": [
+      "Stap 1: Het beeld rechtzetten en de compositie bijsnijden om afleidende elementen aan de randen direct te elimineren",
+      "Stap 2: De globale belichting balanceren met behulp van AI-gestuurde tools om contrast op een natuurlijke manier te herstellen",
+      "Stap 3: Specifieke sfeertools zoals Gouden Uur en Glow toepassen om de gewenste dromerige of dramatische sfeer te creëren",
+      "Stap 4: Met behulp van maskers en verschoven vignetten de blik strak sturen en onnodige randdelen donkerder maken"
+    ],
+    "techniques": [
+      {
+        "name": "AI Belichtingsbalans",
+        "description": "Gebruik de Accent AI slider om de foto in één vloeiende beweging te balanceren, waardoor schaduwen lichter worden en overbelichte delen herstellen.",
+        "when_to_use": "Aan de start van de bewerking bij bestanden met een hoog contrast tussen lucht en voorgrond",
+        "tools": [
+          "Accent AI (Enhance AI)"
+        ],
+        "effect": "De donkere voorgrond krijgt direct veel meer textuur en helderheid terwijl de details in lichte luchten behouden blijven"
+      },
+      {
+        "name": "Gouden Uur Accent",
+        "description": "Verhoog de Golden Hour slider om bestaand (zon)licht een veel rijkere, warmere oranjegele toon te geven zonder witbalans algemeen te beïnvloeden.",
+        "when_to_use": "Tijdens zonsopkomst en zonsondergang om fletse zonnestralen aanzienlijk krachtiger te maken",
+        "tools": [
+          "Gouden Uur (Golden Hour / Landscape)"
+        ],
+        "effect": "De foto krijgt een instant filmische, warme en magische zomerse gloed over alle verlichte delen"
+      },
+      {
+        "name": "Etherische Orton Gloed",
+        "description": "Voeg een lage dosering Orton Effect of Mystical glow toe om de harde digitale scherpte weg te nemen en hooglichten zacht te laten uitvloeien.",
+        "when_to_use": "Bij macrofotografie, bosgezichten of waterreflecties waar een sprookjesachtige, zachte sfeer benodigd is",
+        "tools": [
+          "Glow / Mystical / Orton Effect"
+        ],
+        "effect": "Harde contouren vervagen subtiel en felle lichtpunten bloeden zachtjes over in de donkere partijen"
+      },
+      {
+        "name": "Decentraal Vignet",
+        "description": "Pas een donker vignet toe en gebruik de optie 'Kies Onderwerp' (Choose Subject) om het heldere middelpunt exact over het hoofdonderwerp te plaatsen.",
+        "when_to_use": "Wanneer het hoofdonderwerp (zoals een paddenstoel of een zonnestraal) asymmetrisch in de compositie staat",
+        "tools": [
+          "Vignet (Vignette)"
+        ],
+        "effect": "De kijker wordt onbewust naar het off-center onderwerp getrokken, omdat de afleidende, onscherpe randen donkerder zijn gemaakt"
+      },
+      {
+        "name": "Gedeeltelijke Lichtbloei",
+        "description": "Plaats de Zonnestralen-tool over de zon, verlaag de lengte van de stralen en gebruik een zacht radiaalmasker om het effect strikt te beperken tot de kern van de lichtbron.",
+        "when_to_use": "Als je de zon groter en warmer wilt laten stralen zonder dat onrealistische lichtbanen over het hele beeld lopen",
+        "tools": [
+          "Zonnestralen (Sunrays)",
+          "Radiaalmasker"
+        ],
+        "effect": "Er ontstaat een krachtige, geloofwaardige lichtexplosie rond de zon die niet storend over landschapselementen heen valt"
+      }
+    ],
+    "color_approach": "Kleur dient emotie. Er wordt gericht gezocht naar kleurcontrast door de hooglichten extreem warm (geel/oranje) te trekken en via split-toning of schaduwcorrecties koelere tinten (blauw/magenta) in de diepere tonen te plaatsen. Vlakke of storende kleuren worden via het kleurpaneel in verzadiging verlaagd om het centrale kleurschema te respecteren.",
+    "local_adjustments": "Er is een sterke voorkeur voor radiaalmaskers gecombineerd met creatieve filters. In plaats van een effect globaal toe te passen, wordt een tool zoals de Sunrays of Glow vaak alleen centraal over het onderwerp geschilderd via maskers om overbodige vervaging op de randen te voorkomen.",
+    "what_to_avoid": [
+      "Het blindelings toevoegen van kunstmatige zonnestralen zonder deze te maskeren, waardoor harde lichtlijnen over donkere, massieve objecten heen vallen.",
+      "Het nalaten van een uitsnede om storende elementen aan de randen te verwijderen voordat met sfeeropbouw wordt begonnen."
+    ],
+    "best_for": "Voor fotografen die op zoek zijn naar een magische, schilderachtige en sfeervolle uitstraling voor hun natuur- en macrobeelden, gebruikmakend van AI om snelle, krachtige resultaten te behalen.",
+    "unique_insights": [
+      "Het gebruik van de Sunrays tool niet voor de letterlijke lichtstralen, maar enkel om een verhoogde, warme 'glow' op de horizon te simuleren door de stralen korter en breder te maken.",
+      "Het verschuiven van het middelpunt van de vignet-tool naar een decentraal onderwerp is een simpele handeling die voorkomt dat vignetten kunstmatig en beknellend ogen.",
+      "Bij het bewerken van bosfoto's wordt het accent verschoven door lineaire verloopmaskers te gebruiken die de vaak rommelige bodem radicaal verduisteren, zodat alle aandacht naar het bladerdek gaat."
+    ],
+    "style_preview": "Deze stijl transformeert ruwe registraties in betoverende, dromerige kunstwerken. Door het samenspel van zacht oplichtende accenten, warme kleuren en selectieve donkerte, ontstaat een sterk schilderachtig karakter. Er wordt met precisie geselecteerd welke elementen aandacht krijgen en welke verdwijnen in sfeervolle schaduwen. Deze benadering past feilloos bij tegenlicht, zonsopkomsten en macro-onderwerpen in het bos. Als fotograaf kun je rekenen op een eindresultaat dat de fantasie prikkelt en een krachtige, emotionele sfeer neerzet."
   }
 ]

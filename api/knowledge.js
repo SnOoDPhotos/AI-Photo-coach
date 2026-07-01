@@ -120,7 +120,7 @@ function normalizeSoftware(software) {
 
 // ── Kwaliteitscheck voor waarschuwingen ────────────────────────────────────
 const CHANNEL_NAME_INDICATORS = ['studio', 'photography', 'films', 'productions', 'official', 'channel', 'media', 'creative', 'visuals', 'guys', 'brothers', 'labs'];
-const KNOWN_MOODS = ['moody', 'dramatisch', 'rustig', 'levendig', 'naturalistisch', 'cinematisch', 'romantisch', 'donker', 'licht', 'mystiek', 'energiek', 'melancholisch', 'strak', 'commercieel', 'speels', 'surrealistisch', 'minimalistisch', 'nostalgisch'];
+const KNOWN_MOODS = ['moody', 'dramatisch', 'rustig', 'levendig', 'naturalistisch', 'cinematisch', 'romantisch', 'donker', 'licht', 'mystiek', 'energiek', 'melancholisch', 'strak', 'commercieel', 'speels', 'surrealistisch', 'minimalistisch', 'nostalgisch', 'filmisch', 'sfeervol', 'harmonieus', 'luxueus', 'luxueuze', 'abstract', 'experimenteel', 'grafisch', 'documentair', 'intiem', 'episch', 'vintage', 'modern', 'warm', 'koel', 'helder', 'zacht', 'hard', 'natuurlijk', 'artistiek', 'expressief', 'sereen', 'dynamisch', 'klassiek', 'tijdloos', 'rauw', 'rauwe', 'clean', 'punchy'];
 
 function getEntryWarnings(entry) {
   const warnings = [];

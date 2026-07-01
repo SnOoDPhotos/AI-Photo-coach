@@ -42017,5 +42017,101 @@
       "De ingebouwde kaartmodule (Map Module) kan effectief worden gebruikt als scoutings- en archiveringstool door smartphone-foto's met actieve GPS-coördinaten te importeren om exacte fotolocaties van jaren her terug te vinden."
     ],
     "style_preview": "De bewerkingsstijl kenmerkt zich door een heldere, atmosferische en levendige esthetiek waarin het natuurlijke licht optimaal wordt benut en versterkt. De kernfilosofie richt zich op het creëren van diepte en een subtiele, schilderachtige sfeer zonder dat de bewerking er kunstmatig bovenop ligt. Deze stijl werkt perfect voor weidse landschappen, bosfotografie en opnames tijdens het gouden uur waarbij mist en lichtval een grote rol spelen. Als fotograaf kun je een eindresultaat verwachten met rijke contrasten, verfijnde kleurgradaties en een dromerige, maar loepzuivere uitstraling."
+  },
+  {
+    "video_title": "9 TIPS to get BETTER COLOUR in your photos.",
+    "photographer_name": "Albert Dros",
+    "youtube_url": "https://www.youtube.com/watch?v=LMvCQPhsmj4",
+    "genre": [
+      "landschap",
+      "reisfotografie",
+      "algemeen"
+    ],
+    "light_conditions": [
+      "gouden uur",
+      "tegenlicht",
+      "diffuus licht",
+      "bewolkt"
+    ],
+    "mood": [
+      "levendig",
+      "naturalistisch",
+      "rustig",
+      "moody"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Harmonieus Kleurrijk Landschap Contrast",
+    "philosophy": "Kleur is geen toeval maar een bewuste compositiemethode om de blik te sturen en de juiste emotie op te roepen. Door storende of overbodige tinten radicaal te elimineren of te dempen, ontstaat er visuele rust en eenvoud in het beeld. Het toepassen van vaste complementaire en analoge kleurschema's verhoogt de esthetische kwaliteit van een foto aanzienlijk. Het versterken van contrast en kleur mag nooit ten koste gaan van een geloofwaardige en natuurlijke verdeling tussen warme en koude tonen.",
+    "workflow_order": [
+      "Stap 1: Witbalans en kleurbalans nauwkeurig controleren via extreme verzadiging",
+      "Stap 2: Het basisschema analyseren en storende of afwijkende kleurtinten dempen of verwijderen",
+      "Stap 3: Lokale maskers toepassen om specifieke kleurzones selectief te isoleren en te corrigeren",
+      "Stap 4: Kleurgradatie toepassen via split-toning om het contrast tussen licht en schaduw te versterken"
+    ],
+    "techniques": [
+      {
+        "name": "Kleurfiltering via Verzadigingsextreem",
+        "description": "Zet de Vibrance en Saturation tijdelijk op +100 om verborgen kleurafwijkingen te detecteren. Verschuif daarna de Temp en Tint sliders minimaal tot het beeld een neutrale balans bereikt tussen warm en koud, waarna beide verzadigingssliders weer naar 0 worden gezet.",
+        "when_to_use": "Aan het begin van de workflow wanneer de exacte witbalans op het oog lastig te bepalen is door gemengd licht",
+        "tools": [
+          "Standaard-paneel (Temp, Tint, Levendigheid, Verzadiging)"
+        ],
+        "effect": "Elimineert subtiele kleurzwemen in de middentonen en legt de basis voor een zuivere kleurscheiding"
+      },
+      {
+        "name": "Radicaal Muten van Storende Kleuren",
+        "description": "Analyseer de foto op ongewenste kleurtinten die buiten het gekozen kleurschema vallen. Selecteer deze specifieke kleur in het HSL/Kleur-paneel en verlaag de Saturation (bijvoorbeeld naar -100 voor groen in een oranje-blauwe compositie) om de kleur volledig te dempen.",
+        "when_to_use": "Wanneer natuurlijke elementen zoals felle vegetatie de aandacht afleiden van de hoofdcomponenten of het gewenste kleurschema",
+        "tools": [
+          "Kleurmixer (HSL / Kleur - Verzadiging)"
+        ],
+        "effect": "De afleidende kleur verdwijnt, waardoor de overgebleven complementaire of analoge kleuren veel sterker spreken"
+      },
+      {
+        "name": "Lokale Kleurisolatie met Maskers",
+        "description": "Teken een lokaal masker over een rommelig of oververzadigd deel van de foto. Verlaag de algehele verzadiging binnen dit masker drastisch en voeg een specifieke kleurverschuiving toe (bijvoorbeeld een koele blauw-tint) om de rust in dat specifieke vlak te herstellen.",
+        "when_to_use": "Als globale verzadigingsaanpassingen bepaalde delen van de foto, zoals de voorgrond of schaduwpartijen, te onrustig of fel maken",
+        "tools": [
+          "Radiaalfilter / Penseel (Maskers)",
+          "Verzadiging",
+          "Kleur (Tint)"
+        ],
+        "effect": "Het geselecteerde vlak krijgt een egale, rustige toon en leidt de blik van de kijker direct naar de kleurrijke hoofdelementen"
+      },
+      {
+        "name": "Kleurcontrast via Split-Toning",
+        "description": "Gebruik het Color Grading paneel om de schaduwen te voorzien van een subtiele koele tint (blauw) en de highlights van een sterke warme tint (oranje/geel). Verschuif eventueel de witbalans naar een iets warmere waarde om het zonlicht te accentueren.",
+        "when_to_use": "Bij contrastrijke opnames met hard zonlicht of felle tegenlichtsituaties om de dynamiek te versterken",
+        "tools": [
+          "Kleurgradatie (Color Grading - Hooglichten / Schaduwen)"
+        ],
+        "effect": "Er ontstaat een krachtig kleurcontrast tussen licht en schaduw, wat de foto direct meer diepte en sfeer geeft"
+      },
+      {
+        "name": "Extreme Kleurreductie voor Bergportretten",
+        "description": "Verlaag de algehele Saturation globaal tot extreme waarden van rond de -80. Schuif vervolgens de Temp slider ver naar links om een diepe, koude blauwe gloed over de resterende lichte partijen en schaduwen te leggen.",
+        "when_to_use": "Bij dramatische berglandschappen of gletsjeropnames waar een ijzige, krachtige en minimalistische uitstraling gewenst is",
+        "tools": [
+          "Standaard-paneel (Temp, Verzadiging)",
+          "Contrast"
+        ],
+        "effect": "De foto transformeert in een bijna zwart-wit beeld met een harde, rauwe en extreem koude sfeer"
+      }
+    ],
+    "color_approach": "Kleur wordt strikt benaderd vanuit grafische harmonie en wetmatigheden. Door gebruik te maken van hulpmiddelen zoals de kleurencirkel, worden bewerkingen gestuurd richting duidelijke complementaire (warm tegenover koud) of analoge (monochromatische) schema's, waarbij alle overtollige of niet-passende tinten bewust worden weggedrukt.",
+    "local_adjustments": "Lokale aanpassingen zijn essentieel om te voorkomen dat globale verzadigingstools het beeld oversturen. Er worden gerichte maskers geplaatst om chaotische kleurvlakken lokaal te desatureren of te herkleuren naar een rustige, egale tint, waardoor de rest van het kleurrijke landschap beter tot zijn recht komt.",
+    "what_to_avoid": [
+      "Het blindelings verhogen van de globale verzadiging zonder lokale correcties, wat resulteert in onrustige, felgekleurde artefacten in de schaduwpartijen.",
+      "Het negeren van kleine, afwijkende kleurvlekken die buiten het gekozen kleurschema vallen en zo de visuele balans van de compositie verstoren."
+    ],
+    "best_for": "Fotografen die een sterke grafische structuur in hun bewerking willen aanbrengen en op zoek zijn naar methoden om krachtige, sfeervolle kleurcontrasten te creëren zonder dat het resultaat onnatuurlijk oogt.",
+    "unique_insights": [
+      "De principes uit grafisch ontwerp en de wetmatigheden van de kleurencirkel zijn direct overdraagbaar op landschapsfotografie om chaotische natuurbeelden te transformeren naar strakke, harmonieuze composities.",
+      "Slecht weer en zware bewolking vormen juist de perfecte basis voor kleurrijke foto's, omdat de donkere, monotone achtergrond een felle, kleurrijke voorgrond maximaal laat contrasteren.",
+      "Door een foto na de basisedit te exporteren naar een externe kleurenanalysator (zoals Adobe Color), worden afwijkende pixels die buiten het harmonieuze kleurschema vallen direct zichtbaar op de kleurencirkel, zodat ze in de definitieve bewerking gericht gedempt kunnen worden."
+    ],
+    "style_preview": "De bewerkingsstijl kenmerkt zich door een uiterst doordachte, levendige en harmonieuze kleurbalans die direct rust uitstraalt. De kernfilosofie draait om het strikt toepassen van complementaire en analoge kleurschema's, waarbij afleidende elementen resoluut worden gedempt. Deze stijl werkt het beste bij weidse landschappen, opnames tijdens het gouden uur en atmosferische omstandigheden zoals mist of storm. Als fotograaf kun je een eindresultaat verwachten met een diepe visuele impact, krachtige contrasten en een perfect uitgebalanceerde verdeling tussen warme lichtaccenten en koele schaduwpartijen."
   }
 ]

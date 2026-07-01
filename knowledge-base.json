@@ -12800,13 +12800,13 @@
   {
     "video_title": "How to edit LANDSCAPE PHOTOS in LIGHTROOM like THAT ICELANDIC GUY",
     "photographer_name": "THAT ICELANDIC GUY",
-    "youtube_url": "https://youtu.be/29mteYtec9A",
+    "youtube_url": "https://www.youtube.com/watch?v=29mteYtec9A",
     "genre": [
       "landschap"
     ],
     "light_conditions": [
       "bewolkt",
-      "tegenlicht"
+      "diffuus licht"
     ],
     "mood": [
       "moody",
@@ -12815,65 +12815,77 @@
     "software": [
       "Lightroom Classic"
     ],
-    "style_description": "Moody Fine Art Landscape",
-    "philosophy": "Het creëren van een artistieke expressie met een zachte, elegante uitstraling. De nadruk ligt op sfeer en gecontroleerd lokaal contrast in plaats van een overmatig verscherpt of digitaal aandoend beeld.",
+    "style_description": "Moody Soft Cinematic Landscape",
+    "philosophy": "De kern van deze bewerkingsfilosofie draait om het creëren van een artistieke, sfeervolle expressie in plaats van een puur realistische weergave. Door bewust de algehele scherpte en digitale hardheid te verminderen, ontstaat een zachter en eleganter beeld dat doet denken aan een filmische look. Contrast en textuur worden vervolgens heel selectief en lokaal teruggebracht om de kijker door de compositie te leiden.",
     "workflow_order": [
-      "stap 1: Uitsnijden en basiscorrecties toepassen op hooglichten en schaduwen",
-      "stap 2: Kleurtoon en basiskleur instellen via Camera Calibration",
-      "stap 3: HSL-schuifregelaars gebruiken om specifieke tinten aan te passen en ongewenste kleuren te verzachten",
-      "stap 4: Tooncurve aanpassen voor lichte sfeer en een subtiele 'fade'",
-      "stap 5: Levendigheid verhogen en de 'Clarity' (helderheid) verlagen voor een zachtere, elegante basis",
-      "stap 6: Verscherping instellen met masker om alleen de belangrijkste randen te raken",
-      "stap 7: Kleurgrading (Color Grading) toepassen met blauwtinten in de schaduwen voor een koudere sfeer",
-      "stap 8: Cirkelfilters en penselen gebruiken om belangrijke elementen (zoals water en rotsen) lokaal lichter te maken en te voorzien van contrast",
-      "stap 9: Afwerken met een subtiele vignet (zonder donkere/witte randen in de hooglichten) en lichte korrel",
-      "stap 10: Het beeldscherm sluiten, een uur weglopen en de foto met frisse ogen opnieuw beoordelen"
+      "stap 1: Pas de uitsnede aan naar een 4x5 verhouding voor maximale visuele impact en corrigeer de basisbelichting",
+      "stap 2: Verschuif de sliders in het Camerakalibratie-paneel om een unieke, dragende kleurtoning in de basis te leggen",
+      "stap 3: Vorm de HSL-waarden om ongewenste harde tinten te matteren en manipuleer de tooncurve voor een subtiele matte schaduw",
+      "stap 4: Gebruik radiale filters en penselen om lokaal contrast, helderheid en specifieke kleuraccenten minutieus in te schilderen"
     ],
     "techniques": [
       {
-        "name": "Clarity verlagen in basisaanpassingen",
-        "description": "De helderheid (clarity) bewust omlaag halen in plaats van omhoog.",
-        "when_to_use": "Bij landschapsfoto's om een zachtere, meer filmische en elegante sfeer te krijgen.",
+        "name": "Camerakalibratie Basis Toning",
+        "description": "Stel de Blauwe Primaire tint in op -30, de Groene Primaire tint op +20 en de Rode Primaire tint op +7 in het kalibratiepaneel",
+        "when_to_use": "Aan het begin van de bewerking om direct een warme, organische en unieke kleurzweem in de diepste basis van het RAW-bestand te integreren",
         "tools": [
-          "Basic Panel - Clarity slider"
+          "Camerakalibratie"
         ],
-        "effect": "Een dromerige, zachte en natuurlijke textuur over de foto."
+        "effect": "De algehele kleurmatrix verandert waardoor huidtinten en landschappen een dromerige, licht oranje-achtige grondtoon krijgen"
       },
       {
-        "name": "Selectief contrast en helderheid terugbrengen",
-        "description": "Plaatselijk met een penseel of radiaalfilter de helderheid/lokaal contrast verhogen op de plekken waar de aandacht naartoe moet.",
-        "when_to_use": "Wanneer je de algehele foto zacht wilt houden, maar specifieke details wil laten 'poppen'.",
+        "name": "Subtiele Matte Tooncurve S-Bocht",
+        "description": "Plaats een subtiele S-bocht in de RGB-curve en verhoog het allerlaagste linker zwartpunt naar een outputwaarde van exact 20",
+        "when_to_use": "Wanneer je een elegant en sfeervol analoog gevoel wilt toevoegen zonder dat de foto de extreme, platte '2016-look' krijgt",
         "tools": [
-          "Adjustment Brush",
-          "Radial Filter"
+          "Tooncurve"
         ],
-        "effect": "Het onderwerp krijgt meer definitie en trekt de aandacht van de kijker."
+        "effect": "De diepste schaduwen worden licht opgelicht en krijgen een zachte, matte en modieuze grijze waas"
       },
       {
-        "name": "Camera Calibration voor kleurtint",
-        "description": "De schuifregelaars onderin (calibration) gebruiken om de basistonen van de foto een specifieke kleurkarakteristiek te geven.",
-        "when_to_use": "Als rode draad in je workflow om een consistente, filmische look te krijgen.",
+        "name": "Algehele Negatieve Helderheid",
+        "description": "Verlaag de algehele Helderheid (Clarity) in het basispaneel naar een waarde tussen de -10 en -30",
+        "when_to_use": "Bij landschapsfoto's om de harde, hyper-digitale scherpte te breken en een schilderachtige zachtheid te introduceren",
         "tools": [
-          "Calibration panel"
+          "Basispaneel > Presentatie > Helderheid"
         ],
-        "effect": "De algehele kleurbalans verschuift naar een unieke, eigen stijl."
+        "effect": "Het algehele middentonencontrast vermindert waardoor mist, wolken en vloeiende overgangen er veel zachter en eleganter uitzien"
+      },
+      {
+        "name": "Gecontroleerd Masker Shading",
+        "description": "Houd de Alt-toets (of Option op Mac) ingedrukt tijdens het opschuiven van de Maskeren-slider binnen het scherptepaneel tot een waarde rond de 75 à 80",
+        "when_to_use": "Bij het verscherpen van landschappen om te voorkomen dat er ongewenste ruis of hardheid ontstaat in egale vlakken zoals lucht of water",
+        "tools": [
+          "Details > Verscherpen > Maskeren"
+        ],
+        "effect": "Alleen de randen en harde contouren (witte lijnen in de voorvertoning) worden verscherpt, terwijl vlakke partijen volledig vloeiend blijven"
+      },
+      {
+        "name": "Hooglichten Vrijwaren in Vignettering",
+        "description": "Voeg een subtiele donkere vignettering toe via de effecten en schuif de slider 'Hooglichten' (Highlights) volledig uit naar 100",
+        "when_to_use": "Wanneer de hoeken van een landschapsfoto natuurlijke lichtbronnen of lichte lucht bevatten die niet kunstmatig verduisterd mogen worden",
+        "tools": [
+          "Effecten > Vignettering"
+        ],
+        "effect": "De donkere randen worden vloeiend toegepast op de donkere en middentonen in de hoeken, maar laten de heldere lichtpartijen ongemoeid doorstromen"
       }
     ],
-    "color_approach": "Subtiel omgaan met kleuren en kleurgrading; de schaduwen worden voorzien van een koele blauwe tint, terwijl specifieke natuurlijke kleuren (zoals geel/oranje) worden gebruikt om groentinten in het landschap te simuleren.",
-    "local_adjustments": "Maskers en lokale aanpassingen worden intensief gebruikt om de kijker door de foto te leiden: donkere delen worden lokaal opgelicht, en specifieke elementen zoals water worden verzadigd en helderder gemaakt.",
+    "color_approach": "De kleurselectie leunt zwaar op het verminderen van de verzadiging in de gele en oranje kanalen via HSL, terwijl de kleurtint van geel juist richting groen wordt geduwd. Dit matteert harde voorjaarstinten tot een gedempt geheel. In de kleurgradatie (Color Grading) wordt een koele blauwe tint (hue 200) toegevoegd aan zowel de schaduwen als heel subtiel aan de hooglichten om een koude, Scandinavische sfeer te waarborgen.",
+    "local_adjustments": "Lokale maskers vormen de absolute sleutel in deze workflow. Met een radiaal filter worden donkere kloven of rivierbeddingen specifiek opgehaald door de belichting en witten te verhogen. Vervolgens wordt met een penseel lokaal contrast en positieve helderheid specifiek terug in de foto geschilderd op rotsformaties en texturen, zodat deze ondanks de algehele zachtheid toch krachtig uit het beeld springen.",
     "what_to_avoid": [
-      "Het overmatig gebruiken van de 'Clarity' schuifregelaar over de hele foto (resulteert in een onnatuurlijke, digitale look).",
-      "Te zware, uitgesproken fades toepassen zoals in het verleden (subtiliteit is de sleutel).",
-      "Het vergeten van het 'maskeren' bij het verscherpen (zorg dat je alleen de randen verscherpt, niet de ruis in de lucht)."
+      "Het toevoegen van positieve helderheid (Clarity) over de gehele foto, wat leidt tot een onnatuurlijk en overgecorrigeerd digitaal uiterlijk",
+      "Het te ver doortrekken van het zwartpunt in de tooncurve waardoor het contrast volledig verdwijnt en de plaat modderig oogt",
+      "Direct achter elkaar blijven doorwerken zonder pauze, waardoor je blind wordt voor extreme kleurafwijkingen of oververzadiging"
     ],
-    "best_for": "Landschapsfotografie, mistige/bewolkte omstandigheden, en sfeervolle natuurfotografie.",
+    "best_for": "Deze technieken zijn bij uitstek geschikt voor weidse landschappen, ruige berglandschappen en dronefotografie die zijn vastgelegd onder bewolkte, mistige of diffuse lichtomstandigheden en waarin een mysterieuze, filmische sfeer gewenst is.",
     "unique_insights": [
-      "Neem na het bewerken van je foto bewust een uur of langer pauze en bekijk het werk daarna met frisse ogen om te controleren of je niet te ver bent gegaan met verzadiging of contrast."
+      "Het bewust verlagen van de algehele helderheid (Clarity) naar negatieve waarden creëert een veel exclusievere en zachtere esthetiek, waarna scherpte puur lokaal met een penseel op strategische details wordt teruggebracht",
+      "Door bij een vignet de hooglichten-slider op 100 te zetten, voorkom je dat lichte partijen in de hoeken van je frame een grauwe, vuile waslaag krijgen, waardoor het vignet veel natuurlijker overvloeit",
+      "Een cruciale stap in het bewerkingsproces is de 'frisse blik-pauze': sluit de software af nadat de bewerking klaar lijkt, loop weg en beoordeel het beeld pas een uur later opnieuw om overbewerkte fouten direct te spotten"
     ],
-    "style_preview": "Deze bewerkingsfilosofie richt zich op het creëren van een ingetogen, zachte en elegante visuele sfeer, wat resulteert in een bijna schilderachtige, artistieke expressie. De kern van deze stijl is het prioriteren van sfeer en gecontroleerd lokaal contrast boven overmatige scherpte of een digitaal aandoende look. Deze aanpak komt het beste tot zijn recht bij landschapsfotografie, vooral onder mistige of bewolkte omstandigheden, waar de natuurlijke sfeer al aanwezig is. Het verwachte resultaat is een diep, sfeervol beeld dat tijdloos aanvoelt, vrij van de hardheid van overbewerking en met een focus op subtiele emotie.",
+    "style_preview": "Deze stijl ademt de sfeer van het ruige, mysterieuze Noorden met zijn mistige vlaktes en diepe contrasten. De visuele toon is ingetogen, koel en filmisch zacht dankzij het bewuste gebruik van negatieve helderheid en een licht matte tooncurve. Het werkt optimaal voor landschaps- en dronefoto's die zijn geschoten bij bewolkt of diffuus daglicht, waar de natuurlijke kleuren zacht in elkaar overvloeien. Als fotograaf transformeer je hiermee een kille of vlakke registratie in een sfeervol kunstwerk met diepblauwe schaduwen en sprekende, lokaal geaccentueerde details. Het eindresultaat is een dromerig maar krachtig beeld dat direct de aandacht vasthoudt zonder schreeuwerig te worden.",
     "_warnings": [
-      "naam volledig in hoofdletters",
-      "minder dan 2 insights"
+      "naam volledig in hoofdletters"
     ]
   },
   {

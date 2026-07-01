@@ -43024,5 +43024,95 @@
       "Bij het bepalen van de verscherpingswaarde stemt hij deze direct af op de sensorresolutie: een camera met minder megapixels mag aanzienlijk verder verscherpt worden (tot +75) dan een high-res sensor van 50 megapixels (die rond de +50 blijft)."
     ],
     "style_preview": "Deze stijl ademt de pure, rustige sfeer van het klassieke landschap, waarbij de echtheid van het moment centraal staat. De visuele toon is gebalanceerd met diepe, gecontroleerde contrasten die via de curve zijn opgebouwd, zonder dat het beeld digitaal of overbewerkt oogt. Voor een fotograaf die deze benadering overweegt, werkt de workflow het beste op zorgvuldig gecomponeerde foto's met diffuus of zacht daglicht. Het verwachte visuele effect is een verfijnde, scherpe plaat waarin de dynamiek tussen de elementen subtiel is versterkt en de kijker een krachtige, natuurgetrouwe registratie van het landschap ervaart."
+  },
+  {
+    "video_title": "Editing Portraits - a Lightroom Masterclass",
+    "photographer_name": "Allen Blasdell",
+    "youtube_url": "https://www.youtube.com/watch?v=64LBomXwCLI",
+    "genre": [
+      "portret"
+    ],
+    "light_conditions": [
+      "daglicht",
+      "kunstlicht"
+    ],
+    "mood": [
+      "cinematisch",
+      "levendig"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Clean Adaptive Flash Portrait",
+    "philosophy": "Een professionele portretworkflow moet efficiënt en consistent zijn, zonder dat alle beelden exact een eenheidsworst worden. Door slim gebruik te maken van AI-gestuurde, gelaagde maskers voor gezichtskenmerken en dit te combineren met gesynchroniseerde presets, leg je in enkele seconden een perfecte basis. De nabewerking dient om de aanwezige flits- of daglichtaccenten lokaal te versterken en te verfijnen, zodat het onderwerp loskomt van de achtergrond en straalt met een natuurlijke zachtheid.",
+    "workflow_order": [
+      "stap 1: Selecteer de gewenste beelden in de Library-module met de rode kleurtoets (toets 6) om een strakke selectie te filteren.",
+      "stap 2: Pas een specifiek cameraprofiel (zoals Camera Rich Tone Portrait) toe om de kleur- en huidtinten direct in de juiste richting te sturen.",
+      "stap 3: Genereer automatische AI-persoonsmaskers voor alle specifieke gezichtsonderdelen en sla deze op als een overkoepelende portretpreset.",
+      "stap 4: Synchroniseer de gecombineerde gezichts-, onderwerp- en achtergrondmaskers over de gehele selectie en loop elk beeld handmatig na voor lokale rotaties en verfijningen."
+    ],
+    "techniques": [
+      {
+        "name": "Kleurlabel Culling",
+        "description": "Gebruik in de Library-module de sneltoets 6 om geselecteerde RAW-bestanden direct te voorzien van een rood label, om vervolgens via de filterbalk uitsluitend deze selectie over te zetten naar de Develop-module.",
+        "when_to_use": "Aan het begin van de workflow bij omvangrijke portretshoots om snel kaf van het koren te scheiden.",
+        "tools": [
+          "Library-module"
+        ],
+        "effect": "De werkmap wordt direct opgeschoond tot enkel de goedgekeurde foto's, wat zoektijd minimaliseert."
+      },
+      {
+        "name": "AI Gezichtsverzachting",
+        "description": "Selecteer via het AI-personenmasker specifiek de Gezichtshuid (Facial Skin) en verlaag lokaal de Helderheid (Clarity) en Textuur (Texture) om de huid subtiel egaler te maken zonder poriën volledig weg te vagen.",
+        "when_to_use": "Bij close-up of medium portretten waarbij de huidtextuur door flitslicht of scherpe lenzen te hard naar voren komt.",
+        "tools": [
+          "Maskeren",
+          "Personen selecteren"
+        ],
+        "effect": "De huid oogt direct zachter en egaler, terwijl omliggende details zoals wimpers en lippen hun scherpte behouden."
+      },
+      {
+        "name": "Flitslicht Nabootsen via Intersectie",
+        "description": "Maak een masker aan voor het Onderwerp (Select Subject) en kies daarna voor 'Intersect Mask With' (Doorsnede maken met) een Radiaal verloop over het gezicht om de belichting lokaal te verhogen en de scherpte op te voeren.",
+        "when_to_use": "Wanneer de natuurlijke lichtval op het gezicht van het model extra ondersteund of nagebootst moet worden alsof er een off-camera flitser is gebruikt.",
+        "tools": [
+          "Maskeren",
+          "Radiaal verloop"
+        ],
+        "effect": "Het gezicht vangt een gerichte lichtspot op die perfect binnen de contouren van het model blijft, zonder over te lopen op de achtergrond."
+      },
+      {
+        "name": "Geïsoleerde Achtergrondverlichting",
+        "description": "Dupliceer en inverteer het onderwerpsmasker om de achtergrond te isoleren, pas een intersectie toe met een groot Radiaal verloop en verhoog selectief de Schaduwen en Belichting.",
+        "when_to_use": "Bij portretten in tuinen of parken waar een subtiele, lokaal oplichtende achtergrond de dieptewerking vergroot.",
+        "tools": [
+          "Maskeren",
+          "Radiaal verloop"
+        ],
+        "effect": "Er ontstaat een zachte lichtvlek in de achtergrond die de illusie wekt van invallend zonlicht, zonder dat het model zelf lichter wordt."
+      },
+      {
+        "name": "Natuurlijke Retouche",
+        "description": "Gebruik de vlekverwijderingstool om uitsluitend tijdelijke oneffenheden (zoals puistjes) weg te halen en laat permanente kenmerken (zoals sproeten of littekens) volledig intact.",
+        "when_to_use": "Tijdens de definitieve afwerking van portretbeelden op 100% zoomniveau.",
+        "tools": [
+          "Vlekken verwijderen"
+        ],
+        "effect": "De huid oogt schoon en verzorgd, maar behoudt haar authentieke en herkenbare karakter."
+      }
+    ],
+    "color_approach": "De fotograaf vertrouwt sterk op de moderne camera-sensoren en de automatische witbalans (Auto White Balance). De kleuren worden direct bij de start gestabiliseerd door een merkspecifiek profiel in te laden (zoals Camera Rich Tone Portrait), waarna de natuurlijke kleurschakeringen van de lens-sensorcombinatie intact worden gelaten zonder zware ingrepen in de kleurenmixer of kalibratie.",
+    "local_adjustments": "Lokale aanpassingen vormen het absolute fundament van deze masterclass. Met geavanceerde AI-maskers worden de gezichtshuid, wenkbrauwen, oogwit, iris, lippen en tanden automatisch in aparte deellagen opgesplitst; deze worden via een master-preset in één klik over tientallen foto's gesynchroniseerd, waarna per foto de exacte posities van de radiale verlopen handmatig worden gecorrigeerd.",
+    "what_to_avoid": [
+      "Het volledig wegpoetsen van permanente gelaatstrekken zoals sproeten of moedervlekken, wat de authenticiteit van het model schaadt.",
+      "Het oververzachting van de huid door de hoeveelheid-regelaar van het skin-softening masker te ver door te schuiven, wat resulteert in een onrealistisch 'plastic' effect."
+    ],
+    "best_for": "Portretfotografen en studio- of locatiefotografen die een hoge kwantiteit aan beelden consistent en professioneel willen opleveren met maximale controle over het gezicht.",
+    "unique_insights": [
+      "Hij past een overkoepelende AI-gezichts-preset toe waarin de maskers voor tanden en ogen automatisch meesynchroniseren; wanneer het model op een specifieke foto niet lacht, detecteert Lightroom dit zelfstandig en laat die specifieke deellaag (tanden) simpelweg inactief.",
+      "In plaats van handmatig te retoucheren per foto, bouwt hij een intersectie tussen het totale onderwerpsmasker en een radiaal verloop; hierdoor kan hij een 'digitale flitser' vrij over het model schuiven waarbij het licht nooit per ongeluk op de achtergrond lekt.",
+      "Hij adviseert nadrukkelijk om voor portretwerk een shoot-specifieke preset te maken op basis van het eerste beeld, om te voorkomen dat de variatie tussen verschillende camera's en vintage lenzen (zoals Nikon pre-AI glas) de serie-consistentie verbreekt."
+    ],
+    "style_preview": "Deze stijl biedt een loepzuivere, heldere en uiterst professionele portretuitstraling die de natuurlijke schoonheid van het model accentueert. De visuele sfeer is fris en contrastrijk, gekenmerkt door subtiel verzachte huidtinten en sprankelende ogen die direct de aandacht trekken. Voor een fotograaf die deze werkwijze hanteert, komt de stijl het beste tot zijn recht bij buitenshoots of locatieshoots met een combinatie van daglicht en invulflits. Het verwachte visuele effect is een uiterst gebalanceerd portret waarbij het model dankzij nauwkeurige, lokale lichtsturing prachtig loskomt van de omgeving."
   }
 ]

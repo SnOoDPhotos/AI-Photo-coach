@@ -6945,72 +6945,92 @@
   },
   {
     "video_title": "How to stitch a panorama wildlife image with Sabine",
-    "photographer_name": "Sabine Stolls",
-    "youtube_url": "https://www.youtube.com/watch?v=W9vcJafK-wk",
+    "photographer_name": "Sabine Stalls",
+    "youtube_url": "https://www.medium.com/watch?v=W9vcJafK-wk",
     "genre": [
       "wildlife"
     ],
     "light_conditions": [
-      "bewolkt",
-      "gouden uur"
+      "daylicht",
+      "bewolkt"
     ],
     "mood": [
       "naturalistisch",
       "rustig"
     ],
     "software": [
-      "Lightroom Classic",
-      "Photoshop"
+      "Lightroom Classic"
     ],
-    "style_description": "Wildlife Environmental Panorama",
-    "philosophy": "Het combineren van meerdere foto's (panorama stitching) gemaakt met een telelens om stationaire wilde dieren in hun natuurlijke leefomgeving vast te leggen. Dit zorgt voor een enorme hoeveelheid detail (resolutie) en creëert een unieke, zachte achtergrondonscherpte (compressie) die niet haalbaar is met een traditionele groothoeklens.",
+    "style_description": "Medium Format Wildlife Panorama",
+    "philosophy": "De filosofie achter deze techniek is om de voordelen van een telelens te combineren met de weidsheid van de habitat. Door meerdere opnames met een lange brandpuntsafstand aan elkaar te naaien, behoud je een flinterdunne scherptediepte die het dier volledig isoleert. Dit resulteert in een extreem gedetailleerd beeld met een schilderachtige, grootformaat-achtige achtergrondcompressie die met een traditionele groothoeklens onmogelijk te realiseren is.",
     "workflow_order": [
-      "Stap 1: Camera instellen op volledige handmatige modus (Manual) en een vaste witbalans kiezen om belichtingsverschillen te voorkomen.",
-      "Stap 2: De camera op 'single shooting' zetten in plaats van continu-opname.",
-      "Stap 3: De eerste foto maken met het onderwerp centraal in beeld.",
-      "Stap 4: Vervolgfoto's maken door naar de zijkanten, boven of onder te bewegen met een overlap van ongeveer een derde per foto.",
-      "Stap 5: De reeks foto's importeren in Adobe Lightroom.",
-      "Stap 6: De foto's selecteren en via Photo Merge samenvoegen tot een panorama DNG-bestand.",
-      "Stap 7: De samengevoegde panoramafoto naar eigen smaak nabewerken."
+      "stap 1: Selecteer alle opeenvolgende raw-bestanden van de panorama-reeks in de bibliotheek.",
+      "stap 2: Start de Photo Merge functie en kies de meest natuurlijke projectiemethode in de preview.",
+      "stap 3: Corrigeer de lege witruimtes aan de randen met boundary warp of content-aware vulling.",
+      "stap 4: Activeer de stapelfunctie om de catalogus te ordenen en voer de definitieve raw-bewerking uit op het gecombineerde DNG-bestand."
     ],
     "techniques": [
       {
-        "name": "Panorama Stitching in Wildlife",
-        "description": "Het maken van een opeenvolgende serie foto's van een dier en zijn omgeving met een telelens, om deze naderhand softwarematig samen te voegen tot één groot beeld.",
-        "when_to_use": "Wanneer de telelens te veel inzoomt om de omgeving te tonen en het onderwerp stilzit of heel traag beweegt.",
+        "name": "Handmatige Belichting- en Witbalansvergrendeling",
+        "description": "Zet de camera in de volledige M-modus en kies een vaste witbalans-preset zoals Daglicht of Bewolkt om kleur- en helderheidsverschuivingen tussen de afzonderlijke frames te voorkomen.",
+        "when_to_use": "Bij het schieten van opeenvolgende frames voor een wildlife-panorama om een naadloze montage te garanderen.",
         "tools": [
-          "Photo Merge > Panorama"
+          "Camera-instellingen (M-modus)"
         ],
-        "effect": "Een foto met extreem hoge resolutie en detail, inclusief de habitat van het dier, gecombineerd met een dromerige, onscherpe achtergrond (medium format look)."
+        "effect": "Elke deelopname krijgt exact dezelfde belichting en kleurtemperatuur, waardoor er geen zichtbare overgangen of 'banen' in de lucht ontstaan."
       },
       {
-        "name": "Fill Edges & Boundary Warp",
-        "description": "Functies binnen het panorama-menu gebruiken om de lege, witte hoeken die ontstaan door het handmatig pannen op te vullen.",
-        "when_to_use": "Direct bij het genereren van de panorama-preview in Lightroom om te voorkomen dat je bruikbare delen van de compositie verliest door te moeten croppen.",
+        "name": "Onderwerp-Eerst Volgorde",
+        "description": "Maak de allereerste foto direct van het hoofdonderwerp en werk van daaruit systematisch naar boven, beneden en de zijkanten om de compositie op te bouwen.",
+        "when_to_use": "In het veld bij een stationair of traag bewegend wild dier om de belangrijkste actie direct scherp vast te leggen.",
         "tools": [
-          "Fill Edges checkbox",
-          "Boundary Warp slider"
+          "Opnametechniek"
         ],
-        "effect": "Fill Edges gebruikt content-aware technologie om pixels te genereren voor lege vlakken; Boundary Warp trekt de afbeelding subtiel recht om de gaten te vullen zonder kwaliteitsverlies."
+        "effect": "De fotograaf weet in de nabewerking direct welk frame de start van de reeks markeert en het kritieke moment van het dier bevat."
+      },
+      {
+        "name": "Eenderde Overlappingsmethode",
+        "description": "Houd bij het handmatig pannen van de camera een minimale overlap van 33% aan ten opzichte van het vorige frame.",
+        "when_to_use": "Tijdens het fotograferen van een panorama-reeks uit de hand of vanaf een statief.",
+        "tools": [
+          "Compositie / Uitlijning"
+        ],
+        "effect": "De software heeft voldoende visuele ankerpunten om de foto's zonder geometrische fouten of stitchel-artefacten aan elkaar te rekenen."
+      },
+      {
+        "name": "Boundary Warp Vervorming",
+        "description": "Verschuif de Boundary Warp-regelaar voorzichtig naar rechts om de verloren, witte randgebieden op te vullen door het beeld heel subtiel naar de hoeken te strekken.",
+        "when_to_use": "Wanneer de Lightroom panorama-preview door een lichte hoekverdraaiing lege, transparante pixels aan de randen vertoont.",
+        "tools": [
+          "Lightroom Classic",
+          "Photo Merge (Boundary Warp)"
+        ],
+        "effect": "De compositie vult het volledige rechthoekige kader zonder dat er waardevolle beeldinformatie aan de randen hoeft te worden weggesneden."
+      },
+      {
+        "name": "Content-Aware Randvulling",
+        "description": "Vink de optie 'Fill Edges' aan in het panorama-menu om lege randpixels automatisch te genereren op basis van omliggende texturen.",
+        "when_to_use": "Als alternatief voor uitsnijden wanneer de Boundary Warp bij een lagere waarde de geometrie van de horizon of bomen te veel vervormt.",
+        "tools": [
+          "Lightroom Classic",
+          "Photo Merge (Fill Edges)"
+        ],
+        "effect": "De software vult missende hoeken naadloos in met kunstmatige achtergrondpixels, waardoor de maximale resolutie behouden blijft."
       }
     ],
-    "color_approach": "Er wordt in deze video geen specifieke kleurgradatie gedemonstreerd. De focus ligt puur op de technische workflow van het vastleggen en samenvoegen. Wel wordt benadrukt dat de witbalans vooraf handmatig (bijv. op 'daylight' of 'cloudy') moet worden vastgezet om kleurverschillen tussen de losse frames te voorkomen.",
-    "local_adjustments": "Niet specifiek gedemonstreerd in deze video; de fotograaf geeft aan de algehele creatieve bewerking pas uit te voeren nadat het panorama succesvol is samengevoegd tot een DNG-bestand.",
+    "color_approach": "De kleuraanpak is geworteld in een strikte consistentie over het gehele breedbeeldveld. Omdat de witbalans handmatig is vastgezet, reageren de natuurlijke aardetinten van de savanne en de vacht van het dier uniform over de gehele compositie. De nabewerking richt zich op het behoud van een zachte, organische kleurweergave die de sfeer van de habitat ademt.",
+    "local_adjustments": "Maskers worden pas ingezet nadat de afzonderlijke frames zijn samengesmolten tot één raw-DNG. Er worden subtiele radiale verlopen over het dier geplaatst om de aandacht te verhogen, terwijl lineaire verlopen de uitgestrekte lucht en voorgrond subtiel in evenwicht brengen zonder de naadloze stitching-overgangen te verstoren.",
     "what_to_avoid": [
-      "Vermijd de automatische opnamestanden (zoals automatische belichting en automatische witbalans), omdat de camera dan per frame de belichting kan aanpassen wat zorgt voor een inconsistent eindresultaat.",
-      "Vermijd het fotograferen van snelbewegende onderwerpen, aangezien er een kleine tijdsvertraging tussen de foto's zit waardoor het onderwerp kan vervormen of 'geestverschijningen' krijgt.",
-      "Vermijd het te ver doorschuiven van de 'Boundary Warp' slider om ongewenste visuele vervormingen (distortions) in de foto te voorkomen."
+      "Het gebruik van de automatische witbalans (AWB) of automatische belichtingsstanden, wat leidt tot flikkerende helderheden en kleurverschillen per frame.",
+      "Het fotograferen in de continu-burstmodus, waardoor er te veel identieke, overlappende frames ontstaan die de catalogus vervuilen."
     ],
-    "best_for": "Stationaire wilde dieren in een mooie omgeving (zoals een luipaard in een boom of een zittend roofdier) waarbij je zowel de details van het dier als de context van de habitat wilt behouden met een professionele scherptediepte.",
+    "best_for": "Stationaire of zeer langzaam bewegende wilde dieren in een fotogenieke omgeving waarbij de fotograaf de textuur en sfeer van de habitat wil tonen.",
     "unique_insights": [
-      "Begin de panorama-reeks altijd met het frame waar het onderwerp zelf op staat en werk van daaruit naar de zijkanten. Zo herken je in Lightroom direct wat de startfoto van je panorama is.",
-      "Je kunt ook de truc toepassen om een foto van je eigen hand te maken direct vóór en na de panorama-reeks om de opeenvolgende foto's in je bibliotheek snel te identificeren.",
-      "Het gebruik van een telelens met een open diafragma voor een panorama creëert een flinterdunne scherptediepte en achtergrondcompressie die de look van een peperdure middenformaatcamera simuleert, iets wat met een standaard groothoeklens onmogelijk is."
+      "Het fotograferen van een panorama met een telelens creëert een indrukwekkende compressie en een romige achtergrondonscherpte (bokeh) die onmogelijk met een fysieke groothoeklens kan worden bereikt op die afstand.",
+      "Het samenvoegen van tele-opnames levert een gecombineerd raw-bestand op met een gigantische resolutie (DNG-formaat) dat de detaillering en pixelkwaliteit van een kostbare digitale middenformaatcamera evenaart.",
+      "Door bewust de 'Auto Settings' in het Photo Merge-menu uit te vinken, behoud je de volledige controle over het dynamische bereik en de sfeer, in plaats van dat Lightroom een generieke, vlakke basiscorrectie oplegt."
     ],
-    "style_preview": "Deze bewerkingsfilosofie ademt een serene, immersieve sfeer uit, waarbij het draait om het vastleggen van stationaire wilde dieren in hun natuurlijke habitat met ongekende details. De kern van deze stijl is het samenvoegen van meerdere telelensopnames tot een panorama, waardoor een enorme resolutie en een breed, maar toch intiem, beeld van het dier en zijn omgeving ontstaat. Deze aanpak is perfect voor het vastleggen van stationaire wilde dieren in een schilderachtige omgeving, zoals een luipaard in een boom of een zittend roofdier, waarbij zowel de fijne details van het dier als de context van zijn habitat behouden blijven met een professionele scherptediepte. Het verwachte visuele effect is een diepgaand, bijna dromerig beeld waarin het onderwerp haarscherp naar voren komt tegen een prachtig vloeiende, contextrijke achtergrond.",
-    "_warnings": [
-      "minder dan 3 technieken"
-    ]
+    "style_preview": "Deze stijl ademt een grootse, cinematische sfeer uit waarbij een wild dier haarscherp is ingebed in zijn natuurlijke leefomgeving. De visuele handtekening kenmerkt zich door een unieke combinatie van een weids landschapsperspectief met de boterzachte achtergrondcompressie en flinterdunne scherptediepte van een lichtsterke telelens. Het resultaat is een fine-art wildlife-landschap met een astronomisch hoge resolutie en een ongekende textuurweergave. Voor de ambitieuze fotograaf die het dier niet los wil zingen van zijn context, maar de grootsheid van de natuur wil vangen in een schilderachtig panorama, biedt deze methode een verbluffend, mediumformaat-achtig eindresultaat."
   },
   {
     "video_title": "Janine’s 5 step Lightroom Workflow",

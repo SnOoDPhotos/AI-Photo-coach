@@ -43693,5 +43693,92 @@
       "De 'Dark Circles Removal' tool is geprogrammeerd om specifiek blauw- en paarskleurige schaduwen onder de ogen te neutraliseren, maar moet halverwege worden teruggedraaid om te voorkomen dat de diepte van de oogkas volledig vlak wordt geslagen."
     ],
     "style_preview": "Deze stijl kenmerkt zich door een heldere, dromerige en commercieel cleane uitstraling die perfect aansluit bij lifestyle- en studioportretten. De visuele sfeer is fris en flatterend, waarbij de focus volledig op de expressie en de ogen van het model ligt. Door de zachte huidretouchering en de versterkte glans in de iris krijgt de foto een hoogwaardige, professionele afwerking. Het is een uitstekende benadering voor fotografen die een snelle, oogstrelende stijl zoeken waarbij de natuurlijke schoonheid van het model op een subtiele manier wordt geperfectioneerd."
+  },
+  {
+    "video_title": "My MUST KNOW Lightroom Edits For Bird Photography",
+    "photographer_name": "Brian Matiash",
+    "youtube_url": "https://www.youtube.com/watch?v=vb853wmUQHg",
+    "genre": [
+      "wildlife"
+    ],
+    "light_conditions": [
+      "bewolkt"
+    ],
+    "mood": [
+      "naturalistisch",
+      "levendig"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Clean Adaptive Matte Bird",
+    "philosophy": "De benadering streeft naar een gebalanceerd en natuurgetrouw beeld door technische perfectie te combineren met subtiele artistieke keuzes. Het herstellen van microdetails via textuur krijgt de voorkeur boven grove verscherping, terwijl ruis acceptabel blijft om zachtheid te waarborgen. Door het onderwerp bewust los te maken van de achtergrond via tonale verschuivingen, ontstaat er een rustig en gefocust wildlife-beeld.",
+    "workflow_order": [
+      "Stap 1: Toepassen van AI-ruisreductie en het activeren van het 'Adaptive Color' cameraprofiel.",
+      "Stap 2: Nauwkeurig rechttrekken van de horizon, horizontaal spiegelen van de compositie en croppen.",
+      "Stap 3: Vormgeven van een tooncurve (S-bocht) met een verhoogd zwartpunt voor matte schaduwen.",
+      "Stap 4: Isoleren van het onderwerp met AI-maskers voor gerichte textuur en het verlagen van de achtergrondbelichting."
+    ],
+    "techniques": [
+      {
+        "name": "Beheerste AI Ruisreductie",
+        "description": "Gebruik AI Noise Reduction matig door de schuifregelaar niet volledig open te draaien om de fijne structuren in de vogelveren te beschermen tegen vervaging.",
+        "when_to_use": "Bij wildlife-opnames gemaakt met hoge ISO-waarden (zoals ISO 5000) onder bewolkte omstandigheden.",
+        "tools": [
+          "AI Denoise"
+        ],
+        "effect": "De storende korrel in egale vlakken verdwijnt, terwijl vitale scherpte in de details intact blijft."
+      },
+      {
+        "name": "Compositorische Kijkrichting Spiegelen",
+        "description": "Pas een horizontale spiegeling (Flip Horizontal) toe op de compositie om de vogel van links naar rechts te laten vliegen.",
+        "when_to_use": "Wanneer een onderwerp tegen de natuurlijke westerse leesrichting (van links naar rechts) in beweegt.",
+        "tools": [
+          "Crop tool"
+        ],
+        "effect": "De foto voelt direct evenwichtiger, natuurlijker en rustiger aan voor het menselijk oog."
+      },
+      {
+        "name": "Matte Tooncurve met Zwartpuntsverschuiving",
+        "description": "Bouw een subtiele S-bocht in de Point Curve en trek het uiterste linker zwartpunt verticaal omhoog om een lichte grijswaarde in te voegen.",
+        "when_to_use": "Om digitale hardheid uit de donkerste partijen te halen en een analoge sfeer te creëren.",
+        "tools": [
+          "Point Curve"
+        ],
+        "effect": "Diepe schaduwen worden verzacht en krijgen een verfijnde, matte, donkergrijze uitstraling."
+      },
+      {
+        "name": "Verzadigingsbescherming via Refine Saturation",
+        "description": "Zet de Refine Saturation-regelaar in de Point Curve op de helft (ongeveer 50%) om de kleurverschuivingen van de contrastcurve te halveren.",
+        "when_to_use": "Wanneer het opvoeren van contrast via de curve leidt tot oververzadigde en onrealistische kleuren.",
+        "tools": [
+          "Point Curve"
+        ],
+        "effect": "Het contrast blijft behouden, maar de kleuren keren terug naar een natuurgetrouwe en beheerste intensiteit."
+      },
+      {
+        "name": "Achtergrondisolatie via Maskersubtractie",
+        "description": "Activeer een automatische achtergrondselectie, verlaag de belichting marginaal en gebruik de objecten-penseel om foutieve selectiedelen rond de vogelkop handmatig weg te snijden.",
+        "when_to_use": "Om het hoofdonderwerp subtiel los te snijden van een drukke of lichte lucht.",
+        "tools": [
+          "Masking",
+          "Subtract"
+        ],
+        "effect": "De achtergrond wordt donkerder en koeler, waardoor het dier direct driedimensionaal naar voren springt."
+      }
+    ],
+    "color_approach": "Kleurbeheer wordt gestuurd via de kalibratieschuifregelaars onderin Lightroom. Door de verzadiging van de blauwe en groene primaire kanalen (Blue/Green Primary) globaal op te voeren, veranderen de pixelwaarden in het hele beeld. Dit versterkt de natuurlijke nuances van het verenpak en de achtergrondomgeving zonder dat er oververzadiging optreedt in de standaardkanalen.",
+    "local_adjustments": "Lokale maskers worden ingezet om de attentie naar het dier te sturen. Er wordt bewust gekozen om géén traditioneel globaal vignet te gebruiken om donkere hoeken te vermijden. In plaats daarvan filtert een omgekeerd subjectmasker de achtergrond om deze lokaal te dempen, te verkoelen en te desatureren, terwijl het onderwerp via textuur-sliders extra microcontrast ontvangt.",
+    "what_to_avoid": [
+      "Het volledig willen elimineren van alle digitale ruis, wat leidt tot een onrealistisch 'plastic' effect en verlies van microdetails.",
+      "De automatische belichtingscorrectie (Auto) inschakelen nadat het adaptieve kleurprofiel is geactiveerd, omdat dit de tonaal berekende balans verstoort."
+    ],
+    "best_for": "Wildlife- en vogelopnames waarbij dynamiek en verenstructuren optimaal getoond moeten worden zonder dat het beeld een kunstmatige uitstraling krijgt.",
+    "unique_insights": [
+      "Het handhaven van een klein beetje restruis is essentieel voor het behoud van de organische scherpte-indruk; het volledig gladstrijken vernietigt de authenticiteit van de natuurfoto.",
+      "Het horizontaal spiegelen van vliegbeelden sluit aan bij de westerse leeswijze (van links naar rechts), waardoor de dynamiek van een vliegende vogel psychologisch positiever en vloeiender wordt ervaren.",
+      "Het handmatig corrigeren van automatische AI-maskers met de rechthoekige object-wisser (Subtract Objects) is vele malen sneller en effectiever voor het herstellen van foutieve selecties dan handmatig penselen op de pixelranden."
+    ],
+    "style_preview": "Deze stijl biedt een zeer cleane, natuurgetrouwe en rustige blik op wildlife-fotografie. De visuele sfeer is zacht naturalistisch met een verfijnde matte toets in de schaduwpartijen, waardoor harde digitale contrasten worden vermeden. Het werkt uitstekend voor opnames die onder egale, bewolkte luchten zijn gemaakt en waarbij de natuurlijke dynamiek van het dier centraal staat. Door de gecontroleerde kleurbehandeling en focus op textuur in plaats van harde verscherping, krijgt de foto een hoogwaardige, redactionele uitstraling die direct de aandacht grijpt."
   }
 ]

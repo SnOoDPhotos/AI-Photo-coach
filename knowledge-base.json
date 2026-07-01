@@ -43606,5 +43606,92 @@
       "Door een achtergrondmasker te kruisen met een lineair verloopfilter aan de onderzijde kan een omgekeerde lichtval worden gecreëerd die de natuurlijke belichting (licht van boven) versterkt en het onderwerp extra uit de compositie tilt."
     ],
     "style_preview": "Deze stijl richt zich op een uiterst schone, technisch perfecte en natuurgetrouwe weergave van wildlife. De visuele sfeer is contrastrijk en helder, waarbij storende randelementen en achtergrondruis volledig worden geëlimineerd om het dier te laten spreken. Het werkt perfect voor foto's die zijn geschat onder uitdagend, hard daglicht, omdat het de hardheid omzet in gecontroleerde micro-contrasten. Als fotograaf kun je een eindresultaat verwachten met een ongekende scherpte waarin elk minuscuul detail tastbaar wordt."
+  },
+  {
+    "video_title": "LUMINAR NEO makes complex portrait-editing FUN!",
+    "photographer_name": "Peter Virag",
+    "youtube_url": "https://www.youtube.com/watch?v=_kJ3MsXc918",
+    "genre": [
+      "portret"
+    ],
+    "light_conditions": [
+      "daglicht"
+    ],
+    "mood": [
+      "levendig",
+      "naturalistisch"
+    ],
+    "software": [
+      "Luminar Neo"
+    ],
+    "style_description": "Clean Soft AI Portrait",
+    "philosophy": "De kernfilosofie is gericht op het toegankelijk en snel maken van complexe portretretouchering door intensief gebruik van AI-gestuurde schuifregelaars. In plaats van tijdrovende handmatige technieken zoals frequency separation, ligt de nadruk op een vloeiende workflow waarbij huid, ogen en lippen afzonderlijk worden geoptimaliseerd. Het doel is een professioneel, dromerig en fris resultaat te behalen met behoud van een natuurlijke uitstraling.",
+    "workflow_order": [
+      "Stap 1: Toepassen van globale AI-verbeteringen en schaduwopvulling via de Enhance AI-module.",
+      "Stap 2: Retoucheren van de huidtextuur, glans en oneffenheden in het Skin-paneel.",
+      "Stap 3: Accentueren en oplichten van de gelaatstrekken, iris en wenkbrauwen met de Face-functies.",
+      "Stap 4: Subtiele kleurtoning en sfeersturing integreren met gerichte portret-LUTs in de Mood-sectie."
+    ],
+    "techniques": [
+      {
+        "name": "AI Huidverzachting",
+        "description": "Verhoog de Skin-slider naar een waarde tussen de 45 en 50 om een automatische frequency separation toe te passen die de huid egaliseert zonder porie-details volledig te vernietigen.",
+        "when_to_use": "Bij portretten van dichtbij waarbij oneffenheden en huidstructuur zachter gemaakt moeten worden.",
+        "tools": [
+          "Skin"
+        ],
+        "effect": "Een egale, gladde huid waarbij vlekjes verdwijnen maar de natuurlijke textuur behouden blijft."
+      },
+      {
+        "name": "Gezichtsverlichting",
+        "description": "Verhoog de Face Light-slider naar een gerichte waarde van 15 tot 35 om het gezicht subtiel op te lichten en harde schaduwen aan de zijkant te verzachten.",
+        "when_to_use": "Wanneer het gezicht van het model in de schaduw valt of extra nadruk vereist ten opzichte van de achtergrond.",
+        "tools": [
+          "Face"
+        ],
+        "effect": "Het gezicht wordt plaatselijk helderder gemaakt zonder dat de omringende achtergrond overbelicht raakt."
+      },
+      {
+        "name": "Iris Reflectie Optimalisatie",
+        "description": "Stel de Iris Flare-slider in op een waarde rond de 40 tot 50 om de natuurlijke reflectie in het onderste deel van de iris selectief op te lichten.",
+        "when_to_use": "Bij close-up portretten om doffe ogen meer sprekend en levendig te maken.",
+        "tools": [
+          "Face"
+        ],
+        "effect": "Er ontstaat een heldere, glanzende reflectie onderin de iris waardoor de ogen gaan spreken."
+      },
+      {
+        "name": "Oogwit Contrast Correctie",
+        "description": "Verhoog de Eye Whitening naar ongeveer 20 en combineer dit met een Eye Enhancer op een waarde van 30 tot 70 voor extra lokaal contrast.",
+        "when_to_use": "Om vermoeidheid of lichte verkleuringen in het oogwit te corrigeren en de blik te verscherpen.",
+        "tools": [
+          "Face"
+        ],
+        "effect": "Het oogwit wordt witter en de details rond de pupil krijgen een duidelijke micro-contrastboost."
+      },
+      {
+        "name": "Selectieve Lipverbetering",
+        "description": "Verhoog de Lips Saturation naar 40, voeg extra Lips Redness toe en combineer dit met Teeth Whitening om de mondpartij een gezonde kleur te geven.",
+        "when_to_use": "Bij portretten waarbij de lippen bleek wegvallen door de belichting of nabewerking.",
+        "tools": [
+          "Face"
+        ],
+        "effect": "De lippen krijgen een vollere, rodere kleur en de tanden worden op een natuurlijke manier witter zonder het tandvlees te bleken."
+      }
+    ],
+    "color_approach": "De kleuraanpak maakt strategisch gebruik van portret-LUTs in de Mood-sectie, zoals de 'Venus' LUT op een sterk verlaagde dekking van 15 procent. Dit vermindert de hardheid van de achtergrondkleuren en zorgt voor een zachte, dromerige vermenging van de huidtinten. Aan het einde wordt de algehele verzadiging in de ontwikkelmodule met 7 procent verhoogd om te voorkomen dat het beeld door de bewerkingen te mat of flets oogt.",
+    "local_adjustments": "Lokale aanpassingen worden in deze workflow volledig overgenomen door de ingebouwde 3D-mapping en subject-herkenning van de AI-tools. De software isoleert automatisch de huid, de iris, de wenkbrauwen en de lippen. Hierdoor hoeven er geen handmatige maskers getekend te worden, maar kan de intensiteit per gelaatstrek direct via gerichte schuifregelaars gestuurd worden.",
+    "what_to_avoid": [
+      "Het volledig doorschuiven van de Skin-slider naar 100 procent, wat resulteert in een onrealistisch, plastic en overmatig geairbrusht effect.",
+      "Te hoge waarden voor de Eye Enhancer of Iris Visibility, waardoor de ogen een onnatuurlijke en buitenaardse uitstraling krijgen.",
+      "Het overmatig gebruik van de Dark Circles Removal-slider bij specifieke belichting, omdat dit de natuurlijke anatomische schaduwstructuur onder de ogen kan wegvagen."
+    ],
+    "best_for": "Portretfotografen die snel en effectief commerciële of lifestyle-portretten willen retoucheren zonder diepgaande kennis van handmatige maskeringstechnieken.",
+    "unique_insights": [
+      "De 'Face Light' tool herkent automatisch de anatomie van het gezicht en fungeert als een slimme, virtuele reflector die schaduwen aan één specifieke zijde van het gezicht kan opvullen zonder globale curven aan te tasten.",
+      "Het toepassen van een portret-LUT op een zeer lage intensiteit (15%) werkt uitstekend als een subtiele kleurwas die de huidskleur harmoniseert met de achtergrond, in plaats van de foto een zware creatieve kleurfilter mee te geven.",
+      "De 'Dark Circles Removal' tool is geprogrammeerd om specifiek blauw- en paarskleurige schaduwen onder de ogen te neutraliseren, maar moet halverwege worden teruggedraaid om te voorkomen dat de diepte van de oogkas volledig vlak wordt geslagen."
+    ],
+    "style_preview": "Deze stijl kenmerkt zich door een heldere, dromerige en commercieel cleane uitstraling die perfect aansluit bij lifestyle- en studioportretten. De visuele sfeer is fris en flatterend, waarbij de focus volledig op de expressie en de ogen van het model ligt. Door de zachte huidretouchering en de versterkte glans in de iris krijgt de foto een hoogwaardige, professionele afwerking. Het is een uitstekende benadering voor fotografen die een snelle, oogstrelende stijl zoeken waarbij de natuurlijke schoonheid van het model op een subtiele manier wordt geperfectioneerd."
   }
 ]

@@ -42784,5 +42784,101 @@
       "Blauwe kleurzwemen in stromend water of schaduwpartijen kunnen effectief worden geneutraliseerd via de Highlights-slider in het Color Grading-paneel, zonder dat de warme herfstkleuren in de rest van de foto verschuiven."
     ],
     "style_preview": "Deze stijl biedt een zeer verfijnde, heldere en detailrijke blik op de natuur, waarbij de integriteit van de oorspronkelijke opname gewaarborgd blijft. Het is een methodische benadering die uitblinkt in het creëren van driedimensionale diepte via zorgvuldig uitgebalanceerde microcontrasten. Deze stijl werkt fantastisch voor bossen, watervallen en wildlife onder zachte, bewolkte omstandigheden waar het natuurlijke licht vlak is. Het verwachte visuele effect is een gestructureerd, levendig en scherp beeld waarin het onderwerp direct loskomt van een rustige, schilderachtige achtergrond."
+  },
+  {
+    "video_title": "The Photo Editing Lesson I Wish I'd Learned Sooner",
+    "photographer_name": "Mark Dumbleton",
+    "youtube_url": "https://www.youtube.com/watch?v=3lofzbNQQdc",
+    "genre": [
+      "wildlife"
+    ],
+    "light_conditions": [
+      "tegenlicht",
+      "schaduw"
+    ],
+    "mood": [
+      "moody",
+      "levendig"
+    ],
+    "software": [
+      "Lightroom Classic",
+      "DxO PhotoLab"
+    ],
+    "style_description": "Moody Golden Wildlife",
+    "philosophy": "De kern van fotobewerking ligt in een grondige pre-edit analyse in plaats van direct in de tools te duiken. Door vooraf bewust na te denken over technische problemen, compositie, de aandacht van de kijker en kleur/sfeer, ontstaat er een duidelijke visie. Bewerken is bovendien geen lineair proces; het vereist een constante evaluatie waarbij je continu heen en weer schakelt tussen verschillende schuifregelaars om het beeld organisch te perfectioneren.",
+    "workflow_order": [
+      "stap 1: Ruisonderdrukking toepassen op de hoge ISO-waarde via gespecialiseerde software om fijne details te herstellen.",
+      "stap 2: De compositie strakker kaderen door storende elementen aan de randen en overbodige lege ruimtes weg te snijden.",
+      "stap 3: Lokale maskers aanbrengen om de voorgrond te verduisteren en kunstmatig tegenlicht te simuleren om de blik te sturen.",
+      "stap 4: Wereldwijde belichting finetunen en kleurcontrast opbouwen door complementaire tinten in de schaduwen te duwen."
+    ],
+    "techniques": [
+      {
+        "name": "Gerichte Ruisonderdrukking",
+        "description": "Stel de Luminance waarde in op 55 tot 60 om storende korrel in egale vlakken effectief te verwijderen. Dit herstelt de verloren scherpte en textuur in de achtergrond zonder dat de fijne details in de vacht van het dier worden aangetast.",
+        "when_to_use": "Bij wildlife foto's die zijn geschoten met extreem hoge gevoeligheden zoals ISO 16.000.",
+        "tools": [
+          "DxO Pure 6"
+        ],
+        "effect": "De achtergrond wordt volledig gladgestreken terwijl de noodzakelijke microdetails in het hoofdonderwerp behouden blijven."
+      },
+      {
+        "name": "Kijkersaandacht Sturen via Voorgrondverduistering",
+        "description": "Breng een lineair verloopmasker aan over de onderkant van het frame en verlaag de belichting aanzienlijk. Dit vlakt heldere, afleidende reflecties af zodat het oog van de kijker direct naar boven wordt geleid.",
+        "when_to_use": "Wanneer de onderzijde van de compositie te licht is of ongewenste afleidingen bevat.",
+        "tools": [
+          "Lightroom Classic",
+          "Lineair verloop"
+        ],
+        "effect": "De onderkant van de foto wordt donkerder waardoor de focus onmiddellijk op de oplichtende details van het dier valt."
+      },
+      {
+        "name": "Asymmetrische Vignettering met Lichtrichting",
+        "description": "Plaats een radiaal filter over het gezicht, inverseer het masker om de buitenzijde te verduisteren, en wis vervolgens de hoek waar het natuurlijke licht vandaan komt uit het masker. Dit voorkomt een onnatuurlijk 'tunnel-effect'.",
+        "when_to_use": "Bij portretten van dieren waarbij het licht duidelijk van één specifieke zijkant invalt.",
+        "tools": [
+          "Lightroom Classic",
+          "Radiaal filter",
+          "Penseel (Subtraheren)"
+        ],
+        "effect": "Er ontstaat een subtiele, gerichte donkere rand die de bestaande richting van het zonlicht respecteert en versterkt."
+      },
+      {
+        "name": "Sfeervolle Gloed en Haze Simulatie",
+        "description": "Teken een groot radiaal masker aan de zijde van de lichtbron, verhoog de belichting en zwarttinten lichtjes, en zet Dehaze op een negatieve waarde van ongeveer -10 om zacht, diffuus licht te creëren.",
+        "when_to_use": "Wanneer er al warm tegenlicht aanwezig is dat extra cinematische sfeer of diepte kan gebruiken.",
+        "tools": [
+          "Lightroom Classic",
+          "Radiaal filter",
+          "Dehaze"
+        ],
+        "effect": "Er verschijnt een subtiele, dromerige waas in de achtergrond die de illusie van binnenvallend zonlicht versterkt."
+      },
+      {
+        "name": "Oog- en Textuuraccentuering",
+        "description": "Schilder met een lokaal penseel handmatig over de ogen van het dier en verhoog zowel Texture als Clarity om de scherpte die verloren is gegaan tijdens de ruisonderdrukking lokaal terug te halen.",
+        "when_to_use": "Wanneer de ogen van het dier door zachte rendering of extreme ruisonderdrukking hun sprekende karakter hebben verloren.",
+        "tools": [
+          "Lightroom Classic",
+          "Penseel",
+          "Texture",
+          "Clarity"
+        ],
+        "effect": "De iris en de details rondom het oog worden scherper, contrastrijker en trekken onmiddellijk de aandacht."
+      }
+    ],
+    "color_approach": "De focus ligt op het creëren van een sterk complementair kleurcontrast om de foto tot leven te wekken. De natuurlijke, warme oranje en gouden tinten van het dier worden via de HSL-mixer selectief versterkt in verzadiging. Dit warme licht wordt vervolgens krachtig gecontrasteerd door via de Color Grading tool een koele, diepblauwe tint in de schaduwen te duwen.",
+    "local_adjustments": "Maskers worden uiterst strategisch ingezet om de lichtval te manipuleren en de blik te manipuleren. Lineaire verlopen camoufleren lichte storende zones aan de beeldranden, terwijl complexe radiale maskers (gecombineerd met handmatige penselen om effecten deels weg te gummen) worden gebruikt om sfeervolle lichtbanen en asymmetrische vignetten te boetseren.",
+    "what_to_avoid": [
+      "Direct beginnen met het verschuiven van sliders in Lightroom zonder eerst een gerichte pre-edit analyse van het beeld te maken.",
+      "Het blindelings van boven naar beneden doorlopen van de Lightroom-panelen in een strikte, lineaire volgorde wat de creativiteit beperkt."
+    ],
+    "best_for": "Wildlife- en dierenfotografie die onder uitdagende lichtomstandigheden met hoge ISO-waarden zijn geschoten en een krachtige, sfeervolle en artistieke uitstraling vereisen.",
+    "unique_insights": [
+      "Het verlagen van de algehele belichting om de schaduwen bewust heel vlak te maken, om vervolgens puur met de Whites-slider het contrast en de punch terug te brengen in de lichte delen.",
+      "Bij het handmatig verscherpen van een hoge ISO-plaat moet er bewust gekozen worden voor een zeer lage Radius-waarde, omdat dit de resterende details fijner definieert zonder de zojuist weggewerkte ruis weer te activeren.",
+      "Het rigide vasthouden aan een vaste panelenvolgorde in Lightroom verstikt de creativiteit; succesvolle top-editoren passen instellingen zoals witbalans en belichting soms wel vijf tot tien keer opnieuw aan tijdens één bewerking."
+    ],
+    "style_preview": "De bewerkingsstijl ademt een sfeervolle, schilderachtige dynamiek uit waarbij het dier op een bijna cinematische wijze uit de achtergrond losbreekt. Door de harmonieuze interactie tussen diepe, koele schaduwen en een warme, dromerige lichtgloed krijgt het beeld een ongekende diepte. Deze aanpak is perfect voor de ambitieuze wildlife-fotograaf die pure registratie wil transformeren naar een krachtig, sfeervol kunstwerk. Het resultaat is een loepzuiver, contrastrijk beeld waarin de kijker onvermijdelijk naar de ziel van het dier wordt getrokken."
   }
 ]

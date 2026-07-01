@@ -43114,5 +43114,113 @@
       "Hij adviseert nadrukkelijk om voor portretwerk een shoot-specifieke preset te maken op basis van het eerste beeld, om te voorkomen dat de variatie tussen verschillende camera's en vintage lenzen (zoals Nikon pre-AI glas) de serie-consistentie verbreekt."
     ],
     "style_preview": "Deze stijl biedt een loepzuivere, heldere en uiterst professionele portretuitstraling die de natuurlijke schoonheid van het model accentueert. De visuele sfeer is fris en contrastrijk, gekenmerkt door subtiel verzachte huidtinten en sprankelende ogen die direct de aandacht trekken. Voor een fotograaf die deze werkwijze hanteert, komt de stijl het beste tot zijn recht bij buitenshoots of locatieshoots met een combinatie van daglicht en invulflits. Het verwachte visuele effect is een uiterst gebalanceerd portret waarbij het model dankzij nauwkeurige, lokale lichtsturing prachtig loskomt van de omgeving."
+  },
+  {
+    "video_title": "Boost Your Real Estate Photography Workflow With EXPERT Advice",
+    "photographer_name": "Anthony Turnham",
+    "youtube_url": "https://www.youtube.com/watch?v=bzR_R62nn4o",
+    "genre": [
+      "architectuur"
+    ],
+    "light_conditions": [
+      "gemengd licht",
+      "daglicht"
+    ],
+    "mood": [
+      "naturalistisch",
+      "levendig"
+    ],
+    "software": [
+      "Lightroom Classic",
+      "Luminar Neo"
+    ],
+    "style_description": "Clean Real Estate HDR",
+    "philosophy": "In de vastgoedfotografie draait alles om een optimale balans tussen hoge beeldkwaliteit en een snelle doorlooptijd. Door repeterende handelingen rigoureus te automatiseren via slimme import-presets en geautomatiseerde batch-HDR-stacking, blijft er meer kostbare tijd over voor secuur handwerk. Nabewerking moet de authenticiteit en geometrische zuiverheid van een ruimte waarborgen, zonder te vervallen in overgeproduceerde of onrealistische kleureffecten.",
+    "workflow_order": [
+      "stap 1: Selecteer de RAW-bestanden en pas 'Auto Stack by Capture Time' toe om bracketed opnames razendsnel te groeperen in geordende fotostapels.",
+      "stap 2: Voer een geautomatiseerde batch-HDR-merge uit over de geselecteerde stapels zonder automatische uitlijning of de-ghosting om verwerkingstijd te besparen.",
+      "stap 3: Pas een vlak cameraprofiel toe en synchroniseer de 'Quick Fix' basis-preset over de samengevoegde 32-bits HDR-bestanden.",
+      "stap 4: Corrigeer handmatig de geometrie per beeld met de Guided Transform-tool en trek gerichte radiale maskers om donkere hoeken op te lichten.",
+      "stap 5: Exporteer de beelden als 16-bits TIFF en gebruik Luminar Neo voor een intelligente AI-afwerkingsslag via batch-synchronisatie."
+    ],
+    "techniques": [
+      {
+        "name": "Geautomatiseerde Tijd-Stacking",
+        "description": "Gebruik de functie 'Auto Stack by Capture Time' en stel de tijdsduur net iets langer in dan de vuursnelheid van je camera-bracketing om honderden losse opnames direct in overzichtelijke sets te sorteren.",
+        "when_to_use": "Direct na het importeren van een omvangrijke vastgoedshoot met veel bracketed interieuropnames.",
+        "tools": [
+          "Stapelen"
+        ],
+        "effect": "De Lightroom-catalogus wordt direct opgeschoond en gegroepeerd, waardoor je niet handmatig tientallen losse HDR-setjes hoeft te selecteren."
+      },
+      {
+        "name": "Snelle HDR-Samenvoeging",
+        "description": "Schakel bij de HDR-samenvoeging 'Auto Align' en 'De-ghosting' volledig uit (None) om de processorbelasting te minimaliseren, mits er vanaf een zwaar statief is gefotografeerd.",
+        "when_to_use": "Bij interieuropnames zonder bewegende elementen die vanaf een stabiel statief zijn geschoten.",
+        "tools": [
+          "HDR-samenvoeging"
+        ],
+        "effect": "Lightroom voert de HDR-merge aanzienlijk sneller uit, wat bij grote batches kostbare minuten rekentijd bespaart."
+      },
+      {
+        "name": "Vlak Profiel als Dynamische Basis",
+        "description": "Kies bij de import of in het basispaneel voor het meest vlakke cameraprofiel (Flat) in plaats van Adobe Standaard of Levendig om clipping in hooglichten en diepe schaduwen te voorkomen.",
+        "when_to_use": "Bij interieurfotografie met extreem hoge contrasten, zoals lichte ramen in een donkere ruimte.",
+        "tools": [
+          "Basispaneel"
+        ],
+        "effect": "De foto oogt direct flets en contrastarm, waardoor het volledige dynamische bereik van de sensor behouden blijft en handmatig stuurbaar wordt."
+      },
+      {
+        "name": "Dubbele Curve-Contraststuring",
+        "description": "Gebruik de parametrische curve (Parametric Curve) om de middentonen subtiel op te lichten en breng daarna pas via de puntcurve (Point Curve) een lichte S-vorm aan voor gecontroleerd contrast.",
+        "when_to_use": "In vlakke 32-bits HDR-bestanden om de ruimtes helder te maken zonder de wit- en zwartpunten te clippen.",
+        "tools": [
+          "Tintcurve"
+        ],
+        "effect": "De ruimte krijgt een mooie, egale helderheid in de middentonen, terwijl de diepte en het microcontrast via de puntcurve intact blijven."
+      },
+      {
+        "name": "Geleid Geometrieherstel",
+        "description": "Trek met de Guided Transform-tool handmatig twee verticale hulplijnen aan de uiterste linker- en rechterranden van het frame en vul dit aan met twee horizontale hulplijnen.",
+        "when_to_use": "Bij interieur- en architectuurbeelden met zware tonvormige vervorming of hellende muren door groothoeklenzen.",
+        "tools": [
+          "Transformeren"
+        ],
+        "effect": "Alle muren, deurposten en plafonds worden kaarsrecht getrokken, wat direct zorgt voor een professionele, architectonische uitstraling."
+      },
+      {
+        "name": "Lokale Lichtorbs via Radiaal Verloop",
+        "description": "Plaats een groot radiaal verloopmasker over donkere hoeken of nissen (zoals een donker keukengedeelte) en verhoog selectief de belichting en de helderheid.",
+        "when_to_use": "In kamers waar het natuurlijke licht niet diep genoeg doordringt en flitslicht bewust is weggelaten.",
+        "tools": [
+          "Maskeren",
+          "Radiaal verloop"
+        ],
+        "effect": "Er ontstaat een onzichtbare plons zacht licht die de donkere hoek opent en de blootstelling van de kamer balanceert."
+      },
+      {
+        "name": "Intelligente Structuursturing",
+        "description": "Pas Structure AI en Enhance AI subtiel toe in Luminar Neo (ingesteld op circa 30% tot 60%) om details in muren en vloeren op te halen zonder de vlakke delen te ruisen.",
+        "when_to_use": "Als finale automatische batch-afwerking over de geëxporteerde 16-bits TIFF-bestanden.",
+        "tools": [
+          "Luminar Neo"
+        ],
+        "effect": "De texturen van hout, beton en meubels winnen op natuurlijke wijze aan scherpte en diepte, terwijl wanden mooi egaal blijven."
+      }
+    ],
+    "color_approach": "De fotograaf hanteert een uiterst realistische en corrigerende kleuraanpak. Omdat interieurlampen vaak een zware, storende gele en oranje gloed werpen die vloekt met het binnenkomende blauwe daglicht, de-satureert hij de gele en oranje kanalen bewust in de kleurenmixer. Tegelijkertijd verhoogt hij de luminantie van deze specifieke tinten om de warmte om te zetten in pure, heldere lichtkracht.",
+    "local_adjustments": "Lokale aanpassingen worden puur functioneel ingezet om de belichtingsverschillen in een ruimte uit te lijnen. Hij gebruikt radiale maskers met opgeslagen helderheid- en helderheidspresets om specifieke keukens of eethoeken subtiel op te lichten. Voor complexe situaties, zoals een te donkere houten deur, bouwt hij een luminantiemasker dat uitsluitend de donkere middentonen target, kruist dit via een intersectie met een lineair verloop en trekt zo handmatig de belichting recht.",
+    "what_to_avoid": [
+      "Het gebruik van creatieve kleurgradatie (Color Grading) in vastgoedfotografie, omdat dit de authenticiteit en realistische weergave van het object schaadt.",
+      "Het blind vertrouwen op de automatische geometriefuncties van Lightroom; deze falen te vaak en moeten handmatig via guided transform gecontroleerd worden."
+    ],
+    "best_for": "Vastgoed- en interieurfotografen die zonder flitsers werken en binnen een strakke deadline een consistente, hoogwaardige serie moeten afleveren.",
+    "unique_insights": [
+      "Een vers gegenereerd 32-bits HDR-bestand in Lightroom ziet er visueel exact hetzelfde uit als de basisbelichting; de daadwerkelijke HDR-sfeer en tone-mapping moeten volledig handmatig door de editor worden opgebouwd via hooglichten- en schaduwsturing.",
+      "Om de geometrie via de Guided Transform perfect kaarsrecht te krijgen, moeten de verticale hulplijnen zo dicht mogelijk tegen de uiterste randen van het frame geplaatst worden; hoe verder uit elkaar, hoe nauwkeuriger de berekening.",
+      "Hij exporteert de Lightroom-selectie eerst als 16-bits TIFF in de Adobe RGB-kleurruimte naar Luminar Neo in plaats van directe JPEG's, omdat de AI-algoritmen in Neo die extra bitdiepte nodig hebben om slimme, artefactvrije beslissingen per foto te nemen."
+    ],
+    "style_preview": "Deze stijl kenmerkt zich door een uiterst heldere, strakke en natuurgetrouwe uitstraling waarin interieurruimtes optimaal worden gepresenteerd. De visuele sfeer is open en uitnodigend, met perfect rechte verticale lijnen en gebalanceerde lichtpartijen die donkere hoeken elimineren zonder dat het beeld er 'getekend' of nep uitziet. Voor een fotograaf die deze workflow overweegt, werkt de methode uitstekend op interieur- en exterieuropnames die vanaf een stevig statief met bracketing zijn geschoten. Het verwachte visuele effect is een loepzuivere, heldere serie foto's met een hoogwaardige en professionele vastgoeduitstraling."
   }
 ]

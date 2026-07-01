@@ -42593,5 +42593,96 @@
       "Bij extreem vervormde beelden waarbij de camera gekanteld is, kan de resolutie door het rechttrekken en de daaropvolgende crop met 30% tot wel 50% afnemen. Het gebruik van een camera met een hoge resolutie (zoals een 42 megapixel sensor) is daarom een cruciale factor om een bruikbaar, scherp eindresultaat over te houden."
     ],
     "style_preview": "Deze stijl transformeert de dynamische en extreme weidsheid van een fisheye-lens in een strak, hyper-groothoek stadslandschap zonder storende lensbuigingen. De visuele sfeer is groots en indrukwekkend, waarbij wolkenkrabbers kaarsrecht staan en de horizon perfect horizontaal loopt. De techniek is ideaal voor architectuur- en stadsfotografen die in krappe ruimtes maximale weidsheid willen vastleggen, met als eindresultaat een indrukwekkend panorama dat de kijker diep in de scène zuigt."
+  },
+  {
+    "video_title": "Split Toning Your Photography",
+    "photographer_name": "Robert Bishop",
+    "youtube_url": "https://www.youtube.com/watch?v=-nKkF2uhY-o",
+    "genre": [
+      "kust",
+      "landschap",
+      "reisfotografie"
+    ],
+    "light_conditions": [
+      "bewolkt",
+      "blauwe uur",
+      "overcast"
+    ],
+    "mood": [
+      "dramatisch",
+      "moody",
+      "sfeervol"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Dramatic Cinematic Split Toned",
+    "philosophy": "Split toning dient om de emotie en sfeer die tijdens de opname aanwezig was te herstellen of versterken wanneer de camera het niet optimaal kon registreren. Kleurmanipulatie in de schaduwen en hooglichten helpt om vlakke, grijze weersomstandigheden om te zetten in een expressief beeld. Het doel is niet pure technische registratie, maar het creëren van een visueel meeslepend en samenhangend verhaal.",
+    "workflow_order": [
+      "stap 1: Basiscorrecties uitvoeren voor belichting, schaduwen en basiskleuren in het hoofdvenster",
+      "stap 2: De verzadiging van de hooglichten tijdelijk sterk verhogen om de juiste kleurtoon nauwkeurig te kunnen selecteren",
+      "stap 3: De schaduwtoon instellen door eerst de verzadiging op te voeren en de hue-slider te verschuiven naar een complementaire of sfeerversterkende tint",
+      "stap 4: De balansschuifregelaar finetunen om de prioriteit tussen de hooglichten en schaduwkleuren esthetisch te verdelen"
+    ],
+    "techniques": [
+      {
+        "name": "Hooglichten Kleurselectie",
+        "description": "Verhoog de Saturation van de Highlights naar ongeveer 40-50 om de kleurverandering goed te zien, verschuif de Hue naar 340 voor een roze/magenta tint, en breng de Saturation daarna terug naar een subtiele waarde van 12 om vlakke luchten sfeer te geven.",
+        "when_to_use": "Bij saaie, grijze luchten tijdens het blauwe uur om een natuurlijke gloed na te bootsen.",
+        "tools": [
+          "Split Toning Panel - Highlights"
+        ],
+        "effect": "De lichte delen van de lucht en reflecties op het water krijgen een zachte, warme roze tint."
+      },
+      {
+        "name": "Schaduwen Sfeerversterking",
+        "description": "Zet de Saturation van de schaduwen omhoog om de tint te beoordelen, verschuif de Hue naar een diepe paars/blauwe tint rond 250, en verlaag de Saturation vervolgens naar 25 om de sfeer van het blauwe uur te benadrukken.",
+        "when_to_use": "Wanneer de voorgrond en donkere partijen in een landschap te flets en kleurloos ogen.",
+        "tools": [
+          "Split Toning Panel - Shadows"
+        ],
+        "effect": "De donkere rotspartijen en diepe schaduwen in het water krijgen een koele, sfeervolle paarse toon."
+      },
+      {
+        "name": "Dominantie Balanceren",
+        "description": "Verschuif de Balance-regelaar naar +18 om de gekozen highlight-kleur iets verder te laten doorlopen in de middentonen, zodat de warme tinten de overhand krijgen ten opzichte van de schaduwkleuren.",
+        "when_to_use": "Wanneer de schaduwkleur te dominant over de foto ligt en de hooglichten dreigt te overstemmen.",
+        "tools": [
+          "Split Toning Panel - Balance"
+        ],
+        "effect": "De overgang tussen de paarse schaduwen en roze hooglichten verschuift, waardoor de foto lichter en warmer oogt."
+      },
+      {
+        "name": "Herfstkleuren Simuleren",
+        "description": "Zet de Highlights Hue op een warme gele tint en kies een roodachtige Hue voor de Shadows met een lage Saturation om zomergroen om te toveren naar een herfstsfeer.",
+        "when_to_use": "Bij bos- of natuurfoto's die een gouden, warme uitstraling missen.",
+        "tools": [
+          "Split Toning Panel"
+        ],
+        "effect": "Het loof en de lichte partijen in het bos transformeren subtiel naar warme, goudgele en dieprode herfstnuances."
+      },
+      {
+        "name": "Serie Cohesie Toepassen",
+        "description": "Kopieer de specifieke Split Toning-waarden (Hue en Saturation van schaduwen en hooglichten) van één referentiefoto en plak deze over een hele reeks beelden.",
+        "when_to_use": "Wanneer foto's onder verschillende hoeken of met wisselende belichtingen zijn genomen, maar als één serie gepresenteerd moeten worden.",
+        "tools": [
+          "Copy/Paste Settings"
+        ],
+        "effect": "Alle foto's krijgen direct dezelfde kleurtoon-signatuur, wat zorgt voor een consistente visuele identiteit."
+      }
+    ],
+    "color_approach": "Kleur wordt benaderd als een compositorisch element dat losstaat van de werkelijke registratie. Door complementaire of analoge tinten in de uitersten van het luminantiebereik te duwen, wordt er diepte gecreëerd in situaties met contrastarm, grijs licht. De witbalans wordt hierbij gebruikt voor de globale temperatuur, terwijl split toning de specifieke kleurscheiding in de toonschalen dicteert.",
+    "local_adjustments": "Er wordt in deze specifieke workflow gekozen voor een globale benadering van kleurverdeling via de toonschalen. In plaats van het lokaal intekenen van maskers, zorgt de split-toning-tool voor een automatische scheiding op basis van helderheid over de gehele foto, wat een vloeiendere en natuurlijkere overgang tussen de kleurruimtes garandeert.",
+    "what_to_avoid": [
+      "De Saturation-schuifregelaars te hoog laten staan, waardoor de bewerking onnatuurlijk en te extreem oogt",
+      "Split toning proberen te gebruiken als vervanging voor de basale witbalans- en belichtingsinstellingen"
+    ],
+    "best_for": "Landschaps- en kustfotografie die onder saaie, grijze of contrastloze weersomstandigheden is geschoten en een artistieke lift nodig heeft.",
+    "unique_insights": [
+      "Het aanpassen van de White Balance-temperatuur of HSL-schuiven is vaak ontoereikend om een specifieke artistieke sfeer te creëren, omdat deze tools bestaande kleuren verschuiven in plaats van nieuwe kleurtonen in de toonloze grijswaarden te injecteren.",
+      "Bij het instellen van split toning is het essentieel om de Saturation eerst extreem omhoog te jagen om de exacte Hue te bepalen; pas als de kleurtoon perfect is, breng je de verzadiging terug naar een subtiel niveau.",
+      "Split toning kan fungeren als een visuele lijm: door exact dezelfde kleurwaarden in highlights en shadows toe te passen op foto's met afwijkende camera-instellingen of belichtingen, dwing je direct een ijzersterke seriële cohesie af."
+    ],
+    "style_preview": "Deze stijl is uitgesproken cinematisch en sfeervol, sterk leunend op de expressieve kracht van kleurcontrasten in de toonschalen. Grijze, futloze landschappen en kustlijnen transformeren onder deze benadering in dramatische scènes met een bijna schilderachtige of sci-fi-achtige ondertoon. Het werkt het allerbest bij foto's die zijn gemaakt tijdens het blauwe uur of onder een zwaar, egaal wolkendek, waar het natuurlijke licht vlak is. Het verwachte visuele effect is een beeld met diepe, sfeervol gekleurde schaduwen en subtiel contrasterende hooglichten, waardoor de foto direct aan diepte en emotionele impact wint."
   }
 ]

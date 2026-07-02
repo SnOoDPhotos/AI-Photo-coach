@@ -1862,8 +1862,7 @@ function loadStyles() {
   .then(function(r) { return r.json(); })
   .then(function(resp) {
     var entries = Array.isArray(resp) ? resp : (resp.entries || []);
-    if (!Array.isArray(entries) || !entries.length) {
-      // Fallback naar JSON bestand
+    if (!entries.length) {
       return fetch('/knowledge-base.json').then(function(r) { return r.json(); });
     }
     return entries;
@@ -1871,49 +1870,10 @@ function loadStyles() {
   .then(function(entries) {
     if (!Array.isArray(entries) || !entries.length) return;
     window._knowledgeEntries = entries;
-    var box = document.getElementById('styleSelectorBox');
-    box.classList.add('visible');
-
-    // Admin: toon ook de fotograaf dropdowns
-    if (authRole === 'admin') {
-      var adminFilters = document.getElementById('adminFilters');
-      if (adminFilters) {
-        adminFilters.style.display = 'block';
-        var styleLabel = document.getElementById('styleSelectLabel');
-        if (styleLabel) styleLabel.textContent = 'SPECIFIEKE STIJL (optioneel)';
-        // Vul admin fotograaf dropdown
-        var photographers = [], genres = [], moods = [];
-        entries.forEach(function(e) {
-          if (e.photographer_name && photographers.indexOf(e.photographer_name) === -1)
-            photographers.push(e.photographer_name);
-          (e.genre||[]).forEach(function(g) { if (genres.indexOf(g) === -1) genres.push(g); });
-          (e.mood||[]).forEach(function(m) { if (moods.indexOf(m) === -1) moods.push(m); });
-        });
-        var pSel = document.getElementById('adminPhotographerSelect');
-        if (pSel) {
-          photographers.sort().forEach(function(p) {
-            var o = document.createElement('option'); o.value = p; o.textContent = p; pSel.appendChild(o);
-          });
-        }
-        var gSel = document.getElementById('adminGenreSelect');
-        if (gSel) {
-          genres.sort().forEach(function(g) {
-            var o = document.createElement('option'); o.value = g; o.textContent = g; gSel.appendChild(o);
-          });
-        }
-        var mSel = document.getElementById('adminMoodSelect');
-        if (mSel) {
-          moods.sort().forEach(function(m) {
-            var o = document.createElement('option'); o.value = m; o.textContent = m; mSel.appendChild(o);
-          });
-        }
-        populateStyleSelect(entries);
-      }
-    }
-    // Voor normale gebruikers: genre dropdown klaar, stijl volgt na keuze
   })
-  .catch(function() {});
+  .catch(function(e) { console.log('loadStyles fout:', e); });
 }
+
 
 function initStyleSelector() {
   var box = document.getElementById('styleSelectorBox');

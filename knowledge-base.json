@@ -45115,5 +45115,92 @@
       "Hij verlaagt Textuur en Helderheid op een lineaire gradiënt in een lichte hoek van de foto om het effect van een 'gaussian blur' na te bootsen op storende elementen."
     ],
     "style_preview": "Deze stijl is gericht op het creëren van maximale visuele impact en kijkgemak. De bewerking is technisch grondig, met veel aandacht voor het opschonen van de omgeving en het sturen van de kijker naar het onderwerp. Het resultaat is een gepolijste, levendige en professionele look die uitermate geschikt is voor wildlife en natuurfotografie onder alledaagse lichtomstandigheden. Als fotograaf kun je deze techniek verwachten in te zetten wanneer je een onderwerp echt wilt laten 'poppen' uit een drukke omgeving."
+  },
+  {
+    "video_title": "Gebruik meervoudige belichting voor een perfecte lichtbalans",
+    "photographer_name": "Tony Vingerhoets",
+    "youtube_url": "https://www.youtube.com/watch?v=HefaPMnQIgY",
+    "genre": [
+      "nacht & astro"
+    ],
+    "light_conditions": [
+      "nacht"
+    ],
+    "mood": [
+      "dramatisch",
+      "natuurlistisch"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Industriële Nachtfotografie Perfecte Belichting",
+    "philosophy": "De kernfilosofie is het bereiken van een perfecte lichtbalans in uitdagende nachtelijke scènes. Dit wordt bereikt door meerdere belichtingen te combineren. Het doel is om details in zowel schaduwen als hooglichten volledig te behouden.",
+    "workflow_order": [
+      "stap 1: maak meerdere opnames met verschillende belichtingswaarden van dezelfde scène",
+      "stap 2: importeer alle belichtingen in de bewerkingssoftware",
+      "stap 3: gebruik luminosity maskers om de verschillende belichtingen te selecteren en combineren",
+      "stap 4: verfijn de overgangen tussen de belichtingen voor een natuurlijk eindresultaat"
+    ],
+    "techniques": [
+      {
+        "name": "Luminosity Masking",
+        "description": "Gebruik maskers op basis van helderheidswaarden om specifieke delen van een foto te isoleren en te blenden met een andere belichting, zoals het ophalen van donkere partijen met +1.5 stop.",
+        "when_to_use": "Bij scènes met een hoog contrast zoals nachtelijke industriële gebieden.",
+        "tools": [
+          "Photoshop"
+        ],
+        "effect": "Verhoogde definitie in donkere partijen en behoud van details in hooglichten."
+      },
+      {
+        "name": "Meervoudige Belichting Blending",
+        "description": "Combineer meerdere opnames van dezelfde compositie met verschillende belichtingsinstellingen om het dynamisch bereik te vergroten.",
+        "when_to_use": "Wanneer één enkele opname niet alle details in zowel licht als schaduw kan vastleggen.",
+        "tools": [
+          "Photoshop"
+        ],
+        "effect": "Een gebalanceerde foto zonder uitgebeten hooglichten of dichtgelopen schaduwen."
+      },
+      {
+        "name": "Schaduw Details Herstel",
+        "description": "Selecteer de onderbelichte delen met een masker en pas een correctie toe om de donkere partijen zichtbaar te maken zonder ruis te introduceren.",
+        "when_to_use": "Bij nachtfoto's waar essentiële details in de schaduw verloren gaan.",
+        "tools": [
+          "Photoshop"
+        ],
+        "effect": "Meer diepte en details in voorheen zwarte gebieden."
+      },
+      {
+        "name": "Hooglichten Behouden",
+        "description": "Gebruik een masker om de helderste delen te beschermen tegen overbelichting tijdens het blenden van de verschillende opnames.",
+        "when_to_use": "Bij foto's met felle lichtbronnen of reflecties in de nacht.",
+        "tools": [
+          "Photoshop"
+        ],
+        "effect": "Voorkomt uitgebeten, witte vlekken in de compositie."
+      },
+      {
+        "name": "Contrast Optimalisatie",
+        "description": "Pas de lokale contrasten aan in de samengevoegde belichtingen om de industriële texturen sterker naar voren te brengen.",
+        "when_to_use": "Bij architecturale elementen die extra textuur vereisen.",
+        "tools": [
+          "Photoshop"
+        ],
+        "effect": "Een scherper en meer gedetailleerd beeld van industriële oppervlakken."
+      }
+    ],
+    "color_approach": "De fotograaf richt zich op het behouden van een natuurlijke lichtbalans. Kleuren worden niet kunstmatig oververzadigd, maar juist ondersteund door een correcte belichting in elk kleurkanaal.",
+    "local_adjustments": "Luminosity maskers worden constant ingezet als lokale aanpassing om op pixelniveau te bepalen welke belichting wordt doorgegeven.",
+    "what_to_avoid": [
+      "uitgebeten hooglichten door te lange sluitertijden",
+      "dichtgelopen zwarte partijen zonder detail",
+      "onrealistische overgangen tussen verschillende belichtingen"
+    ],
+    "best_for": "Deze technieken zijn essentieel voor fotografen die werken in omgevingen met een enorm dynamisch bereik, zoals industriële locaties bij nacht.",
+    "unique_insights": [
+      "Meervoudige belichting is de enige methode om een perfecte lichtbalans te bereiken in complexe nachtscènes.",
+      "Luminosity maskers fungeren als een filter dat puur op lichtintensiteit selecteert in plaats van op vorm.",
+      "Het combineren van belichtingen is niet bedoeld om de werkelijkheid te veranderen, maar om de camera-beperkingen te overbruggen."
+    ],
+    "style_preview": "Deze stijl kenmerkt zich door een technisch perfecte balans tussen licht en donker. De bewerking is subtiel maar krachtig, gericht op het benadrukken van structuren en texturen in industriële omgevingen. Als fotograaf kun je deze aanpak gebruiken om scènes vast te leggen die voor het blote oog onmogelijk in één keer correct belicht zouden zijn. Het verwachte visuele effect is een uiterst gedetailleerd beeld dat direct indruk maakt door zijn natuurlijke, maar spectaculaire diepte."
   }
 ]

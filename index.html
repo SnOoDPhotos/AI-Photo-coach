@@ -581,6 +581,16 @@ select option,select optgroup{background:#1e1e1e;color:#f0ede8}
   </div>
 
   <div class="help-section">
+    <h4>Stijlselectie (optioneel)</h4>
+    <p>Na het klikken op START verschijnt een optionele stijlselector. Je hebt drie mogelijkheden:</p>
+    <ul>
+      <li><strong>Geen keuze</strong> &mdash; De AI analyseert je foto neutraal op basis van wat hij ziet.</li>
+      <li><strong>Alleen soort foto</strong> &mdash; De AI houdt rekening met het genre maar geeft geen specifieke stijlinspiratie.</li>
+      <li><strong>Soort foto + bewerkingsstijl</strong> &mdash; De AI gebruikt een bewerkingsstijl uit de kennisbank als inspiratie voor de adviezen.</li>
+    </ul>
+  </div>
+
+  <div class="help-section">
     <h4>De 5 fases</h4>
     <div class="help-phase"><strong>FASE 1 &mdash; Compositie, Denoise & Globaal</strong>Crop, rechtzetten, ruisreductie en globale aanpassingen zoals belichting en witbalans.</div>
     <div class="help-phase"><strong>FASE 2 &mdash; Toon & Kleur verfijning</strong>Curves, HSL, kleurcorrecties en fijnafstelling van schaduwen en hooglichten.</div>
@@ -959,18 +969,23 @@ var tourSteps = [
     text: 'Kies hier je fotobewerkingssoftware. Klik daarna op START om te beginnen.'
   },
   {
+    target: 'styleSelectorBox',
+    title: 'STAP 2 - STIJL KIEZEN (OPTIONEEL)',
+    text: 'Kies optioneel een soort foto en bewerkingsstijl. Geen keuze = neutrale analyse. Met stijl = analyse gebaseerd op een bewerkingsfilosofie uit de kennisbank.'
+  },
+  {
     target: 'uploadZone',
-    title: 'STAP 2 - FOTO UPLOADEN',
+    title: 'STAP 3 - FOTO UPLOADEN',
     text: 'Sleep je foto hierheen of klik om te selecteren. De AI analyseert hem direct en geeft concrete bewerkingsadviezen.'
   },
   {
     target: 'workflowBar',
-    title: 'STAP 3 - DE 5 FASES',
+    title: 'STAP 4 - DE 5 FASES',
     text: 'De workflow bestaat uit 5 fases: van compositie en denoise tot final touch en eindoordeel. Je ziet hier altijd waar je bent.'
   },
   {
     target: 'sessionsBar',
-    title: 'STAP 4 - SESSIES OPSLAAN',
+    title: 'STAP 5 - SESSIES OPSLAAN',
     text: 'Sla je sessie op zodat je later verder kunt gaan. Je analyses worden bewaard maar je fotos blijven op je eigen apparaat.'
   }
 ];

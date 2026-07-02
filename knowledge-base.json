@@ -45031,5 +45031,98 @@
       "Hij gebruikt AI-maskers niet alleen voor verlichting, maar specifiek om lichteffecten achter objecten te laten 'verdwijnen', wat een 3D-effect creëert."
     ],
     "style_preview": "De stijl van Serge Ramelli kenmerkt zich door een krachtige, bijna filmische kwaliteit die hij 'natural drama' noemt. Zijn bewerkingen zijn erop gericht om de emotie en de kleuren van het gouden uur te versterken zonder in 'over-processed' territorium te komen. Als fotograaf kun je deze stijl inzetten om alledaagse locaties om te toveren tot galeries-waardige beelden door zorgvuldig te belichten en slim gebruik te maken van AI-maskers voor diepte. Het verwachte resultaat is een foto met een hoge impact, heldere contrasten en een feilloze kleurbalans."
+  },
+  {
+    "video_title": "Making the Subject POP with COLOR CONTRAST (Lightroom Editing)",
+    "photographer_name": "Christian Möhrle",
+    "youtube_url": "https://www.youtube.com/watch?v=NXfrpjDfzDA",
+    "genre": [
+      "wildlife"
+    ],
+    "light_conditions": [
+      "daglicht"
+    ],
+    "mood": [
+      "levendig",
+      "dramatisch"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Contrastrijk levendig wildlife",
+    "philosophy": "De kern van deze bewerkingsstijl is het creëren van maximale diepte door middel van kleurcontrast. De fotograaf maakt het onderwerp warm en helder, terwijl de achtergrond wordt afgekoeld, verduisterd en verzacht. Dit zorgt voor een sterke visuele scheiding en een pop-effect zonder dat het onnatuurlijk oogt.",
+    "workflow_order": [
+      "stap 1: Compositie en opschonen met Generatieve AI",
+      "stap 2: Basis aanpassingen voor belichting en kleurbalans",
+      "stap 3: Maskers voor onderwerp-isolatie en kleurcontrast",
+      "stap 4: Specifieke kleurgrading via mixer en kalibratie"
+    ],
+    "techniques": [
+      {
+        "name": "Generatieve takverwijdering",
+        "description": "Verwijder storende takken met de verwijder-tool op modus 'Generatieve AI' voor een rustige achtergrond",
+        "when_to_use": "Bij wildlife foto's met rommelige vegetatie die het onderwerp overlapt",
+        "tools": [
+          "Verwijderen (Remove)"
+        ],
+        "effect": "Een schone, opgeruimde achtergrond waardoor het onderwerp beter uitkomt"
+      },
+      {
+        "name": "Kleurcontrast via temperatuur",
+        "description": "Verlaag de temperatuur in lineaire gradiënten op de achtergrond om deze kouder te maken ten opzichte van het warme onderwerp",
+        "when_to_use": "Bij een foto met een warm onderwerp en een neutrale of saaie achtergrond",
+        "tools": [
+          "Lineaire gradiënt",
+          "Temperatuur"
+        ],
+        "effect": "Het onderwerp komt visueel naar voren door het verschil in kleurwarmte"
+      },
+      {
+        "name": "Achtergrond verzachten",
+        "description": "Verlaag Textuur en Helderheid in achtergrondmaskers om details te verminderen",
+        "when_to_use": "Wanneer de achtergrond te veel afleidt van het hoofdonderwerp",
+        "tools": [
+          "Lineaire gradiënt",
+          "Textuur",
+          "Helderheid"
+        ],
+        "effect": "De achtergrond oogt zachter, bijna als een bokeh-effect"
+      },
+      {
+        "name": "Oog-detail accentueren",
+        "description": "Verhoog lokaal de belichting, schaduwen, wit, textuur en helderheid in het oog",
+        "when_to_use": "Bij portretten of wildlife foto's waarbij het oog de focuspunt is",
+        "tools": [
+          "Penseel",
+          "Belichting",
+          "Textuur",
+          "Helderheid"
+        ],
+        "effect": "Het oog wordt scherper, helderder en krijgt een 'piercing' blik"
+      },
+      {
+        "name": "Blauwe primaire kleurverschuiving",
+        "description": "Verlaag de Blauwe primaire tint in de kalibratie voor een diepere, aangenamere kleurweergave",
+        "when_to_use": "Als finishing touch voor een meer professionele en unieke kleurlook",
+        "tools": [
+          "Kalibratie"
+        ],
+        "effect": "De algehele kleurtoon van de foto wordt subtiel rijker en filmischer"
+      }
+    ],
+    "color_approach": "De fotograaf gebruikt een actieve benadering waarbij hij ongewenste kleurzwemen (zoals groen bij wildlife) neutraliseert via de kleurmixer. Vervolgens versterkt hij het kleurcontrast door de achtergrond koeler (blauw/aqua) te maken en het onderwerp warmer te houden.",
+    "local_adjustments": "Maskers worden essentieel gebruikt om het onderwerp (de vogel) te isoleren. Hij gebruikt 'Object' maskers om het onderwerp te selecteren en trekt deze vervolgens af van lineaire gradiënten die de gehele foto beïnvloeden, zodat de aanpassingen aan de achtergrond niet het onderwerp raken.",
+    "what_to_avoid": [
+      "Overbelichten waardoor clipping ontstaat in de lichte delen",
+      "Te veel verzadiging in warme tinten die de natuurlijke kleur verdringen",
+      "Het laten staan van storende takken die de compositie verslechteren"
+    ],
+    "best_for": "Wildlife fotografie waarbij het onderwerp in een drukke omgeving is gefotografeerd en extra aandacht nodig heeft om uit de achtergrond te springen.",
+    "unique_insights": [
+      "Hij gebruikt de verwijder-tool met Generatieve AI specifiek op takken die elkaar kruisen, omdat dit kruisen volgens hem visueel de meeste onrust veroorzaakt.",
+      "Bij het bewerken van een oog schakelt hij de 'edit pins' uit op 'nooit', zodat het penseel-icoontje zijn zicht op het kleine ooggedeelte niet blokkeert tijdens het werken.",
+      "Hij verlaagt Textuur en Helderheid op een lineaire gradiënt in een lichte hoek van de foto om het effect van een 'gaussian blur' na te bootsen op storende elementen."
+    ],
+    "style_preview": "Deze stijl is gericht op het creëren van maximale visuele impact en kijkgemak. De bewerking is technisch grondig, met veel aandacht voor het opschonen van de omgeving en het sturen van de kijker naar het onderwerp. Het resultaat is een gepolijste, levendige en professionele look die uitermate geschikt is voor wildlife en natuurfotografie onder alledaagse lichtomstandigheden. Als fotograaf kun je deze techniek verwachten in te zetten wanneer je een onderwerp echt wilt laten 'poppen' uit een drukke omgeving."
   }
 ]

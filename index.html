@@ -401,6 +401,50 @@ select option,select optgroup{background:#1e1e1e;color:#f0ede8}
     </div>
     <button class="btn" id="connectBtn" onclick="saveKey()">START</button>
   </div>
+
+  <!-- STIJL SELECTOR (optioneel) -->
+  <div id="styleSelectorBox" style="margin:0 0 16px 0;padding:14px 16px;background:rgba(232,197,71,0.04);border:1px solid rgba(232,197,71,0.15);display:none">
+    <div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--accent);letter-spacing:2px;margin-bottom:10px">&#9733; BEWERKINGSSTIJL <span style="font-size:9px;color:var(--muted);letter-spacing:0;text-transform:none;font-family:'DM Sans',sans-serif">&nbsp;— optioneel</span></div>
+
+    <div style="margin-bottom:10px">
+      <div style="font-family:'DM Mono',monospace;font-size:9px;color:var(--muted);letter-spacing:1px;margin-bottom:5px">SOORT FOTO</div>
+      <select id="genreFilterSelect" onchange="onGenreFilterChange(this.value)" style="width:100%;background:var(--bg);border:1px solid var(--border);color:var(--text);padding:10px 14px;font-family:'DM Sans',sans-serif;font-size:13px;outline:none;cursor:pointer">
+        <option value="">— Geen voorkeur —</option>
+        <option value="landschap">Landschap</option>
+        <option value="wildlife">Wildlife</option>
+        <option value="portret">Portret</option>
+        <option value="straatfotografie">Straatfotografie</option>
+        <option value="reisfotografie">Reisfotografie</option>
+        <option value="sport">Sport / Actie</option>
+        <option value="macro">Macro</option>
+        <option value="nacht & astro">Nacht & Astro</option>
+        <option value="architectuur">Architectuur</option>
+        <option value="luchtfotografie">Drone / Luchtfotografie</option>
+        <option value="documentaire">Documentaire</option>
+        <option value="product">Product / Studio</option>
+        <option value="infraroodfotografie">Infraroodfotografie</option>
+        <option value="trouwfotografie">Trouwfotografie</option>
+        <option value="kust">Kust</option>
+        <option value="fine-art">Fine-Art</option>
+        <option value="zwart-wit">Zwart-Wit</option>
+        <option value="cinematisch">Cinematisch</option>
+        <option value="experimenteel">Experimenteel</option>
+        <option value="grafisch ontwerp">Grafisch Ontwerp</option>
+        <option value="algemeen">Algemeen</option>
+      </select>
+    </div>
+
+    <div id="styleStep" style="display:none">
+      <div style="font-family:'DM Mono',monospace;font-size:9px;color:var(--muted);letter-spacing:1px;margin-bottom:5px">BEWERKINGSSTIJL <span id="styleMatchCount" style="color:var(--accent)"></span></div>
+      <select id="styleSelect" onchange="setEditStyle(this.value)" style="width:100%;background:var(--bg);border:1px solid var(--border);color:var(--text);padding:10px 14px;font-family:'DM Sans',sans-serif;font-size:13px;outline:none;cursor:pointer">
+        <option value="">— Geen stijlvoorkeur —</option>
+      </select>
+      <div id="stylePreviewPanel" style="display:none;margin-top:10px;padding:12px 14px;background:var(--bg);border:1px solid var(--border);border-left:3px solid var(--accent);font-size:12px;line-height:1.7;color:var(--muted)">
+        <div style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1px;color:var(--accent);margin-bottom:6px">ℹ STIJLOMSCHRIJVING</div>
+        <div id="stylePreviewText"></div>
+      </div>
+    </div>
+  </div>
   <div class="sessions-bar" style="display:none" id="sessionsBar">
     <span class="sessions-bar-label">Sessies</span>
     <div class="session-chips" id="sessionChips"><span style="font-family:'DM Mono',monospace;font-size:11px;color:var(--muted)">Nog geen sessies opgeslagen</span></div>
@@ -1068,6 +1112,7 @@ function saveKey() {
   document.getElementById('connectBtn').disabled = true;
   document.getElementById('providerSelect').disabled = true;
   document.getElementById('softwareBadge').textContent = cfg.name;
+  initStyleSelector();
 }
 
 function setSoftware(choice) {
@@ -1328,7 +1373,11 @@ async function callAI(systemPrompt, parts, maxTokens) {
         provider: apiProvider,
         parts: parts,
         systemPrompt: systemPrompt,
-        maxTokens: maxTokens || 8192
+        maxTokens: maxTokens || 8192,
+        software: software || '',
+        photoContext: currentEditStyle
+          ? { genre: (currentEditStyle.genre||[]).join(' '), mood: (currentEditStyle.mood||[]).join(' '), light: (currentEditStyle.light_conditions||[]).join(' '), forcedEntry: currentEditStyle, software: software || '' }
+          : null
       })
     });
     var data = await response.json();
@@ -1706,6 +1755,167 @@ function renderMarkdown(text){
 function fmt(t){
   return t.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>').replace(/\*(.+?)\*/g,'<em>$1</em>').replace(/\x60([^\x60]+)\x60/g,'<code>$1</code>');
 }
+// ── Stijl & genre selectie (overgenomen uit expert) ──────────────────────
+var currentEditStyle = null;
+
+function onGenreFilterChange(genre) {
+  var styleStep = document.getElementById('styleStep');
+  if (!genre) {
+    styleStep.style.display = 'none';
+    currentEditStyle = null;
+    return;
+  }
+  styleStep.style.display = 'block';
+  populateStyleSelect(window._knowledgeEntries || [], genre);
+}
+
+function populateStyleSelect(entries, filterGenre) {
+  entries = entries || window._knowledgeEntries || [];
+  var sel = document.getElementById('styleSelect');
+  while (sel.options.length > 1) sel.remove(1);
+
+  // Admin filters
+  var filterPhotographer = authRole === 'admin' ? ((document.getElementById('adminPhotographerSelect')||{}).value || '') : '';
+  var adminGenre = authRole === 'admin' ? ((document.getElementById('adminGenreSelect')||{}).value || '') : '';
+  var filterMood = authRole === 'admin' ? ((document.getElementById('adminMoodSelect')||{}).value || '') : '';
+  var genre = filterGenre || adminGenre;
+
+  // Software filter mapping
+  var SW_LABEL_MAP = {
+    'lightroom': ['Lightroom Classic', 'Lightroom', 'Adobe Lightroom', 'Adobe Lightroom Classic'],
+    'lightroomdesktop': ['Lightroom Desktop', 'Lightroom Cloud', 'Adobe Lightroom Desktop', 'Adobe Lightroom CC'],
+    'lightroommobile': ['Lightroom Mobile', 'Adobe Lightroom Mobile'],
+    'photoshop': ['Photoshop', 'Adobe Photoshop'],
+    'both': ['Lightroom Classic', 'Photoshop', 'Lightroom', 'Adobe Lightroom'],
+    'captureone': ['Capture One', 'CaptureOne', 'Capture One Pro'],
+    'dxo': ['DxO PhotoLab', 'DxO'],
+    'luminar': ['Luminar Neo', 'Luminar', 'Luminar AI'],
+    'darktable': ['darktable', 'Darktable'],
+    'rawtherapee': ['RawTherapee', 'Raw Therapee'],
+    'snapseed': ['Snapseed'],
+    'vsco': ['VSCO'],
+    'gimp': ['GIMP']
+  };
+  var currentSoftwareLabels = SW_LABEL_MAP[software] || [];
+
+  var matched = 0;
+  entries.forEach(function(e, i) {
+    if (filterPhotographer && e.photographer_name !== filterPhotographer) return;
+    if (genre && !(e.genre||[]).some(function(g) { return g.toLowerCase() === genre.toLowerCase(); })) return;
+    if (filterMood && !(e.mood||[]).includes(filterMood)) return;
+    // Software filter: toon alleen stijlen compatible met gekozen software
+    // Als kennisbank entry geen software heeft, altijd tonen
+    if (currentSoftwareLabels.length && e.software && e.software.length) {
+      var swMatch = e.software.some(function(s) {
+        return currentSoftwareLabels.some(function(l) {
+          return s.toLowerCase() === l.toLowerCase();
+        });
+      });
+      if (!swMatch) return;
+    }
+
+    var opt = document.createElement('option');
+    opt.value = i;
+    if (authRole === 'admin') {
+      opt.textContent = (e.photographer_name || 'Onbekend') + ' — ' + (e.style_description || (e.genre||[]).join('/'));
+    } else {
+      opt.textContent = e.style_description || ((e.genre||[]).join(' & ') + ' stijl') || 'Stijl ' + (i+1);
+    }
+    sel.appendChild(opt);
+    matched++;
+  });
+
+  var countEl = document.getElementById('styleMatchCount');
+  if (countEl) countEl.textContent = matched ? '(' + matched + ')' : '';
+}
+
+function setEditStyle(val) {
+  var previewPanel = document.getElementById('stylePreviewPanel');
+  var previewText = document.getElementById('stylePreviewText');
+  if (val === '' || val === null) {
+    currentEditStyle = null;
+    if (previewPanel) previewPanel.style.display = 'none';
+    return;
+  }
+  var entries = window._knowledgeEntries || [];
+  currentEditStyle = entries[parseInt(val)] || null;
+  if (currentEditStyle && currentEditStyle.style_preview && previewPanel) {
+    previewText.innerHTML = currentEditStyle.style_preview;
+    previewPanel.style.display = 'block';
+  } else if (previewPanel) {
+    previewPanel.style.display = 'none';
+  }
+}
+
+function loadStyles() {
+  fetch('/api/knowledge', {
+    method: 'POST',
+    headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({ action: 'styles' })
+  })
+  .then(function(r) { return r.json(); })
+  .then(function(resp) {
+    var entries = Array.isArray(resp) ? resp : (resp.entries || []);
+    if (!Array.isArray(entries) || !entries.length) {
+      // Fallback naar JSON bestand
+      return fetch('/knowledge-base.json').then(function(r) { return r.json(); });
+    }
+    return entries;
+  })
+  .then(function(entries) {
+    if (!Array.isArray(entries) || !entries.length) return;
+    window._knowledgeEntries = entries;
+    var box = document.getElementById('styleSelectorBox');
+    box.classList.add('visible');
+
+    // Admin: toon ook de fotograaf dropdowns
+    if (authRole === 'admin') {
+      var adminFilters = document.getElementById('adminFilters');
+      if (adminFilters) {
+        adminFilters.style.display = 'block';
+        var styleLabel = document.getElementById('styleSelectLabel');
+        if (styleLabel) styleLabel.textContent = 'SPECIFIEKE STIJL (optioneel)';
+        // Vul admin fotograaf dropdown
+        var photographers = [], genres = [], moods = [];
+        entries.forEach(function(e) {
+          if (e.photographer_name && photographers.indexOf(e.photographer_name) === -1)
+            photographers.push(e.photographer_name);
+          (e.genre||[]).forEach(function(g) { if (genres.indexOf(g) === -1) genres.push(g); });
+          (e.mood||[]).forEach(function(m) { if (moods.indexOf(m) === -1) moods.push(m); });
+        });
+        var pSel = document.getElementById('adminPhotographerSelect');
+        if (pSel) {
+          photographers.sort().forEach(function(p) {
+            var o = document.createElement('option'); o.value = p; o.textContent = p; pSel.appendChild(o);
+          });
+        }
+        var gSel = document.getElementById('adminGenreSelect');
+        if (gSel) {
+          genres.sort().forEach(function(g) {
+            var o = document.createElement('option'); o.value = g; o.textContent = g; gSel.appendChild(o);
+          });
+        }
+        var mSel = document.getElementById('adminMoodSelect');
+        if (mSel) {
+          moods.sort().forEach(function(m) {
+            var o = document.createElement('option'); o.value = m; o.textContent = m; mSel.appendChild(o);
+          });
+        }
+        populateStyleSelect(entries);
+      }
+    }
+    // Voor normale gebruikers: genre dropdown klaar, stijl volgt na keuze
+  })
+  .catch(function() {});
+}
+
+function initStyleSelector() {
+  var box = document.getElementById('styleSelectorBox');
+  if (box) box.style.display = 'block';
+  loadStyles();
+}
+
+
 </script>
 </body>
 </html>

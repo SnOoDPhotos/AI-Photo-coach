@@ -1643,16 +1643,7 @@ async function finaleAnalysis(){
 }
 
 // ── Key/software ───────────────────────────────────────────────────────────
-function saveKey(){
-  apiProvider=document.getElementById('providerSelect').value;
-  apiKey='backend';
-  var cfg=providerConfig[apiProvider]||providerConfig.gemini;
-  document.getElementById('apiSection').style.borderLeftColor='var(--success)';
-  document.getElementById('connectBtn').textContent='✓ '+cfg.name;
-  document.getElementById('connectBtn').disabled=true;
-  document.getElementById('providerSelect').disabled=true;
-  document.getElementById('softwareBadge').textContent=cfg.name;
-}
+
 function setSoftware(choice){
   software=choice;
   document.getElementById('softwareSelect').value=choice;

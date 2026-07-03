@@ -45398,5 +45398,95 @@
       "Het herstellen van huidtinten werkt het beste door de curve binnen het masker eerst bewust te ver oversturen qua kleur en contrast, om vervolgens met de Amount-slider de perfecte balans terug te vinden"
     ],
     "style_preview": "Deze stijl kenmerkt zich door een uiterst verfijnde, romige sfeer met matte schaduwen en perfect gecontroleerde hooglichten die de scherpe digitale randjes van moderne sensoren wegnemen. De kernfilosofie draait om het selectief herstellen en opbouwen van contrast via de tooncurve in plaats van grove, globale aanpassingen. Het werkt het beste bij portretten en reisfotografie in uitdagende lichtomstandigheden, zoals felle zon of hard tegenlicht aan de kust. Als fotograaf kun je een boterzachte huidweergave en een rijke, filmische kleurbalans verwachten waarbij het onderwerp op een natuurlijke en organische wijze tot leven komt."
+  },
+  {
+    "video_title": "EDIT AN ENTIRE WEDDING IN LIGHTROOM CLASSIC 2024 (STEP BY STEP)",
+    "photographer_name": "Signature Edits",
+    "youtube_url": "https://www.youtube.com/watch?v=oh0S3O5GiYY",
+    "genre": [
+      "trouwfotografie"
+    ],
+    "light_conditions": [
+      "tegenlicht",
+      "gemengd licht",
+      "bewolkt",
+      "kunstlicht"
+    ],
+    "mood": [
+      "naturalistisch",
+      "levendig",
+      "rustig"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Clean Classic Timeless Wedding",
+    "philosophy": "De focus ligt op een tijdloze en natuurlijke weergave die trends overleeft door kleuren accuraat te houden en dynamisch bereik te maximaliseren. Efficiëntie ontstaat door eerst een overkoepelende basislook toe te passen en daarna uitsluitend lokale correcties uit te voeren. Het sturen van het oog van de kijker naar het belangrijkste onderwerp heeft altijd prioriteit boven complexe kleurgradaties. Perfectie tot 95% is in de eerste selectieve ronde voldoende om het momentum te behouden.",
+    "workflow_order": [
+      "stap 1: Pas een overkoepelende basispreset toe op de volledige selectie om kleurconsistentie te waarborgen.",
+      "stap 2: Corrigeer de witbalans en algehele belichting per individuele foto of vergelijkbare lichtsituatie.",
+      "stap 3: Gebruik AI-gestuurde maskers en radiële filters om het onderwerp subtiel op te lichten en de achtergrond te verzachten.",
+      "stap 4: Voer een transformatie of uitsnede uit om storende elementen aan de randen van het beeld te elimineren."
+    ],
+    "techniques": [
+      {
+        "name": "Mengen met mixed light compensatie",
+        "description": "Verlaag de verzadiging van Oranje naar een waarde rond -20 om de extreme warmte van kunstlicht op te vangen wanneer dit mengt met natuurlijk daglicht.",
+        "when_to_use": "Bij binnensituaties met een mix van oranje kunstlicht (tungsten) en koud vensterlicht.",
+        "tools": [
+          "Kleurmenger (HSL / Saturation)"
+        ],
+        "effect": "Huidstinten verliezen hun onnatuurlijke oranje gloed en ogen direct neutraler."
+      },
+      {
+        "name": "Transparant lokaal spotlighten",
+        "description": "Verhoog selectief de Witte tinten en Hooglichten in een radieel filter in plaats van de algehele Belichting te openen.",
+        "when_to_use": "Wanneer een gezicht of kledingstuk in de schaduw staat en subtiel moet oplichten zonder de natuurlijke schaduwen te verliezen.",
+        "tools": [
+          "Radieel filter (Maskeren)"
+        ],
+        "effect": "Het onderwerp krijgt extra visuele nadruk terwijl de schaduwpartijen organisch diep blijven."
+      },
+      {
+        "name": "Scherpte-illusie door verzachting",
+        "description": "Inverteer een selectiemasker van personen en verlaag de Structuur, Helderheid en Scherpte naar negatieve waarden in de rest van de ruimte.",
+        "when_to_use": "Bij portretten die net niet kritisch scherp zijn op de ogen of extra diepte vereisen.",
+        "tools": [
+          "AI Personen Masker (Inverteren)"
+        ],
+        "effect": "Het hoofdonderwerp oogt optisch scherper omdat de achtergrond subtiel vager en minder contrastrijk wordt."
+      },
+      {
+        "name": "Luminantiebereik hooglichten temmen",
+        "description": "Gebruik een radieel filter over de achtergrond en pas een Luminantiebereik-aftrekking toe om specifiek de allerhoogste lichten te isoleren en met -0.50 stop te verlagen.",
+        "when_to_use": "Wanneer een felle achtergrond of een glanzende vloer de aandacht weghaalt van het bruidspaar.",
+        "tools": [
+          "Luminantiebereik (Masker aftrekken)"
+        ],
+        "effect": "Storende overbelichte vlekken in de omgeving worden gedempt zonder de middentonen van het paar aan te tasten."
+      },
+      {
+        "name": "Schaduwherstel in gitzwart haar",
+        "description": "Gebruik een lokaal aanpassingspenseel en verhoog de Hooglichten en Witte tinten lichtjes in plaats van de schuifregelaar Schaduwen open te trekken.",
+        "when_to_use": "Bij diepe schaduwpartijen in donker haar of donkere kleding waar detail verloren dreigt te gaan.",
+        "tools": [
+          "Aanpassingspenseel"
+        ],
+        "effect": "De textuur keert terug op een zeer transparante en plakkaatvrije manier zonder ruis in de schaduw te introduceren."
+      }
+    ],
+    "color_approach": "Kleurgradatie blijft dicht bij de werkelijkheid om een tijdloos karakter te garanderen. Groentinten uit de natuur worden indien nodig in verzadiging teruggebracht om niet te concurreren met de kleding van het bruidspaar. In uitdagende lichtomstandigheden, zoals bij felle neon- of feestverlichting, wordt de kleurverzadiging in de problematische kanalen (zoals blauw of oranje) lokaal getemperd in plaats van de globale witbalans te forceren.",
+    "local_adjustments": "Maskers worden uitsluitend ingezet om focus te creëren op basis van de regel dat het menselijk oog naar het helderste, scherpste en meest verzadigde punt trekt. AI-achtergrondmaskers en radiële filters worden intensief gecombineerd om subtiele vignetten te leggen en de omgeving met enkele gradaties te verduisteren.",
+    "what_to_avoid": [
+      "Het overmatig opendraaien van de algehele schuifregelaar Schaduwen, wat leidt tot een flets en onnatuurlijk HDR-effect.",
+      "Het blindelings vertrouwen op de pipet voor witbalans op witte trouwkleding, aangezien schaduwen en reflecties de meting misleiden."
+    ],
+    "best_for": "Trouwreportages die onder wisselende en uitdagende lichtomstandigheden zijn geschoten en een consistente, natuurlijke nabewerking vereisen.",
+    "unique_insights": [
+      "Contrast voegt niet alleen zwart-witverschillen toe, maar versterkt ook de kleurverzadiging op een dynamische manier; het verlagen van contrast vraagt daarom vaak om een heroverweging van de kleurintensiteit.",
+      "Het corrigeren van een overbelicht kledingstuk zoals een witte trouwjurk of lichte stropdas werkt verfijnder door lokaal de Helderheid en Dehaze te verlagen, omdat dit de harde overgangen naar pastelgrijs verzacht.",
+      "Bij het handmatig synchroniseren van camera's via de opnametijd is de 'eerste kus' of een vergelijkbaar flitsmoment het meest betrouwbare ijkpunt om de exacte tijdafwijking in minuten te bepalen."
+    ],
+    "style_preview": "Deze stijl ademt een pure, ongedwongen en vooral tijdloze sfeer uit met heldere huidstinten en evenwichtige contrasten. De filosofie dicteert dat een trouwfoto over twintig jaar nog steeds authentiek moet ogen, vrij van modieuze kleurfilters of extreme kleurverschuivingen. Het werkt optimaal bij zacht, diffuus daglicht en bewolkte of regenachtige omstandigheden, waarbij de natuurlijke zachtheid van het licht behouden blijft. Als fotograaf kun je een uiterst betrouwbaar, cinematisch maar realistisch resultaat verwachten waarin de emotie en de echte kleuren de hoofdrol spelen."
   }
 ]

@@ -45488,5 +45488,96 @@
       "Bij het handmatig synchroniseren van camera's via de opnametijd is de 'eerste kus' of een vergelijkbaar flitsmoment het meest betrouwbare ijkpunt om de exacte tijdafwijking in minuten te bepalen."
     ],
     "style_preview": "Deze stijl ademt een pure, ongedwongen en vooral tijdloze sfeer uit met heldere huidstinten en evenwichtige contrasten. De filosofie dicteert dat een trouwfoto over twintig jaar nog steeds authentiek moet ogen, vrij van modieuze kleurfilters of extreme kleurverschuivingen. Het werkt optimaal bij zacht, diffuus daglicht en bewolkte of regenachtige omstandigheden, waarbij de natuurlijke zachtheid van het licht behouden blijft. Als fotograaf kun je een uiterst betrouwbaar, cinematisch maar realistisch resultaat verwachten waarin de emotie en de echte kleuren de hoofdrol spelen."
+  },
+  {
+    "video_title": "Travel Photography Editing Tutorial: Edit Along + Free Raw File!",
+    "photographer_name": "Signature Edits",
+    "youtube_url": "https://www.youtube.com/watch?v=B0ELZj9feTw",
+    "genre": [
+      "reisfotografie"
+    ],
+    "light_conditions": [
+      "gouden uur",
+      "daglicht",
+      "schaduw"
+    ],
+    "mood": [
+      "levendig",
+      "moody",
+      "cinematisch"
+    ],
+    "software": [
+      "Lightroom Classic",
+      "Photoshop"
+    ],
+    "style_description": "Vibrant Golden Ridge Travel",
+    "philosophy": "De essentie ligt in het maximaal accentueren en overdrijven van de natuurlijke lichtinval en texturen die tijdens de opname al aanwezig waren. Door foto's bewust plat te maken via de basisregelaars ontstaat er een schone lei om via de tooncurve en lokale maskers gecontroleerde, krachtige contrasten op te bouwen. Het sturen van de blik van de kijker naar het verre reisonderwerp heeft prioriteit over een complexe kleurmanipulatie.",
+    "workflow_order": [
+      "stap 1: Breng de algehele belichting omlaag ter bescherming van de lucht en verminder het globale contrast.",
+      "stap 2: Pas een driepunts S-curve toe in het tooncurve-paneel om gerichte diepte en pop terug te brengen.",
+      "stap 3: Verschuif de schaduwtinten in het kalibratiepaneel naar magenta voor warmere zonsondergangskleuren.",
+      "stap 4: Gebruik penseelmaskers voor selectieve dodging en burning op bergen en graspartijen.",
+      "stap 5: Exporteer naar aanvullende software om via een multiply-laag de ultieme microcontrasten te finishen."
+    ],
+    "techniques": [
+      {
+        "name": "Initieel contrast minimaliseren",
+        "description": "Verlaag het globale contrast naar een waarde rond -25 en breng Highlights en Whites omhoog om een maximaal dynamisch bereik te herstellen.",
+        "when_to_use": "Bij weidse landschaps- en reisfoto's met harde overgangen tussen direct zonlicht en diepe schaduwpartijen.",
+        "tools": [
+          "Standaard (Contrast, Hooglichten, Schaduwen)"
+        ],
+        "effect": "Het beeld oogt tijdelijk vlakker en minder intens, waardoor verborgen details in schaduw en lucht direct zichtbaar worden."
+      },
+      {
+        "name": "Driepunts Tooncurve S-vorm",
+        "description": "Zet drie ankerpunten in de Tooncurve; breng het schaduwsegment subtiel omlaag en trek het hooglichtensegment gecontroleerd omhoog.",
+        "when_to_use": "Nadat de foto via de basisschuiven is afgevlakt om gerichte, organische punch te herintroduceren.",
+        "tools": [
+          "Tooncurve (Puntcurve)"
+        ],
+        "effect": "Er ontstaat een krachtig maar vloeiend contrast dat de middentonen spaart en verzadiging op een natuurlijke wijze intensiveert."
+      },
+      {
+        "name": "Schaduw-kalibratie naar Magenta",
+        "description": "Verschuif de schuifregelaar Tint bij Schaduwen licht in de richting van magenta (waarde rond +10) om koude groenblauwe schaduwen op te vangen.",
+        "when_to_use": "Bij landschappen tijdens het gouden uur waarbij de voorgrond en vegetatie te koel of modderig groen ogen.",
+        "tools": [
+          "Camerakalibratie (Shadows Tint)"
+        ],
+        "effect": "De zonsondergangskleuren en warme gloed in de schaduwen breken direct door en ogen aanzienlijk sfeervoller."
+      },
+      {
+        "name": "Selectieve Berg-Dodging",
+        "description": "Gebruik een lokaal penseel met verhoogde Hooglichten en Witte tinten en schilder uitsluitend over de door de zon geraakte bergrichels.",
+        "when_to_use": "Wanneer bergen in de achtergrond door atmosferische waas te flets ogen en textuur missen.",
+        "tools": [
+          "Penseel (Maskeren)"
+        ],
+        "effect": "De natuurlijke vormen van de bergketen lichten op, waardoor de achtergrond direct meer driedimensionale diepte krijgt."
+      },
+      {
+        "name": "Storende voorgrond verduisteren",
+        "description": "Breng met een zacht penseel of verloopfilter de Belichting omlaag met -0.40 stop en verlaag de Structuur en Helderheid op oninteressante vlakken.",
+        "when_to_use": "Bij grindpaden, kale velden of asfalt op de voorgrond die de aandacht van de reiziger afleiden.",
+        "tools": [
+          "Penseel (Maskeren)"
+        ],
+        "effect": "De voorgrond valt visueel weg in de schaduw, waardoor er een natuurlijke leidraad richting het heldere onderwerp ontstaat."
+      }
+    ],
+    "color_approach": "Kleurgradatie wordt gestuurd door de wetten van het licht tijdens de opname. Er wordt bewust met de zon mee gefotografeerd om maximale kleurintensiteit in de blauwe luchten en warme landschappen te behouden. In plaats van extreme kleurverschuivingen in het HSL-paneel toe te passen, worden complementaire warme schaduwen gecreëerd door de subtiele kleurschuiven in de camorakalibratie te benutten.",
+    "local_adjustments": "Lokale maskers zijn de drijvende kracht achter het eindresultaat. Er wordt intensief gebruikgemaakt van handmatige penseelstreken met een hoge doezelaar (Feather 100) om lichtbanen en zonneharpen kunstmatig te versterken. Maskers dienen hier niet voor ingewikkelde selecties, maar fungeren als een digitaal schilderpalet voor dodging en burning.",
+    "what_to_avoid": [
+      "Het volledig doordrukken van schaduwen tot pure blauwe clipping-zones op kleding, wat de organische diepte vernietigt.",
+      "Het negeren van de opnamerichting; blindelings tegen het licht in schieten resulteert in fletse en minder levendige reiskleuren."
+    ],
+    "best_for": "Weidse reisfotografie en berglandschappen waarbij een menselijk element centraal staat en het lichtlandschap dramatischer mag worden aangezet.",
+    "unique_insights": [
+      " contrastregeling in bewerkingssoftware beïnvloedt niet alleen de luminantie, maar introduceert ook direct kleurcontrast; hoe hoger het contrast, hoe intenser de onderliggende kleurverzadiging reageert.",
+      "Het fotograferen met de zon in de rug in plaats van tegenlicht (backlit) levert tijdens het gouden uur automatisch een spectaculairdere, diepblauwe lucht op zonder dat hier zware nabewerking voor nodig is.",
+      "Een geavanceerde manier om microcontrasten te finishen is het dupliceren van de laag in aanvullende beeldbewerkingssoftware, deze op 'Vermenigvuldigen' (Multiply) te zetten en de dekking met 20-30% terug te schroeven."
+    ],
+    "style_preview": "Deze stijl kenmerkt sich door een uiterst levendige, warme en avontuurlijke sfeer met diepe contrasten en een schitterende gouden gloed. De kernfilosofie draait om het selectief versterken van de elementen die moeder natuur al heeft klaargezet, waardoor een cinematisch reiseffect ontstaat. Het werkt uitstekend voor uitgestrekte berglandschappen en outdoor-portretten tijdens het gouden uur, waarbij kledingkleuren krachtig afsteken tegen de omgeving. Als fotograaf kun je een contrastrijk, scherp en meeslepend resultaat verwachten dat direct de grootsheid van de locatie overbrengt."
   }
 ]

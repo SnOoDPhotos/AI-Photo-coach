@@ -480,6 +480,7 @@ select option,select optgroup{background:#1e1e1e;color:#f0ede8}
     margin-bottom: 8px;
   }
 </style>
+  <script src="https://cdn.jsdelivr.net/npm/exifr/dist/lite.umd.js"></script>
 </head>
 <body>
 
@@ -1175,6 +1176,27 @@ function setEditStyle(val) {
   }
 }
 
+
+// ── EXIF uitlezen ──────────────────────────────────────────────────────────
+async function readExif(file) {
+  try {
+    var exif = await exifr.parse(file, ['ISO', 'ExposureTime', 'FNumber', 'FocalLength', 'Model', 'DateTimeOriginal']);
+    if (exif) {
+      photoExifData = {
+        iso: exif.ISO || null,
+        shutterSpeed: exif.ExposureTime ? '1/' + Math.round(1/exif.ExposureTime) : null,
+        aperture: exif.FNumber ? 'f/' + exif.FNumber : null,
+        focalLength: exif.FocalLength ? exif.FocalLength + 'mm' : null,
+        camera: exif.Model || null
+      };
+      console.log('[EXIF]', photoExifData);
+    }
+  } catch(e) {
+    console.log('[EXIF] niet beschikbaar:', e.message);
+    photoExifData = null;
+  }
+}
+
 // ── State ──────────────────────────────────────────────────────────────────
 var apiKey = '';
 var software = 'lightroom';
@@ -1184,6 +1206,7 @@ var previousPhotoData = null;
 var currentSessionId = null;
 var currentAnalysis = '';
 var isAnalyzing = false;
+var photoExifData = null;
 var photoHistory = [];
 var db = null;
 var PHASE_LABELS = ['', 'FASE 1 · COMPOSITIE & GLOBAAL', 'FASE 2 · TOON & KLEUR', 'FASE 3 · LOKAAL', 'FASE 4 · FINAL TOUCH', 'FASE 5 · EINDOORDEEL'];
@@ -1703,6 +1726,8 @@ function compressImage(dataUrl, maxSizeMB, quality) {
 // ── Upload ─────────────────────────────────────────────────────────────────
 function handleUpload(file) {
   if (!file) return;
+  // EXIF uitlezen voor slimme Denoise-adviezen
+  readExif(file);
   if (!apiKey) { alert('Vul eerst je Gemini API key in en klik op CONNECT.'); return; }
   iteration = 1;
   photoHistory = [];
@@ -2079,7 +2104,18 @@ async function analyzePhoto(dataUrl,isFirst){
   var langInstruction = appLanguage === 'en'
     ? 'LANGUAGE: Respond entirely in English. Use English software terminology.'
     : 'TAAL: Antwoord volledig in het Nederlands. Gebruik Nederlandse termen maar vermeld de Engelse term tussen haakjes bij de eerste vermelding, bijv. Verzadiging (Saturation), Belichting (Exposure), Schaduwen (Shadows). Witbalans Temperatuur: vermeld ALTIJD beide varianten, bijv. "verhoog Temperatuur naar +15 punten (of naar ~5800K als je op Aangepast staat)". Vertaal GEEN paneel- of kopnamen zoals "Details and Texture" of "HSL/Color Mixer" — gebruik alleen de originele softwarenamen.';
-  var systemPrompt='Je bent een professionele fotobewerkingscoach. Geef concrete bewerkingsadviezen. Stijl: direct, enthousiast, deskundig. Format: gebruik ## koppen, geef altijd exacte waarden. '+langInstruction+' Software: '+swInstructions[software]+' '+(phaseInstructions[currentPhase]||phaseInstructions[4])+' Geen vage adviezen. TECHNISCHE PRECISIE — absoluut: (1) DETAIL-PANEEL ALLEEN FASE 1: Verscherpen, Ruisreductie, AI Denoise uitsluitend fase 1, nooit herhalen in fase 2/3/4. Detail-paneel niet maskeerbaar; Texture/Sharpness/Noise binnen masker zijn anders. (2) ALT/OPTION-TOETS: alleen bij globale Masking-slider, niet in lokaal masker. (3) COLOR GRADING GLOBAL WIEL: geen Balance-slider, die bestaat alleen bij Shadows/Midtones/Highlights. (4) WITBALANS EN TINT: nooit verhoog of verlaag gebruiken voor Temperatuur of Tint — camera stelt dit in, beginwaarde is nooit 0. Altijd absolute eindwaarden, bijv. Stel Temperatuur in op 4800K. (5) HSL HUE RICHTINGEN — Rood: links=oranje rechts=magenta. Oranje: links=rood rechts=geel. Geel: links=groen rechts=oranje. Groen: links=geel rechts=aqua. Aqua: links=groen rechts=blauw. Blauw: links=aqua rechts=paars. Paars: links=blauw rechts=magenta. Magenta: links=paars rechts=rood. (6) VIBRANCE NIET IN MASKER: Levendigheid alleen globaal in Basispaneel, nooit binnen lokaal masker — gebruik Verzadiging als alternatief. (7) GEEN HERHALINGEN: Color Grading gegeven in fase 2 mag niet opnieuw in fase 4. (8) FOTO STAAT VOOROP: kennisbank is inspiratie geen instructie. Analyseer altijd lichtomstandigheden en toonverdeling van de geuploadde foto. Als stijlfilosofie diepe zwarten vereist maar de foto al veel schaduw heeft, pas waarden aan op wat de foto verdraagt. (9) TERUGHOUDEND MET VERZADIGING: wees terughoudend met Saturation en Vibrance, zowel globaal als binnen lokale maskers. Tel bij het bepalen van waarden mentaal op wat het cumulatieve effect is van alle kleur-aanpassingen samen (globale Saturation/Vibrance plus elk lokaal masker zoals lucht of voorgrond apart) — voorkom dat losse, op zichzelf kleine boosts samen een overdreven verzadigd eindresultaat geven. Bij twijfel: kies de subtielere waarde, niet de meest opvallende.';
+  var exifContext = '';
+  if (photoExifData) {
+    exifContext = ' FOTODATA (EXIF): ';
+    if (photoExifData.iso) exifContext += 'ISO ' + photoExifData.iso + '. ';
+    if (photoExifData.shutterSpeed) exifContext += 'Sluitertijd ' + photoExifData.shutterSpeed + 's. ';
+    if (photoExifData.aperture) exifContext += 'Diafragma ' + photoExifData.aperture + '. ';
+    if (photoExifData.camera) exifContext += 'Camera: ' + photoExifData.camera + '. ';
+    if (photoExifData.iso && photoExifData.iso <= 400) exifContext += 'DENOISE ADVIES: ISO is laag — adviseer Denoise ALLEEN als er aantoonbaar zichtbare ruis in de foto is, anders niet. Beginwaarde altijd 30, nooit 100. ';
+    else if (photoExifData.iso && photoExifData.iso <= 1600) exifContext += 'DENOISE ADVIES: Matige ISO — controleer op zichtbare ruis, beginwaarde 30-40 als nodig. ';
+    else if (photoExifData.iso && photoExifData.iso > 1600) exifContext += 'DENOISE ADVIES: Hoge ISO — ruisreductie waarschijnlijk nodig, beginwaarde 40-60 afhankelijk van zichtbare ruis. ';
+  }
+  var systemPrompt='Je bent een professionele fotobewerkingscoach. Geef concrete bewerkingsadviezen. Stijl: direct, enthousiast, deskundig. Format: gebruik ## koppen, geef altijd exacte waarden. '+langInstruction+' Software: '+swInstructions[software]+' '+(phaseInstructions[currentPhase]||phaseInstructions[4])+exifContext+' Geen vage adviezen. TECHNISCHE PRECISIE — absoluut: (1) DETAIL-PANEEL ALLEEN FASE 1: Verscherpen, Ruisreductie, AI Denoise uitsluitend fase 1, nooit herhalen in fase 2/3/4. Detail-paneel niet maskeerbaar; Texture/Sharpness/Noise binnen masker zijn anders. (2) ALT/OPTION-TOETS: alleen bij globale Masking-slider, niet in lokaal masker. (3) COLOR GRADING GLOBAL WIEL: geen Balance-slider, die bestaat alleen bij Shadows/Midtones/Highlights. (4) WITBALANS EN TINT: nooit verhoog of verlaag gebruiken voor Temperatuur of Tint — camera stelt dit in, beginwaarde is nooit 0. Altijd absolute eindwaarden, bijv. Stel Temperatuur in op 4800K. (5) HSL HUE RICHTINGEN — Rood: links=oranje rechts=magenta. Oranje: links=rood rechts=geel. Geel: links=groen rechts=oranje. Groen: links=geel rechts=aqua. Aqua: links=groen rechts=blauw. Blauw: links=aqua rechts=paars. Paars: links=blauw rechts=magenta. Magenta: links=paars rechts=rood. (6) VIBRANCE NIET IN MASKER: Levendigheid alleen globaal in Basispaneel, nooit binnen lokaal masker — gebruik Verzadiging als alternatief. (7) GEEN HERHALINGEN: Color Grading gegeven in fase 2 mag niet opnieuw in fase 4. (8) FOTO STAAT VOOROP: kennisbank is inspiratie geen instructie. Analyseer altijd lichtomstandigheden en toonverdeling van de geuploadde foto. Als stijlfilosofie diepe zwarten vereist maar de foto al veel schaduw heeft, pas waarden aan op wat de foto verdraagt. (9) TERUGHOUDEND MET VERZADIGING: wees terughoudend met Saturation en Vibrance, zowel globaal als binnen lokale maskers. Tel bij het bepalen van waarden mentaal op wat het cumulatieve effect is van alle kleur-aanpassingen samen (globale Saturation/Vibrance plus elk lokaal masker zoals lucht of voorgrond apart) — voorkom dat losse, op zichzelf kleine boosts samen een overdreven verzadigd eindresultaat geven. Bij twijfel: kies de subtielere waarde, niet de meest opvallende. (10) TOONKROMME VOLGORDE: geef adviezen voor de Parametrische Toonkromme (Parametric Tone Curve) altijd in de volgorde van boven naar beneden zoals Lightroom ze toont: Hooglichten (Highlights) eerst, dan Lichte tonen (Lights), dan Donkere tonen (Darks), dan Schaduwen (Shadows). Wijk hier nooit van af. (11) HSL KLEURKANALEN: gebruik in de HSL/Kleurmixer uitsluitend de 8 bestaande kanalen: Rood, Oranje, Geel, Groen, Aqua, Blauw, Paars, Magenta. Nooit Wit, Zwart of andere niet-bestaande kanalen noemen — witte objecten worden niet beïnvloed via HSL. (12) GEEN EXPERT-VERWIJZINGEN: noem nooit Expert 1, Expert 2, Expert 3 of vergelijkbare interne verwijzingen in je output — de gebruiker weet niet wat dit betekent en het is verwarrend. (13) VIGNETTE: adviseer een vignette (via Effecten of omgekeerd radiaal filter) ALLEEN als er een concrete, benoembare reden is — randen die afleiden, onderwerp dat niet genoeg uitkomt, of compositie die erom vraagt. Nooit standaard of preventief. Als je een vignette adviseert, noem dan ook het omgekeerde radiaal filter als alternatief dat meer controle geeft. (14) NOISE REDUCTION SLIDERS: adviseer Luminantie Detail (Luminance Detail) en Luminantie Contrast (Luminance Contrast) ALLEEN als de Luminantie (Luminance) slider groter dan 0 is — deze sliders zijn niet aanpasbaar als Luminantie op 0 staat. De standaardwaarde voor Kleur (Color) is 0, niet 25.';
   var hasEditCheck=!isFirst&&previousPhotoData;
   var parts=[];
   if(hasEditCheck){
@@ -2136,7 +2172,7 @@ async function analyzePhoto(dataUrl,isFirst){
   if(mainText) cumulativeAnalysis.push('FASE '+currentPhase+': '+mainText.slice(0,500));
   output.innerHTML=renderMarkdown(mainText);
   currentAnalysis=output.innerHTML;
-  setTimeout(function(){ var scrollTarget = document.getElementById('analysisSection') || output; scrollTarget.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 100);
+  setTimeout(function(){ window.scrollTo({ top: 0, behavior: 'smooth' }); }, 100);
   statusText.textContent='V'+iteration+' GEANALYSEERD';
   document.getElementById('phaseLabel').textContent=PHASE_LABELS[currentPhase]||'';
   document.getElementById('phaseAdvanceBtn').disabled=currentPhase>=5;

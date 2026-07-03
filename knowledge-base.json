@@ -46424,5 +46424,93 @@
       "Bij het bewerken van portretten met een dromerige sfeer werkt het opzettelijk overbelichten van de basisschuif in combinatie met het agressief terugrollen van de hooglichten vele malen romiger dan een standaard neutrale belichting."
     ],
     "style_preview": "Deze stijl biedt een sfeervolle, warme en romige esthetiek die uitermate geschikt is voor portretfotografen die een nostalgische, high-end filmvibe willen realiseren. Door het strategisch dempen van harde natuurkleuren en het toepassen van een matte tooncurve, ontstaat er een serene, schilderachtige sfeer waarin het onderwerp de absolute hoofdrol speelt. De bewerkingsstijl blinkt uit bij portretten die zijn geschoten in diffuus daglicht of tijdens uitdagende situaties met fel zonlicht door bomen. Het verwachte visuele effect is een uiterst gebalanceerd beeld met perfect egale huidtinten, fluweelzachte schaduwen en een harmonieus, warm kleurenpalet dat pure professionaliteit uitstraalt."
+  },
+  {
+    "video_title": "Edit Better Portraits! Lightroom Portrait Editing Tutorial",
+    "photographer_name": "Ryan (Signature Edits)",
+    "youtube_url": "https://www.youtube.com/watch?v=r0pJeQwUrSI",
+    "genre": [
+      "portret"
+    ],
+    "light_conditions": [
+      "diffuus licht",
+      "daglicht"
+    ],
+    "mood": [
+      "naturalistisch",
+      "helder"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Natural Bright Clean Portrait",
+    "philosophy": "Bewerk portretten met een minimalistische en naturalistische aanpak waarbij minder altijd meer is. De nadruk ligt op het maken van talloze subtiele, incrementele verbeteringen die samen een gepolijst eindresultaat vormen zonder dat de foto er overbewerkt uitziet. Door extreme aanpassingen te vermijden, blijft het portret tijdloos en behoudt het een organische uitstraling.",
+    "workflow_order": [
+      "stap 1: Pas de witbalans nauwkeurig aan om kleurzwemen in de huidtinten te corrigeren",
+      "stap 2: Voer incrementele belichtingsaanpassingen uit in de basistonaliteit",
+      "stap 3: Gebruik radiale filters om het onderwerp subtiel te scheiden van de achtergrond",
+      "stap 4: Pas lokale textuurborstels toe om specifieke details zoals ogen en wimpers aan te scherpen"
+    ],
+    "techniques": [
+      {
+        "name": "Kleurzweem Huidcorrectie",
+        "description": "Verhoog de Tint-slider naar de magenta zijde om een ongewenste groene kleurzweem in de huid subtiel te neutraliseren",
+        "when_to_use": "Wanneer de camera een groenige of onnatuurlijke tint in de huidtinten heeft vastgelegd",
+        "tools": [
+          "Witbalans"
+        ],
+        "effect": "De huid krijgt een gezondere, warmere en meer natuurlijke uitstraling"
+      },
+      {
+        "name": "Radiale Onderwerpscheiding",
+        "description": "Plaats een radiaal filter over het gezicht, verlaag de contrastwaarde en verhoog de belichting minimaal om het gezicht te verzachten en te laten oplichten",
+        "when_to_use": "Bij portretten waarbij het onderwerp meer nadruk moet krijgen en visueel losgemaakt moet worden van de achtergrond",
+        "tools": [
+          "Radiaal filter"
+        ],
+        "effect": "Het gezicht springt er subtiel uit en de huidstructuur oogt direct egaler"
+      },
+      {
+        "name": "Inverted Achtergrond Vignettering",
+        "description": "Dupliceer het radiale filter over het gezicht en gebruik de apostrof-sneltoets om het filter om te keren, verlaag vervolgens de belichting buiten de cirkel",
+        "when_to_use": "Wanneer een standaard vignet te onnauwkeurig is en je gerichte controle wilt over het donkerder maken van de achtergrond",
+        "tools": [
+          "Radiaal filter"
+        ],
+        "effect": "De achtergrond wordt rondom het onderwerp verduisterd waardoor de blik naar het model wordt getrokken"
+      },
+      {
+        "name": "Scherpte Maskering met Alt-toets",
+        "description": "Houd de Alt-toets ingedrukt tijdens het opschuiven van de Masking-slider om de verscherping puur te beperken tot de contrastrijke lijnen van het gezicht",
+        "when_to_use": "Bij elke portretfoto om te voorkomen dat egale huiddelen of achtergrondruis ongewenst worden verscherpt",
+        "tools": [
+          "Verscherpen"
+        ],
+        "effect": "Alleen de contouren zoals ogen, wenkbrauwen en lippen worden scherp, terwijl de zachte huiddelen onaangetast blijven"
+      },
+      {
+        "name": "Lokale Textuur Verscherping",
+        "description": "Gebruik een aanpassingspenseel met verhoogde textuur om gericht over wimpers, wenkbrauwen en sieraden te strijken",
+        "when_to_use": "Om specifieke details extra pit te geven zonder de algehele scherpte van de huid te verruwen",
+        "tools": [
+          "Aanpassingspenseel"
+        ],
+        "effect": "De wenkbrauwen en wimpers worden sprekender en details in kleding of sieraden springen eruit"
+      }
+    ],
+    "color_approach": "Kleur wordt heel subtiel en dicht bij de realiteit gehouden. Er wordt primair gefocust op het corrigeren van onnatuurlijke kleurzwemen in de huid via de witbalanssliders, waarna eventuele achtergrondkleuren zoals groen subtiel worden aangepast om storende contrasten met het onderwerp te verminderen.",
+    "local_adjustments": "Lokale aanpassingen vormen de kern van de workflow via radiale filters en penselen. Radiale filters worden ingezet om het onderwerp op te lichten en te verzachten, terwijl gerichte penselen worden gebruikt om de iris te versterken, kledingstructuren te accentueren of lokale oneffenheden nauwkeurig weg te werken.",
+    "what_to_avoid": [
+      "Het kopiëren van spot removal-aanpassingen naar andere foto's in een serie",
+      "Het te helder maken van de irissen van de ogen waardoor een onnatuurlijk griezelig effect ontstaat",
+      "Te ver doorvoeren van trendy kleurbewerkingen waardoor de foto's snel dateren"
+    ],
+    "best_for": "Portretfotografen die streven naar een frisse, zachte en realistische uitstraling met subtiele subjectseparatie en egale huidtinten.",
+    "unique_insights": [
+      "Als een bewerking visueel goed oogt, dwing jezelf dan om de intensiteit van de sliders direct met 10 tot 15 procent terug te schroeven om overbewerking te voorkomen.",
+      "Het verlagen van het contrast binnen een radiaal filter op het gezicht werkt effectiever om de huid te verzachten en een natuurlijke gloed te geven dan zware skin-softening penselen.",
+      "Gebruik de tooncurve om pure witten om te zetten in een zachte grijstint en pure zwarten iets op te lichten voor een romige, organische filmvibe die minder digitaal oogt."
+    ],
+    "style_preview": "De visuele sfeer van deze stijl is helder, zacht en uiterst natuurgetrouw. De kernfilosofie draait om het perfectioneren van het portret door middel van minuscule, opeengestapelde correcties in plaats van extreme slider-aanpassingen. Deze benadering werkt het beste bij portretten die zijn geschoten in kwalitatief goed, diffuus daglicht. Het verwachte resultaat is een tijdloos portret met een subtiele subjectseparatie, sprekende ogen en een egale, gezonde huidtextuur zonder dat de nabewerking er dik bovenop ligt."
   }
 ]

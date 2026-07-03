@@ -45305,5 +45305,98 @@
       "Bij het bouwen van herbruikbare voorinstellingen is het beter om vloeiende en geleidelijke curves te gebruiken in plaats van agressieve S-bochten, omdat extreme tooncurves sneller mislukken wanneer ze op een andere foto worden geplakt"
     ],
     "style_preview": "Deze stijl kenmerkt zich door een zachte, romige sfeer met gedempte hooglichten en matte schaduwen die sterk doen denken aan klassieke analoge film. De kernfilosofie draait om het handmatig opbouwen van contrast en kleur via de tooncurve in plaats van automatische schuifjes. Het werkt het beste bij portretten in hard daglicht of tegenlicht, waar het de scherpe digitale randjes verzacht. Als fotograaf kun je een rijke, warme kleurgradatie verwachten waarbij het onderwerp op een natuurlijke manier loskomt van een rustige achtergrond."
+  },
+  {
+    "video_title": "This CHANGED My Editing... Learn Lightroom Curves In 20 Minutes",
+    "photographer_name": "Ryan - Signature Edits",
+    "youtube_url": "https://www.youtube.com/watch?v=iIWZFiKn6vQ",
+    "genre": [
+      "portret",
+      "reisfotografie",
+      "algemeen"
+    ],
+    "light_conditions": [
+      "harde zon",
+      "tegenlicht",
+      "daglicht",
+      "kust"
+    ],
+    "mood": [
+      "cinematisch",
+      "levendig",
+      "moody"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Creamy Analoge Film Look",
+    "philosophy": "De tooncurve biedt een chirurgische precisie om contrast en kleur te controleren, vergelijkbaar met een beitel versus een kettingzaag bij de standaard schuifjes. Door eerst de extremen in de basisinstellingen te neutraliseren, ontstaat er een gebalanceerd canvas. Vervolgens worden de tooncurve en lokale maskers ingezet om heel specifiek sfeer en textuur terug te brengen zonder de digitale integriteit aan te tasten.",
+    "workflow_order": [
+      "stap 1: Verlaag het algemene contrast en de hooglichten in het basispaneel en open de schaduwen om verborgen details te herstellen",
+      "stap 2: Voeg selectief micro-contrast toe met de hoofd-tooncurve door specifieke grijswaarden handmatig te verschuiven",
+      "stap 3: Kopieer en plak een basis S-curve over de individuele rode, groene en blauwe kanalen om een neutrale, krachtige contrastbasis te leggen",
+      "stap 4: Gebruik de AI-maskers voor huid of achtergrond om lokale tooncurve-aanpassingen via de Amount-slider subtiel in te mengen"
+    ],
+    "techniques": [
+      {
+        "name": "Chirurgische Tooncorrectie",
+        "description": "Gebruik de Point Clicker tool om een specifieke grijswaarde in de foto te selecteren en schuif deze gericht omhoog of omlaag om lokaal contrast te herstellen",
+        "when_to_use": "Wanneer de standaard contrastschuif schaduwen volledig dicht laat lopen of hooglichten ongewenst uitbijt",
+        "tools": [
+          "Tooncurve"
+        ],
+        "effect": "Specifieke delen van de foto krijgen direct meer diepte en pop, terwijl omliggende helderheden onaangeroerd blijven"
+      },
+      {
+        "name": "Buttery Sky Recovery",
+        "description": "Sleep het uiterste witpunt in de rechterbovenhoek van de tooncurve lineair naar beneden om felle, uitgebleekte witten om te zetten in een zachte grijstoon",
+        "when_to_use": "Bij uitgebleekte luchten met lelijke digitale banding of harde clipping rondom lichtbronnen",
+        "tools": [
+          "Tooncurve"
+        ],
+        "effect": "De overgang in de lucht wordt direct vloeiend, romig en krijgt een zacht, analoog karakter"
+      },
+      {
+        "name": "RGB S-Curve Synchronisatie",
+        "description": "Bouw een perfecte S-curve in het rode kanaal, klik met de rechtermuisknop om de kanaalinstellingen te kopiëren en plak deze exact over het groene en blauwe kanaal",
+        "when_to_use": "Als basisopzet voor kleurgradaties, om een krachtig contrast te genereren zonder direct de kleurbalans te verschuiven",
+        "tools": [
+          "Tooncurve"
+        ],
+        "effect": "Er ontstaat een zeer rijk en diep contrast dat als perfect startpunt dient voor subtiele kleurverschuivingen via de pijltoetsen"
+      },
+      {
+        "name": "Huidverzachting via Tooncurve-Masker",
+        "description": "Maak een AI-masker voor de huid aan, breng de hooglichten in de curve omlaag en trek de schaduwen en middentonen subtiel omhoog om het contrast lokaal te breken",
+        "when_to_use": "Bij portretten in hard zonlicht met diepe schaduwen onder de ogen en felle hotspots op het voorhoofd",
+        "tools": [
+          "Tooncurve",
+          "Maskeren"
+        ],
+        "effect": "Harde lichtovergangen op het gezicht verdwijnen direct, waardoor de huid een egale, matte en professioneel geretoucheerde indruk achterlaat"
+      },
+      {
+        "name": "Matte Schaduw Fade",
+        "description": "Pak het uiterste zwartpunt in de linkerbenedenhoek van de tooncurve vast en trek dit verticaal omhoog om de puur zwarte tinten te dempen",
+        "when_to_use": "Bij het creëren van een vintage of filmische sfeer waarin gitzwarte schaduwen te hard overkomen",
+        "tools": [
+          "Tooncurve"
+        ],
+        "effect": "De diepste schaduwen transformeren in een zachte, matte grijstoon die herinneringen oproept aan klassieke filmrollen"
+      }
+    ],
+    "color_approach": "Kleur wordt opgebouwd door de fundamentele interactie tussen de rode, groene en blauwe kanalen in de tooncurve te sturen. In plaats van globale kleurverschuivingen toe te passen, worden complementaire tinten — zoals geel door het verlagen van blauw — specifiek in bepaalde helderheidszones geïntroduceerd. Dit maakt het mogelijk om bijvoorbeeld een harmonieuze 'teal and orange' look te weven zonder het kleurgradatiepaneel te openen.",
+    "local_adjustments": "Lokale maskers, met name AI-gestuurde selecties voor personen en achtergronden, worden intensief gecombineerd met de tooncurve. Door de tooncurve binnen een masker te isoleren, kunnen hotspots op de huid of contrasten in de achtergrond onafhankelijk worden gecorrigeerd zonder de algehele sfeer van de foto te verstoren.",
+    "what_to_avoid": [
+      "Het creëren van een golvende of te grillige tooncurve line, wat direct leidt tot onnatuurlijke artefacten en omgekeerde contrasten",
+      "Het direct slepen aan curvepunten met de muis bij subtiele kleuraanpassingen, aangezien dit snel resulteert in een te extreme kleurzweem"
+    ],
+    "best_for": "Fotografen die volledige controle willen over contrastovergangen en een subtiele, hoogwaardige analoge kleurafwerking in hun portretten of reisfotografie zoeken.",
+    "unique_insights": [
+      "De handigste manier om minutieuze aanpassingen in de tooncurve te doen zonder per ongeluk nieuwe punten aan te maken, is door over een bestaand punt te hooveren en de pijltoetsen op het toetsenbord te gebruiken",
+      "Door exact dezelfde S-curve te kopiëren en te plakken over alle drie de RGB-kanalen, creëer je een stabiel contrast dat veel minder snel 'breekt' of lelijke kleurartefacten oplevert dan wanneer je de hoofdcurve agressief indrukt",
+      "Het herstellen van huidtinten werkt het beste door de curve binnen het masker eerst bewust te ver oversturen qua kleur en contrast, om vervolgens met de Amount-slider de perfecte balans terug te vinden"
+    ],
+    "style_preview": "Deze stijl kenmerkt zich door een uiterst verfijnde, romige sfeer met matte schaduwen en perfect gecontroleerde hooglichten die de scherpe digitale randjes van moderne sensoren wegnemen. De kernfilosofie draait om het selectief herstellen en opbouwen van contrast via de tooncurve in plaats van grove, globale aanpassingen. Het werkt het beste bij portretten en reisfotografie in uitdagende lichtomstandigheden, zoals felle zon of hard tegenlicht aan de kust. Als fotograaf kun je een boterzachte huidweergave en een rijke, filmische kleurbalans verwachten waarbij het onderwerp op een natuurlijke en organische wijze tot leven komt."
   }
 ]

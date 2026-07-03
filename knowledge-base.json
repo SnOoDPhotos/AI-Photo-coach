@@ -46601,5 +46601,96 @@
       "Bij het corrigeren van chromatische aberratie of kleurschades werkt de handmatige pipet (De-fringe) vele malen effectiever op de exacte contrastranden dan de automatische profielcorrecties van Lightroom."
     ],
     "style_preview": "Deze stijl kenmerkt sich door een heldere, levendige en uiterst schone landschapsweergave. De visuele sfeer is gebaseerd op het herstellen van authentieke contrasten en het subtiel isoleren van het hoofdonderwerp van de achtergrond. De stijl blinkt uit bij landschapsopnames die zijn gemaakt tijdens uitdagende lichtomstandigheden met een hoog dynamisch bereik, zoals felle zon of bewolkte dagen. Een fotograaf die deze benadering toepast, kan een eindresultaat verwachten waarin de details in bergen en wolken maximaal tot hun recht komen, terwijl de foto te allen tijde zijn geloofwaardige en natuurlijke esthetiek behoudt."
+  },
+  {
+    "video_title": "Wedding Photography Editing Tutorial - Full Wedding Workflow In Lightroom",
+    "photographer_name": "Ryan (Signature Edits)",
+    "youtube_url": "https://www.youtube.com/watch?v=FzDyjkA_GaA",
+    "genre": [
+      "trouwfotografie"
+    ],
+    "light_conditions": [
+      "harde zon",
+      "daglicht",
+      "schaduw",
+      "gemengd licht"
+    ],
+    "mood": [
+      "naturalistisch",
+      "helder"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Clean Natural Honey Wedding",
+    "philosophy": "De bewerkingsfilosofie richt zich op een uiterst naturalistische en tijdloze weergave van de trouwdag, waarbij overbewerking en extreme kleurgrades bewust worden vermeden om te voorkomen dat foto's snel dateren. In plaats van ingewikkelde effecten ligt het accent op het herstellen en balanceren van het licht via transparante, opeengestapelde lokale maskers. Door het contrast lokaal te verminderen en witten op te lichten, wordt hard zonlicht omgevormd tot een zacht, harmonieus en consistent geheel.",
+    "workflow_order": [
+      "stap 1: Sorteer de volledige set buiten de bewerkingssoftware in Photo Mechanic voor een snelle selectie van keepers en rejects",
+      "stap 2: Importeer de selectie in een unieke Lightroom-catalogus per koppel en pas globaal een consistent, natuurlijk basispreset toe",
+      "stap 3: Corrigeer de witbalans en de algehele belichting per individueel beeld om consistentie door de dag heen te waarborgen",
+      "stap 4: Gebruit gerichte lokale filters en penselen om harde contrasten op gezichten te verzachten en onderwerpen te isoleren"
+    ],
+    "techniques": [
+      {
+        "name": "Transparant Gezichtsspotlight",
+        "description": "Plaats een radiaal filter over het gezicht van het model, verlaag het contrast volledig naar -100 en verhoog de Whites om het gezicht op te lichten zonder een harde belichtingsrand te creëren",
+        "when_to_use": "Bij portretten in hard zonlicht waarbij het gezicht van het model in de schaduw valt en te donker oogt ten opzichte van de achtergrond",
+        "tools": [
+          "Radiaal filter"
+        ],
+        "effect": "Het gezicht wordt op een organische, vloeiende manier helderder zonder de typische digitale 'glow' van de exposure-slider"
+      },
+      {
+        "name": "Luminance Highlight Recovery",
+        "description": "Gebruik een aanpassingspenseel over overbelichte struiken of achtergronden, activeer een Luminance Range Mask op de hoogste waarden (80-100) en verlaag gericht de Highlights en het Contrast",
+        "when_to_use": "Wanneer delen van de achtergrond of vegetatie volledig uitbijten door fel, direct middagzonlicht",
+        "tools": [
+          "Aanpassingspenseel",
+          "Luminantiebereikmasker"
+        ],
+        "effect": "De overbelichte details in de achtergrond worden subtiel gedempt en hersteld zonder dat de middentonen van de rest van de foto veranderen"
+      },
+      {
+        "name": "Kleurzweem Neutralisatie via Witbalans",
+        "description": "Teken met een lokaal penseel over de huid van het model en verschuif de Temp-slider naar de blauwe zijde of voeg Tint (magenta) toe om selectief reflecterend groen of geel licht op te heffen",
+        "when_to_use": "Wanneer modellen in een bos of op een gazon staan en het zonlicht via de bladeren een onnatuurlijke groengele zweem op de huid werpt",
+        "tools": [
+          "Aanpassingspenseel"
+        ],
+        "effect": "De huidtinten worden lokaal gecorrigeerd naar een gezonde, natuurlijke kleur, terwijl de omringende natuur haar eigen tint behoudt"
+      },
+      {
+        "name": "Gele Gras- en Bladsanering",
+        "description": "Ga naar het HSL-paneel, kies Saturation en verlaag gericht de verzadiging van de Yellows om giftige of felgekleurde neon-elementen uit de vegetatie te filteren",
+        "when_to_use": "Bij buitenlocaties waar het gras en de bladeren door felle zonneschijn een storende, felgele gloed reflecteren",
+        "tools": [
+          "HSL / Kleur"
+        ],
+        "effect": "De achtergrond oogt direct rustiger en minder dominant, waardoor de bruid en bruidegom visueel veel beter loskomen van de omgeving"
+      },
+      {
+        "name": "Handmatige Vignet-Compensatie",
+        "description": "Schakel de automatische profielcorrecties van de lens uit en schuif handmatig de Vignetting-slider onder het manual-tabblad omhoog om de donkere hoeken subtiel te verlichten",
+        "when_to_use": "Wanneer de automatische lenscorrecties van de software de hoeken te agressief oplichten en de foto een onnatuurlijk plat karakter geven",
+        "tools": [
+          "Lenscorrecties"
+        ],
+        "effect": "Er ontstaat een veel geleidelijkere en rustigere overgang van de hoeken naar het centrum van het beeld"
+      }
+    ],
+    "color_approach": "De benadering van kleur is strikt geworteld in realisme en subtiliteit. In plaats van kleuren drastisch te vervormen, wordt er een subtiele honingzoete of warme gloed toegevoegd die de huidtinten flatteert. De belangrijkste focus ligt op het elimineren van storende, neon-achtige geel- en groenwaarden in de natuur via het HSL-paneel en het handmatig neutraliseren van cross-lighting (zoals warm kunstlicht gemengd met koud vensterlicht) met behulp van lokale witbalanspenselen.",
+    "local_adjustments": "Lokale aanpassingen zijn de absolute hoeksteen van de workflow en worden extreem breed en vloeiend toegepast met een feather-waarde die vrijwel altijd op 100% staat. Radiale filters worden ingezet als mobiele spotlights om gezichten in de schaduw op te lichten, terwijl graduele filters en luminantiemaskers worden gebruikt om overbelichte luchten te dempen of de belichting van groepen mensen in gemengd licht handmatig in balans te brengen.",
+    "what_to_avoid": [
+      "Het hernoemen van bestanden tijdens de export naar generieke namen, waardoor de koppeling met het originele raw-bestand permanent verloren gaat",
+      "Het te ver doorschuiven van de Highlights-slider naar de negatieve zijde, wat resulteert in een onnatuurlijke en modderige HDR-look",
+      "Het te strak en accuraat maskeren met een hard penseel, waardoor bewerkingslijnen en overgangen direct zichtbaar worden voor het oog"
+    ],
+    "best_for": "Trouwfotografen die te maken hebben met snelwisselende en harde lichtomstandigheden en behoefte hebben aan een efficiënte workflow die resulteert in een tijdloze, natuurlijke beeldoverdracht.",
+    "unique_insights": [
+      "Als je te maken hebt met een extreem harde schaduw op een gezicht, breng dan de algehele belichting van de foto omlaag totdat het highlight-deel op het gezicht correct is belicht, en gebruik vervolgens opeenvolgende lokale penselen met verlaagd contrast om de schaduwkant handmatig op te trekken.",
+      "Vaste brandpunten zoals een 35mm lens creëren bij reportages een veel intiemer en natuurlijker gevoel van 'erbij zijn' dan een lange 70-200mm telelens, omdat die laatste door depth compression de gezichten visueel breder en platter maakt.",
+      "In plaats van te vechten tegen een onherstelbare witbalans- of contrastfout veroorzaakt door felle zonreflecties op een gekleurde achterwand, kun je de foto beter direct omzetten naar zwart-wit; dit redt het moment en verhoogt de artistieke waarde."
+    ],
+    "style_preview": "De visuele sfeer van deze stijl is warm, helder en buitengewoon natuurgetrouw met een subtiele, romige honing-vibe in de lichte delen. De stijl streeft naar een getrouwe en elegante registratie van de werkelijkheid waarbij de nabewerking volledig ten dienste staat van het moment. Deze benadering levert de mooiste resultaten op bij beelden die zijn geschoten in uitdagend middaglicht of diepe schaduwomgevingen met complexe reflecties. Een fotograaf die deze workflow hanteert, kan een consistente fotoreeks verwachten met perfect gebalanceerde huidtinten, zachte contrastovergangen en een tijdloze esthetiek die de tand des tijds moeiteloos doorstaat."
   }
 ]

@@ -45202,5 +45202,108 @@
       "Het combineren van belichtingen is niet bedoeld om de werkelijkheid te veranderen, maar om de camera-beperkingen te overbruggen."
     ],
     "style_preview": "Deze stijl kenmerkt zich door een technisch perfecte balans tussen licht en donker. De bewerking is subtiel maar krachtig, gericht op het benadrukken van structuren en texturen in industriële omgevingen. Als fotograaf kun je deze aanpak gebruiken om scènes vast te leggen die voor het blote oog onmogelijk in één keer correct belicht zouden zijn. Het verwachte visuele effect is een uiterst gedetailleerd beeld dat direct indruk maakt door zijn natuurlijke, maar spectaculaire diepte."
+  },
+  {
+    "video_title": "The Last Tone Curve Tutorial You'll Ever Need To Watch",
+    "photographer_name": "Ryan - Signature Edits",
+    "youtube_url": "https://www.youtube.com/watch?v=6CvSFieQGkw",
+    "genre": [
+      "portret",
+      "algemeen"
+    ],
+    "light_conditions": [
+      "harde zon",
+      "tegenlicht",
+      "daglicht"
+    ],
+    "mood": [
+      "moody",
+      "cinematisch",
+      "levendig"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Creamy Vintage Color Grade",
+    "philosophy": "De tooncurve is het krachtigste gereedschap om controle te krijgen over contrast en kleur zonder de foto een hard digitaal uiterlijk te geven. Door eerst de afbeelding volledig plat te maken in de basisinstellingen, ontstaat er een schone lei met maximaal dynamisch bereik. Vervolgens wordt met de tooncurve en lokale maskers heel gericht contrast en kleurkarakter teruggebracht in de foto.",
+    "workflow_order": [
+      "stap 1: Verminder het algemene contrast en de hooglichten in het basispaneel en verhoog de schaduwen om een volledig platte basis te creëren met maximaal dynamisch bereik",
+      "stap 2: Voeg selectief contrast en punch terug in de afbeelding met behulp van de hoofd-tooncurve of specifieke lokale maskers",
+      "stap 3: Gebruik de individuele RGB-kanalen van de tooncurve om handmatig kleurtinten toe te voegen aan specifieke helderheden, zoals warmte in de huid of koelte in de schaduwen",
+      "stap 4: Pas de Amount-slider aan om de intensiteit van de gecombineerde tooncurve-aanpassingen met 50 procent terug te draaien voor een natuurlijk resultaat"
+    ],
+    "techniques": [
+      {
+        "name": "Basis HDR Flattening",
+        "description": "Zet het algemene contrast omlaag naar een minimale waarde en verlaag de hooglichten en witten aanzienlijk, terwijl de schaduwen en zwarttinten flink worden verhoogd om alle details in de extremen te herstellen",
+        "when_to_use": "Bij foto's met een extreem hoog dynamisch bereik, zoals zonsondergangen of felle tegenlichtsituaties",
+        "tools": [
+          "Basis"
+        ],
+        "effect": "De foto wordt heel plat en zacht, waardoor alle verborgen details in de schaduwen en hooglichten direct zichtbaar worden"
+      },
+      {
+        "name": "Lokaal Luchtcontrast via Tooncurve",
+        "description": "Maak een masker aan voor de lucht en pas binnen dit masker een sterke S-curve toe in de tooncurve door de hooglichten omhoog te trekken en de schaduwen krachtig te verlagen",
+        "when_to_use": "Wanneer de lucht in een landschap of portret flets is en extra dramatiek en scheiding nodig heeft",
+        "tools": [
+          "Tooncurve",
+          "Maskeren"
+        ],
+        "effect": "De lucht krijgt direct veel punch, diepte en contrast, zonder dat het hoofdonderwerp of de voorgrond wordt beïnvloed"
+      },
+      {
+        "name": "Huid Verzachten met Tooncurve",
+        "description": "Selecteer het gezicht met een masker, zet een punt in de schaduwen van de tooncurve en trek dit omhoog, en zet een punt in de hooglichten en trek dit omlaag om het contrast lokaal te breken",
+        "when_to_use": "Bij portretten die in het felle middaglicht zijn genomen met harde schaduwovergangen op het gezicht",
+        "tools": [
+          "Tooncurve",
+          "Maskeren"
+        ],
+        "effect": "Harde overgangen verdwijnen en de huidtextuur oogt direct een stuk gladder en romiger"
+      },
+      {
+        "name": "Rijke Huidtinten via RGB-kanalen",
+        "description": "Verhoog het rode kanaal in de hooglichten met een paar stappen via de pijltoetsen en verlaag het groene kanaal in dezelfde zone met een paar stappen naar beneden om handmatig magenta en rood toe te voegen",
+        "when_to_use": "Wanneer de huidtinten er bleek, flets of te digitaal uitzien en een gezonde, warme kleur vereisen",
+        "tools": [
+          "Tooncurve"
+        ],
+        "effect": "De huid krijgt direct meer diepte en een warme, levendige kleurtoon zonder de rest van de kleurbalans te verstoren"
+      },
+      {
+        "name": "Matte Vintage Look",
+        "description": "Sleep het uiterste zwartpunt linksonder in de tooncurve subtiel omhoog naar een waarde van ongeveer 5 tot 10 procent en trek het uiterste witpunt rechtsboven iets omlaag",
+        "when_to_use": "Bij het creëren van een nostalgische of analoge filmvibe in portret- of reisfoto's",
+        "tools": [
+          "Tooncurve"
+        ],
+        "effect": "De diepste schaduwen worden matgrijs en de felle witten worden gedempt, wat een zachte, analoge uitstraling geeft"
+      },
+      {
+        "name": "Achtergrond Doven voor Onderwerpscheiding",
+        "description": "Selecteer de achtergrond met een masker, verlaag het witpunt van de tooncurve en verhoog het zwartpunt om het contrast in de achtergrond volledig te verminderen",
+        "when_to_use": "Wanneer de achtergrond te druk is of te veel afleidt van het hoofdonderwerp in een portret",
+        "tools": [
+          "Tooncurve",
+          "Maskeren"
+        ],
+        "effect": "De achtergrond krijgt een vlakke, romige textuur waardoor het onderwerp visueel loskomt en scherper oogt"
+      }
+    ],
+    "color_approach": "De kleurbenadering steunt zwaar op de relatie tussen de primaire RGB-kanalen. In plaats van te vertrouwen op de standaard HSL-schuifjes, worden complementaire kleurverschuivingen rechtstreeks in de tooncurve aangebracht om een filmische sfeer te weven. Door rood, groen en blauw selectief te verhogen of te verlagen in specifieke helderheidszones, transformeert de digitale kleurbalans in een rijke, analoge stijl.",
+    "local_adjustments": "Maskers worden intensief gebruikt in combinatie met de tooncurve om contrast en kleur uitsluitend op specifieke beeldelementen toe te passen. Dit maakt het mogelijk om de lucht extreem hard aan te zetten, de achtergrond te verzachten en de huid apart te kleuren zonder dat de aanpassingen met elkaar vloeken.",
+    "what_to_avoid": [
+      "Het te extreem doorvoeren van de matte vintage look waardoor de foto futloos wordt",
+      "Het toepassen van te agressieve S-curves in presets waardoor ze direct breken op andere afbeeldingen",
+      "Kleur toevoegen aan de allerhoogste witten, aangezien dit er onrealistisch uitziet"
+    ],
+    "best_for": "Portret- en reisfotografen die hard digitaal licht willen omzetten in een zachte, romige en filmische sfeer met volledige controle over kleurgradaties.",
+    "unique_insights": [
+      "Het toepassen van kleurveranderingen in de RGB-kanalen werkt het meest realistisch als je dit in de middentonen doet, omdat in het echte leven extreem felle hooglichten puur wit zijn en geen kleurinformatie vasthouden",
+      "Wanneer een handmatige aanpassing in de tooncurve te intens oogt, kan de Amount-slider van het masker gebruikt worden om de volledige curve subtiel in te mengen, in plaats van alle individuele punten opnieuw te moeten verplaatsen",
+      "Bij het bouwen van herbruikbare voorinstellingen is het beter om vloeiende en geleidelijke curves te gebruiken in plaats van agressieve S-bochten, omdat extreme tooncurves sneller mislukken wanneer ze op een andere foto worden geplakt"
+    ],
+    "style_preview": "Deze stijl kenmerkt zich door een zachte, romige sfeer met gedempte hooglichten en matte schaduwen die sterk doen denken aan klassieke analoge film. De kernfilosofie draait om het handmatig opbouwen van contrast en kleur via de tooncurve in plaats van automatische schuifjes. Het werkt het beste bij portretten in hard daglicht of tegenlicht, waar het de scherpe digitale randjes verzacht. Als fotograaf kun je een rijke, warme kleurgradatie verwachten waarbij het onderwerp op een natuurlijke manier loskomt van een rustige achtergrond."
   }
 ]

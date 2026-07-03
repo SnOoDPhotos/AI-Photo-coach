@@ -45579,5 +45579,100 @@
       "Een geavanceerde manier om microcontrasten te finishen is het dupliceren van de laag in aanvullende beeldbewerkingssoftware, deze op 'Vermenigvuldigen' (Multiply) te zetten en de dekking met 20-30% terug te schroeven."
     ],
     "style_preview": "Deze stijl kenmerkt sich door een uiterst levendige, warme en avontuurlijke sfeer met diepe contrasten en een schitterende gouden gloed. De kernfilosofie draait om het selectief versterken van de elementen die moeder natuur al heeft klaargezet, waardoor een cinematisch reiseffect ontstaat. Het werkt uitstekend voor uitgestrekte berglandschappen en outdoor-portretten tijdens het gouden uur, waarbij kledingkleuren krachtig afsteken tegen de omgeving. Als fotograaf kun je een contrastrijk, scherp en meeslepend resultaat verwachten dat direct de grootsheid van de locatie overbrengt."
+  },
+  {
+    "video_title": "Street Photography Lightroom Editing Tutorial (Free Raw File)",
+    "photographer_name": "Signature Edits",
+    "youtube_url": "https://www.youtube.com/watch?v=afHAXvkGXig",
+    "genre": [
+      "straatfotografie"
+    ],
+    "light_conditions": [
+      "kunstlicht",
+      "gemengd licht",
+      "schaduw"
+    ],
+    "mood": [
+      "dramatisch",
+      "moody",
+      "levendig"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Moody Halation Street Architecture",
+    "philosophy": "De benadering van bewerking steunt op het opbouwen van een foto door middel van kleine, incrementele en opeenvolgende aanpassingen in plaats van grove, globale verschuivingen. Het uiteindelijke beeld wordt gevormd door selectief licht toe te voegen en de achtergrond juist te verduisteren, waardoor een cinematisch chiaroscuro-effect ontstaat. De camera-instellingen beschermen allereerst de felle lichtpunten, waarna het onderwerp handmatig uit de schaduw wordt getrokken.",
+    "workflow_order": [
+      "stap 1: Pas een subtiel warm kleurprofiel of preset toe als neutraal startpunt.",
+      "stap 2: Corrigeer de witbalans naar een warmere waarde (circa 3400 Kelvin) en stel de globale belichting af op de highlights.",
+      "stap 3: Plaats brede radiële filters over het onderwerp om de harde contrasten rondom de persoon direct te verzachten.",
+      "stap 4: Maskeer handmatig en op hoog zoomniveau het onderwerp om specifieke luminantie-correcties toe te passen.",
+      "stap 5: Breng kunstmatige halation en gloed aan op de aanwezige lichtbronnen met gerichte lokale filters."
+    ],
+    "techniques": [
+      {
+        "name": "Gelaagd radieel spotlighten",
+        "description": "Plaats een groot radieel filter over het onderwerp, verlaag het contrast lichtjes en breng de Hooglichten omhoog om een subtiele, onopvallende lichtbundel te creëren.",
+        "when_to_use": "Wanneer het onderwerp zich in een donkere omgeving bevindt en handmatige penseelselecties te veel tijd kosten of onnatuurlijk ogen.",
+        "tools": [
+          "Radieel filter (Maskeren)"
+        ],
+        "effect": "Het onderwerp wordt geleidelijk losgemaakt van de achtergrond zonder dat er harde, zichtbare bewerkingsranden ontstaan."
+      },
+      {
+        "name": "Contrastvriendelijk oplichten",
+        "description": "Verlaag het lokale contrast naar -15 tot -25 en verhoog gelijktijdig de Hooglichten (+20) en Witte tinten (+15) binnen het persoonsmasker in plaats van de Belichting te openen.",
+        "when_to_use": "Bij onderwerpen die in diepe schaduw staan en helderder moeten worden zonder dat de schaduwpartijen flets en grijs uitslaan.",
+        "tools": [
+          "Aanpassingspenseel (Maskeren)"
+        ],
+        "effect": "De heldere delen van de persoon lichten krachtig op, terwijl de natuurlijke zwarte tonen en diepte in de kleding behouden blijven."
+      },
+      {
+        "name": "Lenskanaal-halation simulatie",
+        "description": "Creëer een radieel filter over een felle lamp, zet de doezelaar (Feather) op 100, verlaag de Helderheid en Structuur sterk en schuif Dehaze naar negatieve waarden (-20 tot -40).",
+        "when_to_use": "Rondom sterke kunstlichtbronnen in architectuur- of straatbeelden om de look van vintage lenzen na te bootsen.",
+        "tools": [
+          "Radieel filter",
+          "Dehaze",
+          "Helderheid"
+        ],
+        "effect": "Er ontstaat een sfeervolle, dromerige gloed rondom de lichtbron die de scherpe digitale randen volledig verzacht."
+      },
+      {
+        "name": "Complementaire schaduw-kleurcorrectie",
+        "description": "Schilder met een penseel (Flow op 30%) over specifieke kledingpartijen en voeg Geel en Magenta toe om blauwgroene kleurzweven op te heffen.",
+        "when_to_use": "Wanneer een onderwerp deels door koud daglicht en deels door warm kunstlicht wordt geraakt, wat leidt tot een ongewenste kleurbreuk op textiel.",
+        "tools": [
+          "Aanpassingspenseel",
+          "Temperatuur",
+          "Tint"
+        ],
+        "effect": "De storende blauwe of groenachtige gloed op de schaduwzijde van kleding verdwijnt en blendt naadloos met de omgeving."
+      },
+      {
+        "name": "Graduele achtergrond-dramatisering",
+        "description": "Trek een gegradueerd filter over de onderzijde of achtergrond, verhoog Dehaze aanzienlijk en breng de Schaduwen subtiel omhoog om clipping te voorkomen.",
+        "when_to_use": "Op grote, oninteressante vlakken zoals vloeren of muren die te veel licht reflecteren en de blik afleiden.",
+        "tools": [
+          "Gegraadueerd verloopfilter",
+          "Dehaze"
+        ],
+        "effect": "De omgeving krijgt extra visueel drama en textuur, terwijl de details in het diepe zwart beschermd blijven."
+      }
+    ],
+    "color_approach": "Kleurbeheer richt zich op het creëren van een harmonieus, analoog gevoel in een strakke stedelijke omgeving. Warme tinten zoals rood, oranje en geel worden in de basis al versterkt om de kilheid van beton en schaduw te doorbreken. Door de schaduwpartijen in de camerakalibratie bewust richting magenta te sturen, transformeren koude, groenige schaduwgebieden in sfeervolle, diepe tonen die de zonsondergang-vibe ondersteunen.",
+    "local_adjustments": "Lokale aanpassingen vormen de absolute ruggengraat van deze stijl; globale schuifregelaars worden nauwelijks gebruikt om de foto te forceren. Er wordt intensief gewerkt op een zoomniveau van 300% om met het penseel de armen, benen en het gezicht afzonderlijk te maskeren, zodat de huidstinten exact kunnen worden afgestemd op de warme omgevingsverlichting.",
+    "what_to_avoid": [
+      "Het blindelings vertrouwen op de automatische AI-subjectselectie bij weinig contrast, omdat dit leidt tot slordige selecties in plafonds en achtergronden.",
+      "Het puur verhogen van de schuifregelaar Belichting om schaduwen te herstellen, wat resulteert in een modderig en onnatuurlijk effect over het hele lichaam."
+    ],
+    "best_for": "Stedelijke portretten en street-art fotografie in moderne architectuur met complexe, contrasterende lichtlijnen en sterke kunstlichtbronnen.",
+    "unique_insights": [
+      "Grote, professionele fotografen bouwen hun contrasten op via een opeenstapeling van minieme, overlappende maskers in plaats van één grote ingreep te forceren; dit bootst de natuurlijke werking van licht beter na.",
+      "Het handmatig inkorten van de buitenste lijnen van een gegradueerd filter (verloopfilter) na het slepen stelt je in staat om een 100% dekkingszone direct te laten overvloeien in een uiterst zachte veer, wat maximale controle geeft over de overgang.",
+      " contrastregeling is effectiever wanneer je de focus verlegt van zwart-witwaarden naar kleurcontrast; warme kleuren gecombineerd met diepe, magenta-getinte schaduwen trekken het oog sneller aan dan puur luminantiecontrast."
+    ],
+    "style_preview": "Deze stijl ademt een filmische, mysterieuze en diep sfeervolle stedelijke sfeer uit, gekenmerkt door warme lichtaccenten en zachte gloeden rondom kunstlicht. De kernfilosofie is gebaseerd op het minutieus boetseren met licht (dodging en burning) om het onderwerp als een baken uit de duisternis te laten herrijzen. Het leent zich bij uitstek voor avondfotografie, street-portretten en indrukwekkende interieurarchitectuur waar mixed-light situaties de toon zetten. Als fotograaf kun je een uiterst contrastrijk, schilderachtig en high-end resultaat verwachten waarin de sfeer van de grote stad optimaal tot zijn recht komt."
   }
 ]

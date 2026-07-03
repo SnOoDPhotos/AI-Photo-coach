@@ -45780,5 +45780,97 @@
       "Voor een superieure zwart-witomzetting verlaag je de globale Saturation naar -99% in plaats van de zwart-witmodus in te schakelen. Hierdoor behoud je de actieve controle over de HSL-kanalen om de tonale helderheid van specifieke kleuren veel nauwkeuriger te sturen."
     ],
     "style_preview": "Deze stijl ademt een warme, dromerige en licht nostalgische trouwsfeer uit. De visuele toon is zacht maar behoudt diepte door matig contrast in de middentonen en afgerolde, romige hooglichten. Het werkt het beste voor romantische portretten in het gouden uur of scènes met sfeervol tegenlicht. Als fotograaf kun je hiermee een high-end, redactionele look creëren die onvolkomenheden in de huid op natuurlijke wijze camoufleert en een harmonieus kleurenpalet oplevert."
+  },
+  {
+    "video_title": "How To Edit Fall Themed Photos In Lightroom",
+    "photographer_name": "Ryan at Signature Edits",
+    "youtube_url": "https://www.youtube.com/watch?v=0SZCGsvqR0I",
+    "genre": [
+      "portret",
+      "trouwfotografie",
+      "reisfotografie"
+    ],
+    "light_conditions": [
+      "gouden uur",
+      "schaduw",
+      "diffuus licht"
+    ],
+    "mood": [
+      "warm",
+      "levendig",
+      "moody"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Warm Autumn Glow Portrait",
+    "philosophy": "Het transformeren van foto's naar een herfstachtige sfeer draait om het selectief verschuiven en desatureren van storende zomertinten. Door koelere kleuren zoals blauw en aqua volledig te elimineren en groentinten om te buigen naar geel en oranje, ontstaat de basis voor een herfstpalet. Vervolgens wordt er via kleurgradatie en maskers gerichte warmte teruggebracht in de foto zonder de huidtinten van het onderwerp te verpesten.",
+    "workflow_order": [
+      "stap 1: Corrigeer de witbalans door de temperatuur aanzienlijk te verhogen en een vleugje magenta toe te voegen om groene kleurzwemen uit de schaduwen te elimineren.",
+      "stap 2: Pas de HSL-kleurtinten aan door groen richting geel te schuiven en verlaag de verzadiging van geel, groen en blauw drastisch.",
+      "stap 3: Gebruik de tooncurve in de afzonderlijke kleurkanalen (blauw en groen) om selectief warmte en amberkleuren in de middentonen te introduceren.",
+      "stap 4: Pas lokale maskers (radiaalfilters en penselen) toe op het onderwerp om huidtinten te herstellen en selectief de achtergrond te verduisteren voor extra scheiding."
+    ],
+    "techniques": [
+      {
+        "name": "Herfst HSL Basisverschuiving",
+        "description": "Verschuif in het HSL-paneel de Hue van groen richting geel en neem geel iets mee richting rood/oranje. Verlaag daarna de verzadiging van groen en geel drastisch om de felle zomertinten te neutraliseren.",
+        "when_to_use": "Bij foto's met veel overheersend groen en geel die naar een herfstsfeer moeten worden omgezet.",
+        "tools": [
+          "HSL / Kleur"
+        ],
+        "effect": "Felle groene bladeren veranderen in een ingetogen, herfstachtige geel-oranje tint."
+      },
+      {
+        "name": "Luminantie Bereikmasker voor Takken",
+        "description": "Breng een lokaal penseel aan over een boom en activeer een Luminance Range Mask. Beperk het bereik van 100 naar circa 50 om alleen de donkere takken te selecteren en de lichte lucht uit te sluiten.",
+        "when_to_use": "Wanneer je bladeren of takken tegen een lichte lucht selectief wilt donkerder maken of inkleuren zonder de lucht te beïnvloeden.",
+        "tools": [
+          "Penseel",
+          "Bereikmasker (Luminantie)"
+        ],
+        "effect": "De takken en bladeren worden nauwkeurig donkerder en voller van kleur, terwijl de lucht volledig schoon blijft."
+      },
+      {
+        "name": "Amber Tooncurve Sturing",
+        "description": "Selecteer het blauwe kanaal in de Tooncurve en trek de middentonen naar beneden om geel toe te voegen. Doe vervolgens hetzelfde in het groene kanaal om magenta toe te voegen, wat samen een warme amberkleur oplevert.",
+        "when_to_use": "Om een algehele, organische herfstwarmte in de middentonen te drukken in plaats van de globale witbalans te misbruiken.",
+        "tools": [
+          "Tooncurve"
+        ],
+        "effect": "De middentonen krijgen een rijke, sfeervolle herfstgloed zonder dat de witten of zwarten direct dichtlopen."
+      },
+      {
+        "name": "Radiaal Filter Huidcorrectie",
+        "description": "Plaats een radiaalfilter op het gezicht van het onderwerp nadat de hele foto extreem warm is gemaakt. Verlaag binnen dit filter de witbalans en de verzadiging iets om de huidtinten te neutraliseren.",
+        "when_to_use": "Bij herfstportretten waarbij de extreme achtergrondwarmte de huid van het model te oranje of geel maakt.",
+        "tools": [
+          "Radiaalfilter"
+        ],
+        "effect": "De achtergrond behoudt zijn warme herfstsfeer, terwijl het gezicht een natuurlijke, gezonde huidskleur terugkrijgt."
+      },
+      {
+        "name": "Naadloos Radiaal Vignet",
+        "description": "Plaats een groot radiaalfilter over het onderwerp, inverseer het masker en verlaag de belichting en schaduwen voor de achtergrond, maar schuif de Highlights juist iets omhoog.",
+        "when_to_use": "Om het onderwerp te isoleren in een drukke omgeving zonder een onnatuurlijk, modderig vignet te creëren.",
+        "tools": [
+          "Radiaalfilter"
+        ],
+        "effect": "De schaduwen en middentonen om het onderwerp heen worden donkerder, maar de lichte delen in de achtergrond blijven behouden, wat een organische scheiding geeft."
+      }
+    ],
+    "color_approach": "Kleur wordt benaderd door koele elementen (zoals blauwe luchten of reflecties) volledig te elimineren of te desatureren. De nadruk ligt op een tonaal analoog palet van rood, oranje en goudgeel, waarbij groene kleurzwemen veroorzaakt door bomen in de schaduw handmatig uit de huid en het blonde haar worden gefilterd met complementair magenta.",
+    "local_adjustments": "Lokale aanpassingen zijn cruciaal om de ingrijpende globale kleurveranderingen te verfijnen. Er worden kleur- en luminantiebereikmaskers gebruikt om de herfsttinten uitsluitend op de vegetatie toe te passen, terwijl radiaalfilters en penselen achteraf worden ingezet om de huid van modellen te beschermen tegen oververzadiging.",
+    "what_to_avoid": [
+      "Het negeren van groene reflecties op de huid en blond haar bij het fotograferen onder een bladerdak.",
+      "Het doorslaan met globale witbalans waardoor het model er onnatuurlijk oranje of 'verbrand' uit gaat zien."
+    ],
+    "best_for": "Portretten en trouwfoto's die zijn geschoten in de zomer of vroege herfst met veel groen, die een warme, sfeervolle en schilderachtige herfstuitstraling nodig hebben.",
+    "unique_insights": [
+      "Door bij de Tooncurve zowel blauw als groen in de middentonen te verlagen, creëer je een specifieke amberkleurige herfsttint die veel rijker oogt dan een simpele verschuiving van de temperatuur-slider.",
+      "Het toevoegen van een subtiele kleur-overlay via een omgekeerd radiaalfilter dat buiten het canvas is geplaatst, werkt effectiever om een zachte herfstagregatie over de hele achtergrond te blenden.",
+      "Bij het donkerder maken van de achtergrond voor extra subject-separatie moeten de highlights juist worden verhoogd; dit voorkomt dat het masker er als een goedkope, digitale bewerking uitziet en simuleert natuurlijke lichtafval."
+    ],
+    "style_preview": "Deze stijl kenmerkt zich door een rijke, warme en ietwat nostalgische herfstsfeer met diepe ambertinten en een zachte rendering van de achtergrond. De kernfilosofie leunt op het selectief opruimen van storende koele tinten en het ombuigen van zomerse groenblijvers naar gouden bladeren. Het werkt het beste bij portretten die geschoten zijn met zacht, diffuus licht of tijdens een laagstaande zon, waarbij het model dankzij gerichte maskers perfect loskomt van een dromerige achtergrond. Het verwachte resultaat is een schilderachtig, warm portret dat pure knusheid en sfeer uitstraalt."
   }
 ]

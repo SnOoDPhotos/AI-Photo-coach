@@ -45674,5 +45674,107 @@
       " contrastregeling is effectiever wanneer je de focus verlegt van zwart-witwaarden naar kleurcontrast; warme kleuren gecombineerd met diepe, magenta-getinte schaduwen trekken het oog sneller aan dan puur luminantiecontrast."
     ],
     "style_preview": "Deze stijl ademt een filmische, mysterieuze en diep sfeervolle stedelijke sfeer uit, gekenmerkt door warme lichtaccenten en zachte gloeden rondom kunstlicht. De kernfilosofie is gebaseerd op het minutieus boetseren met licht (dodging en burning) om het onderwerp als een baken uit de duisternis te laten herrijzen. Het leent zich bij uitstek voor avondfotografie, street-portretten en indrukwekkende interieurarchitectuur waar mixed-light situaties de toon zetten. Als fotograaf kun je een uiterst contrastrijk, schilderachtig en high-end resultaat verwachten waarin de sfeer van de grote stad optimaal tot zijn recht komt."
+  },
+  {
+    "video_title": "Editing Wedding Portraits In Lightroom Tutorial (FREE RAW FILES)",
+    "photographer_name": "Ryan",
+    "youtube_url": "https://www.youtube.com/watch?v=VtklJOBFzFw",
+    "genre": [
+      "trouwfotografie"
+    ],
+    "light_conditions": [
+      "gemengd licht",
+      "daglicht",
+      "tegenlicht",
+      "gouden uur"
+    ],
+    "mood": [
+      "romantisch",
+      "natuurlijk",
+      "dromerig",
+      "filmic"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Natuurlijk Romantisch Tegenlicht",
+    "philosophy": "De focus ligt op het behouden en versterken van een natuurlijke, romantische sfeer zonder de foto te overbewerken. Door contrasten selectief via de tooncurve op te bouwen in plaats van de globale contrastschuif te gebruiken, blijft de huid zacht en stralend. Het harmoniseren van botsende kleurtemperaturen en het temmen van felle hooglichten vormt de basis voor een tijdloze uitstraling.",
+    "workflow_order": [
+      "Stap 1: Corrigeer de witbalans op basis van de huidtinten en herstel overbelichte hooglichten in het basispaneel",
+      "Stap 2: Bouw selectief contrast op en verzacht de witten via een subtiele driepunts S-curve in de Tooncurve",
+      "Stap 3: Gebruik lokale maskers zoals lineaire gradients en penselen om kleurzwemen door gemengd licht te neutraliseren",
+      "Stap 4: Pas gerichte HSL-reducties toe op storende achtergrondkleuren zoals oververzadigde geel- en groentinten"
+    ],
+    "techniques": [
+      {
+        "name": "Blauwe zweem uit trouwjurk neutraliseren",
+        "description": "Verlaag de verzadiging van het blauwe kanaal in het HSL-paneel tot de koele reflecties in de witte jurk verdwijnen. Dit zorgt ervoor dat het wit van de jurk harmonieert met de warmere tinten in de rest van de kamer.",
+        "when_to_use": "Bij binnenopnames waar een witte trouwjurk koel raamlicht reflecteert in een warm verlichte kamer.",
+        "tools": [
+          "HSL / Kleur (Verzadiging)"
+        ],
+        "effect": "De jurk verliest zijn harde, blauwe gloed en krijgt een zachtere, romige witte uitstraling die matcht met de omgeving."
+      },
+      {
+        "name": "Driepunts S-curve voor stralende huid",
+        "description": "Plaats drie punten op de Tooncurve voor de schaduwen, middentonen en hooglichten. Trek de schaduwen licht omlaag voor diepte, verhoog de middentonen subtiel voor een zachte gloed op de huid, en rol de hooglichten iets af om hardheid te verminderen.",
+        "when_to_use": "Bij portretten waarbij het globale contrast te agressief oogt en de huidtextuur te grof maakt.",
+        "tools": [
+          "Tooncurve (Puntcurve)"
+        ],
+        "effect": "De huid krijgt een dromerige, heldere plooibaarheid terwijl de schaduwen rijk maar gecontroleerd blijven."
+      },
+      {
+        "name": "Kleurzweem compensatie via Lineair Verloop",
+        "description": "Trek een lineair verloop vanaf de zijde waar de kleurafwijking binnendringt. Voeg handmatig magenta toe om een groenige tint van kunstlicht of vegetatie op te heffen, of schuif richting geel om blauwe schaduwen op te warmen.",
+        "when_to_use": "In situaties met gemengd licht waarbij de ene kant van het gezicht door een andere lichtbron wordt geraakt dan de andere kant.",
+        "tools": [
+          "Maskeren (Lineair verloop)"
+        ],
+        "effect": "De onnatuurlijke tweekleurigheid op het onderwerp verdwijnt, waardoor de belichting overal consistent oogt."
+      },
+      {
+        "name": "Lokale huidverzachting met precisie-eraser",
+        "description": "Selecteer de huid met een penseel en verlaag Texture naar een lagere waarde en Clarity en Dehaze marginaal om de huidstructuur te verzachten. Houd de Alt-toets ingedrukt om de gum te activeren en wis het masker nauwkeurig weg bij de contouren van de neus en ogen.",
+        "when_to_use": "Bij close-up portretten waarbij hard licht oneffenheden of roodheid in het gezicht accentueert.",
+        "tools": [
+          "Maskeren (Penseel)"
+        ],
+        "effect": "De huid oogt egaal en zacht, terwijl de essentiële gelaatstrekken en scherpte behouden blijven."
+      },
+      {
+        "name": "Achtergrondsubstractie voor onderwerp-separatie",
+        "description": "Maak een automatisch onderwerpsmasker aan en inverteer deze om de achtergrond te selecteren. Verlaag de belichting en breng de Clarity iets omlaag om de omgeving subtiel naar de achtergrond te drukken.",
+        "when_to_use": "Wanneer de achtergrond te druk is of qua helderheid concurreert met het bruidspaar.",
+        "tools": [
+          "Maskeren (Onderwerp selecteren)",
+          "Inverteren"
+        ],
+        "effect": "De achtergrond wordt zachter en donkerder, waardoor het bruidspaar direct naar voren springt en uit de foto popt."
+      },
+      {
+        "name": "Matte filmlook via zwartpunt-clipping",
+        "description": "Klik op het uiterste linkerpunt van de Tooncurve (het pure zwart) en trek dit verticaal omhoog. Schuif het punt daarna iets naar rechts om de diepste schaduwen te vermalen tot een vintage effect.",
+        "when_to_use": "Bij het creëren van een nostalgische, analoge sfeer in contrastrijke scènes of zwart-witomzettingen.",
+        "tools": [
+          "Tooncurve"
+        ],
+        "effect": "Pure zwarte delen veranderen in een zachte, asgrijze tint, wat de foto direct een klassiek filmgevoel geeft."
+      }
+    ],
+    "color_approach": "Er wordt gekozen voor een analoge benadering waarbij oververzadigde geel- en groentinten in de vegetatie strategisch worden afgezwakt via HSL. In de split-toning of kleurgradatie worden de middentonen voorzien van een warme goudoranje gloed om de huidtinten te complimenteren, terwijl de schaduwen een subtiele, complementaire koele of groengele tint krijgen.",
+    "local_adjustments": "Lokale aanpassingen zijn cruciaal om de nadelen van mixed lighting op te vangen. Maskers worden niet gebruikt voor zware effecten, maar om specifieke zones zoals schaduwzijden van een gezicht of een blauw uitgeslagen plooi in een jurk handmatig warmer te maken zodat ze naadloos aansluiten bij het omgevingslicht.",
+    "what_to_avoid": [
+      "Het verhogen van de algehele Contrast-schuif in het basispaneel, omdat dit de huidtinten vlekkerig en te hard maakt.",
+      "Het misbruiken van de Exposure-schuif om specifieke details zoals bloemen op te lichten; dit trekt de schaduwen onnatuurlijk mee omhoog."
+    ],
+    "best_for": "Trouwportretten die buiten in felle zon of binnen met complexe, botsende lichtbronnen zijn geschoten en een tijdloze, dromerige uitstraling nodig hebben.",
+    "unique_insights": [
+      "Witte objecten in één ruimte reflecteren zelden hetzelfde wit; een jurk kan blauw oplichten door raamlicht terwijl muren geel uitslaan door kunstlicht. Succesvolle integratie vereist dat je deze witten onafhankelijk van elkaar balanceert.",
+      "Gebruik bij het lokaal oplichten van elementen met een penseel de Highlights- en Whites-schuiven in plaats van Exposure. Dit versterkt puur de natuurlijke lichte delen van het object zonder de omringende schaduwpartijen plat te slaan.",
+      "Zodra je een binnenlocatie betreedt voor een shoot, is de beste actie het uitschakelen van alle overhead plafondverlichting. Dit voorkomt destructieve mixed lighting-problemen die achteraf in de nabewerking uren herstelwerk kosten.",
+      "Voor een superieure zwart-witomzetting verlaag je de globale Saturation naar -99% in plaats van de zwart-witmodus in te schakelen. Hierdoor behoud je de actieve controle over de HSL-kanalen om de tonale helderheid van specifieke kleuren veel nauwkeuriger te sturen."
+    ],
+    "style_preview": "Deze stijl ademt een warme, dromerige en licht nostalgische trouwsfeer uit. De visuele toon is zacht maar behoudt diepte door matig contrast in de middentonen en afgerolde, romige hooglichten. Het werkt het beste voor romantische portretten in het gouden uur of scènes met sfeervol tegenlicht. Als fotograaf kun je hiermee een high-end, redactionele look creëren die onvolkomenheden in de huid op natuurlijke wijze camoufleert en een harmonieus kleurenpalet oplevert."
   }
 ]

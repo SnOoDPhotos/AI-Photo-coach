@@ -46512,5 +46512,94 @@
       "Gebruik de tooncurve om pure witten om te zetten in een zachte grijstint en pure zwarten iets op te lichten voor een romige, organische filmvibe die minder digitaal oogt."
     ],
     "style_preview": "De visuele sfeer van deze stijl is helder, zacht en uiterst natuurgetrouw. De kernfilosofie draait om het perfectioneren van het portret door middel van minuscule, opeengestapelde correcties in plaats van extreme slider-aanpassingen. Deze benadering werkt het beste bij portretten die zijn geschoten in kwalitatief goed, diffuus daglicht. Het verwachte resultaat is een tijdloos portret met een subtiele subjectseparatie, sprekende ogen en een egale, gezonde huidtextuur zonder dat de nabewerking er dik bovenop ligt."
+  },
+  {
+    "video_title": "Edit Epic Landscapes In Lightroom! (Landscape Photography Tutorial)",
+    "photographer_name": "Ryan (Signature Edits)",
+    "youtube_url": "https://www.youtube.com/watch?v=NNr9khKIlBc",
+    "genre": [
+      "landschap"
+    ],
+    "light_conditions": [
+      "harde zon",
+      "daglicht",
+      "bewolkt"
+    ],
+    "mood": [
+      "naturalistisch",
+      "levendig"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Clean Natural Pop Landscape",
+    "philosophy": "De kernbenadering rust op een minimalistische filosofie waarbij bewerken hoofdzakelijk draait om het elimineren van storende elementen in camera-opnames in plaats van het kunstmatig toevoegen van effecten. Een superieur eindresultaat wordt bereikt door honderden minuscule, transparante en incrementele aanpassingen over elkaar heen te stapelen, vergelijkbaar met samengestelde rente. Het doel is altijd om de natuurlijke contrasten en texturen te herstellen en te versterken zonder de integriteit van de oorspronkelijke situatie te verliezen.",
+    "workflow_order": [
+      "stap 1: Elimineer alle fysieke en visuele distracties, sensorvlekken of ongewenste elementen met de Spot Removal tool",
+      "stap 2: Voer globale basistonaliteitscorrecties uit op het gebied van belichting en voeg een subtiele S-curve toe",
+      "stap 3: Isoleer specifieke lichte of donkere zones met nauwkeurige Luminance Range Masks",
+      "stap 4: Breng lokale texturen en verscherpingen aan met penselen om de blik strategisch naar het hoofdonderwerp te leiden"
+    ],
+    "techniques": [
+      {
+        "name": "Luminance Gecorrigeerd Oplichten",
+        "description": "Gebruik een penseel over donkere schaduwpartijen en verhoog specifiek de Whites en Highlights in plaats van de Exposure om de schaduwen op te lichten zonder ze flets en grijs te maken",
+        "when_to_use": "Bij landschapsfoto's met een groot dynamisch bereik waarbij schaduwzones onderbelicht zijn geraakt door harde zon",
+        "tools": [
+          "Aanpassingspenseel"
+        ],
+        "effect": "De donkere partijen krijgen structuur en lichten op een organische manier op zonder de diepe zwartwaarden te ruïneren"
+      },
+      {
+        "name": "Bergkam Contrast Sculpting",
+        "description": "Strijk met een lokaal penseel met verhoogde Texture en Contrast precies langs de lichte en donkere randen en contouren van bergketens",
+        "when_to_use": "Wanneer bergen of rotsformaties in de verte door atmosferische waas of lensflare hun natuurlijke definitie hebben verloren",
+        "tools": [
+          "Aanpassingspenseel"
+        ],
+        "effect": "De bergen krijgen visuele diepte en de driedimensionale vorm van het landschap wordt handmatig geaccentueerd"
+      },
+      {
+        "name": "Luminance Mask Sky Blending",
+        "description": "Pas een Luminance Range Mask toe ingesteld op de hoogste helderheidswaarden (90 tot 100) om specifiek de lucht te selecteren en verlaag de Temp-slider om diep blauw terug te brengen",
+        "when_to_use": "Wanneer de lucht overbelicht of flets is uitgevallen en je enkel de blauwtonen in de helderste delen wilt herstellen",
+        "tools": [
+          "Luminantiebereikmasker"
+        ],
+        "effect": "De lucht krijgt een natuurlijke blauwe kleur terug terwijl wolken en omliggende bergtoppen onaangetast blijven"
+      },
+      {
+        "name": "Alt-Sleutel Schermmaskering",
+        "description": "Houd de Alt-toets ingedrukt tijdens het verschuiven van de Masking-slider binnen het verscherpingspaneel tot alleen de belangrijkste randen wit oplichten",
+        "when_to_use": "Bij elke landschapsfoto om te voorkomen dat egale vlakken zoals luchten of wateroppervlakken onnodig worden verscherpt",
+        "tools": [
+          "Verscherpen"
+        ],
+        "effect": "De scherpte wordt strikt beperkt tot harde contrastlijnen, waardoor er geen extra korrel of ruis in de egale vlakken ontstaat"
+      },
+      {
+        "name": "Sneltoets Penseelwissel",
+        "description": "Houd de Alt-toets ingedrukt tijdens het aanbrengen van een lokaal masker om direct over te schakelen naar de gum-functie en verlaag de Flow voor een geleidelijke overgang",
+        "when_to_use": "Tijdens het nauwkeurig bijwerken van complexe maskerranden langs bomen, gebouwen of bergen",
+        "tools": [
+          "Aanpassingspenseel"
+        ],
+        "effect": "Maakt een snelle en uiterst subtiele verfijning van de maskerrand mogelijk zonder handmatig tussen penselen te schakelen"
+      }
+    ],
+    "color_approach": "Kleur wordt benaderd vanuit het principe van realisme en harmonie. In plaats van kleuren globaal te verzadigen, worden specifieke storende kleurtinten (zoals flets aqua in het water) via het HSL-paneel verschoven naar natuurlijke tinten zoals diep navy blauw. Groen- en geelwaarden in vegetatie worden soms juist gedesatureerd om de nadruk volledig op het hoofdonderwerp in het landschap te vestigen.",
+    "local_adjustments": "Lokale aanpassingen vormen het belangrijkste onderdeel van de nabewerking en worden ingezet via geavanceerde luminantiemaskers en radiale filters. Radiale filters worden met een zeer zachte feather gebruikt om onderwerpen (zoals een wandelaar of kano's) als een subtiele 'mobiele spotlight' op te lichten. Luminantiemaskers isoleren specifiek heldere luchten of diepe schaduwzones om overstraling of onderbelichting lokaal te corrigeren.",
+    "what_to_avoid": [
+      "Het gebruik van de globale Exposure-slider om schaduwen op te lichten, omdat dit de zwartwaarden grijs en onnatuurlijk maakt",
+      "Het vergeten uit te vinken van Spot Removal bij het kopiëren van instellingen naar een andere foto in een serie",
+      "Het te ver doorschieten met verscherping op foto's die in de basis niet scherp zijn, wat leidt tot lelijke digitale artefacten en kleurbanding"
+    ],
+    "best_for": "Landschapsfotografen die te maken hebben met uitdagende lichtomstandigheden, lensflare of overbelichte luchten en hun foto's een krachtige, natuurlijke uitstraling willen geven.",
+    "unique_insights": [
+      "Als je een bewerking hebt doorgevoerd waarvan je denkt dat deze perfect is, dwing jezelf dan om de intensiteit van de effecten direct met 20 procent terug te schroeven om de transparantie te waarborgen.",
+      "Het verhogen van de Whites en Highlights binnen een schaduwmasker creëert een veel natuurlijker oplichtend effect dan het simpelweg omhoog schuiven van de Shadows-slider.",
+      "Bij het corrigeren van chromatische aberratie of kleurschades werkt de handmatige pipet (De-fringe) vele malen effectiever op de exacte contrastranden dan de automatische profielcorrecties van Lightroom."
+    ],
+    "style_preview": "Deze stijl kenmerkt sich door een heldere, levendige en uiterst schone landschapsweergave. De visuele sfeer is gebaseerd op het herstellen van authentieke contrasten en het subtiel isoleren van het hoofdonderwerp van de achtergrond. De stijl blinkt uit bij landschapsopnames die zijn gemaakt tijdens uitdagende lichtomstandigheden met een hoog dynamisch bereik, zoals felle zon of bewolkte dagen. Een fotograaf die deze benadering toepast, kan een eindresultaat verwachten waarin de details in bergen en wolken maximaal tot hun recht komen, terwijl de foto te allen tijde zijn geloofwaardige en natuurlijke esthetiek behoudt."
   }
 ]

@@ -45872,5 +45872,97 @@
       "Bij het donkerder maken van de achtergrond voor extra subject-separatie moeten de highlights juist worden verhoogd; dit voorkomt dat het masker er als een goedkope, digitale bewerking uitziet en simuleert natuurlijke lichtafval."
     ],
     "style_preview": "Deze stijl kenmerkt zich door een rijke, warme en ietwat nostalgische herfstsfeer met diepe ambertinten en een zachte rendering van de achtergrond. De kernfilosofie leunt op het selectief opruimen van storende koele tinten en het ombuigen van zomerse groenblijvers naar gouden bladeren. Het werkt het beste bij portretten die geschoten zijn met zacht, diffuus licht of tijdens een laagstaande zon, waarbij het model dankzij gerichte maskers perfect loskomt van een dromerige achtergrond. Het verwachte resultaat is een schilderachtig, warm portret dat pure knusheid en sfeer uitstraalt."
+  },
+  {
+    "video_title": "The Ultimate Lightroom Skin Tone Workshop + FREE Raw Files",
+    "photographer_name": "Ryan at Signature Edits",
+    "youtube_url": "https://www.youtube.com/watch?v=LEbbCxANOzc",
+    "genre": [
+      "portret",
+      "trouwfotografie",
+      "reisfotografie"
+    ],
+    "light_conditions": [
+      "diffuus licht",
+      "schaduw",
+      "harde zon"
+    ],
+    "mood": [
+      "naturalistisch",
+      "levendig",
+      "rustig"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Healthy Balanced Portrait Skin",
+    "philosophy": "Het bereiken van perfecte huidtinten leunt niet op verborgen trucs, maar op het meesterlijk beheersen van de basistools. De camera compenseert de constante kleurverschuivingen van de omgeving niet, waardoor reflecties van bomen of luchten de huid snel verpesten. Door systematisch kleurzwemen te neutraliseren en de tooncurve te gebruiken in plaats van globale schuiven, blijft de huid levendig en consistent.",
+    "workflow_order": [
+      "stap 1: Laad een referentiefoto met een gezonde, gewenste huidtint in de referentieweergave om te voorkomen dat je ogen wennen aan foutieve kleuren.",
+      "stap 2: Corrigeer de witbalans grofweg door de temperatuur en magenta-tint aan te passen tot de overheersende kleurzweem verdwijnt.",
+      "stap 3: Isoleer de huidtinten in het HSL-paneel door de hue van oranje richting magenta te schuiven en de luminantie van oranje selectief te verlagen.",
+      "stap 4: Pas lokale kleur- of onderwerpsmaskers toe om storende reflecties in de schaduwpartijen van het gezicht handmatig te neutraliseren."
+    ],
+    "techniques": [
+      {
+        "name": "Referentieweergave Huidkalibratie",
+        "description": "Activeer de Reference View (sneltoets Shift+R) en sleep een foto met een bewezen gezonde huidtint in het linkerscherm. Pas de witbalans van de te bewerken foto aan tot de basistinten visueel overeenstemmen.",
+        "when_to_use": "Bij het bewerken van meerdere portretten binnen dezelfde fotosessie om oogvermoeidheid en kleurafwijkingen te voorkomen.",
+        "tools": [
+          "Referentieweergave"
+        ],
+        "effect": "De bewerkte foto krijgt een consistente, objectief correcte huidskleur zonder dat je eigen waarneming je voor de gek houdt."
+      },
+      {
+        "name": "Oranje Luminantie Compressie",
+        "description": "Verlaag de luminantie van het oranje kanaal in het HSL-paneel naar circa -15 en breng tegelijkertijd de verzadiging iets omlaag om diepte en rijkdom in de huidskleur te persen.",
+        "when_to_use": "Wanneer de huid van het onderwerp er gewassen, flets of te digitaal uitziet door felle lichtomstandigheden.",
+        "tools": [
+          "HSL / Kleur"
+        ],
+        "effect": "De huidskleur krijgt direct meer dichtheid, warmte en een natuurlijke, vollere textuur in plaats van een bleke uitstraling."
+      },
+      {
+        "name": "Middentonen Curve Lift voor Huid",
+        "description": "Maak een subtiele aanpassing in de Tooncurve door specifiek het gebied waar de huidtinten leven (de middentonen) licht omhoog te trekken, terwijl je de uiterste schaduwen juist iets laat zakken voor contrast.",
+        "when_to_use": "Om de huid zacht te laten oplichten en te laten 'springen' zonder de globale highlights van de foto uit te bijten.",
+        "tools": [
+          "Tooncurve"
+        ],
+        "effect": "De huid krijgt een subtiele, zachte glans in de middentonen terwijl de algehele diepte in de foto bewaard blijft."
+      },
+      {
+        "name": "Kleuridentificatie Penseel-Inkleuring",
+        "description": "Gebruik een lokaal penseel op harde, uitgebleekte plekken en selecteer een kleur via het pipet door de muis ingedrukt te houden en een gezonde huidzone (zoals het voorhoofd) te kiezen als bronkleur. Smeer deze kleur met een lage verzadiging in op de overbelichte delen.",
+        "when_to_use": "Bij portretten met storende, glimmende hotspots of harde witte reflecties op het gezicht.",
+        "tools": [
+          "Penseel",
+          "Kleurwisser / Overlay"
+        ],
+        "effect": "Harde, witte glapplekken worden subtiel ingevuld met de omliggende huidtint, waardoor de textuur minder storend en egaler oogt."
+      },
+      {
+        "name": "Omgekeerd Onderwerp-Masker voor Luchtige Achtergronden",
+        "description": "Selecteer het onderwerp via de automatische maskerfunctie, inverseer de selectie (sneltoets apostrof) om de achtergrond te isoleren, en verlaag de textuur, helderheid en dehaze ingrijpend om een extreem zacht effect te creëren.",
+        "when_to_use": "Om het model los te trekken uit een onrustige, scherpe achtergrondomgeving.",
+        "tools": [
+          "Maskeren (Selecteer Onderwerp / Inverteren)"
+        ],
+        "effect": "De achtergrond transformeert in een dromerige, pastelachtige waas (simulatie van hoogwaardige optische bokeh) waardoor het scherpe model direct naar voren springt."
+      }
+    ],
+    "color_approach": "Kleur wordt heel analytisch benaderd door te kijken waar het onderwerp staat. Groene reflecties van bomen en gras die in de schaduwzones van het gezicht kruipen, worden rigoureus bestreden door de gele en groene kanalen in het HSL-paneel richting magenta te schuiven of de verzadiging ervan lokaal te minimaliseren. Koele omgevingsreflecties in de schaduw worden via de witbalans en gerichte maskers warm en consistent gemaakt.",
+    "local_adjustments": "Lokale maskers worden ingezet om de imperfecties op te vangen die de globale witbalans niet kan oplossen. Door kleur- en onderwerpsmaskers te combineren met het weghalen van textuur en helderheid, worden specifieke zones (zoals benen of schaduwzijden van het gezicht) zachter en tonaal gelijkgetrokken met de rest van het lichaam.",
+    "what_to_avoid": [
+      "Het blindelings verhogen van de globale verzadiging om kleur in de huid te krijgen; gebruik in plaats daarvan Vibrance of verlaag de oranje luminantie.",
+      "Het negeren van de kleurzwemen in schaduwgebieden zoals onder de kin, die vaak een compleet andere tint hebben dan het voorhoofd."
+    ],
+    "best_for": "Portret- en trouwfotografen die worstelen met inconsistente huidtinten door uitdagende locaties, zoals fotoshoots onder dichtbegroeide bomen of in fel gemengd licht.",
+    "unique_insights": [
+      "Het verhogen van de Highlights via de Tooncurve levert een wezenlijk ander visueel resultaat op dan via het Basis-paneel, omdat de curve fijner omspringt met de gradatie van huidtinten.",
+      "Het donkerder maken van de oranje luminantie is vaak de meest effectieve manier om een bleke huid meer kleur en gezondheid te geven, zonder dat de huidskleur onnatuurlijk verzadigd raakt.",
+      "Door bij het verzachten van de huid de scherpe details (zoals wimpers, lippen en de neuspunt) met een contrasterend scherptepenseel aan te zetten, oogt de huid extreem romig zonder dat het portret zijn natuurlijke scherpte verliest."
+    ],
+    "style_preview": "Deze bewerkingsstijl focust volledig op een gezonde, rijke en vlekkeloze weergave van de menselijke huid. De visuele sfeer is fris en natuurgetrouw, waarbij storende kleurafwijkingen uit de omgeving feilloos worden geëlimineerd. Het werkt perfect voor portretfotografen die in de buitenlucht schieten en te maken hebben met hinderlijke groene of blauwe reflecties op hun modellen. Het eindresultaat is een loepzuiver portret met een egale, stralende huidtoon die perfect balanceert tussen scherpte en een dromerige, zachte achtergrond."
   }
 ]

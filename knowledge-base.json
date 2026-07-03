@@ -45964,5 +45964,95 @@
       "Door bij het verzachten van de huid de scherpe details (zoals wimpers, lippen en de neuspunt) met een contrasterend scherptepenseel aan te zetten, oogt de huid extreem romig zonder dat het portret zijn natuurlijke scherpte verliest."
     ],
     "style_preview": "Deze bewerkingsstijl focust volledig op een gezonde, rijke en vlekkeloze weergave van de menselijke huid. De visuele sfeer is fris en natuurgetrouw, waarbij storende kleurafwijkingen uit de omgeving feilloos worden geëlimineerd. Het werkt perfect voor portretfotografen die in de buitenlucht schieten en te maken hebben met hinderlijke groene of blauwe reflecties op hun modellen. Het eindresultaat is een loepzuiver portret met een egale, stralende huidtoon die perfect balanceert tussen scherpte en een dromerige, zachte achtergrond."
+  },
+  {
+    "video_title": "Lightroom Wedding Editing Tutorial Start To Finish EVERY STEP",
+    "photographer_name": "Ryan (Signature Edits)",
+    "youtube_url": "https://www.youtube.com/watch?v=CshieYfNZCA",
+    "genre": [
+      "trouwfotografie"
+    ],
+    "light_conditions": [
+      "bewolkt",
+      "tegenlicht",
+      "kunstlicht",
+      "diffuus licht"
+    ],
+    "mood": [
+      "naturalistisch",
+      "levendig",
+      "rustig"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Clean Natural Wedding",
+    "philosophy": "De kern van de bewerkingsfilosofie is het streven naar een zo natuurlijk mogelijke uitstraling die de werkelijkheid accuraat weergeeft. Door grote, brede aanpassingen met subtiele presets te combineren met gerichte lokale penselen, wordt de efficiëntie behouden zonder in te boeten op kwaliteit. Het doel is om het licht subtiel te sturen en de blik van de kijker direct naar het onderwerp te trekken.",
+    "workflow_order": [
+      "stap 1: Brede basis-presets toepassen op de volledige fotoselectie om een consistente kleur- en contrastbasis te leggen",
+      "stap 2: Belichting en witbalans handmatig corrigeren per foto met behulp van sneltoetsen om de basisperfectie te bereiken",
+      "stap 3: Lokale maskers en penselen inzetten om gezichten op te lichten, storende achtergronden te dimmen en het licht te boetseren",
+      "stap 4: Ruisreductie selectief toepassen bij hoge ISO-waarden en de definitieve exportinstellingen configureren op 85% kwaliteit"
+    ],
+    "techniques": [
+      {
+        "name": "Groen-tonen corrigeren",
+        "description": "Verschuif de Hue van het groen naar een meer blauwachtige tint en verlaag de Luminance om modderige, storende groentinten in de achtergrond frisser en minder dominant te maken.",
+        "when_to_use": "Bij buitenlocaties met gras of struiken onder een bewolkte hemel.",
+        "tools": [
+          "HSL / Kleur"
+        ],
+        "effect": "Groentinten worden rustiger, dieper en trekken minder de aandacht af van het bruidspaar."
+      },
+      {
+        "name": "Lichtsturing met Radiaalfilter",
+        "description": "Plaats een radiaal filter over het bruidspaar, verlaag de contrastwaarde volledig en verhoog de belichting licht om schaduwen te verzachten en hen subtiel te isoleren.",
+        "when_to_use": "Wanneer het bruidspaar te donker is ten opzichte van een heldere of drukke achtergrond.",
+        "tools": [
+          "Radiaalfilter"
+        ],
+        "effect": "Het bruidspaar krijgt een zachte, heldere oplichting waardoor ze direct uit de foto springen."
+      },
+      {
+        "name": "Gezichtscontrast verzachten",
+        "description": "Gebruik een penseel om specifiek over gezichten te strijken en verlaag hierbij het contrast en de highlights om harde schaduwen onder de ogen en neus weg te nemen.",
+        "when_to_use": "Bij portretten die rond het middaguur onder een hoge bewolking zijn geschoten.",
+        "tools": [
+          "Aanpassingspenseel"
+        ],
+        "effect": "De huid oogt zachter en egaler zonder dat de natuurlijke textuur volledig verdwijnt."
+      },
+      {
+        "name": "Ruisreductie bij hoge ISO",
+        "description": "Verhoog de Luminance ruisreductie naar een waarde tussen de 17 en 20 en houd de details hoog om digitale ruis in indoor-locaties te verminderen zonder dat de scherpte volledig verloren gaat.",
+        "when_to_use": "Bij binnenopnames die geschoten zijn met een ISO-waarde van 3200 of hoger.",
+        "tools": [
+          "Details"
+        ],
+        "effect": "De storende korrel in de schaduwpartijen verdwijnt en de foto oogt aanzienlijk cleaner."
+      },
+      {
+        "name": "Highlights herstellen bij overbelichte kleding",
+        "description": "Verlaag de highlights lokaal met een penseel over de trouwjurk om textuur en details in de witte stoffen terug te brengen.",
+        "when_to_use": "Wanneer de witte trouwjurk door fel licht of reflecties dreigt over te belichten.",
+        "tools": [
+          "Aanpassingspenseel"
+        ],
+        "effect": "De jurk verliest de digitale uitgebleekte look en toont weer fijne details in het kant en de plooien."
+      }
+    ],
+    "color_approach": "De fotograaf hanteert een natuurlijke kleuraanpak waarbij huidtinten leidend zijn. Om te voorkomen dat huidtinten te rood of geel uitslaan, past hij de witbalans minutieus aan en balanceert hij dit met vibrance in plaats van algemene saturatie om de achtergrondkleuren op te frissen zonder de huid te verpesten.",
+    "local_adjustments": "Lokale aanpassingen vormen de kern van de verfijning. Radiale en gegradueerde filters worden continu ingezet om de hoeken en achtergronden van de foto te verduisteren, terwijl maskers op het paar worden gebruikt om contrast te verlagen en schaduwen op te lichten.",
+    "what_to_avoid": [
+      "Het blindelings vertrouwen op presets zonder de belichting en witbalans handmatig per foto bij te sturen.",
+      "Te veel ruisreductie toepassen waardoor beelden een plastic, onnatuurlijk uiterlijk krijgen."
+    ],
+    "best_for": "Trouwfotografen die onder wisselende en uitdagende lichtomstandigheden snel een consistente en natuurlijke oplevering willen realiseren.",
+    "unique_insights": [
+      "Het uitschakelen van alle binnenverlichting bij de voorbereidingen dwingt je om puur raamlicht te gebruiken, wat gemengde kleurtemperaturen en lelijke kleurzwemen voorkomt.",
+      "Als je de algehele belichting van een foto verlaagt, voeg dan handmatig weer wat highlights en whites toe; dit zorgt ervoor dat de schaduwen en middentonen donkerder worden maar de foto toch een natuurlijke, heldere pop behoudt.",
+      "Bewolkte dagen rond het middaguur kunnen door de loodrechte lichtinval hardere schaduwen onder de ogen veroorzaken dan zonnige dagen, omdat je bij zonlicht de flare kunt gebruiken om contrast weg te nemen."
+    ],
+    "style_preview": "Deze stijl kenmerkt zich door een uiterst schone, tijdloze en natuurgetrouwe esthetiek waarbij de nadruk ligt op een perfecte balans tussen licht en schaduw. De kernfilosofie draait om het subtiel sturen van de blik van de kijker naar het bruidspaar, zonder dat de bewerking er digitaal of overgeproduceerd uitziet. Dit werkt het beste bij zacht, diffuus daglicht of subtiel raamlicht, waarbij de kleuren helder maar getrouw blijven. Het verwachte visuele effect is een frisse, romantische reportage met zachte huidtinten en diepe, natuurlijke achtergronden."
   }
 ]

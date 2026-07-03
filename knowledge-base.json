@@ -46238,5 +46238,100 @@
       "Het selectief verhogen van de Whites en Highlights binnen een Luminance Range Masker oogt vele malen natuurlijker dan het verhogen van de Exposure, omdat de schaduwstructuren in hun oorspronkelijke diepte worden gelaten."
     ],
     "style_preview": "Deze stijl biedt een verfijnde, heldere en uiterst zachte esthetiek die perfect is voor portret- en reisfotografen die streven naar een high-end, cinematische look. Door schaduwen gecontroleerd open te breken en micro-contrasten in de huid lokaal te minimaliseren, ontstaat een dromerig effect dat doet denken aan klassieke analoge film. De visuele tonen zijn teder en gebalanceerd, waarbij felle elementen in de achtergrond subtiel mogen spreken zonder de aandacht van het onderwerp af te leiden. Dit werkt het beste bij beelden die geschoten zijn met zacht tegenlicht of diffuus daglicht. Het uiteindelijke visuele resultaat is een harmonieus, rustgevend en professioneel afgewerkt beeld met vloeiende toonsgradaties."
+  },
+  {
+    "video_title": "Edit With Me - Lightroom Portrait Edit Along Tutorial",
+    "photographer_name": "Ryan from Signature Edits",
+    "youtube_url": "https://www.youtube.com/watch?v=dOBi1WuEk3E",
+    "genre": [
+      "portret"
+    ],
+    "light_conditions": [
+      "harde zon",
+      "schaduw"
+    ],
+    "mood": [
+      "naturalistisch"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Clean Soft Balanced Warm",
+    "philosophy": "De focus ligt op het herstellen van een natuurlijke balans bij portretten die onder uitdagende, groene boompartijen zijn gefotografeerd. Door storende omgevingsreflecties en felle kleurzweem selectief te corrigeren, ontstaat er een rustig beeld. Het doel is om felle contrasten te verzachten en een zachte scheiding tussen het model en de achtergrond aan te brengen.",
+    "workflow_order": [
+      "Stap 1: Witbalans globaal afstemmen op de achtergrondkleuren en storende kleurzweem neutraliseren",
+      "Stap 2: Lokale penseelmaskers toepassen op de huid om overbelichte hotspots handmatig te verzachten",
+      "Stap 3: HSL-schuiven gebruiken om dominante groen- en geeltinten in de vegetatie subtiel te temperen",
+      "Stap 4: Achtergrond en voorgrond van elkaar scheiden met contrast- en textuurverschillen via maskers"
+    ],
+    "techniques": [
+      {
+        "name": "Achtergrond-gestuurde witbalanscorrectie",
+        "description": "Stel de globale witbalans volledig af op de achtergrondbladeren om een neutrale basis te krijgen, en gebruik daarna een lokaal penseelmasker op het model om de huidstint met +10 Magenta te herstellen.",
+        "when_to_use": "Wanneer groen licht via boombladeren reflecteert op het gezicht van het model, wat een ongezonde, groenachtige zweem veroorzaakt.",
+        "tools": [
+          "Temp",
+          "Tint",
+          "Adjustment Brush"
+        ],
+        "effect": "De achtergrondbladeren krijgen hun natuurlijke kleur terug en de groenige gloed verdwijnt direct van de huid."
+      },
+      {
+        "name": "Hotspot egalisatie via lokaal masker",
+        "description": "Schilder met een zacht penseel over overbelichte delen op het voorhoofd of de schouders, en verlaag Highlights naar -25 en Exposure naar -0.20 om de helderheid gelijk te trekken.",
+        "when_to_use": "Bij portretten in het bos waar felle zonnestralen door het bladerdek breken en harde, witte vlekken op het model achterlaten.",
+        "tools": [
+          "Adjustment Brush",
+          "Highlights",
+          "Exposure"
+        ],
+        "effect": "De storende glimmende plekken op de huid verdwijnen en de structuur wordt egaal hersteld."
+      },
+      {
+        "name": "Selectieve desaturatie van bosgroen",
+        "description": "Verlaag in het HSL-paneel de Saturation van Green naar -30 en Yellow naar -20, en verschuif de Hue van Green richting +15 (blauw/cyaan) voor een rustigere toon.",
+        "when_to_ use": "Wanneer felle, neonachtige groen- en geeltinten in het gras of de bomen te veel de aandacht van het model afleiden.",
+        "tools": [
+          "HSL (Saturation/Hue)"
+        ],
+        "effect": "De vegetatie krijgt een diepe, rustige boskleur waardoor het model visueel naar voren komt."
+      },
+      {
+        "name": "Achtergrondisolatie door selectieve verzachting",
+        "description": "Breng een auto-masker aan op de achtergrond, verlaag de Clarity naar -20 en Texture naar -15, maar verhoog tegelijkertijd de Whites met +10 om de natuurlijke glans te behouden.",
+        "when_to_use": "Wanneer de achtergrond te druk of te scherp oogt en een natuurlijke dieptewerking ontbreekt.",
+        "tools": [
+          "Adjustment Brush",
+          "Clarity",
+          "Texture",
+          "Whites"
+        ],
+        "effect": "De achtergrond vervaagt op een zachte wijze, terwijl de lichte delen sprankelend blijven zonder dof te worden."
+      },
+      {
+        "name": "Achtergrond-opwarmmethode voor kleurpop",
+        "description": "Verhoog de algehele Temp met +15 en Vibrance met +20 om de omgeving goudbruin te kleuren, en gebruik vervolgens een omgekeerd penseel op het model om de Temp lokaal weer met -15 te verlagen.",
+        "when_to_use": "Bij portretten langs wegen of bossen waar een zonnige, warme herfstachtige sfeer gewenst is zonder de huid te verkleuren.",
+        "tools": [
+          "Temp",
+          "Vibrance",
+          "Adjustment Brush"
+        ],
+        "effect": "De achtergrond straalt een diepe, warme gloed uit terwijl de huidskleur van het model volledig intact en fris blijft."
+      }
+    ],
+    "color_approach": "Er wordt gekozen voor een gecontroleerde en ingetogen kleuraanpak, specifiek gericht op het temmen van opdringerige natuurkleuren. Door groen en geel systematisch te desatureren en de kleurtoon naar cyaan te dwingen, ontstaat er een complementair contrast met de warme, rode en oranje huidtinten van het model.",
+    "local_adjustments": "Lokale maskers zijn essentieel om de globale aanpassingen te corrigeren. Wanneer de achtergrond extreem warm of juist koel wordt gezet, gebruikt hij direct een lokaal penseel om het onderwerp te isoleren en de huidtinten handmatig in een gezonde balans terug te brengen.",
+    "what_to_avoid": [
+      "Het te ver doorschuiven van Dehaze op een foto met zware lensflare, omdat dit de natuurlijke sfeer breekt en harde, digitale artefacten veroorzaakt.",
+      "Het blindelings verhogen van het algehele contrast, waardoor hotspots op de huid direct uitbijten en onherstelbaar wit worden."
+    ],
+    "best_for": "Portretten geschoten in een bosrijke omgeving of op groene gazons met uitdagende lichtreflecties.",
+    "unique_insights": [
+      "Door de witbalans eerst bewust foutief in te stellen op basis van de achtergrondbladeren, kun je de omgevingsreflecties veel sneller neutraliseren dan wanneer je direct op de huid corrigeert.",
+      "Als de algehele verzadiging volledig naar nul wordt getrokken in plaats van de zwart-witmodus te gebruiken, behoud je binnen Lightroom volledige controle over de kleurgradatie- en HSL-schuiven voor een unieke tonale diepte.",
+      "Het verlagen van de contrastschuif binnen een lokaal huidmasker helpt om harde overgangen tussen schaduw en zonlicht op het gezicht naadloos in elkaar te laten overlopen."
+    ],
+    "style_preview": "Deze stijl kenmerkt zich door een uiterst schone, zachte en uitgebalanceerde esthetiek die uitblinkt in het verwerken van portretten in de natuur. Door storende neonkleuren in de vegetatie te elimineren en huidtinten nauwgezet te beschermen tegen groene reflecties, ontstaat een puur en tijdloos beeld. De visuele sfeer is rustgevend en organisch, waarbij het model op subtiele wijze loskomt van de zachter gemaakte achtergrond. Dit werkt optimaal voor portretten die zijn gefotografeerd onder een dicht bladerdek met wisselend zonlicht of felle lensflares. Het uiteindelijke visuele effect is een harmonieus beeld met natuurgetrouwe kleuren en perfect gecontroleerde helderheidswaardes."
   }
 ]

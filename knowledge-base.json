@@ -46333,5 +46333,96 @@
       "Het verlagen van de contrastschuif binnen een lokaal huidmasker helpt om harde overgangen tussen schaduw en zonlicht op het gezicht naadloos in elkaar te laten overlopen."
     ],
     "style_preview": "Deze stijl kenmerkt zich door een uiterst schone, zachte en uitgebalanceerde esthetiek die uitblinkt in het verwerken van portretten in de natuur. Door storende neonkleuren in de vegetatie te elimineren en huidtinten nauwgezet te beschermen tegen groene reflecties, ontstaat een puur en tijdloos beeld. De visuele sfeer is rustgevend en organisch, waarbij het model op subtiele wijze loskomt van de zachter gemaakte achtergrond. Dit werkt optimaal voor portretten die zijn gefotografeerd onder een dicht bladerdek met wisselend zonlicht of felle lensflares. Het uiteindelijke visuele effect is een harmonieus beeld met natuurgetrouwe kleuren en perfect gecontroleerde helderheidswaardes."
+  },
+  {
+    "video_title": "Edit With Me - Lightroom Raw File Editing Tutorial - Edit Along!",
+    "photographer_name": "Ryan from Signature Edits",
+    "youtube_url": "https://www.youtube.com/watch?v=4lLL7jIK6dE",
+    "genre": [
+      "portret"
+    ],
+    "light_conditions": [
+      "diffuus licht",
+      "harde zon"
+    ],
+    "mood": [
+      "levendig"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Warm Creamy Vintage Cohesive",
+    "philosophy": "De focus ligt op het creëren van kleursamenhang door storende, contrasterende natuurkleuren te muten en de overblijvende tinten naar dezelfde kleurfamilie te trekken. Harde lichtomstandigheden worden handmatig geëgaliseerd via zachte lokale contrast- en hooglichtenreducties. Het ultieme doel is om het onderwerp organisch te isoleren en het beeld een romige, filmische warmte mee te geven.",
+    "workflow_order": [
+      "Stap 1: Witbalans en belichting nauwgezet kalibreren als basis voor gezonde huidtinten",
+      "Stap 2: Contrasterende geel- en groentinten in de achtergrond drastisch desatureren of verschuiven via HSL",
+      "Stap 3: Lokale maskers toepassen om micro-contrasten op de huid te verzachten en hotspots te dempen",
+      "Stap 4: De tooncurve gebruiken voor het handmatig creëren van een matte, filmische afwerking"
+    ],
+    "techniques": [
+      {
+        "name": "Filmische tooncurve-vervaging",
+        "description": "Sleep het uiterste linker zwartpunt in de Point Curve verticaal omhoog en trek het uiterste rechter witpunt licht omlaag om pure zwart- en witwaardes te elimineren.",
+        "when_to_use": "Wanneer een digitaal, hard contrast moet worden omgezet in een romige, matte vintage uitstraling.",
+        "tools": [
+          "Tone Curve (Point Curve)"
+        ],
+        "effect": "Diepe schaduwen veranderen in zacht donkergrijs en felle hooglichten worden romig en mat."
+      },
+      {
+        "name": "Achtergrondneutralisatie via selectieve desaturatie",
+        "description": "Verlaag in het HSL-paneel de Saturation van Yellow naar -40 en Green naar -35, en verschuif de Hue van Yellow richting Orange om vegetatie warmer te maken.",
+        "when_to_use": "Bij portretten in de natuur waar felle, afleidende achtergrondkleuren de aandacht van het onderwerp weghalen.",
+        "tools": [
+          "HSL (Saturation/Hue)"
+        ],
+        "effect": "De achtergrond wordt sereen en warm van toon, waardoor warme huidtinten direct krachtiger naar voren springen."
+      },
+      {
+        "name": "Huidversmelting met de 'Spotlight'-methode",
+        "description": "Plaats een groot radiaalfilter over het onderwerp, inverteer het masker, verlaag het Contrast met -20 en verhoog de Whites met +10.",
+        "when_to_use": "Wanneer een model subtiel moet worden opgelicht en geïsoleerd zonder dat er een harde, opvallende digitale cirkel ontstaat.",
+        "tools": [
+          "Radial Filter",
+          "Contrast",
+          "Whites"
+        ],
+        "effect": "Het onderwerp wordt onzichtbaar helderder in het frame geplaatst, terwijl de huidstructuur zacht overvloeit."
+      },
+      {
+        "name": "Kleurzweemreductie via camerakalibratie",
+        "description": "Verschuif de Hue van de Red Primary lokaal en verlaag de Saturation van de Green of Blue Primary in het Calibration-paneel.",
+        "when_to_use": "Wanneer er een hardnekkige gele of groenachtige reflectie van bomen over de algehele huid van het model ligt.",
+        "tools": [
+          "Camera Calibration"
+        ],
+        "effect": "De ongezonde gele of groene waas verdwijnt uit de pixels, wat resulteert in een loepzuivere en frisse huidskleur."
+      },
+      {
+        "name": "Handmatige micro-retouchering van hotspots",
+        "description": "Schilder met een lokaal penseel over glimmende delen, verlaag het lokaal Contrast naar -15, Highlights naar -20 en verlaag Texture naar -10.",
+        "when_to_use": "Bij portretfoto's waarbij fel zonlicht harde reflecties op het voorhoofd, de jukbeenderen of schouders achterlaat.",
+        "tools": [
+          "Adjustment Brush",
+          "Contrast",
+          "Highlights",
+          "Texture"
+        ],
+        "effect": "Harde, uitgebleekte plekken matteren onmiddellijk en blenden naadloos met de omringende huidstructuur."
+      }
+    ],
+    "color_approach": "Er wordt gekozen voor een analoge kleurharmonie waarbij contrasterende kleuren systematisch worden geëlimineerd (addition by subtraction). Door storende omgevingskleuren te desatureren en de overblijvende tinten via kleurgeneratie naar warme herfst- en perziktinten te dwingen, ontstaat er een rustige, warme eenheid.",
+    "local_adjustments": "Lokale maskers worden uiterst specifiek ingezet om selectief textuur toe te voegen aan enkel details die pop vereisen (zoals ogen, wenkbrauwen, kleding en haren), terwijl een apart, zachter masker met verlaagd contrast en minimale scherpte wordt gebruikt om de huidpartijen egaal te strijken.",
+    "what_to_avoid": [
+      "Het blindelings opschuiven van de algehele witbalans om warmte te creëren, omdat dit de huidskleur direct onnatuurlijk oranje of geel laat uitslaan.",
+      "Het overmatig verscherpen van het volledige beeld; gebruik altijd de Masking-slider met Alt ingedrukt om enkel de cruciale detailranden te pakken."
+    ],
+    "best_for": "Portretfotografie in de buitenlucht of natuur met uitdagende kleurreflecties en harde lichtplekken op de huid.",
+    "unique_insights": [
+      "Door een radiaalfilter bewust piepklein buiten het actieve canvas te slepen, creëer je een perfecte, egale masker-overlay over de gehele foto die ideaal is om via de gum handmatig schaduw- en lichtvormen (contouring) in te schilderen.",
+      "Aanpassingen in het HSL-paneel werken puur op de specifieke kleurzones in de foto, terwijl de schuiven in het Calibration-paneel de kleurwaardes van elke afzonderlijke pixel in het gehele bestand transformeren, wat een veel diepere kleurcorrectie oplevert.",
+      "Bij het bewerken van portretten met een dromerige sfeer werkt het opzettelijk overbelichten van de basisschuif in combinatie met het agressief terugrollen van de hooglichten vele malen romiger dan een standaard neutrale belichting."
+    ],
+    "style_preview": "Deze stijl biedt een sfeervolle, warme en romige esthetiek die uitermate geschikt is voor portretfotografen die een nostalgische, high-end filmvibe willen realiseren. Door het strategisch dempen van harde natuurkleuren en het toepassen van een matte tooncurve, ontstaat er een serene, schilderachtige sfeer waarin het onderwerp de absolute hoofdrol speelt. De bewerkingsstijl blinkt uit bij portretten die zijn geschoten in diffuus daglicht of tijdens uitdagende situaties met fel zonlicht door bomen. Het verwachte visuele effect is een uiterst gebalanceerd beeld met perfect egale huidtinten, fluweelzachte schaduwen en een harmonieus, warm kleurenpalet dat pure professionaliteit uitstraalt."
   }
 ]

@@ -46142,5 +46142,101 @@
       "Om een lichte lucht gecontroleerd meer pop te geven zonder de sfeer te breken, werkt het stapelen van identieke, subtiele maskers met minimale verschuivingen natuurlijker dan één zware globale aanpassing."
     ],
     "style_preview": "Deze stijl kenmerkt zich door een uiterst dromerige, pastelachtige esthetiek waarbij harde schaduwen en felle, schreeuwende kleuren bewust worden vermeden. De visuele sfeer is sereen en luchtig, met vloeiende kleurovergangen in de lucht die doen denken aan een aquarel. De kernfilosofie draait om selectieve zachtheid en precisie via luminance-maskers in plaats van grove globale schuiven. Dit werkt optimaal voor landschappen gefotografeerd onder een bewolkte hemel of tijdens het zachte licht rond zonsondergang. Het verwachte visuele effect is een gestroomlijnd, cinematisch beeld dat rust uitstraalt en waarbij de kijker subtiel naar de details wordt geleid."
+  },
+  {
+    "video_title": "Lightroom Portrait Retouching & Range Mask Tutorial - Free Raw Photos!",
+    "photographer_name": "Ryan from Signature Edits",
+    "youtube_url": "https://www.youtube.com/watch?v=x-R86CZSikM",
+    "genre": [
+      "portret"
+    ],
+    "light_conditions": [
+      "tegenlicht"
+    ],
+    "mood": [
+      "rustig"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Soft Cinematic Airy Clean",
+    "philosophy": "De focus ligt op het maximaliseren van het dynamisch bereik door globaal contrast te verminderen en dit selectief via maskers terug te brengen. Huidtinten worden verzacht en in balans gebracht met de rest van het lichaam om een egale look te creëren. Het doel is een vloeiende, zachte en cinematische uitstraling zonder harde digitale overgangen.",
+    "workflow_order": [
+      "Stap 1: Lokaal retoucheren en verzachten van de huid met een penseelmasker",
+      "Stap 2: Globaal verlagen van de Clarity en Highlights om het algehele beeld te verzachten",
+      "Stap 3: Oplichten van schaduwen en handmatig instellen van het zwart- en witpunt met de J-toets controle",
+      "Stap 4: Selectief contrast en kleurtegenstellingen aanbrengen via Luminance Range Maskers"
+    ],
+    "techniques": [
+      {
+        "name": "Algehele verzachting met selectieve micro-scherpte",
+        "description": "Verlaag de globale Clarity naar -20 om het volledige beeld een dromerige basis te geven, en schilder vervolgens met een lokaal penseel met Texture +25 en Clarity +15 over cruciale elementen zoals wimpers, wenkbrauwen en lippen.",
+        "when_to_use": "Bij close-up portretten met hard zijlicht dat oneffenheden in de huid accentueert.",
+        "tools": [
+          "Clarity",
+          "Texture",
+          "Adjustment Brush"
+        ],
+        "effect": "De huid oogt direct zacht en egaal, terwijl de details in de ogen en lippen scherp en sprekend blijven."
+      },
+      {
+        "name": "Oogwit correctie via selectieve witbalans",
+        "description": "Schilder nauwkeurig over het oogwit met een penseel en verhoog de Temp-slider met +8 en verlaag de Saturation met -15 om blauwe reflecties te elimineren.",
+        "when_to_use": "Wanneer portretten in de buitenlucht of bij koel vensterlicht een onnatuurlijke blauwe zweem in de ogen vertonen.",
+        "tools": [
+          "Adjustment Brush",
+          "Temp",
+          "Saturation"
+        ],
+        "effect": "Het oogwit krijgt een natuurlijke, neutrale en gezonde uitstraling zonder digitaal wit te worden."
+      },
+      {
+        "name": "Dynamisch bereik maximaliseren via de J-toets methode",
+        "description": "Druk op de J-toets om clipping-waarschuwingen te activeren. Verlaag Highlights naar -40 en verhoog Shadows naar +30, sleep vervolgens Whites omhoog tot de eerste rode waarschuwing verschijnt en Blacks omlaag tot de eerste blauwe pixels oplichten.",
+        "when_to_use": "Bij contrastrijke buitenopnames waarbij details in zowel lichte luchten als donkere schaduwpartijen behouden moeten blijven.",
+        "tools": [
+          "Highlights",
+          "Shadows",
+          "Whites",
+          "Blacks"
+        ],
+        "effect": "De foto toont een maximaal spectrum aan tonen en vormt de perfecte vlakke basis voor selectieve contraststuring."
+      },
+      {
+        "name": "Huidskleur harmoniseren via lokale witbalans",
+        "description": "Schilder met een groot, zacht penseel over koudere zones zoals de hals en schouders, verlaag het contrast licht en verhoog de Temp met +5 om deze synchroon te leggen met het warmere gezicht.",
+        "when_to_use": "Wanneer het gezicht door make-up of reflecties een andere kleurtemperatuur of verzadiging heeft dan de rest van het lichaam.",
+        "tools": [
+          "Adjustment Brush",
+          "Temp",
+          "Contrast"
+        ],
+        "effect": "De huidtinten van gezicht en lichaam lopen naadloos en onzichtbaar in elkaar over."
+      },
+      {
+        "name": "Achtergrondverzadiging isoleren van huidtinten",
+        "description": "Maskeer het onderwerp met een penseel en verlaag hierin handmatig de Saturation met -10 en Dehaze met -15. Verhoog vervolgens globaal de algehele Saturation en Dehaze om de achtergrond te laten knallen.",
+        "when_to_use": "Als een kleurrijke achtergrond extra punch nodig heeft, maar het onderwerp niet mag transformeren in een oververzadigde look.",
+        "tools": [
+          "Adjustment Brush",
+          "Saturation",
+          "Dehaze"
+        ],
+        "effect": "De achtergrondmuren of natuurlijke elementen worden levendig van kleur, terwijl het model een natuurlijke huidskleur behoudt."
+      }
+    ],
+    "color_approach": "De aanpak is gericht op het elimineren van storende, onnatuurlijke kleurszwemen (zoals groen uit bossen of blauw in schaduwen) via lokale witbalanscorrecties. Huidtinten worden strikt beschermd door onderwerpen lokaal te desatureren voordat globale kleurverzadiging of Dehaze wordt toegepast, wat resulteert in een gecontroleerd palet.",
+    "local_adjustments": "Lokale aanpassingen vormen de absolute basis. Er wordt intensief gebruikgemaakt van Luminance Range Maskers om specifiek contrast toe te voegen aan enkel de donkere of lichte delen van een geselecteerde zone (zoals een steiger, wolken of bomen), waardoor aanpassingen extreem vloeiend in elkaar overlopen.",
+    "what_to_avoid": [
+      "Het blind inschakelen van automatische lenscorrecties, aangezien dit in sommige situaties onnatuurlijke vignettering en vreemde banding in luchten kan forceren.",
+      "Het verhogen van de algehele Exposure om een onderwerp op te lichten; gebruik in plaats daarvan de Whites en Highlights in een lokaal masker voor een natuurlijker verloop."
+    ],
+    "best_for": "Portretten met complex zijlicht en landschappen met een hoog contrast waarbij fijne structuren geisoleerd moeten worden bewerkt.",
+    "unique_insights": [
+      "Door eerst de globale Clarity te verlagen en deze daarna pas selectief via een penseel terug te schilderen op de details, ontstaat een veel transparantere en natuurlijkere verzachting dan wanneer je alleen de huid probeert te maskeren.",
+      "Bij het handmatig wegpoetsen van storende elementen in Lightroom zoals draden of kranen met de Spot Removal tool, creëert het volledig uitschakelen van de feather en het trekken van rechte lijnen via de Shift-toets een strakker resultaat langs gebouwen.",
+      "Het selectief verhogen van de Whites en Highlights binnen een Luminance Range Masker oogt vele malen natuurlijker dan het verhogen van de Exposure, omdat de schaduwstructuren in hun oorspronkelijke diepte worden gelaten."
+    ],
+    "style_preview": "Deze stijl biedt een verfijnde, heldere en uiterst zachte esthetiek die perfect is voor portret- en reisfotografen die streven naar een high-end, cinematische look. Door schaduwen gecontroleerd open te breken en micro-contrasten in de huid lokaal te minimaliseren, ontstaat een dromerig effect dat doet denken aan klassieke analoge film. De visuele tonen zijn teder en gebalanceerd, waarbij felle elementen in de achtergrond subtiel mogen spreken zonder de aandacht van het onderwerp af te leiden. Dit werkt het beste bij beelden die geschoten zijn met zacht tegenlicht of diffuus daglicht. Het uiteindelijke visuele resultaat is een harmonieus, rustgevend en professioneel afgewerkt beeld met vloeiende toonsgradaties."
   }
 ]

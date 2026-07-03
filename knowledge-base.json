@@ -46054,5 +46054,93 @@
       "Bewolkte dagen rond het middaguur kunnen door de loodrechte lichtinval hardere schaduwen onder de ogen veroorzaken dan zonnige dagen, omdat je bij zonlicht de flare kunt gebruiken om contrast weg te nemen."
     ],
     "style_preview": "Deze stijl kenmerkt zich door een uiterst schone, tijdloze en natuurgetrouwe esthetiek waarbij de nadruk ligt op een perfecte balans tussen licht en schaduw. De kernfilosofie draait om het subtiel sturen van de blik van de kijker naar het bruidspaar, zonder dat de bewerking er digitaal of overgeproduceerd uitziet. Dit werkt het beste bij zacht, diffuus daglicht of subtiel raamlicht, waarbij de kleuren helder maar getrouw blijven. Het verwachte visuele effect is een frisse, romantische reportage met zachte huidtinten en diepe, natuurlijke achtergronden."
+  },
+  {
+    "video_title": "Edit With Me Lightroom Tutorial! (Free Raw Photos)",
+    "photographer_name": "Ryan from Signature Edits",
+    "youtube_url": "https://www.youtube.com/watch?v=W5wW_udGHtQ",
+    "genre": [
+      "landschap"
+    ],
+    "light_conditions": [
+      "overcast"
+    ],
+    "mood": [
+      "rustig"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Pastel Dreamy Airy Clean",
+    "philosophy": "De focus ligt op het behouden en versterken van een samenhangend pastelgevoel met vloeiende kleurovergangen. Er wordt veel gewerkt met lokale bereiksmaskers om de lucht en voorgrond los van elkaar in balans te brengen zonder harde contrasten te forceren. Het doel is een schone, dromerige sfeer creëren waarbij imperfecties in scherpte subtiel worden gecorrigeerd via textuuraanpassingen.",
+    "workflow_order": [
+      "Stap 1: Lucht selecteren via een luminance bereiksmasker om de helderste delen te isoleren",
+      "Stap 2: Kleurtoon van de lucht handmatig bijsturen en verzachten met specifieke kleurvullingen",
+      "Stap 3: Horizonmasker strak trekken met de shift-toets penseelfunctie",
+      "Stap 4: Voorgrond en bergen lokaal oplichten en blauwtinten toevoegen voor kleurbalans"
+    ],
+    "techniques": [
+      {
+        "name": "Scherpte herstellen via textuur",
+        "description": "Verhoog Texture naar +30 tot +40 om verloren scherpte in zachte achtergronden of bergen terug te halen zonder dat er grove ruis ontstaat zoals bij reguliere verscherping.",
+        "when_to_use": "Bij landschapsfoto's waarbij de lens net niet op oneindig stond ingesteld en de achtergrond zacht oogt.",
+        "tools": [
+          "Texture"
+        ],
+        "effect": "Fijne details en structuren in bergen of vegetatie worden scherper zichtbaar zonder harde randen."
+      },
+      {
+        "name": "Lucht inkleuren via luminance maskeren",
+        "description": "Gebruik een penseel met een Luminance Range Masker ingesteld op de hoogste helderheidswaardes om puur de lucht te pakken en verlaag de temperatuur of voeg een kleurvulling toe via het kleurvak.",
+        "when_to_use": "Wanneer de lucht flets of wit is uitgeslagen en een zachte pastelkleur vereist.",
+        "tools": [
+          "Adjustment Brush",
+          "Range Mask (Luminance)"
+        ],
+        "effect": "De witte lucht krijgt een zachte blauwe of paarse tint zonder dat de bergen verkleuren."
+      },
+      {
+        "name": "Horizonmasker straklijnen",
+        "description": "Klik eenmaal met de wisser, houd Shift ingedrukt en klik aan de andere kant van de horizon om een perfect rechte lijn te wissen uit een lokaal masker met Flow op 100.",
+        "when_to_use": "Als een lokaal verloop- of penseelmasker per ongeluk over een strakke, rechte horizon of bergketen heen lekt.",
+        "tools": [
+          "Adjustment Brush (Eraser)"
+        ],
+        "effect": "Het masker snijdt exact langs de horizon af waardoor bewerkingen in de lucht niet doorlopen op het land."
+      },
+      {
+        "name": "Witte wolken lokaal accentueren",
+        "description": "Schilder ruw over wolkenpartijen en gebruik een Luminance Range Masker gericht op de allerhoogste hooglichten om alleen de wolkentoppen te selecteren en verhoog de Whites met +15.",
+        "when_to_use": "Wanneer wolken in een egale lucht meer definitie en textuur nodig hebben.",
+        "tools": [
+          "Adjustment Brush",
+          "Range Mask (Luminance)"
+        ],
+        "effect": "Wolken krijgen meer driedimensionale diepte en steken helderder af tegen de rest van de lucht."
+      },
+      {
+        "name": "Ruisonderdrukking met maskeringsoptimalisatie",
+        "description": "Verhoog de Luminance Noise Reduction naar 25 en pas verscherping toe waarbij de Masking-slider met Alt ingedrukt naar +60 wordt gesleept om alleen de harde randen te verscherpen.",
+        "when_to_use": "Bij landschapsfoto's of avondopnames die met een hoge ISO-waarde zijn geschoten en grove korrel tonen.",
+        "tools": [
+          "Noise Reduction",
+          "Sharpening (Masking)"
+        ],
+        "effect": "De egale vlakken worden volledig gladgestreken terwijl de cruciale detailranden scherp blijven."
+      }
+    ],
+    "color_approach": "Er wordt gekozen voor een analoge kleurharmonie met pastelachtige blauw-, magenta- en geeltinten. In plaats van de algehele verzadiging op te voeren, gebruikt hij lokale penselen met kleurvullingen om specifieke zones een dromerige tint te geven. Dit zorgt ervoor dat complementaire contrasten zacht in elkaar overlopen zonder hard te botsen.",
+    "local_adjustments": "Maskers zijn de spil van de workflow; er wordt vrijwel nooit puur globaal gewerkt. Met Luminance Range Maskers scheidt hij de lucht nauwkeurig van de bergen. Ook gebruikt hij lokale penselen met verlaagd contrast en verhoogde schaduwen om donkere elementen subtiel op te lichten alsof er een zachte spotlight op staat.",
+    "what_to_avoid": [
+      "Te ver doorvoeren van Dehaze waardoor de gewenste zachte pastelvibe omslaat in een modderig, hard contrast.",
+      "Het negeren van chromatische aberratie of kleurranden bij het wijd open fotograferen met goedkopere objectieven."
+    ],
+    "best_for": "Landschapsfoto's met zacht of bewolkt licht die een schone, dromerige en schilderachtige sfeer moeten krijgen.",
+    "unique_insights": [
+      "Lenzen presteren bij landschapsfotografie vaak het minst scherp op hun uiterste diafragmagrenzen; extreem knijpen naar f/11 of f/16 veroorzaakt diffractie waardoor de foto juist zachter wordt in plaats van scherper.",
+      "Het lokaal verlagen van het contrast en de helderheid in een masker werkt als een virtuele spotlight die objecten naadloos en onzichtbaar laat fuseren met de omgeving.",
+      "Om een lichte lucht gecontroleerd meer pop te geven zonder de sfeer te breken, werkt het stapelen van identieke, subtiele maskers met minimale verschuivingen natuurlijker dan één zware globale aanpassing."
+    ],
+    "style_preview": "Deze stijl kenmerkt zich door een uiterst dromerige, pastelachtige esthetiek waarbij harde schaduwen en felle, schreeuwende kleuren bewust worden vermeden. De visuele sfeer is sereen en luchtig, met vloeiende kleurovergangen in de lucht die doen denken aan een aquarel. De kernfilosofie draait om selectieve zachtheid en precisie via luminance-maskers in plaats van grove globale schuiven. Dit werkt optimaal voor landschappen gefotografeerd onder een bewolkte hemel of tijdens het zachte licht rond zonsondergang. Het verwachte visuele effect is een gestroomlijnd, cinematisch beeld dat rust uitstraalt en waarbij de kijker subtiel naar de details wordt geleid."
   }
 ]

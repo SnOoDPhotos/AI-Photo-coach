@@ -48141,5 +48141,454 @@
       "Het consequent meenemen van de nek en armen met een grotere brush voorkomt dat het gezicht als een los masker op het lichaam oogt."
     ],
     "style_preview": "Deze stijl levert een adembenemende, vlekkeloze en uiterst professionele high-end look op. De visuele sfeer is krachtig en gepolijst, perfect geschikt voor fashionmagazines en strakke studioportretten. De huid oogt perfect egaal en glad maar behoudt dankzij de textuurbescherming haar fotografische realisme."
+  },
+  {
+    "video_title": "Frequency Separation In-Depth with Mixer Brush in Photoshop",
+    "photographer_name": "PiXimperfect",
+    "youtube_url": "https://www.youtube.com/watch?v=Z8mnzVNaiD0",
+    "genre": [
+      "portret",
+      "fine-art"
+    ],
+    "light_conditions": [
+      "diffuus licht",
+      "kunstlicht"
+    ],
+    "mood": [
+      "intiem",
+      "rustig"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Classic Mixer Brush Retouch",
+    "philosophy": "De klassieke benadering splitst een digitaal beeld strikt wiskundig op in hoge frequenties voor textuur en lage frequenties voor kleur en toon. Door deze scheiding kan de fotograaf de onderliggende huidtinten schilderen en modelleren als klei, zonder de natuurlijke poriën en structuren aan te tasten. Het proces bootst de gelaagde opbouw van een fysiek kunstwerk na voor een naadloos resultaat.",
+    "workflow_order": [
+      "stap 1: pas de algehele belichting aan in Lightroom of Adobe Camera Raw",
+      "stap 2: verwijder puistjes en fijne vlekjes op een aparte blemish-laag",
+      "stap 3: voer de wiskundige frequentiescheiding uit met apply image op 128 offset",
+      "stap 4: blend de huidtinten op de kleurlaag met een droge mixer brush"
+    ],
+    "techniques": [
+      {
+        "name": "Wiskundige Frequentiescheiding",
+        "description": "Gebruik Apply Image op de textuurlaag met de instellingen: laag ingesteld op de kleurlaag, blending op Subtract, Scale op 2 en Offset op 128 om de textuur perfect te isoleren.",
+        "when_to_use": "Bij het handmatig opzetten van een nauwkeurige frequentiescheiding voor high-res portretten.",
+        "tools": [
+          "Apply Image"
+        ],
+        "effect": "De laag verandert in een neutrale 50% grijze laag die uitsluitend de scherpe textuurlijnen bevat."
+      },
+      {
+        "name": "Mixer Brush Huid Blending",
+        "description": "Stel de Mixer Brush in op een schone, transparante lading (deactiveer automatische kleurwissel) met een Wetness tussen 1% en 5% en een Flow van 10% om kleuren zacht te mengen.",
+        "when_to_use": "Op de low frequency laag om vlekkerige schaduwen en harde kleurovergangen vloeiend te maken.",
+        "tools": [
+          "Mixer Brush Tool"
+        ],
+        "effect": "De kleuren op de huid vloeien naadloos in elkaar over zonder dat de scherpte van de poriën verandert."
+      },
+      {
+        "name": "Textuur-geïsoleerd Schilderen",
+        "description": "Schakel de hoge frequentielaag (textuur) tijdelijk uit tijdens het werken met de Mixer Brush om puur de vloeiendheid van de kleuren en overgangen te beoordelen.",
+        "when_to_use": "Tijdens de actieve blending-fase van de huidkleuren.",
+        "tools": [
+          "Layer Visibility"
+        ],
+        "effect": "De foto ziet er tijdelijk uit als een volkomen gladgetrokken wassen beeld, waardoor kleurvlekken direct opvallen."
+      },
+      {
+        "name": "Directioneel Retoucheren",
+        "description": "Schilder met de Mixer Brush uitsluitend in de anatomische richting van de botstructuur en de natuurlijke lichtval (bijvoorbeeld van boven naar beneden op de neusrug) om de vorm te behouden.",
+        "when_to_use": "Bij het blenden van complexe gezichtsdelen zoals de neus, jukbeenderen en kaaklijn.",
+        "tools": [
+          "Mixer Brush Tool"
+        ],
+        "effect": "De natuurlijke driedimensionale structuur en vorm van het gezicht blijft intact."
+      },
+      {
+        "name": "Oogschaduw Verzachting",
+        "description": "Retoucheer de donkere kringen onder de ogen op een aparte laag met een verlaagde dekking (Opacity) naar 80% om de correctie natuurlijk te houden.",
+        "when_to_use": "Bij het verminderen van vermoeidheidslijnen onder de ogen.",
+        "tools": [
+          "Layer Opacity"
+        ],
+        "effect": "De schaduw onder de ogen wordt verzacht maar behoudt een realistische diepte."
+      }
+    ],
+    "color_approach": "Kleur en toon worden behandeld als een vloeibaar medium op de lage frequentielaag. Door de Mixer Brush transparant te houden, worden er geen nieuwe pigmenten geïntroduceerd, maar worden de bestaande, natuurlijke huidtinten lokaal met elkaar vermengd voor een egale overgang.",
+    "local_adjustments": "Lokale aanpassingen gebeuren via strikt gescheiden handmatige penseelstreken op de kleurlaag, waarbij de textuurlaag als een onaanraakbaar masker over de bewerking heen ligt.",
+    "what_to_avoid": [
+      "Vermijd het verzachten of wegpoetsen van de lachlijnen (smile lines), omdat dit het gezicht direct een onrealistisch en plastic uiterlijk geeft.",
+      "Vermijd dat kleuren van de achtergrond of kleding overvloeien (spillen) in de randen van de huid tijdens het werken met de mixer brush."
+    ],
+    "best_for": "High-end studio-portretten en fine-art fotografie waar absolute controle over de schaduwgradaties vereist is.",
+    "unique_insights": [
+      "Het geheim van een perfecte kleurovergang is om de Mixer Brush te gebruiken met de textuurlaag volledig uitgeschakeld; zo zie je direct waar de tonen haperen.",
+      "Het getal 128 in de Photoshop-matrix staat voor exact 50% neutraal grijs, wat als een onzichtbare spil fungeert in lineaire licht-overvloeimodi.",
+      "De workflow moet altijd van binnen naar buiten werken: eerst de lichtstructuur (wireframe), dan de vormen (klei), en tot slot de details en filters."
+    ],
+    "style_preview": "Een uiterst verfijnde, schilderachtige stijl die doet denken aan klassieke fine-art portretten. De huid krijgt een fluweelzachte, egale toon die perfect overvloeit van hooglicht naar diepe schaduw, zonder dat er ook maar één huidporie verloren gaat. Deze stijl werkt het beste bij studiolicht en gecontroleerd diffuus licht. Het visuele effect is een tijdloze, hoogwaardige afwerking die pure vakkennis uitstraalt."
+  },
+  {
+    "video_title": "How to Use Frequency Retouching in Photoshop | Day 24",
+    "photographer_name": "Aaron Nace",
+    "youtube_url": "https://www.youtube.com/watch?v=jfBfb8_vHYo",
+    "genre": [
+      "portret",
+      "algemeen"
+    ],
+    "light_conditions": [
+      "diffuus licht",
+      "daglicht"
+    ],
+    "mood": [
+      "naturalistic",
+      "levendig"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Low Flow Brush Blending",
+    "philosophy": "Deze benadering stelt dat professioneel retoucheren onzichtbaar moet zijn en dat de geportretteerde te allen tijde op zichzelf moet blijven lijken. Door met een extreem lage penseelflow te werken, worden overgangen tussen licht en donker handmatig en stapsgewijs opgebouwd. Dit handmatige proces biedt een organische subtiliteit die met automatische filters niet te evenaren is.",
+    "workflow_order": [
+      "stap 1: laad de geautomatiseerde frequentiescheiding-actie via het actiepaneel",
+      "stap 2: voer een gaussian blur uit van circa 30 pixels om de textuur volledig te scheiden",
+      "stap 3: maak een nieuwe lege retoucheerlaag aan tussen de hoge en lage frequentie",
+      "stap 4: schilder met een zacht penseel op een zeer lage flow om overgangen te egaliseren"
+    ],
+    "techniques": [
+      {
+        "name": "Micro-Flow Kleuropbouw",
+        "description": "Stel de Flow van het penseel in op een extreem lage waarde van 2% tot 5% (typisch 5%) en gebruik een hardheid van 0% om kleurovergangen uiterst handmatig op te bouwen.",
+        "when_to_use": "Bij het handmatig egaliseren van de overgangen tussen licht en schaduw op de huid.",
+        "tools": [
+          "Brush Tool"
+        ],
+        "effect": "De geschilderde tonen mengen zich onzichtbaar en stapsgewijs met de bestaande huidskleur."
+      },
+      {
+        "name": "Continu Alt-Samplen",
+        "description": "Houd tijdens het schilderen constant één vinger op de Alt-/Option-toets om elke seconde een nieuwe, lokale kleurstaal te nemen vlak naast de plek waar je schildert.",
+        "when_to_use": "Tijdens het modelleren van de huidskleur over het gehele gezicht.",
+        "tools": [
+          "Brush Tool",
+          "Alt Key"
+        ],
+        "effect": "De opgebouwde kleur sluit perfect aan bij de natuurlijke pigmentatie van de directe omgeving."
+      },
+      {
+        "name": "Destructievrije Kleurtussenlaag",
+        "description": "Maak een nieuwe lege laag aan *tussen* de hoge en lage frequentielaag om op te schilderen, zodat de originele kleurlaag eronder intact blijft en fouten simpel kunnen worden gewist.",
+        "when_to_use": "Bij de start van het handmatige schilderwerk op de huidtonen.",
+        "tools": [
+          "New Layer"
+        ],
+        "effect": "Je kunt fouten corrigeren met de gewone gum (Eraser Tool) zonder de basisfoto aan te tasten."
+      },
+      {
+        "name": "Losvliegende Haren Verwijdering",
+        "description": "Gebruik de Clone Stamp Tool op de high frequency laag (ingesteld op Current Layer) om storende, losvliegende haren over het voorhoofd of de achtergrond strak weg te stempelen.",
+        "when_to_use": "Bij het opzuiveren van de haarcontouren en fijne details in het gezicht.",
+        "tools": [
+          "Clone Stamp Tool"
+        ],
+        "effect": "De storende haartjes verdwijnen onmiddellijk terwijl de onderliggende huidkleur perfect behouden blijft."
+      },
+      {
+        "name": "Ver-Uitgezoomde Evaluatie",
+        "description": "Retoucheer de grote kleurvlakken terwijl de afbeelding volledig is uitgezoomd, zodat je de globale tonen en schaduwen beoordeelt in plaats van te focussen op individuele pixels.",
+        "when_to_use": "Gedurende het gehele proces van het handmatig blenden van de huid.",
+        "tools": [
+          "Zoom Tool"
+        ],
+        "effect": "De algehele lichtbalans van het portret wordt geoptimaliseerd en oogt rustiger."
+      }
+    ],
+    "color_approach": "Kleurafwijkingen en vlekken in de belichting worden gecorrigeerd door handmatig zuivere, omliggende huidtinten op te pakken en deze met een uiterst transparante laag over de probleemzones heen te streken. Dit zorgt voor een harmonieuze kleurbalans.",
+    "local_adjustments": "Lokale aanpassingen vinden plaats op een geïsoleerde tussenlaag met zachte penselen, waardoor er een perfecte controle is over de dekking per specifiek gezichtsdeel.",
+    "what_to_avoid": [
+      "Vermijd een hoge flow of opaciteit op het penseel, omdat dit direct leidt tot platte, onnatuurlijke en vlekkerige kleurbanen.",
+      "Vermijd het retoucheren van de textuurlaag met een stempelmodus die ingesteld staat op 'Current & Below'."
+    ],
+    "best_for": "Natuurlijke daglichtportretten waarbij het model een goede basishuid heeft maar subtiele licht- en schaduwcorrecties behoeft.",
+    "unique_insights": [
+      "Door op een lege laag *tussen* de frequenties te schilderen, fungeert de bovenliggende textuurlaag als een permanent, live structuurmasker.",
+      "Als een retoucheer-stap effectief is, mag het tijdens het actieve werk bijna niet opvallen dat je iets verandert; het resultaat bewijst zich pas bij het aan- en uitzetten van de laag.",
+      "Het voorhoofd vertoont vaak een herhalend patroon van licht-donker-licht; door dit handmatig te kalmeren krijgt het portret direct een high-end uitstraling."
+    ],
+    "style_preview": "Een uiterst zachte, harmonieuze en naturalistische retoucheerstijl. Overgangen tussen monumentale highlights en delicate schaduwen worden vloeiend en zacht gemaakt, zonder dat de unieke kenmerken van het gezicht vervagen. Deze stijl werkt het beste bij zacht daglicht en buitenportretten. Het visuele effect is een frisse, uitgeruste en volkomen organische presentatie van het subject."
+  },
+  {
+    "video_title": "Easily Retouch Skin Like a Professional | Affinity Photo Tutorial",
+    "photographer_name": "Affinity Revolution",
+    "youtube_url": "https://www.youtube.com/watch?v=vKCbGTSW6ng",
+    "genre": [
+      "portret",
+      "algemeen"
+    ],
+    "light_conditions": [
+      "diffuus licht",
+      "daglicht"
+    ],
+    "mood": [
+      "naturalistic",
+      "rustig"
+    ],
+    "software": [
+      "Affinity Photo"
+    ],
+    "style_description": "Affinity Built-In Separation Style",
+    "philosophy": "De filosofie achter deze Affinity Photo- workflow maakt gebruik van de ingebouwde, gestroomlijnde filters om high-end retoucheren toegankelijk te maken voor elke fotograaf. Retoucheren is hier een tweekrapraket: eerst wordt de pure textuur gereinigd zonder afleiding van kleur, waarna de kleuren met een uiterst zachte flow handmatig worden gladgestreken. Het behoud van een natuurlijke uitstraling staat centraal.",
+    "workflow_order": [
+      "stap 1: dupliceer de achtergrondlaag met command J",
+      "stap 2: activeer het ingebouwde 'frequency separation' filter op circa 9 pixels",
+      "stap 3: reinig de high frequency textuurlaag met de inpainting brush",
+      "stap 4: dupliceer de low frequency laag en blend de kleuren handmatig met het penseel"
+    ],
+    "techniques": [
+      {
+        "name": "Ingebouwde Frequentiesplitsing",
+        "description": "Activeer het specifieke Frequency Separation filter in Affinity Photo en stel de straal (Radius) in op exact 9 pixels om een perfecte, live scheiding tussen structuur en kleur te realiseren.",
+        "when_to_use": "Bij de start van elke retoucheersessie in Affinity Photo.",
+        "tools": [
+          "Frequency Separation Filter"
+        ],
+        "effect": "Affinity splitst de foto direct op in een scherpe textuurlaag en een zachte kleurlaag met een split-screen preview."
+      },
+      {
+        "name": "Inpainting Textuurreparatie",
+        "description": "Gebruik de Inpainting Brush Tool op de high frequency laag (ingesteld op Current Layer) om oneffenheden en bultjes direct te herstellen op basis van de omliggende structuur.",
+        "when_to_use": "Voor het snel en intelligent reinigen van de textuurlaag zonder kleurinvloeden.",
+        "tools": [
+          "Inpainting Brush Tool"
+        ],
+        "effect": "Kleine bultjes en pukkeltjes verdwijnen onmiddellijk uit de textuurstructuur."
+      },
+      {
+        "name": "Low-Flow Penseel Egalisering",
+        "description": "Stel het gewone penseel (Paintbrush Tool) in op 0% Hardheid en een zeer lage Flow om handmatig met een grote diameter egale kleurbanen op de huid aan te brengen.",
+        "when_to_use": "Op een kopie van de low frequency laag om vlekkerige kleurzones te verzachten.",
+        "tools": [
+          "Paintbrush Tool"
+        ],
+        "effect": "De vlekkerige, fuzzy kleuren op de huid transformeren in een egale, rustige teint."
+      },
+      {
+        "name": "Alt-Sampling Kleurcorrectie",
+        "description": "Houd de Alt-/Option-toets ingedrukt om continu heldere huidtinten te samplen en schilder deze over donkere kringen of schaduwplekken heen om ze op te lichten.",
+        "when_to_use": "Bij het wegwerken van vermoeidheidslijnen of het verbeteren van de gezichtsverlichting.",
+        "tools": [
+          "Paintbrush Tool",
+          "Alt Key"
+        ],
+        "effect": "Donkere kringen onder de ogen verdwijnen en transformeren in een heldere, frisse huidtoon."
+      },
+      {
+        "name": "Destructievrije Frequentie-kopie",
+        "description": "Dupliceer de live low frequency laag vóór het schilderen met command J, zodat je een veilige back-up hebt en de intensiteit achteraf via de laagdekking kunt doseren.",
+        "when_to_use": "Voorafgaand aan het actieve schilderwerk op de kleurlaag.",
+        "tools": [
+          "Layer Duplicate"
+        ],
+        "effect": "De schilderbewerking is volledig omkeerbaar en kan subtiel worden ingemengd."
+      }
+    ],
+    "color_approach": "Kleurvariaties en ongewenste vlekken worden gecorrigeerd door handmatig zuivere, omliggende huidpigmenten met een zeer lage flow in te schilderen. Hierdoor ontstaat een geleidelijke, fluweelzachte kleurovergang die de natuurlijke uitstraling respecteert.",
+    "local_adjustments": "Aanpassingen worden volledig handmatig en lokaal uitgevoerd via zachte penseelstreken, waarbij de grootte van het penseel via de sneltoetsen (bracket keys) continu wordt aangepast aan de anatomie van het gezicht.",
+    "what_to_avoid": [
+      "Vermijd het schilderen over de scherpe randen of contouren van het gezicht, omdat de kleuren dan buiten de lijnen gaan bloeden (bleeding).",
+      "Vermijd het inschakelen van 'Current Layer & Below' bij het retoucheren van de textuurlaag."
+    ],
+    "best_for": "Portretfotografen die werken in Affinity Photo en een snelle, professionele en natuurlijke huidcorrectie ambiëren.",
+    "unique_insights": [
+      "Affinity Photo heeft een ingebouwd frequentiescheidingsfilter dat het omslachtige handmatige apply-image proces van Photoshop overbodig maakt.",
+      "Bumps (bultjes) op de huid bevatten vaak zowel een textuur-component als een kleur-component; je moet ze dus op BEIDE lagen afzonderlijk behandelen.",
+      "Door lichtere huidskleuren te samplen en over schaduwen te schilderen, kun je de algehele belichting en vormen van het gezicht non-destructief herstructureren."
+    ],
+    "style_preview": "Een uiterst rustige, zachte en naturalistische stijl die de pure essentie van het model naar voren brengt. Kleurvlekken en storende schaduwen onder de ogen worden zacht geneutraliseerd, terwijl de huidstructuur volkomen organisch en scherp blijft presteren. Deze stijl werkt het beste bij zacht diffuus daglicht. Het visuele effect is een frisse, professionele en uiterst geloofwaardige portretafwerking."
+  },
+  {
+    "video_title": "The Power Of Frequency Separation | Affinity Photo Tutorial",
+    "photographer_name": "IAMRENSI",
+    "youtube_url": "https://www.youtube.com/watch?v=LvYWDwlgpA8",
+    "genre": [
+      "portret",
+      "fine-art"
+    ],
+    "light_conditions": [
+      "diffuus licht",
+      "schaduw"
+    ],
+    "mood": [
+      "moody",
+      "intiem"
+    ],
+    "software": [
+      "Affinity Photo"
+    ],
+    "style_description": "Affinity Live Patch Retouch",
+    "philosophy": "Deze filosofie richt zich op het non-destructief isoleren van specifieke probleemgebieden door de frequentielagen via sneltoetsen volledig te isoleren. Retoucheren is een proces van minimalistische verfijning, waarbij de intelligentie van de software (inpainting) maximaal wordt benut. De focus ligt op het behouden van een doorleefde, moody sfeer met behoud van natuurlijke imperfecties.",
+    "workflow_order": [
+      "stap 1: maak een back-up duplicaat van de originele portretlaag aan",
+      "stap 2: start het ingebouwde 'frequency separation' filter via het menu filters",
+      "stap 3: isoleer de kleurlagen via alt-klik om rode vlekken direct op te sporen",
+      "stap 4: corrigeer hardnekkige rode vlekken met de patch tool voor een zuivere match"
+    ],
+    "techniques": [
+      {
+        "name": "Frequentie Live Isolatie",
+        "description": "Houd de Alt-/Option-toets ingedrukt en klik op de miniatuur (Thumbnail) van de lage frequentielaag om deze laag volledig te isoleren en vrij van textuur te bekijken.",
+        "when_to_use": "Bij het opsporen van diepliggende rode vlekken of pigmentfouten in de huid.",
+        "tools": [
+          "Layer Isolation",
+          "Alt Key"
+        ],
+        "effect": "De interface toont uitsluitend de wazige kleurvlekken, waardoor imperfecties direct helder oplichten.",
+        "when_to_use_old": "Bij het opsporen van diepliggende rode vlekken of pigmentfouten in de huid."
+      },
+      {
+        "name": "Inpainting Roodheid Correctie",
+        "description": "Gebruik de Inpainting Brush Tool op de geïsoleerde low frequency laag (Hardness 0%, Opacity 100%) om rode vlekken met korte streken volledig te elimineren.",
+        "when_to_use": "Voor het snel en automatisch wegwerken van rode vlekken en vlekkerige zones op de kleurlaag.",
+        "tools": [
+          "Inpainting Brush Tool"
+        ],
+        "effect": "Affinity berekent de omliggende gezonde huidskleur en vult de rode vlek onzichtbaar op."
+      },
+      {
+        "name": "Patch Tool Toon-Overdracht",
+        "description": "Selecteer een hardnekkige rode vlek met de Patch Tool op de kleurlaag en versleep de selectie naar een zone met een perfect egale en gezonde huidtoon.",
+        "when_to_use": "Bij grotere, hardnekkige rode vlekken die de inpainting brush niet in één keer strak krijgt.",
+        "tools": [
+          "Patch Tool"
+        ],
+        "effect": "De rode vlek wordt direct vervangen door de perfecte doelkleur met behoud van een zachte randovergang."
+      },
+      {
+        "name": "Textuurgenezing Isolatie",
+        "description": "Houd de Alt-toets ingedrukt en klik op de high frequency textuurlaag om puur de grijze structuurfouten te isoleren en te bewerken met de inpainting brush.",
+        "when_to_use": "Na het kleurwerk om resterende micro-bultjes en structuurfoutjes uit de huid te filteren.",
+        "tools": [
+          "Layer Isolation",
+          "Inpainting Brush Tool"
+        ],
+        "effect": "De interface toont uitsluitend de textuurlijnen, waardoor bultjes direct kunnen worden weggestreken."
+      },
+      {
+        "name": "Minimalistische Blemish Retentie",
+        "description": "Laat bewuste, natuurlijke kleine moedervlekjes of subtiele huidstructuren bewust ongemoeid tijdens het retoucheren om de menselijkheid van het portret te bewaren.",
+        "when_to_use": "Tijdens de finale controlefase op de high frequency laag.",
+        "tools": [
+          "Inpainting Brush Tool"
+        ],
+        "effect": "Het subject behoudt haar unieke karakter en ziet er niet uit als een etalagepop of pop."
+      }
+    ],
+    "color_approach": "De focus ligt op het isoleren en uitschakelen van extreme kleurcontrasten (zoals felle rode vlekken). Door de kleurlagen via alt-klik te isoleren, kunnen ongewenste pigmenten exact worden overschreven met neutrale omliggende huidskleuren.",
+    "local_adjustments": "Aanpassingen worden lokaal gestuurd via de Patch Tool en de Inpainting Brush, waarbij de randen via een hardheidsinstelling van 0% altijd vloeiend in de omgeving overlopen.",
+    "what_to_avoid": [
+      "Vermijd het te rigoureus wegpoetsen van alle kleine imperfecties; behoud altijd een aantal natuurlijke kenmerken om een nep-uiterlijk te voorkomen.",
+      "Vermijd het werken met harde penseelranden op de frequentielagen."
+    ],
+    "best_for": "Moody portretten en intieme close-ups in de schaduw met sterke lokale rode vlekken.",
+    "unique_insights": [
+      "Door Alt te klikken op een frequentie-thumbnail in Affinity Photo, transformeer je de weergave in een röntgenfoto voor specifieke huidfouten.",
+      "De Patch Tool is superieur voor grotere kleurvlekken omdat je zelf de exacte tonale bestemming kunt dicteren in plaats van te gokken op het algoritme.",
+      "Affinity's inpainting-algoritme is krachtig genoeg om textuur perfect van buiten naar binnen te herberekenen op een volledig geïsoleerde high-pass laag."
+    ],
+    "style_preview": "Een intieme, moody en door en door naturalistische stijl. De huid behoudt haar rauwe, echte karakter met vlijmscherpe poriën en subtiele natuurlijke kenmerken, terwijl verstorende rode vlekken en tijdelijke oneffenheden onzichtbaar zijn geëlimineerd. Deze stijl excelleert bij zacht, sfeervol licht en schaduwomgevingen. Het visuele effect is puur, doorleefd en uiterst artistiek.",
+    "_warnings": [
+      "naam volledig in hoofdletters"
+    ]
+  },
+  {
+    "video_title": "5 Step Next-Level Skin Retouching in GIMP",
+    "photographer_name": "Michael Davies",
+    "youtube_url": "https://www.youtube.com/watch?v=jJSDvxYwCOU",
+    "genre": [
+      "portret",
+      "algemeen"
+    ],
+    "light_conditions": [
+      "diffuus licht",
+      "daglicht"
+    ],
+    "mood": [
+      "naturalistic",
+      "levendig"
+    ],
+    "software": [
+      "GIMP"
+    ],
+    "style_description": "GIMP Wavelet Decompose Style",
+    "philosophy": "De bewerkingsfilosofie binnen GIMP is gericht op een modulaire en gelaagde opbouw via de Wavelet Decompose filter (frequentiescheiding). In plaats van een simpele twee-laags splitsing, wordt het beeld opgebouwd in vijf tot zeven specifieke detailniveaus. Dit stelt de fotograaf in staat om grove kleurvlekken extreem te vervagen, terwijl sproeten en fijne karakteristieken op de top-lagen perfect behouden blijven.",
+    "workflow_order": [
+      "stap 1: verwijder kleine puistjes handmatig met de heal tool op de retouch-laag",
+      "stap 2: neutraliseer grote rode kleurzones met de clone tool",
+      "stap 3: activeer wavelet decompose met 5 schalen om het beeld op te splitsen",
+      "stap 4: pas gaussiaanse vervagingen toe op de residual- en schaallagen binnen een feathered selectie"
+    ],
+    "techniques": [
+      {
+        "name": "Heal Tool Spot Removal",
+        "description": "Gebruik de Heal Tool met een zachte brush (Hardness ~32) en een lage Force (~24) om kleine acne-plekjes direct te blenden met omringende pixels.",
+        "when_to_use": "Bij het opruimen van kleine, ronde imperfecties aan de start van de workflow.",
+        "tools": [
+          "Heal Tool"
+        ],
+        "effect": "Het puistje verdwijnt doordat GIMP de bronpixels via een intelligent algoritme mengt met de bestemming."
+      },
+      {
+        "name": "Clone Tool Tooncorrectie",
+        "description": "Gebruik de Clone Tool om grote, hardnekkige rode zones in de huid handmatig te overschrijven met een gezonde huidskleur van een nabijgelegen bron.",
+        "when_to_use": "Voor het verminderen van grote rode vlekken die de heal tool niet gecorrigeerd krijgt.",
+        "tools": [
+          "Clone Tool"
+        ],
+        "effect": "De rode kleur verdwijnt en de huid krijgt direct een betere, neutrale basiskleur."
+      },
+      {
+        "name": "Wavelet Decompose Opsplitsing",
+        "description": "Pas de ingebouwde Wavelet Decompose filter toe met 5 schalen (Scales) om de foto op te splitsen in diverse detail-frequenties en een kleur-residual.",
+        "when_to_use": "Als basis voor een geavanceerde en modulaire frequentiescheiding in GIMP.",
+        "tools": [
+          "Wavelet Decompose Filter"
+        ],
+        "effect": "Er ontstaat een laaggroep waarin elke schaal een specifiek detailniveau (van micro tot macro) bevat."
+      },
+      {
+        "name": "Macro Residual Blur",
+        "description": "Maak een grote selectie met de Free Select Tool (Feathered op ~30px) rondom de wangen en pas een sterke Gaussian Blur van 30 toe op de Residual-laag.",
+        "when_to_use": "Op de onderste kleurlaag van de wavelet-groep om globale vlekkerigheid weg te smelten.",
+        "tools": [
+          "Gaussian Blur",
+          "Free Select Tool"
+        ],
+        "effect": "De globale kleurvlekken verdwijnen volledig, terwijl sproeten en poriën op de hogere schalen intact blijven."
+      },
+      {
+        "name": "Middle Gray Textuureliminatie",
+        "description": "Selecteer een middengrijze kleur (exact 128, 128, 128) en schilder met het penseel op de lagere detail-schalen (bijv. Scale 3) om specifieke grote bulten weg te vagen.",
+        "when_to_use": "Wanneer grote structurele bulten of diepe rimpels in de textuurlaag moeten worden uitgeschakeld.",
+        "tools": [
+          "Paintbrush Tool"
+        ],
+        "effect": "De specifieke textuur-bult verdwijnt onmiddellijk doordat de grijze verf de details op die schaal neutraliseert."
+      }
+    ],
+    "color_approach": "Grote kleur- en toonvlekken worden systematisch gladgestreken op de onderste 'Residual' laag van de wavelet-decompositie door deze krachtig te vervagen binnen een uiterst zacht geselecteerd masker. Hierdoor ontstaat een egale en gezonde huidskleur.",
+    "local_adjustments": "Lokale aanpassingen worden secuur gestuurd via de Free Select Tool met een vaste feathering tussen 20 en 40 pixels om harde overgangslijnen met de rest van het gezicht te vermijden.",
+    "what_to_avoid": [
+      "Vermijd het overmatig vervagen van de hogere schalen (Scale 1 en 2), omdat dit de fijne haartjes en essentiële scherpte volledig vernietigt.",
+      "Vermijd het selecteren van harde grenslijnen zoals de neusvleugels met een te lage feather-instelling."
+    ],
+    "best_for": "Portretten met veel karakteristieke kenmerken zoals sproeten die absoluut behouden moeten blijven.",
+    "unique_insights": [
+      "Wavelet Decompose in GIMP splitst het beeld op in maar liefst 5 of meer afzonderlijke detail-frequenties in plaats van de standaard twee lagen in Photoshop.",
+      "Het schilderen met exact middengrijs (128, 128, 128) op een wavelet-schaal wist de details op die specifieke laag volledig uit vanwege de 'Grain Merge' overvloeimodus.",
+      "De Free Select Tool moet altijd strak binnen de anatomische contouren van het voorhoofd of de wang blijven om kleur-bloeding van de achtergrond te voorkomen."
+    ],
+    "style_preview": "Een uiterst gedetailleerde, frisse en naturalistische portretstijl. Sfeervolle karakteristieken zoals sproeten, unieke pigmentvlekjes en fijne structuren blijven 100% behouden, terwijl de algehele teint en lichtval naar een professioneel niveau worden getild. Deze stijl werkt perfect bij helder daglicht en open schaduw. Het visuele effect is dat van een vlekkeloze maar door en door echte huid."
   }
 ]

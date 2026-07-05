@@ -2100,8 +2100,8 @@ async function analyzePhoto(dataUrl,isFirst){
   var mimeType=mm?mm[1]:'image/jpeg';
   var swName=swLabels[software]||software;
   var langInstruction = appLanguage === 'en'
-    ? 'LANGUAGE: Respond entirely in English. Use English software terminology.'
-    : 'TAAL: Antwoord volledig in het Nederlands. Gebruik Nederlandse termen maar vermeld de Engelse term tussen haakjes bij de eerste vermelding, bijv. Verzadiging (Saturation), Belichting (Exposure), Schaduwen (Shadows). Witbalans Temperatuur: vermeld ALTIJD beide varianten, bijv. "verhoog Temperatuur naar +15 punten (of naar ~5800K als je op Aangepast staat)". Vertaal GEEN paneel- of kopnamen zoals "Details and Texture" of "HSL/Color Mixer" — gebruik alleen de originele softwarenamen.';
+    ? 'MANDATORY LANGUAGE OVERRIDE: Respond ENTIRELY in English. This overrides ALL other language instructions in this prompt. Do NOT use Dutch words anywhere in your response. Do NOT add Dutch translations in parentheses. Do NOT write Dutch headers like FASE or Compositie. Use ONLY English terminology. Write ALL headers, labels, advice and explanations in English only.'
+    : 'TAAL: Antwoord volledig in het Nederlands. Gebruik Nederlandse termen maar vermeld de Engelse term tussen haakjes bij de eerste vermelding, bijv. Belichting (Exposure), Verzadiging (Saturation). Dit geldt ALLEEN voor de Nederlandse modus.';
   var exifContext = '';
   if (photoExifData) {
     exifContext = ' FOTODATA (EXIF): ';

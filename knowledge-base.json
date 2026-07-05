@@ -47506,5 +47506,276 @@
     "_warnings": [
       "naam lijkt op kanaalnaam (photography)"
     ]
+  },
+  {
+    "video_title": "Step by step Skin Retouching Tutorial - Frequency Separation in Photoshop",
+    "photographer_name": "Julia Trotti",
+    "youtube_url": "https://www.youtube.com/watch?v=l_79xQhUd-g",
+    "genre": [
+      "portret",
+      "trouwfotografie"
+    ],
+    "light_conditions": [
+      "daglicht",
+      "diffuus licht"
+    ],
+    "mood": [
+      "naturalistisch",
+      "rustig",
+      "sfeervol"
+    ],
+    "software": [
+      "Photoshop",
+      "Lightroom Classic"
+    ],
+    "style_description": "Natural Earthy Portrait Retouch",
+    "philosophy": "Behoud altijd de natuurlijke structuur van de huid door kleur en textuur strikt gescheiden te bewerken. Het doel is om oneffenheden te corrigeren zonder het gezicht te veranderen of een plastic look te creëren. Subtiliteit en het behoud van permanente kenmerken staan centraal in deze benadering.",
+    "workflow_order": [
+      "stap 1: presets toepassen in de raw-ontwikkelaar en de basisafbeelding openen in de bewerkingssoftware",
+      "stap 2: de basislagen dupliceren en splitsen in een wazige kleurlaag en een gedetailleerde structuurlaag",
+      "stap 3: vlekken en schaduwen egaliseren op de kleurlaag met een zacht penseel op lage dekking",
+      "stap 4: tijdelijke onzuiverheden en storende elementen nauwkeurig verwijderen op de structuurlaag"
+    ],
+    "techniques": [
+      {
+        "name": "Basislaag Vervagen voor Kleurscheiding",
+        "description": "Pas een Gaussian Blur (Gaussiaans vervagen) toe met een straal van exact 3 pixels op de kleurlaag om alle details te verwijderen zodat alleen de pure kleurtonen overblijven.",
+        "when_to_use": "Bij het opzetten van de frequentiescheiding voor portretten met een hoge resolutie.",
+        "tools": [
+          "Gaussian Blur"
+        ],
+        "effect": "De details verdwijnen waardoor vlekken en kleurovergangen vloeiend en zacht worden."
+      },
+      {
+        "name": "Textuur Extractie via Apply Image",
+        "description": "Gebruik Apply Image (Afbeelding toepassen) op de textuurlaag met de overvloeimodus (Blend Mode) op 'Subtract', schaal op 2 en verschuiving (Offset) op 128 om de fijne details te isoleren.",
+        "when_to_use": "Bij het instellen van de detail- en structuurlaag in een 8-bits workflow.",
+        "tools": [
+          "Apply Image"
+        ],
+        "effect": "De laag verandert in een egale grijze laag waarin alleen de contouren en fijne texturen zichtbaar zijn."
+      },
+      {
+        "name": "Schaduwen Egaliseren onder de Ogen",
+        "description": "Selecteer de kleurlaag en gebruik de Clone Stamp (Kloonstempel) met een zeer zacht penseel op een dekking (Opacity) van 20 procent om heldere huidtinten over donkere oogwallen te stempelen.",
+        "when_to_use": "Bij het verzachten van diepe schaduwen en vermoeidheidslijnen in het gezicht.",
+        "tools": [
+          "Clone Stamp"
+        ],
+        "effect": "De donkere schaduwen onder de ogen lichten op waardoor de overgang met de wangen vloeiend verloopt."
+      },
+      {
+        "name": "Laagdekking Terugbrengen voor Natuurlijkheid",
+        "description": "Verlaag de algehele dekking (Opacity) van de actieve bewerkingslaag na het stempelen naar een lagere waarde om de originele huidstructuur er deels doorheen te laten komen.",
+        "when_to_use": "Na het invullen en egaliseren van grotere schaduwpartijen op de huid.",
+        "tools": [
+          "Layers"
+        ],
+        "effect": "De bewerking oogt direct minder kunstmatig en blendt onopvallend met de rest van het gezicht."
+      },
+      {
+        "name": "Lokale Kleurcorrectie van Rode Vlekken",
+        "description": "Maak een nieuwe lege laag aan met de overvloeimodus (Blend Mode) ingesteld op Color (Kleur) en schilder met een zacht penseel op 20 procent dekking een warme huidtint over roze of blauwe vlekken op de neus.",
+        "when_to_use": "Wanneer er sprake is van ongewenste kleurafwijkingen of temperatuurverschillen op de huid.",
+        "tools": [
+          "Brush Tool"
+        ],
+        "effect": "De rode of blauwe gloed verdwijnt en de huid krijgt overal dezelfde egale, warme kleurtoon."
+      }
+    ],
+    "color_approach": "De focus ligt op het harmoniseren van de bestaande huidtinten door ongewenste kleurverschuivingen zoals roze vlekken op de neus of blauwe schaduwen in de hals lokaal te corrigeren. Er wordt handmatig een warme referentietint overgenomen uit een correct deel van het gezicht om hiermee de afwijkingen via een speciale kleurlaag consistent te neutraliseren.",
+    "local_adjustments": "Lokale aanpassingen worden uiterst fijnmazig uitgevoerd door met een lage dekking van twintig procent handmatig over specifieke zones te strijken. Dit gebeurt op losse, nieuwe lagen bovenop de frequentielagen zodat elke correctie per zone via de laagdekking perfect kan worden ingeblend.",
+    "what_to_avoid": [
+      "Vermijd het bewerken van alleen het gezicht omdat een onbewerkte hals of arm direct verraadt dat de foto geretoucheerd is.",
+      "Verwijder nooit permanente kenmerken zoals moedervlekken of karakteristieke littekens aangezien dit de identiteit van het model aantast."
+    ],
+    "best_for": "Close-up portretten en trouwreportages die geschoten zijn met veel detail en een zachte, natuurlijke uitstraling vereisen.",
+    "unique_insights": [
+      "Zij houdt tijdens het stempelen op de kleurlaag constant haar vinger op de Alt-toets om bij elke penseelstreek een nieuwe, perfect matchende tint vlak naast het doelgebied te selecteren.",
+      "Storende, glanzende losse haren op het voorhoofd worden eerst met de stempeltool verzacht op de kleurlaag voordat de harde structuur op de textuurlaag wordt aangepakt.",
+      "Er wordt bewust gekozen om grote toonverschillen op te splitsen in meerdere aparte lagen, zodat de intensiteit van de schaduwreductie per gezichtsdeel onafhankelijk regelbaar blijft."
+    ],
+    "style_preview": "Deze stijl biedt een zachte en uiterst realistische benadering voor high-end portretretouche. Door de absolute nadruk te leggen op het behoud van de natuurlijke poriestructuur ontstaat er nooit een kunstmatige indruk. Het is de perfecte methode voor fotografen die hun beelden een verfijnde, professionele uitstraling willen geven zonder dat de kijker ziet dat er intensief in de software aan is gewerkt. De visuele sfeer blijft warm, authentiek en trouw aan het originele model."
+  },
+  {
+    "video_title": "High End Skin Retouching - Frequency Separation Tutorial",
+    "photographer_name": "Suzana Plesca",
+    "youtube_url": "https://www.youtube.com/watch?v=A41pcPXaUFY",
+    "genre": [
+      "portret",
+      "fine-art"
+    ],
+    "light_conditions": [
+      "daglicht",
+      "diffuus licht"
+    ],
+    "mood": [
+      "melancholisch",
+      "intiem",
+      "naturalistisch"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Human High End Portrait",
+    "philosophy": "Echte schoonheid zit in de imperfectie, dus voorkom te allen tijde een zielloze plastic look. Retoucheer met respect voor de driedimensionale botstructuur en de natuurlijke schaduwen van het gezicht. Het doel is een herkenbaar en menselijk resultaat neer te zetten door de intensiteit van de totale bewerking achteraf subtiel te doseren.",
+    "workflow_order": [
+      "stap 1: de basislagen opbouwen en structureren in een specifieke frequentiegroep",
+      "stap 2: grove schaduwen en storende kleurvlekken corrigeren op de lage frequentielaag",
+      "stap 3: fijne huidlijnen en losse make-upresten op de hoge frequentielaag wegwerken",
+      "stap 4: de algehele groepdekking terugdraaien om de natuurlijke imperfecties deels te herstellen"
+    ],
+    "techniques": [
+      {
+        "name": "Kleurmenging via Flexibele Straal",
+        "description": "Pas een Gaussian Blur (Gaussiaans vervagen) toe op de kleurlaag met een waarde tussen de 5 en 7 pixels om de overgangen zacht te maken terwijl de contouren van de neus en lippen net herkenbaar blijven.",
+        "when_to_use": "Bij portretten die met zacht natuurlijk licht zijn geschoten en een vloeiende toonscheiding vereisen.",
+        "tools": [
+          "Gaussian Blur"
+        ],
+        "effect": "De huidtinten vloeien in elkaar over als een schilderij zonder harde vlekken."
+      },
+      {
+        "name": "Egaliseren met de Healing Brush",
+        "description": "Werk op de kleur- en toonlaag met de Healing Brush (Repareerpenseel) en selecteer met de Alt-toets telkens de dichtstbijzijnde egale huidkleur om harde schaduwlijnen op te vullen.",
+        "when_to_use": "Voor het verzachten van harde overgangen bij lachplooien en diepe neuslippenplooien.",
+        "tools": [
+          "Healing Brush"
+        ],
+        "effect": "De diepte van de rimpel of plooi neemt visueel af doordat de donkere slagschaduw wordt geneutraliseerd."
+      },
+      {
+        "name": "Zachte Toonovergangen Schilderen",
+        "description": "Gebruik het reguliere penseel op de kleurlaag met een zeer lage dekking (Opacity) en stroom (Fill) van circa 10 procent en een hardheid van 0 procent om handmatig overgangen tussen botstructuren te blenden.",
+        "when_to_use": "Bij grotere vlakken zoals het voorhoofd en de wangen waar de lichtval onregelmatig is.",
+        "tools": [
+          "Brush Tool"
+        ],
+        "effect": "De overgang tussen licht en schaduw wordt zijdezacht en perfect uitgebalanceerd."
+      },
+      {
+        "name": "Fijne Structuurcorrectie onder de Ogen",
+        "description": "Schakel over naar de structuurlaag en gebruik een extreem klein penseel met de Healing Brush (Repareerpenseel) om gevallen mascara en schilfertjes weg te halen.",
+        "when_to_use": "Bij het opschonen van minuscule textuurfoutjes direct rondom de wimpers.",
+        "tools": [
+          "Healing Brush"
+        ],
+        "effect": "De storende deeltjes verdwijnen zonder dat de fijne, kwetsbare lijntjes onder het oog worden uitgewist."
+      },
+      {
+        "name": "Gerichte Structuurkloon voor Hardnekkige Lijnen",
+        "description": "Gebruik de Clone Stamp (Kloonstempel) op de textuurlaag met 100 procent dekking en stroom, met een brushgrootte die exact gelijk is aan de breedte van de lachlijn, en kloon de textuur van direct daarnaast.",
+        "when_to_use": "Voor het definitief onzichtbaar maken van scherpe, diepe textuurlijnen in de huid.",
+        "tools": [
+          "Clone Stamp"
+        ],
+        "effect": "De harde lijn in de textuur verdwijnt volledig en wordt vervangen door de gladde poriestructuur van de aangrenzende huid."
+      }
+    ],
+    "color_approach": "Kleur en toon worden behandeld als een canvas waarin zachte overgangen tussen licht en schaduw handmatig worden geschilderd met het penseel. Hierbij is het cruciaal om de kleurbasis perfect egaal te maken voordat er aan de textuur wordt gewerkt, omdat een egale kleurtoon eventuele textuurfouten al voor tachtig procent maskeert.",
+    "local_adjustments": "Lokale aanpassingen worden secuur uitgevoerd door voortdurend te wisselen tussen de Healing Brush en het penseel op de kleurlaag. Er wordt bewust met een wisselende brushgrootte gewerkt via de sneltoetsen (vierkante haken) om de anatomie van het gezicht exact te volgen.",
+    "what_to_avoid": [
+      "Vermijd het volledig platmaken of weghalen van schaduwen in de gecontoureerde delen van het gezicht omdat dit de driedimensionale vorm vernietigt.",
+      "Werk nooit uitsluitend op de textuurlaag bij het verwijderen van haren omdat er dan een lelijke kleursmoed achterblijft."
+    ],
+    "best_for": "Artistieke portretten en fine-art beelden waarbij een menselijke en geloofwaardige uitstraling belangrijker is dan modieuze perfectie.",
+    "unique_insights": [
+      "Zij stelt dat hardnekkige lachlijnen en wallen puur optische schaduwen zijn die ontstaan door diepteverschillen; door eerst de schaduwkleur op te lichten verdwijnt het probleem vaak al zonder de textuur aan te raken.",
+      "Bij het wegwerken van losse, opvallende haren op de huid hanteert zij de tactiek om eerst de schaduw van de haar op de kleurlaag te fixeren, om pas daarna de haar zelf op de textuurlaag weg te klonen.",
+      "Als vaste regel verlaagt zij na de complete retouche de dekking van de gehele frequentiegroep om bewust weer wat foutjes en rimpels terug te brengen voor een oprecht en menselijk karakter."
+    ],
+    "style_preview": "Deze stijl is ontworpen voor de fotograaf die streeft naar een eerlijk en karaktervol portret. De techniek balanceert op het snijvlak van high-end modefotografie en rauwe documentaire. Door de bewuste keuze om imperfecties niet obsessief uit te wissen maar juist te controleren, ontstaat een tastbaar en trefzeker beeld. Het resultaat is een verfijnde huid die ademt, diepte toont en de toeschouwer uitnodigt om naar een echt mens te kijken."
+  },
+  {
+    "video_title": "How To Smooth Skin in Photoshop Using Frequency Separation | High-End Skin Retouching tutorial",
+    "photographer_name": "Ronnix Photography",
+    "youtube_url": "https://www.youtube.com/watch?v=8bE9nZ75SFE",
+    "genre": [
+      "portret",
+      "algemeen"
+    ],
+    "light_conditions": [
+      "harde zon",
+      "gemengd licht"
+    ],
+    "mood": [
+      "krachtig",
+      "levendig",
+      "dramatisch"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Commercial Smooth Skin Retouch",
+    "philosophy": "Creëer een onberispelijke, commerciële huid door de overgang tussen hooglichten, middentonen en schaduwen perfect vloeiend te maken. De structuur moet te allen tijde scherp en onaangetast blijven terwijl de onderliggende tinten maximaal worden verzacht. Efficiëntie en een harmonieuze toonsoort vormen de basis van dit proces.",
+    "workflow_order": [
+      "stap 1: de basislagen dupliceren en de exacte straal bepalen waarop de huidtextuur vervaagt",
+      "stap 2: de textuurlaag isoleren met specifieke bit-instellingen en omzetten naar linear light",
+      "stap 3: met de mixer brush de kleuren en overgangen op de laagfrequentie laag vloeiend mixen",
+      "stap 4: resterende vlekken en puistjes op de hoogfrequentie laag snel elimineren met de kloonstempel"
+    ],
+    "techniques": [
+      {
+        "name": "Textuurverlies-Punt Bepalen",
+        "description": "Sleep de radius-slider van de Gaussian Blur (Gaussiaans vervagen) op de lage laag langzaam omhoog en stop exact op het punt waar de huidtextuur net begint te verdwijnen maar de vormen nog zichtbaar zijn.",
+        "when_to_use": "Als cruciale eerste stap bij het kalibreren van de frequentiescheiding om huidverslapping te voorkomen.",
+        "tools": [
+          "Gaussian Blur"
+        ],
+        "effect": "De exacte hoeveelheid fijne textuur wordt vastgelegd om later in het proces te kunnen behouden."
+      },
+      {
+        "name": "16-Bit Frequentie Extractie",
+        "description": "Stel Apply Image (Afbeelding toepassen) voor een 16-bits bestand in op de lage laag met blending op 'Add' (Toevoegen), schaal op 2, verschuiving (Offset) op 0 en vink het vakje 'Invert' (Omkeren) expliciet aan.",
+        "when_to_use": "Bij het verwerken van hoogwaardige 16-bits raw-bestanden in de retouching-fase.",
+        "tools": [
+          "Apply Image"
+        ],
+        "effect": "De fijne details worden storingsvrij overgebracht naar de grijze structuurlaag met behoud van het volledige dynamische bereik."
+      },
+      {
+        "name": "Huidtonen Mixen met Mixer Penseel",
+        "description": "Selecteer het Mixer Brush Tool (Mixerpenseel) op de lage laag met een natheid (Wet) van 9 procent, lading (Load) op 75 procent, mix op 90 procent en stroom (Flow) op 100 procent om kleuren in elkaar te laten overlopen.",
+        "when_to_use": "Voor het snel en effectief verzachten van harde vlekken en onregelmatige schaduwovergangen op de huid.",
+        "tools": [
+          "Mixer Brush Tool"
+        ],
+        "effect": "De onderliggende huidtinten transformeren in een egale, gladde laag terwijl de textuurlaag erbovenop de scherpte behoudt."
+      },
+      {
+        "name": "Anatomisch Gericht Penseelsturen",
+        "description": "Beweeg het mixerpenseel in korte slagen en volg hierbij nauwkeurig de natuurlijke richting en rondingen van de botstructuur en spieren in het gezicht.",
+        "when_to_use": "Tijdens het blenden van de overgangen op de wangen, de neusbrug en de kaaklijn.",
+        "tools": [
+          "Mixer Brush Tool"
+        ],
+        "effect": "De natuurlijke vormen van het gezicht worden versterkt en er ontstaan geen platte of misvormde partijen."
+      },
+      {
+        "name": "Blemish Verwijdering via Gerichte Stempel",
+        "description": "Gebruik de Clone Stamp (Kloonstempel) op de hoge laag met hardheid 0 en dekking 100 procent, neem met de Option-toets een monster van een schone zone vlakbij en stempel de pukkel weg.",
+        "when_to_use": "Voor het cleansen van duidelijke onzuiverheden, pukkels en schilfertjes in de textuur.",
+        "tools": [
+          "Clone Stamp"
+        ],
+        "effect": "De onzuiverheid verdwijnt direct en wordt onzichtbaar vervangen door de textuur van de naastgelegen zuivere huid."
+      }
+    ],
+    "color_approach": "Er wordt gewerkt met een strikte scheiding tussen de tonen. Hooglichten, middentonen en schaduwen worden elk apart in hun eigen zone gemixt met het mixerpenseel. Pas op de grenzen waar deze zones elkaar raken, wordt een zeer klein penseel gebruikt om een harmonieuze en strakke transitie te realiseren.",
+    "local_adjustments": "Lokale correcties worden uitgevoerd door de brushgrootte via de sneltoetsen continu aan te passen aan de omvang van de specifieke zone. Er wordt bewust niet ingezoomd tijdens het mixen om het overzicht op de algehele lichtverdeling van het gezicht te bewaren.",
+    "what_to_avoid": [
+      "Zorg ervoor dat de optie 'Sample All Layers' (Alle lagen monsteren) uitstaat bij het gebruik van het mixerpenseel omdat de structuur anders in de kleurlaag wordt gesmeerd.",
+      "Mix nooit willekeurig verschillende kleurzones zoals hooglichten en schaduwen door elkaar omdat dit leidt tot modderige vlekken."
+    ],
+    "best_for": "Commerciële portretten, beauty-shoots en studiofotografie waar een strakke, egale en modieuze huid gewenst is.",
+    "unique_insights": [
+      "Hij adviseert om tijdens het egaliseren met het mixerpenseel de textuurlaag tijdelijk volledig uit te schakelen; hierdoor zie je direct waar de kleurvlekken zitten zonder afgeleid te worden door de scherpte.",
+      "Om een optimaal resultaat te behalen moet je retoucheren vanaf een afstand (uitgezoomd), zodat je direct ziet welke grote kleurvlakken niet in balans zijn en voorkom je dat je te lang op één detail blijft hangen.",
+      "Voor 16-bits afbeeldingen hanteert hij een specifieke wiskundige omkering (Invert met Add) in het Apply Image menu die superieur is aan de standaard subtract-methode voor 8-bits bestanden."
+    ],
+    "style_preview": "Deze stijl levert een strakke, commerciële en modieuze uitstraling die perfect aansluit bij de hoge eisen van beauty- en magazinefotografie. Door het uitgekiende gebruik van het mixerpenseel transformeren oneffenheden in een oogwenk naar een egale basis, terwijl de poriën vlijmscherp blijven. Het is de ultieme workflow voor fotografen die snel een verbluffend en vlekkeloos resultaat willen neerzetten dat direct indruk maakt door zijn punchy en professionele afwerking.",
+    "_warnings": [
+      "naam lijkt op kanaalnaam (photography)"
+    ]
   }
 ]

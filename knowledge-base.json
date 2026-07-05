@@ -50368,5 +50368,101 @@
       "Voor social media-doeleinden hoeft een masker niet microscopisch perfect te zijn; de algehele kleursynchronisatie tussen lucht en voorgrond bepaalt voor 90 procent de geloofwaardigheid."
     ],
     "style_preview": "Deze stijl levert een uiterst krachtig, kleurrijk en episch landschapsbeeld op met een zware artistieke lading. De sfeer is ronduit magisch, levendig en neigt naar het fantastische. Het is bij uitstek geschikt voor dramatische berglandschappen die in hun originele staat sfeer missen. Door de combinatie van strakke maskering en dromerige soft-focus gloed ontstaat er een sprookjesachtige plaat die direct de aandacht grijpt."
+  },
+  {
+    "video_title": "Zoom Panel: Focus Stacking with 1 Click & Luminosity Masking Made Easy",
+    "photographer_name": "Albert Dros",
+    "youtube_url": "https://www.youtube.com/watch?v=BTAF1RVCVHQ",
+    "genre": [
+      "landschap",
+      "nacht & astro",
+      "architectuur"
+    ],
+    "light_conditions": [
+      "gouden uur",
+      "tegenlicht",
+      "nacht"
+    ],
+    "mood": [
+      "dramatisch",
+      "moody",
+      "filmisch"
+    ],
+    "software": [
+      "Photoshop",
+      "Lightroom Classic"
+    ],
+    "style_description": "Dreamy Contrast Rich Landscapes",
+    "philosophy": "Het bewerken van een foto is het tot leven wekken van het beeld door middel van subtiele aanpassingen. Wanneer de mogelijkheden in de primaire RAW-ontwikkelaar ophouden, biedt de pixel-nauwkeurigheid van geavanceerde maskering de nodige uitkomst. Het doel is om met zachte overgangen extra magie, diepte en dromerigheid aan het landschap toe te voegen.",
+    "workflow_order": [
+      "stap 1: selecteer meerdere opnames in de database en breng deze synchroon over naar de beeldbewerker",
+      "stap 2: voer een geautomatiseerde focus stacking uit om volledige scherpte van de voorgrond tot de achtergrond te genereren",
+      "stap 3: genereer een luminescentiemasker (Luminosity Mask) gebaseerd op de lichte partijen om een vloeiende selectie te maken",
+      "stap 4: verfijn de selectie via een curves- of niveaus-aanpassingslaag om selectief contrast en kleurdiepte aan te zetten"
+    ],
+    "techniques": [
+      {
+        "name": "One-Click Focus Stacking",
+        "description": "Combineer vijf afzonderlijke opnames met verschillende scherptevlakken tot één volledig scherp beeld door de automatische uitlijning en pixel-blending functies te triggeren via het Zoom-paneel.",
+        "when_to_use": "Bij landschapsfoto's met een onderwerp zeer dicht op de lens waarbij een klein diafragma niet voldoende scherptediepte biedt",
+        "tools": [
+          "Stacking Panel"
+        ],
+        "effect": "Een eindresultaat dat van de allerdichtste voorgrond tot de oneindige achtergrond volledig haarstrak en scherp is"
+      },
+      {
+        "name": "Luminescentie Selectie Verfijnen",
+        "description": "Selecteer de lichte delen in de lucht met een specifiek luminescentieniveau (bijvoorbeeld niveau 2 of 3) en gebruik een niveaus-aanpassingslaag (Levels) om de middentonen in die selectie te verlagen.",
+        "when_to_use": "Wanneer de lucht in een landschapsopname te flets is en de fijne toonscheiding in de wolken ontbreekt",
+        "tools": [
+          "Luminosity Masking Panel",
+          "Levels"
+        ],
+        "effect": "De lucht krijgt een diepe, intense kleur en extra structuur zonder dat de donkere landschapsdelen donkerder worden"
+      },
+      {
+        "name": "Handmatige Maskercorrectie via Back-up Stack",
+        "description": "Open de automatisch gegenereerde back-upgroep met uitgelijnde originele lagen en gebruik een zacht penseel op het laagmasker (Layer Mask) om eventuele fouten in de automatische focus-blend te herstellen.",
+        "when_to_use": "Als er door beweging van bladeren of complex verloop onscherpe artefacten of 'ghosting' zichtbaar zijn na het stacken",
+        "tools": [
+          "Layer Mask",
+          "Brush Tool"
+        ],
+        "effect": "Lokale herovering van de perfecte scherpte uit een specifieke bronlaag zonder de rest van de schone stack aan te tasten"
+      },
+      {
+        "name": "Subtiele Belichtingsblending",
+        "description": "Maak een gerichte selectie van de hooglichten via een masker voor lichte partijen (Lights 2) en poets een donkerder belichte opname in om uitgebleekte delen te herstellen.",
+        "when_to_use": "Bij contrastrijke situaties zoals stadslandschappen in de nacht of een felle zonsondergang",
+        "tools": [
+          "Luminosity Masking Panel",
+          "Layer Mask"
+        ],
+        "effect": "Volledig herstel van doortekening in felle straatverlichting of de zonsondergangskern met behoud van de schaduwpartijen"
+      },
+      {
+        "name": "Milky Way Structure Enhancement",
+        "description": "Gebruik een nauwkeurig gedefinieerd masker voor de lichtere structuren van de Melkweg en verhoog de helderheid en kleurverzadiging uitsluitend binnen deze specifieke toonzone.",
+        "when_to_use": "Bij astrofotografie om de gaswolken van de Melkweg sterker te scheiden van de donkere sterrenhemel",
+        "tools": [
+          "Luminosity Masking Panel",
+          "Curves"
+        ],
+        "effect": "De kern van de Melkweg springt er visueel krachtiger uit met meer microcontrast en kleurverzadiging"
+      }
+    ],
+    "color_approach": "De focus ligt op het creëren van een diepe, verzadigde kleurschakering in de lucht en atmosferische tonen door selectief de helderheid van specifieke kleur- en luminescentiezones te verlagen. Door uitsluitend de heldere toondelen te beïnvloeden, behouden de complementaire schaduwen hun natuurlijke, rustige kleurbalans.",
+    "local_adjustments": "Maskers worden uitsluitend toegepast op basis van luminescentiewaarden (helderheid) in plaats van handmatige penselen of generieke verloopfilters. Dit zorgt voor extreem vloeiende overgangen langs complexe randen zoals bomen, bergketens of stadslijnen, waardoor er geen storende halo-effecten ontstaan.",
+    "what_to_avoid": [
+      "Vermijd het blindelings vertrouwen op automatische focus stacking zonder controle van de details, omdat bewegende elementen onscherpe overgangen veroorzaken.",
+      "Gebruik geen overdreven harde contrasten in de luminescentiemaskers om te voorkomen dat de natuurlijk ogende, dromerige sfeer omslaat in een onrealistisch HDR-effect."
+    ],
+    "best_for": "Landschaps- en astrofotografen die maximale scherpte van voor- tot achtergrond eisen en fijne controle willen over de tonen in contrastrijke lursituaties.",
+    "unique_insights": [
+      "Het bewaren van een vooraf uitgelijnde back-upstack tijdens het focus stacken is cruciaal, omdat dit direct snelle handmatige correcties mogelijk maakt wanneer het algoritme faalt op subtiele details.",
+      "Luminescentiemaskers in pixelgebaseerde software werken superieur ten opzichte van de maskeropties in RAW-converters, omdat ze een veel vloeiendere toonscheiding bieden zonder harde selectieranden.",
+      "Door niveaus-aanpassingen toe te passen op een heel specifiek helderheidsmasker in de lucht, ontstaat er een natuurlijk polariserend effect dat niet handmatig na te bootsen is met standaard penselen."
+    ],
+    "style_preview": "Deze stijl kenmerkt sich door een perfecte technische scherpte van de allerdichtste voorgrond tot de verste achtergrond, gecombineerd met een dromerige en contrastrijke sfeer. De kernfilosofie draait om het handhaven van vloeiende toonovergangen en het gericht aanzetten van sfeer in specifieke helderheidszones. Dit werkt het beste voor weidse landschappen en nachtelijke hemels die gefotografeerd zijn tijdens het gouden uur of uitdagend tegenlicht. Het verwachte resultaat is een beeld met een magische, filmische diepte waarin uitgebleekte hooglichten volledig zijn uitgesloten."
   }
 ]

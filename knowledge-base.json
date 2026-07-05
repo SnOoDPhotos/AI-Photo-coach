@@ -48590,5 +48590,455 @@
       "De Free Select Tool moet altijd strak binnen de anatomische contouren van het voorhoofd of de wang blijven om kleur-bloeding van de achtergrond te voorkomen."
     ],
     "style_preview": "Een uiterst gedetailleerde, frisse en naturalistische portretstijl. Sfeervolle karakteristieken zoals sproeten, unieke pigmentvlekjes en fijne structuren blijven 100% behouden, terwijl de algehele teint en lichtval naar een professioneel niveau worden getild. Deze stijl werkt perfect bij helder daglicht en open schaduw. Het visuele effect is dat van een vlekkeloze maar door en door echte huid."
+  },
+  {
+    "video_title": "Luminosity Masking Made EASY - Complete Photoshop Guide",
+    "photographer_name": "Austin James Jackson",
+    "youtube_url": "https://www.youtube.com/watch?v=_ilCk32ewmg",
+    "genre": [
+      "landschap"
+    ],
+    "light_conditions": [
+      "harde zon",
+      "schaduw"
+    ],
+    "mood": [
+      "naturalistisch",
+      "sfeervol"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Naturalistic Landscape Light Control",
+    "philosophy": "Deze methode richt zich op het creëren van subtiele aanpassingen op basis van de helderheidswaarden in een foto om een natuurlijk ogend contrast te behouden. Door gebruik te maken van maskers in plaats van handmatig te borstelen, blijft de originele sfeer van het landschap intact. Het doel is om lokaal detail terug te brengen in de diepste schaduwen en felste hooglichten zonder over-processing.",
+    "workflow_order": [
+      "stap 1: installeer en open de gratis TK panel extensie",
+      "stap 2: selecteer de specifieke luminantiewaarde voor schaduwen of hooglichten via het paneel",
+      "stap 3: activeer een Curves aanpassingslaag (Curves Adjustment Layer) met het geselecteerde masker",
+      "stap 4: pas de curve handmatig aan om helderheid of midtonen-contrast selectief te verhogen of verlagen"
+    ],
+    "techniques": [
+      {
+        "name": "Schaduwen Subtiel Liften",
+        "description": "Verhoog de helderheid in de curve met een Darks 4 of Darks 5 masker om details in de allerdonkerste delen te herstellen zonder de lucht te beïnvloeden.",
+        "when_to_use": "Bij landschapsfoto's met een extreem hoog dynamisch bereik en diepe, detailloze schaduwen in de voorgrond.",
+        "tools": [
+          "Curves"
+        ],
+        "effect": "De diepste schaduwen worden lichter en tonen meer detail, terwijl middentonen en hooglichten onaangetast blijven."
+      },
+      {
+        "name": "Midtonen Contrast Toevoegen",
+        "description": "Pas een milde S-curve toe op een Midtones 2 masker om gericht contrast toe te voegen aan de middentonen van de foto.",
+        "when_to_use": "Wanneer de algehele afbeelding vlak oogt maar de uiterste hooglichten en schaduwen al perfect in balans zijn.",
+        "tools": [
+          "Curves"
+        ],
+        "effect": "Het contrast in de middentonen neemt toe waardoor structuren poppen, zonder dat hooglichten uitbijten of schaduwen dichtlopen."
+      },
+      {
+        "name": "Hooglichten Saturatie Versterken",
+        "description": "Verhoog de verzadiging (Saturation) binnen een Lights 2 masker om de warmte in de heldere delen van de voorgrond te intensiveren.",
+        "when_to_use": "Bij foto's waar de zonkracht op specifieke elementen visueel versterkt moet worden.",
+        "tools": [
+          "Hue/Saturation"
+        ],
+        "effect": "De heldere delen krijgen meer kleurintensiteit, terwijl de donkere schaduwpartijen hun neutrale tint behouden."
+      },
+      {
+        "name": "Masker in Groep Combineren",
+        "description": "Plaats de aanpassingslaag in een nieuwe groep en voeg een handmatig zwart penseelmasker (Layer Mask) toe om de aanpassing lokaal uit te sluiten.",
+        "when_to_use": "Wanneer een luminositeitsmasker ongewenst ook delen in de lucht selecteert die niet aangepast mogen worden.",
+        "tools": [
+          "Layer Mask",
+          "Brush Tool"
+        ],
+        "effect": "De aanpassing werkt uitsluitend in de specifieke zones die in het groepsmasker met wit zijn vrijgesteld."
+      },
+      {
+        "name": "Selectieve Zone Pop via Curves",
+        "description": "Verhoog een Lights 3 selectie gericht via een curves-laag om direct zonlicht op vegetatie na te bootsen.",
+        "when_to_use": "Wanneer objecten in de voorgrond onderbelicht zijn ten opzichte van de zonnige achtergrond.",
+        "tools": [
+          "Curves"
+        ],
+        "effect": "Het geselecteerde object springt visueel naar voren en krijgt een zonnige, heldere uitstraling."
+      }
+    ],
+    "color_approach": "Kleur wordt heel gericht behandeld door verzadiging alleen toe te passen op de heldere delen van het landschap die door de zon worden geraakt. Dit voorkomt dat schaduwpartijen een onnatuurlijke kleurzweem krijgen. De focus ligt op het behouden van realistische, warme tonen in de hooglichten.",
+    "local_adjustments": "Lokale aanpassingen worden volledig gestuurd door luminositeitsmaskers te combineren met groepsmaskers (Layer Mask op een Group). Hierdoor kan de fotograaf met een zacht zwart penseel handmatig bepalen in welk deel van de compositie het helderheidsmasker actief is.",
+    "what_to_avoid": [
+      "Vermijd het direct schilderen op het originele luminositeitsmasker om destructieve fouten te voorkomen; gebruik altijd groepen.",
+      "Gebruik geen Midtones-maskers als de hooglichten al op het randje van uitbijten staan omdat dit onbedoelde verschuivingen veroorzaakt."
+    ],
+    "best_for": "Landschapsfotografie met complexe voorgrondelementen en een hoog contrast tussen zonlicht en diepe schaduwpartijen.",
+    "unique_insights": [
+      "Het gebruik van een dubbel masker via een laaggroep (Layer Mask op een Group) houdt de workflow georganiseerd en voorkomt handmatig poetsen op complexe maskers.",
+      "Midtonen-contrast via luminositeitsmaskers is superieur aan reguliere contrast-tools omdat het de uiterste pieken in het histogram volledig met rust laat.",
+      "Gratis panels zoals de TK loom-plugin bieden meer dan genoeg controle voor 99 procent van de landschapsaanpassingen zonder dure software."
+    ],
+    "style_preview": "Deze stijl biedt een naturalistisch en sfeervol effect voor de veeleisende landschapsfotograaf. Door de helderheidswaarden als stencil te gebruiken worden aanpassingen perfect naadloos in de foto verweven. Dit werkt het best bij harde zon of diepe schaduwen waar handmatige selecties falen."
+  },
+  {
+    "video_title": "Exposure Blending Tutorial (With Luminosity Masks) - ADVANCED Photoshop Techniques",
+    "photographer_name": "Steve Arnold",
+    "youtube_url": "https://www.youtube.com/watch?v=lAxQ-SppEpQ",
+    "genre": [
+      "landschap",
+      "kust"
+    ],
+    "light_conditions": [
+      "gouden uur",
+      "blauwe uur",
+      "tegenlicht"
+    ],
+    "mood": [
+      "dramatisch",
+      "moody",
+      "sfeervol"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Advanced Blended Coastal Landscape",
+    "philosophy": "De filosofie rust op het handmatig samenvoegen van meerdere opeenvolgende belichtingen om een perfect uitgebalanceerd dynamisch bereik te behalen. In plaats van automatische HDR-software te gebruiken, behoudt deze handmatige blending volledige controle over de overgangen. Het doel is een vloeiend en scherp beeld waarin zowel de felle zon als de subtiele schaduwdetails in de rotsen perfect zichtbaar zijn.",
+    "workflow_order": [
+      "stap 1: importeer en lijn de vier opeenvolgende belichtingen uit als lagen",
+      "stap 2: voeg aan elke laag een zwart laagmasker (Layer Mask) toe om deze initieel te verbergen",
+      "stap 3: laad het rode kanaal (Red Channel) via het kanalenpaneel als basis voor de hooglichtenselectie",
+      "stap 4: schilder met een zacht wit penseel met lage opaciteit de lucht en reflecties in het masker"
+    ],
+    "techniques": [
+      {
+        "name": "Kanaal-specifieke Hooglichtenselectie",
+        "description": "Laad de selectie door Ctrl-klik op het specifieke Red Channel in plaats van het RGB-kanaal voor een contrastrijkere en beter geïsoleerde hooglichtenselectie.",
+        "when_to_use": "Bij zonsopkomsten of zonsondergangen waar de lucht veel rood- en geelcontrast bevat.",
+        "tools": [
+          "Channels",
+          "Brush Tool"
+        ],
+        "effect": "De brushstrokes worden nog exacter beperkt tot de helderste delen van de lucht en het water."
+      },
+      {
+        "name": "Schaduw-Isolerend Alpha Kanaal",
+        "description": "Inverteer een opgeslagen RGB-selectie (Alpha kanaal) met Ctrl+I en intersect deze meerdere malen met zichzelf via Ctrl+Alt+Shift+klik om diep in de schaduw te reiken.",
+        "when_to_use": "Wanneer de donkere delen van de rotsen verlicht moeten worden zonder de middentonen op te bleken.",
+        "tools": [
+          "Channels"
+        ],
+        "effect": "Er ontstaat een uiterst restrictief masker dat puur en alleen de diepste schaduwen selecteert."
+      },
+      {
+        "name": "Contrast Vignette via Levels",
+        "description": "Verlaag het contrast in de buitenste hoeken met een Levels aanpassing (Levels Adjustment Layer) en verhoog het zwartpunt licht om de aandacht naar het centrum te trekken.",
+        "when_to_use": "Bij composities met drukke of te heldere hoeken in de voorgrond.",
+        "tools": [
+          "Levels"
+        ],
+        "effect": "De hoeken worden subtiel donkerder en minder contrastrijk, waardoor het oog naar de lichtbron wordt geleid."
+      },
+      {
+        "name": "Sun Haze Overlay",
+        "description": "Schilder met een grote, zachte brush een warme kleuroverlay rondom de zonpositie met een lage stroom (Flow).",
+        "when_to_use": "Om een sfeervolle, zachte lichtgloed te creëren rondom opkomende of ondergaande zonnen.",
+        "tools": [
+          "Brush Tool",
+          "Color Picker"
+        ],
+        "effect": "Er ontstaat een natuurlijk diffuus lichteffect dat de harde overgangen rond de zon verzacht."
+      },
+      {
+        "name": "Zwartpunt Subtiel Liften via Curves",
+        "description": "Klik op het uiterste zwartpunt in de Curve en verplaats deze met de pijltjestoetsen 4 tikken omhoog.",
+        "when_to_use": "In de finale fase om de diepste schaduwen een zachte, matte en cinematic uitstraling te geven.",
+        "tools": [
+          "Curves"
+        ],
+        "effect": "De puur zwarte tinten veranderen in een zacht donkergrijs, wat een dromerige sfeer creëert."
+      }
+    ],
+    "color_approach": "Kleur wordt organisch beheerd door de natuurlijke tinten uit de verschillende belichtingen door te laten schemeren. Er wordt bewust geen zware kleurverzadiging toegepast; een warme sun haze overlay rondom de zon zorgt voor een realistische verspreiding van het licht.",
+    "local_adjustments": "Lokale maskers worden handmatig ingeschilderd met een lage penseelopaciteit van circa 40 procent terwijl een actieve luminositeitsselectie als stencil fungeert. Dit zorgt ervoor dat de penseelstreken nooit buiten de toongrenzen treden.",
+    "what_to_avoid": [
+      "Vermijd het penselen met een te hoge opaciteit in één keer; dit maakt de overgang tussen de belichtingen te abrupt en vlekkerig.",
+      "Zorg dat reflecties in het water niet lichter worden dan de originele lichtbron in de lucht om de visuele logica te bewaken."
+    ],
+    "best_for": "Complexe kustlandschappen met felle tegenlichtsituaties en donkere rotsformaties in de voorgrond.",
+    "unique_insights": [
+      "Het rode kanaal biedt bij zonsopkomsten vaak significant meer bruikbaar contrast voor selecties dan het standaard RGB-kanaal.",
+      "Door een schaduwkanaal via sneltoetsen meerdere malen met zichzelf te intersecten, dring je dieper door in de histogram-hoeken.",
+      "Een contrast-vignette werkt beter dan een standaard zwarte vignette omdat het ook de afleidende micro-contrasten in de hoeken dempt."
+    ],
+    "style_preview": "Deze geavanceerde stijl levert een dramatisch en sfeervol resultaat op voor kust- en landschapsfotografen. Door vier belichtingen handmatig te weven, ontstaat een vloeiende dynamiek die automatische HDR-programma's overtreft. Perfect voor contrastrijke lichtsituaties tijdens het blauwe en gouden uur."
+  },
+  {
+    "video_title": "Luminosity Masks in Photoshop are EASY! All You Need to Know in Just 2 Minutes!",
+    "photographer_name": "Fabien Butazzi",
+    "youtube_url": "https://www.youtube.com/watch?v=5Ugcujn59Iw",
+    "genre": [
+      "straatfotografie",
+      "architectuur"
+    ],
+    "light_conditions": [
+      "gouden uur",
+      "gemengd licht"
+    ],
+    "mood": [
+      "krachtig",
+      "levendig"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Punchy High Contrast Tone",
+    "philosophy": "De kerngedachte is dat krachtige luminositeitsmaskers snel en effectief gebouwd kunnen worden met de basisfuncties van de software zelf, zonder dure hulpprogramma's. Door tonen te isoleren in de kanalen, kunnen contrast en levendigheid extreem worden gepusht zonder kwaliteitsverlies. Het is een minimalistische maar zeer doeltreffende benadering van toonbeheersing.",
+    "workflow_order": [
+      "stap 1: laad de hooglichten via de sneltoets Ctrl+Alt+2 (Windows) of Command+Option+2 (Mac)",
+      "stap 2: sla de actieve selectie op als een nieuw alpha kanaal genaamd highlights",
+      "stap 3: inverteer de selectie om direct een accuraat schaduwmasker te genereren",
+      "stap 4: koppel het masker aan een Vibrance of Curves aanpassingslaag om de aanpassing te activeren"
+    ],
+    "techniques": [
+      {
+        "name": "Sneltoets Hooglichtenselectie",
+        "description": "Gebruik direct de ingebouwde sneltoets Command+Option+2 om zonder omwegen een directe selectie van de lichte tonen te maken.",
+        "when_to_use": "Als snelle start voor elke bewerking waarbij de hooglichten direct geïsoleerd moeten worden.",
+        "tools": [
+          "Channels"
+        ],
+        "effect": "De helderste delen van het beeld worden direct in een vloeiende selectie gevangen."
+      },
+      {
+        "name": "Schaduw Masker Inverteren",
+        "description": "Gebruik Command+Shift+I op een actieve hooglichtenselectie om deze direct om te zetten naar een schaduwselectie.",
+        "when_to_use": "Wanneer de focus direct moet verschuiven van het beschermen van lichten naar het aanpassen van donkere partijen.",
+        "tools": [
+          "Channels"
+        ],
+        "effect": "De selectie keert exact om, waardoor enkel de schaduwen worden beïnvloed."
+      },
+      {
+        "name": "Verfijnd Hooglichten Masker",
+        "description": "Ctrl-klik op het highlight-icoon en gebruik vervolgens Ctrl+Alt+Shift+klik op dezelfde thumbnail om een restrictievere selectie op te slaan.",
+        "when_to_use": "Wanneer alleen de absolute pieken van het licht aangepast moeten worden.",
+        "tools": [
+          "Channels"
+        ],
+        "effect": "Het masker verliest grijswaarden en selecteert enkel nog de puurste witten."
+      },
+      {
+        "name": "Gerichte Levendigheid Boost",
+        "description": "Koppel de basishooglichten aan een Vibrance aanpassingslaag (Vibrance Adjustment Layer) en schuif de vibrance fors omhoog om kleuren in het licht te laten knallen.",
+        "when_to_use": "Bij fletse zonsopkomsten waarbij de wolken een krachtige kleurinjectie kunnen gebruiken.",
+        "tools": [
+          "Vibrance"
+        ],
+        "effect": "De kleuren in de lucht worden intens levendig, terwijl de donkere voorgrond neutraal blijft."
+      },
+      {
+        "name": "Schaduwen Crunchen via Curves",
+        "description": "Laad een diep schaduwmasker (Shadows 3) en trek de curve naar beneden om de schaduwen extra diepte te geven.",
+        "when_to_use": "Bij contrastrijke stadsgezichten waar de donkere partijen te flets of gewassen ogen.",
+        "tools": [
+          "Curves"
+        ],
+        "effect": "De schaduwen worden intenser en dieper zwart zonder dat de lichte wolkenpartijen veranderen."
+      }
+    ],
+    "color_approach": "Kleurverzadiging en levendigheid worden agressief verhoogd, maar dankzij het highlight-masker blijft dit effect strikt beperkt tot de warme tonen in de lucht. Hierdoor behoudt de rest van de compositie zijn tonale integriteit.",
+    "local_adjustments": "Er wordt gewerkt met directe kanaalselecties die als masker op aanpassingslagen worden geplaatst. Dit elimineert de noodzaak voor lokaal penselen, aangezien de helderheidsstructuur van de foto zelf de distributie regelt.",
+    "what_to_avoid": [
+      "Vermijd het handmatig selecteren van complexe structuren zoals waterreflecties; laat het luminositeitsmasker dit werk doen.",
+      "Schuif de saturatie niet omhoog zonder actief masker om te voorkomen dat de schaduwen verzadigde ruis gaan vertonen."
+    ],
+    "best_for": "Cityscapes, architectuur en straatfotografie met harde contrasten tussen gebouwen en de lucht.",
+    "unique_insights": [
+      "De ingebouwde sneltoets Command+Option+2 is de snelste manier om een hooglichtenmasker te starten zonder enige plugin.",
+      "Het handmatig maken van een midtonenmasker kan door de gehele selectie te verminderen met de highlights en shadows via Ctrl+Alt+klik.",
+      "Zelfs extreme aanpassingen zoals 100 procent vibrance zien er acceptabel uit als ze uitsluitend via een vloeiend toonsmasker worden toegepast."
+    ],
+    "style_preview": "Deze minimalistische stijl geeft een krachtig en levendig effect aan foto's. Uitermate geschikt voor fotografen die snel meters willen maken in straatfotografie of architectuur. Door de verborgen kracht van kanalen te benutten transformeer je een vlakke plaat in een handomdraai tot een contrastrijk kunstwerk."
+  },
+  {
+    "video_title": "Are Luminosity Plugins a Ripoff? // How to create luminosity Masks for free",
+    "photographer_name": "Nick Page",
+    "youtube_url": "https://www.youtube.com/watch?v=EeJovSK7Gr8",
+    "genre": [
+      "landschap",
+      "algemeen"
+    ],
+    "light_conditions": [
+      "gouden uur",
+      "diffuus licht"
+    ],
+    "mood": [
+      "naturalistisch",
+      "rustig"
+    ],
+    "software": [
+      "Lightroom Classic",
+      "Photoshop"
+    ],
+    "style_description": "Clean Organic Tone Control",
+    "philosophy": "De kernfilosofie draait om efficiëntie en kosteneffectiviteit in de nabewerking. Hoewel geavanceerde maskers handmatig via kanalen gemaakt kunnen worden, zijn gratis panels onmisbaar om kostbare tijd te besparen. De stijl is gericht op een pure, organische weergave van het landschap waarbij de technologie de creativiteit dient en niet overheerst.",
+    "workflow_order": [
+      "stap 1: open de landschapsfoto en start de gratis loom-plugin op",
+      "stap 2: navigeer door de helderheidsniveaus om het perfecte masker te vinden",
+      "stap 3: selecteer een aanpassingslaag zoals Curves of Levels direct vanuit de plugin",
+      "stap 4: verfijn de geselecteerde tonen in de curve om gerichte accenten te leggen"
+    ],
+    "techniques": [
+      {
+        "name": "Gratis Plugin Maskergeneratie",
+        "description": "Gebruik de gratis TK loom-panel of Lumenia Light interface om met één klik complexe toonstencils te genereren in plaats van handmatig kanalen te bewerken.",
+        "when_to_use": "In elke workflow waarbij snelheid en een overzichtelijke interface gewenst zijn.",
+        "tools": [
+          "Curves"
+        ],
+        "effect": "Er wordt direct een perfect vloeiend masker gegenereerd dat direct aan een curve gekoppeld is."
+      },
+      {
+        "name": "Middentonen Tooncorrectie via Panels",
+        "description": "Selecteer een Midtones 2 masker via het panel en koppel dit aan een curves-laag om specifiek de contrasten in het gras en de bergen te sturen.",
+        "when_to_use": "Bij landschappen die een subtiele pop in textuur nodig hebben zonder de uiterste toongrenzen te verschuiven.",
+        "tools": [
+          "Curves"
+        ],
+        "effect": "Het landschap krijgt extra diepte en scheiding in de details zonder dat de lucht uitbijt."
+      },
+      {
+        "name": "Dark 1 Toonbescherming",
+        "description": "Koppel een Darks 1 masker aan een Helderheid/Contrast aanpassingslaag (Brightness/Contrast Adjustment Layer) om specifiek de schaduwpartijen op te lichten.",
+        "when_to_use": "Wanneer de voorgrond te donker is uitgevallen en subtiel moet worden opengebroken.",
+        "tools": [
+          "Brightness/Contrast"
+        ],
+        "effect": "De donkere tonen worden helderder en contrastrijker, terwijl de lichte lucht perfect wordt afgeschermd."
+      },
+      {
+        "name": "Toonstencils als Penseelgids",
+        "description": "Laad een specifiek Lights-masker als actieve selectie om als een stencil met een zacht penseel licht in te schilderen.",
+        "when_to_use": "Bij het lokaal aanzetten van zonnestralen of oplichtende rotsranden.",
+        "tools": [
+          "Brush Tool"
+        ],
+        "effect": "De verf hecht zich perfect aan de lichte delen en vloeit zacht weg in de schaduwen."
+      },
+      {
+        "name": "Directe Levels Koppeling",
+        "description": "Genereer een specifiek toonsmasker en stuur dit direct naar een Levels aanpassingslaag (Levels Adjustment Layer) om de witten aan te zetten.",
+        "when_to_use": "Om snel de witten en zwartpunten van een specifieke toonzone te corrigeren.",
+        "tools": [
+          "Levels"
+        ],
+        "effect": "De dynamiek binnen de geselecteerde toonzone wordt direct strakker getrokken."
+      }
+    ],
+    "color_approach": "De focus ligt op een uiterst schone en natuurlijke kleurweergave. Door aanpassingen via precieze helderheidsmaskers te laten lopen, wordt voorkomen dat verzadiging explodeert in gebieden waar dat ongewenst is. Kleuren blijven zacht, organisch en trouw aan de werkelijkheid.",
+    "local_adjustments": "Er wordt intensief gebruikgemaakt van de interactie tussen panels en aanpassingslagen. De fotograaf kiest de toonzone via het panel en voert de lokale aanpassing vervolgens uit met de vertrouwde schuifregelaars van de curves of niveaus.",
+    "what_to_avoid": [
+      "Vermijd het blindelings aanschaffen van dure premium panels voordat je de gratis instapversies hebt uitgeprobeerd.",
+      "Gebruik de ingewikkelde handmatige kanaalmethode niet als je workflow vraagt om snelheid en consistentie."
+    ],
+    "best_for": "Fotografen die een gestroomlijnde, snelle workflow willen opzetten voor algemene landschapsfotografie.",
+    "unique_insights": [
+      "Luminositeitsmaskers zijn in de basis niets meer dan een zwart-witversie van de foto die fungeert als een intelligent stencil.",
+      "Gratis panels zoals TK loom-mask bieden voor het overgrote deel van de fotografen exact dezelfde kernfunctionaliteit als dure premium versies.",
+      "Het direct kunnen selecteren van een curve of niveaulaag vanuit een toonsvoorbeeld bespaart honderden muisklikken per sessie."
+    ],
+    "style_preview": "Deze stijl biedt een clean en organisch effect voor landschapsfotografen die streven naar een pure weergave. Door het slimme gebruik van gratis hulpprogramma's blijft de nabewerking soepel en overzichtelijk. Uitermate geschikt voor diffuus licht of het zachte gouden uur."
+  },
+  {
+    "video_title": "How to create a stunning cityscape in Photoshop with luminosity masks Amsterdam full workflow",
+    "photographer_name": "Greg Benz",
+    "youtube_url": "https://www.youtube.com/watch?v=teitH9lOaa0",
+    "genre": [
+      "architectuur",
+      "reisfotografie"
+    ],
+    "light_conditions": [
+      "gouden uur",
+      "tegenlicht"
+    ],
+    "mood": [
+      "dramatisch",
+      "levendig",
+      "sfeervol"
+    ],
+    "software": [
+      "Lightroom Classic",
+      "Photoshop"
+    ],
+    "style_description": "Glowing Sunrise Cityscape Blend",
+    "philosophy": "Deze bewerkingsfilosofie is erop gericht om de sfeervolle, gouden gloed van een stedelijke zonsopkomst maximaal te extraheren door twee specifiek ontwikkelde raws te combineren. In plaats van harde selectieranden te riskeren langs complexe daken en draden, zorgt een toon-gestuurde blend voor een naadloze samensmelting. Elk detail in de historische gevels en de lucht wordt geoptimaliseerd voor een meeslepende, driedimensionale stadsplaat.",
+    "workflow_order": [
+      "stap 1: maak een virtuele kopie in de raw-ontwikkelaar en optimaliseer één variant voor de lucht en één voor de gebouwen",
+      "stap 2: open beide bestanden als lagen en reinig afleidende elementen op een lege kloonlaag",
+      "stap 3: genereer een Lights 2 selectie om de dramatische details in de lucht en het water gecontroleerd in te schilderen",
+      "stap 4: pas een Zone C Blend-If aanpassing toe om de raamkozijnen van de gevels extra te laten oplichten"
+    ],
+    "techniques": [
+      {
+        "name": "Doelgerichte Camera Calibration Pop",
+        "description": "Verhoog de verzadiging van de rode en blauwe primaire kanalen in het Camera Calibration paneel tijdens de raw-fase om diepe warmte te introduceren.",
+        "when_to_use": "Bij zonsopkomsten met fletse schaduwen die een subtiele, rijke kleurinjectie nodig hebben.",
+        "tools": [
+          "Camera Calibration"
+        ],
+        "effect": "De schaduwen in de bakstenen gebouwen krijgen een prachtige, subtiele warme gloed zonder blauwverschuivingen."
+      },
+      {
+        "name": "Toon-Geassisteerde Snelselectie",
+        "description": "Combineer een actieve Quick Selection met een Lights 2 luminositeitsmasker om met een zacht penseel strakke architectuurranden te beschermen.",
+        "when_to_use": "Langs complexe daklijnen met fijne details zoals vlaggenmasten en elektriciteitsdraden.",
+        "tools": [
+          "Quick Selection Tool",
+          "Brush Tool"
+        ],
+        "effect": "De gebouwen worden perfect gevrijwaard van de lucht-aanpassing zonder rafelige randen of halo's."
+      },
+      {
+        "name": "Geklipte Solid Color Glow",
+        "description": "Creëer een Solid Color opvullaag met een warme oranje tint, zet deze op de overvloeimodus Soft Light (Blend Mode: Soft Light) en clip deze aan de onderliggende luchtlaag.",
+        "when_to_use": "Om de intense gloed van een opkomende zon consistent door te voeren in de lucht en de waterreflecties.",
+        "tools": [
+          "Solid Color",
+          "Clipping Mask"
+        ],
+        "effect": "Er ontstaat een rijke, warme gloed die uitsluitend invloed heeft op de lichte delen van de lucht en het reflecterende grachtenwater."
+      },
+      {
+        "name": "Zone C Blend-If Kozijnen Boost",
+        "description": "Plaats een Helderheid/Contrast laag en activeer een specifieke Zone C Blend-If instelling om geveldetails op te lichten.",
+        "when_to_use": "Om de witte raamkozijnen en ornamenten van historische gebouwen te laten poppen zonder de donkere bakstenen te bleken.",
+        "tools": [
+          "Blend If",
+          "Brightness/Contrast"
+        ],
+        "effect": "De lichte architectonische details springen direct in het oog, wat de diepte in de gevels enorm vergroot."
+      },
+      {
+        "name": "Rechthoekige Vignette",
+        "description": "Trek met de Rectangular Marquee Tool een kader rond het centrum en activeer een zachte vignette om de hoeken te dimmen.",
+        "when_to_use": "Bij stadsgezichten met strakke, blokkige structuren waar een traditionele ronde vignette onnatuurlijk oogt.",
+        "tools": [
+          "Rectangular Marquee Tool"
+        ],
+        "effect": "De zijkanten en onderhoeken worden subtiel donkerder, waardoor de blik direct naar de verlichte grachtengordel getrokken wordt."
+      }
+    ],
+    "color_approach": "Kleur wordt meesterlijk gestuurd door de warme zonsopkomsttinten via een geklipte Soft Light laag exclusief in de hooglichten te drukken. De diepe schaduwen worden via een restrictief Darks 4 masker actief ontdaan van deze warme gloed, waardoor de natuurlijke, koele contrasten behouden blijven.",
+    "local_adjustments": "Lokale controle wordt bereikt via een geavanceerd samenspel van het Lumenzia-paneel en de ingebouwde Blend-If functies. Hierdoor worden aanpassingen niet alleen geografisch via penselen gestuurd, maar ook tonaal via specifieke helderheidszones.",
+    "what_to_avoid": [
+      "Vermijd het gebruik van de standaard Quick Selection tool direct op een onbewerkt contrastrijk gebouw om rafelige randen te voorkomen.",
+      "Gebruik geen traditionele ronde vignette bij hoekige stadsarchitectuur; dit doorbreekt de geometrische lijnen van het beeld."
+    ],
+    "best_for": "Complexe stadsgezichten, reisfotografie en historische architectuur tijdens een krachtige zonsopkomst met veel tegenlicht.",
+    "unique_insights": [
+      "Camera Calibration in de raw-fase is een van de best bewaarde geheimen om diepe, pure kleurwarmte uit schaduwen te persen.",
+      "De Quick Selection tool werkt vele malen nauwkeuriger wanneer deze wordt toegepast op een reeds gegenereerd, contrastrijk luminositeitsmasker.",
+      "Bij hoekige onderwerpen zoals grachtenpanden werkt een rechthoekige vignette visueel veel sterker dan een ovale vorm."
+    ],
+    "style_preview": "Deze stijl levert een uiterst dramatisch en levendig effect op dat perfect aansluit bij high-end reisfotografie en stadsgezichten. Door de minutieuze scheiding van helderheidszones transformeer je een vlakke stadsplaat in een gloeiend, driedimensionaal meesterwerk."
   }
 ]

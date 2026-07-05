@@ -46960,5 +46960,277 @@
       "Zelfs als je per ongeluk plukjes haar meeneemt in de lasso-vervaging op de lage-frequentie laag, blijft het haar visueel intact omdat de scherpe definitie op de hoge-frequentie laag staat."
     ],
     "style_preview": "Deze stijl vertegenwoordigt de klassieke, ambachtelijke benadering van high-end mode- en portretretouchering. De methode is geworteld in precieze controle over de anatomie van licht en schaduw op het menselijk gezicht. Het werkt het beste bij karakteristieke portretten met uitgesproken lichtval. Het visuele resultaat is een vlekkeloze, schilderachtige huid die toch volledig tastbaar, gedetailleerd en textuurrijk blijft."
+  },
+  {
+    "video_title": "Easy Frequency Separation Skin Retouching Photoshop Tutorial",
+    "photographer_name": "Julia Trotti",
+    "youtube_url": "https://www.youtube.com/watch?v=YC-EaWQh6Ps",
+    "genre": [
+      "portret",
+      "trouwfotografie",
+      "fine-art"
+    ],
+    "light_conditions": [
+      "kunstlicht",
+      "diffuus licht",
+      "daglicht"
+    ],
+    "mood": [
+      "naturalistisch",
+      "sfeervol",
+      "rustig"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Natural Skin Soft Glow",
+    "philosophy": "De kern van deze bewerking is het behouden van een uiterst geloofwaardige textuur en anatomie zonder dat de huid er plastic of overbewerkt uitziet. Door hoofdzakelijk op de lage frequentie te werken, worden storende vlekken weggewerkt terwijl de karakteristieke poriën onaangetast blijven. Subtiele penseelstreken en continue bronbepaling voorkomen een kunstmatige uitstraling.",
+    "workflow_order": [
+      "stap 1: dupliceer de achtergrondlaag tweemaal en pas op de onderste kopie een gausseriaans vervagen (Gaussian Blur) toe met een straal van exact 3.6 pixels",
+      "stap 2: selecteer de bovenste laag en isoleer de micro-details via afbeelding toepassen (Apply Image) met aftrekken (Subtract), schaal 2 en verschuiving 128",
+      "stap 3: wijzig de overvloeimodus (Blend Mode) van de textuurlaag naar lineair licht (Linear Light) om de originele foto perfect te herstellen",
+      "stap 4: corrigeer op de lage frequentielaag de rode vlekken en schaduwovergangen met de sneltoets j voor de reparatie-penseel (Healing Brush Tool)"
+    ],
+    "techniques": [
+      {
+        "name": "Micro-Straal Egalisatie",
+        "description": "Stel de straal van het gausseriaans vervagen (Gaussian Blur) heel nauwkeurig in op een lage waarde zoals 3.6 pixels om uitsluitend de kleurvlekken te scheiden van de micro-textuur.",
+        "when_to_use": "Bij close-up portretten met zachte overgangen waar de fijne poriestructuur strak behouden moet blijven.",
+        "tools": [
+          "Gaussian Blur"
+        ],
+        "effect": "De kleurinformatie vloeit licht samen waardoor rode vlekjes minder contrasterend overkomen."
+      },
+      {
+        "name": "Proportionele Penseelreductie",
+        "description": "Verklein de brush handmatig tot een formaat dat net iets groter is dan het te corrigeren defect of de haarsnaar om onnodige versmering van de omliggende structuur tegen te gaan.",
+        "when_to_use": "Tijdens het nauwkeurig wegwerken van fijne imperfecties, rimpeltjes of losse wimperhaartjes op de huid.",
+        "tools": [
+          "Healing Brush Tool"
+        ],
+        "effect": "De aanpassingen blijven strikt beperkt tot het probleemgebied zonder omliggende huidpatronen te vervormen."
+      },
+      {
+        "name": "Toon-Overeenkomstige Bronselectie",
+        "description": "Houd de Alt-toets continu ingedrukt en selecteer handmatig een stuk huid dat exact dezelfde lichtsterkte en toonwaarde bezit als de zone die wordt gecorrigeerd.",
+        "when_to_use": "Bij het wegwerken van schaduwen rondom de neusvleugels en jukbeenderen waar lichte en donkere zones elkaar snel afwisselen.",
+        "tools": [
+          "Healing Brush Tool"
+        ],
+        "effect": "De gerepareerde delen sluiten naadloos aan op het verloop van de natuurlijke botstructuur."
+      },
+      {
+        "name": "Gelaat-Middelpunt Highlight Accent",
+        "description": "Sample met de Healing Brush in het exacte centrum van een lichtzone (zoals het voorhoofd of de jukbeenderen) en poets in een cirkelvormige beweging naar buiten.",
+        "when_to_use": "Om de natuurlijke lichtval op het gezicht te versterken en een zachte, ingebouwde glow te creëren.",
+        "tools": [
+          "Healing Brush Tool"
+        ],
+        "effect": "De centrale highlights lichten subtiel op en vloeien organisch over in de middentonen."
+      },
+      {
+        "name": "Externe Transparante Haarextractie",
+        "description": "Maak een gloednieuwe lege laag aan bovenop de frequentiescheiding, zet de monster-instelling op 'Alle lagen (All Layers)' en poets storende plukjes weg met een uiterst slank penseel.",
+        "when_to_use": "Voor het elimineren van grote, contrasterende plukken haar die dwars over de wenkbrauwen of ogen vallen.",
+        "tools": [
+          "Healing Brush Tool",
+          "Blank Layer"
+        ],
+        "effect": "De storende haren verdwijnen volledig terwijl de complexe oogstructuur erachter zuiver hersteld wordt."
+      }
+    ],
+    "color_approach": "De kleur wordt puur gecorrigeerd door vlekkerige kleurzones binnen de lage frequentielaag met elkaar te vermengen. Hierdoor veranderen de algehele witbalans en de natuurlijke huidskleur niet, maar ontstaat er een egale en gezonde kleurbasis onder de scherpe textuur.",
+    "local_adjustments": "Lokale aanpassingen worden uitgevoerd via opeenvolgende, afzonderlijke lege lagen voor specifieke gezichtsdelen. Dit maakt het mogelijk om retouchewerk aan de ogen of wenkbrauwen onafhankelijk van elkaar te finetunen of te wissen.",
+    "what_to_avoid": "Vermijd het selecteren van een lichte textuurbron om over een donkere schaduwzone te schilderen. Dit veroorzaakt doffe, modderige en onnatuurlijke vlekken die de anatomische diepte uit het gezicht halen.",
+    "best_for": "Commerciële portretfotografie en lifestylebeelden die een frisse, minimalistische en loepzuivere uitstraling vereisen.",
+    "unique_insights": [
+      "Voor het overgrote deel van het online werk is een zorgvuldige bewerking van enkel de lage frequentielaag al voldoende voor een verbluffend en clean resultaat.",
+      "Het weghalen van storende losse haren dwars over wimpers of wenkbrauwen werkt vaak veel netter op een losse, reguliere laag buiten de frequentiescheiding om.",
+      "Regelmatig in- en uitzoomen tijdens het retoucheren is essentieel om te controleren of de micro-aanpassingen ook op kijkafstand een harmonieus geheel vormen."
+    ],
+    "style_preview": "Deze stijl biedt een zachte, uiterst natuurlijke esthetiek die perfect aansluit bij de wensen van moderne portretfotografen. De visuele sfeer is helder, verfijnd en straalt een ongedwongen elegantie uit. De techniek presteert optimaal bij gecontroleerd studio-kunstlicht of zacht, diffuus daglicht. Het verwachte effect is een stralend gezicht met vloeiende tinten waarin de authentieke huidstructuur volledig behouden blijft."
+  },
+  {
+    "video_title": "The Great Power of Frequency Separation in Photoshop | For Skin Retouching and Much More",
+    "photographer_name": "Nemanja Sekulic",
+    "youtube_url": "https://www.youtube.com/watch?v=CWey0k4ax-k",
+    "genre": [
+      "product",
+      "portret",
+      "fine-art"
+    ],
+    "light_conditions": [
+      "kunstlicht",
+      "diffuus licht",
+      "gemengd licht"
+    ],
+    "mood": [
+      "krachtig",
+      "sfeervol",
+      "dramatisch"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Hyper Clean Industrial Look",
+    "philosophy": "Frequentiescheiding is geen trucje dat exclusief voorbehouden is aan huidretouche, maar een universele methode om vorm en textuur los van elkaar te manipuleren. Door kreukels of ongewenste vloeistoffen te isoleren op de hoge frequentie, kan de onderliggende vorm strakgetrokken worden zonder dat de materiaalkarakteristieken verloren gaan. Deze mathematische benadering garandeert absolute controle over elk denkbaar oppervlak.",
+    "workflow_order": [
+      "stap 1: genereer de lage frequentielaag door een gausseriaans vervagen (Gaussian Blur) toe te passen met een hoge straalwaarde tussen de 20 en 40 pixels om kreukels te elimineren",
+      "stap 2: isoleer de textuur via de afbeelding toepassen (Apply Image) wiskundige waarden subtract, scale 2 en offset 128",
+      "stap 3: plaats een nieuwe lege laag tussen de hoge en lage frequentie in om onafhankelijk te kunnen schilderen op de kleur- en vormlaag",
+      "stap 4: activeer de kloonstempel (Clone Stamp Tool) en stel deze nauwkeurig in op de modus huidige laag (Current Layer) om de micro-details te herschikken"
+    ],
+    "techniques": [
+      {
+        "name": "Vorm-Egalisatie via Tussenlagen",
+        "description": "Voeg een blanco laag toe tussen de twee basisfrequenties en schilder met een zacht penseel (Brush Tool) op 20% dekking met omringende tinten om schaduwlijnen van kreukels te neutraliseren.",
+        "when_to_use": "Bij het strakmaken en virtueel strijken van verkreukelde lakens, kledingstukken of achtergronden in de studio.",
+        "tools": [
+          "Brush Tool",
+          "Blank Layer"
+        ],
+        "effect": "De harde schaduwen van de plooien verdwijnen volledig terwijl de authentieke stofstructuur perfect zichtbaar blijft."
+      },
+      {
+        "name": "Macro-Vervaging voor Grove Vormen",
+        "description": "Gebruik een ongewoon hoge Gaussian Blur straal van bijvoorbeeld 40 pixels op de lage frequentie om grove schaduwpatronen volledig te scheiden van de micro-structuur.",
+        "when_to_use": "Wanneer de foto grote storende elementen bevat, zoals diepe plooien in textiel of grove oneffenheden op objecten.",
+        "tools": [
+          "Gaussian Blur"
+        ],
+        "effect": "De textuurlaag absorbeert alle scherpe kreukelranden, waardoor de basislaag verandert in een egale kleurvlakverdeling."
+      },
+      {
+        "name": "Textuurreconstructie met de Kloonstempel",
+        "description": "Zet de Clone Stamp Tool op 100% dekking op de hoge frequentielaag en stempel over ongewenste micro-elementen heen door te samplen van een schone textuurzone.",
+        "when_to_use": "Voor het elimineren van hardnekkige structuren zoals waterdruppels op een gezicht of harde plooien in een sjaal.",
+        "tools": [
+          "Clone Stamp Tool"
+        ],
+        "effect": "De storende elementen worden gewist en vervangen door een egale, doorlopende structuur zonder de schaduwen te veranderen."
+      },
+      {
+        "name": "Gelaatstroom Behoud",
+        "description": "Werk met een relatief grote, zachte kloonstempel op 50% dekking en sleep in de richting van de natuurlijke vezels of anatomische lijnen van het onderwerp.",
+        "when_to_use": "Bij het wegwerken van langgerekte oneffenheden of kreukellijnen in stoffen.",
+        "tools": [
+          "Clone Stamp Tool"
+        ],
+        "effect": "De textuur wordt vloeiend herverdeeld zonder dat er abrupte of wazige breuklijnen in de micro-scherpte ontstaan."
+      },
+      {
+        "name": "Kleurcorrectie via Selectieclipping",
+        "description": "Maak met de pen-tool (Pen Tool) een nauwkeurige selectie van een verkleurd vlak, vul dit op de tussenlaag met de juiste tint en pas een lichte Gaussian Blur toe op de randen.",
+        "when_to_use": "Wanneer een specifiek deel van de ondergrond door schaduwretouche een afwijkende kleur of helderheid heeft gekregen.",
+        "tools": [
+          "Pen Tool",
+          "Gaussian Blur"
+        ],
+        "effect": "De kleurafwijking wordt gecorrigeerd met behoud van een zachte, realistische overgang langs de randen."
+      }
+    ],
+    "color_approach": "De kleur wordt strak beheerd door uitsluitend te werken op de lagen onder de textuur. Kleurvlekken en ongewenste reflecties worden geneutraliseerd met de pipet (Eyedropper Tool) en het penseel, waardoor een egale toontoewijzing ontstaat die de vorm versterkt.",
+    "local_adjustments": "Er wordt gewerkt met strakke vector- en lasso-selecties om aanpassingen in vorm en kleur strikt te begrenzen tot specifieke objecten (zoals een bed of sjaal), zodat omliggende elementen onberoerd blijven.",
+    "what_to_avoid": "Vermijd het klakkeloos poetsen met een grote kloonstempel over contrastrijke randen op de hoge frequentielaag. Dit vernietigt de micro-scherpte en introduceert wazige, vlekkerige breuklijnen in de textuur.",
+    "best_for": "Commerciële productfotografie, mode-editorials en complexe artistieke montages waarbij materialen perfect gladgestreken moeten worden.",
+    "unique_insights": [
+      "Frequentiescheiding is een krachtige tool om kreukels uit lakens of kleding te 'strijken' zonder dat de textuur van de stof vervaagt.",
+      "Door een lege laag tussen de hoge en lage frequentie te plaatsen, kun je destructieve fouten voorkomen en de kleurlaag volledig non-destructief opbouwen.",
+      "Waterdruppels op een gezicht kunnen moeiteloos worden weggewerkt op de hoge frequentielaag, omdat hun storende scherpte daar volledig geïsoleerd is van de huidskleur."
+    ],
+    "style_preview": "Deze geavanceerde bewerkingsstijl is ideaal voor fotografen die absolute perfectie eisen in product- en high-end modebeelden. De visuele sfeer is strak, gepolijst en uiterst gecontroleerd. De technieken werken uitstekend bij egale studioverlichting of diffuus licht. Het verwachte resultaat is een onberispelijk oppervlak waarin storende kreukels en oneffenheden zijn verdwenen, terwijl de tastbare micro-textuur behouden blijft."
+  },
+  {
+    "video_title": "High-End Beauty Portrait Retouch – Master Frequency Separation in Photoshop 2025",
+    "photographer_name": "PhotoGrafix Academy",
+    "youtube_url": "https://www.youtube.com/watch?v=mPczobpdORM",
+    "genre": [
+      "portret",
+      "fine-art",
+      "trouwfotografie"
+    ],
+    "light_conditions": [
+      "kunstlicht",
+      "gemengd licht",
+      "diffuus licht"
+    ],
+    "mood": [
+      "dramatisch",
+      "krachtig",
+      "sfeervol"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Royal High End Beauty",
+    "philosophy": "High-end beautyretouche eist een absolute en strikte naleving van de wetten van licht en schaduw. Een frequentiescheiding mag de natuurlijke anatomie nooit vlakdrukken; het dient puur als basis om toongradaties te perfectioneren via een mixer-penseel (Mixer Brush Tool). Door naderhand handmatige dodge-and-burn technieken en koninklijke kleuroverlays toe te voegen, transformeert het portret in een driedimensionaal kunstwerk.",
+    "workflow_order": [
+      "stap 1: snijd de foto via de uitsnijden-tool (Crop Tool) naar de perfecte social media verhouding van 4x5 pixels",
+      "stap 2: isoleer en elimineer storende plukjes haar langs de contouren door de achtergrond te selecteren en om te keren (Select Inverse)",
+      "stap 3: activeer de frequentiescheiding voor een 16-bits bestand en stel de gausseriaans vervagen (Gaussian Blur) straal in tussen de 4 en 5 pixels",
+      "stap 4: hanteer het mixer-penseel (Mixer Brush Tool) om handmatig de middentonen en schaduwen met elkaar te matchen en vloeiend te blenden"
+    ],
+    "techniques": [
+      {
+        "name": "Anatomische Mixer-Brush Blending",
+        "description": "Blend de huidtinten op de lage frequentie met de Mixer Brush Tool door highlights en schaduwen strikt gescheiden te houden en ze enkel op de overgangsrand zacht in elkaar te laten overlopen.",
+        "when_to_use": "Bij high-end studioclose-ups om een vlekkeloze overgang in helderheid te realiseren zonder de vorm van het gezicht te verliezen.",
+        "tools": [
+          "Mixer Brush Tool"
+        ],
+        "effect": "De huidskleur en helderheid transformeren naar een perfect egale en vloeiende overgang."
+      },
+      {
+        "name": "Inverse Achtergrond-Kloning",
+        "description": "Maak een automatische objectselectie, keer deze om via Select Inverse, voeg een feathering van 3 tot 4 pixels toe en kloon storende plukken haar weg.",
+        "when_to_use": "Om warrige plukjes haar die buiten het model vallen snel en strak weg te poetsen tegen een egale studioachtergrond.",
+        "tools": [
+          "Subject Selection",
+          "Clone Stamp Tool"
+        ],
+        "effect": "De omtrek van het kapsel wordt direct strakker en de storende achtergrondhaartjes verdwijnen zonder het model te raken."
+      },
+      {
+        "name": "Lagedekking Contrast Dodging",
+        "description": "Schilder op een dedicated Dodge-laag met een zacht penseel (Brush Tool) op een extreem lage stroom (Flow) van 4% uitsluitend over de bestaande glanspunten van het gezicht.",
+        "when_to_use": "Na de frequentiescheiding om de verloren gegane driedimensionale diepte en contrasten krachtig terug te brengen.",
+        "tools": [
+          "Brush Tool",
+          "Dodge Layer"
+        ],
+        "effect": "De jukbeenderen, neusrug en het voorhoofd lichten subtiel op, wat zorgt voor een krachtige pop."
+      },
+      {
+        "name": "Kleurruimte-Gerichte Huidmaskering",
+        "description": "Pas een Color Lookup aanpassingslaag toe met een specifieke 3D LUT, maak een huidselectie via het menu kleurbereik (Color Range) en pas deze toe als masker.",
+        "when_to_use": "Om een rijke, chocoladebruine of warme tint specifiek aan de huid te geven zonder de achtergrond te beïnvloeden.",
+        "tools": [
+          "Color Lookup",
+          "Color Range Masking"
+        ],
+        "effect": "De huid krijgt een diepe, egale en uiterst professionele kleurgrading terwijl kleding en achtergrond hun eigen kleur behouden."
+      },
+      {
+        "name": "Inverteerde Sfeer-Warmtecorrectie",
+        "description": "Voeg een warme LUT toe, invert de maskering met Ctrl/Cmd+I en schilder met een zacht penseel op een lage Flow handmatig de warme gloed terug in specifieke hoeken.",
+        "when_to_use": "Wanneer een algehele achtergrond-LUT de natuurlijke warme lichtinval uit een studioflitser ongewenst heeft geëlimineerd.",
+        "tools": [
+          "Color Lookup",
+          "Brush Tool",
+          "Layer Mask"
+        ],
+        "effect": "De hoeken van de achtergrond krijgen hun sfeervolle, warme lichtgloed terug, wat de dieptewerking versterkt."
+      }
+    ],
+    "color_approach": "Kleur wordt op een zeer geavanceerde manier behandeld door gerichte 3D LUT-bestanden toe te passen via Color Lookup-lagen. De grading wordt via nauwkeurige kleurbereik-maskers (Color Range) puur tot de huidskleur beperkt om een rijke en modieuze uitstraling te garanderen.",
+    "local_adjustments": "Lokale maskers en geavanceerde selecties vormen de spil van de workflow. Zowel de haarcontouren, de huidtinten als de specifieke lichtbanen op de achtergrond worden via individueel ingeschilderde maskers handmatig geperfectioneerd.",
+    "what_to_avoid": "Vermijd het willekeurig door elkaar heen schilderen van lichte highlights en donkere schaduwpartijen met het mixer-penseel. Dit vlakt de natuurlijke botstructuur volledig af en resulteert in een onrealistisch en mislukt gezichtsverloop.",
+    "best_for": "Professionele beauty-fotografen, studioretoucheurs en modebladen die streven naar een majestueuze, vlekkeloze en contrastrijke portretstijl.",
+    "unique_insights": [
+      "Frequentiescheiding heeft de neiging om de natuurlijke lichtval op een gezicht plat te slaan; het tijdelijk uitschakelen van de groep helpt om de echte highlights terug te vinden.",
+      "Het op afstand houden van het beeld (uitzoomen) tijdens het bewerken van het lichaam is cruciaal om te zien wat de uiteindelijke kijker daadwerkelijk gaat ervaren.",
+      "Door een Color Lookup-laag via Color Range uitsluitend op de huid te clippen, voorkom je dat de grading de donkere schaduwen in de rest van het beeld vervuilt."
+    ],
+    "style_preview": "Deze high-end beautystijl is ontworpen voor fotografen die een adembenemende, luxueuze en dramatische sfeer in hun studiowerk willen introduceren. De visuele sfeer is krachtig, contrastrijk en bezit een vorstelijke uitstraling met diepe toongradaties. De techniek blinkt uit bij gecontroleerd studiolicht met flitsers of strakke lichtbundels. Het eindresultaat is een subliem, driedimensionaal portret met een perfecte huid en een schilderachtige achtergrond."
   }
 ]

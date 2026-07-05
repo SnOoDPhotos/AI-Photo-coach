@@ -588,26 +588,21 @@ select option,select optgroup{background:#1e1e1e;color:#f0ede8}
     <div class="field" style="max-width:260px">
       <label>Software voorkeur</label>
       <select id="softwareSelect" onchange="setSoftware(this.value)">
-        <optgroup label="Adobe">
-          <option value="lightroom">Adobe Lightroom Classic</option>
-          <option value="lightroomdesktop">Adobe Lightroom (Desktop/Cloud)</option>
-          <option value="both">Adobe Lightroom + Photoshop</option>
-        </optgroup>
-        <optgroup label="Professioneel">
-          <option value="captureone">Capture One</option>
-          <option value="dxo">DxO PhotoLab</option>
-          <option value="luminar">Luminar Neo</option>
-        </optgroup>
-        <optgroup label="Gratis">
-          <option value="darktable">Darktable</option>
-          <option value="gimp">GIMP</option>
-          <option value="rawtherapee">RawTherapee</option>
-        </optgroup>
+        <option value="lightroom">Adobe Lightroom Classic</option>
+        <option value="lightroomdesktop">Adobe Lightroom (Desktop/Cloud)</option>
+        <option value="both">Adobe Lightroom + Photoshop</option>
+        <option value="captureone">Capture One</option>
+        <option value="dxo">DxO PhotoLab</option>
+        <option value="luminar">Luminar Neo</option>
+        <option value="affinity">Affinity Photo</option>
+        <option value="darktable">Darktable</option>
+        <option value="gimp">GIMP</option>
+        <option value="rawtherapee">RawTherapee</option>
         <optgroup label="Mobiel">
-          <option value="snapseed">Snapseed</option>
-          <option value="googlephotos">Google Foto's</option>
           <option value="lightroommobile">Lightroom Mobile</option>
+          <option value="snapseed">Snapseed</option>
           <option value="vsco">VSCO</option>
+          <option value="googlephotos">Google Foto's</option>
         </optgroup>
       </select>
     </div>
@@ -808,6 +803,7 @@ select option,select optgroup{background:#1e1e1e;color:#f0ede8}
       <li>Gebruik het tekstveld bij NOG AANPASSEN om specifiek te zeggen wat je wil verbeteren.</li>
       <li>De AI herhaalt geen eerder gegeven adviezen tenzij je er specifiek om vraagt.</li>
       <li>JPG, PNG en WEBP worden ondersteund.</li>
+      <li>De app leest automatisch de EXIF data van je foto (ISO, sluitertijd, diafragma). Bij lage ISO krijg je alleen Denoise-advies als er aantoonbaar ruis zichtbaar is.</li>
     </ul>
   </div>
 

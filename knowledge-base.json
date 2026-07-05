@@ -50096,5 +50096,277 @@
       "Hij toont aan dat je met een gerichte 'Brights 3' selectie felle stadsverlichting chirurgisch kunt dimmen zonder dat de aangrenzende avondlucht ook maar een fractie meeverschuift"
     ],
     "style_preview": "Deze stijl blinkt uit in een adembenemende, loepzuivere en volstrekt natuurgetrouwe weergave. Er is geen spoor van digitale overbewerking te bekennen; de overgangen tussen felle luchten en diepe schaduwen zijn zijdezacht en harmonieus. Het levert een high-end, geloofwaardig en meesterlijk gebalanceerd beeld op."
+  },
+  {
+    "video_title": "How To Blend Exposures With Luminosity Masks in Photoshop",
+    "photographer_name": "Jimmy McIntyre",
+    "youtube_url": "https://www.youtube.com/watch?v=igNlbo5U80g",
+    "genre": [
+      "landschap",
+      "kust"
+    ],
+    "light_conditions": [
+      "gouden uur",
+      "daglicht"
+    ],
+    "mood": [
+      "rustig",
+      "levendig"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Dynamisch Clean Vloeiend Kustlandschap",
+    "philosophy": "De kerngedachte achter deze workflow is het creëren van een perfecte visuele dynamiek door de krachtigste elementen uit twee belichtingen te versmelten. Door overbelichte zones in de lucht te temmen en tegelijkertijd deliberate overbelichting in het water toe te staan, wint het beeld aan energie. Daarnaast zorgt gerichte middentoon-contrastmanipulatie voor extra punch zonder dat kleuren vervormen.",
+    "workflow_order": [
+      "stap 1: de lichte belichting voor de voorgrond en de donkere belichting voor de lucht als lagen laden",
+      "stap 2: een gebalanceerd helderheidsmasker (Brights 3) genereren om de voorgrondpalen perfect te isoleren",
+      "stap 3: de marching ants verbergen en de lucht handmatig met een zacht penseel invloeien",
+      "stap 4: een middentonen-curveslaag aanmaken op de overvloeimodus Luminosity om pure contrastdiepte toe te voegen"
+    ],
+    "techniques": [
+      {
+        "name": "Voorgrond Isolatie via Brights 3",
+        "description": "Laad het Brights 3 masker via het kanalenpaneel (Channels Palette) om de overbelichte lucht te selecteren terwijl donkere houten palen in de voorgrond volledig zwart (geïsoleerd) blijven.",
+        "when_to_use": "Bij kustlijnen met donkere pieren, rotsen of palen die voor een lichte zee of lucht staan.",
+        "tools": [
+          "Channels Palette",
+          "Layer Mask"
+        ],
+        "effect": "De donkere palen worden perfect beschermd tegen de donkere luchtbewerking, waardoor ze hun oorspronkelijke helderheid behouden."
+      },
+      {
+        "name": "Gecontroleerde Water Terugwinning",
+        "description": "Schilder met een zwart penseel op een dekking van 50 procent over delen van het stromende water in het masker van de donkere belichting.",
+        "when_to_use": "Wanneer een donkere belichting het opspattende water te dof of grijs maakt en je de sprankelende dynamiek van de lichte opname terug wilt.",
+        "tools": [
+          "Brush Tool",
+          "Layer Mask"
+        ],
+        "effect": "Het water krijgt zijn heldere, levendige witte glans terug, wat zorgt voor een krachtig contrast met de lucht."
+      },
+      {
+        "name": "Middentoon Contrast via Subtractie",
+        "description": "Genereer een specifiek midtone-masker (Midtones 3) door hooglichten en schaduwen van de selectie af te trekken, en pas hier een S-curve op toe.",
+        "when_to_use": "Om een subtiele, gerichte pop aan de algehele textuur te geven zonder dat lichte luchten of diepe schaduwen uitblijken of dichtlopen.",
+        "tools": [
+          "Curves",
+          "Easy Panel"
+        ],
+        "effect": "Het contrast in de belangrijkste middentonen neemt toe, wat de foto direct meer driedimensionaliteit geeft."
+      },
+      {
+        "name": "Kleurloze Contraststuring",
+        "description": "Zet de overvloeimodus van de contrast-curveslaag op Luminositeit (Luminosity) om de verzadiging los te koppelen van de helderheid.",
+        "when_to_use": "Wanneer een stevige curve ervoor zorgt dat de kleuren in het landschap te schreeuwerig of onnatuurlijk verzadigd raken.",
+        "tools": [
+          "Curves",
+          "Blend Mode (Luminosity)"
+        ],
+        "effect": "Het contrast verandert krachtig, maar de kleuren behouden hun zachte, natuurlijke en realistische verzadigingsniveau."
+      },
+      {
+        "name": "Vrije Penseelstroom in de Lucht",
+        "description": "Deselecteer het helderheidsmasker volledig (command/control + D) zodra de kritieke horizon is geblend, om de rest van de bovenlucht snel en vrij in te kleuren.",
+        "when_to_use": "Wanneer je in de hogere delen van de lucht geen last hebt van storende voorgrondelementen en de workflow wilt versnellen.",
+        "tools": [
+          "Brush Tool"
+        ],
+        "effect": "De donkere wolkenpartij wordt snel en egaal doorgetrokken in de bovenste hoeken van het frame."
+      }
+    ],
+    "color_approach": "De focus ligt op het behouden van een zachte, bijna pastelachtige kleurverzadiging. Door contrastbewerkingen strikt te isoleren van de kleurinformatie via specifieke overvloeimodie, behoudt het kustlandschap zijn serene en natuurlijke uitstraling, passend bij het vroege daglicht.",
+    "local_adjustments": "Lokale sturing vindt plaats op het wateroppervlak. Door bewust te wisselen tussen een hoge en een middelhoge penseeldekking in het masker, kan de fotograaf handmatig sturen waar het water kalm en donker moet zijn, en waar het juist fel moet oplichten voor extra visuele spanning.",
+    "what_to_avoid": [
+      "Vermijd het blindelings doortrekken van de donkere belichting over de gehele waterspiegel om te voorkomen dat de foto zijn levendige dynamiek verliest.",
+      "Pas op dat een curves-aanpassing de histogramranden niet raakt om clipping in de subtiele wolkentexturen te voorkomen."
+    ],
+    "best_for": "Lange sluitertijd-opnames aan de kust met pieren, palen of rotspartijen in de branding.",
+    "unique_insights": [
+      "Het toelaten van een gecontroleerde overbelichting in opspattend water of schuimkoppen voegt vaak aanzienlijk meer dynamiek toe aan een landschap dan een perfect egale HDR-balans.",
+      "Het controleren van het midtone-histogram via een specifiek Midtones 3 masker laat zien dat hooglichten en schaduwen mathematisch perfect buiten schot blijven.",
+      "Zodra de complexe overgangszone (zoals de horizon) succesvol is geblend, versnelt het uitschakelen van de selectie de rest van het schilderwerk aanzienlijk zonder kwaliteitsverlies."
+    ],
+    "style_preview": "Deze stijl levert een prachtig, sereen en uiterst dynamisch kustlandschap op met een loeistrakke detaillering. De sfeer is clean, rustgevend en perfect in balans. Het is bij uitstek geschikt voor fotografen die met lange sluitertijden werken en de pure, vloeiende textuur van water en wolken willen vangen. Zonder sporen van zware bewerking behoudt het beeld zijn fotografische integriteit en artistieke kracht."
+  },
+  {
+    "video_title": "Insane CONTROL, luminosity masks in Photoshop",
+    "photographer_name": "PhotoshopCAFE",
+    "youtube_url": "https://www.youtube.com/watch?v=oe_VQt3Th_M",
+    "genre": [
+      "portret",
+      "fine-art"
+    ],
+    "light_conditions": [
+      "kunstlicht",
+      "gemengd licht"
+    ],
+    "mood": [
+      "intiem",
+      "moody"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Intiem Contrastrijk Fine-Art Portret",
+    "philosophy": "De filosofie rust op het verkrijgen van absolute, chirurgische controle over de verschillende toonzones in een afbeelding. Door het beeld handmatig op te splitsen in drie niveaus van licht, drie niveaus van donker en een zuivere midtone-zone, kan elk detail onafhankelijk worden gemodelleerd. Dit stelt de retoucheerder in staat om de lichtval op het model met uiterste precisie te sturen en storende pieken te elimineren.",
+    "workflow_order": [
+      "stap 1: handmatig drie intensiteitsniveaus voor zowel de hooglichten als de schaduwen opbouwen in het kanalenpaneel",
+      "stap 2: de midtone-zone isoleren door de opgebouwde lichten en darks mathematisch van de hoofdselectie af te trekken",
+      "stap 3: een curveslaag koppelen aan de diepe schaduwen (Darks 3) om uitgeblazen of te donkere zones selectief op te lichten",
+      "stap 4: de overbelichte hooglichten in het gezicht temperen via het Lights 3 masker en de algehele laagdekking finetunen"
+    ],
+    "techniques": [
+      {
+        "name": "Drie-traps Hooglichten Isolatie",
+        "description": "Maak een initiële RGB-selectie en gebruik opeenvolgend de modifier-sneltoetsen (shift + command + option / shift + control + alt) om de maskers Lights 1, 2 en 3 te genereren.",
+        "when_to_use": "Wanneer je subtiele gradaties in zeer heldere partijen, zoals reflecties op de huid of felle lampen, afzonderlijk wilt aanpakken.",
+        "tools": [
+          "Channels Panel"
+        ],
+        "effect": "Elk opvolgend kanaal isoleert een steeds exclusiever en feller deel van de hooglichten."
+      },
+      {
+        "name": "Omgekeerde Schaduw-opbouw",
+        "description": "Inverteer de initiële RGB-selectie (command/control + shift + I) en pas dezelfde intersectie-techniek toe om de kanalen Darks 1, 2 en 3 te creëren.",
+        "when_to_use": "Om diepe schaduwen in kleding of donker haar met chirurgische precisie te scheiden van de rest van het beeld.",
+        "tools": [
+          "Channels Panel"
+        ],
+        "effect": "De schaduwen worden opgesplitst in zachte, middelmatige en extreem diepe zones."
+      },
+      {
+        "name": "Mathematische Midtone Extractie",
+        "description": "Selecteer de gehele afbeelding (command/control + A) en gebruik de subtractie-sneltoetsen (command + option / control + alt) om zowel Lights 1 als Darks 1 van de selectie af te trekken.",
+        "when_to_use": "Wanneer je puur de huidtinten en zachte overgangen wilt aanpassen zonder de diepe schaduwen of felle witten te raken.",
+        "tools": [
+          "Channels Panel"
+        ],
+        "effect": "Er ontstaat een perfect sluitend midtone-masker waarin de uiterste toonzones gitzwart (uitgesloten) zijn."
+      },
+      {
+        "name": "Chirurgische SchaduwHerstel",
+        "description": "Laad het Darks 3 masker en trek het linker- en middendeel van de curve omhoog om uitsluitend de diepste, dichtgelopen details te openen.",
+        "when_to_use": "Bij contrastrijke portretten waarbij details in het haar of donkere texturen verloren dreigen te gaan.",
+        "tools": [
+          "Curves"
+        ],
+        "effect": "De diepe schaduwen lichten op en onthullen fijne details zonder dat de algehele contrastomgeving flets wordt."
+      },
+      {
+        "name": "Huid-clipping Reductie",
+        "description": "Koppel een curveslaag aan het Lights 3 masker en trek het bovenste deel van de lijn gecontroleerd naar beneden over het gezicht.",
+        "when_to_use": "Wanneer felle flitsers of studiolampen hebben gezorgd voor uitgebleekte plekken op het voorhoofd of de wangen van het model.",
+        "tools": [
+          "Curves"
+        ],
+        "effect": "De overbelichte huidvlakken krijgen hun oorspronkelijke textuur en zachte vleeskleur terug."
+      }
+    ],
+    "color_approach": "Door de curves uitsluitend via de extreem fijnmazige Lights 3 en Darks 3 maskers te sturen, blijft de natuurlijke pigmentatie van de huid perfect behouden. Er treedt geen onnatuurlijke kleurverschuiving op in de overgangen, wat bij reguliere schuifregelaars vaak wel gebeurt.",
+    "local_adjustments": "De lokale sturing wordt in deze geavanceerde methodiek volledig overgedragen aan de gelaagde opbouw van de maskers zelf. Mocht een specifieke zone (zoals de achtergrond) te veel veranderen, dan kan de dekking (Opacity) van die specifieke toongroep-curveslaag achteraf traploos handmatig worden gereduceerd.",
+    "what_to_avoid": [
+      "Vermijd het blindelings opvoeren van de curves in de middentonen om te voorkomen dat de algehele diepte en intimiteit van het portret verdwijnt.",
+      "Zorg dat je bij het selecteren van toonzones altijd de hoofd-RGB geactiveerd hebt staan om foutieve kanaalextracties te voorkomen."
+    ],
+    "best_for": "High-end portretretoucheurs en fine-art fotografen die totale controle eisen over de textuur en lichtverdeling op een model.",
+    "unique_insights": [
+      "De midtone-zone kan wiskundig perfect worden geïsoleerd door simpelweg de eerste selecties van zowel licht als donker van de totale selectie af te trekken.",
+      "Het handmatig controleren van toonzones via afzonderlijke curveslagen stelt je in staat om de algehele sfeer achteraf subtiel te finetunen via de laagdekking (Opacity).",
+      "Er is geen geavanceerd hulppaneel nodig om een professionele 7-zone helderheidsstructuur op te bouwen; de juiste modifier-toetsen in het standaard kanalenpaneel volstaan."
+    ],
+    "style_preview": "Deze stijl levert een uiterst intiem, krachtig en verfijnd fine-art portret op met een ongeëvenaarde tonale rijkdom. De visuele sfeer is high-end, professioneel en perfect gebalanceerd. Het blinkt uit in gecontroleerde studio-omgevingen en bij intiem kunstlicht, waar de subtiele nuances van de menselijke huid en kledingtexturen behouden moeten blijven. Het resultaat is een meesterlijke plaat met vloeiende overgangen en een diepe, tastbare dimensionaliteit."
+  },
+  {
+    "video_title": "Luminosity Mask Sky Replacement - Lightroom & Photoshop Editing | QE #171",
+    "photographer_name": "Christian Möhrle",
+    "youtube_url": "https://www.youtube.com/watch?v=ACjqcDh9fZQ",
+    "genre": [
+      "landschap",
+      "experimenteel"
+    ],
+    "light_conditions": [
+      "gouden uur",
+      "gemengd licht"
+    ],
+    "mood": [
+      "dramatisch",
+      "levendig"
+    ],
+    "software": [
+      "Lightroom Classic",
+      "Photoshop"
+    ],
+    "style_description": "Dramatisch Kleurrijk Sunset Landschap",
+    "philosophy": "De benadering combineert een strakke RAW-basisbewerking met een creatieve, experimentele luchtvervanging in Photoshop. Het doel is om een saaie, grauwe lucht te transformeren in een spectaculaire zonsondergang. Hierbij fungeert een uiterst scherp helderheidsmasker als de perfecte montagelaag, zodat complexe bergranden naadloos aansluiten bij het nieuwe, warme licht.",
+    "workflow_order": [
+      "stap 1: het profiel in Lightroom omzetten naar Adobe Landscape en schaduwen aanzetten voor maximale structuur",
+      "stap 2: een warme split-toning toepassen op de hooglichten en de verzadiging van primair rood opvoeren",
+      "stap 3: in Photoshop een messcherp zwart-wit selectiemasker van de bergrand maken met behulp van niveaus",
+      "stap 4: de nieuwe kleurrijke sunset-lucht monteren, de voorgrond handmatig opwarmen en een zachte gloed (Orton-effect) toevoegen"
+    ],
+    "techniques": [
+      {
+        "name": "RAW Structuur Optimalisatie",
+        "description": "Zet het cameraprofiel op Adobe Landscape, verhoog de Whites en voeg extra Clarity toe om maximale details in de rotsen van de Matterhorn te persen.",
+        "when_to_use": "Als voorbereiding op een zware landschapsbewerking waarbij rotsen en bergen extra textuur en scherpte vereisen.",
+        "tools": [
+          "Lightroom Classic"
+        ],
+        "effect": "De bergstructuren worden direct veel krachtiger en contrastrijker zichtbaar."
+      },
+      {
+        "name": "Warme RAW Split-Toning",
+        "description": "Voeg een warme, oranje-achtige tint toe aan de hooglichten (Highlights) in het deelvenster Split Toning om een zonsondergangssfeer te simuleren.",
+        "when_to_use": "Wanneer de originele opname te koel of flets van kleur is en een warme basisgloed nodig heeft.",
+        "tools": [
+          "Lightroom Classic"
+        ],
+        "effect": "De lichtere delen van de opname krijgen een subtiele, sfeervolle gouden gloed."
+      },
+      {
+        "name": "Chirurgisch Silhouet Masker",
+        "description": "Dupliceer de berglaag, zet deze om naar zwart-wit en gebruik Niveaus (Levels) om de berg gitzwart en de saaie lucht spierwit te maken.",
+        "when_to_use": "Bij het uitvoeren van een complexe luchtvervanging langs grillige en scherpe bergranden.",
+        "tools": [
+          "Levels",
+          "Layer Mask"
+        ],
+        "effect": "Er ontstaat een perfect binair montagemasker dat handmatig knipwerk overbodig maakt."
+      },
+      {
+        "name": "Voorgrond Kleur-Harmonisatie",
+        "description": "Voeg een curves-aanpassingslaag toe, clip deze aan de voorgrond (berg) en trek het rode en gele kanaal omhoog om het warme licht van de nieuwe lucht te matchen.",
+        "when_to_use": "Direct na een luchtvervanging om te voorkomen dat de montage er nep uitziet door conflicterende kleurtemperaturen.",
+        "tools": [
+          "Curves",
+          "Clipping Mask"
+        ],
+        "effect": "De berg krijgt dezelfde warme gloed als de nieuwe zonsondergang, wat zorgt voor een realistisch geheel."
+      },
+      {
+        "name": "Creatieve Lichtgloed (Soft Focus)",
+        "description": "Creëer een samengevoegde laag op de overvloeimodus Soft Light, voeg een flinke filter-vervaging (Gaussian Blur) toe en verlaag de dekking drastisch.",
+        "when_to_use": "In de eindfase van een dramatische landschapsplaat om een magische, dromerige gloed in het licht te weven.",
+        "tools": [
+          "Gaussian Blur",
+          "Blend Mode (Soft Light)"
+        ],
+        "effect": "Een prachtig, zacht gloei-effect (Orton-achtige look) dat harde digitale randen verzacht."
+      }
+    ],
+    "color_approach": "De kleuraanpak is intensief en warm. Door de verzadiging van de rode primaire kleuren in het RAW-stadium al fors op te voeren en dit in Photoshop te complementeren met een handmatige 'Color Dodge'-penseelstreek (met een warme tint uit de lucht), ontstaat er een spectaculair lichtspel op de bergflanken.",
+    "local_adjustments": "Lokale sturing vindt plaats via het slimme montagemasker. Door de nieuwe lucht met uiterste precisie achter de messcherpe contouren van de Matterhorn te plaatsen en de voorgrond via een uitknipmasker (Clipping Mask) apart te kleuren, blijft de artistieke controle over de twee scéne-elementen volledig gescheiden.",
+    "what_to_avoid": [
+      "Vermijd het direct monteren van een warme lucht zonder de kleurtemperatuur van de voorgrond aan te passen om een onrealistische 'cut-and-paste' look te voorkomen.",
+      "Gebruik geen hoge dekking bij het toepassen van de soft-focus gloed om het verlies van kritieke micro-details in de rotsen te vermijden."
+    ],
+    "best_for": "Landschapsfotografen die voor social media een spectaculaire, creatieve transformatie willen maken van een foto met een saaie lucht.",
+    "unique_insights": [
+      "Een perfect sluitend masker voor luchtvervanging kan razendsnel worden gemaakt door een tijdelijke zwart-witlaag via Niveaus (Levels) extreem te clippen tot puur zwart en wit.",
+      "Het handmatig inkleuren van lichtvlekken met een zacht penseel op de overvloeimodus Hard Light of Color Dodge geeft een waanzinnig krachtige en creatieve zonnegloed.",
+      "Voor social media-doeleinden hoeft een masker niet microscopisch perfect te zijn; de algehele kleursynchronisatie tussen lucht en voorgrond bepaalt voor 90 procent de geloofwaardigheid."
+    ],
+    "style_preview": "Deze stijl levert een uiterst krachtig, kleurrijk en episch landschapsbeeld op met een zware artistieke lading. De sfeer is ronduit magisch, levendig en neigt naar het fantastische. Het is bij uitstek geschikt voor dramatische berglandschappen die in hun originele staat sfeer missen. Door de combinatie van strakke maskering en dromerige soft-focus gloed ontstaat er een sprookjesachtige plaat die direct de aandacht grijpt."
   }
 ]

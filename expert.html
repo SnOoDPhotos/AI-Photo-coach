@@ -542,7 +542,7 @@ select option,select optgroup{background:#1e1e1e;color:#f0ede8}
 
     <!-- Stap 1: Genre kiezen -->
     <div id="genreStep" style="margin-bottom:12px">
-      <div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);letter-spacing:1px;margin-bottom:6px">STAP 1 — SOORT FOTO</div>
+      <div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);letter-spacing:1px;margin-bottom:6px">STAP 1 — <span data-i18n="photoType" data-i18n="photoType">SOORT FOTO</span></div>
       <select id="genreFilterSelect" onchange="onGenreFilterChange(this.value)" style="width:100%;background:var(--bg);border:1px solid var(--border);color:var(--text);padding:11px 14px;font-family:'DM Sans',sans-serif;font-size:13px;outline:none;cursor:pointer">
         <option value="">— Kies soort foto —</option>
         <option value="landschap">Landschap</option>
@@ -576,7 +576,7 @@ select option,select optgroup{background:#1e1e1e;color:#f0ede8}
         <option value="">— Geen stijlvoorkeur —</option>
       </select>
       <div id="stylePreviewPanel" style="display:none;margin-top:10px;padding:12px 14px;background:var(--bg);border:1px solid var(--border);border-left:3px solid var(--accent);font-size:12px;line-height:1.7;color:var(--muted)">
-        <div style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1px;color:var(--accent);margin-bottom:6px">ℹ STIJLOMSCHRIJVING</div>
+        <div style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1px;color:var(--accent);margin-bottom:6px" data-i18n="stylePreview">ℹ STIJLOMSCHRIJVING</div>
         <div id="stylePreviewText"></div>
       </div>
     </div>
@@ -777,7 +777,7 @@ select option,select optgroup{background:#1e1e1e;color:#f0ede8}
     <h4>De knoppen uitgelegd</h4>
     <ul>
       <li><strong style="color:var(--accent)">START</strong> &mdash; Kies je AI model en klik hier om te beginnen.</li>
-      <li><strong style="color:var(--accent)">SOFTWARE VOORKEUR</strong> &mdash; Kies je bewerkingssoftware. De AI past zijn adviezen aan. <em style="color:var(--muted)">Photoshop: adviezen zijn beperkt tot Camera Raw functies (Filter → Camera Raw Filter).</em></li>
+      <li><strong style="color:var(--accent)" data-i18n="softwarePref">SOFTWARE VOORKEUR</strong> &mdash; Kies je bewerkingssoftware. De AI past zijn adviezen aan. <em style="color:var(--muted)">Photoshop: adviezen zijn beperkt tot Camera Raw functies (Filter → Camera Raw Filter).</em></li>
       <li><strong style="color:var(--accent)">UPLOAD YOUR PHOTO</strong> &mdash; Sleep je foto hierheen of klik om te selecteren. Ondersteunde formaten: <strong>JPG, PNG, WEBP</strong>. RAW bestanden worden niet ondersteund — exporteer je RAW foto eerst als JPG vanuit Lightroom of Photoshop.</li>
 <li><strong style="color:var(--accent)">WORKFLOW TIP</strong> &mdash; Bewerk je RAW foto in je software, exporteer tussendoor als JPG en upload die versie. Zo blijf je altijd in je RAW bewerken.</li>
       <li><strong style="color:var(--accent)">NOG AANPASSEN</strong> &mdash; Niet tevreden met deze fase? Typ wat je wil verbeteren en krijg nieuwe gerichte adviezen.</li>
@@ -1441,6 +1441,7 @@ function setLanguage(lang) {
   document.getElementById('langNL').classList.toggle('active', lang === 'nl');
   document.getElementById('langEN').classList.toggle('active', lang === 'en');
   applyLanguage();
+  updateUILanguage();
 }
 
 function applyLanguage() {
@@ -2428,6 +2429,123 @@ function submitForgot() {
     btn.disabled = false; btn.textContent = 'RESET LINK VERSTUREN';
     err.textContent = 'Verbindingsfout: ' + e.message; err.style.display = 'block';
   });
+}
+
+
+// ── Vertalingen NL/EN ──────────────────────────────────────────────────────
+var TRANSLATIONS = {
+  nl: {
+    photoType: 'SOORT FOTO',
+    editStyle: 'BEWERKINGSSTIJL',
+    noPreference: '— Geen voorkeur —',
+    noStyle: '— Geen stijlvoorkeur —',
+    surpriseMe: '\ud83c\udfb2 Verras me \u2014 mix van 3 stijlen',
+    stylePreview: '\u2139 STIJLOMSCHRIJVING',
+    softwarePref: 'SOFTWARE VOORKEUR',
+    uploadTitle: 'UPLOAD JE FOTO',
+    uploadSub: 'Sleep een foto hierheen of klik om te selecteren',
+    startBtn: 'START',
+    genres: {
+      '': '— Geen voorkeur —',
+      'landschap': 'Landschap',
+      'wildlife': 'Wildlife',
+      'portret': 'Portret',
+      'straatfotografie': 'Straatfotografie',
+      'reisfotografie': 'Reisfotografie',
+      'sport': 'Sport / Actie',
+      'macro': 'Macro',
+      'nacht & astro': 'Nacht & Astro',
+      'architectuur': 'Architectuur',
+      'luchtfotografie': 'Drone / Luchtfotografie',
+      'documentaire': 'Documentaire',
+      'product': 'Product / Studio',
+      'infraroodfotografie': 'Infraroodfotografie',
+      'trouwfotografie': 'Trouwfotografie',
+      'kust': 'Kust',
+      'fine-art': 'Fine-Art',
+      'zwart-wit': 'Zwart-Wit',
+      'cinematisch': 'Cinematisch',
+      'experimenteel': 'Experimenteel',
+      'grafisch ontwerp': 'Grafisch Ontwerp',
+      'algemeen': 'Algemeen'
+    }
+  },
+  en: {
+    photoType: 'PHOTO TYPE',
+    editStyle: 'EDITING STYLE',
+    noPreference: '— No preference —',
+    noStyle: '— No style preference —',
+    surpriseMe: '\ud83c\udfb2 Surprise me \u2014 mix of 3 styles',
+    stylePreview: '\u2139 STYLE DESCRIPTION',
+    softwarePref: 'SOFTWARE PREFERENCE',
+    uploadTitle: 'UPLOAD YOUR PHOTO',
+    uploadSub: 'Drag a photo here or click to select',
+    startBtn: 'START',
+    genres: {
+      '': '— No preference —',
+      'landschap': 'Landscape',
+      'wildlife': 'Wildlife',
+      'portret': 'Portrait',
+      'straatfotografie': 'Street Photography',
+      'reisfotografie': 'Travel Photography',
+      'sport': 'Sports / Action',
+      'macro': 'Macro',
+      'nacht & astro': 'Night & Astro',
+      'architectuur': 'Architecture',
+      'luchtfotografie': 'Drone / Aerial',
+      'documentaire': 'Documentary',
+      'product': 'Product / Studio',
+      'infraroodfotografie': 'Infrared Photography',
+      'trouwfotografie': 'Wedding Photography',
+      'kust': 'Coastal / Seascape',
+      'fine-art': 'Fine-Art',
+      'zwart-wit': 'Black & White',
+      'cinematisch': 'Cinematic',
+      'experimenteel': 'Experimental',
+      'grafisch ontwerp': 'Graphic Design',
+      'algemeen': 'General'
+    }
+  }
+};
+
+function t(key) {
+  return (TRANSLATIONS[appLanguage] || TRANSLATIONS.nl)[key] || key;
+}
+
+function updateUILanguage() {
+  var lang = TRANSLATIONS[appLanguage] || TRANSLATIONS.nl;
+
+  // Genre dropdown
+  var genreSel = document.getElementById('genreFilterSelect');
+  if (genreSel) {
+    Array.from(genreSel.options).forEach(function(opt) {
+      var val = opt.value;
+      if (lang.genres[val] !== undefined) opt.textContent = lang.genres[val];
+    });
+  }
+
+  // Labels
+  var photoTypeEl = document.querySelector('[data-i18n="photoType"]');
+  if (photoTypeEl) photoTypeEl.textContent = lang.photoType;
+  var editStyleEl = document.querySelector('[data-i18n="editStyle"]');
+  if (editStyleEl) editStyleEl.textContent = lang.editStyle;
+  var softwarePrefEl = document.querySelector('[data-i18n="softwarePref"]');
+  if (softwarePrefEl) softwarePrefEl.textContent = lang.softwarePref;
+
+  // Style dropdown first option
+  var styleSel = document.getElementById('styleSelect');
+  if (styleSel && styleSel.options[0]) {
+    styleSel.options[0].textContent = lang.noStyle;
+  }
+
+  // Surprise me option
+  Array.from(document.querySelectorAll('#styleSelect option[value="auto"]')).forEach(function(opt) {
+    opt.textContent = lang.surpriseMe;
+  });
+
+  // Style preview label
+  var previewLabelEl = document.querySelector('[data-i18n="stylePreview"]');
+  if (previewLabelEl) previewLabelEl.textContent = lang.stylePreview;
 }
 
 

@@ -1844,6 +1844,15 @@ function populateStyleSelect(entries, filterGenre) {
   };
   var swLabels = SW_LABEL_MAP[currentSoftware] || [];
 
+  // Auto / Verras me optie bovenaan
+  if (filterGenre) {
+    var autoOpt = document.createElement('option');
+    autoOpt.value = 'auto';
+    var lang = (window.TRANSLATIONS && window.TRANSLATIONS[appLanguage]) ? window.TRANSLATIONS[appLanguage] : null;
+    autoOpt.textContent = lang ? lang.surpriseMe : '\ud83c\udfb2 Verras me \u2014 mix van 3 stijlen';
+    sel.appendChild(autoOpt);
+  }
+
   var matched = 0;
   entries.forEach(function(e, i) {
     // Genre filter

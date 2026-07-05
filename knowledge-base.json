@@ -47866,5 +47866,190 @@
     "_warnings": [
       "naam lijkt op kanaalnaam (photography)"
     ]
+  },
+  {
+    "video_title": "How To Smooth Skin With Frequency Separation In Photoshop (+ FREE Action)",
+    "photographer_name": "Brendan Williams",
+    "youtube_url": "https://www.youtube.com/watch?v=l2h3J0VDqDE",
+    "genre": [
+      "portret",
+      "algemeen"
+    ],
+    "light_conditions": [
+      "daglicht",
+      "diffuus licht"
+    ],
+    "mood": [
+      "naturalalistisch",
+      "levendig"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Natuurlijke Levendige Huid Egalisatie",
+    "philosophy": "Huidretouchering moet het subject laten stralen zonder dat het ten koste gaat van de unieke, menselijke identiteit; porseleinen poppen zijn het absolute schrikbeeld. Door blemishes eerst volledig te elimineren, wordt een zuivere basis gecreëerd voor de splitsing. De techniek combineert lasso-vervaging met mixer-brush verfijning voor het beste resultaat.",
+    "workflow_order": [
+      "stap 1: maak een nieuwe laag genaamd 'blemish removal' en gebruik de verwijdertool met de optie 'remove after each stroke' uitgeschakeld",
+      "stap 2: schilder over alle acne en oneffenheden in één sessie en druk op enter om photoshop het werk non-destructief te laten uitvoeren",
+      "stap 3: selecteer de achtergrond en de retoucheerlaag, dupliceer en voeg ze samen tot één schone, nieuwe basislaag",
+      "stap 4: dupliceer deze laag tweemaal, noem ze 'blur' en 'texture', en pas een gaussian blur van 10 pixels toe op de blur-laag",
+      "stap 5: stel een handmatige sneltoets in voor gaussian blur (bijvoorbeeld Shift+Cmd+.) om de lasso-workflow drastisch te versnellen"
+    ],
+    "techniques": [
+      {
+        "name": "Batch-Verwijdering via de Remove Tool",
+        "description": "Schakel 'Remove na elke streek' uit, schilder rustig alle roodheden en acne paars/roze in, en druk op Enter voor een globale non-destructieve verwerking.",
+        "when_to_use": "Bij portretten met een grotere hoeveelheid acne of duidelijke huidimperfecties.",
+        "tools": [
+          "Remove Tool"
+        ],
+        "effect": "Alle gemarkeerde oneffenheden verdwijnen in één keer op een perfecte manier, zelfs langs complexe gezichtsranden."
+      },
+      {
+        "name": "Sneltoets-Gestuurde Lasso Vervaging",
+        "description": "Maak een lasso-selectie met 10 pixels feather op de blur-laag en roep via je ingestelde sneltoets direct het Gaussian Blur-venster op.",
+        "when_to_use": "Voor het systematisch en snel egaliseren van grotere huidoppervlakken zoals de wangen en het voorhoofd.",
+        "tools": [
+          "Lasso Tool",
+          "Gaussian Blur",
+          "Keyboard Shortcuts"
+        ],
+        "effect": "De geselecteerde zone wordt direct zachter van toon en vlekken verdwijnen, terwijl de workflow door de sneltoets extreem vlot verloopt."
+      },
+      {
+        "name": "20% Mix Brush Schaduw Damping",
+        "description": "Stel alle waarden van het mixer-penseel (Wet, Load, Mix, Flow) strak in op exact 20% en gebruik een schone, lege brush.",
+        "when_to_use": "Na de lasso-vervagingen om hardnekkige toonavwijkingen of subtiele vlekkerigheid handmatig na te bewerken.",
+        "tools": [
+          "Mixer Brush Tool"
+        ],
+        "effect": "Door vanuit een lichter deel over een harde schaduw te schilderen, wordt deze subtiel opgelicht en verzacht."
+      },
+      {
+        "name": "Hot Spot Reductie",
+        "description": "Sample met het 20% mixer-penseel in een correct belichte, donkerdere zone en schilder hiermee over overbelichte glansplekken.",
+        "when_to_use": "Bij portretten die zijn geschoten in de harde zon of met felle flitsers waardoor er 'hot spots' op de huid ontstaan.",
+        "tools": [
+          "Mixer Brush Tool"
+        ],
+        "effect": "De felle glansplekken worden effectief gedempt en krijgen hun natuurlijke huidkleur terug zonder textuurverlies."
+      },
+      {
+        "name": "Non-Destructieve Lagen-Samenvoeging",
+        "description": "Selecteer de actieve retoucheerlagen en gebruik de sneltoetscombinatie Cmd+J en Cmd+E om een perfect samengevoegde startlaag te maken.",
+        "when_to_use": "Direct na de blemish-verwijdering om een stabiele, schone basis te creëren voor de frequentiescheiding.",
+        "tools": [
+          "Lagen (Layers)"
+        ],
+        "effect": "Alle losse retouches worden samengesmolten tot één overzichtelijke laag, wat fouten in de latere Apply Image-fase voorkomt."
+      }
+    ],
+    "color_approach": "De kleuraanpak maakt intensief gebruik van het mixer-penseel op een lage, veilige instelling van 20%. Hierdoor worden toontransities handmatig in de richting van de gezichtsanatomie gestuurd, wat resulteert in een levendige en egale huidtint.",
+    "local_adjustments": "Lokale controle is strak ingeregeld via de lasso-tool met een feather van 10 pixels. Er wordt nadrukkelijk gewaarschuwd om weg te blijven van harde anatomische randen zoals de haarlijn om kleurbloeding te vermijden.",
+    "what_to_avoid": [
+      "Trek de lasso-selectie nooit over harde contrastranden zoals de overgang van haar naar huid, om lelijke, wazige kleurvlekken te voorkomen.",
+      "Gebruik geen hoge percentages op het mixer-penseel, omdat de huid daardoor direct haar natuurlijke dieptewerking verliest."
+    ],
+    "best_for": "Portretfotografen die buiten met natuurlijk daglicht werken en snel en efficiënt oneffenheden willen wegwerken met een frisse, vitale uitstraling.",
+    "unique_insights": [
+      "Het uitschakelen van 'Remove after each stroke' op de remove tool transformeert de tool in een krachtig en rustig batch-retoucheerwapen.",
+      "Het toewijzen van een aangepaste sneltoets voor Gaussian Blur is de nummer één manier om de frequentie-workflow met wel 300% te versnellen.",
+      "Het mixer-penseel ingesteld op een universele 20%-regel werkt als een subtiele, handmatige Dodge & Burn tool die extreem vergevingsgezind is."
+    ],
+    "style_preview": "Deze stijl viert een frisse, levendige en uiterst natuurlijke portretlook. De kernfilosofie is dat het subject er op zijn allerbest uit moet zien, zonder dat de bewerking zichtbaar is of de huidtextuur wordt opgeofferd. Het presteert optimaal bij portretten die buiten in natuurlijk daglicht of zacht diffuus licht zijn gemaakt. Fotografen kunnen een vitaal, commercieel aantrekkelijk en sprekend eindresultaat verwachten waarin de persoonlijkheid van het model centraal staat."
+  },
+  {
+    "video_title": "High-End Skin Retouching in 10 Minutes For Beginners | Frequency Separation Photoshop Tutorial",
+    "photographer_name": "Ronnix Photography",
+    "youtube_url": "https://www.youtube.com/watch?v=uyD31IfJ3Ms",
+    "genre": [
+      "portret",
+      "algemeen"
+    ],
+    "light_conditions": [
+      "kunstlicht",
+      "harde zon"
+    ],
+    "mood": [
+      "dramatisch",
+      "krachtig"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Krachtige Commerciële Beauty Look",
+    "philosophy": "Extreme retoucheercases met intense acne vereisen een ijzersterke, methodische basis waarbij blemishverwijdering en frequentiescheiding elkaar versterken. Door tonen strikt gescheiden te mengen in de exacte richting van de gezichtsanatomie, blijft de natuurlijke vorm behouden. De combinatie van mixer-brush en lasso-vervaging levert een onberispelijke studiostijl op.",
+    "workflow_order": [
+      "stap 1: importeer de afbeelding en maak een eerste duplicaat aan om grove acne direct non-destructief aan te pakken",
+      "stap 2: selecteer de patchtool op de stand 'normal' en sleep grove oneffenheden systematisch naar schone huidzones",
+      "stap 3: maak de frequentielagen 'color' en 'texture' aan en stel de gaussian blur straal in op exact 12 of 13 pixels",
+      "stap 4: configureer het mixer-penseel met een hardheid van 0%, clean brush geselecteerd en specifieke waarden zoals wet 9% en load 75%",
+      "stap 5: selecteer de lasso-tool met 20 pixels feather op de kleurlaag en vermenigvuldig de initiële straal met drie (39 pixels) in het gaussian blur filter"
+    ],
+    "techniques": [
+      {
+        "name": "Pre-Separation Patch Opschoning",
+        "description": "Gebruik de patchtool intensief om de overgrote meerderheid van de zware acne en actieve blemishes in een vroeg stadium handmatig te elimineren.",
+        "when_to_use": "Bij extreme retoucheercases waarbij de huid van het model in de basis veel textuurfouten en ontstekingen bevat.",
+        "tools": [
+          "Patch Tool"
+        ],
+        "effect": "Er wordt een egale, schone basishuid gecreëerd, wat een vlekkeloze en probleemloze frequentiescheiding in de volgende fasen garandeert."
+      },
+      {
+        "name": "Anatomisch Gerichte Mixer Blending",
+        "description": "Beweeg het mixer-penseel met korte streken strikt in de specifieke richting en welving van de natuurlijke gezichtsvormen.",
+        "when_to_use": "Op de kleurlaag om de overgangen tussen schaduwen, middentonen en highlights op de neus en kin vloeiend te maken.",
+        "tools": [
+          "Mixer Brush Tool"
+        ],
+        "effect": "De kleuren in de huid fuseren perfect, terwijl de oorspronkelijke, karakteristieke vorm van het gezicht volledig behouden blijft."
+      },
+      {
+        "name": "Drie-Stappen Radius Vermenigvuldiging",
+        "description": "Maak een lasso-selectie op de kleurlaag en pas een Gaussian Blur toe met een straal die exact drie keer de initiële scheidingswaarde bedraagt (13 x 3 = 39 pixels).",
+        "when_to_use": "Als secundaire verfijningsstap om een ultieme, wazige gladheid in de onderhuid te realiseren.",
+        "tools": [
+          "Lasso Tool",
+          "Gaussian Blur"
+        ],
+        "effect": "Restanten van vlekkerigheid lossen volledig op, wat resulteert in een uiterst professionele en egale toonisering."
+      },
+      {
+        "name": "Geïsoleerde Schaduw Neuscorrectie",
+        "description": "Breng de lasso-vervaging op de neus uitsluitend aan op de donkere zijkanten en blijf met de selectie strikt van de centrale highlight af.",
+        "when_to_use": "Bij het egaliseren van de neuspartij om te voorkomen dat de neus optisch instort of plat overkomt.",
+        "tools": [
+          "Lasso Tool",
+          "Gaussian Blur"
+        ],
+        "effect": "De schaduwovergang wordt fluweelzacht, maar de neus behoudt zijn scherpe, driedimensionale breedte en diepte."
+      },
+      {
+        "name": "Micro Poriën Align Stempeling",
+        "description": "Gebruik de kloonstempel op de texture-laag met de optie 'Uitgelijnd' (Aligned) ingeschakeld en dekking op 100%.",
+        "when_to_use": "Vak aan het einde van de workflow om de allerlaatste microscopisch kleine structuurfoutjes secuur te corrigeren.",
+        "tools": [
+          "Clone Stamp Tool"
+        ],
+        "effect": "De schone textuur wordt naadloos en zonder verschuivingen overgedragen, wat zorgt voor een perfecte, egale poriënstructuur."
+      }
+    ],
+    "color_approach": "De kleuraanpak maakt gebruik van een strak ingesteld mixer-penseel (Wet 9%, Load 75%, Mix 90%, Flow 100%). Hoogtepunten, middentonen en schaduwen worden strikt gescheiden van elkaar geblend om kleurtransities vloeiend te maken zonder de contrastvorming te beschadigen.",
+    "local_adjustments": "Lokale retouches worden strak uitgevoerd via de lasso-tool met een feather van 20 pixels. Er wordt nadrukkelijk uitgezoomd om toontransities accuraat te beoordelen, en selecties blijven weg van scherpe contrastranden.",
+    "what_to_avoid": [
+      "Retoucheer nooit terwijl je extreem ver bent ingezoomd met het mixer-penseel, omdat je daardoor het overzicht verliest en onbewust vlekken creëert.",
+      "Trek de lasso-selectie op de neus nooit over de centrale highlight heen om te voorkomen dat het gezicht anatomisch plat slaat."
+    ],
+    "best_for": "Beauty- en commerciële portretfotografen die te maken hebben met uitdagende huidcondities en een krachtige, dekkende studiostijl willen realiseren.",
+    "unique_insights": [
+      "De patchtool is superieur aan andere tools wanneer er in een vroeg stadium grote volumes actieve acne non-destructief moeten worden opgeruimd.",
+      "Het vermenigvuldigen van je initiële frequentie-radius met exact factor drie tijdens de lasso-blur fase is een wiskundig bewezen kortere weg naar succes.",
+      "Door het mixer-penseel plichtsgetrouw in de vormrichting van de botstructuur te bewegen, behoud je de driedimensionale realiteit in een extreme retouche."
+    ],
+    "style_preview": "Deze stijl straalt pure, commerciële perfectie en visuele kracht uit. De kernfilosofie is het transformeren van een zeer onrustige basishuid naar een vlekkeloos, egaal en krachtig beautyportret met behoud van een realistische poriënstructuur. Het functioneert perfect bij studiofotografie met harde, heldere beauty-lights en sterke contrasten. Fotografen kunnen een indrukwekkend, strak en commercieel succesvol eindresultaat verwachten dat direct in het oog springt.",
+    "_warnings": [
+      "naam lijkt op kanaalnaam (photography)"
+    ]
   }
 ]

@@ -47777,5 +47777,94 @@
     "_warnings": [
       "naam lijkt op kanaalnaam (photography)"
     ]
+  },
+  {
+    "video_title": "High-End Skin Retouching in 9 Minutes For Beginners | Frequency Separation Photoshop Tutorial",
+    "photographer_name": "Ronnix Photography",
+    "youtube_url": "https://www.youtube.com/watch?v=t5Bi72_vdsM",
+    "genre": [
+      "portret",
+      "algemeen"
+    ],
+    "light_conditions": [
+      "kunstlicht",
+      "diffuus licht"
+    ],
+    "mood": [
+      "naturalistisch",
+      "krachtig"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Beginner Clean Skin",
+    "philosophy": "Deze methode is speciaal ontwikkeld als een toegankelijke, snelle en uiterst effectieve instap in de frequentiescheiding voor beginners. De filosofie stoelt op een strakke visuele controle: door de textuurlaag tijdens het mixen uit te zetten, kan de beginner zich volledig focussen op het harmoniseren van de huidtinten zonder visuele afleiding.",
+    "workflow_order": [
+      "stap 1: reinig de huid grondig van pukkeltjes met de patch tool alvorens de lagen te splitsen",
+      "stap 2: start de frequentiescheiding en sleep de slider van de gaussian blur omhoog tot de textuur nét verdwijnt",
+      "stap 3: open de groep en deactiveer de textuurlaag om afleiding tijdens het blenden volledig uit te sluiten",
+      "stap 4: activeer de mixer brush met specifieke lichte waarden (wet 9%) en blend de skin-flow in de juiste richting"
+    ],
+    "techniques": [
+      {
+        "name": "Visueel Gestuurde Radiusbepaling",
+        "description": "Klik tijdens het instellen van de Gaussian Blur op een zone met de meeste details en sleep de slider handmatig omhoog tot de poriën nét wegvloeien (ongeveer rond de 9 pixels)",
+        "when_to_use": "Bij de start van de scheiding om een perfecte, op het beeld afgestemde waarde te bepalen",
+        "tools": [
+          "Gaussian Blur"
+        ],
+        "effect": "De textuur wordt accuraat geïsoleerd op basis van de specifieke resolutie van de ingeladen foto"
+      },
+      {
+        "name": "Voorbereidende Patch-Reiniging",
+        "description": "Selecteer de Patch Tool ingesteld op 'Normal' en sleep grote pukkeltjes en oneffenheden naar nabijgelegen schone huidzones",
+        "when_to_use": "Vóórdat je de frequentiescheiding opzet om de latere blendfase enorm te vereenvoudigen",
+        "tools": [
+          "Patch Tool"
+        ],
+        "effect": "Grove pukkels verdwijnen direct, wat een egale basis oplevert voor de opvolgende stappen"
+      },
+      {
+        "name": "Geïsoleerde Kleur Blending",
+        "description": "Zet de textuurlaag tijdelijk volledig uit en gebruik de Mixer Brush Tool om puur de onderliggende kleurvlekken in elkaar te laten overlopen",
+        "when_to_use": "Tijdens het egaliseren op de kleurlaag om niet afgeleid te worden door de scherpe poriën",
+        "tools": [
+          "Layers Paneel",
+          "Mixer Brush Tool"
+        ],
+        "effect": "De huid transformeert tijdelijk in een soort zacht wasschilderij waarin alle kleurvlekken perfect zijn opgelost"
+      },
+      {
+        "name": "Lichte Pro-Mixer Instellingen",
+        "description": "Stel de Mixer Brush Tool handmatig in op uiterst voorzichtige waarden: Wet 9%, Load 75%, Mix 90% en Flow 100% met een schone brush",
+        "when_to_use": "Voor een gecontroleerde en subtiele menging van de huidtinten op de kleurlaag",
+        "tools": [
+          "Mixer Brush Settings"
+        ],
+        "effect": "Voorkomt dat de kwast te veel kleur meesleept en garandeert een uiterst subtiele, zachte menging"
+      },
+      {
+        "name": "Anatomische Kwast Beweging",
+        "description": "Beweeg de mixer-brush nauwkeurig in de richting waarin de botstructuur en de spieren van het gezicht van nature lopen (bijv. verticaal op de neus)",
+        "when_to_use": "Tijdens het handmatig blenden van toonsoorten om de gezichtsvormen te respecteren",
+        "tools": [
+          "Mixer Brush Tool"
+        ],
+        "effect": "De natuurlijke highlights en schaduwen blijven logisch op hun plek liggen en het gezicht behoudt haar volume"
+      }
+    ],
+    "color_approach": "De kleurbenadering richt zich op een uiterst voorzichtige menging met een zeer droge mixer-brush (Wet 9%). Hierdoor worden aangrenzende huidtinten zachtjes in elkaar geschoven, wat vlekkerige rode zones neutraliseert zonder dat er modderige toonschuivingen ontstaan.",
+    "local_adjustments": "Lokale aanpassingen worden intuïtief gestuurd door het handmatig variëren van de brushgrootte via de bracket-toetsen. Er wordt bewust niet te ver ingezoomd, zodat de beginner continu het overzicht houdt over het algehele kleurenverloop van het gezicht.",
+    "what_to_avoid": "Zoom NOOIT extreem ver in tijdens het werken met de mixer-brush. Als je te dicht op de pixels zit, verlies je het overzicht en kun je de grote, ongelijke toonsoortovergangen in het gezicht niet meer goed beoordelen.",
+    "best_for": "Beginnende fotografen en retouchers die binnen enkele minuten een prachtig, toonbaar en scherp portretresultaat willen neerzetten.",
+    "unique_insights": [
+      "Het tijdelijk uitzetten van de textuurlaag voorkomt visuele ruis en helpt beginners om kleurvlekken veel sneller op te sporen.",
+      "Als de mixer-brush onverwacht een plus-teken toont, kun je dit direct oplossen door de Caps Lock-toets op je toetsenbord uit te zetten.",
+      "De mixer-brush moet altijd de natuurlijke stroom (flow) van de gezichtscontouren volgen om vlakke, kunstmatige gezichten te voorkomen."
+    ],
+    "style_preview": "Dit is een uiterst effectieve, heldere en toegankelijke retoucheerstijl voor beginners. Het levert in een handomdraai een prachtig opgeschoonde, egale en uiterst representatieve huid op die dankzij de slimme scheiding al haar scherpe basistexturen behoudt. Voor de fotograaf die net begint met Photoshop en snel een professionele indruk wil maken met zijn portretten, is dit de perfecte instap. Het resultaat is fris, strak en harmonieus.",
+    "_warnings": [
+      "naam lijkt op kanaalnaam (photography)"
+    ]
   }
 ]

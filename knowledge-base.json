@@ -48051,5 +48051,95 @@
     "_warnings": [
       "naam lijkt op kanaalnaam (photography)"
     ]
+  },
+  {
+    "video_title": "High-End Skin Retouching for Beginners | Photoshop Frequency Separation Tutorial",
+    "photographer_name": "Ekow Dediha",
+    "youtube_url": "https://www.youtube.com/watch?v=5SixHpRw7lc",
+    "genre": [
+      "portret",
+      "fine-art"
+    ],
+    "light_conditions": [
+      "diffuus licht",
+      "kunstlicht"
+    ],
+    "mood": [
+      "dramatisch",
+      "moody",
+      "krachtig"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Flawless High End Retouch",
+    "philosophy": "High-end retoucheren vraagt om een combinatie van verschillende technieken om een perfecte, egale huid te creëren zonder aan scherpte in te boeten. Door eerst met de Lasso Tool grove zones te egaliseren en daarna met de Mixer Brush de details te verfijnen, ontstaat een vloeiende overgang. Het behoud van poriën garandeert dat de foto zijn fotografische waarde behoudt.",
+    "workflow_order": [
+      "stap 1: genereer de twee frequentielagen handmatig en plaats ze in een specifieke map",
+      "stap 2: selecteer zones met de Lasso Tool en pas Gaussian Blur toe om grove kleurvlekken te verzachten",
+      "stap 3: gebruik de Mixer Brush Tool op de kleurlaag om de overgangen handmatig te perfectioneren",
+      "stap 4: reinig resterende oneffenheden op de textuurlaag met de Spot Healing Brush Tool"
+    ],
+    "techniques": [
+      {
+        "name": "Lasso Huid Egalisatie",
+        "description": "Selecteer een zone met de Lasso Tool (feathering ingesteld op exact 2.4 pixels) en pas een krachtige Gaussian Blur toe met een straal van 6.4 pixels.",
+        "when_to_use": "Voor het snel en grof egaliseren van grotere huidvlakken zoals de wangen.",
+        "tools": [
+          "Lasso Tool",
+          "Gaussian Blur"
+        ],
+        "effect": "Grove kleurvlekken en harde overgangen verdwijnen direct op de actieve selectie."
+      },
+      {
+        "name": "Mixer Brush Tonal Blending",
+        "description": "Selecteer de Mixer Brush Tool op de kleurlaag en blend voorzichtig de middentonen en highlights met elkaar zonder ze te vermengen.",
+        "when_to_use": "Voor het handmatig verfijnen van de subtiele kleurovergangen op het gezicht.",
+        "tools": [
+          "Mixer Brush Tool"
+        ],
+        "effect": "De huidskleur krijgt een extreem egale, haast geschilderde vloeiendheid onder de textuur."
+      },
+      {
+        "name": "Lichaamsretouche met Grote Brush",
+        "description": "Vergroot de diameter van de Mixer Brush aanzienlijk bij het overstappen van het gezicht naar grotere blootliggende huidzones zoals armen en nek.",
+        "when_to_use": "Voor het consistent egaliseren van de rest van het lichaam.",
+        "tools": [
+          "Mixer Brush Tool"
+        ],
+        "effect": "Huidvlekken op het lichaam worden snel weggewerkt passend bij de stijl van het gezicht."
+      },
+      {
+        "name": "Spot Textuur Reiniging",
+        "description": "Selecteer de Spot Healing Brush Tool op de textuurlaag en dab heel lokaal op specifieke kleine textuurfoutjes en pukkeltjes.",
+        "when_to_use": "Bij kleine oneffenheden op de lippen of het voorhoofd.",
+        "tools": [
+          "Spot Healing Brush"
+        ],
+        "effect": "De ongewenste textuur verdwijnt onmiddellijk zonder de onderliggende kleur aan te tasten."
+      },
+      {
+        "name": "Subtiele Penseel Narijping",
+        "description": "Gebruik als laatste stap een standaard zachte brush op een zeer lage flow van 10% om de allerlaatste tonale imperfecties handmatig weg te poetsen.",
+        "when_to_use": "Voor de finishing touch op de jukbeenderen.",
+        "tools": [
+          "Brush Tool"
+        ],
+        "effect": "De allerlaatste micro-vlekjes in de toon worden naadloos gladgestreken."
+      }
+    ],
+    "color_approach": "De focus ligt op het strikt gescheiden houden van de verschillende kleurzones. Highlights worden puur met highlights vermengd en schaduwen met schaduwen, om te voorkomen dat het gezicht zijn natuurlijke vorm en diepte verliest.",
+    "local_adjustments": "Er wordt lokaal gestuurd met behulp van strakke lasso-selecties per gezichtsdeel. Dit zorgt ervoor dat de krachtige vervaging uitsluitend invloed heeft op de geselecteerde huidzones en niet doorloopt in wimpers of lippen.",
+    "what_to_avoid": [
+      "Smeer highlights en schaduwen nooit met elkaar via de Mixer Brush omdat het gezicht dan plat en modderig wordt.",
+      "Zorg dat de feathering van de Lasso Tool niet te laag staat om harde overgangslijnen te voorkomen."
+    ],
+    "best_for": "High-end fashion en studio portretfotografie waar een uiterst strakke en perfecte huid gewenst is.",
+    "unique_insights": [
+      "Door de Lasso-methode te combineren met de Mixer Brush krijg je een ongeevenaarde egale basis die handmatig penseelwerk overbodig maakt.",
+      "De Mixer Brush moet met beleid gebruikt worden — blend uitsluitend binnen dezelfde toonzone om de anatomie van het gezicht te respecteren.",
+      "Het consequent meenemen van de nek en armen met een grotere brush voorkomt dat het gezicht als een los masker op het lichaam oogt."
+    ],
+    "style_preview": "Deze stijl levert een adembenemende, vlekkeloze en uiterst professionele high-end look op. De visuele sfeer is krachtig en gepolijst, perfect geschikt voor fashionmagazines en strakke studioportretten. De huid oogt perfect egaal en glad maar behoudt dankzij de textuurbescherming haar fotografische realisme."
   }
 ]

@@ -1051,7 +1051,7 @@ function populateStyleSelect(entries, filterGenre) {
   if (filterGenre) {
     var autoOpt = document.createElement('option');
     autoOpt.value = 'auto';
-    autoOpt.textContent = '\ud83c\udfb2 Verras me \u2014 mix van 3 stijlen';
+    autoOpt.textContent = (window.TRANSLATIONS && window.TRANSLATIONS[appLanguage] && window.TRANSLATIONS[appLanguage].surpriseMe) ? window.TRANSLATIONS[appLanguage].surpriseMe : '\ud83c\udfb2 Verras me \u2014 mix van 3 stijlen';
     sel.appendChild(autoOpt);
   }
 
@@ -1160,7 +1160,7 @@ function setEditStyle(val) {
     var genre = (document.getElementById('genreFilterSelect') || {}).value || '';
     currentEditStyle = buildAutoStyle(entries, genre);
     if (currentEditStyle && previewPanel) {
-      previewText.innerHTML = '\ud83c\udfb2 <strong>Verras me actief</strong> \u2014 ' + currentEditStyle._picks + ' stijlen gemixed voor <em>' + genre + '</em>. Elke analyse geeft een uniek resultaat.';
+      previewText.innerHTML = '\ud83c\udfb2 <strong>' + (appLanguage === 'en' ? 'Surprise me active' : 'Verras me actief') + '</strong> \u2014 ' + currentEditStyle._picks + ' stijlen gemixed voor <em>' + genre + '</em>. Elke analyse geeft een uniek resultaat.';
       previewPanel.style.display = 'block';
     }
     return;

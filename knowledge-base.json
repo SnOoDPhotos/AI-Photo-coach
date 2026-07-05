@@ -46692,5 +46692,273 @@
       "In plaats van te vechten tegen een onherstelbare witbalans- of contrastfout veroorzaakt door felle zonreflecties op een gekleurde achterwand, kun je de foto beter direct omzetten naar zwart-wit; dit redt het moment en verhoogt de artistieke waarde."
     ],
     "style_preview": "De visuele sfeer van deze stijl is warm, helder en buitengewoon natuurgetrouw met een subtiele, romige honing-vibe in de lichte delen. De stijl streeft naar een getrouwe en elegante registratie van de werkelijkheid waarbij de nabewerking volledig ten dienste staat van het moment. Deze benadering levert de mooiste resultaten op bij beelden die zijn geschoten in uitdagend middaglicht of diepe schaduwomgevingen met complexe reflecties. Een fotograaf die deze workflow hanteert, kan een consistente fotoreeks verwachten met perfect gebalanceerde huidtinten, zachte contrastovergangen en een tijdloze esthetiek die de tand des tijds moeiteloos doorstaat."
+  },
+  {
+    "video_title": "Pro Skin Sharpening with Hidden Frequency Separation Trick! - Photoshop Tutorial",
+    "photographer_name": "Unmesh Dinda",
+    "youtube_url": "https://www.youtube.com/watch?v=Ob4bdRUS5ck",
+    "genre": [
+      "portret"
+    ],
+    "light_conditions": [
+      "diffuus licht"
+    ],
+    "mood": [
+      "levendig",
+      "naturalistisch"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Pro Texture Sharpening Portrait",
+    "philosophy": "Behoud de natuurlijke structuur van de huid door verscherping direct toe te passen via de textuurlaag van frequentiescheiding. In plaats van standaard verscherpingsfilters die artefacten introduceren, zorgt het dupliceren van de hoge-frequentie laan voor een organische pop die ook van een afstand realistisch blijft. Door het effect lokaal te maskeren en te verfijnen met overvloeimodus-regelaars, ontstaat een driedimensionaal resultaat zonder onnatuurlijke zachtheid.",
+    "workflow_order": [
+      "stap 1: Start de frequentiescheiding via een geautomatiseerde actie voor 8-bit of 16-bit bestanden",
+      "stap 2: Bepaal de Gaussian Blur straal exact op het punt waar de huidtextuur visueel verdwijnt",
+      "stap 3: Dupliceer de hoge-frequentie textuurlaag om de scherpte direct te verhogen",
+      "stap 4: Pas Blend If toe om de textuur uit de donkere schaduwpartijen te filteren en halo's te voorkomen",
+      "stap 5: Voeg een zwart masker toe en schilder de verscherping selectief terug op de focuspunten"
+    ],
+    "techniques": [
+      {
+        "name": "Textuurlaag Dupliceren",
+        "description": "Dupliceer de hoge-frequentie laag (High Frequency) eenmaal met Control of Command J om de aanwezige huidtextuur direct te versterken zonder de kleuren of middentonen aan te tasten.",
+        "when_to_use": "Wanneer de huid na retouchering of bij het uitzoomen te zacht of onnatuurlijk oogt.",
+        "tools": [
+          "Lagenpaneel"
+        ],
+        "effect": "De bestaande poriën en fijne details worden direct scherper en poppen visueel naar voren."
+      },
+      {
+        "name": "Schaduwbescherming via Blend If",
+        "description": "Open de Layer Style en sleep de linker schuifregelaar van Underlying Layer naar rechts tot circa 180 om textuurverscherping uit de donkere delen te halen.",
+        "when_to_use": "Wanneer de verscherping in schaduwpartijen ruis of storende witte randen veroorzaakt.",
+        "tools": [
+          "Layer Style Blend If"
+        ],
+        "effect": "De verscherping verdwijnt uit de donkere delen, wat zorgt voor een schoner en realistischer verloop."
+      },
+      {
+        "name": "Gesplitste Overvloeiregelaars",
+        "description": "Houd de Alt- of Option-toets ingedrukt en klik op de Blend If-schuifregelaar om deze te splitsen voor een geleidelijke overgang.",
+        "when_to_use": "Bij harde overgangen tussen verscherpte lichte delen en onverscherpte schaduwen.",
+        "tools": [
+          "Layer Style Blend If"
+        ],
+        "effect": "De textuur verloopt vloeiend en voorkomt abrupte, harde overgangen op de huid."
+      },
+      {
+        "name": "3D Focus Maskering",
+        "description": "Maak een omgekeerd zwart masker aan met Alt-klik op het maskericoon en schilder met een zacht wit penseel de verscherping terug op specifieke gelaatstrekken.",
+        "when_to_use": "Om de verscherping te beperken tot de belangrijkste delen van het gezicht en de achtergrond clean te houden.",
+        "tools": [
+          "Penseel",
+          "Laagmasker"
+        ],
+        "effect": "Er ontstaat een dieptewerking waarbij alleen de cruciale delen in focus extra scherpte krijgen."
+      },
+      {
+        "name": "Sneltoets Dekking Aanpassen",
+        "description": "Selecteer de Verplaatsingstool (Move Tool) en typ een cijfer (bijv. 6 voor 60% of snel 67 voor 67%) om de dekking van de verscherpingslaag direct te verlagen.",
+        "when_to_use": "Wanneer de handmatige textuurverscherping na het dupliceren net iets te dominant aanwezig is.",
+        "tools": [
+          "Verplaatsingstool",
+          "Lagenpaneel"
+        ],
+        "effect": "De algehele intensiteit van de extra textuur wordt subtieler ingemengd met de originele laag."
+      }
+    ],
+    "color_approach": "Kleur en toon blijven in deze specifieke techniek volledig geïsoleerd op de lage-frequentie laag. Omdat de verscherping uitsluitend plaatsvindt op de textuurlaag (die met Lineair Licht is overgevloeid), vindt er geen enkele verschuiving in kleurverzadiging of tint plaats tijdens het verscherpen.",
+    "local_adjustments": "Lokale aanpassingen worden secuur uitgevoerd met een zwart masker. Het effect wordt bewust weggepoetst bij de wenkbrauwen, de randen van het gezicht en de ogen om onnatuurlijke halo-effecten te vermijden en de nadruk puur op de natuurlijke huidzones te leggen.",
+    "what_to_avoid": [
+      "Het dupliceren van de textuurlaag zonder masker, waardoor ongewenste ruis in de achtergrond ontstaat.",
+      "Het verscherpen van schaduwen, wat leidt tot storende witte spikkels en een korrelig uiterlijk."
+    ],
+    "best_for": "Studio- en close-up portretten waarbij de huidtextuur door compressie of eerdere verzachting verloren is gegaan.",
+    "unique_insights": [
+      "Frequentie-scheiding kan puur als geavanceerde verscherpingstool worden ingezet, zonder dat er daadwerkelijk huidverzachting in de lage frequentie hoeft plaats te vinden.",
+      "Textuurverscherping werkt visueel het krachtigst in de highlight-zones van de huid omdat het de natuurlijke glans accentueert, terwijl het in schaduwen juist moet worden onderdrukt.",
+      "Sneltoetsen voor laagdekking via numerieke toetsen werken alleen correct als er een niet-penseeltool zoals de Move Tool actief is, anders verandert per ongeluk de penseeldekking."
+    ],
+    "style_preview": "Deze stijl richt zich op een uiterst gedetailleerde en high-end afwerking van portretten. De kernfilosofie is het herstellen van microtextuur die vaak verloren gaat tijdens digitale nabewerking, zonder de onderliggende kleuren te verschuiven. Dit werkt optimaal bij studio-opnamen met zacht, diffuus licht waarin elk detail telt. Het verwachte resultaat is een vlijmscherp, tastbaar portret dat er ook van een afstand perfect geretoucheerd maar volledig biologisch uitziet."
+  },
+  {
+    "video_title": "Modern Frequency Separation: So Much Easier! - Photoshop",
+    "photographer_name": "Unmesh Dinda",
+    "youtube_url": "https://www.youtube.com/watch?v=bMkoCQA0o4o",
+    "genre": [
+      "portret"
+    ],
+    "light_conditions": [
+      "studio",
+      "diffuus licht"
+    ],
+    "mood": [
+      "naturalistisch",
+      "rustig"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Modern Efficient Portrait Retouching",
+    "philosophy": "Combineer klassieke scheiding van kleur en textuur met moderne, intelligente retoucheertools om sneller en accurater te werken. Door de handmatige, tijdrovende penseelstreken in de lage frequentie te vervangen door gerichte selecties en moderne retoucheertools, blijft de natuurlijke overgang behouden zonder dat het gezicht vlak wordt. Het doel is een high-end resultaat in een fractie van de traditionele tijd.",
+    "workflow_order": [
+      "stap 1: Visualiseer alle oneffenheden met een tijdelijke zwart-wit aanpassingslaag",
+      "stap 2: Verwijder vlekjes en oneffenheden op een aparte laag met de Patch Tool of Remove Tool",
+      "stap 3: Splits de foto op in een Low Frequency (kleur) en High Frequency (textuur) laag via de actie",
+      "stap 4: Egaliseer de kleurvlekken op een kopie van de Low Frequency laag met de Remove Tool",
+      "stap 5: Activeer een sterke Curves-laag in Luminosity-modus om subtiele toonverschillen te controleren"
+    ],
+    "techniques": [
+      {
+        "name": "Blemish Visualisatie",
+        "description": "Voeg een Zwart-wit aanpassingslaag toe bovenop de workflow en verlaag de rode schuifregelaar drastisch om contrast in huidfoutjes te forceren.",
+        "when_to_use": "Vóór het starten van de feitelijke frequentiescheiding om micro-oneffenheden direct op te sporen.",
+        "tools": [
+          "Zwart-wit aanpassingslaag"
+        ],
+        "effect": "Huidvlekjes, rode adertjes en pukkeltjes lichten donker op waardoor ze direct zichtbaar worden."
+      },
+      {
+        "name": "Hybride Structuurherstel",
+        "description": "Gebruik de Patch Tool in plaats van de Remove Tool bij hardnekkige structuren door de selectie naar een schoon stuk huid met identieke textuurrichting te slepen.",
+        "when_to_use": "Wanneer de automatische Remove Tool een te gladde of wazige vlek achterlaat die de omliggende huidstructuur niet imiteert.",
+        "tools": [
+          "Patch Tool"
+        ],
+        "effect": "De blemish verdwijnt terwijl de exacte omliggende huidporiën-structuur naadloos overvloeit."
+      },
+      {
+        "name": "Lage Frequentie Egalisatie",
+        "description": "Maak een duplicaat van de lage-frequentie laag en gebruik de Remove Tool (met Sample All Layers uitgeschakeld) om vlekken in de kleurtonen direct weg te vegen.",
+        "when_to_use": "Om harde schaduwovergangen, rode vlekken of onregelmatige make-up overgangen snel vloeiend te maken.",
+        "tools": [
+          "Remove Tool",
+          "Lagenpaneel"
+        ],
+        "effect": "De kleurtonen smelten direct samen tot een egale basis, zonder dat de scherpe textuur erboven vervaagt."
+      },
+      {
+        "name": "Luminositeit Tooncontrole",
+        "description": "Plaats een Curves-laag als een extreme 'S-curve' en zet de overvloeimodus op Luminosity om puur de helderheidsverschillen te controleren.",
+        "when_to_use": "Tijdens het egaliseren van de lage frequentie om vlekken te zien zonder afgeleid te worden door kleurverzadiging.",
+        "tools": [
+          "Curves aanpassingslaag",
+          "Overvloeimodus"
+        ],
+        "effect": "De lichte en donkere banen op de huid worden extreem geaccentueerd zodat overgangen perfect vloeiend gemaakt kunnen worden."
+      },
+      {
+        "name": "Gecontroleerde Menging",
+        "description": "Breng de dekking van de bewerkte egale laag in de frequentiescheiding-groep terug naar 60% om een deel van de originele huidvariatie terug te brengen.",
+        "when_to_use": "Als het eindresultaat na de Remove Tool-stappen te perfect of als een 'plastic' pop oogt.",
+        "tools": [
+          "Lagenpaneel Opacity"
+        ],
+        "effect": "De subtiele, natuurlijke nuances van de originele foto komen terug, wat de geloofwaardigheid vergroot."
+      }
+    ],
+    "color_approach": "De focus ligt op het isoleren van kleurvlekken. Door helderheid en kleur te scheiden via de lage frequentie en deze specifiek te controleren met een Luminosity-curve, worden ongewenste rode en gele kleurverschuivingen geneutraliseerd zonder de natuurlijke tinten van de huid plat te slaan.",
+    "local_adjustments": "Lokale retouches vinden direct plaats op de specifieke frequentielagen met de Remove Tool en Patch Tool. Hierdoor worden aanpassingen uitsluitend toegepast op plekken waar kleuroneffenheden of textuurfouten zitten, terwijl onaangetaste zones volledig origineer blijven.",
+    "what_to_avoid": [
+      "De Remove Tool gebruiken met 'Sample All Layers' ingeschakeld tijdens de frequentiebewerking, wat de textuurlaag of controle-curves vernietigt.",
+      "Het tonen van de extreme zwart-wit blemish-visualisatielaag aan de klant of het model vanwege het ongunstige, geaccentueerde beeld."
+    ],
+    "best_for": "Commerciële portretfotografie en grote series studio-retouches waarbij snelheid en een natuurlijke textuur cruciaal zijn.",
+    "unique_insights": [
+      "Moderne retoucheertools zoals de Remove Tool werken effectiever en sneller op een onscherpe lage-frequentie laag dan traditionele technieken zoals de Mixer Brush.",
+      "Een tijdelijke curves-laag gecombineerd met de overvloeimodus Luminosity is superieur voor het opsporen van toongranulatie omdat het kleurverzadiging uitsluit.",
+      "Eerst alle blemishes handmatig of via specifieke plugins verwijderen vóór de frequentiescheiding bespaart dubbel werk op de losse lagen achteraf."
+    ],
+    "style_preview": "Deze stijl biedt een verfijnde, commerciële look met een extreem efficiënte workflow. De focus ligt op een egale, egale huidtint met behoud van de originele scherpte en poriestructuur. Uitermate geschikt voor beauty- en studiophotografie onder egale lichtomstandigheden. Het resultaat is een vlekkeloze, high-end uitstraling die de natuurlijke anatomie respecteert en er tegelijkertijd uiterst professioneel uitziet."
+  },
+  {
+    "video_title": "The Amazing Power of Frequency Separation Retouching in Photoshop",
+    "photographer_name": "Aaron Nace",
+    "youtube_url": "https://www.youtube.com/watch?v=ldhG9fmgC7o",
+    "genre": [
+      "portret"
+    ],
+    "light_conditions": [
+      "studio",
+      "gouden uur"
+    ],
+    "mood": [
+      "dramatisch",
+      "fine-art"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Fine Art Frequency Retouch",
+    "philosophy": "Huidretouchering draait niet om het elimineren van details, maar om het scheiden van textuur en toon. Door de huidporiën en fijne lijntjes wiskundig te isoleren van de onderliggende kleurvlekken en schaduwen, kan de fotograaf lokaal overgangen verzachten zonder de anatomische realiteit van het model te verliezen. Een succesvolle retouchering behoudt de unieke karakteristieken van de huid.",
+    "workflow_order": [
+      "stap 1: Dupliceer de basisfoto tweemaal om een aparte laag voor vervaging en textuur te creëren",
+      "stap 2: Pas een exacte Gaussian Blur toe op de onderste laag totdat de poriën net onzichtbaar worden",
+      "stap 3: Gebruik Apply Image op de top-laag met Subtract-modus, schaal 2 en offset 128 om textuur te isoleren",
+      "stap 4: Zet de overvloeimodus van de gemaakte textuurlaag om naar Linear Light",
+      "stap 5: Maak brede, gevederde selecties met de Lasso Tool op de vervagingslaag en herhaal de Gaussian Blur"
+    ],
+    "techniques": [
+      {
+        "name": "Wiskundige Frequentiescheiding via Apply Image",
+        "description": "Gebruik Apply Image op de textuurlaag, selecteer de vervagingslaag (Layer 0 copy), zet de blending op Subtract, Scale op 2 en Offset op 128 om puur de fijne details te behouden.",
+        "when_to_use": "Bij de initiële handmatige opbouw van een frequentiescheidings-workflow om een perfecte textuuroverlap te garanderen.",
+        "tools": [
+          "Apply Image"
+        ],
+        "effect": "De laag verandert in een neutraal grijze laag die uitsluitend de microtextuur, haartjes en poriën bevat."
+      },
+      {
+        "name": "Linear Light Blending",
+        "description": "Zet de overvloeimodus van de geïsoleerde grijze textuurlaag op Linear Light om het neutrale grijs onzichtbaar te maken en de details samen te voegen.",
+        "when_to_use": "Direct na het toepassen van de Apply Image wiskundige aftreksom.",
+        "tools": [
+          "Overvloeimodus Linear Light"
+        ],
+        "effect": "De foto ziet er direct weer exact zo uit als het origineel, klaar voor onafhankelijke nabewerking per laag."
+      },
+      {
+        "name": "Zachte Lasso Egalisatie",
+        "description": "Stel de Feather-waarde van de Lasso Tool in tussen de 27 en 32 pixels, maak grote selecties op de huid van de vervagingslaag en pas opnieuw een Gaussian Blur toe.",
+        "when_to_use": "Op de onderliggende kleurlaag om vlekkerige schaduwen en roodheden vloeiend in elkaar te laten overlopen.",
+        "tools": [
+          "Lasso Tool",
+          "Gaussian Blur"
+        ],
+        "effect": "De overgangen van licht en schaduw worden boterzacht en perfect verdeeld, terwijl de poriënstructuur ongeschonden blijft."
+      },
+      {
+        "name": "Geïsoleerd Poriënherstel",
+        "description": "Selecteer de Klonkstempel (Clone Stamp Tool) en zet de optie steevast op Current Layer om structuren binnen de textuurlaag te dupliceren.",
+        "when_to_use": "Wanneer er specifieke rimpeltjes, littekens of puistjes in de textuurlaag moeten worden weggewerkt.",
+        "tools": [
+          "Clone Stamp Tool"
+        ],
+        "effect": "Oneffenheden in de textuur worden vervangen door een schone huidstructuur, zonder dat de onderliggende kleur of schaduw verschuift."
+      },
+      {
+        "name": "Groepsdekking Reductie",
+        "description": "Plaats de twee frequentielagen in een groep en verlaag de algehele groepsdekking subtiel naar bijvoorbeeld 85-90%.",
+        "when_to_use": "Na afloop van de intensieve vervagingstappen om een te perfecte of overgeretoucheerde look direct te corrigeren.",
+        "tools": [
+          "Lagenpaneel Groep Opacity"
+        ],
+        "effect": "De subtiele originele structuren en lichte kleurnuances vloeien weer zachtjes terug in het beeld voor een realistisch effect."
+      }
+    ],
+    "color_approach": "Kleur en toon worden geëgaliseerd door grote vlakken te selecteren en deze op de onderste laag te vervagen. Hierdoor worden harde overgangen van ongewenste huidvlekken, roodheden of cosmetische fouten zachtjes met elkaar vermengd, zonder dat dit invloed heeft op de scherpte van het gezicht.",
+    "local_adjustments": "Er wordt lokaal gewerkt via de Lasso Tool met een zeer brede feathering (verzachte rand). Hierdoor blijft de vorm en de natuurlijke botstructuur van het gezicht intact tijdens het vervagen en ontstaan er geen platte, onnatuurlijke vlakken.",
+    "what_to_avoid": [
+      "Het selecteren van 'Current & Below' of 'All Layers' bij de Clone Stamp Tool op de textuurlaag, wat de grijze laag volledig ruineert met ongewenste kleuren.",
+      "Het selecteren van te grote vlakken met de Lasso Tool die over de randen van het gezicht of haarlijnen heenlopen, waardoor de vormen muteren."
+    ],
+    "best_for": "Fine-art portretten en modelfotografie met veel textuur en complexe, dramatische schaduwpartijen.",
+    "unique_insights": [
+      "De waarden Scale 2 en Offset 128 in het Apply Image menu zijn vaste, universele wiskundige constanten om het contrast van de textuurlaag exact te neutraliseren.",
+      "Omdat de textuurlaag enkel helderheidsverschillen bevat, kun je texturen van de linkerkant van het gezicht naar de rechterkant kopiëren zonder dat je rekening hoeft te houden met kleurverschillen.",
+      "Zelfs als je per ongeluk plukjes haar meeneemt in de lasso-vervaging op de lage-frequentie laag, blijft het haar visueel intact omdat de scherpe definitie op de hoge-frequentie laag staat."
+    ],
+    "style_preview": "Deze stijl vertegenwoordigt de klassieke, ambachtelijke benadering van high-end mode- en portretretouchering. De methode is geworteld in precieze controle over de anatomie van licht en schaduw op het menselijk gezicht. Het werkt het beste bij karakteristieke portretten met uitgesproken lichtval. Het visuele resultaat is een vlekkeloze, schilderachtige huid die toch volledig tastbaar, gedetailleerd en textuurrijk blijft."
   }
 ]

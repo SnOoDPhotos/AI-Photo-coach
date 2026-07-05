@@ -792,6 +792,7 @@ select option,select optgroup{background:#1e1e1e;color:#f0ede8}
       <li>De AI herhaalt geen eerder gegeven adviezen tenzij je er specifiek om vraagt.</li>
       <li>JPG, PNG en WEBP worden ondersteund.</li>
       <li>De app leest automatisch de EXIF data van je foto (ISO, sluitertijd, diafragma). Bij lage ISO krijg je alleen Denoise-advies als er aantoonbaar ruis zichtbaar is.</li>
+      <li><strong>Verras me</strong> mixt automatisch 3 willekeurige bewerkingsstijlen uit de kennisbank die passen bij jouw gekozen genre. Elke analyse geeft een uniek resultaat.</li>
     </ul>
   </div>
 
@@ -1035,7 +1036,7 @@ function populateStyleSelect(entries, filterGenre) {
   if (filterGenre) {
     var autoOpt = document.createElement('option');
     autoOpt.value = 'auto';
-    autoOpt.textContent = '\u25b6 AUTO-STIJL \u2014 laat de AI kiezen';
+    autoOpt.textContent = '\ud83c\udfb2 Verras me \u2014 mix van 3 stijlen';
     sel.appendChild(autoOpt);
   }
 
@@ -1101,7 +1102,8 @@ function adminFilterChanged() {
 
 
 
-function buildAutoStyle(entries, genre) {
+function buildAutoStyle(entries, genre, softwareFilter) {
+  softwareFilter = softwareFilter || null;
   var filtered = (entries || []).filter(function(e) {
     if (!genre) return true;
     return (e.genre || []).some(function(g) { return g.toLowerCase() === genre.toLowerCase(); });
@@ -1142,9 +1144,9 @@ function setEditStyle(val) {
   var entries = window._knowledgeEntries || [];
   if (val === 'auto') {
     var genre = (document.getElementById('genreFilterSelect') || {}).value || '';
-    currentEditStyle = buildAutoStyle(entries, genre);
+    currentEditStyle = buildAutoStyle(entries, genre, ['Photoshop', 'Adobe Photoshop']);
     if (currentEditStyle && previewPanel) {
-      previewText.innerHTML = '\u25b6 <strong>Auto-stijl actief</strong> \u2014 ' + currentEditStyle._picks + ' stijlen gemixed voor <em>' + genre + '</em>. Elke analyse geeft een uniek resultaat.';
+      previewText.innerHTML = '\ud83c\udfb2 <strong>Verras me actief</strong> \u2014 ' + currentEditStyle._picks + ' stijlen gemixed voor <em>' + genre + '</em>. Elke analyse geeft een uniek resultaat.';
       previewPanel.style.display = 'block';
     }
     return;

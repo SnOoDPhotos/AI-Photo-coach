@@ -56487,5 +56487,1088 @@
       "Een zachte kwast (lage hardheid) is cruciaal voor een natuurlijke lucht-overgang; harde randen verraden direct dat de lucht niet origineel is."
     ],
     "style_preview": "De stijl is gericht op een indrukwekkend, visueel aantrekkelijk eindresultaat. Jared leert de kijker de technieken om een saaie scène te transformeren tot een dramatisch beeld zonder de originaliteit van het landschap te verliezen. De aanpak is no-nonsense en toegankelijk voor elke fotograaf."
+  },
+  {
+    "video_title": "7 easy macro editing tips for beginners or experts (Lightroom tutorial)",
+    "photographer_name": "Andrew Lanxon",
+    "youtube_url": "https://www.youtube.com/watch?v=Iy01eN3iXR0",
+    "genre": [
+      "macro",
+      "wildlife"
+    ],
+    "light_conditions": [
+      "daglicht"
+    ],
+    "mood": [
+      "levendig",
+      "sfeervol"
+    ],
+    "software": [
+      "Lightroom Classic",
+      "Lightroom Mobile"
+    ],
+    "style_description": "Vibrant Emerald Macro Light",
+    "philosophy": "Kleurcontrast en gerichte lichtsturing vormen de basis om het macro-onderwerp te isoleren. In plaats van standaard belichtingsschuiven wordt de sfeer direct via kleurtonen bepaald. Door selectieve verscherping blijft de natuurlijke zachtheid in de rest van de compositie intact.",
+    "workflow_order": [
+      "stap 1: kleurcorrectie via hsl-paneel voor gerichte kleurscheiding",
+      "stap 2: toepassen van tegenovergestelde vibrance en saturation waarden",
+      "stap 3: compositie strakker maken met een gerichte crop",
+      "stap 4: lokaal maskeren voor detailverbetering en vignetwerking",
+      "stap 5: subtiele kleurgradatie in de schaduwen en hooglichten"
+    ],
+    "techniques": [
+      {
+        "name": "Kleurverschuiving via HSL",
+        "description": "Verschuif Yellows richting Orange (-20) om onnatuurlijke tinten te verminderen en verhoog Greens naar Emerald (+22) voor een diepere achtergrondkleur.",
+        "when_to_use": "Bij macrofoto's in een bosrijke omgeving met te veel gelige of fletse groentinten.",
+        "tools": [
+          "HSL / Color"
+        ],
+        "effect": "Het insect krijgt een warme, levendige kleur en springt visueel los van de achtergrond."
+      },
+      {
+        "name": "Emerald Groen Balanceren",
+        "description": "Verlaag de verzadiging van de Greens naar -36 nadat de kleurtoon is verschoven naar emerald.",
+        "when_to_use": "Wanneer groentinten na een kleurtoonverschuiving te fel of giftig ogen.",
+        "tools": [
+          "HSL / Color"
+        ],
+        "effect": "Creëert een rustige, diepe en natuurlijke achtergrondomgeving."
+      },
+      {
+        "name": "Tegenovergestelde Vibrance en Saturation",
+        "description": "Verlaag Vibrance naar -29 en verhoog Saturation naar +20 om de algemene kleurzweem te onderdrukken.",
+        "when_to_use": "Om specifieke hoofdkleuren te laten poppen zonder de hele foto overmatig te verzadigen.",
+        "tools": [
+          "Basic Panel"
+        ],
+        "effect": "Minder dominante steunkleuren worden gedempt terwijl de hoofdkleuren krachtiger overkomen."
+      },
+      {
+        "name": "Selectieve Structuur op Onderwerp",
+        "description": "Gebruik een penseelmasker met 60 procent Feather en verhoog Clarity (+20) en Texture op het insect.",
+        "when_to_use": "Wanneer het macro-onderwerp extra definitie nodig heeft zonder dat de achtergrond knapperig wordt.",
+        "tools": [
+          "Masking",
+          "Brush"
+        ],
+        "effect": "Kleine haartjes en details op het exoskelet worden haarscherp geaccentueerd."
+      },
+      {
+        "name": "Natuurlijke Lichtval Accentueren",
+        "description": "Plaats een groot verloopmasker (Radial Gradient) buiten het beeld, verhoog Exposure en voeg warmte toe.",
+        "when_to_use": "Als er al een zachte, natuurlijke richting van het licht van bovenaf aanwezig is.",
+        "tools": [
+          "Masking",
+          "Radial Gradient"
+        ],
+        "effect": "Er ontstaat een sfeervolle, warme zonnegloed die logisch aansluit bij de bestaande schaduwen."
+      }
+    ],
+    "color_approach": "Er wordt hard gewerkt met complementair kleurcontrast door de achtergrond koeler groen te maken en het insect warm oranjegeel te pushen. Dit voorkomt dat het onderwerp wegvalt in de omliggende vegetatie.",
+    "local_adjustments": "Maskers worden uitsluitend ingezet om bestaande structuren te versterken en de blik te sturen. Een lineair verloopmasker onderin verduistert storende bladeren, terwijl een radiaal masker van boven de natuurlijke zon inval simuleert.",
+    "what_to_avoid": [
+      "Vermijd het globaal verhogen van Clarity omdat dit bladeren en achtergronden een onnatuurlijk, knapperig effect geeft.",
+      "Voeg nooit kunstmatig licht toe vanuit een hoek waar geen natuurlijke schaduwen vallen om een onrealistische look te voorkomen."
+    ],
+    "best_for": "Macro-opnames van insecten en paddenstoelen in schaduwrijke of dichtbegroeide bossen.",
+    "unique_insights": [
+      "Het toepassen van Vibrance en Saturation in tegengestelde richting reinigt de kleurweergave effectiever dan een enkele schuif.",
+      "Lichtaccenten via maskers moeten altijd buiten de rand van het frame worden geplaatst met maximale verloopzachtheid (Feather) voor een geloofwaardige gloed.",
+      "De uitsnede (crop) moet direct bepalen of een storend randelement resoluut binnen of buiten de compositie valt om een rommelige indruk te voorkomen."
+    ],
+    "style_preview": "Deze stijl kenmerkt zich door een rijke, gecontroleerde groenweergave gecombineerd met warme, oplichtende macro-onderwerpen. De benadering is erop gericht om een saaie en vlakke opname om te zetten in een schilderachtig beeld vol diepte. Uitermate geschikt voor fotografen die houden van een dromerige sfeer waarin lichtrichting en kleurgradatie de hoofdrol spelen."
+  },
+  {
+    "video_title": "My Post Production Macro Workflow",
+    "photographer_name": "Anthony Morganti",
+    "youtube_url": "https://www.youtube.com/watch?v=mgC6330iNv8",
+    "genre": [
+      "macro"
+    ],
+    "light_conditions": [
+      "daglicht"
+    ],
+    "mood": [
+      "krachtig",
+      "rustig"
+    ],
+    "software": [
+      "Lightroom Classic",
+      "Topaz Photo AI"
+    ],
+    "style_description": "Clean Focused Matte Macro",
+    "philosophy": "De structuur van het RAW-bestand moet in de vroege fase geoptimaliseerd worden door ruisverwijdering vóór contrastbewerking. Lokale helderheidmanipulatie vervangt de noodzaak voor zware kleurverzadiging. De focus ligt volledig op een perfecte tonale balans van het hoofdonderwerp.",
+    "workflow_order": [
+      "stap 1: controle van histogram op clipping in de basisbelichting",
+      "stap 2: vroege ruisreductie via externe plug-in om artefacten te voorkomen",
+      "stap 3: exact bepalen van het witte en zwarte punt via clipping-maskers",
+      "stap 4: lokaal tegenhouden en doordrukken (Dodge & Burn) met radiale filters",
+      "stap 5: toevoegen van een subtiel vignet om de randen te sluiten"
+    ],
+    "techniques": [
+      {
+        "name": "Vroege Ruisreductie",
+        "description": "Exporteer de foto vroeg in de workflow naar een plug-in voor ruisverwijdering vóórdat er contrast of verscherping wordt toegevoegd.",
+        "when_to_use": "Bij macrofoto's die met een hogere ISO-waarde uit de hand zijn geschoten.",
+        "tools": [
+          "Topaz Photo AI"
+        ],
+        "effect": "De ruis in de egale achtergrond verdwijnt volledig zonder fijne details te vernietigen."
+      },
+      {
+        "name": "Witte Punt Bepalen",
+        "description": "Houd de Option/Alt-toets ingedrukt en schuif Whites naar rechts tot de eerste kleurkanalen beginnen te clippen.",
+        "when_to_use": "Altijd tijdens de basistonaliteit correctie van het RAW-bestand.",
+        "tools": [
+          "Basic Panel",
+          "Whites Slider"
+        ],
+        "effect": "Maximaliseert het dynamisch bereik van de opname zonder uitgebleekte delen."
+      },
+      {
+        "name": "Gecontroleerd Zwart Punt",
+        "description": "Schuif Blacks naar links met de Option/Alt-toets ingedrukt en laat de donkerste schaduwen bewust licht clippen voor extra diepte.",
+        "when_to_use": "Voor het neerzetten van een krachtig basiscontrast.",
+        "tools": [
+          "Basic Panel",
+          "Blacks Slider"
+        ],
+        "effect": "Zorgt voor solide, diepe tonen in de donkerste delen van de foto."
+      },
+      {
+        "name": "Achtergrond Doordrukken",
+        "description": "Plaats een radiaal filter over het hoofdonderwerp, deactiveer Invert en verlaag de belichting om de buitenzijde te verduisteren.",
+        "when_to_use": "Wanneer de achtergrond te veel aandacht opeist en het onderwerp moet worden geïsoleerd.",
+        "tools": [
+          "Masking",
+          "Radial Gradient"
+        ],
+        "effect": "De omliggende elementen vallen subtiel weg in de schaduw."
+      },
+      {
+        "name": "Doelgericht Tegenhouden",
+        "description": "Dupliceer het radiale masker, activeer Invert en verhoog de belichting specifiek op afzonderlijke bloemhoofjes of details.",
+        "when_to_use": "Om de blik van de kijker stapsgewijs langs de belangrijkste scherptedelen te leiden.",
+        "tools": [
+          "Masking",
+          "Radial Gradient"
+        ],
+        "effect": "De geselecteerde details lichten subtiel op en trekken direct de aandacht."
+      }
+    ],
+    "color_approach": "Er worden bewust geen aanpassingen gedaan in de HSL- of verzadigingsschuiven als de natuurlijke kleuren al voldoende contrasteren. Kleursturing gebeurt indirect door de helderheid van specifieke zones aan te passen.",
+    "local_adjustments": "Lokale aanpassingen via radiale filters vormen de kern van de belichtingssturing. Door maskers asymmetrisch te schalen met de Option/Alt-toets worden onregelmatige macro-vormen heel precies omsloten.",
+    "what_to_avoid": [
+      "Vermijd het gebruik van Texture en Clarity schuiven in Lightroom als je specifieke externe verscherpingstools gebruikt om ruis-inductie te voorkomen.",
+      "Voorkom oververzadiging door de natuurlijke kleurtonen te respecteren als het contrast al hoog genoeg is."
+    ],
+    "best_for": "Macrofoto's van bloemen en insecten met een egale, rustige achtergrond (bokeh).",
+    "unique_insights": [
+      "Camera-matching profielen moeten altijd op het originele RAW-bestand worden toegepast voordat de overstap naar TIFF-bestanden voor plug-ins wordt gemaakt.",
+      "Het asymmetrisch aanpassen van één zijde van een radiaal masker (via Option/Alt) biedt betere aansluiting bij natuurlijke macro-onderwerpen dan perfecte cirkels.",
+      "Ruisreductie is effectiever wanneer deze plaatsvindt vóórdat Lightroom-contrastbewerkingen de ruispatronen versterken."
+    ],
+    "style_preview": "Een zeer gecontroleerde en cleane stijl die streeft naar een natuurgetrouwe registratie met maximale grafische impact. Door de achtergrond systematisch te verduisteren en het onderwerp lokaal op te lichten, ontstaat een studiomatige look in een natuurlijke setting. Perfect voor de fotograaf die streeft naar pure scherpte zonder zware kleurmanipulatie."
+  },
+  {
+    "video_title": "Handheld Macro Photography Focus Stacking in Photoshop – Tutorial",
+    "photographer_name": "Micael Widell",
+    "youtube_url": "https://www.youtube.com/watch?v=bxxD-mS_Meo",
+    "genre": [
+      "macro"
+    ],
+    "light_conditions": [
+      "diffuus licht"
+    ],
+    "mood": [
+      "naturalistisch",
+      "rustig"
+    ],
+    "software": [
+      "Photoshop",
+      "Lightroom Classic"
+    ],
+    "style_description": "Sharp Natural Manual Stack",
+    "philosophy": "Handmatige controle over focus-maskers levert bij onregelmatige, uit de hand geschoten macro-opnames een beter resultaat dan geautomatiseerde software. Consistentie in de field-opnames is essentieel voor een geslaagde fusie. De nabewerking dient om de scherptediepte op een geloofwaardige manier uit te breiden.",
+    "workflow_order": [
+      "stap 1: synchroniseren van belichting en witbalans over de gehele fotoreeks",
+      "stap 2: importeren van geselecteerde opnames als afzonderlijke lagen in photoshop",
+      "stap 3: nauwkeurig handmatig of automatisch uitlijnen van de verschoven lagen",
+      "stap 4: handmatig inkleuren van zwarte laagmaskers om scherpte te selecteren",
+      "stap 5: definitieve uitsnede en hoekcorrectie na de samenvoeging"
+    ],
+    "techniques": [
+      {
+        "name": "Lagen Synchroniseren",
+        "description": "Bewerk één foto nauwkeurig en kopieer de instellingen (Ctrl+C) naar de overige delen van de stack (Ctrl+Shift+V) voor absolute uniformiteit.",
+        "when_to_use": "Voorafgaand aan elke focus-stacking procedure in Photoshop.",
+        "tools": [
+          "Develop Settings"
+        ],
+        "effect": "Voorkomt flikkeringen of helderheidsverschillen tussen de samengevoegde delen."
+      },
+      {
+        "name": "Manuele Laag-Uitlijning",
+        "description": "Zet de dekking (Opacity) van de bovenliggende laag op 50 procent en gebruik de transformatietool (Command+T) om rotatie en verschuiving handmatig te corrigeren.",
+        "when_to_use": "Wanneer automatische uitlijning faalt door grote sprongen tijdens het fotograferen uit de hand.",
+        "tools": [
+          "Opacity",
+          "Free Transform"
+        ],
+        "effect": "De anatomische structuren van het insect sluiten visueel perfect op elkaar aan."
+      },
+      {
+        "name": "Zwart Laagmasker Techniek",
+        "description": "Voeg een masker toe, maak het volledig zwart (Command+Backspace) en schilder met een zacht wit penseel de scherpe delen tevoorschijn.",
+        "when_to_use": "Bij het handmatig opbouwen van een focus-stack om volledige controle te houden over de overgangen.",
+        "tools": [
+          "Layer Mask",
+          "Brush Tool"
+        ],
+        "effect": "Alleen de vlijmscherpe delen van die specifieke laag worden zichtbaar in het eindresultaat."
+      },
+      {
+        "name": "Volgorde Structureren",
+        "description": "Sorteer de lagen strikt op basis van het focusverloop (bijvoorbeeld van de achterzijde van het schild naar de voorzijde van de kop).",
+        "when_to_use": "Bij het handmatig blenden van meerdere macro-opnames.",
+        "tools": [
+          "Layers Panel"
+        ],
+        "effect": "Geeft overzicht en voorkomt dat er per ongeluk onscherpe zones over scherpe delen worden geschilderd."
+      },
+      {
+        "name": "Geautomatiseerde Scherpte-Analyse",
+        "description": "Gebruik de functies Auto-Align en Auto-Blend met de optie Stack Images geselecteerd voor een snelle automatische maskering.",
+        "when_to_use": "Als eerste opzet bij reeksen met weinig onderlinge beweging.",
+        "tools": [
+          "Auto-Align Layers",
+          "Auto-Blend Layers"
+        ],
+        "effect": "Photoshop genereert razendsnel complexe maskers op basis van pixel-scherpte."
+      }
+    ],
+    "color_approach": "Kleuren worden in de pre-fase natuurgetrouw en neutraal afgesteld. Het doel is een pure, realistische weergave van het insect zonder artistieke kleurverschuivingen of zware gradaties.",
+    "local_adjustments": "Lokale aanpassingen zijn hier synoniem aan het handmatig bewerken van laagmaskers (Layer Masks). Er wordt heel lokaal bepaald welke lens-scherpte van welke opname door de selectie heen breekt.",
+    "what_to_avoid": [
+      "Crop of roteer foto's nooit vóór het stacken, omdat Photoshop de lagen tijdens het uitlijnen toch moet transformeren, wat leidt tot onnodig resolutieverlies.",
+      "Vermijd automatische stacking-software als de opnames uit de hand zijn gemaakt en veel hoekvariatie bevatten."
+    ],
+    "best_for": "Handheld macrofotografie van levende insecten die snel kunnen bewegen.",
+    "unique_insights": [
+      "Gespecialiseerde stacking-software raakt vaak gefrustreerd door de onregelmatige hoekveranderingen van handheld opnames; Photoshop maskeert hier flexibeler.",
+      "Het handmatig maskeren van een drietal strategische focus-opnames levert vaak een cleaner resultaat op dan een automatische blend van tientallen tussenliggende frames.",
+      "Het gebruik van een 50 procent transparante overvloeimodus (Blend Mode) is de meest nauwkeurige manier om handmatige rotatiefouten te corrigeren."
+    ],
+    "style_preview": "Een pure, ambachtelijke stijl die volledig draait om anatomische scherpte en natuurlijke registratie. Geen zware filters, maar technische perfectie door handmatige precisie in Photoshop. Uitermate geschikt voor macrofotografen die de volledige controle willen behouden over elke pixel scherpte in hun beelden."
+  },
+  {
+    "video_title": "The Secret to Handheld Focus Stacking - Macro Photography Tutorial",
+    "photographer_name": "Naturefold",
+    "youtube_url": "https://www.youtube.com/watch?v=Cvnyoh-taxA",
+    "genre": [
+      "macro",
+      "wildlife"
+    ],
+    "light_conditions": [
+      "diffuus licht"
+    ],
+    "mood": [
+      "naturalistisch",
+      "moody"
+    ],
+    "software": [],
+    "style_description": "High Mag Field Stack",
+    "philosophy": "Mechanische camerastabiliteit in het veld legt de basis voor een succesvolle digitale samenvoeging. Door de fysieke positie van de camera te verschuiven tijdens een snelle burst, wordt het focusvlak gecontroleerd verplaatst. Software is slechts een hulpmiddel om de precisie uit het veld te verzilveren.",
+    "workflow_order": [
+      "stap 1: instellen van de maximale burstsnelheid op de camerabehuizing",
+      "stap 2: handmatig fixeren van het brandpunt op het dichtstbijzijnde detail",
+      "stap 3: realiseren van fysieke stabilisatie via de vingers-op-log techniek",
+      "stap 4: maken van een vloeiende voorwaartse beweging tijdens de opnamereeks"
+    ],
+    "techniques": [
+      {
+        "name": "High-Speed Burst Stacking",
+        "description": "Zet de camera op de hoogste burst-modus (bijvoorbeeld 15 frames per seconde) en beweeg de camera in één vloeiende beweging naar voren.",
+        "when_to_use": "Bij het fotograferen met handmatige macro-lenzen zonder ingebouwde autofocus.",
+        "tools": [
+          "Drive Mode (Camera)"
+        ],
+        "effect": "Er ontstaat een serie foto's met zeer minimale, gelijkmatige verschuivingen in het scherptevlak."
+      },
+      {
+        "name": "Vingers-op-Log Stabilisatie",
+        "description": "Rust de linkerhand volledig op het substraat (de boomstam) en laat de macro-lens op de vingertoppen glijden om de voorwaartse beweging te geleiden.",
+        "when_to_use": "Wanneer het macro-onderwerp zich op een stabiele, vlakke ondergrond bevindt.",
+        "tools": [
+          "Handmatige griptechniek"
+        ],
+        "effect": "Elimineert trillingen in de verticale en horizontale as tijdens de burst."
+      },
+      {
+        "name": "Pols-Snoer Techniek",
+        "description": "Grijp een flexibele plantenlaag of tak vast met de linkerhand en laat de lensbehuizing stabiel rusten op de eigen pols tijdens het schuiven.",
+        "when_to_use": "Bij macro-onderwerpen die op bewegende takken of bladeren zitten.",
+        "tools": [
+          "Handmatige griptechniek"
+        ],
+        "effect": "De camera beweegt synchroon mee met eventuele windbewegingen van het onderwerp."
+      },
+      {
+        "name": "Flitsvermogen Minimaliseren",
+        "description": "Stel de externe flitser in op een laag handmatig vermogen om de herlaadtijd (recycle time) korter te maken dan de burstsnelheid.",
+        "when_to_use": "Bij het gebruik van een flitser in combinatie met snelle continu-opnames.",
+        "tools": [
+          "Flash Power Settings"
+        ],
+        "effect": "Elk frame in de focus-stack krijgt exact dezelfde belichtingsintensiteit."
+      },
+      {
+        "name": "Magnificatie-Afhankelijke Snelheid",
+        "description": "Pas de voorwaartse bewegingssnelheid aan op basis van de vergrotingsfactor; hoe hoger de vergroting, des te trager de verschuiving.",
+        "when_to_use": "Bij het wisselen tussen verschillende macro-vergrotingsfactoren (bijv. 1x naar 5x).",
+        "tools": [
+          "Fysieke positionering"
+        ],
+        "effect": "Garandeert een constante overlap van de scherptegebieden om onscherpe gaten te voorkomen."
+      }
+    ],
+    "color_approach": "De kleurbenadering is strikt documentair. Er wordt gefocust op een pure registratie van de natuurlijke pigmenten van het insect of de schimmel, ondersteund door een egale flitsinvulling.",
+    "local_adjustments": "Lokale aanpassingen vinden in deze workflow niet plaats in de software, maar worden fysiek in het veld afgedwongen door de compositie en de positionering van de diffusor.",
+    "what_to_avoid": [
+      "Draai nooit aan de scherpstelring tijdens een handheld burst, omdat dit de stabiliteit van de camera verstoort en leidt tot mislijning.",
+      "Vermijd een te hoog flitsvermogen waardoor frames halverwege de reeks onbelicht blijven."
+    ],
+    "best_for": "Extreme macro-opnames op locatie in de vrije natuur met handmatige lenzen.",
+    "unique_insights": [
+      "Het handmatig draaien van de focusring introduceert zijwaartse trillingen; het fysiek verplaatsen van de gehele camera via een handoplegging is vele malen stabieler.",
+      "Bij het fotograferen van flexibele takken werkt mechanische synchronisatie (camera aan de tak fixeren via de hand) beter dan vechten tegen de wind.",
+      "De snelheid van de camerabeweging moet puur op spiergeheugen worden ingeschat op basis van de gekozen vergrotingsfactor."
+    ],
+    "style_preview": "Een rauwe, authentieke veldstijl die de nadruk legt op extreme vergroting en onberispelijke scherpte van verborgen micro-ecosystemen. Deze methode haalt het maximale uit handmatige optiek door pure fysieke beheersing. Uitermate geschikt voor de avontuurlijke fotograaf die de complexiteit van de natuur ter plekke wil temmen."
+  },
+  {
+    "video_title": "How I edit macro photos like a PRO (Lightroom & focus stacking tutorial)",
+    "photographer_name": "Andrew Lanxon",
+    "youtube_url": "https://www.youtube.com/watch?v=OjYwKoSsrG4",
+    "genre": [
+      "macro",
+      "fine-art"
+    ],
+    "light_conditions": [
+      "schaduw"
+    ],
+    "mood": [
+      "cinematisch",
+      "moody"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Filmic Matte Jungle Macro",
+    "philosophy": "Een macrofoto is geen puur wetenschappelijke registratie, maar een artistieke interpretatie van de micro-wereld. Kleurmanipulatie via HSL is het krachtigste instrument om sfeer en scheiding te creëren. Door een matte tooncurve te gebruiken, krijgt de opname een tijdloze, filmische uitstraling.",
+    "workflow_order": [
+      "stap 1: samenvoegen van raw-bestanden in helicon focus en importeren als tiff",
+      "stap 2: corrigeren van de basisbelichting en herstellen van de groen-witbalans",
+      "stap 3: extreme scheiding aanbrengen tussen onderwerp en achtergrond via hsl",
+      "stap 4: creëren van een zachte, matte uitstraling met de tone curve",
+      "stap 5: toepassen van objectmaskering voor selectieve textuur en scherpte"
+    ],
+    "techniques": [
+      {
+        "name": "Kleurcontrast Isolatie",
+        "description": "Verschuif Greens radicaal naar het koele emerald (+30) en verlaag tegelijkertijd de verzadiging (-30) om de achtergrond te neutraliseren.",
+        "when_to_use": "Wanneer een macro-onderwerp volledig opgaat in een chaotische, geelgroene achtergrond.",
+        "tools": [
+          "HSL / Color"
+        ],
+        "effect": "De achtergrond verandert in een rustige, diepe tint waardoor warme kleuren direct naar voren komen."
+      },
+      {
+        "name": "Onderwerp Gloed Pushing",
+        "description": "Verhoog de Luminance van de Yellows en Oranges drastisch in het HSL-paneel om het insect extra helderheid te geven.",
+        "when_to_use": "Bij warmgekleurde insecten of slakken die extra visuele nadruk vereisen.",
+        "tools": [
+          "HSL / Color"
+        ],
+        "effect": "Het onderwerp licht op van binnenuit en krijgt een bijna driedimensionale aanwezigheid."
+      },
+      {
+        "name": "Filmic Curve Fade",
+        "description": "Plaats drie controlepunten op de Point Curve en trek het uiterste zwarte punt in de linkerbenedenhoek recht omhoog.",
+        "when_to_use": "Om een harde, digitale look om te vormen naar een zachte, analoge sfeer.",
+        "tools": [
+          "Tone Curve"
+        ],
+        "effect": "De diepste schaduwen veranderen in een sfeervol matgrijs (matte effect), wat een filmische vibe geeft."
+      },
+      {
+        "name": "Auto-Object Texturering",
+        "description": "Gebruik de AI-tool Select Object om het insect te isoleren en verhoog gericht de Texture (+15) en Clarity (+8).",
+        "when_to_use": "Om de details van een samengevoegde focus-stack de definitieve punch te geven.",
+        "tools": [
+          "Masking",
+          "Select Object"
+        ],
+        "effect": "Het onderwerp wordt ragfijn scherp zonder dat de zachte bokeh van de achtergrond wordt aangetast."
+      },
+      {
+        "name": "Storende Hooglichten Dempen",
+        "description": "Trek een lineair verloopmasker (Linear Gradient) over lichte vlekken op bladeren aan de rand en verlaag de belichting.",
+        "when_to_use": "Wanneer reflecties of lichte plekken onderin het frame de blik van het onderwerp afleiden.",
+        "tools": [
+          "Masking",
+          "Linear Gradient"
+        ],
+        "effect": "De helderheid wordt in balans gebracht en houdt de blik van de kijker gevangen in het centrum."
+      }
+    ],
+    "color_approach": "De fotograaf past een geavanceerde teal-and-orange strategie toe op micro-niveau. Door de natuurlijke vegetatie te koelen naar diep smaragdgroen en de highlights te voorzien van een warme splitsing, ontstaat een complementaire kleurbalans die doet denken aan filmbeelden.",
+    "local_adjustments": "Lokale maskers worden gecombineerd met Lightroom's AI-penseel om scherpte heel precies te doseren. De content-aware objectverwijdering wordt ingezet om storende elementen op bladeren onzichtbaar weg te poetsen.",
+    "what_to_avoid": [
+      "Probeer nooit schaduwen volledig plat te slaan door ze te ver open te trekken; respecteer de natuurlijke schaduwwerking van overhead-licht.",
+      "Vermijd harde zwarte punten als je een sfeervolle, schilderachtige macro-look wilt neerzetten."
+    ],
+    "best_for": "Artistieke macro- en fine-art portretten van amfibieën, insecten en weekdieren in dichte bossen.",
+    "unique_insights": [
+      "De HSL-schuif is niet alleen voor kleurcorrectie, maar fungeert als de primaire tool om tonale scheiding tussen onderwerp en omgeving te realiseren.",
+      "Het gebruik van een 5:4 of 4:5 crop voorkomt dat verticale macrofoto's een ongemakkelijk sprietige of te smalle compositie krijgen.",
+      "Het behouden van natuurlijke slagschaduwen van een LED-paneel is essentieel om de anatomische geloofwaardigheid van het macro-onderwerp te bewaren."
+    ],
+    "style_preview": "Een uiterst verfijnde, artistieke stijl met een duidelijke handtekening: diepe, matte schaduwen, gedempte koele achtergronden en een stralend warm middelpunt. Deze benadering tilt macrofotografie naar een hoger niveau door de wetten van de cinema toe te passen op de kleinste details van de natuur. Ideaal voor fotografen die kunstwerken willen creëren in plaats van pure registraties."
+  },
+  {
+    "video_title": "MACRO PHOTOGRAPHY FOCUS STACKING IN THE GARDEN | SHOOTING AND EDITING WITH LIGHTROOM",
+    "photographer_name": "Lori Lankford",
+    "youtube_url": "https://www.youtube.com/watch?v=5-RN9JuqlNY",
+    "genre": [
+      "macro"
+    ],
+    "light_conditions": [
+      "gouden uur"
+    ],
+    "mood": [
+      "rustig",
+      "sfeervol"
+    ],
+    "software": [
+      "Photoshop",
+      "Lightroom Classic"
+    ],
+    "style_description": "Soft Garden Fine Art",
+    "philosophy": "Door te fotograferen met een maximaal open diafragma blijft de achtergrond zijdezacht en schilderachtig. De beperkte scherptediepte wordt opgevangen door handmatige focus-bracketing vanaf een statief. Nabewerking dient om de compositie naadloos te versmelten tot een dromerig geheel.",
+    "workflow_order": [
+      "stap 1: handmatig verplaatsen van het focuspunt via het camerabeeldscherm in een cirkel",
+      "stap 2: openen van de onbewerkte raw-bestanden als lagen in photoshop",
+      "stap 3: uitvoeren van auto-align om minieme windbewegingen te corrigeren",
+      "stap 4: toepassen van auto-blend met content-aware invulling voor de randen",
+      "stap 5: handmatige masker-correctie voor gemiste scherptegebieden via een extra toplaag"
+    ],
+    "techniques": [
+      {
+        "name": "Kloksgewijze Focus Bracketing",
+        "description": "Stel de camera op een open diafragma (f/2.4) en verplaats het single focuspunt handmatig via het scherm stap voor stap langs de buitenste bloemblaadjes in een kloksgewijze richting.",
+        "when_to_use": "Bij het fotograferen van grote bloemen vanaf een statief in de tuin.",
+        "tools": [
+          "Focus Point Selection (Camera)"
+        ],
+        "effect": "Zorgt voor een complete en systematische dekking van alle scherptevlakken aan de buitenzijde."
+      },
+      {
+        "name": "De Dubbele Centrum-Borging",
+        "description": "Maak zowel aan het begin als aan het absolute einde van de fotoreeks een opname waarbij exact op het hart van de bloem is scherpgesteld.",
+        "when_to_use": "Bij bloemen met diepe, complexe kernen zoals de Cosmos.",
+        "tools": [
+          "Manual Focus Control"
+        ],
+        "effect": "Garandeert dat het belangrijkste visuele ankerpunt gegarandeerd vlijmscherp in de uiteindelijke stack zit."
+      },
+      {
+        "name": "Seamless Blend Optimalisatie",
+        "description": "Activeer bij de Auto-Blend functie altijd de opties Seamless Tones and Colors en Content Aware Fill Transparent Areas.",
+        "when_to_use": "Bij het samenvoegen van lagen in Photoshop waar lichte verschuivingen door wind hebben plaatsgevonden.",
+        "tools": [
+          "Auto-Blend Layers"
+        ],
+        "effect": "Photoshop vult lege randen automatisch aan en strijkt kleurverschillen tussen de lagen glad."
+      },
+      {
+        "name": "Handmatige Masker Injectie",
+        "description": "Als de automatisering een deel mist: sleep de scherpe bronfoto handmatig over de stack, voer Auto-Align uit, voeg een omgekeerd (zwart) masker toe en schilder het detail met wit tevoorschijn.",
+        "when_to_use": "Wanneer Photoshop tijdens het automatisch blenden een deel van de steel of bloemblaadjes wazig heeft gelaten.",
+        "tools": [
+          "Layer Mask",
+          "Brush Tool"
+        ],
+        "effect": "Herstelt specifieke details met chirurgische precisie zonder de rest van de blend aan te tasten."
+      },
+      {
+        "name": "Achtergrond Egalisatie",
+        "description": "Gebruik de Clone Stamp tool met een zeer lage dekking (Opacity) om storende donkere vlekken in de zachte bokeh zachtjes weg te poetsen.",
+        "when_to_use": "In de eindfase om de achtergrond volledig vrij te maken van visuele ruis of afleiding.",
+        "tools": [
+          "Clone Stamp Tool"
+        ],
+        "effect": "Er ontstaat een egale, schilderachtige achtergrond die de bloem perfect isoleert."
+      }
+    ],
+    "color_approach": "Er wordt gekozen voor een lichte, pastelachtige kleurstelling die past bij zacht ochtendlicht. Geen zware contrasten, maar vloeiende kleurovergangen die de kwetsbaarheid van de bloemaccenten onderstrepen.",
+    "local_adjustments": "Lokale maskers worden hier puur defensief ingezet om de fouten van het automatische stacking-algoritme handmatig te corrigeren. Door met maskers te schilderen, wordt de controle over kritieke gebieden zoals de bloemsteel teruggegeven aan de fotograaf.",
+    "what_to_avoid": [
+      "Vermijd het vooraf bewerken of tweaken van individuele RAW-bestanden voordat ze Photoshop ingaan; doe de definitieve kleur- en contrastbewerking pas op het samengevoegde tiff-bestand.",
+      "Laat storende windvlagen de reeks niet onderbreken; ga door en herstel het missende frame achteraf handmatig."
+    ],
+    "best_for": "Schilderachtige bloemenfotografie en fine-art macro in de eigen tuin.",
+    "unique_insights": [
+      "Zelfs vanaf een zwaar statief zorgt een lichte bries voor microscopische verschuivingen die de Auto-Blend in Photoshop in de war kunnen sturen.",
+      "Het handmatig injecteren van een losse, scherpe laag via een geïnverteerd masker is de snelste manier om een mislukte stacking-poging te redden.",
+      "Het fotograferen van de bloemsteel als aparte focus-stap is cruciaal om te voorkomen dat de bloem na het stacken los lijkt te zweven in de lucht."
+    ],
+    "style_preview": "Een uiterst dromerige, lichte en vrouwelijke fine-art stijl. De bloemen lijken welhaast te zweven in een zee van aquarel-achtige pastelkleuren, terwijl de details in de kern angstaanjagend scherp zijn. Dit is de perfecte benadering voor fotografen die de poëtische en zachte kant van macrofotografie willen verkennen."
+  },
+  {
+    "video_title": "Editing Macro Images in Photoshop - a Live Event from Allan Walls Photography",
+    "photographer_name": "Bud",
+    "youtube_url": "https://www.youtube.com/watch?v=ayxpvqNzd1g",
+    "genre": [
+      "macro",
+      "experimenteel"
+    ],
+    "light_conditions": [
+      "kunstlicht"
+    ],
+    "mood": [
+      "dramatisch",
+      "krachtig"
+    ],
+    "software": [
+      "Photoshop",
+      "Lightroom Classic"
+    ],
+    "style_description": "Hyper Detailed Micro SciFi",
+    "philosophy": "Een lineair profiel is de enige manier om alle sensorinformatie te behouden en overstraling op insectenogen te temmen. Photoshop is pure wiskunde; door slim gebruik te maken van overvloeimodi (Blend Modes) en helderheidsmaskers pak je bewerkingsproblemen structureel aan. Nabewerking gebeurt op pixelniveau.",
+    "workflow_order": [
+      "stap 1: toepassen van een lineair cameraprofiel in lightroom om clipping te voorkomen",
+      "stap 2: synchroniseren en exporteren van de stack-bestanden naar zarine of photoshop",
+      "stap 3: genereren van uiterst restrictieve helderheidsmaskers (luminosity masks)",
+      "stap 4: instellen van blend if-parameters (protection) om fijne haren te isoleren",
+      "stap 5: selectief retoucheren van halo's met gerichte overvloeimodi en de fade-functie"
+    ],
+    "techniques": [
+      {
+        "name": "Konic Lineair Profiel",
+        "description": "Vervang het standaard Adobe Color profiel direct door een gratis gedownload lineair cameraprofiel om tot twee stops aan hooglicht-detail terug te winnen.",
+        "when_to_use": "Vóórdat RAW-bestanden naar stacking-software worden gestuurd, vooral bij reflecterende insectenonderdelen.",
+        "tools": [
+          "Profile Browser"
+        ],
+        "effect": "De opname oogt aanvankelijk vlakker, maar alle fijne textuur in de felste reflecties blijft behouden."
+      },
+      {
+        "name": "Blend If Haren Bescherming",
+        "description": "Open de Layer Style (dubbelklikken op de laag), ga naar de onderste schuif (Underlying Layer/Protection) en splits de driehoekige slider met de Option/Alt-toets om een vloeiend verloop te creëren.",
+        "when_to_use": "Wanneer je de achtergrond direct achter microscopisch kleine insectenharen wilt inkleuren of verdonkeren.",
+        "tools": [
+          "Blend If",
+          "Layer Style"
+        ],
+        "effect": "De witte of zwarte haren worden perfect beschermd en poppen ongeschonden door de nieuwe kleurlaag heen."
+      },
+      {
+        "name": "Retoucheren in Darken Modus",
+        "description": "Maak een nieuwe lege laag aan, zet de overvloeimodus op Darken en gebruik de Clone Stamp tool met een flow van 3 procent om overstraalde randen weg te poetsen.",
+        "when_to_use": "Voor het elimineren van heldere halo's en lichtvlekken rondom donkere haren veroorzaakt door het stacken.",
+        "tools": [
+          "Layers Panel",
+          "Clone Stamp Tool"
+        ],
+        "effect": "Alleen de pixels die lichter zijn dan de bron worden overschreven, terwijl de donkere haren intact blijven."
+      },
+      {
+        "name": "Retoucheren in Lighten Modus",
+        "description": "Zet een lege laag op de overvloeimodus Lighten, selecteer met de pipet de omliggende achtergrondkleur en schilder over donkere stacking-fouten.",
+        "when_to_use": "Om donkere schaduw-halo's langs lichte weefselranden onzichtbaar te corrigeren.",
+        "tools": [
+          "Layers Panel",
+          "Brush Tool"
+        ],
+        "effect": "Donkere artefacten verdwijnen als sneeuw voor de zon, terwijl de lichte structuren niet worden aangetast."
+      },
+      {
+        "name": "De Shift-Command-F Fade",
+        "description": "Voer een penseel- of healing-actie uit en druk direct op Shift+Command+F om de intensiteit van die specifieke actie via een slider traploos terug te regelen.",
+        "when_to_use": "Na elke individuele handeling met de Healing Brush of Clone Stamp om textuurfouten te herstellen.",
+        "tools": [
+          "Fade Command"
+        ],
+        "effect": "Biedt microscopische controle over de mengverhouding van de retoucheeractie."
+      }
+    ],
+    "color_approach": "Kleursturing gebeurt op een uiterst geavanceerde manier via de camera-kalibratie in Lightroom en selectieve CMYK-wiskunde in Photoshop. Er worden selectieve kleurverschuivingen toegepast om storende reflecties op reflecterende facetogen om te zetten in harmonieuze tinten.",
+    "local_adjustments": "Lokale aanpassingen bereiken hier het ultieme niveau door het combineren van groepsmaskers met Luminosity-selecties. Hierdoor kan er een masker in een masker worden geplaatst, waardoor bewerkingen tot op de individuele pixel nauwkeurig worden afgebakend.",
+    "what_to_avoid": [
+      "Zorg ervoor dat het histogram bij de export naar Zarine of Helicon nooit de uiterste linker- of rechterzijde raakt om onherstelbare dataloss te voorkomen.",
+      "Vermijd het gebruik van de reguliere gum of harde maskers bij het opschonen van insectenharen; gebruik altijd de wiskundige benadering via Blend If."
+    ],
+    "best_for": "Extreme macrofotografie (high-magnification) met banyoles en microscoop-optiek op een belligs-systeem.",
+    "unique_insights": [
+      "De Blend If functie moet in de geest van de fotograaf worden hernoemd naar 'Protection Slider' om de logica van pixel-isolatie beter te begrijpen.",
+      "Het schilderen met de Flow-instelling op 1 procent in plaats van de Opacity-instelling voorkomt 'stair-stepping' (trapeffect) bij nauwkeurige retoucheersessies.",
+      "Het monteren van een gitzwarte zonnekap (lens shade) op een microscooplens elimineert de zilvere reflectie van de lensrand in de ogen van het insect."
+    ],
+    "style_preview": "Een hyper-gedetailleerde, bijna buitenaardse stijl die de grenzen van de optische realiteit opzoekt. Elk haartje, elke facetcel van het oog is vlijmscherp gedefinieerd zonder dat er digitale artefacten zichtbaar zijn. Dit is de ultieme technische handleiding voor de hardcore macro-specialist die streeft naar pure perfectie op de vierkante micrometer."
+  },
+  {
+    "video_title": "How to Edit your Macro Images - a livestream event",
+    "photographer_name": " Bud",
+    "youtube_url": "https://www.youtube.com/watch?v=MYpWSdp2PuE",
+    "genre": [
+      "macro",
+      "algemeen"
+    ],
+    "light_conditions": [
+      "kunstlicht"
+    ],
+    "mood": [
+      "dramatisch",
+      "moody"
+    ],
+    "software": [
+      "Photoshop",
+      "Lightroom Classic"
+    ],
+    "style_description": "Precise Fine Art Retouch",
+    "philosophy": "Kwalitatieve macro-nabewerking stoelt op het beheersen van het lichtverloop via geavanceerde maskering. Storende elementen moeten niet klakkeloos worden verwijderd, maar optisch worden gede-fundeerd. De blik van de toeschouwer moet met chirurgische precisie naar het epicentrum van de scherpte worden geleid.",
+    "workflow_order": [
+      "stap 1: analyseren van de tonale waarden van het basismateriaal",
+      "stap 2: omkeren en croppen van de compositie voor een optimale dynamiek",
+      "stap 3: isoleren van het hoofdonderwerp via selectieve contrastcurven",
+      "stap 4: sturen van de achtergrondhelderheid met luminance-selecties"
+    ],
+    "techniques": [
+      {
+        "name": "Compositie Kanteling (Flip)",
+        "description": "Evalueer de visuele balans en roteer of spiegel de macro-opname 180 graden om een krachtigere diagonale lijn te introduceren.",
+        "when_to_use": "Wanneer de natuurlijke positie van het insect in de camera een onlogische of onrustige kijkrichting oplevert.",
+        "tools": [
+          "Image Rotation"
+        ],
+        "effect": "De vloeiende lijnen van de plant en het insect sluiten beter aan bij de menselijke leesrichting."
+      },
+      {
+        "name": "Achtergrond De-emphasizing",
+        "description": "Maak een specifieke curve aan, trek het middensegment subtiel naar beneden en bescherm het insect via een masker om alleen de bloemen te verduisteren.",
+        "when_to_use": "Wanneer felle kleuren in de achtergrond (zoals hard rood) te veel de aandacht opeisen.",
+        "tools": [
+          "Tone Raw Curve",
+          "Masking"
+        ],
+        "effect": "De felle achtergrondbloemen verliezen hun dominantie zonder hun diepe kleurkarakter te verliezen."
+      },
+      {
+        "name": "Targeted White Tuning",
+        "description": "Selecteer het witte kanaal binnen het selectieve kleurpaneel en reduceer het geel (Yellow) om een pure, cleane wittint te realiseren.",
+        "when_to_use": "Om hinderlijke kleurzweem uit reflecties of witte bloemdelen te filteren.",
+        "tools": [
+          "Selective Color Tool"
+        ],
+        "effect": "Storende kleurafwijkingen in de hooglichten worden geneutraliseerd tot een asgrauw, zuiver wit."
+      },
+      {
+        "name": "Inktspot Retouche via Black Level",
+        "description": "Verhoog de zwartwaarden lokaal via een curves-laag binnen een afgebakend groepmasker om reflecties in diepe schaduwen te dempen.",
+        "when_to_use": "Bij hinderlijke lichtvlekken op donkere macro-ondergronden.",
+        "tools": [
+          "Tone Curve",
+          "Group Masking"
+        ],
+        "effect": "De storende elementen verdwijnen in een solide, rustgevende duisternis."
+      },
+      {
+        "name": "Hooglichten Confectie",
+        "description": "Gebruik een uiterst zacht masker en verlaag de Whites in de curve om speculaire reflecties af te vlakken naar het middensegment.",
+        "when_to_use": "Wanneer flitslicht zorgt voor uitgebleekte, structuurloze witte stipjes op het insect.",
+        "tools": [
+          "Tone Curve"
+        ],
+        "effect": "De harde witte stippen veranderen in zachte, doffe toonzones met herkenbare textuur."
+      }
+    ],
+    "color_approach": "De kleurstrategie richt zich op het selectief temmen van de minst kritieke kleurkanalen. Door de CMYK-schuiven binnen het selectieve kleurvlak te manipuleren, worden felle tonen in de achtergrond systematisch gedempt, zodat het glanzende metallic van het insect alle ruimte krijgt.",
+    "local_adjustments": "Er wordt een strikte mappenstructuur (Group Masking) gehanteerd waarin globale Luminosity-selecties worden gecombineerd met handmatig ingekleurde maskers om aanpassingen secuur te isoleren.",
+    "what_to_avoid": [
+      "Vermijd het overmatig verzadigen van de rode kleurkanalen, aangezien het menselijk oog extreem gevoelig is voor detailverlies in dit specifieke spectrum.",
+      "Zorg dat helderheidsaanpassingen nooit overvloeien naar omliggende donkere zones om een onnatuurlijke oplichtende rand (glow) te voorkomen."
+    ],
+    "best_for": "High-end studiomacro en artistieke insectenportretten.",
+    "unique_insights": [
+      "De wetten van de klassieke schilderkunst omtrent de blikrichting zijn belangrijker dan de biologische positionering van het insect; spiegelen is vaak de sleutel.",
+      "Selectieve kleurcorrectie op basis van printer-wiskunde (CMYK) werkt bij het zuiveren van witten vele malen krachtiger dan de reguliere witbalans-slider.",
+      "Door aanpassingslagen te nesten in groepsmappen met een eigen masker omzeil je de Photoshop-beperking van maximaal één masker per laag."
+    ],
+    "style_preview": "Een uiterst doordachte, schilderachtige stijl waarin licht- en schaduwverloop de compositie dicteren. Door overbodige helderheid in de periferie te smoren, ontstaat een intiem en mysterieus clair-obscur effect. Een fantastische benadering voor de gevorderde fotograaf die zijn beelden wil transformeren tot museale kunstwerken."
+  },
+  {
+    "video_title": "How I Edit Macro Photos in Adobe Photoshop",
+    "photographer_name": "Xx7trey",
+    "youtube_url": "https://www.youtube.com/watch?v=dyFxT3JOP3A",
+    "genre": [
+      "macro",
+      "zwart-wit"
+    ],
+    "light_conditions": [
+      "daglicht"
+    ],
+    "mood": [
+      "levendig",
+      "naturalistisch"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Clean Contrast Color Pop",
+    "philosophy": "Nabewerking moet efficiënt, logisch en minimalistisch zijn door de nadruk te leggen op de essentie: scherpte, helderheid en pure kleurbalans. Een perfecte opname in de camera is het fundament. Door overbodige stappen te elimineren, blijft de natuurlijke integriteit van de macrofoto gewaarborgd.",
+    "workflow_order": [
+      "stap 1: zorgvuldige uitsnede en toepassen van smart sharpen op de basislaag",
+      "stap 2: fijnregeling van textuur, helderheid en vibrance in camera raw filter",
+      "stap 3: handmatige tooncorrectie via curven om verborgen schaduwdetails te openen",
+      "stap 4: nauwkeurige kleurscheiding via selective color en color balance",
+      "stap 5: toevoegen van een subtiele color grading en een zacht vignet"
+    ],
+    "techniques": [
+      {
+        "name": "Smart Sharpen Precisie",
+        "description": "Pas Smart Sharpen toe op de basislaag en controleer heel nauwkeurig de radius en ruisreductie om fijne texturen te versterken.",
+        "when_to_use": "Als allereerste stap direct na het bepalen van de definitieve crop.",
+        "tools": [
+          "Smart Sharpen"
+        ],
+        "effect": "De micro-texturen van het onderwerp worden direct scherper zonder dat er storende witte randen ontstaan."
+      },
+      {
+        "name": "Selectieve Muted-Tone Vibrance",
+        "description": "Verhoog de Vibrance-slider in Camera Raw om selectief de fletse tonen op te halen, terwijl reeds verzadigde gebieden worden beschermd.",
+        "when_to_use": "Om de kleuren in een macrofoto op een veilige manier te versterken zonder oververzadiging.",
+        "tools": [
+          "Camera Raw Filter",
+          "Vibrance Slider"
+        ],
+        "effect": "De subtiele kleurnuances in het onderwerp worden rijk en sprekend, terwijl de felle tinten natuurlijk blijven."
+      },
+      {
+        "name": "Gerichte Tooncurve Correctie",
+        "description": "Plaats specifieke controlepunten op de curve en trek de schaduwen licht omhoog om verborgen weefselstructuren zichtbaar te maken.",
+        "when_to_use": "Bij macro-opnames met grote contrastverschillen tussen het onderwerp en de schaduwzijden.",
+        "tools": [
+          "Camera Raw Filter",
+          "Tone Curve"
+        ],
+        "effect": "Details in de donkere delen worden subtiel onthuld zonder dat het algehele contrast inzakt."
+      },
+      {
+        "name": "Complementaire Kleurbalans",
+        "description": "Gebruik de Color Balance tool en verschuif de schuifregelaars in de middentonen richting blauw voor koelte, of richting rood/geel voor warmte.",
+        "when_to_use": "Om de algehele sfeer direct om te buigen of een hinderlijke kleurzweem te corrigeren.",
+        "tools": [
+          "Color Balance Tool"
+        ],
+        "effect": "De emotionele lading en de temperatuur van de foto veranderen ingrijpend."
+      },
+      {
+        "name": "Scherpte-Inclusieve Textuur",
+        "description": "Verhoog licht de Texture en Clarity sliders in het effecten-paneel van de Camera Raw filter.",
+        "when_to_use": "Voor het versterken van de oppervlaktekwaliteit van het macro-onderwerp.",
+        "tools": [
+          "Camera Raw Filter",
+          "Effects Panel"
+        ],
+        "effect": "Het onderwerp oogt direct tastbaarder, gedefinieerder en springt pittig uit het beeld."
+      }
+    ],
+    "color_approach": "Er wordt gefocust op het versterken van krachtige, contrasterende kleurkoppels zoals groen en oranje. Door selectieve kleurcorrectie toe te passen, krijgt elke afzonderlijke tint een eigen heldere identiteit, wat resulteert in een harmonieuze en dynamische compositie.",
+    "local_adjustments": "Lokale aanpassingen worden in deze gestroomlijnde workflow tot een minimum beperkt; de fotograaf vertrouwt op de selectieve werking van de globale kleur- en contrast-wiskunde binnen Camera Raw.",
+    "what_to_avoid": [
+      "Vermijd agressieve globale verzadiging (Saturation) omdat dit delicate kleurovergangen direct verandert in een onnatuurlijke, egale brij.",
+      "Voorkom te zware belichtingscorrecties die resulteren in uitgebleekte hooglichten of detailloze schaduwen."
+    ],
+    "best_for": "Fotografen die een snelle, efficiënte en gemakkelijk herhaalbare Photoshop-workflow zoeken.",
+    "unique_insights": [
+      "Het bereiken van een perfect belichte en scherpe opname in de camera (in camera) is de allerbeste tijdbesparing voor de digitale workflow.",
+      "Vibrance is vele malen superieur aan Saturation bij macrofotografie omdat het specifiek de fletse, onderontwikkelde pigmenten activeert.",
+      "Een effectieve workflow ontstaat niet overnacht, maar evolueert door systematisch overbodige handelingen weg te strepen tot de pure kern overblijft."
+    ],
+    "style_preview": "Een frisse, heldere en zeer moderne stijl die uitblinkt in eenvoud en visuele impact. De focus ligt op krachtige contrasten en heldere, pop-achtige kleuren die perfect in balans zijn. Dit is de ideale benadering voor de no-nonsense fotograaf die met een minimaal aantal handelingen een maximaal professioneel resultaat wil boeken."
+  },
+  {
+    "video_title": "RAZOR SHARP MACRO PHOTOS [Automatic Focus Stacking in Photoshop]",
+    "photographer_name": "JT Shaver",
+    "youtube_url": "https://www.youtube.com/watch?v=K5hYEN6QraM",
+    "genre": [
+      "macro",
+      "architectuur"
+    ],
+    "light_conditions": [
+      "daglicht"
+    ],
+    "mood": [
+      "naturalistisch",
+      "rustig"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Auto Stack Razor Sharp",
+    "philosophy": "Een statische scène en absolute camera-immobiliteit zijn onwrikbare voorwaarden voor een succesvolle digitale focus-stack. Software kan fouten corrigeren, maar precisie in de field-uitvoering bepaalt de uiteindelijke scherpte-kwaliteit. De automatisering in Photoshop dient om de scherptediepte barrière moeiteloos te doorbreken.",
+    "workflow_order": [
+      "stap 1: importeren van de fotoreeks via het script load files into stack",
+      "stap 2: selecteren van alle geladen lagen in het lagenpaneel",
+      "stap 3: uitvoeren van auto-align layers met de automatische optie",
+      "stap 4: toepassen van auto-blend layers met de optie stack images",
+      "stap 5: uitschakelen van seamless tones and colors bij constante belichting"
+    ],
+    "techniques": [
+      {
+        "name": "Script Lagen Import",
+        "description": "Gebruik de ingebouwde Photoshop-functie Load Files into Stack via het menu Scripts om een hele map met opnames direct in één bestand te nesten.",
+        "when_to_use": "Bij de start van elke automatische focus-stacking procedure.",
+        "tools": [
+          "Scripts",
+          "Load Files into Stack"
+        ],
+        "effect": "Alle opnames worden keurig gesorteerd als afzonderlijke, opeengestapelde lagen klaargezet."
+      },
+      {
+        "name": "Geautomatiseerde Pixel-Uitlijning",
+        "description": "Selecteer alle lagen en activeer Auto-Align Layers op de stand 'Auto' om microscopische verschuivingen weg te rekenen.",
+        "when_to_use": "Na het laden van de lagen, essentieel bij eventuele tripod-settling.",
+        "tools": [
+          "Auto-Align Layers"
+        ],
+        "effect": "De contouren en elementen van alle foto's worden exact over elkaar heen gepositioneerd."
+      },
+      {
+        "name": "Scherpte-Algoritme Fusie",
+        "description": "Activeer Auto-Blend Layers en selecteer de optie Stack Images om Photoshop automatisch maskers te laten genereren.",
+        "when_to_use": "Om de scherpe zones uit de hele reeks te combineren tot één frame.",
+        "tools": [
+          "Auto-Blend Layers"
+        ],
+        "effect": "Photoshop analyseert de pixelscherpte en maakt vlijmscherpe maskers per laag aan."
+      },
+      {
+        "name": "Toon-Blend Deactivatie",
+        "description": "Vink de optie 'Seamless Tones and Colors' bewust UIT als de belichting tussen de opnames exact gelijk is gebleven.",
+        "when_to_use": "Bij focus-stacks die onder gecontroleerde, constante lichtomstandigheden zijn geschoten.",
+        "tools": [
+          "Auto-Blend Layers Options"
+        ],
+        "effect": "Voorkomt dat Photoshop onnodige kleurverschuivingen of vreemde vlekken in de overgangen berekent."
+      },
+      {
+        "name": "Masker Inspectie",
+        "description": "Houd de Alt/Option-toets ingedrukt en klik op het gegenereerde laagmasker om de automatische scherpte-verdeling zwart-wit te controleren.",
+        "when_to_use": "Na de blend-procedure om te controleren of er geen scherpte-gaten zijn gevallen.",
+        "tools": [
+          "Layer Mask View"
+        ],
+        "effect": "De witte delen tonen exact welke scherpte-zones van die specifieke laag worden gebruikt."
+      }
+    ],
+    "color_approach": "De kleurbenadering blijft puur functioneel en objectief. Het doel is het behouden van de oorspronkelijke kleurbalans en contrastwaarden zoals ze tijdens de opname met de handmatige optiek zijn vastgelegd.",
+    "local_adjustments": "Lokale aanpassingen worden volledig overgelaten aan de automatische scherpte-maskering van Photoshop's blend-engine, die maskers genereert op basis van microcontrast.",
+    "what_to_avoid": [
+      "Draai de focusring nooit in te grote stappen door; te grote sprongen resulteren onherroepelijk in wazige, onscherpe zones (blur) in het eindresultaat.",
+      "Zorg dat de beeldstabilisatie (image stabilization) op de lens UIT staat als je vanaf een statief werkt om foutieve trillingscorrectie te voorkomen."
+    ],
+    "best_for": "Macro- en productfotografie van statische, onbeweeglijke objecten vanaf een solide statief.",
+    "unique_insights": [
+      "Het inschakelen van de camera-timer (camera timer) voorkomt dat de fysieke druk van de vinger op de sluiterknop funeste trillingen introduceert.",
+      "De optie 'Seamless Tones and Colors' kan bij een perfect constante belichting de blend juist verruïneren; durf deze uit te zetten.",
+      "Het laagmasker onthult via een simpele Alt-klik de fascinerende wiskundige reis die het scherptevlak door de foto heeft afgelegd."
+    ],
+    "style_preview": "Een klinische, uiterst strakke en technisch perfecte stijl. De nadruk ligt op een egale, onwaarschijnlijke scherptediepte van voor tot achter, waardoor het gefotografeerde object bijna los lijkt te komen van de realiteit. Uitermate geschikt voor de detail-georiënteerde fotograaf of product-retoucher."
+  },
+  {
+    "video_title": "Lightroom Focus Stacking Made Easy",
+    "photographer_name": "Matthew Cuda",
+    "youtube_url": "https://www.youtube.com/watch?v=3Hy5QiWGO9U",
+    "genre": [
+      "landschap",
+      "macro"
+    ],
+    "light_conditions": [
+      "bewolkt"
+    ],
+    "mood": [
+      "naturalistisch",
+      "rustig"
+    ],
+    "software": [
+      "Lightroom Classic",
+      "Photoshop"
+    ],
+    "style_description": "Sharp Dynamic Nature Stack",
+    "philosophy": "Focus stacking is het digitale equivalent van de perfecte hyperfocale afstand. Door de scherpte in opeenvolgende niveaus in het veld vast te leggen, wordt de fysieke beperking van lens-diffractie slim omzeild. De synergie tussen Lightroom en Photoshop vormt de ultieme brug naar maximale scherpte.",
+    "workflow_order": [
+      "stap 1: selecteren van de focus-reeks in de lightroom library via de shift-toets",
+      "stap 2: rechtstreeks exporteren via de optie open as layers in photoshop",
+      "stap 3: selecteren van alle geïmporteerde lagen in het photoshop-paneel",
+      "stap 4: uitvoeren van auto-align layers op de automatische stand",
+      "stap 5: toepassen van auto-blend layers met de optie stack images",
+      "stap 6: opslaan (control+s) om het tiff-resultaat direct terug te sluizen naar lightroom"
+    ],
+    "techniques": [
+      {
+        "name": "Niveau-Gesteunde Bracketing",
+        "description": "Focus in het veld handmatig op opeenvolgende diepteniveaus van het landschap (voorgrondwater, middengrond-varens, achtergrond-waterval) voor een sluitende reeks.",
+        "when_to_use": "Bij landschapsfoto's met sterke dieptewerking en elementen heel dicht op de lens.",
+        "tools": [
+          "Manual Focus Control (Camera)"
+        ],
+        "effect": "Er ontstaat een serie frames die samen het volledige dieptebereik in absolute scherpte afdekken."
+      },
+      {
+        "name": "Lightroom-naar-Photoshop Bridge",
+        "description": "Selecteer de reeks in de Library-tab, klik met de rechtermuisknop en kies 'Open as Layers in Photoshop' om handmatige bestandsimport te omzeilen.",
+        "when_to_use": "Bij de start van elke gecombineerde Lightroom/Photoshop workflow.",
+        "tools": [
+          "Library Module",
+          "Context Menu"
+        ],
+        "effect": "Photoshop start automatisch op en laadt alle geselecteerde opnames direct als keurige lagen in één document."
+      },
+      {
+        "name": "Tripod-Settling Correctie",
+        "description": "Gebruik de Auto-Align Layers functie om onbewuste verzakkingen van het statief of windvlagen tussen de opnames weg te filteren.",
+        "when_to_use": "Na het laden van de lagen, ook als er vanaf een stabiel statief is gefotografeerd.",
+        "tools": [
+          "Auto-Align Layers"
+        ],
+        "effect": "De outline van rotsen en bomen wordt tot op de pixel nauwkeurig gelijkgetrokken over alle lagen."
+      },
+      {
+        "name": "TIFF-Sluis Opslag",
+        "description": "Gebruik na de blend direct de Save-opdracht (Control+S) om het gecombineerde bestand automatisch met een -edit-extensie in Lightroom te nesten.",
+        "when_to_use": "Als afsluiting van de Photoshop-fase.",
+        "tools": [
+          "File Menu",
+          "Save Command"
+        ],
+        "effect": "Het document verschijnt direct als hoogwaardig TIFF-bestand in de Lightroom catalogus voor de eindbewerking."
+      },
+      {
+        "name": "Selectieve Randverduistering",
+        "description": "Gebruik het penseelmasker (Brush) in de Develop-module en verlaag de belichting (Exposure) in de fletse hoeken en bosranden.",
+        "when_to_use": "In de eindfase om storende, lichte takken aan de bovenkant van het frame te dempen.",
+        "tools": [
+          "Masking",
+          "Brush Tool"
+        ],
+        "effect": "De lichte hoeken worden gedimd, waardoor de focus volledig op de waterval komt te liggen."
+      }
+    ],
+    "color_approach": "De kleursturing is subtiel en gericht op de natuur. Er wordt in de eindfase in Lightroom een minimale dosis Vibrance en een vleugje Saturation toegevoegd om de natuurlijke groentinten van de varens en het mos rondom het water op een gecontroleerde manier te laten spreken.",
+    "local_adjustments": "Lokale aanpassingen worden in de finale fase in Lightroom uitgevoerd via het penseelmasker om storende hotspots in de periferie te dimmen en de visuele dynamiek naar het centrum te dirigeren.",
+    "what_to_avoid": [
+      "Schiet landschappen met extreme diepte nooit op f/22 om diffractie (optische onscherpte door een te klein diafragma) te voorkomen; kies liever voor f/11 of f/13 en pas focus stacking toe.",
+      "Vermijd het handmatig verplaatsen van fotobestanden buiten Lightroom om catalogus-fouten te voorkomen."
+    ],
+    "best_for": "Landschapsfotografie met complexe diepte, zoals watervallen, bospaden en weidse vergezichten.",
+    "unique_insights": [
+      "Het fotograferen op f/13 biedt de zoetste scherpteplek (sweet spot) van de meeste lenzen, waarna stacking de scherptediepte digitaal maximaliseert.",
+      "De Photoshop Auto-Blend is zo krachtig dat het microscopische tripod-verzakkingen in zachte modder moeiteloos corrigeert.",
+      "Het donkerder maken van de bovenrand van een bieuw-landschap via een penseelmasker houdt de blik van de kijker effectief gevangen in de actie."
+    ],
+    "style_preview": "Een uiterst frisse, scherpe en natuurgetrouwe landschapsstijl. Het beeld blinkt uit door een ongekende helderheid van de allerdichtste voorgrond tot de verste achtergrond, zonder dat het contrast er digitaal of overgeproduceerd uitziet. Perfect voor de veeleisende natuurfotograaf die de pure grootsheid van de buitenwereld wil vangen."
+  },
+  {
+    "video_title": "How to FOCUS STACK for amazingly sharp landscape, macro or product photos.",
+    "photographer_name": "Paul",
+    "youtube_url": "https://www.youtube.com/watch?v=bm0OHPW4FU4",
+    "genre": [
+      "landschap",
+      "product"
+    ],
+    "light_conditions": [
+      "daglicht"
+    ],
+    "mood": [
+      "naturalistisch",
+      "levendig"
+    ],
+    "software": [
+      "Photoshop",
+      "Lightroom Classic"
+    ],
+    "style_description": "Crisp Detailed Commercial Stack",
+    "philosophy": "Absolute blootstelling- en witbalans-consistentie in de handmatige modus vormt de onwrikbare basis voor een vlekkeloze digitale focus-stack. Automatisering in de camera via Focus Bracketing elimineert menselijke fouten tijdens de opname. Nabewerking is een puur technisch proces om onwaarschijnlijke details bloot te leggen.",
+    "workflow_order": [
+      "stap 1: vergrendelen van belichting en witbalans in de handmatige cameramodus",
+      "stap 2: uitvoeren van automatische focus-bracketing in de camera of handmatige focus-ring sturing",
+      "stap 3: selecteren van de fotoreeks in photoshop en laden via scripts",
+      "stap 4: toepassen van auto-align layers om camera-verschuivingen te elimineren",
+      "stap 5: uitvoeren van auto-blend layers op de stand stack images"
+    ],
+    "techniques": [
+      {
+        "name": "Locked-In Manual Exposure",
+        "description": "Zet de camera volledig in de handmatige modus (Manual Mode) en fixeer de sluitertijd, het diafragma, de ISO en de witbalans (preset).",
+        "when_to_use": "Voorafgaand aan de allereerste opname van een focus-stacking reeks.",
+        "tools": [
+          "Camera Manual Settings"
+        ],
+        "effect": "Garandeert een absolute, identieke belichting en kleurtemperatuur over alle frames heen."
+      },
+      {
+        "name": "Focus Shift Shooting (AI)",
+        "description": "Activeer de ingebouwde camera-functie Focus Shift Shooting (of Focus Bracketing) om de camera volautomatisch een reeks opnames met minieme focus-stappen te laten maken.",
+        "when_to_use": "Bij camera's die deze functie ondersteunen, uitstekend voor product- en macrofotografie.",
+        "tools": [
+          "Focus Shift / Bracketing (Camera)"
+        ],
+        "effect": "Er wordt een mathematisch perfecte reeks frames geschoten zonder dat de lens handmatig hoeft te worden aangeraakt."
+      },
+      {
+        "name": "De Sweet-Spot Aperture",
+        "description": "Kies een diafragma tussen f/8 en f/11 om de maximale optische scherpte van de lensbehuizing te benutten.",
+        "when_to_use": "Bij het bepalen van de basisinstellingen voor een landschaps- of product-stack.",
+        "tools": [
+          "Aperture Control"
+        ],
+        "effect": "Minimaliseert lensafwijkingen en diffractie, wat resulteert in de allerhoogste basisresolutie."
+      },
+      {
+        "name": "Geautomatiseerde Lagen-Lader",
+        "description": "Ga naar File > Scripts > Load Files into Stack en vink 'Add Open Files' aan om een grote batch direct in lagen te splitsen.",
+        "when_to_use": "Wanneer er meer dan 10 tot 20 zware RAW- of JPEG-bestanden moeten worden gestackt.",
+        "tools": [
+          "Scripts",
+          "Load Files into Stack"
+        ],
+        "effect": "Bespaart kostbare tijd door de bestanden volautomatisch boven elkaar te stapelen in één document."
+      },
+      {
+        "name": "Macro Extension Tube Truc",
+        "description": "Monteer een betaalbare macro-tussenring (Extension Tube) tussen de kitlens en de camerabehuizing om de minimale scherpstelafstand drastisch te verkorten.",
+        "when_to_use": "Wanneer je extreme macro-details wilt fotograferen zonder te hoeven investeren in een duur macro-objectief.",
+        "tools": [
+          "Macro Extension Tube (Hardware)"
+        ],
+        "effect": "Vergroot de afbeeldingsmaatstaf gigantisch, waardoor microscopische texturen haarscherp op de sensor vallen."
+      }
+    ],
+    "color_approach": "De kleurbenadering is helder, commercieel en uiterst natuurgetrouw. Het doel is een sprankelende, detailrijke weergave waarin de ware textuur van het product of landschap centraal staat, ondersteund door een stabiele, handmatige witbalans.",
+    "local_adjustments": "Lokale retouche wordt ingezet na de blend-fase om storende achtergrondelementen of camerariemen via geavanceerde selectietools volledig clean weg te poetsen voor een strakke commerciële uitstraling.",
+    "what_to_avoid": [
+      "Gebruik nooit de automatische witbalans (Auto White Balance) tijdens een stacking-reeks, omdat minieme kleurverschuivingen tussen de opnames de digitale blend direct kunnen ruïneren.",
+      "Vermijd handmatige lenscorrecties vóór het uitlijnen."
+    ],
+    "best_for": "Commerciële productfotografie en weidse, haarscherpe stadslandschappen.",
+    "unique_insights": [
+      "De handmatige witbalans is de belangrijkste en meest onderschatte factor voor een succesvolle focus-stack samenvoeging.",
+      "Diafragmeren tot f/8 of f/11 levert per saldo een scherper eindresultaat op in een stack dan doordrukken naar f/22.",
+      "Macro-tussenringen zijn het krachtigste en meest budgetvriendelijke alternatief voor dure specialistische macro-optiek."
+    ],
+    "style_preview": "Een uiterst strakke, heldere en commercieel verantwoorde stijl. Beelden blinken uit door een onberispelijke scherpte, rijke textuurdetails en een perfecte tonale balans van hoek tot hoek. Dit is de ultieme blauwdruk voor fotografen die loepzuivere, verkoopbare productbeelden of indrukwekkende stadsgezichten willen creëren."
   }
 ]

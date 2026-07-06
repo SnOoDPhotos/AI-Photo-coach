@@ -376,15 +376,7 @@ function renderStats() {
   var totalTech = localKnowledge.reduce(function(a,e){return a+(e.techniques||[]).length;},0);
   var avgTech = localKnowledge.length ? (totalTech/localKnowledge.length).toFixed(1) : 0;
   var avgInsights = localKnowledge.length ? (localKnowledge.reduce(function(a,e){return a+(e.unique_insights||[]).length;},0)/localKnowledge.length).toFixed(1) : 0;
-  var warnings = localKnowledge.filter(function(e){
-    var hasWarning = (e.techniques||[]).length < 3 || (e.unique_insights||[]).length < 2;
-    if (!hasWarning) {
-      var suspectNames = ['official','channel','productions','films','brothers','labs','photography','media','studio'];
-      var name = (e.photographer_name||'').toLowerCase();
-      hasWarning = suspectNames.some(function(w){ return name.includes(w); });
-    }
-    return hasWarning;
-  }).length;
+  var warnings = computeWarnings(localKnowledge);
   var psEntries = localKnowledge.filter(function(e){ return (e.software||[]).includes('Photoshop'); }).length;
   var lrEntries = localKnowledge.filter(function(e){ return (e.software||[]).includes('Lightroom Classic'); }).length;
 

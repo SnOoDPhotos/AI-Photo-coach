@@ -56052,5 +56052,440 @@
       "Bij ICM-fotografie werkt contrast averechts als je het in de voorbereiding verhoogt; doe dit pas in de nabewerking om vlekjes niet onnodig te benadrukken bij het schieten."
     ],
     "style_preview": "Deze stijl is dromerig, abstract en visueel aantrekkelijk voor liefhebbers van impressionistische fotografie. De fotograaf streeft naar een balans tussen enerzijds een zachte, dromerige uitstraling en anderzijds voldoende contrast om de abstracte vormen leesbaar te houden. Deze bewerking past het beste bij landschaps- of natuurbeelden die bewogen zijn vastgelegd, waarbij de kijker wordt uitgenodigd om de vorm in de chaos te ontdekken."
+  },
+  {
+    "video_title": "How to Clean Up any Photo with Content-Aware Fill",
+    "photographer_name": "Aaron Nace",
+    "youtube_url": "https://www.youtube.com/watch?v=P-D9-Sc40UI",
+    "genre": [
+      "algemeen"
+    ],
+    "light_conditions": [
+      "daglicht"
+    ],
+    "mood": [
+      "sfeervol"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Efficiënte, clean retouche",
+    "philosophy": "Het doel van retouche is afleidingen weg te nemen zonder dat de kijker ziet dat er is ingegrepen. Door gebruik te maken van slimme vultechnieken op nieuwe lagen blijft het proces niet-destructief. Een zorgvuldige workflow zorgt voor een natuurlijk eindresultaat dat de focus op het onderwerp behoudt.",
+    "workflow_order": [
+      "stap 1: maak een nieuwe lege laag aan voor de retouche",
+      "stap 2: selecteer het storende element met lasso-tool",
+      "stap 3: open content-aware fill en verfijn de selectie van het brongebied",
+      "stap 4: pas de wijziging toe en werk details bij met de kloonstempel"
+    ],
+    "techniques": [
+      {
+        "name": "Content-Aware Fill via dialoogvenster",
+        "description": "Verwijder grote objecten door het dialoogvenster te openen en brongebieden met de kwast aan te passen voor een schonere achtergrond.",
+        "when_to_use": "Bij foto's met veel achtergrondafleidingen of ongewenste objecten.",
+        "tools": [
+          "Content-Aware Fill",
+          "Lasso Tool"
+        ],
+        "effect": "Storende elementen verdwijnen naadloos door intelligente opvulling."
+      },
+      {
+        "name": "Niet-destructief werken met nieuwe lagen",
+        "description": "Voer retouche uit op een nieuwe laag in plaats van op de achtergrondlaag om altijd terug te kunnen vallen op het origineel.",
+        "when_to_use": "Bij elke retouche-klus om maximale flexibiliteit te behouden.",
+        "tools": [
+          "Layers"
+        ],
+        "effect": "Het origineel blijft intact voor aanpassingen achteraf."
+      },
+      {
+        "name": "Kloonstempel voor randafwerking",
+        "description": "Gebruik een kloonstempel met een kleine, zachte kwast om haar of details rondom een onderwerp terug te schilderen.",
+        "when_to_use": "Bij retouche dichtbij de randen van het hoofdonderwerp.",
+        "tools": [
+          "Clone Stamp"
+        ],
+        "effect": "Details worden hersteld zonder artefacten in de achtergrond."
+      },
+      {
+        "name": "Kleur aanpassen via overvloeimodus",
+        "description": "Schilder met een kleur uit de omgeving op een nieuwe laag en zet de overvloeimodus op 'Kleur' om kleurvlekken te elimineren.",
+        "when_to_use": "Bij restkleuren van een verwijderd object.",
+        "tools": [
+          "Brush",
+          "Blend Mode"
+        ],
+        "effect": "De kleur in het retouchegebied wordt gelijk aan de omgeving."
+      },
+      {
+        "name": "Textuur toevoegen met healing brush",
+        "description": "Sample textuur van een vergelijkbaar gebied en schilder dit in op een vlekkerig deel om de realistische structuur te herstellen.",
+        "when_to_use": "Als een automatisch resultaat te glad of onnatuurlijk oogt.",
+        "tools": [
+          "Healing Brush"
+        ],
+        "effect": "De originele textuur keert terug voor een realistisch beeld."
+      }
+    ],
+    "color_approach": "De fotograaf focust op het harmoniseren van kleur door ongewenste kleurafwijkingen te corrigeren met een 'Kleur' overvloeimodus. Dit zorgt voor een rustig en uniform beeld.",
+    "local_adjustments": "Lokale aanpassingen worden uitgevoerd via selecties met de lasso-tool in het Content-Aware Fill venster. Maskers worden ingezet om retouche niet op het onderwerp te laten inwerken.",
+    "what_to_avoid": [
+      "Het toepassen van retouche direct op de achtergrondlaag",
+      "Het overmatig werken in hetzelfde gebied zonder nieuwe lagen"
+    ],
+    "best_for": "Portret- en omgevingsfoto's met storende achtergrondelementen.",
+    "unique_insights": [
+      "Gebruik 'Nieuwe laag' als output binnen het Content-Aware dialoogvenster om interferentie tussen opeenvolgende acties te voorkomen.",
+      "Caps Lock aan op het toetsenbord kan de cursor in Photoshop onzichtbaar maken; check dit als de retouche-cirkel verdwijnt.",
+      "Gebruik een kloonstempel met de overvloeimodus 'Lichten' om donkere vlekken in een achtergrond uniform op te lichten zonder de textuur te verliezen."
+    ],
+    "style_preview": "De stijl is gericht op een clean en professioneel eindresultaat waarbij geen enkel spoor van bewerking zichtbaar is. Het proces is systematisch en efficiënt, ideaal voor fotografen die snel willen werken zonder kwaliteitsverlies. De bewerkingen zijn subtiel en gericht op behoud van natuurlijke textuur en kleur."
+  },
+  {
+    "video_title": "Photoshop Playbook: Changing Orientation From Portrait to Landscape and Beyond",
+    "photographer_name": "Adobe Photoshop",
+    "youtube_url": "https://www.youtube.com/watch?v=nVkVLtJjsAs",
+    "genre": [
+      "landschap",
+      "portret"
+    ],
+    "light_conditions": [
+      "daglicht"
+    ],
+    "mood": [
+      "levendig"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Dynamisch en vervormingsvrij",
+    "philosophy": "Het aanpassen van de beeldverhouding hoeft niet ten koste te gaan van het onderwerp. Door het gebruik van intelligente schaaltechnieken kunnen pixels worden toegevoegd zonder de essentie van het beeld te vervormen. Deze techniek biedt maximale creatieve vrijheid bij het aanpassen van de oriëntatie.",
+    "workflow_order": [
+      "stap 1: vergroot de canvasgrootte naar de gewenste verhouding",
+      "stap 2: maak een ruwe selectie van het hoofdonderwerp",
+      "stap 3: sla deze selectie op als kanaal",
+      "stap 4: pas content-aware scale toe met het opgeslagen kanaal als bescherming"
+    ],
+    "techniques": [
+      {
+        "name": "Content-Aware Scale",
+        "description": "Schaal het canvas waarbij pixels worden toegevoegd in niet-belangrijke gebieden voor de verhoudingsaanpassing.",
+        "when_to_use": "Wanneer de oriëntatie van een foto veranderd moet worden zonder uit te snijden.",
+        "tools": [
+          "Content-Aware Scale"
+        ],
+        "effect": "Het beeld wordt breder of hoger zonder dat het onderwerp vervormt."
+      },
+      {
+        "name": "Bescherming van onderwerpen",
+        "description": "Bescherm specifieke gebieden (zoals mensen of gebouwen) tijdens het schalen door een selectie te laden in het 'Bescherm'-menu.",
+        "when_to_use": "Bij scènes met belangrijke onderwerpen die niet mogen vervormen.",
+        "tools": [
+          "Quick Selection Tool",
+          "Save Selection"
+        ],
+        "effect": "Het onderwerp behoudt zijn originele verhoudingen terwijl de rest schaalt."
+      },
+      {
+        "name": "Canvasvergroting",
+        "description": "Vergroot het canvas handmatig voor de nieuwe compositie-eisen.",
+        "when_to_use": "Voor het creëren van ruimte voor nieuwe beeldoriëntaties.",
+        "tools": [
+          "Canvas Size"
+        ],
+        "effect": "Er ontstaat lege ruimte die opgevuld kan worden."
+      },
+      {
+        "name": "Snelle selectie voor maskers",
+        "description": "Maak een snelle selectie om gebieden te isoleren die beschermd moeten worden tijdens schaalbewerkingen.",
+        "when_to_use": "Voorafgaand aan het toepassen van Content-Aware Scale.",
+        "tools": [
+          "Quick Selection Tool"
+        ],
+        "effect": "Een selectie die dient als basis voor de bescherming."
+      },
+      {
+        "name": "Selectie uitbreiden",
+        "description": "Breid de selectie van een onderwerp uit met een kleine marge om het effect van de schaling zachter te laten verlopen.",
+        "when_to_use": "Wanneer je een onderwerp exact wilt beschermen zonder zichtbare overgang.",
+        "tools": [
+          "Modify Selection"
+        ],
+        "effect": "De bescherming van het onderwerp is effectiever door een extra buffer."
+      }
+    ],
+    "color_approach": "Kleurbeheer is hier secundair aan vorm; de focus ligt op het behoud van de integriteit van de pixels en kleuren in de onderwerpen tijdens het schaalproces.",
+    "local_adjustments": "Lokale bescherming wordt gerealiseerd via opgeslagen selecties die fungeren als 'safe zone' voor de Content-Aware Scale tool.",
+    "what_to_avoid": [
+      "Direct schalen zonder selectie van belangrijke onderwerpen",
+      "Te grote canvasvergrotingen die leiden tot artefacten"
+    ],
+    "best_for": "Landschappen en portretten die naar verschillende formaten moeten worden omgezet.",
+    "unique_insights": [
+      "Content-Aware Scale werkt het beste in gebieden met veel herhalende informatie, zoals luchten, waardoor vervorming van het hoofdonderwerp wordt geminimaliseerd.",
+      "Het opslaan van een selectie als kanaal is cruciaal om consistentie te behouden als je later moet terugkeren naar de schaalbewerking.",
+      "Bij het uitbreiden van de selectie voor bescherming is een kleine buffer vaak voldoende om de overgang tussen onderwerp en achtergrond natuurlijk te houden."
+    ],
+    "style_preview": "Deze stijl is puur functioneel en technisch van aard, gericht op het redden van een compositie en het aanpassen naar een bruikbaar formaat. De bewerking is onzichtbaar en legt de nadruk op pixel-behoud in plaats van artistieke expressie. Ideaal voor commerciële of sociale media-toepassingen waarbij oriëntaties moeten wisselen."
+  },
+  {
+    "video_title": "Make Your Landscapes POP: Adobe Camera RAW (PRO Excerpt)",
+    "photographer_name": "Aaron Nace",
+    "youtube_url": "https://www.youtube.com/watch?v=Uad5tNDdx00",
+    "genre": [
+      "landschap"
+    ],
+    "light_conditions": [
+      "overcast"
+    ],
+    "mood": [
+      "levendig"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Contrastrijk, verzadigd landschap",
+    "philosophy": "Een landschapsfoto is pas af als de kleuren en het contrast de kijker echt in het beeld trekken. Door het gebruik van gerichte aanpassingen in de lucht en de voorgrond wordt een gebalanceerd en krachtig beeld gecreëerd. De nadruk ligt op het onthullen van verborgen details in zowel schaduwen als hooglichten.",
+    "workflow_order": [
+      "stap 1: pas lenscorrecties toe",
+      "stap 2: selecteer de voorgrond met een aanpassingskwast",
+      "stap 3: verhoog contrast en helderheid in de voorgrond",
+      "stap 4: pas de lucht aan met een nieuwe aanpassingskwast en verhoog contrast"
+    ],
+    "techniques": [
+      {
+        "name": "Lokaal contrast met aanpassingskwast",
+        "description": "Verhoog de helderheid (Clarity) in specifieke delen om details in texturen naar voren te halen.",
+        "when_to_use": "Bij landschappen waarbij voorgrond of lucht wat dof ogen.",
+        "tools": [
+          "Adjustment Brush"
+        ],
+        "effect": "Textuur en details worden scherper en duidelijker zichtbaar."
+      },
+      {
+        "name": "Kleurcorrectie met doelgerichte aanpassingen",
+        "description": "Verander individuele kleuren (zoals tint/verzadiging) voor een rijkere toon in specifieke gebieden.",
+        "when_to_use": "Als specifieke kleuren in de natuurlijke omgeving niet optimaal zijn.",
+        "tools": [
+          "Targeted Adjustment Tool"
+        ],
+        "effect": "Kleurtonen worden dieper en natuurlijker."
+      },
+      {
+        "name": "Belichtingsbalans tussen lucht en land",
+        "description": "Pas belichting en highlights onafhankelijk aan in lucht en voorgrond om clipping te voorkomen.",
+        "when_to_use": "In situaties met veel contrastverschil tussen lucht en land.",
+        "tools": [
+          "Adjustment Brush"
+        ],
+        "effect": "Alle details blijven behouden, zowel in de lucht als op de grond."
+      },
+      {
+        "name": "Globale contrastverhoging",
+        "description": "Verhoog het totale contrast in de uiteindelijke bewerking om diepte in het hele beeld te krijgen.",
+        "when_to_use": "In de laatste fase van de bewerking voor extra impact.",
+        "tools": [
+          "Basic Adjustments"
+        ],
+        "effect": "Het beeld krijgt meer pit en ruimtelijkheid."
+      },
+      {
+        "name": "Scherpte toevoegen",
+        "description": "Verhoog de verscherping lokaal om belangrijke elementen extra te benadrukken.",
+        "when_to_use": "Voor fijnere details in het hoofdonderwerp.",
+        "tools": [
+          "Adjustment Brush"
+        ],
+        "effect": "Het onderwerp komt scherper en gedefinieerder over."
+      }
+    ],
+    "color_approach": "De fotograaf streeft naar verzadigde en rijke kleuren door doelgerichte aanpassingen te maken. Warme tinten in de voorgrond worden versterkt om de kijker in de foto te trekken.",
+    "local_adjustments": "Maskers (aanpassingskwasten) worden intensief gebruikt om de voorgrond en de lucht afzonderlijk te bewerken voor een optimale balans.",
+    "what_to_avoid": [
+      "Clipping van hooglichten of schaduwen",
+      "Oververzadiging die leidt tot onnatuurlijke kleuren"
+    ],
+    "best_for": "Landschappen met veel textuur, zoals zandduinen, rotsen en wolkenluchten.",
+    "unique_insights": [
+      "Gebruik de 'Overlay'-weergave in de aanpassingskwast om te verifiëren dat je maskers precies de gebieden raken die je wilt bewerken.",
+      "Begin de bewerking altijd met 'Lenscorrecties'; dit is de basis voor elke natuurgetrouwe landschapsfoto.",
+      "Als een lokaal aanpassingseffect niet zichtbaar is, controleer dan of je het masker opnieuw hebt geselecteerd in de 'Aanpassingskwast'-lijst."
+    ],
+    "style_preview": "Deze stijl resulteert in heldere, kleurrijke en gedetailleerde landschappen die een bijna dramatisch effect hebben. De visuele sfeer is uitnodigend en krachtig, perfect voor weidse uitzichten waarbij elk detail telt. Fotografen die deze methode gebruiken, kunnen elk saai raw-bestand transformeren tot een pakkend beeld."
+  },
+  {
+    "video_title": "How to get great portraits & landscapes using digital blending with photoshop",
+    "photographer_name": "Serge Ramelli",
+    "youtube_url": "https://www.youtube.com/watch?v=N9KqZGan9W0",
+    "genre": [
+      "landschap",
+      "portret"
+    ],
+    "light_conditions": [
+      "gouden uur"
+    ],
+    "mood": [
+      "dramatisch"
+    ],
+    "software": [
+      "Lightroom Classic",
+      "Photoshop"
+    ],
+    "style_description": "Warme, cinematische digitale blending",
+    "philosophy": "Digitale blending is de sleutel tot het vangen van de volledige dynamiek van een scène, vooral bij tegenlichtportretten in landschappen. Door het combineren van meerdere belichtingen kun je zowel de details in de lucht als in het onderwerp behouden. Het eindresultaat moet een natuurlijk, maar sfeervol beeld zijn.",
+    "workflow_order": [
+      "stap 1: maak verschillende belichtingen in raw-software",
+      "stap 2: open de belichtingen als lagen in Photoshop",
+      "stap 3: lijn de lagen automatisch uit",
+      "stap 4: pas een zwart masker toe en schilder met wit om de lucht terug te brengen"
+    ],
+    "techniques": [
+      {
+        "name": "Digitale blending via laagmaskers",
+        "description": "Combineer verschillende belichtingen door een underexposed foto als laag bovenop te leggen en delen in te schilderen.",
+        "when_to_use": "Bij scènes met een extreem contrastverschil (bijv. tegenlichtportret).",
+        "tools": [
+          "Layer Mask",
+          "Brush Tool"
+        ],
+        "effect": "Lucht en onderwerp zijn beide perfect belicht."
+      },
+      {
+        "name": "Automatisch uitlijnen van lagen",
+        "description": "Gebruik de uitlijnfunctie in Photoshop om handmatige verschuivingen tussen belichtingen te corrigeren.",
+        "when_to_use": "Altijd bij blending van foto's uit de hand.",
+        "tools": [
+          "Auto Align Layers"
+        ],
+        "effect": "De beelden liggen perfect over elkaar heen zonder ghosting."
+      },
+      {
+        "name": "Warme witbalans voor sfeer",
+        "description": "Gebruik een zeer warme witbalans om de sfeer van het gouden uur te versterken.",
+        "when_to_use": "Bij portretten in een natuurlijke setting tijdens zonsondergang.",
+        "tools": [
+          "White Balance"
+        ],
+        "effect": "Het beeld krijgt een warme, gouden gloed."
+      },
+      {
+        "name": "Selectief terugschilderen met dekking (Opacity)",
+        "description": "Schilder met een lagere dekking (bijv. 30%) op het masker voor een natuurlijke overgang.",
+        "when_to_use": "Voor subtiele overgangen tussen twee belichtingen rondom een onderwerp.",
+        "tools": [
+          "Brush",
+          "Opacity"
+        ],
+        "effect": "De overgang is onzichtbaar en oogt realistisch."
+      },
+      {
+        "name": "Compositie via gulden snede",
+        "description": "Snijd de afbeelding zodanig bij dat het onderwerp op de lijnen van de gulden snede staat.",
+        "when_to_use": "In de laatste fase van de bewerking voor een betere balans.",
+        "tools": [
+          "Crop Tool"
+        ],
+        "effect": "De compositie wordt sterker en trekt de aandacht naar het onderwerp."
+      }
+    ],
+    "color_approach": "De fotograaf kiest voor een zeer warme, bijna magenta-achtige kleuring in de witbalans. Dit benadrukt de romantiek en de sfeer van het gouden uur in landschappen.",
+    "local_adjustments": "Maskers worden gebruikt om belichtingen te mengen, en gradiëntfilters worden ingezet voor de uiteindelijke verfijning van licht en schaduw.",
+    "what_to_avoid": [
+      "Vergeten lagen uit te lijnen voor blending",
+      "Te agressieve maskers die leiden tot halo's rondom het onderwerp"
+    ],
+    "best_for": "Portretten die zijn gefotografeerd in uitdagende (tegen)lichtomstandigheden in de natuur.",
+    "unique_insights": [
+      "Bij blending van portretten in landschappen, gebruik een lagere dekking (bijv. 30%) bij de overgang naar het onderwerp toe, zodat de natuurlijke belichting op het gezicht behouden blijft.",
+      "Serge adviseert vaak om meerdere belichtingen (+2, 0, -2) te schieten om in de post-productie altijd de perfecte balans te kunnen vinden.",
+      "Na blending is een kleine crop bijna altijd nodig om de randen die ontstaan door automatische uitlijning weg te werken."
+    ],
+    "style_preview": "Deze stijl is warm, sfeervol en filmisch, perfect voor portretten die een verhaal vertellen in een groot landschap. Het is een bewerkingsstijl voor fotografen die graag de sfeer van een moment versterken in plaats van enkel de werkelijkheid te documenteren. Het resultaat oogt professioneel en vol leven."
+  },
+  {
+    "video_title": "Adobe Photoshop Tutorial: How To SWAP SKIES In Your Landscape Photos",
+    "photographer_name": "Jared Polin",
+    "youtube_url": "https://www.youtube.com/watch?v=pHrmgjM_GSk",
+    "genre": [
+      "landschap"
+    ],
+    "light_conditions": [
+      "daglicht"
+    ],
+    "mood": [
+      "dramatisch"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Dramatische lucht-vervanging",
+    "philosophy": "Een goede lucht kan een gewone landschapsfoto naar een hoger niveau tillen. Door het gebruik van laagmaskers kun je luchtpartijen van verschillende momenten naadloos in elkaar over laten lopen. De kern van deze bewerking is precisie in het masker en het behoud van natuurlijke texturen.",
+    "workflow_order": [
+      "stap 1: kopieer de betere lucht-laag bovenop de foto",
+      "stap 2: voeg een laagmasker toe",
+      "stap 3: schilder de nieuwe lucht in met een zachte, zwarte kwast",
+      "stap 4: verfijn het masker met witte kwast voor correcties"
+    ],
+    "techniques": [
+      {
+        "name": "Lucht-swap met laagmaskers",
+        "description": "Leg een nieuwe luchtlaag bovenop en gebruik een masker om de oude lucht te verbergen en de nieuwe te tonen.",
+        "when_to_use": "Bij landschappen met een saaie of overbelichte lucht.",
+        "tools": [
+          "Layer Mask",
+          "Brush Tool"
+        ],
+        "effect": "De foto krijgt een compleet nieuwe, indrukwekkende lucht."
+      },
+      {
+        "name": "Hardheid van kwast aanpassen",
+        "description": "Pas de hardheid (Hardness) van de kwast aan voor een natuurlijke of juist strakke overgang op het masker.",
+        "when_to_use": "Voor een realistische overgang tussen lucht en bergen/horizon.",
+        "tools": [
+          "Brush Tool",
+          "Hardness"
+        ],
+        "effect": "De overgang tussen lucht en land oogt realistisch."
+      },
+      {
+        "name": "Voorgrond- en achtergrondkleuren schakelen",
+        "description": "Gebruik 'X' om snel te wisselen tussen zwart (verbergen) en wit (tonen) in een masker.",
+        "when_to_use": "Tijdens het maskeren om fouten snel te herstellen.",
+        "tools": [
+          "Switch Foreground/Background Colors"
+        ],
+        "effect": "Snelle, efficiënte correcties op het masker."
+      },
+      {
+        "name": "Penseelgrootte aanpassen",
+        "description": "Gebruik de haakjes-toetsen ([ ]) om de penseelgrootte continu aan te passen.",
+        "when_to_use": "Bij maskeren in gebieden met wisselende details.",
+        "tools": [
+          "Brush Tool"
+        ],
+        "effect": "Preciezer werken op lastige punten."
+      },
+      {
+        "name": "Uitsluiting van objecten",
+        "description": "Maskeer de lucht rondom bergen of onderwerpen zorgvuldig om geen onnatuurlijke randen te krijgen.",
+        "when_to_use": "Altijd bij het plaatsen van een lucht over een complex landschap.",
+        "tools": [
+          "Brush Tool"
+        ],
+        "effect": "Het landschap blijft onaangetast en ziet er natuurlijk uit."
+      }
+    ],
+    "color_approach": "De focus ligt op het matchen van de kleur en lichtval van de nieuwe lucht met de originele voorgrond. Dit zorgt voor een overtuigend eindbeeld.",
+    "local_adjustments": "Maskers vormen de kern van deze techniek; Jared werkt bijna uitsluitend met zwarte en witte penselen op een maskerlaag.",
+    "what_to_avoid": [
+      "Het gebruik van een te harde kwast voor natuurlijke overgangen",
+      "Het over het hoofd zien van kleine details in het landschap tijdens het maskeren"
+    ],
+    "best_for": "Landschappen gefotografeerd onder saai, vlak licht.",
+    "unique_insights": [
+      "Caps Lock aan zorgt ervoor dat de cursor-indicator voor de kwast verdwijnt; check dit altijd als je niet ziet waar je schildert.",
+      "Bij gebruik van laagmaskers is het essentieel om te controleren of het masker-icoontje geselecteerd is voordat je begint met schilderen.",
+      "Een zachte kwast (lage hardheid) is cruciaal voor een natuurlijke lucht-overgang; harde randen verraden direct dat de lucht niet origineel is."
+    ],
+    "style_preview": "De stijl is gericht op een indrukwekkend, visueel aantrekkelijk eindresultaat. Jared leert de kijker de technieken om een saaie scène te transformeren tot een dramatisch beeld zonder de originaliteit van het landschap te verliezen. De aanpak is no-nonsense en toegankelijk voor elke fotograaf."
   }
 ]

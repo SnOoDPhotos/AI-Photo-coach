@@ -9,7 +9,7 @@
 :root{--bg:#0d0d0d;--surface:#161616;--border:#2a2a2a;--accent:#e8c547;--text:#f0ede8;--muted:#6b6762;--success:#4caf7d;--error:#e05c5c}
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:var(--bg);color:var(--text);font-family:sans-serif;min-height:100vh}
-header{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:28px 40px 20px;border-bottom:1px solid var(--border);position:relative;background:var(--surface);text-align:center}
+header{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:64px 40px 20px;border-bottom:1px solid var(--border);position:relative;background:var(--surface);text-align:center}
 .logo{display:flex;flex-direction:column;align-items:center}
 .logo span{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--muted);margin-top:6px}
 .admin-badge{font-family:monospace;font-size:11px;letter-spacing:2px;color:var(--accent);border:1px solid var(--accent);padding:4px 12px}
@@ -60,7 +60,7 @@ input:focus,textarea:focus{border-color:var(--accent)}
 <body>
 
 <header>
-  <div style="position:absolute;top:16px;right:20px;display:flex;align-items:center;gap:12px">
+  <div style="position:absolute;top:14px;right:20px;display:flex;align-items:center;gap:10px;font-size:12px">
     <div class="user-info" id="userInfo" style="display:none">
       <span id="userNameDisplay"></span>
       <button class="logout-btn" onclick="logout()">UITLOGGEN</button>

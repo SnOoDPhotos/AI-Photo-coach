@@ -8128,87 +8128,91 @@
   },
   {
     "video_title": "100% Lightroom workflow for Infrared Photography",
-    "photographer_name": "Rob Shea Photography",
+    "photographer_name": "Rob Shea",
     "youtube_url": "https://www.youtube.com/watch?v=OS3JjWb99X8",
     "genre": [
-      "landschap",
-      "infraroodfotografie"
+      "infraroodfotografie",
+      "landschap"
     ],
     "light_conditions": [
-      "harde zon",
-      "overdag"
+      "daglicht",
+      "harde zon"
     ],
     "mood": [
-      "surrealistisch",
-      "levendig",
-      "fine art"
+      "moody",
+      "sfeervol"
     ],
     "software": [
       "Lightroom Classic"
     ],
-    "style_description": "Infrared Color Swap",
-    "philosophy": "Het verplaatsen van de volledige workflow voor infraroodfotografie naar Lightroom door gebruik te maken van aangepaste kleurwissel-profielen. Dit elimineert de noodzaak om te schakelen tussen verschillende programma's (zoals Photoshop) voor het corrigeren van de witbalans en het omwisselen van kleurkanalen, terwijl de flexibiliteit om achteraf profielen en witbalans aan te passen behouden blijft.",
+    "style_description": "Custom Infrared Color Styles",
+    "philosophy": "De bewerkingsfilosofie draait om het volledig binnen één applicatie houden van de infraroodworkflow zonder omwegen naar externe pixel-editors. Door gebruik te maken van aangepaste kleurprofielen met een uitgebreid witbalansbereik blijft het creatieve proces flexibel en non-destructief. Het doel is om direct visuele controle te hebben over surrealistische kleurverschuivingen terwijl alle lokale maskers en basisaanpassingen live aanpasbaar blijven.",
     "workflow_order": [
-      "Stap 1: Toepassen van een infrarood temperatuurprofiel (-50 of -100) om het bereik van de witbalans-slider uit te breiden.",
-      "Stap 2: Corrigeren van de witbalans met de picker op een neutraal element in de foto.",
-      "Stap 3: Kiezen van een specifiek creatief kleurwissel-profiel (Color Swap Profile) in de Lightroom Profile Browser.",
-      "Stap 4: Globale belichtingsaanpassingen maken (zoals Highlights verlagen voor wolkendetail) en contrast toepassen via de Tone Curve.",
-      "Stap 5: Lokale aanpassingen maken met maskers (lucht, voorgrond, specifieke objecten) om contrast, kleurtemperatuur en textuur te verfijnen."
+      "stap 1: pas een infrarood kleurprofiel toe om het temperatuurbereik van de witbalans uit te breiden",
+      "stap 2: zet een nauwkeurige basiswitbalans met de pipet op een neutraal element zoals wolken of stenen",
+      "stap 3: selecteer een specifieke kleurverschuiving in de profielbrowser om de creatieve sfeer te bepalen",
+      "stap 4: verlaag highlights voor detailbehoud en pas lokale objectmaskers toe voor contrastscheiding"
     ],
     "techniques": [
       {
-        "name": "Infrared White Balance Extension",
-        "description": "Het toepassen van een vooraf gemaakt cameraprofiel (zoals 'Infrared Temp -100') om de beperking van de standaard Lightroom witbalans-slider te omzeilen, zodat er correct op wolken of structuren gewitbalanst kan worden.",
-        "when_to_use": "Altijd aan het begin van de infrarood workflow bij RAW-bestanden.",
+        "name": "Profiel-gebaseerde witbalansuitbreiding",
+        "description": "Pas een specifiek infraroodprofiel toe zoals 'infrared temp -100' om het standaard witbalansbereik van de software te verleggen zodat een neutrale basis gecreëerd kan worden.",
+        "when_to_use": "Direct bij de start van het bewerken van een infrarood-rawbestand om de extreme rode zweem te neutraliseren.",
         "tools": [
-          "Basic Panel - Profile"
+          "Profile"
         ],
-        "effect": "Zorgt ervoor dat de rode infrarood-zweem verdwijnt en er een bruikbare basis ontstaat met goud/blauwe tinten."
+        "effect": "De temperatuurschuif krijgt een veel groter bereik waardoor wolken en neutrale objecten werkelijk grijs of wit worden."
       },
       {
-        "name": "Live Creative Profile Swapping",
-        "description": "Het selecteren van een creatief profiel uit de browser nadat de witbalans is ingesteld, om direct een visuele preview van verschillende kleurstijlen te zien.",
-        "when_to_use": "Zodra de basiswitbalans correct is ingesteld.",
+        "name": "Highlight-reductie voor wolkendetail",
+        "description": "Verlaag de highlights handmatig naar een waarde rond de -50 om subtiele structuren in heldere partijen terug te halen.",
+        "when_to_use": "Bij infraroodfoto's met felle wolkenluchten om uitbating te voorkomen.",
         "tools": [
-          "Profile Browser"
+          "Basic"
         ],
-        "effect": "Verandert de kleur van de lucht en bladeren naar specifieke creatieve combinaties (bijv. blauwe lucht met witte, roze of gouden vegetatie)."
+        "effect": "Herstelt textuur en diepte in de wolken zonder de algehele belichting van de middentonen te beïnvloeden."
       },
       {
-        "name": "Mask Subtraction with Objects Tool",
-        "description": "Het maken van een automatisch Sky-masker en hier vervolgens via de 'Subtract'-functie delen van het landschap (zoals bergen) uit filteren met de Object-tool.",
-        "when_to_use": "Wanneer het automatische luchtmasker 'bloedt' of morst op de randen van het landschap.",
+        "name": "Masker-aftrekking met objectselectie",
+        "description": "Creëer een luchtmasker en gebruik de 'subtract'-functie met de object-pipet om overlappende bergketens of bomen nauwkeurig uit de selectie te verwijderen.",
+        "when_to_use": "Wanneer automatische luchtselecties overlopen of bloeden in de randen van het landschap.",
         "tools": [
-          "Masking Panel - Sky Mask + Subtract Object"
+          "Masking"
         ],
-        "effect": "Een perfect schone scheiding tussen de lucht en de horizon zonder ongewenste kleurranden."
+        "effect": "Er ontstaat een perfect zuivere scheiding tussen de lucht en de voorgrond zonder vreemde kleurranden."
       },
       {
-        "name": "Local Mask Temperature Inversion",
-        "description": "Het aanpassen van de temperatuur-slider binnen een lokaal masker (bijv. op de voorgrond) om complementaire kleuren te versterken of elementen juist te laten blenden.",
-        "when_to_use": "Voor het creëren van kleurscheiding tussen neutrale elementen en de gekleurde vegetatie.",
+        "name": "Lineair verloop voor voorgrond-dimming",
+        "description": "Trek een lineair verloopmasker vanaf de onderzijde en verlaag de belichting met ongeveer een derde stop (-0.33) om de helderheid te temperen.",
+        "when_to_use": "Wanneer een lichte voorgrond te dominant is en de aandacht van het centrale onderwerp afleidt.",
         "tools": [
-          "Masking Panel - Linear Gradient / Object Mask - Temp slider"
+          "Masking"
         ],
-        "effect": "Verschuift de kleur lokaal (werkt bij een color swap omgekeerd: koeler maken voegt geel toe, warmer maken voegt blauw toe) voor betere compositiescheiding."
+        "effect": "De blik van de kijker wordt subtiel naar het centrum en de diepte van de compositie geleid."
+      },
+      {
+        "name": "Lut-gebaseerde contrastverhoging op afstand",
+        "description": "Selecteer een object of bergketen in de achtergrond via een masker en verhoog de Dehaze-waarde handmatig naar +25 om atmosferische storing te neutraliseren.",
+        "when_to_use": "Bij verre landschapselementen die door infraroodwerking of warmte wazig en contrastarm ogen.",
+        "tools": [
+          "Masking"
+        ],
+        "effect": "De details en textuur in de verre bergen worden scherper en poppen visueel naar voren."
       }
     ],
-    "color_approach": "Er wordt gewerkt met een non-destructieve benadering van kleur via profielen. In plaats van kanalen handmatig te mixen in Photoshop, verschuiven de Lightroom-profielen de kleurkanalen (zoals rood en blauw). Omdat dit in Lightroom gebeurt, blijft de witbalans-slider naderhand 'live' bruikbaar om de intensiteit en tinten van de gewisselde kleuren subtiel warmer of koeler af te stellen.",
-    "local_adjustments": "Maskers worden intensief gebruikt om de foto op te bouwen. Er wordt gestart met een luchtmasker (vaak met extra Dehaze voor dramatisere wolken). Dit masker wordt gekopieerd en omgekeerd ('Duplicate and Invert') om direct de grond te bewerken voor extra textuur en clarity. Daarnaast worden object-maskers gebruikt om specifieke struiken of bergen lokaal op te lichten of meer contrast te geven.",
+    "color_approach": "Kleur wordt benaderd als een volledig manipuleerbaar element via profielen die de kleurelementen 180 graden omkeren. Na de omkering wordt de witbalansschuif live gebruikt: verschuiven naar blauw voegt warmere tonen toe aan de vegetatie, terwijl verschuiven naar geel de blauwtinten in de lucht versterkt.",
+    "local_adjustments": "Lokale aanpassingen worden intensief ingezet via AI-objectmaskers en lineaire verlopen om de witbalans, textuur en helderheid van specifieke beeldpartijen (zoals een enkele struik of een bergketen) onafhankelijk van elkaar te finetunen.",
     "what_to_avoid": [
-      "Vermijd het bewerken van de foto in de standaard Adobe Color-modus, omdat de witbalans-slider dan niet ver genoeg reikt voor infrarood.",
-      "Vermijd te veel 'Clarity' op vegetatie om te voorkomen dat de foto een te harde of buitenaardse uitstraling krijgt; gebruik soms juist wat negatieve clarity om highlights te verzachten.",
-      "Vermijd het vroegtijdig exporteren naar andere software; houd de workflow zo lang mogelijk in Lightroom zodat alle maskers en profielkeuzes tot het einde flexibel aanpasbaar blijven."
+      "Vermijd het overslaan van de profielstap voor de witbalans omdat de standaardschuifregelaars niet ver genoeg reiken om de rode raw-zweem te corrigeren.",
+      "Gebruik geen extreme Clarity op vegetatie via maskers om te voorkomen dat de fijne bladerstructuur er te hard en onnatuurlijk uit gaat zien."
     ],
-    "best_for": "Landschapsfoto's die gemaakt zijn met een omgebouwde infraroodcamera (specifiek getest op 590nm, maar toepasbaar op filters van 550nm tot 720nm) waarbij men volledige controle wil over surrealistische kleurwissels.",
+    "best_for": "Fotografen met een full-spectrum of omgebouwde camera die landschappen met bladeren en wolkenpartijen snel en creatief willen omzetten in surrealistische kleurenpaletten.",
     "unique_insights": [
-      "Wanneer je de witbalans instelt vóórdat je de Profile Browser opent, worden alle miniaturen in de browser live geüpdatet met de juiste kleuren, wat het kiezen van een sfeer/mood enorm vergemakkelijkt.",
-      "Bij gebruik van een kleurwissel-profiel in Lightroom werkt de temperatuur-slider in maskers omgekeerd aan wat je verwacht: de blauwe kant voegt geel toe en de gele kant maakt het beeld juist blauwer."
+      "Door de profielwissel volledig aan het einde van de workflow te doen blijven alle complexe maskers en curve-instellingen ongewijzigd behouden terwijl het hele kleurenpalet direct omslaat.",
+      "Het manipuleren van de temperatuurschuif binnen een masker werkt bij infrarood omgekeerd aan wat men verwacht; verschuiven naar blauw maakt het geselecteerde object geler.",
+      "Verschillende kleurverschuivingsprofielen die visueel identiek lijken gebruiken een fundamenteel andere wiskundige methode (kanaalmixer versus hue-aanpassing) waardoor ze later in de HSL-fase heel anders reageren op nabewerking."
     ],
-    "style_preview": "Deze bewerkingsfilosofie transformeert landschapsfoto's naar een surrealistische en droomachtige sfeer, waarbij de natuurlijke kleuren op spectaculaire wijze worden omgezet. De kern ligt in het stroomlijnen van de volledige infrarood workflow binnen Lightroom, wat ongekende controle biedt over deze dramatische kleurwissels zonder de noodzaak om van software te wisselen. Deze stijl is bij uitstek geschikt voor landschapsfotografie met een omgebouwde infraroodcamera, met name tussen 550nm en 720nm, waar men de traditionele groene tinten wil omzetten naar unieke, vaak levendige of juist ijzige kleuren. Het resultaat is een visueel verbluffend beeld met een eigenzinnige esthetiek, waarbij de fotograaf de vrijheid heeft om een volledig nieuwe, vaak buitenaardse realiteit te creëren.",
-    "_warnings": [
-      "naam lijkt op kanaalnaam (photography)"
-    ]
+    "style_preview": "Deze stijl biedt een dromerige en buitenaardse visuele sfeer met diepblauwe of amberkleurige luchten gecombineerd met helderwitte of pastelkleurige bladeren. De kernfilosofie is dat de werkelijkheid slechts een startpunt is voor een schilderachtige interpretatie van licht. Het werkt perfect voor zonovergoten landschappen met veel loofbomen en dramatische wolkenluchten. Als fotograaf kun je rekenen op een snelle, non-destructieve workflow met een hoogst creatief en uniek eindresultaat."
   },
   {
     "video_title": "Editing Infrared to B&W with Lightroom",
@@ -55339,5 +55343,624 @@
       "Gebruik een 'feathering' aanpak door je masker-opaciteit stapsgewijs te verhogen; dit is de enige manier om die professionele overgang te krijgen op een telefoon."
     ],
     "style_preview": "Een mobiele, intuïtieve en zeer toegankelijke stijl. Het resultaat is verrassend gedetailleerd en artistiek. Ideaal voor het snel in het veld creëren van gelaagde, mysterieuze portretten."
+  },
+  {
+    "video_title": "Lightroom LUT vs. Hue for Color Infrared Editing",
+    "photographer_name": "Rob Shea",
+    "youtube_url": "https://www.youtube.com/watch?v=GCL-oTMeLyY",
+    "genre": [
+      "infraroodfotografie",
+      "landschap"
+    ],
+    "light_conditions": [
+      "daglicht",
+      "bewolkt"
+    ],
+    "mood": [
+      "levendig",
+      "naturalistisch"
+    ],
+    "software": [
+      "Lightroom Classic",
+      "Lightroom Mobile"
+    ],
+    "style_description": "Subtle Versus Bold Infrared",
+    "philosophy": "De filosofie richt zich op het vergelijken van interne Lightroom-technieken om de noodzaak van Photoshop te elimineren bij het omwisselen van kleuren. Het doel is om de juiste methode te kiezen op basis van de gewenste kleurintensiteit en esthetiek. Snelheid en behoud van de flexibele raw-workflow binnen één catalogus staan hierbij centraal.",
+    "workflow_order": [
+      "stap 1: pas een witbalansprofiel toe om het kelvin-bereik te verruimen",
+      "stap 2: selecteer een neutrale referentie in de foto om de rode zweem te elimineren",
+      "stap 3: kies tussen een lut-profiel voor subtiele tinten of de lokale kleurtint (Hue) voor felle kleuren",
+      "stap 4: voer de kleurverschuiving uit en corrigeer eventuele contrastafwijkingen in de basistonen"
+    ],
+    "techniques": [
+      {
+        "name": "Lokale kleurtintverschuiving (Local Hue Adjustment)",
+        "description": "Gebruik een globaal verloopmasker dat de gehele foto omvat en verschuif de Hue-regelaar handmatig met exact 180 graden om de kleuren om te draaien.",
+        "when_to_use": "Wanneer je een snelle kleurwissel wilt uitvoeren zonder externe LUT-profielen te hoeven installeren.",
+        "tools": [
+          "Masking"
+        ],
+        "effect": "Veroorzaakt een directe en zeer krachtige kleurwisseling met een hoge verzadiging in de vegetatie."
+      },
+      {
+        "name": "LUT-gebaseerde kleurwisseling via profielen",
+        "description": "Selecteer een vooraf gemaakte kleurprofiel-LUT in de profielbrowser om de rode en blauwe kleurkanalen intern te hermappen.",
+        "when_to_use": "Als een zachtere, meer schilderachtige en subtielere kleurtransitie in de bladeren gewenst is.",
+        "tools": [
+          "Profile"
+        ],
+        "effect": "De rode infraroodzweem verandert direct in een gecontroleerde blauwe lucht met zachte, natuurgetrouwe wittinten in de vegetatie."
+      },
+      {
+        "name": "Witbalansbepaling op wolkenstructuren",
+        "description": "Gebruik de witbalanspipet en klik specifiek in het helderste, niet-uitgebeten deel van een wolk om de basisneutralisatie te forceren.",
+        "when_to_use": "Bij infraroodopnames met een 590nm of 720nm filter waar duidelijke cumuluswolken aanwezig zijn.",
+        "tools": [
+          "Basic"
+        ],
+        "effect": "De wolken worden zuiver wit en de lucht krijgt een egale, teal- of cyaanblauwe basistint."
+      },
+      {
+        "name": "Witbalans-neutralisatie op kunstmatige objecten",
+        "description": "Gebruik de witbalanspipet op een betonnen stoep of een neutraal wegdek in plaats van de vegetatie om een stabieler kleurcontrast te bereiken.",
+        "when_to_use": "In stedelijke landschappen of parken waar heldere wolken ontbreken om als referentie te dienen.",
+        "tools": [
+          "Basic"
+        ],
+        "effect": "Het beton krijgt een neutrale grijstint waardoor de omliggende vegetatie zuiverder van kleur loskomt."
+      },
+      {
+        "name": "Contrastcorrectie bij egale luchten",
+        "description": "Verhoog de contrastregelaar handmatig naar +20 en pas een lichte S-curve toe om de vlakheid van een bewolkte infraroodopname tegen te gaan.",
+        "when_to_use": "Bij infraroodopnames gemaakt onder een saai, grijs of zacht bewolkt bladerdek.",
+        "tools": [
+          "Basic",
+          "Tone Curve"
+        ],
+        "effect": "Brengt de typische tonale scheiding en het 'glow'-effect van infraroodfotografie terug in een contrastloze opname."
+      }
+    ],
+    "color_approach": "Kleur wordt gestuurd door de keuze van de omwisselmethode: LUT-profielen emuleren de subtiele overvloeimodi van Photoshop-aanpassingslagen en geven zachtere resultaten, terwijl de interne Hue-regelaar de kleurspectra hard verschuift wat resulteert in felle, brisante en verzadigde tinten.",
+    "local_adjustments": "Lokale maskers worden hier op een onconventionele manier ingezet: er wordt een masker over de héle foto geplaatst om de techniek van de lokale kleurtintverschuiving (Local Hue) toe te passen op het gehele beeldvlak.",
+    "what_to_avoid": [
+      "Vermijd het blindelings gebruiken van dezelfde witbalansplek bij verschillende methodes; een LUT vereist soms een andere neutrale pixel dan een Hue-verschuiving.",
+      "Voorkom oververzadiging bij de Hue-methode op bewolkte dagen om te verhinderen dat er storende kleurnoise in de fijne takken ontstaat."
+    ],
+    "best_for": "Fotografen die uitsluitend in Lightroom werken (inclusief mobiel of tablet) en de exacte esthetische verschillen tussen subtiele en felle infraroodkleuren willen beheersen.",
+    "unique_insights": [
+      "De June 2020 update van Lightroom introduceerde de Local Hue-slider die oorspronkelijk voor retouche was bedoeld, maar perfect misbruikt kan worden voor een complete infrarood-kleurwissel.",
+      "De LUT-methode levert consistent zachtere en meer pastelachtige kleurovergangen in de bladeren, terwijl de Hue-schuifregelaar de neiging heeft om zeer felle en gedurfde kleuren te produceren.",
+      "Zelfs bij opnames gemaakt met een standaard 720nm filter (dat bekend staat om bijna monochrome resultaten) levert de Hue-methode verrassend veel bruikbare kleursaturatie op."
+    ],
+    "style_preview": "Deze benadering biedt twee duidelijke stijlen: een zachte, schilderachtige variant met subtiele kleurschakeringen en een krachtige, pop-art-achtige variant met felle, verzadigde contrasten. Het laat zien hoe flexibel moderne raw-software is geworden. De stijl is uitermate geschikt voor landschappen met historische architectuur en weelderig groen. Als fotograaf krijg je hiermee de controle om de kleurintensiteit perfect af te stemmen op de sfeer van de dag."
+  },
+  {
+    "video_title": "How to Edit or Process Infrared Photos in Affinity Photo - Color Channel Swapping",
+    "photographer_name": "Photo Blue",
+    "youtube_url": "https://www.youtube.com/watch?v=kFjUei73YM8",
+    "genre": [
+      "infraroodfotografie",
+      "zwart-wit"
+    ],
+    "light_conditions": [
+      "daglicht",
+      "harde zon"
+    ],
+    "mood": [
+      "rustig",
+      "naturalistisch"
+    ],
+    "software": [
+      "Affinity Photo"
+    ],
+    "style_description": "Clean HighContrast Infrared Basics",
+    "philosophy": "De filosofie stelt dat het omwisselen van de kleurkanalen een verplichte, fundamentele eerste stap is, ongeacht of het einddoel een kleur- of een zwart-witopname is. Door de kanalen in een vroeg stadium om te draaien, krijgt de fotograaf een logische tonale indeling die nauwkeurige controle over filters mogelijk maakt. Eenvoud en visualisatie vormen de kern van deze methode.",
+    "workflow_order": [
+      "stap 1: ontwikkel het raw-bestand naar het affinity-formaat om de pixel-bewerking te starten",
+      "stap 2: open de kanaalmixer en wissel de rode en blauwe waarden 100% met elkaar uit",
+      "stap 3: voeg een witbalans-aanpassingslaag toe en kies met de pipet een neutraal punt op de vegetatie",
+      "stap 4: plaats een zwart-witlaag bovenop de stack en manipuleer de cyaan- en geelniveaus voor contrast"
+    ],
+    "techniques": [
+      {
+        "name": "Klassieke RGB-kanaalwissel",
+        "description": "Voeg een Kanaalmixer-aanpassingslaag toe. Zet in het rode kanaal rood op 0% en blauw op 100%. Schakel over naar het blauwe kanaal en zet rood op 100% en blauw op 0%.",
+        "when_to_use": "Altijd direct na het omzetten van het raw-bestand naar de Photo Persona om de gele of rode zweem te corrigeren.",
+        "tools": [
+          "Channel Mixer"
+        ],
+        "effect": "De onnatuurlijke gele lucht verandert direct in een herkenbare, rustgevende blauwe kleur."
+      },
+      {
+        "name": "Vegetatie-gebaseerde witbalanssturing",
+        "description": "Voeg een Witbalans-aanpassingslaag toe, activeer de picker en klik hiermee direct op een dicht stuk bladeren in de foto.",
+        "when_to_use": "Na de kanaalmixer om de resterende kleurtonen in de vegetatie te neutraliseren en te finetunen naar smaak.",
+        "tools": [
+          "White Balance"
+        ],
+        "effect": "De kleur van de bladeren verschuift subtiel, waardoor ongewenste magentatinten verdwijnen en er een schonere basis ontstaat."
+      },
+      {
+        "name": "Gerichte Cyaan-donkering voor zwart-wit",
+        "description": "Voeg een Zwart-Wit-laag toe en verlaag de cyaan-schuifregelaar handmatig naar een lagere waarde om de luchttonen te onderdrukken.",
+        "when_to_use": "Tijdens een zwart-witconversie van een infraroodfoto om een diepe, stormachtige lucht te simuleren.",
+        "tools": [
+          "Black and White"
+        ],
+        "effect": "De blauwe lucht wordt in de zwart-wotomzetting dramatisch donkerder waardoor witte wolken intenser afsteken."
+      },
+      {
+        "name": "Geel-gestuurde vegetatie-oplichting",
+        "description": "Schuif in de Zwart-Wit-aanpassingslaag de geel-regelaar handmatig significant omhoog om de tonen te bleken.",
+        "when_to_use": "Wanneer de bladeren in de zwart-wotomzetting te grijs of flets ogen en het typische infrarood-effect ontbreekt.",
+        "tools": [
+          "Black and White"
+        ],
+        "effect": "De bladeren en bomen lichten fel wit op, waardoor het karakteristieke 'ijseffect' van infraroodfotografie ontstaat."
+      },
+      {
+        "name": "Rode contraststuring (Red Balance Control)",
+        "description": "Pas de rode schuifregelaar in de zwart-witlaag handmatig aan om schaduwpartijen en microdetails in de boomstammen bij te sturen.",
+        "when_to_use": "Om te voorkomen dat boomstammen en takken structurele details verliezen na de geel-verschuiving.",
+        "tools": [
+          "Black and White"
+        ],
+        "effect": "Herstelt de tonale tekening en het contrast in de donkere houtelementen van de vegetatie."
+      }
+    ],
+    "color_approach": "De benadering van kleur is functioneel: kleur wordt eerst hersteld naar een logische basis (blauwe lucht via de kanaalmixer) om vervolgens als tonale gids te dienen. Bij een zwart-witdoel wordt deze kleurinformatie gebruikt om via de kleurschuiven de ultieme tonale scheiding te forceren.",
+    "local_adjustments": "In deze basisworkflow worden geen lokale maskers gebruikt; de nadruk ligt volledig op de kracht van globale aanpassingslagen die via het lagensysteem over elkaar heen worden gestapeld.",
+    "what_to_avoid": [
+      "Sla het omwisselen van de kanalen niet over bij zwart-wit-infrarood; zonder de kanaalwissel reageren de zwart-watschuiven onlogisch en mis je cruciale contrastcontrole over de lucht.",
+      "Vermijd overmatige verschuivingen in het blauwe kanaal als de lucht na de kanaalwissel hoofdzakelijk cyaan bevat."
+    ],
+    "best_for": "Beginnende infraroodfotografen die de absolute basis van het kanaalwisselen en zwart-wit-infraroodontwikkeling in Affinity Photo willen doorgronden.",
+    "unique_insights": [
+      "Infraroodfoto's rechtstreeks uit een camera met een 720nm filter tonen vaak een extreme gele kleurzweem die sterk doet denken aan een analoog kleurnegatief.",
+      "Zelfs als een foto puur bedoeld is voor zwart-wit, levert een voorafgaande kleurkanaalwissel een veel krachtigere en logischere tonale controle op in de zwart-witlaag.",
+      "Infraroodopnames vertonen een sterk wisselend kleurengedrag in de vegetatie, puur afhankelijk van de hoeveelheid live infraroodlicht en de exacte sensor-filter-combinatie."
+    ],
+    "style_preview": "Deze stijl biedt een serene, heldere en grafische esthetiek, gekenmerkt door diepzwarte luchten en sneeuwwitte vegetatie in de zwart-witmodus. De kernfilosofie is minimalisme en tonale zuiverheid. Het werkt perfect voor strakke parklandschappen met solitaire bomen en open luchten onder fel zonlicht. Voor een fotograaf legt dit een solide, foutloze basis zonder onnodige stilistische franjes."
+  },
+  {
+    "video_title": "How to edit Infrared Photos with Capture One Pro",
+    "photographer_name": "Rob Shea",
+    "youtube_url": "https://www.youtube.com/watch?v=5yrQisDwp9A",
+    "genre": [
+      "infraroodfotografie",
+      "landschap"
+    ],
+    "light_conditions": [
+      "daglicht",
+      "harde zon"
+    ],
+    "mood": [
+      "levendig",
+      "sfeervol"
+    ],
+    "software": [
+      "Capture One"
+    ],
+    "style_description": "Advanced CaptureOne Infrared Palette",
+    "philosophy": "De filosofie is gericht op het breken van de beperkingen van Capture One Pro, dat geen traditionele kanaalmixer bezit. Door de geavanceerde Kleureditor op een inventieve manier in opeenvolgende iteraties te gebruiken, wordt een volledige kleurwisseling gerealiseerd binnen een pure raw-omgeving. Het doel is een snelle, herhaalbare workflow via presets met behoud van de superieure raw-kwaliteit van de software.",
+    "workflow_order": [
+      "stap 1: selecteer de wolken met de witbalanspipet om de raw-basis te neutraliseren",
+      "stap 2: open de geavanceerde kleureditor en selecteer de gele tinten van de lucht",
+      "stap 3: verbreed de kleurwig tot het maximum en verschuif de hue-regelaar herhaaldelijk naar rechts",
+      "stap 4: herhaal deze stappen voor de blauwe vegetatietinten en sla het geheel op als een gebruikerspreset"
+    ],
+    "techniques": [
+      {
+        "name": "Witbalans-neutralisatie op wolkenpartijen",
+        "description": "Gebruik de witbalanspipet in het kleurenpaneel en klik op een pluk schone, heldere wolken om de basistonen recht te trekken.",
+        "when_to_use": "Als eerste stap bij elke infraroodfoto in Capture One om de lucht geel en de vegetatie blauw te maken.",
+        "tools": [
+          "White Balance"
+        ],
+        "effect": "De extreme rode raw-zweem verdwijnt direct, waardoor er een overzichtelijk, tweekleurig startpunt ontstaat."
+      },
+      {
+        "name": "Iteratieve kleurtoon-rotatie (Iterative Hue Shifting)",
+        "description": "Selecteer de lucht met de kleureditor-pipet, verbreed de selectie-wig naar het maximum en schuif de Hue-regelaar naar +30. Sla op en herhaal dit proces exact zes keer op dezelfde kleur.",
+        "when_to_use": "Wanneer je in Capture One een volledige 180-graden kleurwisseling wilt forceren zonder een kanaalmixer te hebben.",
+        "tools": [
+          "Color Editor (Advanced)"
+        ],
+        "effect": "De gele infraroodlucht verschuift stapsgewijs door het spectrum totdat deze een zuivere, diepblauwe kleur bereikt."
+      },
+      {
+        "name": "Vegetatie-hermapping via spectrum-rotatie",
+        "description": "Selecteer de blauwe tinten van de vegetatie met de pipet, maximaliseer het spectrale bereik in de taartdiagram en roteer de Hue-regelaar via zes opeenvolgende stappen naar rechts.",
+        "when_to_use": "Direct na het ombuigen van de lucht om de blauwe bladeren om te zetten naar traditionele warme infraroodkleuren.",
+        "tools": [
+          "Color Editor (Advanced)"
+        ],
+        "effect": "De blauwe bladeren veranderen stapsgewijs in een schitterende, goud-oranje of roze kleurschakering."
+      },
+      {
+        "name": "Saturatie-boasting op geselecteerde kanalen",
+        "description": "Selecteer een specifieke kleurlaag in de geavanceerde kleureditor en verhoog de verzadigingsregelaar handmatig naar een waarde van +15.",
+        "when_to_use": "Wanneer de resulterende blauwe lucht of de warme bladeren na de rotatie wat flets of futloos ogen.",
+        "tools": [
+          "Color Editor (Advanced)"
+        ],
+        "effect": "De gekozen kleur krijgt een krachtige oppepper in intensiteit zonder de omliggende spectrale tonen te vervuilen."
+      },
+      {
+        "name": "Witbalans-finetuning na kleurrotatie",
+        "description": "Pak na de complete kleurwisseling opnieuw de witbalanspipet en experimenteer met lichte variaties op verschillende neutrale elementen.",
+        "when_to_use": "Om de uiteindelijke kleurbalans tussen de bomen en de lucht live bij te sturen naar een koelere of warmere esthetiek.",
+        "tools": [
+          "White Balance"
+        ],
+        "effect": "De geroteerde kleuren reageren live, waardoor de lucht bijvoorbeeld verschuift van diepblauw naar turquoise."
+      }
+    ],
+    "color_approach": "Kleur wordt in Capture One op een unieke, gelaagde manier benaderd via de 'Color Editor Advanced'. Omdat de software geen RGB-kanalen kan splitsen, wordt het kleurspectrum via opeenvolgende verschuivingen van 30 graden handmatig rondgedraaid, wat resulteert in een loepzuivere en verbluffend vloeiende kleurgradatie.",
+    "local_adjustments": "Er worden in deze demonstratie geen lokale maskers gebruikt; alle iteratieve kleureditor-stappen worden globaal toegepast op de volledige raw-laag om een universele basispreset te genereren.",
+    "what_to_avoid": [
+      "Gebruik niet de Express-versie van Capture One; deze mist de geavanceerde kleureditor die noodzakelijk is voor deze iteratieve techniek.",
+      "Vermijd het overschrijden van de +30 grens per stap in de kleureditor om te voorkomen dat het kleuralgoritme vreemde artefacten of gaten in het spectrum slaat."
+    ],
+    "best_for": "Toegewijde Capture One Pro-gebruikers die weigeren hun raw-workflow te verlaten en een effectieve methode zoeken voor herhaalbare infrarood-kleurwissels.",
+    "unique_insights": [
+      "Hoewel Capture One Pro geen kanaalmixer bezit, kan de Advanced Color Editor misbruikt worden om een volledige 180-graden infrarood-kleurwissel te realiseren.",
+      "Door opeenvolgende selecties van dezelfde kleurkleur telkens met de maximale 30 graden te roteren, kan men de wiskundige limiet van de software omzeilen.",
+      "Het opslaan van deze complexe, meervoudige kleurverschuivingen als een 'User Preset' reduceert een voorheen loodzware workflow tot één enkele muisklik voor toekomstige foto's."
+    ],
+    "style_preview": "Deze stijl schittert met een uiterst verfijnde, vloeiende en high-end raw-look, gekenmerkt door rijke, diepe luchten en subtiel verlopende warme tinten in de vegetatie. De filosofie viert technische vindingrijkheid binnen een vertrouwde interface. De stijl blinkt uit bij high-end commerciële landschappen en redactionele natuurfotografie in de felle zon. Voor een fotograaf biedt dit de legendarische raw-scherpte en kleurgradatie van Capture One, toegepast op de wereld van het onzichtbare licht."
+  },
+  {
+    "video_title": "How to Color Swap Infrared Images in darktable",
+    "photographer_name": "Rob Shea",
+    "youtube_url": "https://www.youtube.com/watch?v=3WGigwpZatc",
+    "genre": [
+      "infraroodfotografie",
+      "landschap"
+    ],
+    "light_conditions": [
+      "daglicht",
+      "harde zon"
+    ],
+    "mood": [
+      "moody",
+      "sfeervol"
+    ],
+    "software": [
+      "darktable"
+    ],
+    "style_description": "Precise Darktable Channel Swaps",
+    "philosophy": "De kernfilosofie omarmt darktable als een krachtig, opensource laboratorium voor infraroodfotografie. Er wordt strikt onderscheid gemaakt tussen de moderne 'Color Calibration'-module (een geavanceerde kanaalmixer) en de 'Color Balance RGB'-module voor hue-shifting. Het doel is om via uiterst fijne, toetsenbord-gestuurde numerieke aanpassingen de absolute controle over de spectrale kanalen op te eisen.",
+    "workflow_order": [
+      "stap 1: open de foto in de darkroom en zorg voor een vooraf ingestelde, stabiele witbalans",
+      "stap 2: activeer de module kleurkalibratie (Color Calibration) om de kanaalmixer te openen",
+      "stap 3: gebruik de sneltoetsen (Shift/Ctrl) om de rode en blauwe kanalen exact om te wisselen",
+      "stap 4: splitst het groene kanaal optioneel met 50% naar rood en 50% naar blauw voor realisme"
+    ],
+    "techniques": [
+      {
+        "name": "Fijngeweven schuifregelaar-sturing",
+        "description": "Klik op een schuifregelaar en houd de Shift-toets ingedrukt voor grotere fractie-stappen, of de Ctrl/Command-toets voor extreem kleine, fijnmazige numerieke aanpassingen.",
+        "when_to_use": "Bij elke module in darktable waar exacte numerieke waarden (zoals 0.500 of 0.000) vereist zijn voor kanaalmenging.",
+        "tools": [
+          "Sliders Navigation"
+        ],
+        "effect": "De schuifregelaar reageert kalm en vertraagd op de muisbeweging, wat uiterst nauwkeurige kalibratie mogelijk maakt."
+      },
+      {
+        "name": "Toetsenbord-gestuurde precisie-shiften",
+        "description": "Selecteer een actieve slider en gebruik de links/rechts pijltjestoetsen op het toetsenbord in combinatie met Shift of Ctrl om waarden stap voor stap te veranderen.",
+        "when_to_use": "Wanneer slepen met de muis te grof is en een exacte mathematische waarde ingevoerd moet worden.",
+        "tools": [
+          "Sliders Navigation"
+        ],
+        "effect": "De waarde verspringt in exacte, reproduceerbare stappen wat fouten in de kanaalbalans uitsluit."
+      },
+      {
+        "name": "Kleurkalibratie R-en-B wissel",
+        "description": "Open de module Kleurkalibratie (Color Calibration). Zet in het rode kanaal de R-waarde op 0 en de B-waarde op 1. Zet in het blauwe kanaal de R-waarde op 1 en de B-waarde op 0.",
+        "when_to_use": "Als de primaire, opensource basismethode voor een zuivere infrarood-kleurwisseling.",
+        "tools": [
+          "Color Calibration"
+        ],
+        "effect": "Wisselt de kanalen direct om en creëert de klassieke infrarood-look met een blauwe lucht."
+      },
+      {
+        "name": "Groen-kanaal splitsing (Green Channel Splitting)",
+        "description": "Zet in het groene kanaal van de kleurkalibratie de groene waarde op 0. Verhoog handmatig de rode waarde naar 0.5 en de blauwe waarde naar 0.5.",
+        "when_to_use": "Wanneer je een zachtere, meer realistische blauwe lucht wilt genereren met zachte, geeloranje palmbladeren.",
+        "tools": [
+          "Color Calibration"
+        ],
+        "effect": "Het groene kanaal wordt exact 50/50 verdeeld, wat resulteert in een superieure en zeer geloofwaardige blauwe luchttoon."
+      },
+      {
+        "name": "Color Balance RGB Hue-rotatie",
+        "description": "Activeer de module Kleurbalans RGB (Color Balance RGB), ga naar het tabblad 'Master' en verschuif de 'Shift Hue'-regelaar handmatig naar exact 180 graden.",
+        "when_to_use": "Als een snel en doeltreffend alternatief voor kleurkalibratie om een directe spectrum-inversie te realiseren.",
+        "tools": [
+          "Color Balance RGB"
+        ],
+        "effect": "Roteert alle kleuren in de foto met 180 graden, wat een feller en zeer verzadigd resultaat oplevert."
+      }
+    ],
+    "color_approach": "Kleur wordt benaderd als een pure wiskundige kalibratiematrix. Via de geavanceerde kleurkalibratiemodule worden de kleurkanalen niet zomaar verschoven, maar via exacte decimale verhoudingen (zoals de 50/50 groensplitsing) gemengd om zachte, harmonieuze en realistische kleurenpaletten te smeden.",
+    "local_adjustments": "Er worden in deze fundamentele fase geen lokale maskers gebruikt; de focus ligt op het opbouwen van een mathematisch perfecte, globale kleurmatrix over het gehele beeldvlak.",
+    "what_to_avoid": [
+      "Gebruik niet de oude 'Invert'-module in darktable; deze is vanaf versie 3.4 verouderd en vervangen door Nega Doctor, die ongeschikt is voor infrarood-inversie.",
+      "Vermijd het ruw slepen met de muis zonder sneltoetsen om te voorkomen dat er scheve, asymmetrische kanaalwaarden ontstaan."
+    ],
+    "best_for": "Opensource-enthousiastelingen en technisch ingestelde fotografen die met darktable een totale, pixel-perfecte controle over hun infrarood-kleurkanalen wensen.",
+    "unique_insights": [
+      "De module 'Color Calibration' in darktable fungeert als een hypermoderne, wetenschappelijke channel mixer die veel zuiverder werkt dan traditionele tools.",
+      "De 'Invert'-module is bewust uitgefaseerd in moderne darktable-versies ten gunste van 'Nega Doctor', waardoor fotografen nu moeten uitwijken naar Kleurkalibratie of Kleurbalans RGB.",
+      "Door de Shift- of Ctrl-toetsen slim te combineren met de pijltjestoetsen op het toetsenbord, transformeren de sliders in darktable in uiterst nauwkeurige meetinstrumenten."
+    ],
+    "style_preview": "Deze stijl levert een uiterst zuivere, gedetailleerde en technisch verfijnde opensource-look met serene blauwe luchten en perfect gebalanceerde pastelkleurige bladeren. De filosofie staat voor wetenschappelijke precisie zonder commerciële software-restricties. De stijl presteert fenomenaal bij tropische landschappen met palmbomen onder een felle zon. Voor een fotograaf biedt dit een diepe, gratis en grenzeloze duik in de wiskunde achter digitale kleurmanipulatie."
+  },
+  {
+    "video_title": "darktable Infrared Color Swap Presets",
+    "photographer_name": "Rob Shea",
+    "youtube_url": "https://www.youtube.com/watch?v=n9aqgbHSm6Q",
+    "genre": [
+      "infraroodfotografie",
+      "landschap"
+    ],
+    "light_conditions": [
+      "daglicht",
+      "harde zon"
+    ],
+    "mood": [
+      "levendig",
+      "sfeervol"
+    ],
+    "software": [
+      "darktable"
+    ],
+    "style_description": "Automated Darktable Infrared Variations",
+    "philosophy": "De filosofie richt zich op automatisering en workflow-optimalisatie binnen darktable door het gebruik van vooraf geïmporteerde presets. Het doel is om de drempel voor infraroodbewerking te verlagen, zodat fotografen met minimale handelingen direct toegang krijgen tot een breed scala aan esthetische kleurenpaletten. Snelheid en gebruiksgemak via het 'Snelkoppelingen'-systeem staan centraal.",
+    "workflow_order": [
+      "stap 1: importeer de gedownloade xmp-presets via de globale voorkeuren van darktable",
+      "stap 2: zorg dat er een solide basiswitbalans op de infraroodfoto is toegepast",
+      "stap 3: open het snelmenu voor presets (Quick Access) in de linkerbenedenhoek",
+      "stap 4: selecteer met één klik de gewenste kleurkalibratie- of hue-shift-preset"
+    ],
+    "techniques": [
+      {
+        "name": "Preset-import via Globale Voorkeuren",
+        "description": "Open de tandwiel-instellingen, ga naar het tabblad 'Presets' en klik op 'Import' om meerdere XMP-presetbestanden in één keer in de database te laden.",
+        "when_to_use": "Eenmalig bij de installatie van de gratis infrarood-presetcollectie om ze universeel beschikbaar te maken.",
+        "tools": [
+          "Global Preferences"
+        ],
+        "effect": "De aangepaste infrarood-instellingen worden keurig gecategoriseerd onder de respectievelijke darktable-modules."
+      },
+      {
+        "name": "Quick Access Preset-koppeling",
+        "description": "Klik op het preset-icoon linksonder, selecteer 'Manage quick preset list' en vink de specifieke infrarood-presets aan om ze aan het snelmenu toe te voegen.",
+        "when_to_use": "Om een razendsnelle selectie-interface te bouwen voor je meest gebruikte infrarood-looks.",
+        "tools": [
+          "Quick Access to Presets"
+        ],
+        "effect": "Er verschijnt een overzichtelijk pop-upmenu waarmee je direct tussen complexe module-instellingen kunt schakelen."
+      },
+      {
+        "name": "IR Swap RB + G to B Preset",
+        "description": "Activeer de preset 'IR swap RB G to B' via het snelmenu om de rood/blauw-wissel uit te voeren en het groene kanaal naar blauw te buigen.",
+        "when_to_use": "Wanneer een surrealistische, dieppaarse lucht met felgele bomen gewenst is.",
+        "tools": [
+          "Quick Access to Presets"
+        ],
+        "effect": "Transformeert de foto direct naar een dramatisch paars-geel contrastlandschap met hoge visuele impact."
+      },
+      {
+        "name": "IR Swap RB + G to R Preset",
+        "description": "Selecteer de preset 'IR swap RB G to R' om de kanalen om te wisselen en het groene kanaal volledig in het rode kanaal te laten vloeien.",
+        "when_to_use": "Voor een opvallende, pop-art esthetiek met cyaanblauwe luchten en intens roze bomen.",
+        "tools": [
+          "Quick Access to Presets"
+        ],
+        "effect": "De vegetatie knalt direct in een felle, dieproze neonkleur tegen een strakke, cyaanblauwe achtergrond."
+      },
+      {
+        "name": "Stapsgewijze Hue-Shift Evaluatie",
+        "description": "Activeer opeenvolgende presets in stappen van 30 graden (+30, +60, +90 etc.) binnen de Color Balance RGB-sectie om de kleurverschuiving te beoordelen.",
+        "when_to_use": "Wanneer je zoekt naar de perfecte, unieke artistieke kleurharmonie die past bij de specifieke compositie.",
+        "tools": [
+          "Quick Access to Presets"
+        ],
+        "effect": "De foto doorloopt live alle denkbare spectrale kleurcombinaties, wat een snelle esthetische keuze mogelijk maakt."
+      }
+    ],
+    "color_approach": "De kleurbenadering stoelt op directe previsualisatie en snelle selectie. Door een bibliotheek van zowel mathematische kanaalwissels (Kleurkalibratie) als graden-gestuurde rotaties (Kleurbalans RGB) via één klik direct op de raw-data los te laten, kan de optimale kleurharmonie binnen seconden worden bepaald.",
+    "local_adjustments": "Deze geautomatiseerde workflow maakt gebruik van globale presets die met één klik de respectievelijke modules activeren en instellen over de gehele foto, zonder dat er handmatige maskers getrokken hoeven te worden.",
+    "what_to_avoid": [
+      "Activeer nooit een Kleurkalibratie-preset én een Kleurbalans RGB-preset tegelijkertijd; ze zullen elkaars kleurverschuiving tegenwerken en een modderig resultaat opleveren.",
+      "Vermijd het toepassen van presets voordat er een correcte witbalans is ingesteld, omdat de presets leunen op een geneutraliseerde basis."
+    ],
+    "best_for": "Darktable-gebruikers die hun nabewerkingstijd drastisch willen verkorten en via een gestroomlijnd snelmenu met infraroodkleuren willen experimenteren.",
+    "unique_insights": [
+      "Het 'Quick Access to Presets' menu in de linkerbenedenhoek van darktable kan modules op de achtergrond automatisch inschakelen én de preset toepassen met slechts één enkele klik.",
+      "De preset 'IR swap RB G split' verdeelt het groene kanaal mathematisch 50/50 over rood en blauw, wat binnen opensource software de meest natuurgetrouwe blauwe luchten oplevert.",
+      "Het importsysteem van darktable staat toe om complete XMP-bestanden direct als native module-presets te integreren, waardoor omslachtig handmatig kopiëren verleden tijd is."
+    ],
+    "style_preview": "Deze stijl biedt een dynamische, veelzijdige en uiterst kleurrijke infrarood-ervaring, variërend van klassiek cyaan-roze tot buitenaards paars-geel. De filosofie predikt efficiëntie en creatieve speelsheid door automatisering. De stijl is fantastisch voor diverse landschappen, van bossen tot stedelijke parken onder felle zon. Als fotograaf switch je moeiteloos tussen subtiel realisme en gedurfde, psychedelische kunst."
+  },
+  {
+    "video_title": "RawTherapee for Editing Infrared Photography",
+    "photographer_name": "Rob Shea",
+    "youtube_url": "https://www.youtube.com/watch?v=bJFgcRIDLoE",
+    "genre": [
+      "infraroodfotografie",
+      "landschap"
+    ],
+    "light_conditions": [
+      "daglicht",
+      "harde zon"
+    ],
+    "mood": [
+      "naturalistisch",
+      "krachtig"
+    ],
+    "software": [
+      "RawTherapee"
+    ],
+    "style_description": "Native RawTherapee Infrared Control",
+    "philosophy": "De filosofie viert RawTherapee als een verbazingwekkend krachtig, standalone en opensource alternatief voor infraroodfotografen. De software blinkt uit door een schijnbaar ingebouwde 'infrarood-intelligentie', waardoor extreme witbalanscorrecties direct uit de doos perfect functioneren zonder externe DCP- of ICC-profielen. Het doel is een pure, detailrijke en gestroomlijnde raw-ontwikkeling.",
+    "workflow_order": [
+      "stap 1: klik op de auto-witbalansknop in het kleurenpaneel voor een directe basisneutralisatie",
+      "stap 2: activeer de kanaalmixer en zet de aan/uit-schakelaar van de module specifiek op aan",
+      "stap 3: wissel de rode en blauwe waarden om in de respectievelijke kanalen voor de kleurwissel",
+      "stap 4: gebruik de hsv-equalizer met de control-pipet om de lucht en microcontrasten te perfectioneren"
+    ],
+    "techniques": [
+      {
+        "name": "Infrarood-bewuste Auto Witbalans",
+        "description": "Klik simpelweg op de 'Auto'-witbalansknop binnen het kleurenpaneel zonder handmatige selectiepunten te hoeven prikken.",
+        "when_to_use": "Direct bij het openen van een infrarood-rawbestand in RawTherapee om de initiële rode zweem te breken.",
+        "tools": [
+          "Color / White Balance"
+        ],
+        "effect": "De software berekent op magische wijze een uitstekende, neutrale witbalans waarbij de lucht geel/bruin wordt en vegetatie koel blauw."
+      },
+      {
+        "name": "Module-Power Inschakeling",
+        "description": "Klik specifiek op het kleine aan/uit-schakelaar-icoon naast de modulenaam (zoals de Channel Mixer) om de berekening te activeren.",
+        "when_to_use": "Bij elke tool in RawTherapee om te voorkomen dat aanpassingen onzichtbaar blijven omdat de module inactief staat.",
+        "tools": [
+          "Module Power Control"
+        ],
+        "effect": "Activeert de achterliggende pixelberekening van de specifieke module direct op de raw-data."
+      },
+      {
+        "name": "HSV-Equalizer gerichte kleurtintsturing",
+        "description": "Activeer de HSV-equalizer, houd de Ctrl-toets ingedrukt en klik met de pipet in de lucht om een exact, lokaal controlepunt op de curve te genereren. Sleep dit punt verticaal om de tint te wijzigen.",
+        "when_to_use": "Na de kanaalwissel om de kleur van de lucht handmatig om te buigen naar een klassieke, natuurgetrouwe blauwtint.",
+        "tools": [
+          "HSV Equalizer"
+        ],
+        "effect": "De kleur van de lucht verschuift uiterst vloeiend en nauwkeurig zonder dat de warme tonen in de vegetatie veranderen."
+      },
+      {
+        "name": "Color Toning via de Multi-Grid Methode",
+        "description": "Zet de Color Toning-methode op 'Grid'. Klik op het plus-icoon om meerdere kleurrasters boven op elkaar te stapelen en meng handmatig warme en koele componenten.",
+        "when_to_use": "Voor geavanceerde, creatieve split-toning in de lichte en donkere partijen van het infraroodlandschap.",
+        "tools": [
+          "Color Toning"
+        ],
+        "effect": "Er ontstaat een rijke, gelaagde kleurschakering waarbij schaduwen en highlights onafhankelijk een artistieke tint krijgen gegoten."
+      },
+      {
+        "name": "Flexible RGB-Curven manipulatie",
+        "description": "Zet de RGB-curvenmethode op 'Flexible' om meerdere, vrije controlepunten te kunnen plaatsen op de individuele rode en blauwe kanalen.",
+        "when_to_use": "Om de tonale contrasten en kleurbalans in specifieke helderheidszones van de infraroodfoto diepgaand te sturen.",
+        "tools": [
+          "RGB Curves"
+        ],
+        "effect": "Biedt een uiterst elastische controle over de kleurmaturatie in de lichte bladeren versus de donkere lucht."
+      }
+    ],
+    "color_approach": "Kleurmanipulatie in RawTherapee is buitengewoon krachtig dankzij de HSV-equalizer en geavanceerde kleurturingsmethoden zoals LAB-blending en meervoudige kleurgit-stacks. Hierdoor kunnen de omgewisselde infraroodkleuren vloeiend worden gescheiden en met chirurgische precisie worden bijgestuurd.",
+    "local_adjustments": "Er worden in deze standalone workflow geen handmatige lokale maskers getrokken; er wordt volledig vertrouwd op de selectieve kleurkracht van de HSV-pipetregelaars die globaal maar kleur-specifiek opereren.",
+    "what_to_avoid": [
+      "Vergeet niet de aan/uit-schakelaar van de kanaalmixer om te zetten; de schuifregelaars doen anders absoluut niets.",
+      "Vermijd overmatige 'Microcontrast'-verscherping in het detailpaneel op de luchtpartijen om te voorkomen dat er grove korrelartefacten ontstaan."
+    ],
+    "best_for": "Fotografen die een krachtige, 100% gratis en standalone raw-editor zoeken met een superieure, ingebouwde infrarood-witbalansverwerking.",
+    "unique_insights": [
+      "RawTherapee bezit een zeldzame, schijnbaar ingebouwde 'infrarood-awareness' waardoor de automatische witbalansknop de extreme rode raw-zweem direct perfect neutraliseert.",
+      "In tegenstelling tot veel commerciële software vereist RawTherapee geen ingewikkelde aangepaste DCP- of ICC-kleurprofielen om een perfecte infrarood-witbalans te forceren.",
+      "De HSV-equalizer staat toe om via een Ctrl-klik met de pipet een exact, geïsoleerd controlepunt op de curve te droppen voor uiterst gerichte kleurscheidingen."
+    ],
+    "style_preview": "Deze stijl levert een opvallend zuivere, scherpe en organische infraroodesthetiek met vloeiende kleurovergangen en een fabelachtige tonale rijkdom. De filosofie ademt pure opensource vrijheid en technische diepgang. De stijl presteert magistraal bij weidse natuurscènes met dramatische luchten en rijke bladerstructuren. Als fotograaf geniet je van een ongekend stabiele, profielvrije opstart van je creatieve infrarood-workflow."
+  },
+  {
+    "video_title": "GIMP - How to Swap Color Channels for Infrared Photos With GIMP",
+    "photographer_name": "Photo Blue",
+    "youtube_url": "https://www.youtube.com/watch?v=NMpn8Z8ycZs",
+    "genre": [
+      "infraroodfotografie",
+      "algemeen"
+    ],
+    "light_conditions": [
+      "daglicht",
+      "harde zon"
+    ],
+    "mood": [
+      "levendig",
+      "naturalistisch"
+    ],
+    "software": [
+      "GIMP",
+      "RawTherapee"
+    ],
+    "style_description": "Classic GIMP Infrared Basics",
+    "philosophy": "De filosofie omarmt GIMP als een krachtig, volledig gratis en open-source platform voor het handmatig manipuleren van infraroodkanalen. Door gebruik te maken van RawTherapee als een automatische raw-import-plug-in, wordt een solide basis gelegd voor nauwkeurige pixelbewerking. Het doel is om via de ingebouwde kanaalmixer een heldere, herkenbare blauwe lucht te creëren als ankerpunt voor de compositie.",
+    "workflow_order": [
+      "stap 1: open het raw-bestand in gimp via de automatische rawtherapee-conversieplug-in",
+      "stap 2: navigeer naar het menu kleuren en open de componenten-kanaalmixer",
+      "stap 3: wissel de rode en blauwe waarden handmatig om naar exacte factoren van 1.000 en 0.000",
+      "stap 4: pas een automatische witbalans of handmatige niveau-pipet toe om de vegetatiekleuren te corrigeren"
+    ],
+    "techniques": [
+      {
+        "name": "Raw-Import via OpenSource Plug-in",
+        "description": "Open een raw-infraroodbestand direct in GIMP, waardoor de gekoppelde RawTherapee-plug-in automatisch opstart om de initiële 16-bits conversie uit te voeren.",
+        "when_to_use": "Bij de start van de workflow om raw-bestanden direct toegankelijk te maken binnen de GIMP-pixelomgeving.",
+        "tools": [
+          "File Open"
+        ],
+        "effect": "Het raw-bestand wordt perfect omgezet en ingeladen als een stabiele basislaag binnen GIMP."
+      },
+      {
+        "name": "Handmatige Componenten-Kanaalwissel",
+        "description": "Open de Kanaalmixer via Kleuren > Componenten. Zet in het rode kanaal rood op 0 en blauw op 1. Zet in het blauwe kanaal blauw op 0 en rood op 1. Voer de waarden exact in.",
+        "when_to_use": "Direct na de import om de onnatuurlijke rode of oranje infraroodzweem uit de lucht te verwijderen.",
+        "tools": [
+          "Channel Mixer"
+        ],
+        "effect": "De lucht klapt onmiddellijk om naar een natuurgetrouwe, helderblauwe kleur die fungeert als visueel referentiepunt."
+      },
+      {
+        "name": "Post-Swap Automatische Witbalans (Auto White Balance)",
+        "description": "Navigeer na de kanaalwissel naar Kleuren > Auto > Witbalans om de software de resterende kleurafwijkingen te laten berekenen.",
+        "when_to_use": "Wanneer de vegetatie na de kanaalwissel een ongewenste blauwe of fletse tint behoudt.",
+        "tools": [
+          "Auto White Balance"
+        ],
+        "effect": "De vegetatie corrigeert zichzelf direct naar een prachtig, intens rood of goud-oranje, afhankelijk van het gebruikte filter."
+      },
+      {
+        "name": "Grijspunt-neutralisatie via Niveaus (Levels)",
+        "description": "Open het Niveaus-paneel, selecteer de grijze pipet (Gray Picker) en klik hiermee op een wolk of een neutraal element in de compositie.",
+        "when_to_use": "Als alternatief voor de automatische witbalans om de kleurscheiding handmatig en gecontroleerd bij te sturen.",
+        "tools": [
+          "Levels"
+        ],
+        "effect": "Het geselecteerde punt wordt perfect neutraal gemaakt, wat de omliggende 'valse' infraroodkleuren intenser laat contrasteren."
+      },
+      {
+        "name": "Lensflare-bewust Belichtingsbeheer",
+        "description": "Evalueer reflecties in het Niveaus-paneel en pas de invoerniveaus handmatig aan om de impact van infrarood-specifieke lichtvlekken te minimaliseren.",
+        "when_to_use": "Bij opnames die recht in of onder een scherpe hoek ten opzichte van de zon zijn gemaakt.",
+        "tools": [
+          "Levels"
+        ],
+        "effect": "Houdt de contrasten in de onbeschadigde delen van de foto stabiel ondanks de aanwezigheid van optische flares."
+      }
+    ],
+    "color_approach": "De kleurbenadering in GIMP is puur constructief: er wordt gestreefd naar het forceren van een herkenbare blauwe lucht om de kijker een natuurlijk referentiepunt te bieden. De overige elementen transformeren hierdoor automatisch in een levendig spectrum van 'valse' maar artistieke infraroodkleuren, zoals intens rood of diep oranje.",
+    "local_adjustments": "In deze fundamentele demonstratie worden geen handmatige lokale maskers getrokken; er wordt volledig vertrouwd op de globale corrigerende kracht van de kanaalmixer en het niveaus-paneel.",
+    "what_to_avoid": [
+      "Vermijd slordige invoer in de kanaalmixer; typ altijd exacte waarden (1 of 0) in plaats van grof te gokken met de schuifbalken om kleurvervuiling te voorkomen.",
+      "Probeer flaring niet met agressieve contrastschuiven te corrigeren om te vermijden dat omliggende schaduwen volledig dichtlopen."
+    ],
+    "best_for": "Fotografen die een solide, 100% open-source en kosteloze desktop-workflow zoeken voor het bewerken en omwisselen van infrarood-kleuren.",
+    "unique_insights": [
+      "GIMP maakt op de achtergrond op een ingenieuze manier gebruik van RawTherapee als een naadloze plug-in om high-end raw-conversies uit te voeren.",
+      "Bij het bewerken van een 590nm 'Super Color' filter in GIMP reageert de automatische witbalans na de kanaalwissel verbluffend goed door bomen direct dieprood te kleuren.",
+      "Infrarood-omgebouwde sensoren zijn door het ontbreken van interne blokkeerfilters extreem gevoelig voor lensflares, veel sterker dan camera's voor zichtbaar licht."
+    ],
+    "style_preview": "Deze stijl levert een heldere, contrastrijke en eerlijke open-source esthetiek met strakke blauwe luchten gecombineerd met intens vurige rode of warme oranje bladeren. De filosofie staat voor pure handmatige controle via traditionele pixel-tools. De stijl werkt fantastisch voor zonnige landschappen met weelderige bossen en waterpartijen. Als fotograaf krijg je hiermee een uiterst betrouwbare, ambachtelijke greep op het onzichtbare kleurenspectrum."
   }
 ]

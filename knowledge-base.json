@@ -53885,5 +53885,1101 @@
       "Het handmatig vullen van de rotskern met 100% wit is dé oplossing voor het typische contrastverlies dat optreedt bij puur luminantie-blenden"
     ],
     "style_preview": "Deze stijl ademt een schitterende, serene en technisch uiterst superieure perfectie uit, perfect ontwikkeld voor de professionele landschaps- en kustfotograaf. De visuele sfeer is rustig en loepzuiver, met een indrukwekkende dynamiek en een totale afwezigheid van storende sensorruis of harde halo's. Door de doordachte combinatie van filters en Photoshop-precisie wordt de lat zeer hoog gelegd. Fotografen kunnen een kristalhelder, printklaar en adembenemend kunstwerk verwachten."
+  },
+  {
+    "video_title": "Create an Eye-Catching Double Exposure Effect in Photoshop",
+    "photographer_name": "Aaron Nace",
+    "youtube_url": "https://www.youtube.com/watch?v=h8Rjpae_NwE",
+    "genre": [
+      "portret",
+      "fine-art",
+      "experimenteel"
+    ],
+    "light_conditions": [
+      "daglicht",
+      "schaduw"
+    ],
+    "mood": [
+      "filmisch",
+      "sfeervol",
+      "intiem"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Artistic Screen Blend Portrait",
+    "philosophy": "De basisgedachte achter deze stijl is het herintroduceren van de traditionele analoge filmtechniek in een digitaal jasje. Het draait allemaal om hoe licht en donker met elkaar interageren via overvloeimodussen. Door bewust op zoek te gaan naar contrastverschillen tussen twee foto's ontstaat een harmonieus nieuw kunstwerk.",
+    "workflow_order": [
+      "stap 1: sleep de structuurfoto bovenop de basisportretfoto met de Move tool",
+      "stap 2: schaal de bovenste foto via Free Transform (Ctrl+T) tot de hele achtergrond bedekt is",
+      "stap 3: zet de overvloeimodus (Blend Mode) van de bovenste laag van Normal naar Screen",
+      "stap 4: pas een Levels-aanpassingslaag toe en verschuif de midtonen om het gezicht subtiel door te laten schemeren"
+    ],
+    "techniques": [
+      {
+        "name": "Screen Overvloeiing",
+        "description": "Zet de overvloeimodus van de bovenste structuurlaag op Screen om uitsluitend de lichte informatie te behouden en de donkere delen transparant te maken.",
+        "when_to_use": "Wanneer je een lichte textuur of landschap wilt laten samensmelten met de schaduwpartijen van een portret.",
+        "tools": [
+          "Layers Palette"
+        ],
+        "effect": "De donkere delen van de bovenste foto verdwijnen, waardoor het onderliggende gezicht in de schaduwen zichtbaar wordt."
+      },
+      {
+        "name": "Midtoon Balans via Levels",
+        "description": "Gebruik Levels (Ctrl+L) en verschuif de middelste regelaar (gamma) naar rechts of links om de intensiteit van de overlay te doseren.",
+        "when_to_use": "Als de overliggende afbeelding de gelaatstrekken van het model te veel overstemt.",
+        "tools": [
+          "Levels"
+        ],
+        "effect": "Verhoogt of verlaagt de zichtbaarheid van de textuur in de overgangsgebieden van de foto."
+      },
+      {
+        "name": "Horizontaal Spiegelen voor Compositie",
+        "description": "Transformeer de structuurlaag en kies Flip Horizontal om de donkere partijen exact over het gezicht van het model te positioneren.",
+        "when_to_use": "Wanneer de compositie van de textuurfoto niet direct aansluit bij de vorm van het gezicht.",
+        "tools": [
+          "Transform Tool"
+        ],
+        "effect": "Lijnt de schaduwen in de textuur perfect uit met het onderwerp voor een betere herkenbaarheid."
+      },
+      {
+        "name": "Compositie Schalen",
+        "description": "Vergroot of verklein de textuurlaag aanzienlijk buiten de canvasranden om een specifieke uitsnede te forceren.",
+        "when_to_use": "Om hinderlijke details in de textuurfoto buiten het gezicht te plaatsen.",
+        "tools": [
+          "Free Transform"
+        ],
+        "effect": "Zorgt voor een rustiger beeld waarin alleen de gewenste vormen overblijven."
+      },
+      {
+        "name": "Multi-Exposure Stacking",
+        "description": "Stapel een derde of vierde laag met de Screen-modus bovenop om complexe patronen te weven.",
+        "when_to_use": "Voor een abstractere, schilderachtige fine-art look met meerdere dieptelagen.",
+        "tools": [
+          "Layers Palette"
+        ],
+        "effect": "Creëert een rijke, gelaagde compositie waarin verschillende elementen door elkaar heen lopen."
+      }
+    ],
+    "color_approach": "Er wordt gezocht naar een balans waarbij de originele kleuren van de portretfoto de leidraad vormen. De kleuren van de landschaps- of bloemenfoto worden via de Screen-modus verweven met de huidtinten, waardoor er een zachte, dromerige kleursynchronisatie ontstaat die perfect past bij artistieke portretten.",
+    "local_adjustments": "Maskers worden hier specifiek ingezet via de Levels-sliders om de algemene dekking lokaal te beïnvloeden, waardoor handmatig borstelen vaak tot een minimum beperkt kan blijven zolang de basiscontrasten kloppen.",
+    "what_to_avoid": [
+      "Vermijd het plaatsen van heldere, detailrijke textuurpartijen direct over de ogen van de hoofdpersoon omdat dit de herkenbaarheid en expressie volledig wegneemt."
+    ],
+    "best_for": "Portretten met diepe schaduwen gecombineerd met lichte, contrastrijke natuur- of architectuurfoto's.",
+    "unique_insights": [
+      "De absolute sleutel voor een geslaagde Screen-double exposure is dat de textuurlaag juist donker moet zijn op de plek waar het gezicht van het model zit.",
+      "In plaats van direct met maskers te penselen, kun je met een simpele Levels-aanpassing de textuurlaag lokaal 'wegdrukken' door de schaduwpartijen daarin handmatig donkerder te maken.",
+      "Het combineren van een mislukte of te lichte Double Exposure met een extra, derde laag kan onverwacht een prachtig organisch triple-exposure resultaat opleveren."
+    ],
+    "style_preview": "Deze stijl biedt een snelle, pure manier om analoge effecten na te bootsen. Door gebruik te maken van lichte tonen over donkere portretschaduwen ontstaat een verfijnd beeld. Het werkt optimaal bij portretten met duidelijke silhouetten of contrasten. Het resultaat is een poëtische fusie waarin de achtergrond een verhaal vertelt in het gezicht van het model."
+  },
+  {
+    "video_title": "Double Exposure Effect - Photoshop Tutorial",
+    "photographer_name": "LetsPhotoshop",
+    "youtube_url": "https://www.youtube.com/watch?v=iOYz669WNpU",
+    "genre": [
+      "portret",
+      "zwart-wit",
+      "fine-art"
+    ],
+    "light_conditions": [
+      "diffuus licht",
+      "bewolkt"
+    ],
+    "mood": [
+      "melancholisch",
+      "moody",
+      "rustig"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Clean Silhouette Monochrome Overlay",
+    "philosophy": "Deze benadering streeft naar een grafische en minimalistische esthetiek. Door de menselijke vorm los te koppelen van de achtergrond en te reduceren tot een zwart-wit silhouet, functioneert het lichaam puur als canvas voor het landschap. Het doel is een surrealistische samensmelting waarbij vormen naadloos in elkaar overlopen.",
+    "workflow_order": [
+      "stap 1: maak een uitsnede van het model met de Quick Selection tool en pas een zachte Feather toe",
+      "stap 2: desatureer de model-laag volledig en plaats een egale, gekleurde achtergrondlaag onder het model",
+      "stap 3: laad de selectie van het model en pas deze toe als laagmasker (Layer Mask) op de bergfoto",
+      "stap 4: dupliceer de model-laag, zet deze bovenaan met overvloeimodus Lighten en poets delen weg met een zachte brush"
+    ],
+    "techniques": [
+      {
+        "name": "Zachte Selectie-Feathering",
+        "description": "Pas na de Quick Selection een Feather toe van exact 0.5 pixels om de randen van het uitgesneden silhouet minder hard te maken.",
+        "when_to_use": "Bij het isoleren van een model tegen een egale achtergrond om harde, digitale randen te voorkomen.",
+        "tools": [
+          "Quick Selection",
+          "Feather"
+        ],
+        "effect": "De overgang tussen het model en de nieuwe achtergrond verloopt vloeiender en natuurlijker."
+      },
+      {
+        "name": "Model Selectieclipping",
+        "description": "Laad de pixels van de model-laag met Ctrl+klik en pas dit toe als laagmasker op de landschapslaag om deze binnen de contouren te dwingen.",
+        "when_to_use": "Om de landschapsfoto exact te beperken tot de fysieke vorm van de persoon.",
+        "tools": [
+          "Laagmasker (Layer Mask)"
+        ],
+        "effect": "Het landschap neemt de exacte vorm aan van het model-silhouet."
+      },
+      {
+        "name": "Lighten Blending voor Textuurbehoud",
+        "description": "Dupliceer het portret en zet de blend mode op Lighten met een dekking (Opacity) van 50% om gelaatstrekken terug te brengen over het landschap heen.",
+        "when_to_use": "Wanneer de textuur van de achtergrondfoto details zoals lippen, neus en ogen volledig onzichtbaar maakt.",
+        "tools": [
+          "Layers Palette"
+        ],
+        "effect": "De lichte delen van het gezicht lichten subtiel op door de bergtextuur heen."
+      },
+      {
+        "name": "Selectieve Gezichtsretouche",
+        "description": "Gebruik een zwart penseel met een verlaagde dekking van 40% op het masker van de Lighten-laag om details heel zachtjes in te poetsen.",
+        "when_to_use": "Voor het gecontroleerd herstellen van kritieke gezichtsdetails zoals de ogen.",
+        "tools": [
+          "Brush Tool"
+        ],
+        "effect": "Zorgt voor een vloeiende overgang tussen de gelaatstrekken en de rotsstructuren."
+      },
+      {
+        "name": "Achtergrond Wolken-Extensie",
+        "description": "Dupliceer de landschapslaag, verwijder het masker, zet de modus op Lighten en verberg alles achter een zwart masker (Alt+klik) om daarna alleen de wolken buiten het silhouet terug te schilderen met wit.",
+        "when_to_use": "Om elementen uit het landschap, zoals wolken of mist, uit het hoofd te laten breken en te laten versmelten met de achtergrond.",
+        "tools": [
+          "Laagmasker (Layer Mask)",
+          "Brush Tool"
+        ],
+        "effect": "De wolken lijken organisch uit het voorhoofd van het model in de lucht te verdwijnen."
+      }
+    ],
+    "color_approach": "Hoewel de basis grotendeels monochroom is door de desaturatie, wordt er aan het einde een subtiele, zachtroze Solid Color-laag toegevoegd in de overvloeimodus Multiply met een dekking van 20%. Dit geeft de foto een vintage, artistieke tint die de koele zwart-wit tonen verzacht.",
+    "local_adjustments": "Lokale maskers worden intensief gebruikt op zowel de landschapslaag als de gekopieerde portretlaag. Door te wisselen tussen zwarte en witte penselen met lage dekking, worden gezichtscontouren en wolkenstructuren handmatig in elkaar gevlochten.",
+    "what_to_avoid": [
+      "Gebruik geen harde penselen bij het bewerken van de maskers, omdat dit abrupte overgangen veroorzaakt die de illusie van een vloeiende dubbele belichting direct verbreken."
+    ],
+    "best_for": "Studio-achtige portretten met een duidelijke profielvorm gecombineerd met mistige berg- of mistlandschappen.",
+    "unique_insights": [
+      "Door een portretlaag in Lighten-modus op 50% over een geknipt landschap te leggen, creëer je direct een perfecte balans tussen huid en landschap zonder ingewikkeld brushwerk.",
+      "Het laten doorbreken van de wolken uit de landschapsfoto naar de externe achtergrond haalt het beeld uit de rigide beperking van het silhouet.",
+      "Het samplen van een specifieke kleur uit de textuurafbeelding als basis voor de egale achtergrondkleur trekt de hele compositie visueel naar elkaar toe."
+    ],
+    "style_preview": "Dit is een grafische, high-contrast stijl die perfect is voor fine-art uitingen. Het isoleert het onderwerp volledig, waardoor een krachtig icoon ontstaat waarin mist, bergen en wolken de gedachten van het model lijken te visualiseren. De subtiele kleurtint aan het einde voorkomt dat het beeld kil aanvoelt, wat resulteert in een expositiewaardig kunstwerk."
+  },
+  {
+    "video_title": "Double Exposure Cinemagraph - Photoshop Tutorial",
+    "photographer_name": "LetsPhotoshop",
+    "youtube_url": "https://www.youtube.com/watch?v=bX_h98OW4-8",
+    "genre": [
+      "experimenteel",
+      "cinematisch",
+      "portret"
+    ],
+    "light_conditions": [
+      "kunstlicht",
+      "nacht"
+    ],
+    "mood": [
+      "dramatisch",
+      "moody",
+      "melancholisch"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Cinemagraph Moving Double Exposure",
+    "philosophy": "Deze stijl verlegt de grenzen van stilstaande fotografie door bewegende videobeelden te integreren in een vaststaand portretsilhouet. Het concept draait om contrasten: een statisch, emotioneel portret gecombineerd met een dynamische, levendige achtergrond. Het creëert een hypnotiserend beeld dat de kijker dwingt langer te blijven kijken.",
+    "workflow_order": [
+      "stap 1: snijd het model nauwkeurig uit met de Quick Selection tool en verfijn de haren met Refine Edge",
+      "stap 2: herstel eventuele grijze restanten in het masker met de Burn en Dodge tools in de maskermodus",
+      "stap 3: importeer een videobestand als Smart Object en kopieer het modelmasker hiernaartoe via Alt+klik en sleep",
+      "stap 4: ontkoppel de ketting tussen de video en het masker om de video onafhankelijk te transformeren en te roteren"
+    ],
+    "techniques": [
+      {
+        "name": "Masker Opschoning via Burn/Dodge",
+        "description": "Ga in de maskermodus en gebruik de Burn tool (ingesteld op Shadows, 50% exposure) om grijze plukken in de selectie gitzwart te maken, en de Dodge tool (Highlights) om de binnenzijde spierwit te maken.",
+        "when_to_use": "Bij complexe haarlijnen en baarden waar de automatische selectietools van Photoshop grijze, semitransparante zones achterlaten.",
+        "tools": [
+          "Burn Tool",
+          "Dodge Tool",
+          "Laagmasker (Layer Mask)"
+        ],
+        "effect": "Een feilloos, haarscherp masker zonder vlekken of kwaliteitsverlies in de details."
+      },
+      {
+        "name": "Unlinked Masker Transformatie",
+        "description": "Klik op het kettingicoon tussen de videolaag en het masker om de video onafhankelijk te verschuiven, te roteren en te schalen (Ctrl+T) zonder dat de portretcontouren veranderen.",
+        "when_to_use": "Wanneer de beweging in de video (zoals rijdende auto's) exact moet samenvallen met een lichaamsdeel zoals de schouder of nek.",
+        "tools": [
+          "Free Transform",
+          "Layers Palette"
+        ],
+        "effect": "De video beweegt vloeiend binnen de exacte, statische grenzen van het portret."
+      },
+      {
+        "name": "Video Achtergrond-Duplicatie",
+        "description": "Dupliceer de videolaag naar de achtergrond, verwijder het masker, pas een Gaussian Blur toe van 9 pixels en zet de modus op Soft Light met 50% dekking.",
+        "when_to_use": "Om de sfeer en dynamiek van de video subtiel te laten terugkeren in de tot dan toe egale achtergrond.",
+        "tools": [
+          "Gaussian Blur",
+          "Layers Palette"
+        ],
+        "effect": "Er ontstaat een sfeervolle, pulserende achtergrond die perfect matcht met de beweging in het portret."
+      },
+      {
+        "name": "Kanaal-Kleursturing via Levels",
+        "description": "Voeg een Levels-aanpassingslaag toe en stuur specifiek het rode en blauwe kanaal aan door de schuiven iets naar binnen te trekken voor een cross-processed effect.",
+        "when_to_use": "Om een koele, cinematische look te forceren die de video en het portret chromatisch verbindt.",
+        "tools": [
+          "Levels"
+        ],
+        "effect": "De schaduwen krijgen een diepblauwe tint en de hooglichten een warme, rode gloed."
+      },
+      {
+        "name": "Naadloze Video-Looping",
+        "description": "Open het Smart Object, knip de video in het midden door, wissel de twee helften om en pas een Fade-transitie toe op het overlappende deel.",
+        "when_to_use": "Bij het exporteren naar GIF of MP4 voor social media om een harde, schokkende verspringing aan het einde van de video te voorkomen.",
+        "tools": [
+          "Timeline Window",
+          "Transitions"
+        ],
+        "effect": "De animatie herhaalt zich oneindig zonder dat de kijker ziet waar het begin of einde is."
+      }
+    ],
+    "color_approach": "De kleurcorrectie leunt zwaar op een cross-processing techniek in de RGB-kanalen. Door blauw in de schaduwen te duwen en rood in de middentonen te versterken, krijgt de bewegende cinemagraph een cyberpunk- of nachtelijke stadslook die perfect past bij oplichtende autolichten en donkere silhouetten.",
+    "local_adjustments": "Er vinden nauwkeurige handmatige poetsbewerkingen plaats op de maskers. Zo wordt het masker van het model lokaal met een zacht zwart penseel (25% Flow) bewerkt om bijvoorbeeld een oog of een oor haarscherp terug te brengen, terwijl de weg in de video daar vlak achterlangs loopt.",
+    "what_to_avoid": [
+      "Exporteer een cinemagraph voor het web nooit op de volledige resolutie, omdat de bestandsgrootte van de GIF dan de pan uit rijst (boven de 50MB). Schaal de output altijd terug naar ongeveer 600 pixels breed."
+    ],
+    "best_for": "Portretten met een sterke profielzijde in combinatie met sfeervolle video's van stadsverkeer, stromend water of bewegende wolken.",
+    "unique_insights": [
+      "Het handmatig opschonen van een masker met Dodge en Burn in de schaduw- en highlight-stand is vele malen secuurder dan blijven proberen met de Refine Edge brush.",
+      "Het doorbreken van de compositieregels door de weg uit de video exact te laten 'groeien' uit het oor van de man creëert een surrealistisch brandpunt.",
+      "Door de video omgekeerd te knippen en met een fade in het midden te loopen, maak je van een lineaire video een perfect oneindig herhalend kunstwerk."
+    ],
+    "style_preview": "Dit is een geavanceerde, levende stijl die perfect inspeelt op moderne digitale platforms. De combinatie van een bewegend stadslandschap gevangen in het silhouet van een man creëert een diepe, verhalende sfeer. De cinematische kleurtoning maakt het geheel mysterieus en krachtig, ideaal voor fotografen die video en stilstaand beeld willen laten samensmelten."
+  },
+  {
+    "video_title": "Photoshop Double Exposure Effect | Easy Tutorial for Beginners",
+    "photographer_name": "DesignSpire",
+    "youtube_url": "https://www.youtube.com/watch?v=1WaF3L7oZzk",
+    "genre": [
+      "portret",
+      "zwart-wit",
+      "fine-art"
+    ],
+    "light_conditions": [
+      "diffuus licht",
+      "bewolkt"
+    ],
+    "mood": [
+      "rustig",
+      "melancholisch",
+      "naturalistisch"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "High Contrast Bird Silhouette",
+    "philosophy": "Deze stijl richt zich op het creëren van een dromerige, poëtische sfeer door middel van een uiterst schone zwart-wit omzetting. Door de textuur van vliegende vogels te verweven met de gezichtscontouren ontstaat een symbolisch beeld dat vrijheid en introspectie uitstralt. De nadruk ligt op een perfecte tonale balans tussen diepe zwarten en pure witten.",
+    "workflow_order": [
+      "stap 1: importeer de textuurafbeelding (vogels) en rasteriseer de laag direct",
+      "stap 2: plaats het portret hierboven, verlaag de dekking voor de uitlijning en maak een Clipping Mask naar de vogellaag",
+      "stap 3: dupliceer de portretlaag, plaats deze onder de vogels en voeg een geïnverteerd (zwart) masker toe via Alt+klik",
+      "stap 4: voeg een Black & White aanpassingslaag toe aan de top en zet de preset op Maximum Black"
+    ],
+    "techniques": [
+      {
+        "name": "Clipping Mask Textuur-Isolatie",
+        "description": "Klik met de rechtermuisknop op de portretlaag en kies Create Clipping Mask om het portret te dwingen binnen de contouren van de onderliggende vogellaag te blijven.",
+        "when_to_use": "Wanneer de vorm van de textuur (bijvoorbeeld een zwerm vogels) de uiteindelijke buitengrens van het kunstwerk moet bepalen.",
+        "tools": [
+          "Clipping Mask"
+        ],
+        "effect": "Het portret is alleen nog zichtbaar op de plekken waar de vogels zich bevinden."
+      },
+      {
+        "name": "Inverted Invert-Selectie Maskering",
+        "description": "Selecteer de pixels van het portret, inverteer de selectie met Ctrl+Shift+I en poets met een zwart penseel op het masker van de vogellaag om ongewenste delen te elimineren.",
+        "when_to_use": "Om vlekken of storende elementen buiten de hoofdvorm van de compositie snel en gecontroleerd te verwijderen.",
+        "tools": [
+          "Brush Tool",
+          "Selections"
+        ],
+        "effect": "De achtergrond rondom het silhouet wordt perfect schoongemaakt."
+      },
+      {
+        "name": "Maximum Black Omzetting",
+        "description": "Breng een Black & White aanpassingslaag aan en kies de preset 'Maximum Black' om de rode en gele kanalen extreem te verduisteren.",
+        "when_to_use": "Om een fletse zwart-wit foto om te zetten in een grafisch, diep en contrastrijk beeld.",
+        "tools": [
+          "Black & White Adjustment"
+        ],
+        "effect": "De middentonen verdwijnen ten gunste van krachtige zwarten en heldere witten."
+      },
+      {
+        "name": "Gelaatstrekken Herstel met Lage Dekking",
+        "description": "Verlaag de dekking van het zwarte penseel naar 30% en poets heel voorzichtig over het masker van het gecleamde portret om cruciale gezichtslijnen terug te halen.",
+        "when_to_use": "Wanneer de vogeltextuur de ogen of neus zo erg domineert dat de menselijke vorm verloren gaat.",
+        "tools": [
+          "Brush Tool"
+        ],
+        "effect": "De vogels vervagen licht op het gezicht, waardoor de expressie van het model weer zichtbaar wordt."
+      },
+      {
+        "name": "Scherpte-Duplicatie",
+        "description": "Dupliceer de basistextuurlaag (de vogels) met Ctrl+J om de details en randen van de vogels extra aan te zetten.",
+        "when_to_use": "Als door de blending en maskering de randen van de textuurvormen te wazig of flets zijn geworden.",
+        "tools": [
+          "Layers Palette"
+        ],
+        "effect": "De contouren van de vogels worden direct een stuk duidelijker en contrastrijker."
+      }
+    ],
+    "color_approach": "De kleurenaanpak is hier gebaseerd op de complete afwezigheid van kleur. Door de 'Maximum Black' filterinstelling worden alle huidtinten omgezet in diepe schaduwstructuren. De enige kleurtoevoeging is een subtiel radiaal wit-naar-grijs verloop in de achtergrond om het silhouet los te laten komen van het canvas.",
+    "local_adjustments": "Er wordt gewerkt met dubbele maskers: één op de gecleamde portretlaag om de vogels door het gezicht te laten breken, en één op de onderste portretkopie om juist gezichtsdetails met een wit penseel (100% dekking) selectief terug te schilderen tegen de witte achtergrond.",
+    "what_to_avoid": [
+      "Vermijd het overschrijden van de silhouetranden tijdens het verfijnen met het penseel; dit veroorzaakt lelijke 'halos' (lichte randen) rondom het onderwerp."
+    ],
+    "best_for": "Studiofoto's met een egale achtergrond in combinatie met silhouetafbeeldingen zoals vogels, bomen of takken.",
+    "unique_insights": [
+      "Door de textuurlaag (de vogels) als basis te gebruiken en het portret daaraan te clippen, draai je de traditionele double-exposure logica volledig om.",
+      "De Black & White preset 'Maximum Black' is het geheime wapen om fletse huidtinten direct om te zetten in diepe, grafische schaduwpartijen.",
+      "Het simpelweg dupliceren van een textuurlaag lost in één klap het contrastverlies op dat ontstaat door complexe maskering."
+    ],
+    "style_preview": "Dit is een minimalistische en poëtische stijl die uitblinkt in eenvoud. Het resultaat is een sereen, hoogcontrast zwart-wit beeld waarin de textuur de vorm definieert. Door de verfijnde balans tussen het model en de vogels ademt het beeld een sfeer van diepe rust en artistieke gelaagdheid uit, perfect voor fine-art portfolio's."
+  },
+  {
+    "video_title": "How To Create An Double Exposure Effect in Photoshop CC",
+    "photographer_name": "Photo Feaver",
+    "youtube_url": "https://www.youtube.com/watch?v=r1OoH9lo3Oo",
+    "genre": [
+      "portret",
+      "landschap",
+      "fine-art"
+    ],
+    "light_conditions": [
+      "daglicht",
+      "diffuus licht"
+    ],
+    "mood": [
+      "rustig",
+      "naturalistisch",
+      "sfeervol"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Clean Blend High-Key Overlay",
+    "philosophy": "Deze stijl streeft naar een high-key esthetiek waarbij de achtergrond volledig opgaat in het wit, waardoor een dromerig en etherisch beeld ontstaat. Het doel is om een perfecte harmonie te vinden tussen de organische vormen van de natuur (zoals bomen en takken) en het menselijke profiel, ondersteund door grafische elementen.",
+    "workflow_order": [
+      "stap 1: gebruik de automatische Select Subject functie om het model te isoleren van de achtergrond",
+      "stap 2: exporteer de selectie vanuit de Select and Mask interface naar een nieuwe laag met laagmasker",
+      "stap 3: sleep de landschapsfoto in de layertop en transformeer deze met Ctrl+T over de persoon heen",
+      "stap 4: maak een Clipping Mask van het landschap naar de model-laag en zet de blend mode op Screen of Lighten"
+    ],
+    "techniques": [
+      {
+        "name": "Select Subject Isolatie",
+        "description": "Gebruik de automatische 'Select Subject' optie en verfijn deze in de Select and Mask workspace om een zuivere scheiding te maken tussen model en achtergrond.",
+        "when_to_use": "Wanneer het model een duidelijk contrast heeft met de originele studio-achtergrond.",
+        "tools": [
+          "Select Subject",
+          "Select and Mask"
+        ],
+        "effect": "Het model wordt perfect geïsoleerd op een transparante achtergrond met behoud van haardetails."
+      },
+      {
+        "name": "Witpunt Extrapolatie via Curves",
+        "description": "Voeg een Curves-aanpassingslaag toe, selecteer de White Point-pipet en klik op de donkergrijze delen van de haarlijn om deze volledig naar wit te drukken.",
+        "when_to_use": "Om de overgang tussen de bovenkant van het hoofd en een pure, witte achtergrond naadloos te laten verlopen.",
+        "tools": [
+          "Curves"
+        ],
+        "effect": "De donkere haren vervagen in een high-key witte gloed, waardoor de boomtoppen prachtig overvloeien."
+      },
+      {
+        "name": "Solid Color High-Key Canvas",
+        "description": "Plaats een Solid Color-aanpassingslaag met de waarde spierwit (#FFFFFF) helemaal onderaan de lagenstapel.",
+        "when_to_use": "Als basis voor een minimalistische, commerciële dubbele belichting die opvalt op een witte pagina.",
+        "tools": [
+          "Solid Color Layer"
+        ],
+        "effect": "Vervangt de transparantie door een strakke, egale witte studiowand."
+      },
+      {
+        "name": "Zwart-Wit Contrast Optimalisatie",
+        "description": "Pas de schuiven in de Curves-laag handmatig aan om een subtiele S-bocht te maken, wat het contrast in het overvloeiende landschap herstelt.",
+        "when_to_use": "Wanneer de Screen-modus het landschap te flets of flets heeft gemaakt.",
+        "tools": [
+          "Curves"
+        ],
+        "effect": "De boomstammen en takken worden dieper zwart, terwijl de lucht puur wit blijft."
+      },
+      {
+        "name": "Grafische Vogel-Overlay",
+        "description": "Importeer een extra foto van vliegende vogels tegen een grijze lucht, clip een Curves-laag om de lucht wit te maken en zet de blend mode op Multiply.",
+        "when_to_use": "Om extra diepte en een gevoel van beweging toe te voegen aan de statische bos-compositie.",
+        "tools": [
+          "Curves",
+          "Layers Palette"
+        ],
+        "effect": "De vogels lijken organisch uit de bomen in het hoofd van de man weg te vliegen."
+      }
+    ],
+    "color_approach": "Er wordt bewust gekozen voor een monochrome of zeer desverzadigde basis. Dit zorgt ervoor dat de grafische vormen van de kale bomen en de vliegende vogels alle aandacht opeisen, zonder dat storende kleurzwemen de serene high-key sfeer doorbreken.",
+    "local_adjustments": "Lokale clipping masks spelen een cruciale rol. Zowel de landschapslaag als de curves-laag die het haar wegvreet, zijn strikt gekoppeld aan de unieke silhouetvorm van het model, waardoor de buitenranden perfect scherp blijven.",
+    "what_to_avoid": [
+      "Voorkom dat de contrasten in de Curves-laag zo hard worden aangezet dat er lelijke, overgecomprimeerde 'HDR-achtige' artefacten ontstaan in de boomtakken."
+    ],
+    "best_for": "Contrastrijke zwart-wit portretten gecombineerd met winterse boslandschappen of bomen tegen een lichte lucht.",
+    "unique_insights": [
+      "Met de White Point-pipet in Curves kun je door simpelweg in het haar te klikken de overgang naar een witte achtergrond direct automatiseren.",
+      "De Screen- en Lighten-modi reageren dramatisch verschillend op huidtinten; het loont om altijd tussen deze twee te toggelen voor het beste resultaat.",
+      "Het toevoegen van een extra element zoals vogels in de Multiply-modus breekt de rigide structuur van de dubbele belichting open."
+    ],
+    "style_preview": "Dit is een ultra-cleane, commerciële stijl die perfect past bij moderne tijdschriftcovers of minimalistische art-prints. De naadloze overgang van de haarlijn in een spierwitte achtergrond, gecombineerd met de diepe contrasten van de boomtakken, creëert een elegant en tijdloos beeld met een sterk poëtische ondertoon."
+  },
+  {
+    "video_title": "Double Exposure Effect - Easy | Affinity Photo Tutorial",
+    "photographer_name": "ByDesign Method",
+    "youtube_url": "https://www.youtube.com/watch?v=bKqEogSgrOQ",
+    "genre": [
+      "portret",
+      "experimenteel",
+      "grafisch ontwerp"
+    ],
+    "light_conditions": [
+      "kunstlicht",
+      "diffuus licht"
+    ],
+    "mood": [
+      "moody",
+      "krachtig",
+      "dramatisch"
+    ],
+    "software": [
+      "Affinity Photo"
+    ],
+    "style_description": "Grungy Textured Double Exposure",
+    "philosophy": "Deze stijl breekt met de traditionele cleane digitale overgangen en omarmt een rauwe, korrelige en analoge esthetiek. Door gebruik te maken van textuurpenselen binnen de maskers wordt de bewerking een organisch proces dat doet denken herinneren aan litho-afdrukken of mixed-media kunst. Het doel is een mysterieuze, gelaagde poster-look.",
+    "workflow_order": [
+      "stap 1: selecteer het model met de Selection Brush (W) en klik op Refine voor de haren",
+      "stap 2: exporteer de selectie naar een New Layer en verwijder de originele foto",
+      "stap 3: sleep de stadsfoto direct bovenop de model-laag in de lagenstapel om deze automatisch te clippen",
+      "stap 4: voeg een laagmasker toe aan de stadsafbeelding en kies een korrelig textuurpenseel (Shader Brush)"
+    ],
+    "techniques": [
+      {
+        "name": "Textuur-Masker Schilderen",
+        "description": "Selecteer het masker van de stadslaag en gebruik een korrelig Shader-penseel met zwarte verf om delen van de stad op een organische, korrelige manier weg te poetsen.",
+        "when_to_use": "Wanneer je een rauwe, analoge overgang wilt creëren tussen het gezicht van het model en de textuurlaag.",
+        "tools": [
+          "Paint Brush Tool",
+          "Shader Brushes"
+        ],
+        "effect": "De huid van het model komt met een prachtige, zandachtige korrelstructuur door de stadsfoto heen."
+      },
+      {
+        "name": "Map Overlay Blending",
+        "description": "Importeer een textuurafbeelding van een oude landkaart, plaats deze boven een donkere Fill-laag en zet de blend mode op Overlay.",
+        "when_to_use": "Om een complexe, thematische achtergrond te bouwen die de reislust of mystiek van het model versterkt.",
+        "tools": [
+          "Blend Modes",
+          "Stock Panel"
+        ],
+        "effect": "De landkaart versmelt op een subtiele, contrastrijke manier met de donkere achtergrondkleuren."
+      },
+      {
+        "name": "Masker-Graining op Typografie",
+        "description": "Pas een laagmasker toe op een grote tekstlaag en gebruik hetzelfde Shader-penseel om de letters lokaal weg te hameren.",
+        "when_to_use": "Bij het ontwerpen van boekomslagen of posters om de tekst te integreren in de grungy sfeer van de foto.",
+        "tools": [
+          "Laagmasker (Layer Mask)",
+          "Paint Brush Tool"
+        ],
+        "effect": "De tekst krijgt een verweerde, afgebrokkelde look die perfect matcht met de rest van het beeld."
+      },
+      {
+        "name": "Conceptuele Typografie-Highlighting",
+        "description": "Selecteer een specifiek verborgen woord binnen een groter woord (zoals 'LIE' in 'BELIEVE') en geef dit een contrasterende kleur.",
+        "when_to_use": "Voor redactionele of conceptuele grafische ontwerpen met een dubbele bodem.",
+        "tools": [
+          "Text Tool"
+        ],
+        "effect": "Trek direct de aandacht van de kijker naar de diepere, psychologische betekenis van het kunstwerk."
+      },
+      {
+        "name": "Subtiele Outer Glow Framing",
+        "description": "Voeg via de Layer Effects (Fx) een minimale Outer Glow toe aan de model-laag met een zeer lage intensiteit.",
+        "when_to_use": "Wanneer het model op een donkere achtergrond dreigt weg te vallen door de donkere kleding of haren.",
+        "tools": [
+          "Layer Effects (Fx)"
+        ],
+        "effect": "Er ontstaat een flinterdun lichtrandje rondom het silhouet, waardoor het onderwerp subtiel loskomt."
+      }
+    ],
+    "color_approach": "De fotograaf maakt gebruik van een gedurfd, contrasterend kleurenpalet. Warme oranje en teal (blauwgroene) tinten uit de stadsfoto worden gecombineerd met een diepe, donkere achtergrond. Dit versterkt de cinematische en grafische impact van de poster-compositie.",
+    "local_adjustments": "Lokale aanpassingen worden hier niet met zachte, standaard penselen gedaan, maar uitsluitend met speciaal ontworpen getextureerde penselen. Dit zorgt ervoor dat elke handmatige aanpassing op het masker bijdraagt aan de algehele korrelige stijl.",
+    "what_to_avoid": [
+      "Vermijd het gebruik van standaard 100% harde ronde penselen, omdat deze de zorgvuldig opgebouwde korrelige, analoge illusie in één klap tenietdoen."
+    ],
+    "best_for": "Grafische ontwerpen, filmposters en albumcovers waar een rauwe, artistieke look gewenst is.",
+    "unique_insights": [
+      "In plaats van een egale overgang, creëert het gebruik van een korrelpenseel (Shader Brush) op een masker direct een schilderachtige, tastbare diepte.",
+      "Door letters uit een tekstlaag op dezelfde manier te maskeren als de foto, dwing je de typografie om onderdeel te worden van de textuur.",
+      "Het isoleren van een korter woord binnen een langer woord voegt een conceptuele laag toe die de Double Exposure visueel versterkt."
+    ],
+    "style_preview": "Dit is een uitgesproken grungy en grafische stijl die perfect is voor creatieve posterontwerpen. Door de strakke vectorlijnen van Affinity Photo te combineren met zanderige textuurpenselen, ontstaat een fascinerend contrast. De sfeer is duister, mysterieus en modern, uitermate geschikt voor fotografen die richting de grafische kunst willen bewegen."
+  },
+  {
+    "video_title": "Incredible Double Exposure Effect! Affinity Photo Tutorial",
+    "photographer_name": "Affinity Revolution",
+    "youtube_url": "https://www.youtube.com/watch?v=fJpsFD_7Kh4",
+    "genre": [
+      "portret",
+      "fine-art",
+      "kust"
+    ],
+    "light_conditions": [
+      "diffuus licht",
+      "gouden uur"
+    ],
+    "mood": [
+      "rustig",
+      "sfeervol",
+      "intiem"
+    ],
+    "software": [
+      "Affinity Photo"
+    ],
+    "style_description": "Pastel Peach Water Fusion",
+    "philosophy": "Deze stijl is geworteld in een zachte, dromerige esthetiek die streeft naar totale sereniteit. Door een portret te 'sandwichen' tussen twee lagen van een golvende watertextuur, ontstaat een vloeiende fusie waarin mens en natuur volledig in elkaar opgaan. Het kleurgebruik is tonaal zacht met een focus op harmonieuze pastelkleuren.",
+    "workflow_order": [
+      "stap 1: maak een ruwe selectie van het model met de Selection Brush en verfijn de haren via Refine",
+      "stap 2: maskeer de achtergrond uit en pas een harde Rasterize toe om de overtollige pixels definitief te wissen",
+      "stap 3: importeer de waterafbeelding, verlaag de dekking en lijn de golven uit met de buiging van de arm",
+      "stap 4: laad de modelselectie opnieuw via Ctrl+klik op de laag en pas deze toe als masker op de waterlaag"
+    ],
+    "techniques": [
+      {
+        "name": "Portret Sandwich Blending",
+        "description": "Dupliceer het model (Ctrl+J), leg deze kopie BOVENOP de waterlaag en zet de overvloeimodus op Lighten met een masker om de overgangen handmatig te controleren.",
+        "when_to_use": "Om de donkere haren en kleding van het model te vullen met de waterstructuur, terwijl de lichte huidtinten perfect bewaard blijven.",
+        "tools": [
+          "Layers Palette",
+          "Blend Modes"
+        ],
+        "effect": "Het water nestelt zich prachtig in de donkere partijen van de persoon, wat een surrealistisch effect geeft."
+      },
+      {
+        "name": "Geleidelijk Gradiënt-Maskering",
+        "description": "Dupliceer de waterlaag naar de achtergrond, voeg een masker toe en gebruik de Gradient tool (wit naar zwart) om de textuur over het canvas te laten vervagen.",
+        "when_to_use": "Om een harde overgang achter het model te voorkomen en de textuur subtiel te laten uitvloeien in de achtergrond.",
+        "tools": [
+          "Gradient Tool",
+          "Laagmasker (Layer Mask)"
+        ],
+        "effect": "De waterstructuur vervaagt heel natuurlijk van rechts naar links achter het model."
+      },
+      {
+        "name": "Kleurgrading via Gekleurde Vullagen",
+        "description": "Teken een rechthoek over het hele beeld, vul deze met een perzik-roze pastelkleur en zet de blend mode op Soft Light.",
+        "when_to_use": "Om de harde blauwtinten van het water te verzachten en een warme, harmonieuze sfeer te creëren.",
+        "tools": [
+          "Rectangle Tool",
+          "Blend Modes"
+        ],
+        "effect": "Het hele beeld krijgt een dromerige, warme gloed die de contrasten verzacht."
+      },
+      {
+        "name": "Blend Range Hooglicht-Herstel",
+        "description": "Open de Blend Ranges van de gekleurde rechthoek en trek de rechter knoop (Highlights) halverwege naar beneden.",
+        "when_to_use": "Wanneer een kleur-overlay de natuurlijke witten en lichte reflecties in het water te veel overstemt.",
+        "tools": [
+          "Blend Ranges (Luminosity Dolls)"
+        ],
+        "effect": "De pure, heldere witte schuimkoppen van het water breken door de roze kleurlaag heen."
+      },
+      {
+        "name": "Recolor Dieptesturing",
+        "description": "Voeg een Recolor-aanpassingslaag toe aan de top van de stapel, kies een warme tint, verlaag de saturatie naar 50% en zet de modus op Soft Light.",
+        "when_to_use": "Als finishing touch om extra tonale diepte en consistentie in de schaduwen te forceren.",
+        "tools": [
+          "Recolor Adjustment"
+        ],
+        "effect": "De donkere partijen krijgen een rijke, warme ondertoon die perfect aansluit bij de pastel-look."
+      }
+    ],
+    "color_approach": "De kleurenaanpak is meesterlijk subtiel. Er wordt een tonaal contrast gecreëerd door het koele blauw van het water te mengen met warme, perzikkleurige pastel-overlays. Door de Blend Ranges slim te manipuleren, blijven de natuurlijke kleurschakeringen in de hooglichten gewaarborgd.",
+    "local_adjustments": "Er wordt lokaal gepenseerd met een zeer lage Flow op de maskers. Hierdoor kan de fotograaf heel geleidelijk plukken haar of delen van de hand accentueren, terwijl storende elementen (zoals de textuur van een shirt) volledig in de golven verdwijnen.",
+    "what_to_avoid": [
+      "Vermijd het volledig dekkend inklmkleuren van het gezicht met de textuur; de essentie van de expressie (ogen, neus, mond) moet altijd vrijgehouden worden van harde golflijnen."
+    ],
+    "best_for": "Fine-art portretten met vloeiende lijnen gecombineerd met minimalistische textuurfoto's zoals water, zand of mist.",
+    "unique_insights": [
+      "De 'Portret Sandwich' (model-water-model) in de Lighten-modus zorgt ervoor dat structuren zich automatisch nestelen in de donkere haren zonder ingewikkelde selecties.",
+      "Met Blend Ranges in Affinity kun je een kleur-overlay specifiek weghalen uit de hooglichten, waardoor het water zijn frisse, witte schuimkoppen behoudt.",
+      "Een handmatige 'harde' Rasterize-actie na het maskeren wist de onzichtbare pixels definitief, wat de prestaties van software aanzienlijk verbetert bij complexe transformaties."
+    ],
+    "style_preview": "Dit is een uiterst verfijnde, poëtische stijl die rust en tederheid uitstralt. De vloeiende integratie van zachte golven in een vrouwelijk profiel, overgoten met een dromerige perzikkleurige gloed, creëert een adembenemend fine-art beeld. Het is de perfecte stijl voor fotografen die een serene, emotionele diepte aan hun werk willen toevoegen."
+  },
+  {
+    "video_title": "Create a Double Exposure Effect in GIMP 2020",
+    "photographer_name": "Michael Davies",
+    "youtube_url": "https://www.youtube.com/watch?v=6tvG2IKf3aw",
+    "genre": [
+      "portret",
+      "landschap",
+      "zwart-wit"
+    ],
+    "light_conditions": [
+      "diffuus licht",
+      "gouden uur"
+    ],
+    "mood": [
+      "krachtig",
+      "rustig",
+      "naturalistisch"
+    ],
+    "software": [
+      "GIMP"
+    ],
+    "style_description": "Clean Blue Gradient Silhouette",
+    "philosophy": "Deze stijl richt zich op het creëren van een naadloze chromatische eenheid tussen het onderwerp en de achtergrond binnen het open-source platform GIMP. Door het portret om te zetten naar een contrastrijk zwart-wit beeld en dit te injecteren met de natuurlijke blauwtinten van de berglucht, ontstaat een harmonieus en krachtig beeld.",
+    "workflow_order": [
+      "stap 1: isoleer het model met de Foreground Select tool en sla de vorm op als een herbruikbaar pad",
+      "stap 2: desatureer de model-laag met de modus ingesteld op Luminance",
+      "stap 3: verhoog het contrast fors via de Levels-tool om diepe schaduwen te forceren",
+      "stap 4: importeer de bergfoto als laag, verlaag de opacity en schaal deze (Shift+S) tot de forehead perfect uitlijnt"
+    ],
+    "techniques": [
+      {
+        "name": "Foreground Selectie & Pad-Conversie",
+        "description": "Gebruik de Foreground Select tool om het model grof te omlijnen, schilder de binnenzijde in en converteer de uiteindelijke selectie naar een permanent Pad (Path).",
+        "when_to_use": "Wanneer je de unieke profielvorm van een model gedurende het hele project herhaaldelijk nodig hebt als selectiegebied.",
+        "tools": [
+          "Foreground Select Tool",
+          "Paths Dialog"
+        ],
+        "effect": "De silhouetvorm blijft als vectorlijn bewaard, klaar om op elk moment bliksemsnel als selectie te laden."
+      },
+      {
+        "name": "Luminance Desaturatie",
+        "description": "Zet de foto om naar zwart-wit via Colors > Desaturate en kies specifiek de modus 'Luminance' voor een betere tonaal-lineaire verdeling.",
+        "when_to_use": "Als basis voor high-contrast dubbele belichtingen waar de originele huidskleuren de blending zouden verstoren.",
+        "tools": [
+          "Desaturate Tool"
+        ],
+        "effect": "Een gebalanceerde, neutrale grijswaardenlaag die perfect reageert op contrast-aanpassingen."
+      },
+      {
+        "name": "Lighter Only Blending",
+        "description": "Plaats een kopie van de model-laag helemaal bovenaan de lagenstapel en verander de layer mode naar 'Lighten only' (Lighter Only).",
+        "when_to_use": "Om de originele, lichte gelaatstrekken (zoals de neusbrug en wangen) subtiel over de donkere bergketens heen te leggen.",
+        "tools": [
+          "Layers Tab"
+        ],
+        "effect": "Alleen de delen van het gezicht die lichter zijn dan de onderliggende bergfoto worden zichtbaar."
+      },
+      {
+        "name": "Achtergrond Kleur-Matching",
+        "description": "Maak een nieuwe lege laag onderaan, sample met de pipet een diepblauwe kleur uit de originele berglucht en vul de laag via de Bucket Fill tool (Shift+B).",
+        "when_to_use": "Om het uitgesneden silhouet te integreren in een natuurlijke omgeving, zodat het lijkt alsof de wolken uit het hoofd echt de lucht in vliegen.",
+        "tools": [
+          "Bucket Fill Tool",
+          "Color Picker"
+        ],
+        "effect": "De transparante achtergrond verandert in een perfect matchende blauwe lucht."
+      },
+      {
+        "name": "Kleur-Harmonisatie via Overlay",
+        "description": "Dupliceer de blauwe achtergrondlaag, sleep deze helemaal naar de top van de stapel, zet de modus op Overlay en verlaag de dekking tot een subtiel percentage.",
+        "when_to_use": "Als finishing touch om de zwart-witte delen van het portret subtiel te doordrenken met de blauwe omgevingskleur.",
+        "tools": [
+          "Layers Tab"
+        ],
+        "effect": "Het hele kunstwerk krijgt een uniforme, blauwe kleurzweem die alle losse elementen chromatisch verbindt."
+      }
+    ],
+    "color_approach": "De kleurenaanpak is gebaseerd op monochromatische harmonie. Door de gezichtsdelen zwart-wit te maken en via een Overlay-toplaag te mengen met gesamplede blauwtinten uit de berglucht, ontstaat een tonaal consistent meesterwerk waarin schaduwen koel en diep aanvoelen.",
+    "local_adjustments": "Er wordt lokaal gewerkt op de individuele laagmaskers van de bergen- en model-lagen. Met een grote, zeer zachte brush (Hardness rond de 20%) poets Michael handmatig delen van het gezicht en de nek terug, terwijl hij de wolken juist buiten de schedelrand laat doorlopen.",
+    "what_to_avoid": [
+      "Vermijd het overnemen van gaten of fouten in de initiële selectie; gebruik altijd de optie 'Select > Remove Holes' in GIMP om minuscule transparante stipjes in het masker te elimineren."
+    ],
+    "best_for": "Fotografen die uitsluitend met open-source software (GIMP) werken en krachtige, landschappelijke portretten willen maken.",
+    "unique_insights": [
+      "Het opslaan van je hoofdselectie als een 'Path' in GIMP is essentieel, omdat je deze vorm gedurende de workflow op minstens vier verschillende maskers moet toepassen.",
+      "De desaturatie-modus 'Luminance' levert in GIMP een veel krachtiger fundament voor contrastrijke bewerkingen dan de standaard 'Lightness' optie.",
+      "Door de egale achtergrondkleur exact te samplen uit de lucht van de textuurfoto, creëer je de perfecte illusie dat de wolken organisch uit het hoofd ontsnappen."
+    ],
+    "style_preview": "Dit is een krachtige, grafische stijl met een diepe, koele sfeer. De perfecte integratie van een ruige bergketen in een strak herenprofiel, ondersteund door een matchende blauwe kleurgloed, zorgt voor een harmonieus geheel. Het is een uitstekende demonstratie van hoe je met GIMP professionele, surrealistische fine-art resultaten kunt behalen."
+  },
+  {
+    "video_title": "How To Create a Double Exposure Effect in GIMP",
+    "photographer_name": "GIMP TUT",
+    "youtube_url": "https://www.youtube.com/watch?v=f8cRTOm_GB0",
+    "genre": [
+      "portret",
+      "landschap",
+      "experimenteel"
+    ],
+    "light_conditions": [
+      "diffuus licht",
+      "gouden uur"
+    ],
+    "mood": [
+      "krachtig",
+      "dramatisch",
+      "sfeervol"
+    ],
+    "software": [
+      "GIMP"
+    ],
+    "style_description": "High-Contrast Overlay Sunburst Fusion",
+    "philosophy": "De filosofie achter deze stijl is het creëren van een maximale visuele impact door middel van extreme contrasten en strategische uitlijning. Het draait om het vinden van een 'climax' in het beeld — in dit geval het positioneren van een felle zonsondergang exact in het oog van het model. Dit geeft de dubbele belichting een bijna spirituele, krachtige lading.",
+    "workflow_order": [
+      "stap 1: maak een nieuw document aan met een specifieke hex-kleur als achtergrondvulling",
+      "stap 2: importeer drie foto's tegelijkertijd als nieuwe lagen via drag-and-drop",
+      "stap 3: activeer de Foreground Select tool om het model nauwkeurig te isoleren van haar achtergrond",
+      "stap 4: gebruik 'Layer to Image Size' om de rigide laaggrenzen op te rekken naar de volledige canvasgrootte"
+    ],
+    "techniques": [
+      {
+        "name": "Canvas-Grootte Laagextensie",
+        "description": "Pas 'Layer to Image Size' toe op de model-laag om de fysieke grenzen van de laag (de groene stippellijn) te vergroten naar de volledige canvasgrootte.",
+        "when_to_use": "Wanneer de geïmporteerde foto kleiner is dan het canvas, wat handmatige maskering buiten de oorspronkelijke fotomarges onmogelijk maakt.",
+        "tools": [
+          "Layer Menu"
+        ],
+        "effect": "Geeft de fotograaf de absolute vrijheid om maskers tot over de uiterste randen van het canvas vloeiend door te trekken."
+      },
+      {
+        "name": "S-Curve Contraststuring",
+        "description": "Open de Curves-tool en trek een gedurfde S-vorm om de schaduwen agressief te verduisteren en de hooglichten extra helder op te lichten.",
+        "when_to_use": "Bij vlakke, zacht verlichte studiofoto's die van zichzelf te weinig tonaal bereik hebben voor een dubbele belichting.",
+        "tools": [
+          "Curves Tool"
+        ],
+        "effect": "Het model krijgt een krachtig, diep contrast waardoor de overvloeiing later veel intenser oogt."
+      },
+      {
+        "name": "Semie-Transparant Masker-Penselen",
+        "description": "Verlaag de dekking (Opacity) van het zachte penseel handmatig naar 40% tot 50% tijdens het werken op het bergmasker.",
+        "when_to_use": "Wanneer je specifieke details, zoals zonnestralen, wilt behouden terwijl de massieve bergstructuur erachter moet verdwijnen.",
+        "tools": [
+          "Paint Brush Tool"
+        ],
+        "effect": "De zonnestralen blijven op een halftransparante, subtiele manier over het gezicht geweven."
+      },
+      {
+        "name": "Fuzzy Select Luchtverwijdering",
+        "description": "Gebruik de Fuzzy Select tool op de berglaag, sleep de drempelwaarde (Threshold) naar beneden om de blauwe lucht te selecteren en wis dit op het masker met de Delete-toets.",
+        "when_to_use": "Om een egale of contrasterende lucht in een textuurfoto razendsnel en non-destructief te elimineren.",
+        "tools": [
+          "Fuzzy Select Tool",
+          "Laagmasker (Layer Mask)"
+        ],
+        "effect": "De blauwe lucht verdwijnt onmiddellijk, waardoor alleen de scherpe bergpieken overblijven in de compositie."
+      },
+      {
+        "name": "Destructievrije Desaturatie-Sleuf",
+        "description": "Dupliceer de berglaag, pas een harde desaturatie toe en gebruik de algehele laagdekking (Opacity Slider) om handmatig een vleugje van de originele kleur terug te doseren.",
+        "when_to_use": "Wanneer een volledig zwart-wit landschap te saai is, maar de originele kleuren te dominant zijn.",
+        "tools": [
+          "Layers Tab",
+          "Desaturate Tool"
+        ],
+        "effect": "Er ontstaat een subtiele, dempende kleursluier die perfect balanceert tussen kleur en monochroom."
+      }
+    ],
+    "color_approach": "De kleurenaanpak is gedurfd en tonaal gelaagd. Er wordt een originele, warme portretlaag in de modus Overlay op 50% dekking over het geheel gelegd. Dit brengt een subtiele, gezonde huidtint terug in het model en harmonieert perfect met de gouden zonnestralen die uit haar oog lijken te breken.",
+    "local_adjustments": "Lokale maskers worden op drie niveaus tegelijk toegepast: op het model om haar achterhoofd te laten versmelten met de lucht, op de bergen om de sunburst te isoleren, en op de wolkenlaag (ingesteld op Overlay) om de mistflarden specifiek rond de schedelrand te concentreren.",
+    "what_to_avoid": [
+      "Breng desaturatie of harde curve-aanpassingen nooit direct permanent aan op de basislaag; werk altijd met duplicaten om de flexibiliteit te behouden om later kleur terug te draaien."
+    ],
+    "best_for": "Creatieve portretten waarbij men een dramatisch element (zoals een zon, maan of lichtbron) exact wil laten samenvallen met het oog.",
+    "unique_insights": [
+      "Door de dekking van je penseel naar 40% te verlagen op een masker, kun je de massieve bergen weghalen maar de delicate zonnestralen perfect laten staan.",
+      "De modus 'Overlay' op een wolkenlaag in GIMP transformeert platte witte wolken direct in een mystieke, hoogcontrast mistvlaag die door het hoofd snijdt.",
+      "Het handmatig vergroten van de laagboundary via 'Layer to Image Size' voorkomt dat je penseel abrupt stopt bij de onzichtbare randen van een geïmporteerde foto."
+    ],
+    "style_preview": "Dit is een hoogwaardige, spirituele en dramatische dubbele belichtingsstijl. De geniale positionering van de zon in het oog van het model creëert een hypnotiserend middelpunt. Dankzij de gelaagde opbouw van bergen, mist en selectieve kleurretouches ademt het eindresultaat een sfeer van pure kracht en kosmische verbondenheid uit.",
+    "_warnings": [
+      "naam volledig in hoofdletters"
+    ]
+  },
+  {
+    "video_title": "Gimp 2.10.8 - Double Exposure Effect",
+    "photographer_name": "MyGimpTutorialChannel",
+    "youtube_url": "https://www.youtube.com/watch?v=ge6AbehWf64",
+    "genre": [
+      "portret",
+      "architectuur",
+      "zwart-wit"
+    ],
+    "light_conditions": [
+      "gouden uur",
+      "kunstlicht"
+    ],
+    "mood": [
+      "moody",
+      "dramatisch",
+      "krachtig"
+    ],
+    "software": [
+      "GIMP"
+    ],
+    "style_description": "Urban Silhouette Blend Portrait",
+    "philosophy": "Deze stijl verkent de relatie tussen de mens en de stedelijke omgeving via een pure zwart-wit benadering. Door een close-up portret van een getatoeëerde man te versmelten met een complexe skyline van New York achter een hek, ontstaat een rauw, verhalend beeld. De focus ligt op geometrische vormen en rauwe contrasten.",
+    "workflow_order": [
+      "stap 1: importeer het high-res portret en voeg handmatig een Alpha Channel toe voor transparantie-ondersteuning",
+      "stap 2: selecteer de achtergrond rondom het hoofd met de Fuzzy Select tool en wis deze met de Delete-toets",
+      "stap 3: kopieer de stedelijke skyline-afbeelding en plak deze als een zwevende selectie direct in het document",
+      "stap 4: zet de overvloeimodus van de stadslaag op Screen en gebruik de Eraser tool met een zachte rand om het gezicht te zuiveren"
+    ],
+    "techniques": [
+      {
+        "name": "Alpha Kanaal Initialisatie",
+        "description": "Klik met de rechtermuisknop op de afbeeldingslaag en kies 'Add Alpha Channel' om transparantie mogelijk te maken alvorens te snijden.",
+        "when_to_use": "Bij het openen van JPEG-bestanden in GIMP die van zichzelf geen transparantielaag ondersteunen.",
+        "tools": [
+          "Layers Menu"
+        ],
+        "effect": "Zorgt ervoor dat gewiste delen daadwerkelijk transparant (schaakbordpatroon) worden in plaats van wit."
+      },
+      {
+        "name": "Fuzzy Achtergrond-Sleuf",
+        "description": "Gebruik de Fuzzy Select tool met een lage drempelwaarde om de egale studio-achtergrond rondom het model in één klik te selecteren en te verwijderen.",
+        "when_to_use": "Wanneer het bronportret is gefotografeerd tegen een nagenoeg perfect egale, lichte achtergrond.",
+        "tools": [
+          "Fuzzy Select Tool"
+        ],
+        "effect": "De achtergrond rondom het haar en de nek verdwijnt onmiddellijk en loepzuiver."
+      },
+      {
+        "name": "Mono Mixer Zwart-Wit Conversie",
+        "description": "Ga naar Colors > Components > Mono Mixer en pas de RGB-schuiven handmatig aan om een zware, contrastrijke zwart-wit omzetting te forceren.",
+        "when_to_use": "Om een dramatische, rauwe monochrome look te creëren die de structuren van de stad en de huidtextuur versterkt.",
+        "tools": [
+          "Mono Mixer"
+        ],
+        "effect": "Huidtinten veranderen in een intens, diep zwart-wit patroon met sterke microcontrasten."
+      },
+      {
+        "name": "Unsharp Mask Structuurverbetering",
+        "description": "Pas Filters > Enhance > Sharpen (Unsharp Mask) toe op de stadslaag met een Radius van 3.000 en een Amount van 0.500.",
+        "when_to_use": "Om de geometrische lijnen van wolkenkrabbers en het metalen hekwerk extreem te accentueren voor de blending.",
+        "tools": [
+          "Sharpen (Unsharp Mask)"
+        ],
+        "effect": "De architectonische details worden fluwelig scherp en snijden krachtiger door het portret heen."
+      },
+      {
+        "name": "Gecontroleerde Gezichts-Eraser",
+        "description": "Selecteer de Gum (Eraser tool), stel een zeer grote brush in met een Hardness van 0 en wrijf zachtjes over de belangrijkste gezichtsdelen van de stadslaag.",
+        "when_to_use": "Om de textuur van de stad weg te halen bij de ogen, neus en mond, zodat de menselijke emotie behouden blijft.",
+        "tools": [
+          "Eraser Tool"
+        ],
+        "effect": "De skyline vervaagt lokaal op het gezicht, waardoor de unieke gelaatstrekken en tatoeages weer perfect zichtbaar worden."
+      }
+    ],
+    "color_approach": "De kleurenaanpak is hier radicaal minimalistisch: pure eliminatie via de Mono Mixer. Door alle kleurkracht weg te nemen, verschuift de focus volledig naar de grafische interactie tussen het ruitjespatroon van het hekwerk, de textuur van de tatoeages en de verticale lijnen van de gebouwen.",
+    "local_adjustments": "Lokale aanpassingen worden in deze specifieke workflow rechtstreeks met de Eraser-tool uitgevoerd op de overvloeilaag. Hoewel dit destructief is, zorgt het met een vederzachte brush-instelling voor een directe en zeer intuïtieve versmelting van de twee beelden.",
+    "what_to_avoid": [
+      "Zorg ervoor dat de drempelwaarde van de Fuzzy Select tool niet te hoog staat ingesteld, omdat de tool anders in de lichte huid van het model gaat 'bijten' en delen van het gezicht onbedoeld wegwist."
+    ],
+    "best_for": "Rauwe, urbane portretten met veel textuur (zoals baarden of tatoeages) gecombineerd met grafische stadslandschappen.",
+    "unique_insights": [
+      "De 'Mono Mixer' in GIMP geeft je een veel rauwere, expressievere zwart-wit omzetting voor urbane fotografie dan de standaard desaturatie-knop.",
+      "Het toepassen van een Unsharp Mask op de stadslaag VÓÓR de blending zorgt ervoor dat fijne structuren zoals een kettinghek prachtig zichtbaar blijven.",
+      "Het handmatig wissen met een vederzachte Eraser (Hardness 0) is een snelle en intuïtieve manier om een gezicht vrij te maken van storende gebouwen."
+    ],
+    "style_preview": "Dit is een rauwe, urbane zwart-wit stijl met een zware, melancholische sfeer. De combinatie van een getatoeëerd mannelijk profiel gevangen achter het hekwerk van een indrukwekkende stads-skyline vertelt een krachtig, industrieel verhaal. Het is een perfecte stijl voor street- en fine-art fotografen die een rauw randje aan hun dubbele belichtingen willen meegeven.",
+    "_warnings": [
+      "naam lijkt op kanaalnaam (channel)"
+    ]
+  },
+  {
+    "video_title": "Creative DOUBLE EXPOSURE Effect: Capture One 20 Tutorial",
+    "photographer_name": "Kasia Zmokla",
+    "youtube_url": "https://www.youtube.com/watch?v=OLm68WKAIhg",
+    "genre": [
+      "portret",
+      "fine-art",
+      "experimenteel"
+    ],
+    "light_conditions": [
+      "kunstlicht",
+      "diffuus licht"
+    ],
+    "mood": [
+      "intiem",
+      "sfeervol",
+      "moody"
+    ],
+    "software": [
+      "Capture One"
+    ],
+    "style_description": "Luma Mask Golden Glow",
+    "philosophy": "Deze stijl verlegt de grenzen van RAW-software door een double-exposure effect te creëren zonder Photoshop te gebruiken. Het concept rust op non-destructieve precisie: de textuur wordt via een geavanceerd helderheidsmasker rechtstreeks in het RAW-bestand gevlochten. Het doel is een schilderachtig, organisch resultaat met behoud van de ultieme RAW-datakwaliteit.",
+    "workflow_order": [
+      "stap 1: optimaliseer alle basis-luminositeitsniveaus en pas de definitieve kleurgrading toe op het portret",
+      "stap 2: verhoog op de textuurfoto (kwal) de contrasten extreem om de organische lijnen te isoleren",
+      "stap 3: genereer een geavanceerd helderheidsmasker (Luma Mask) dat uitsluitend de felle witte lijnen selecteert",
+      "stap 4: kopieer via het klembord (Clipboard) uitsluitend de layer-informatie naar het portretbestand"
+    ],
+    "techniques": [
+      {
+        "name": "RAW Contrast-Isolatie",
+        "description": "Push de contrast- en curves-sliders in het RAW-bestand van de textuurlaag naar extreme waarden om de witte organische lijnen maximaal te scheiden van de zwarte achtergrond.",
+        "when_to_use": "Wanneer de basistextuur (zoals een kwal of plant) te flets is om een zuiver helderheidsmasker te genereren.",
+        "tools": [
+          "Contrast Slider",
+          "Curves Tool"
+        ],
+        "effect": "De delicate, biologische lijnen gaan intens oplichten tegen een gitzwacht gat."
+      },
+      {
+        "name": "Luma Range Maskering",
+        "description": "Activeer de Luma Range-tool op een nieuwe laag en vereng het bereik (Range) tot de uiterste rechterzijde om een masker te slaan van louter hooglichten.",
+        "when_to_use": "Om flinterdunne, complexe organische structuren te selecteren zonder ze handmatig met een penseel te hoeven overtrekken.",
+        "tools": [
+          "Luma Range Dialog"
+        ],
+        "effect": "Er ontstaat een feilloos, semi-transparant masker dat exact de lichtgevende lijnen van de kwal volgt."
+      },
+      {
+        "name": "Selectieve Clipboard-Transpositie",
+        "description": "Open de Adjustments Clipboard, vink alle globale instellingen zoals Exposure en Contrast UIT, laat uitsluitend 'Layers' aangevinkt staan en druk op Apply.",
+        "when_to_use": "Om een opgebouwd masker van de ene foto naar een compleet andere foto over te zetten zonder de zorgvuldige basisbewerking te overschrijven.",
+        "tools": [
+          "Adjustments Clipboard"
+        ],
+        "effect": "Het complexe Luma-masker wordt feilloos over het portret heen gelegd."
+      },
+      {
+        "name": "RAW Witbalans Kleurcontrast",
+        "description": "Selecteer de geïmporteerde textuurlaag en verschuif de Kelvin-regelaar (White Balance) extreem naar rechts richting de warme goudtinten.",
+        "when_to_use": "Om een krachtig complementair kleurcontrast te forceren tussen een koele, matte achtergrond en een vurige overlay.",
+        "tools": [
+          "White Balance (Kelvin)"
+        ],
+        "effect": "De geïmporteerde lijnen transformeren van saai wit naar een intense, gloeiende goudgele kleur."
+      },
+      {
+        "name": "Luma Layer Repositioning",
+        "description": "Activeer het penseel (B), klik op 'Display Selection Points' in het lagenmenu en versleep het centrale controlepunt om het masker handmatig te verplaatsen.",
+        "when_to_use": "Wanneer de gekopieerde textuurlijnen na de overdracht net niet mooi vallen over de ogen of lippen van het model.",
+        "tools": [
+          "Layers Menu",
+          "Brush Tool"
+        ],
+        "effect": "De goudgele lijnen schuiven vloeiend over het gezicht naar de esthetisch perfecte positie."
+      }
+    ],
+    "color_approach": "De kleurenaanpak is gebaseerd op een geraffineerd, complementair kleurcontrast. De basis van het portret is koel, mat en gedempt blauw. Door de Luma-laag via de RAW-witbalans om te zetten in een vurige, goudgele tint, snijden de organische textuurlijnen met een ongelooflijke chromatische kracht door het beeld.",
+    "local_adjustments": "Er wordt louter lokaal gewerkt via de non-destructieve Luma-lagen in Capture One. Er wordt niet handmatig gebrushed; de software bepaalt op basis van de luminantie-waarden van de bronafbeelding exact waar de textuur zich nestelt op het gezicht, wat resulteert in een ongekende organische precisie.",
+    "what_to_avoid": [
+      "Vink nooit klakkeloos 'Copy/Apply All' aan op het klembord, omdat de extreme contrast-aanpassingen van de textuurfoto dan de zorgvuldig opgebouwde belichting van het portret volledig verwoesten."
+    ],
+    "best_for": "RAW-fotografen die de hoogste beeldkwaliteit willen behouden en dromerige, schilderachtige fine-art portretten willen creëren.",
+    "unique_insights": [
+      "Capture One stelt je in staat om een double-exposure effect volledig in het RAW-domein te realiseren met behoud van het volledige dynamische bereik.",
+      "Door de White Balance-slider op een specifieke laag extreem te verschuiven, kun je de overlay-lijnen puur met RAW-data inkleuren in plaats van met digitale filters.",
+      "Hoewel je een masker in Capture One niet kunt schalen of roteren, kun je het via 'Display Selection Points' wel perfect verplaatsen over je onderwerp."
+    ],
+    "style_preview": "Dit is een uiterst verfijnde, artistieke en schilderachtige stijl die de grenzen van RAW-ontwikkeling opzoekt. De combinatie van een sereen, matblauw portret met gloeiende, organische goudlijnen die via een Luma-masker zijn aangebracht, geeft een magisch resultaat. Het straalt pure luxe, creativiteit en technische perfectie uit."
+  },
+  {
+    "video_title": "Double exposure snapseed | snapseed double exposure editing",
+    "photographer_name": "SRK Photoworkz",
+    "youtube_url": "https://www.youtube.com/watch?v=pTWeVhExuUs",
+    "genre": [
+      "portret",
+      "landschap",
+      "experimenteel"
+    ],
+    "light_conditions": [
+      "gouden uur",
+      "daglicht"
+    ],
+    "mood": [
+      "levendig",
+      "krachtig",
+      "filmisch"
+    ],
+    "software": [
+      "Snapseed"
+    ],
+    "style_description": "Mobile Double Exposure Overlay",
+    "philosophy": "De filosofie achter deze mobiele stijl is dat creativiteit overal en altijd toegankelijk moet zijn, rechtstreeks op een smartphone. Door complexe Photoshop-technieken te vertalen naar de intuïtieve touch-interfaces van Snapseed, wordt het maken van een dubbele belichting een snel en expressief proces. Het doel is een directe, contrastrijke visuele impact.",
+    "workflow_order": [
+      "stap 1: open de basis-portretfoto in Snapseed en pas het 'Dark' filter toe in de Black & White tool",
+      "stap 2: open het Tools-menu, kies Double Exposure en voeg de stadslaag toe via het plus-icoon",
+      "stap 3: verander de overvloeimodus via de stijlen-knop naar Lighten en schuif de ondoorzichtigheid naar 100%",
+      "stap 4: open de View Edits-historie, selecteur de Double Exposure-penseel en poets de effecten handmatig in"
+    ],
+    "techniques": [
+      {
+        "name": "Mobile Zwart-Wit Contraststuring",
+        "description": "Gebruik de Black & White tool en selecteer specifiek de preset 'Dark' om de schaduwen in het haar en de kleding zwaar aan te zetten.",
+        "when_to_use": "Op een smartphone om snel een flets portret om te zetten in een krachtig silhouet dat geschikt is voor overvloeiing.",
+        "tools": [
+          "Black & White Tool"
+        ],
+        "effect": "Huid en kleding worden diepdonker, wat het ideale fundament legt voor de Double Exposure."
+      },
+      {
+        "name": "Snapseed Lighten Blending",
+        "description": "Zet in de Double Exposure tool de overvloeistijl op 'Lighten' om de lichte elementen van de stadsfoto in de donkere delen van het portret te drukken.",
+        "when_to_use": "Bij het samenvoegen van een portret met een lichte skyline of een snelweg met autolichten op een mobiel apparaat.",
+        "tools": [
+          "Double Exposure Tool"
+        ],
+        "effect": "De stad verschijnt uitsluitend in de schaduwpartijen en het haar van de man."
+      },
+      {
+        "name": "Ondoorzichtigheid Maximering",
+        "description": "Schuif de Opacity-regelaar (druppel-icoon) in de Double Exposure tool helemaal naar rechts naar de maximale waarde.",
+        "when_to_use": "Wanneer je wilt dat de ingevoegde textuurafbeelding met 100% helderheid en zonder fletsheid doorbreekt in de schaduwen.",
+        "tools": [
+          "Double Exposure Tool"
+        ],
+        "effect": "De kleuren en lichten van de tweede foto worden intens en verzadigd weergegeven."
+      },
+      {
+        "name": "View Edits Masker-Penseel",
+        "description": "Ga naar View Edits via het pijl-icoon bovenin, selecteer het penseel-icoon naast Double Exposure en schilder handmatig met een waarde van 100.",
+        "when_to_use": "Om de overvloeiing heel gericht lokaal toe te passen en de externe achtergrond spierwit te houden.",
+        "tools": [
+          "View Edits (Mask Brush)"
+        ],
+        "effect": "De stadsafbeelding wordt uitsluitend binnen de handmatig geschilderde zones van het hoofd geactiveerd."
+      },
+      {
+        "name": "Selectieve Gezichts-Zuivering",
+        "description": "Verlaag de penseelwaarde in het View Edits-menu naar 25 of 0 en poets voorzichtig over de neus, ogen en mond van het model.",
+        "when_to_use": "Om storende gebouwen of wegen van de vitale delen van het gezicht te vegen voor een betere herkenbaarheid.",
+        "tools": [
+          "View Edits (Mask Brush)"
+        ],
+        "effect": "De gelaatstrekken van de man worden weer helder en schoon zichtbaar door de stad heen."
+      }
+    ],
+    "color_approach": "De kleurenaanpak maakt slim gebruik van selectieve kleurfiltering. Terwijl het portret rigoureus wordt omgezet in een diep zwart-wit silhouet, behoudt de stadsafbeelding in de Double Exposure-tool haar volledige, levendige avondkleuren. Dit levert een spectaculair contrast op tussen het monochrome menselijke profiel en de kleurrijke stedelijke dynamiek.",
+    "local_adjustments": "Lokale aanpassingen worden via de 'View Edits'-penseelfunctie met de vinger op het scherm ingekleurd. Door in te zoomen past Snapseed de penseelgrootte automatisch aan, waardoor je heel accuraat de contouren van het haar kunt volgen en de gezichtslijnen kunt opschonen.",
+    "what_to_avoid": [
+      "Vermijd het overgeslagen achterlaten van de randen van het silhouet; als je slordig poetst met de vinger, ontstaan er vreemde, onnatuurlijke kleurvlekken buiten de haarlijn van het model."
+    ],
+    "best_for": "Fotografen en content-creators die snel onderweg op hun smartphone hoogwaardige, creatieve double-exposure edits willen maken.",
+    "unique_insights": [
+      "De 'View Edits'-historie in Snapseed is het verborgen equivalent van Photoshop-laagmaskers, waarmee je elk effect lokaal kunt in- of uitpoetsen.",
+      "Door de ondoorzichtigheid in Snapseed op 100% te zetten in de Lighten-modus, creëer je een verbluffend contrast tussen diep zwart-wit en felle kleuren.",
+      "Het gebruik van de Black & White preset 'Dark' is op een smartphone de snelste manier om een perfect schaduw-canvas te forceren voor overlays."
+    ],
+    "style_preview": "Dit is een flitsende, levendige en moderne mobiele stijl. De krachtige combinatie van een strak zwart-wit mannelijk silhouet met de kleurrijke, dynamische lichten van een snelweg bij avonduren knalt van het scherm af. Het bewijst dat je geen desktopcomputer nodig hebt om een professionele en meeslepende dubbele belichting te creëren."
   }
 ]

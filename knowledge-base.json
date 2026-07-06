@@ -53614,5 +53614,276 @@
       "Hij bewijst dat een raw-opname met minimale handelingen een drastische metamorfose kan ondergaan die met een standaard jpeg onmogelijk is"
     ],
     "style_preview": "Deze stijl straalt een ongelooflijk levendige, contrastrijke en zonovergoten energie uit die uitermate geschikt is voor de commercieel georiënteerde dronefotograaf. De visuele sfeer is warm, getuigt van een enorme luminantie in de lichten en knalt van het scherm dankzij de beproefde Adobe-kennis. Het is een snelle, doeltreffende methode om beelden maximaal te laten spreken. Men kan een oogverblindend, stralend eindresultaat verwachten dat direct de aandacht opeist."
+  },
+  {
+    "video_title": "Photoshop Luminosity Masking 101",
+    "photographer_name": "Anthony Morganti",
+    "youtube_url": "https://www.youtube.com/watch?v=xyPBeC2oqgo",
+    "genre": [
+      "landschap",
+      "algemeen"
+    ],
+    "light_conditions": [
+      "gouden uur",
+      "tegenlicht"
+    ],
+    "mood": [
+      "sfeervol",
+      "krachtig"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Balanced High Dynamic Range",
+    "philosophy": "Het onafhankelijk van elkaar corrigeren van extreem lichte en donkere beeldpartijen in contrastrijke landschappen. Door luminantieselecties direct om te zetten in maskeringskanalen behoudt het beeld zijn natuurlijke overgangen. De focus ligt op het herstellen van de toonbalans zonder dat er artefacten ontstaan.",
+    "workflow_order": [
+      "stap 1: dupliceren van de achtergrondlaag om non-destructief te kunnen werken",
+      "stap 2: selecteren van de helderste basistonen via het rgb-kanaal",
+      "stap 3: toepassen van een fotofilter om de hooglichten subtiel op te warmen",
+      "stap 4: opbouwen van een gestapelde selectie voor de middentonen en schaduwen",
+      "stap 5: omkeren van de selectie om de diepe schaduwen via een niveaulaag op te lichten"
+    ],
+    "techniques": [
+      {
+        "name": "Basis RGB-hooglichtenselectie",
+        "description": "Houd de Ctrl/Command-toets ingedrukt en klik op het RGB-kanaal om direct een luminantieselectie te maken van alle pixels die lichter zijn dan 50% grijs.",
+        "when_to_use": "Bij tegenlicht- of zonsondergangfoto's waarbij de lucht en wolken nauwkeurig geïsoleerd moeten worden",
+        "tools": [
+          "Channels"
+        ],
+        "effect": "Er ontstaat een vloeiende, zachte selectie van uitsluitend de heldere delen van de foto"
+      },
+      {
+        "name": "Hooglichten opwarmen via Photo Filter",
+        "description": "Pas een Photo Filter-aanpassingslaag toe met een warmtefilter op de actieve hooglichtenselectie om de densiteit van de zonsondergangkleuren selectief te verhogen.",
+        "when_to_use": "Wanneer de heldere delen in een wolkenlucht een sfeervollere en warmere uitstraling nodig hebben",
+        "tools": [
+          "Photo Filter"
+        ],
+        "effect": "De felle hooglichten krijgen een warme, gouden gloed zonder dat de schaduwen verkleuren"
+      },
+      {
+        "name": "Schaduw-isolatie via selectie-inversie",
+        "description": "Maak een cumulatieve hooglichten- en middentonenselectie en druk op Ctrl+Shift+I om de selectie om te keren (inverteren) naar de pure schaduwpartijen.",
+        "when_to_use": "Bij diepe schaduwpartijen zoals donkere kliffen of rotswanden die details missen",
+        "tools": [
+          "Channels",
+          "Keyboard Shortcuts"
+        ],
+        "effect": "De donkere delen worden geselecteerd terwijl de lucht en lichte partijen volledig buiten schot blijven"
+      },
+      {
+        "name": "Schaduwoplichting via Levels",
+        "description": "Plaats een Levels-aanpassingslaag op de geïnverteerde schaduwlaag en verschuif de middelste grijze schuifbalk naar links om de schaduwdetails gecontroleerd te liften.",
+        "when_to_use": "Als donkere onderwerpen in de voorgrond te zwaar onderbelicht zijn ten opzichte van een heldere lucht",
+        "tools": [
+          "Levels"
+        ],
+        "effect": "De details in de donkere kliffen worden zichtbaar zonder dat de lucht overbelicht raakt"
+      },
+      {
+        "name": "Fotografie-werkruimte activeren",
+        "description": "Schakel de interface van Photoshop via Window > Workspace om naar de 'Photography' instelling om directe toegang te krijgen tot het Channels-tabblad naast de lagen.",
+        "when_to_use": "Bij de start van een complexe maskeringssessie om efficiënt tussen kanalen en lagen te schakelen",
+        "tools": [
+          "Workspace"
+        ],
+        "effect": "Een geoptimaliseerde interface waarin de kanalen en maskers direct operationeel zijn"
+      }
+    ],
+    "color_approach": "De kleuraanpak richt sich op het selectief opwarmen van de hooglichten via ingebouwde filters. Door de kleurverschuiving strikt te beperken tot de lichte delen, blijft de natuurlijke koelte in de schaduwpartijen intact, wat resulteert in een rijk en sfeervol kleurcontrast.",
+    "local_adjustments": "Lokale aanpassingen worden volledig gestuurd door de mathematische selecties uit het kanalenpaneel, waardoor handmatige penseelstreken overbodig zijn om perfect aansluitende maskers te creëren.",
+    "what_to_avoid": [
+      "Vermijd het rechtstreeks lichten van schaduwen zonder inversiemasker om te voorkomen dat de lucht flets uitbleekt",
+      "Pas geen extreme filterdensiteiten toe om een geloofwaardige toongradatie te waarborgen"
+    ],
+    "best_for": "Landschapsfotografen die contrastrijke zonsondergangen met donkere voorgrondelementen handmatig willen balanceren",
+    "unique_insights": [
+      "Door Shift+Ctrl te combineren met een klik op het RGB-kanaal kan de selectie cumulatief worden uitgebreid naar opeenvolgende stappen in de middentonen",
+      "Hij gebruikt niveaulagen (Levels) in plaats van curven voor de schaduwoplichting omdat de middenschuif een lineairere controle biedt over puur de donkere basistonen",
+      "De marching ants (lopende mieren) tonen uitsluitend de gebieden die voor minimaal 50% geselecteerd zijn, hoewel de onzichtbare selectie ook zachtere grijswaarden bevat"
+    ],
+    "style_preview": "Deze stijl biedt een zeer degelijke en pure basis voor het handmatig overbruggen van een hoog dynamisch bereik in Photoshop. De visuele sfeer is gebalanceerd en natuurgetrouw, met een subtiele nadruk op warme hooglichten en perfect doortekende schaduwen. Zonder dure plugins leert deze methode de essentie van tonaal isoleren. Fotografen kunnen een strakke, gecontroleerde plaat verwachten waarin lichte en donkere landschapselementen perfect in harmonie zijn gebracht."
+  },
+  {
+    "video_title": "A Simple But Effective Way to Create Luminosity Masks in Photoshop",
+    "photographer_name": "PiXimperfect",
+    "youtube_url": "https://www.youtube.com/watch?v=t3zSUK7KK7c",
+    "genre": [
+      "landschap",
+      "experimenteel"
+    ],
+    "light_conditions": [
+      "gouden uur",
+      "bewolkt"
+    ],
+    "mood": [
+      "dramatisch",
+      "levendig"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Visual Real-Time Tonal Pop",
+    "philosophy": "Het democratiseren en versimpelen van complexe bewerkingstechnieken tot een intuïtief en visueel proces. Fotobewerking is een pure kunstvorm waarbij de fotograaf de absolute controle moet hebben over de overgang en de vloeiendheid van het licht. Door de overstap te maken van rigide kanaalberekeningen naar de dynamische color-range functionaliteit ontstaat er een ongekende creatieve vrijheid.",
+    "workflow_order": [
+      "stap 1: aanmaken van een curves-aanpassingslaag en het expliciet selecteren van het witte laagmasker",
+      "stap 2: navigeren naar de color-range module en het selecteren van de gewenste toonzone via de dropdown",
+      "stap 3: kalibreren van de range-schuifbalk met realtime visuele feedback via het snelmasker",
+      "stap 4: verfijnen van de fuzziness-slider om de zachtheid en de overvloeirand te boetseren",
+      "stap 5: toepassen van de curve-aanpassing en het lokaal maskeren van overtollige zones via groepen"
+    ],
+    "techniques": [
+      {
+        "name": "Realtime Color Range Toonselectie",
+        "description": "Open Select > Color Range met een geselecteerd laagmasker, kies 'Highlights' of 'Shadows' en schuif met de Range-regelaar om de selectie visueel af te bakenen.",
+        "when_to_use": "Wanneer je direct wilt zien welke helderheidswaarden in de foto worden geselecteerd zonder te gissen in het kanalenpaneel",
+        "tools": [
+          "Color Range"
+        ],
+        "effect": "Er ontstaat een direct zichtbaar, accuraat masker op basis van de gekozen helderheid"
+      },
+      {
+        "name": "Fuzziness Randverzachting",
+        "description": "Manipuleer de Fuzziness-slider in de Color Range module om de overgangs- en overvloeizone tussen geselecteerde en niet-geselecteerde pixels vloeiend te maken.",
+        "when_to_use": "Om harde, abrupte randen in maskers rond bergen of wolken volledig te elimineren",
+        "tools": [
+          "Color Range"
+        ],
+        "effect": "Een perfect vederzachte overgang in het masker die digitale overgangen onzichtbaar maakt"
+      },
+      {
+        "name": "Snelmasker Opacity Optimalisatie",
+        "description": "Dubbelklik op het Quick Mask icoon en verlaag de Opacity naar 80% met de instelling op 'masked areas' om de selectie als een helder rode gloed te beoordelen.",
+        "when_to_use": "Tijdens de color-range selectiefase om de geografische spreking van het masker te controleren",
+        "tools": [
+          "Quick Mask"
+        ],
+        "effect": "De niet-geselecteerde delen lichten rood op, waardoor de effectieve selectie feilloos geëvalueerd kan worden"
+      },
+      {
+        "name": "Slick-Step Maskergeneratie",
+        "description": "Zorg dat de thumbnail van het laagmasker van de aanpassingslaag actief is vóórdat je Color Range opent, zodat de selectie automatisch in het masker nestelt.",
+        "when_to_use": "Bij elke color-range maskeringssessie om tijdrovende handmatige vulstappen over te slaan",
+        "tools": [
+          "Color Range",
+          "Layers"
+        ],
+        "effect": "Het berekende masker wordt direct en foutloos toegepast op de actieve curves- of niveaulaag"
+      },
+      {
+        "name": "Underlying Layer Schaduw-blend",
+        "description": "Open de Layer Styles (Blend If), sleep de linker schuifbalk van de 'Underlying Layer' naar rechts en splits de schuif met Alt/Option voor een zachte blending.",
+        "when_to_use": "Om een toegevoegd hooglichten-kleureffect volledig te verwijderen uit de diepe schaduwputten van de onderliggende pixels",
+        "tools": [
+          "Blend If"
+        ],
+        "effect": "Het effect trekt zich op een uiterst vloeiende, organische manier terug uit de donkere structuren"
+      }
+    ],
+    "color_approach": "De kleuraanpak is creatief en schilderachtig. Door een 'Solid Color'-laag in een overlay-overvloeimodus (Blend Mode) te koppelen aan een specifiek color-range hooglichtenmasker, kan er een magentaroze of goudgele gloed in de wolken worden gegoten die perfect aansluit bij de artistieke visie.",
+    "local_adjustments": "Er wordt gewerkt met groepsmaskers om de color-range aanpassingen geografisch te beperken; een zacht zwart penseel poetst het effect weg uit zones waar het de tonen verstoort.",
+    "what_to_avoid": [
+      "Selecteer niet de aanpassingslaag zelf maar altijd specifiek de maskeradres-thumbnail om automatische invoeging niet te blokkeren",
+      "Vermijd te smalle midtonen-ranges zonder fuzziness om abrupte toongrenzen te voorkomen"
+    ],
+    "best_for": "Fotografen die een visuele, flexibele en uiterst creatieve methode zoeken om toonzones en kleuren in Photoshop te boetseren",
+    "unique_insights": [
+      "Hij vervangt de rigide, traditionele kanaalberekeningen door de flexibele Color Range tool, wat zorgt voor een realtime visuele feedback",
+      "Door het handmatig splitsen van de Blend If schuifregelaars ontstaat een vloeiende toonovergang die de harde digitale grenzen opbreekt",
+      "Color Range stelt de fotograaf in staat om 'highlights binnen highlights' te selecteren via een oneindig variabele range-schuifbalk"
+    ],
+    "style_preview": "Deze stijl ademt een ongelooflijke, dynamische en visueel gedreven creativiteit uit die perfect is voor de artistieke fotograaf. De visuele sfeer is krachtig, kleurrijk en barst van de expressieve tooneffecten, perfect ingebed door vederzachte maskerranden. Door afscheid te nemen van saaie wiskundige kanalen wordt bewerken een puur intuïtief genot. Fotografen kunnen een verbluffend, levendig en uiterst sfeervol kunstwerk verwachten."
+  },
+  {
+    "video_title": "Post Processing Tutorial - Exposure Blending using Luminosity Masks",
+    "photographer_name": "Michael Breitung",
+    "youtube_url": "https://www.youtube.com/watch?v=JMTvzR35-kE",
+    "genre": [
+      "landschap",
+      "kust"
+    ],
+    "light_conditions": [
+      "gouden uur",
+      "nacht"
+    ],
+    "mood": [
+      "moody",
+      "rustig"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Clean Balanced Coastal Blend",
+    "philosophy": "Het realiseren van een vlijmscherpe en ruisvrije belichtingsbalans door het selectief samensmelten van meervoudige belichtingen. Grijsverloopfilters (GND) in het veld vormen de perfecte basis, waarna luminantiemaskers in Photoshop de resterende contrastgaten nauwkeurig dichten. Het uiteindelijke doel is een brandschoon bestand met minimale luminantie-ruis in de schaduwpartijen.",
+    "workflow_order": [
+      "stap 1: analyseren van de met filters gemaakte basisbelichting en de aanvullende lichte brackets",
+      "stap 2: genereren van een specifiek 'darks 4' of 'darks 5' masker via een hulpplugin ter evaluatie van de klifranden",
+      "stap 3: lokaal inpoetsen van de heldere rotsexposure met een zacht wit penseel op 80% opacity",
+      "stap 4: handmatig opschonen van het masker met 100% wit in de kern van het onderwerp om contrastverlies te vermijden",
+      "stap 5: toepassen van een gekoppelde curvelaag (clipping mask) om de ingeblende partijen tonaal te harmoniseren"
+    ],
+    "techniques": [
+      {
+        "name": "Gegradueerde filtervoorbereiding",
+        "description": "Gebruik in het veld een combinatie van een hard en zacht grijsverloopfilter (GND 0.6) om de lucht vooraf te balanceren, zodat de raw-basis al dicht bij het eindresultaat ligt.",
+        "when_to_use": "Bij kustlandschappen met een strakke horizonlijn waar de lucht de neiging heeft om zwaar over te belichten",
+        "tools": [
+          "Masking"
+        ],
+        "effect": "Een perfect controleerbare basisfoto waarin de hooglichten in de lucht vanaf het begin behouden blijven"
+      },
+      {
+        "name": "Evaluatie-verloopmap (Exposure Warning Layer)",
+        "description": "Genereer een tijdelijke verloopmap (Gradient Map) met strak getrokken Blend If driehoeken (6 tot 8) om kritieke clipping en ruisgebieden realtime in kaart te brengen.",
+        "when_to_use": "Bij de start van een exposure-blend om exact te zien welke schaduwzones kwalitatief inferieur zijn",
+        "tools": [
+          "Gradient Map",
+          "Blend If"
+        ],
+        "effect": "Onderbelichte, ruisgevoelige schaduwpartijen lichten direct fel op als visuele waarschuwing"
+      },
+      {
+        "name：": "Darks 5 randselectie-maskering",
+        "description": "Activeer een 'Darks 5' selectie om een vlijmscherpe, perfect aansluitende selectie langs de overgang tussen een donkere klif en de lichte lucht te verkrijgen.",
+        "when_to_use": "Om complexe rotsranden of zee-stacks in te blenden zonder dat de omliggende lucht lokaal verkleurt of oplicht",
+        "tools": [
+          "Masking"
+        ],
+        "effect": "Een feilloze, onzichtbare overgang langs de grillige randen van de klif"
+      },
+      {
+        "name": "Kern-opschoning met hard wit",
+        "description": "Deselecteer het luminantiemasker na de initiële randbewerking en schilder de binnenkern van de rots handmatig in met 100% wit op het masker.",
+        "when_to_use": "Wanneer een luminantiemasker de middentonen in het onderwerp deels blokkeert, wat leidt tot een fletse, contrastloze grijze uitstraling",
+        "tools": [
+          "Masking"
+        ],
+        "effect": "De volledige textuur en contrastrijkdom van de heldere belichting keert terug in de rotskern"
+      },
+      {
+        "name": "Kleurharmonisatie via Color-laag",
+        "description": "Maak een nieuwe lege laag aan boven de blend, zet de overvloeimodus (Blend Mode) op 'Color', sample een nabijgelegen tint en poets lensflares of waterdruppels weg op 10% opacity.",
+        "when_to_use": "Wanneer er door het combineren van verschillende lensposities of filters een lichte kleurafwijking of flare ontstaat",
+        "tools": [
+          "Layers",
+          "Blend Mode"
+        ],
+        "effect": "Kleurafwijkingen en storende flares smelten naadloos en onzichtbaar samen met de omgeving"
+      }
+    ],
+    "color_approach": "De kleuraanpak beoogt een uiterst subtiele en getrouwe registratie van het blauwe en gouden uur. Door storende kleurverschuivingen in de ingeblende zee-stacks handmatig via een specifieke kleurovervloeilaag te neutraliseren, ontstaat een serene en harmonieuze kleurbalans.",
+    "local_adjustments": "De workflow balanceert op het snijvlak van wiskundige luminantieseleties voor kritieke randen en rigoureuze handmatige penseelstreken om de contrastrijke kernen van landschapselementen te beschermen.",
+    "what_to_avoid": [
+      "Laat het masker niet ongemoeid als een pure luminantieselectie om een modderige, contrastloze grijze rots te voorkomen",
+      "Vermijd het blindelings oplichten van schaduwen uit één opname bij camera's met een hoge basisruis"
+    ],
+    "best_for": "Landschapsfotografen die seascape-opnames met grillige zee-stacks en contrastrijke luchten haarscherp en ruisvrij willen samenvoegen",
+    "unique_insights": [
+      "Hij gebruikt fysieke grijsverloopfilters in combinatie met digitale exposure blending om het beste uit beide werelden te verenigen voor een schoner bronbestand",
+      "Door een heldere bracket in te blenden en deze vervolgens via een gekoppelde curve weer te verdonkeren, wordt de schaduwruis drastisch gereduceerd (ETTR-principe)",
+      "Het handmatig vullen van de rotskern met 100% wit is dé oplossing voor het typische contrastverlies dat optreedt bij puur luminantie-blenden"
+    ],
+    "style_preview": "Deze stijl ademt een schitterende, serene en technisch uiterst superieure perfectie uit, perfect ontwikkeld voor de professionele landschaps- en kustfotograaf. De visuele sfeer is rustig en loepzuiver, met een indrukwekkende dynamiek en een totale afwezigheid van storende sensorruis of harde halo's. Door de doordachte combinatie van filters en Photoshop-precisie wordt de lat zeer hoog gelegd. Fotografen kunnen een kristalhelder, printklaar en adembenemend kunstwerk verwachten."
   }
 ]

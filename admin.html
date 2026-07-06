@@ -401,7 +401,12 @@ function renderStats() {
     statWarn(withoutPreview, 'ZONDER PREVIEW') +
     statWarn(warnings, 'WAARSCHUWINGEN') +
     stat(lrEntries, 'LIGHTROOM') +
-    stat(psEntries, 'PHOTOSHOP');
+    stat(psEntries, 'PHOTOSHOP') +
+    stat(localKnowledge.filter(function(e){ return (e.software||[]).includes('Capture One'); }).length, 'CAPTURE ONE') +
+    stat(localKnowledge.filter(function(e){ return (e.software||[]).includes('darktable'); }).length, 'DARKTABLE') +
+    stat(localKnowledge.filter(function(e){ return (e.software||[]).some(function(s){ return s.toLowerCase().includes('luminar'); }); }).length, 'LUMINAR NEO') +
+    stat((localKnowledge.reduce(function(a,e){ return a+(e.genre||[]).length; },0)/localKnowledge.length).toFixed(1), 'GEM. GENRES') +
+    stat(localKnowledge.reduce(function(a,e){ return a+(e.workflow_order||[]).length; },0), 'WORKFLOW STAPPEN');
 }
 
 function stat(n, l) {

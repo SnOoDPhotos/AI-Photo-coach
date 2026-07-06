@@ -55962,5 +55962,95 @@
       "Infrarood-omgebouwde sensoren zijn door het ontbreken van interne blokkeerfilters extreem gevoelig voor lensflares, veel sterker dan camera's voor zichtbaar licht."
     ],
     "style_preview": "Deze stijl levert een heldere, contrastrijke en eerlijke open-source esthetiek met strakke blauwe luchten gecombineerd met intens vurige rode of warme oranje bladeren. De filosofie staat voor pure handmatige controle via traditionele pixel-tools. De stijl werkt fantastisch voor zonnige landschappen met weelderige bossen en waterpartijen. Als fotograaf krijg je hiermee een uiterst betrouwbare, ambachtelijke greep op het onzichtbare kleurenspectrum."
+  },
+  {
+    "video_title": "How to edit ICM photography images|Tutorial on how to edit ICM images using Lightroom & Photoshop.",
+    "photographer_name": "Lori Lankford",
+    "youtube_url": "https://www.youtube.com/watch?v=0ynn0tItRmA",
+    "genre": [
+      "experimenteel"
+    ],
+    "light_conditions": [
+      "daglicht"
+    ],
+    "mood": [
+      "natuurlijk",
+      "dromerig",
+      "moody"
+    ],
+    "software": [
+      "Lightroom Classic",
+      "Photoshop"
+    ],
+    "style_description": "Abstracte, impressionistische ICM-fotografie",
+    "philosophy": "ICM (Intentional Camera Movement) bewerking draait om het vinden van dimensie en structuur in abstracte bewegingsbeelden. De fotograaf benadrukt dat het toevoegen van contrast de 'magische' stap is om de abstracte vormen uit de beweging naar voren te halen. Het proces is experimenteel en vereist een grondige aanpak van sensor-vlekken omdat bewegingsonscherpte stofjes extra accentueert.",
+    "workflow_order": [
+      "stap 1: histogram analyseren en exposure/whites aanpassen voor meer dimensie",
+      "stap 2: contrast aanzienlijk verhogen om abstracte vormen en structuren te definiëren",
+      "stap 3: sensorvlekken zorgvuldig verwijderen met healing-tools",
+      "stap 4: kleurtonen en dehaze (of negative dehaze voor dromerigheid) finetunen"
+    ],
+    "techniques": [
+      {
+        "name": "Contrast als Dimensie-tool",
+        "description": "Verhoog de contrastwaarde (vaak +20 tot +40) om abstracte bewegingsvormen uit de achtergrond te isoleren en structuur aan te brengen.",
+        "when_to_use": "Bij elke ICM-foto die er vlak of 'modderig' uitziet na import.",
+        "tools": [
+          "Contrast",
+          "Tone Curve"
+        ],
+        "effect": "De beelden krijgen diepte en de beweging wordt grafisch sterker."
+      },
+      {
+        "name": "Sensorvlekken Reiniging",
+        "description": "Verwijder sensorvlekken met een healing-brush op 100% opacity en hoge feathering; doe dit na de contrast-aanpassing omdat contrast vlekken accentueert.",
+        "when_to_use": "Altijd essentieel, vooral bij ICM omdat stofjes door beweging kunnen uitrekken tot streepjes.",
+        "tools": [
+          "Healing Brush",
+          "Clone Stamp"
+        ],
+        "effect": "Een schone, abstracte achtergrond zonder storende artefacten."
+      },
+      {
+        "name": "Negative Dehaze voor Dromerigheid",
+        "description": "Verlaag de dehaze-waarde (bijv. naar -15) om een dromerig, zacht effect te creëren dat past bij de impressionistische aard van ICM.",
+        "when_to_use": "Bij bloemen- of natuur-abstracten waar een 'dreamy' look gewenst is.",
+        "tools": [
+          "Dehaze"
+        ],
+        "effect": "De foto wordt zachter, meer diffuus en krijgt een dromerige sfeer."
+      },
+      {
+        "name": "Mid-tone Point Curve",
+        "description": "Trek een punt in het midden van de tone-curve naar beneden om de middentonen te verduisteren en het beeld moodier te maken.",
+        "when_to_use": "Wanneer het beeld te licht oogt en mist aan drama.",
+        "tools": [
+          "Tone Curve"
+        ],
+        "effect": "Het beeld krijgt meer contrast in de middentonen en een moodier karakter."
+      },
+      {
+        "name": "Belichting als Laatste Stap",
+        "description": "Pas de exposure slider pas aan nadat contrast, highlights en shadows zijn ingesteld om de algehele helderheid te finetunen.",
+        "when_to_use": "Als allerlaatste bewerking voor de finale 'exposure check'.",
+        "tools": [
+          "Exposure"
+        ],
+        "effect": "De definitieve balans tussen licht en donker."
+      }
+    ],
+    "color_approach": "De fotograaf past kleuren aan op basis van persoonlijke voorkeur, vaak door magenta of groen te verschuiven in het HSL-paneel om een zachtere uitstraling te krijgen bij natuur-onderwerpen.",
+    "local_adjustments": "Geen complexe lokale maskers; de focus ligt op globale aanpassingen, behalve voor het handmatig verwijderen van spots (sensorvlekken).",
+    "what_to_avoid": [
+      "Het vergeten om sensorvlekken te verwijderen (deze zijn bij ICM-beelden extreem zichtbaar door de beweging)",
+      "Het niet proberen van de 'auto' knop als eerste reddingspoging bij een mislukte opname"
+    ],
+    "best_for": "Fotografen die abstracte beelden creëren via beweging (ICM) en hun beelden meer 'punch' en dimensie willen geven.",
+    "unique_insights": [
+      "De meest effectieve manier om vlekjes op de sensor bij ICM weg te halen is door ze vanuit verschillende hoeken of meerdere keren aan te stippen als ze op een lijn van beweging liggen.",
+      "ICM-opnames hoeven niet perfect te zijn; het 'auto' knopje in de software kan vaak een onverwacht goede basis leggen voor een beeld dat je anders direct zou verwijderen.",
+      "Bij ICM-fotografie werkt contrast averechts als je het in de voorbereiding verhoogt; doe dit pas in de nabewerking om vlekjes niet onnodig te benadrukken bij het schieten."
+    ],
+    "style_preview": "Deze stijl is dromerig, abstract en visueel aantrekkelijk voor liefhebbers van impressionistische fotografie. De fotograaf streeft naar een balans tussen enerzijds een zachte, dromerige uitstraling en anderzijds voldoende contrast om de abstracte vormen leesbaar te houden. Deze bewerking past het beste bij landschaps- of natuurbeelden die bewogen zijn vastgelegd, waarbij de kijker wordt uitgenodigd om de vorm in de chaos te ontdekken."
   }
 ]

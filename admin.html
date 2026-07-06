@@ -368,15 +368,48 @@ function renderStats() {
     (e.genre||[]).forEach(function(g) { genres[g] = (genres[g]||0)+1; });
     techniques += (e.techniques||[]).length;
   });
+  var photographers = new Set(localKnowledge.map(function(e){ return e.photographer_name||''; }).filter(Boolean));
+  var previews = localKnowledge.filter(function(e){ return e.style_preview && e.style_preview.length > 10; }).length;
+  var withoutPreview = localKnowledge.length - previews;
+  var softwares = new Set();
+  localKnowledge.forEach(function(e){ (e.software||[]).forEach(function(s){ softwares.add(s); }); });
+  var totalTech = localKnowledge.reduce(function(a,e){return a+(e.techniques||[]).length;},0);
+  var avgTech = localKnowledge.length ? (totalTech/localKnowledge.length).toFixed(1) : 0;
+  var avgInsights = localKnowledge.length ? (localKnowledge.reduce(function(a,e){return a+(e.unique_insights||[]).length;},0)/localKnowledge.length).toFixed(1) : 0;
+  var warnings = localKnowledge.filter(function(e){
+    var hasWarning = (e.techniques||[]).length < 3 || (e.unique_insights||[]).length < 2;
+    if (!hasWarning) {
+      var suspectNames = ['official','channel','productions','films','brothers','labs','photography','media','studio'];
+      var name = (e.photographer_name||'').toLowerCase();
+      hasWarning = suspectNames.some(function(w){ return name.includes(w); });
+    }
+    return hasWarning;
+  }).length;
+  var psEntries = localKnowledge.filter(function(e){ return (e.software||[]).includes('Photoshop'); }).length;
+  var lrEntries = localKnowledge.filter(function(e){ return (e.software||[]).includes('Lightroom Classic'); }).length;
+
   document.getElementById('statsGrid').innerHTML =
     stat(localKnowledge.length, 'ENTRIES') +
+    stat(photographers.size, 'FOTOGRAFEN') +
     stat(Object.keys(genres).length, 'GENRES') +
+    stat(softwares.size, 'SOFTWARE TOOLS') +
     stat(techniques, 'TECHNIEKEN') +
-    stat(localKnowledge.reduce(function(a,e){return a+(e.unique_insights||[]).length;},0), 'INZICHTEN');
+    stat(localKnowledge.reduce(function(a,e){return a+(e.unique_insights||[]).length;},0), 'INZICHTEN') +
+    stat(avgTech, 'GEM. TECH/ENTRY') +
+    stat(avgInsights, 'GEM. INS/ENTRY') +
+    stat(previews, 'MET PREVIEW') +
+    statWarn(withoutPreview, 'ZONDER PREVIEW') +
+    statWarn(warnings, 'WAARSCHUWINGEN') +
+    stat(lrEntries, 'LIGHTROOM') +
+    stat(psEntries, 'PHOTOSHOP');
 }
 
 function stat(n, l) {
   return '<div class="stat"><div class="stat-num">'+n+'</div><div class="stat-label">'+l+'</div></div>';
+}
+function statWarn(n, l) {
+  var color = n > 0 ? 'color:#e8723c' : 'color:var(--success)';
+  return '<div class="stat"><div class="stat-num" style="'+color+'">'+n+'</div><div class="stat-label">'+l+'</div></div>';
 }
 
 function renderGenreFilter() {

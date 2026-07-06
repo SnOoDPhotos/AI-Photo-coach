@@ -54981,5 +54981,363 @@
       "Het gebruik van de Black & White preset 'Dark' is op een smartphone de snelste manier om een perfect schaduw-canvas te forceren voor overlays."
     ],
     "style_preview": "Dit is een flitsende, levendige en moderne mobiele stijl. De krachtige combinatie van een strak zwart-wit mannelijk silhouet met de kleurrijke, dynamische lichten van een snelweg bij avonduren knalt van het scherm af. Het bewijst dat je geen desktopcomputer nodig hebt om een professionele en meeslepende dubbele belichting te creëren."
+  },
+  {
+    "video_title": "How to Create a Double Exposure Effect in Photoshop 2026 | 7 Min Tutorial",
+    "photographer_name": "PHLEARN",
+    "youtube_url": "https://www.youtube.com/watch?v=-r3vZlEWPeo",
+    "genre": [
+      "portret"
+    ],
+    "light_conditions": [
+      "tegenlicht"
+    ],
+    "mood": [
+      "artistiek",
+      "sfeervol"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Contrastrijk, AI-ondersteund, modern",
+    "philosophy": "De kern van dubbele belichting is het contrast tussen licht en donker. Door gebruik te maken van moderne tools zoals Generative Expand kunnen fotografen hun composities beter laten aansluiten, zelfs als de oorspronkelijke aspectratio's niet overeenkomen. Het doel is een balans waarin zowel de textuur als het portret helder zichtbaar zijn.",
+    "workflow_order": [
+      "stap 1: selecteer een silhouet-portret met hoog contrast",
+      "stap 2: plaats textuur-beelden als smart objects bovenop",
+      "stap 3: verander de blend mode van de textuur-lagen naar screen",
+      "stap 4: gebruik generative expand op smart objects om compositie passend te maken"
+    ],
+    "techniques": [
+      {
+        "name": "Screen Blend Mode",
+        "description": "Wijzig de blend mode van de bovenste laag naar 'screen'. Dit zorgt ervoor dat alleen de lichte delen worden gemengd met de onderliggende foto, terwijl donkere delen transparant worden.",
+        "when_to_use": "Voor het creëren van het basis dubbele belichtingseffect.",
+        "tools": [
+          "Layers Panel"
+        ],
+        "effect": "De textuur versmelt met het onderwerp."
+      },
+      {
+        "name": "Smart Object Workflow",
+        "description": "Sleep bestanden direct in Photoshop om ze als smart objects te plaatsen. Dit is cruciaal voor niet-destructief bewerken en latere AI-expansie.",
+        "when_to_use": "Bij het importeren van bronbestanden voor de compositie.",
+        "tools": [
+          "Layers Panel"
+        ],
+        "effect": "Behoudt de originele beeldkwaliteit bij transformaties."
+      },
+      {
+        "name": "Generative Expand",
+        "description": "Gebruik 'Generative Expand' in de crop-tool om de canvasgrootte van een smart object uit te breiden met AI-gegenereerde content.",
+        "when_to_use": "Wanneer de textuur-foto de verkeerde aspectratio heeft voor je compositie.",
+        "tools": [
+          "Crop Tool",
+          "Generative Expand"
+        ],
+        "effect": "De textuur-foto vult het gewenste kader naadloos aan."
+      },
+      {
+        "name": "Transformatie (Free Transform)",
+        "description": "Gebruik 'Free Transform' (Ctrl/Cmd+T) om textuur-beelden te schalen en te roteren tot de ideale positie.",
+        "when_to_use": "Voor het plaatsen van de textuur binnen het silhouet van het onderwerp.",
+        "tools": [
+          "Free Transform"
+        ],
+        "effect": "De compositie wordt visueel in balans gebracht."
+      },
+      {
+        "name": "Laag Samenvoegen (Merge Layers)",
+        "description": "Voeg lagen samen (Ctrl/Cmd+E) nadat wijzigingen in een smart object-document zijn opgeslagen om de wijzigingen door te voeren naar het hoofdbestand.",
+        "when_to_use": "Na het gebruik van Generative Expand op een apart smart object-bestand.",
+        "tools": [
+          "Layers Panel"
+        ],
+        "effect": "De aangepaste textuur is nu correct toegepast in het hoofdproject."
+      }
+    ],
+    "color_approach": "Focus op extreme licht-donker contrasten. Kleur is ondergeschikt aan de definitie van de vormen die door de overvloeimodus worden gecreëerd.",
+    "local_adjustments": "Geen maskers in deze tutorial, nadruk ligt op compositie en slimme object-transformatie.",
+    "what_to_avoid": [
+      "Lage contrasten gebruiken (dit maakt het effect modderig)",
+      "Niet-passende aspectratio's zonder uitbreiding (geeft lege ruimtes in de compositie)"
+    ],
+    "best_for": "Silhouet-portretten met een lichte achtergrond.",
+    "unique_insights": [
+      "Als je textuur-laag te klein is, open het smart object in een nieuw venster, pas Generative Expand toe, sla het op en de wijziging wordt automatisch in je hoofdbestand geüpdatet.",
+      "Het gebruik van Smart Objects is niet alleen voor kwaliteit, maar de essentie voor een workflow met AI-tools.",
+      "Kies voor silhouet-onderwerpen; dit is de meest betrouwbare manier om een duidelijke dubbele belichting te krijgen."
+    ],
+    "style_preview": "Een strakke, moderne stijl die gebruikmaakt van AI om klassieke fotografische effecten naar een hoger niveau te tillen. Het resultaat is helder, krachtig en visueel impactvol, ideaal voor creatieve portfolio's.",
+    "_warnings": [
+      "naam volledig in hoofdletters"
+    ]
+  },
+  {
+    "video_title": "How to Create Multiple Exposures in Adobe Photoshop",
+    "photographer_name": "Tim Gray",
+    "youtube_url": "https://www.youtube.com/watch?v=G_yjo8DpjdI",
+    "genre": [
+      "landschap",
+      "reisfotografie"
+    ],
+    "light_conditions": [
+      "daglicht"
+    ],
+    "mood": [
+      "sfeervol",
+      "natuurlijk"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Gelaagd, compositorisch, verhalend",
+    "philosophy": "Meervoudige belichting is een eerbetoon aan traditionele filmtechnieken, maar met de flexibiliteit van digitaal. Door het slim combineren van lagen en het gebruik van maskers en blend modes kun je beelden creëren die een gevoel of locatie vertellen. Het doel is een visueel harmonieus geheel waarin elementen uit verschillende foto's samensmelten.",
+    "workflow_order": [
+      "stap 1: combineer beelden in één document via Adobe Bridge",
+      "stap 2: experimenteer met 'multiply' of 'screen' blend modes",
+      "stap 3: voeg een curves-aanpassingslaag toe voor lichtbalans",
+      "stap 4: gebruik laagmaskers voor lokale precisie"
+    ],
+    "techniques": [
+      {
+        "name": "Load Files into Photoshop Layers",
+        "description": "Gebruik 'Tools > Photoshop > Load Files into Photoshop Layers' in Adobe Bridge om beelden automatisch in één document te combineren.",
+        "when_to_use": "Bij het starten van een compositie met meerdere beelden.",
+        "tools": [
+          "Adobe Bridge",
+          "Load Files into Layers"
+        ],
+        "effect": "Bespaart tijd bij het maken van een gelaagd document."
+      },
+      {
+        "name": "Blend Modes (Multiply/Screen)",
+        "description": "Gebruik 'Multiply' voor een donkerder resultaat of 'Screen' voor een lichter resultaat bij het mengen van lagen.",
+        "when_to_use": "Voor een basis dubbele belichtingseffect.",
+        "tools": [
+          "Layers Panel",
+          "Blend Modes"
+        ],
+        "effect": "Geeft direct een versmolten look tussen lagen."
+      },
+      {
+        "name": "Curves aanpassingslaag",
+        "description": "Voeg een 'Curves' laag toe en trek de curve omhoog om donkere composities op te helderen.",
+        "when_to_use": "Wanneer het effect door blend modes te donker is geworden.",
+        "tools": [
+          "Curves"
+        ],
+        "effect": "Compenseert het contrastverlies door de blend mode."
+      },
+      {
+        "name": "Laagmasker met Magische Staf",
+        "description": "Gebruik de 'Magic Wand' tool om luchten of specifieke vormen te selecteren en deze om te zetten naar een masker.",
+        "when_to_use": "Wanneer je een onderwerp wilt isoleren tegen een relatief eenvoudige achtergrond.",
+        "tools": [
+          "Magic Wand Tool",
+          "Layer Mask"
+        ],
+        "effect": "Het onderwerp wordt perfect uitgesneden in de compositie."
+      },
+      {
+        "name": "Scrubby Slider voor Opacity",
+        "description": "Klik op het woord 'Opacity' in het lagenpaneel en sleep naar links om de dekking van de laag aan te passen.",
+        "when_to_use": "Om subtiele texturen van de bovenste laag door de onderste te laten schemeren.",
+        "tools": [
+          "Layers Panel"
+        ],
+        "effect": "De integratie van texturen voelt natuurlijker aan."
+      }
+    ],
+    "color_approach": "De aanpak is realistisch; kleurcorrecties zijn minimaal om de sfeer van het landschap te behouden, tenzij de blend mode kleurverschuivingen veroorzaakt die met curves worden gecorrigeerd.",
+    "local_adjustments": "Maskers worden ingezet om specifieke gebieden (zoals een standbeeld) te isoleren en alleen daar de tweede foto te tonen, wat een complexe maar gecontroleerde look geeft.",
+    "what_to_avoid": [
+      "Te donkere resultaten door 'Multiply' zonder tegensturing (Curves)",
+      "Slechte compositie-keuzes waarbij texturen de vorm van het onderwerp verstoren"
+    ],
+    "best_for": "Landschappen en architectuur waar je elementen uit de omgeving in een portret of scène wilt verweven.",
+    "unique_insights": [
+      "Gebruik een 'multiply' blend mode als uitgangspunt voor een klassiek filmisch effect, maar compenseer direct met een curves-laag.",
+      "Laad bestanden via Bridge in lagen; dit is sneller dan ze één voor één handmatig te kopiëren en te plakken.",
+      "Reduceer de opacity naar een heel laag percentage om slechts een hint van textuur over een scène te leggen; dit oogt vaak professioneler dan een volledige 'overlay'."
+    ],
+    "style_preview": "Een behoudende, klassieke stijl. De bewerking is subtiel en gericht op verhalen vertellen. De sfeer is natuurlijk en harmonieus, ideaal voor landschaps- en reisfotografie waarbij je een dromerige maar realistische indruk wilt achterlaten."
+  },
+  {
+    "video_title": "Multiple Exposure Photo Effect - Photoshop Tutorial",
+    "photographer_name": "LetsPhotoshop",
+    "youtube_url": "https://www.youtube.com/watch?v=t-eK9U-erVk",
+    "genre": [
+      "portret"
+    ],
+    "light_conditions": [
+      "gemengd licht"
+    ],
+    "mood": [
+      "dramatisch",
+      "sfeervol"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Complex, gelaagd, cinematisch",
+    "philosophy": "Dit is een diepgaand proces waarbij lagen worden gestapeld, gemaskeerd en gekleurd om een droomwereld te creëren. Het is een proces van 'trial and error' waarbij de keuze van de juiste textures en de volgorde van de lagen cruciaal zijn. Het doel is een visueel rijk beeld dat verder gaat dan een simpele overvloeiing.",
+    "workflow_order": [
+      "stap 1: isoleer het onderwerp en fix ontbrekende randen met pen tool en clone stamp",
+      "stap 2: voeg meerdere texturen en landschapslagen toe met screen/lighten blend modes",
+      "stap 3: gropeer blending-lagen en maskeer deze voor een naadloze overgang",
+      "stap 4: voeg sfeer toe met kleurgradiënten en camera raw/levels"
+    ],
+    "techniques": [
+      {
+        "name": "Edge Repair (Clone Stamp)",
+        "description": "Gebruik de 'Clone Stamp' op een nieuwe laag (sample all layers) om onvolkomenheden of ontbrekende randen na het flippen op te lossen.",
+        "when_to_use": "Wanneer uitsnijdingen niet perfect zijn of wanneer je delen van het model kopieert om symmetrie te creëren.",
+        "tools": [
+          "Clone Stamp Tool",
+          "Layers Panel"
+        ],
+        "effect": "Het model lijkt compleet en professioneel afgewerkt."
+      },
+      {
+        "name": "Groepsmaskers",
+        "description": "Zet meerdere blending-lagen in een groep en pas één laagmasker op de gehele groep toe.",
+        "when_to_use": "Voor het efficiënt maskeren van complexe dubbele belichtingscomposities.",
+        "tools": [
+          "Layers Panel",
+          "Layer Mask"
+        ],
+        "effect": "Gecontroleerde en coherente overgangen over meerdere lagen heen."
+      },
+      {
+        "name": "Screen/Lighten Blend Modes",
+        "description": "Gebruik 'Screen' voor zachte blending of 'Lighten' voor sterkere contrasten in texturen.",
+        "when_to_use": "Voor het mengen van complexe texturen over een portret.",
+        "tools": [
+          "Layers Panel",
+          "Blend Modes"
+        ],
+        "effect": "Texturen vloeien naadloos in de vorm van het model."
+      },
+      {
+        "name": "Radial Gradient Lighting",
+        "description": "Voeg een radiale gradiënt toe op een nieuwe laag met 'Screen' blend mode voor extra lichtaccenten.",
+        "when_to_use": "Om specifieke delen van de compositie (zoals het gezicht) te laten 'glowen'.",
+        "tools": [
+          "Gradient Tool",
+          "Screen Blend Mode"
+        ],
+        "effect": "Voegt sfeervol, gericht licht toe aan de compositie."
+      },
+      {
+        "name": "Color Toning (Levels)",
+        "description": "Pas kleurkanalen (Rood/Blauw) in 'Levels' aan voor een filmische look.",
+        "when_to_use": "Voor de uiteindelijke kleurgrading.",
+        "tools": [
+          "Levels"
+        ],
+        "effect": "Geeft het beeld een warme, professionele sfeer."
+      }
+    ],
+    "color_approach": "De aanpak is zeer bewust: er wordt kleurbalans aangebracht via kanalen in de 'Levels' tool en een 'Gradient Map' met zachte tinten (geel/bruin) zorgt voor een uniforme, warme filmische uitstraling.",
+    "local_adjustments": "Extensief gebruik van maskers op groepen en individuele lagen, gecombineerd met zachte brushes (0% hardness) voor vloeiende transities.",
+    "what_to_avoid": [
+      "Geen fix toepassen op 'flipped' delen van het model (geeft onnatuurlijke vormen)",
+      "Te sterke verzadiging (blijf subtiel met kleur)"
+    ],
+    "best_for": "Uitgebreide composities waarbij je texturen, landschappen en portretten tot één surrealistisch beeld wilt laten samensmelten.",
+    "unique_insights": [
+      "Combineer de 'Lighten' en 'Screen' blend modes op verschillende texturen voor een gebalanceerd beeld; 'Screen' is vaak zachter, 'Lighten' kan harder zijn voor randinformatie.",
+      "Gebruik 'Clone Stamp' op 'all layers' om randen te repareren wanneer je delen van een model spiegel of kopieert voor betere compositie.",
+      "Een 'Gradient Map' op 'Soft Light' met 50% opacity is de ultieme finishing touch voor een consistente kleur-look over je hele dubbele belichting."
+    ],
+    "style_preview": "Een filmische en diepgaande stijl. Het resultaat is rijk, mysterieus en artistiek. Perfect voor fotografen die houden van complexe nabewerking waarbij het portret een verhaal vertelt."
+  },
+  {
+    "video_title": "Snapseed Masterclass | Double Exposure",
+    "photographer_name": "Kwame Johnson",
+    "youtube_url": "https://www.youtube.com/watch?v=eUac65JuXPA",
+    "genre": [
+      "portret"
+    ],
+    "light_conditions": [
+      "daglicht"
+    ],
+    "mood": [
+      "sfeervol",
+      "natuurlijk"
+    ],
+    "software": [
+      "Snapseed"
+    ],
+    "style_description": "Mobiel, intuïtief, toegankelijk",
+    "philosophy": "Dubbele belichting op mobiel is verrassend krachtig en intuïtief. Door in Snapseed slim gebruik te maken van de 'view edits' functie en maskers kun je in het veld al artistieke beelden maken. Het proces is er een van geduld en stap-voor-stap opbouwen met transparantie en maskering.",
+    "workflow_order": [
+      "stap 1: verhoog details met 'Tonal Contrast' voor een sterke basis",
+      "stap 2: voeg foto toe via 'Double Exposure' en positioneer",
+      "stap 3: speel met de transparantie en stijlen van de blend",
+      "stap 4: gebruik 'View Edits' om handmatig maskers in te schilderen"
+    ],
+    "techniques": [
+      {
+        "name": "Tonal Contrast",
+        "description": "Verhoog het contrast in de middentonen en details vóór de dubbele belichting.",
+        "when_to_use": "Wanneer je basis-foto wat vlak is en meer definitie nodig heeft.",
+        "tools": [
+          "Tonal Contrast"
+        ],
+        "effect": "Geeft het portret een scherpere en krachtigere basis."
+      },
+      {
+        "name": "Double Exposure Styles",
+        "description": "Gebruik de ingebouwde stijlen (zoals 'Overlay') en pas de transparantie aan naar 100% voor maximale impact.",
+        "when_to_use": "Voor het direct mengen van twee beelden op een mobiel apparaat.",
+        "tools": [
+          "Double Exposure"
+        ],
+        "effect": "Geeft een snelle, artistieke versmelting."
+      },
+      {
+        "name": "Layer Mask (View Edits)",
+        "description": "Gebruik 'View Edits' om het masker van de dubbele belichting handmatig te verfijnen door in te schilderen.",
+        "when_to_use": "Voor het precies bepalen waar de textuur wel of niet zichtbaar is.",
+        "tools": [
+          "View Edits",
+          "Layer Mask"
+        ],
+        "effect": "Geeft volledige controle over de compositie."
+      },
+      {
+        "name": "Gelaagde Masker-opbouw",
+        "description": "Bouw de dekking van je masker op in stappen (25% naar 50% naar 100%) voor een natuurlijke, feathery overgang.",
+        "when_to_use": "Voor een zachte, professionele overgang rond het gezicht.",
+        "tools": [
+          "Layer Mask",
+          "Brush Opacity"
+        ],
+        "effect": "Voorkomt harde lijnen en creëert een organische mix."
+      },
+      {
+        "name": "Handmatige Gum (Zero Opacity)",
+        "description": "Zet de mask-opacity op 0% om als gum te fungeren en fouten te herstellen.",
+        "when_to_use": "Wanneer je per ongeluk te ver buiten de lijntjes hebt geschilderd.",
+        "tools": [
+          "Layer Mask (Zero Opacity)"
+        ],
+        "effect": "Verwijdert ongewenste effecten."
+      }
+    ],
+    "color_approach": "De focus ligt op het behouden van contrast in een zwart-wit of grijstinten-omgeving. Kleur kan in Snapseed wel worden toegevoegd, maar de kracht zit in de tonale definitie van het zwart-wit model.",
+    "local_adjustments": "Maskers in Snapseed zijn de 'key'; door laag-per-laag op te bouwen met verschillende opaciteiten krijg je een effect dat niet onderdoet voor desktop-software.",
+    "what_to_avoid": [
+      "Niet inzoomen bij het maskeren (leidt tot onnauwkeurige randen)",
+      "Te snel naar 100% gaan op het hele gezicht"
+    ],
+    "best_for": "Mobiele fotografen die snel een artistiek resultaat willen zonder laptop.",
+    "unique_insights": [
+      "Bouw je masker op in lagen: begin met 25% dekking rond gevoelige gebieden zoals de ogen, en ga pas later naar 100% op de achtergrond.",
+      "Snapseed heeft geen 'undo' per brush-streek in de masker-tool; wees dus extreem zorgvuldig en zoom ver in.",
+      "Gebruik een 'feathering' aanpak door je masker-opaciteit stapsgewijs te verhogen; dit is de enige manier om die professionele overgang te krijgen op een telefoon."
+    ],
+    "style_preview": "Een mobiele, intuïtieve en zeer toegankelijke stijl. Het resultaat is verrassend gedetailleerd en artistiek. Ideaal voor het snel in het veld creëren van gelaagde, mysterieuze portretten."
   }
 ]

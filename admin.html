@@ -384,11 +384,12 @@ function renderStats() {
     stat(localKnowledge.length, 'ENTRIES') +
     stat(photographers.size, 'FOTOGRAFEN') +
     stat(Object.keys(genres).length, 'GENRES') +
-    stat(softwares.size, 'SOFTWARE TOOLS') +
     stat(techniques, 'TECHNIEKEN') +
     stat(localKnowledge.reduce(function(a,e){return a+(e.unique_insights||[]).length;},0), 'INZICHTEN') +
+    stat(localKnowledge.reduce(function(a,e){ return a+(e.workflow_order||[]).length; },0), 'WORKFLOW STAPPEN') +
     stat(avgTech, 'GEM. TECH/ENTRY') +
     stat(avgInsights, 'GEM. INS/ENTRY') +
+    stat((localKnowledge.reduce(function(a,e){ return a+(e.genre||[]).length; },0)/localKnowledge.length).toFixed(1), 'GEM. GENRES') +
     stat(previews, 'MET PREVIEW') +
     statWarn(withoutPreview, 'ZONDER PREVIEW') +
     statWarn(warnings, 'WAARSCHUWINGEN') +
@@ -397,8 +398,7 @@ function renderStats() {
     stat(localKnowledge.filter(function(e){ return (e.software||[]).includes('Capture One'); }).length, 'CAPTURE ONE') +
     stat(localKnowledge.filter(function(e){ return (e.software||[]).includes('darktable'); }).length, 'DARKTABLE') +
     stat(localKnowledge.filter(function(e){ return (e.software||[]).some(function(s){ return s.toLowerCase().includes('luminar'); }); }).length, 'LUMINAR NEO') +
-    stat((localKnowledge.reduce(function(a,e){ return a+(e.genre||[]).length; },0)/localKnowledge.length).toFixed(1), 'GEM. GENRES') +
-    stat(localKnowledge.reduce(function(a,e){ return a+(e.workflow_order||[]).length; },0), 'WORKFLOW STAPPEN');
+    stat(softwares.size, 'SOFTWARE TOOLS');
 }
 
 function stat(n, l) {

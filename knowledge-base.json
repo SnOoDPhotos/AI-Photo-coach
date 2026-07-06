@@ -52013,5 +52013,263 @@
       "Hij kiest voor DxO PureRaw boven Topaz DeNoise omdat het als een 'One-Stop' kliksysteem werkt zonder dat je constant ingewikkelde sliders hoeft te finetunen voor een perfecte raw-output."
     ],
     "style_preview": "Deze stijl spant de kroon als het gaat om hypergedetailleerde, kleurrijke en loepzuivere nachtelijke stadsesthetiek. De visuele sfeer is intens levendig met felle, glanzende neonlichten die weerspiegelen in gitzwart, ruisvrij water. Het is de ultieme look voor avond- en nachtfotografen die de technische beperkingen van compacte minidrones willen overstijgen om platen te creëren die barsten van de dynamiek, kleurkracht en randscherpte."
+  },
+  {
+    "video_title": "Lightroom Classic Tutorial: How to Edit Landscape Photography",
+    "photographer_name": "Madhav Kohli",
+    "youtube_url": "https://www.youtube.com/watch?v=bHlQeNEB57I",
+    "genre": [
+      "landschap"
+    ],
+    "light_conditions": [
+      "gouden uur"
+    ],
+    "mood": [
+      "levendig",
+      "sfeervol"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Levendige natuurlijke landschapsstijl",
+    "philosophy": "De nadruk ligt op het behoud van natuurlijke texturen terwijl de kleurverzadiging wordt verhoogd voor impact. Belangrijke elementen in het landschap moeten de aandacht trekken zonder de balans in de compositie te verliezen. Deze aanpak zorgt voor een authentiek maar toch indrukwekkend visueel resultaat dat de kijker direct aanspreekt.",
+    "workflow_order": [
+      "stap 1: basisbelichting corrigeren voor een neutraal startpunt",
+      "stap 2: contrast toevoegen via de curve voor diepte",
+      "stap 3: kleurverzadiging en luminantie per kleur aanpassen",
+      "stap 4: lokale maskers gebruiken voor accentuering van lichtinval"
+    ],
+    "techniques": [
+      {
+        "name": "Luminantie aanpassing",
+        "description": "Verlaag de luminantie van oranje en geel met -15 om de rijkdom van het licht tijdens het gouden uur te versterken",
+        "when_to_use": "Landschappen met fel zonlicht",
+        "tools": [
+          "HSL Slider"
+        ],
+        "effect": "Kleuren lijken dieper en minder uitgewassen"
+      },
+      {
+        "name": "Contrastcurve",
+        "description": "Pas een lichte S-curve toe door de schaduwen met -5 te verlagen en de hooglichten met +5 te verhogen",
+        "when_to_use": "Foto's met een vlakke belichting",
+        "tools": [
+          "Tone Curve"
+        ],
+        "effect": "Meer diepte en definitie in het beeld"
+      },
+      {
+        "name": "Maskering van de lucht",
+        "description": "Verlaag de blootstelling met -0.5 en verhoog het contrast met +20 in de lucht",
+        "when_to_use": "Landschappen met een te lichte lucht",
+        "tools": [
+          "Masking"
+        ],
+        "effect": "Meer details zichtbaar in wolkenpartijen"
+      },
+      {
+        "name": "Textuur versterking",
+        "description": "Verhoog de textuur met +10 om de details in rotsen of vegetatie naar voren te halen",
+        "when_to_use": "Bij close-up landschapsdetails",
+        "tools": [
+          "Presence Panel"
+        ],
+        "effect": "Scherpere weergave van structuren"
+      },
+      {
+        "name": "Kleurbalans aanpassing",
+        "description": "Verplaats de witbalans naar een warmere tint (+500 kelvin) om de sfeer van het gouden uur te benadrukken",
+        "when_to_use": "Bij koele ochtendopnames",
+        "tools": [
+          "White Balance"
+        ],
+        "effect": "Een warmere, uitnodigende sfeer"
+      }
+    ],
+    "color_approach": "Kleur wordt strategisch ingezet door verzadiging te verhogen in specifieke kleuren die bij het landschap passen. Hierbij wordt de balans tussen de warme en koude tonen nauwlettend bewaakt om natuurlijkheid te waarborgen.",
+    "local_adjustments": "Maskers worden gebruikt om alleen de lucht of specifieke voorgronden te beïnvloeden, waardoor de focus in de foto wordt versterkt zonder de algehele sfeer te verstoren.",
+    "what_to_avoid": [
+      "Verzadiging van alle kleuren tegelijk verhogen wat leidt tot onnatuurlijke huidtinten of objecten",
+      "De schaduwen te ver oplichten wat ruis veroorzaakt in donkere gebieden"
+    ],
+    "best_for": "Landschapsfoto's gemaakt tijdens het gouden uur die extra diepte en kleurkracht nodig hebben.",
+    "unique_insights": [
+      "Hij corrigeert de witbalans vaak al voordat hij begint met de basisbelichting om een consistent vertrekpunt te hebben",
+      "Door de luminantie van specifieke kleuren te verlagen creëer je onbewust meer dramatiek dan met het verhogen van verzadiging",
+      "Hij gebruikt de negatieve waarden in de curve om een filmische look te bereiken zonder het zwart volledig te 'crushen'"
+    ],
+    "style_preview": "Deze stijl kenmerkt zich door levendige kleuren en een verhoogde perceptie van diepte in landschapsfoto's. Het visuele effect is een sfeervol beeld dat de kijker meetrekt in de scène. De filosofie is om het licht te versterken op een manier die nog steeds realistisch aanvoelt. Dit werkt uitstekend voor grootschalige natuurfoto's die behoefte hebben aan extra visuele impact."
+  },
+  {
+    "video_title": "Portrait Editing Workflow in Lightroom",
+    "photographer_name": "Sean Dalton",
+    "youtube_url": "https://www.youtube.com/watch?v=3GHqHU-Lk68",
+    "genre": [
+      "portret"
+    ],
+    "light_conditions": [
+      "diffuus licht"
+    ],
+    "mood": [
+      "rustig",
+      "intiem"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Zachte natuurlijke portretstijl",
+    "philosophy": "Het behoud van een zachte huidtextuur staat centraal in deze bewerkingsstijl. Door het contrast subtiel te verhogen en kleuren te harmoniseren, ontstaat een tijdloos portret. Elk bewerkingsdetail dient ter ondersteuning van de geportretteerde persoon, nooit ter vervanging van hun natuurlijke kenmerken.",
+    "workflow_order": [
+      "stap 1: huidtinten normaliseren in de basisinstellingen",
+      "stap 2: zacht contrast toevoegen voor structuur",
+      "stap 3: lokale maskers voor ogen en glimlach",
+      "stap 4: kleurverloop aanbrengen in de achtergrond"
+    ],
+    "techniques": [
+      {
+        "name": "Huidtonen egaliseren",
+        "description": "Verhoog de luminantie van de oranje slider naar +15 om de huid zachter te maken",
+        "when_to_use": "Portretten met harde schaduwen op de huid",
+        "tools": [
+          "HSL Slider"
+        ],
+        "effect": "Een egale en stralende huid"
+      },
+      {
+        "name": "Contrast verfijnen",
+        "description": "Verlaag de highlights met -30 en verhoog de schaduwen met +20 om een zacht contrast te creëren",
+        "when_to_use": "Portretten met te fel licht",
+        "tools": [
+          "Basic Panel"
+        ],
+        "effect": "Gedetailleerde maar zachte overgangen"
+      },
+      {
+        "name": "Oog accentuering",
+        "description": "Verhoog de iris helderheid met +20 en verscherping met +15",
+        "when_to_use": "Bij portretten waar de ogen eruit moeten springen",
+        "tools": [
+          "Masking"
+        ],
+        "effect": "Scherpere en levendigere ogen"
+      },
+      {
+        "name": "Achtergrond verzachten",
+        "description": "Verlaag de helderheid (Clarity) in de achtergrond met -20",
+        "when_to_use": "Portretten met een drukke achtergrond",
+        "tools": [
+          "Masking"
+        ],
+        "effect": "Betere scheiding tussen onderwerp en achtergrond"
+      },
+      {
+        "name": "Kleurgradering (Color Grading)",
+        "description": "Voeg een warme tint in de schaduwen toe (Hue 40, Sat 10) voor een gezellige sfeer",
+        "when_to_use": "Portretten in een koude omgeving",
+        "tools": [
+          "Color Grading"
+        ],
+        "effect": "Een samenhangend warm kleurenpalet"
+      }
+    ],
+    "color_approach": "Kleurgebruik is gericht op het creëren van harmonie door warme tonen in de schaduwen te introduceren. Dit ondersteunt een natuurlijke uitstraling terwijl de algemene sfeer van de foto naar warm en intiem verschuift.",
+    "local_adjustments": "Maskers zijn essentieel voor het isoleren van het onderwerp ten opzichte van de omgeving. Hierdoor kan het gezicht specifiek belicht en verscherpt worden, terwijl de rest van de foto rustig blijft.",
+    "what_to_avoid": [
+      "Te veel verscherping op de huid wat poriën onnatuurlijk accentueert",
+      "Huidtinten veranderen door extreme HSL-aanpassingen"
+    ],
+    "best_for": "Portretfotografie waarbij een professionele en natuurlijke uitstraling vereist is.",
+    "unique_insights": [
+      "Hij bewerkt de ogen altijd in een aparte stap nadat de algemene huidtinten zijn vastgesteld",
+      "Hij gebruikt 'Clarity' in de achtergrond als een soort digitale lens-blur om afleiding te verminderen",
+      "Door de luminantie van oranje te verhogen bereik je een 'beauty' effect zonder dat je hoeft te retoucheren"
+    ],
+    "style_preview": "Deze portretstijl is gericht op zachtheid en toegankelijkheid. Het visuele effect is een warm en intiem beeld waarbij de geportretteerde er op zijn best uitziet zonder dat het bewerkt oogt. Het werkt uitstekend in diffuus licht voor een professionele uitstraling."
+  },
+  {
+    "video_title": "Street Photography Editing in Lightroom",
+    "photographer_name": "Valtteri Hirvonen",
+    "youtube_url": "https://www.youtube.com/watch?v=DPSs1IxiDsM",
+    "genre": [
+      "straatfotografie"
+    ],
+    "light_conditions": [
+      "kunstlicht"
+    ],
+    "mood": [
+      "dramatisch",
+      "moody"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Moody contrastrijke straatstijl",
+    "philosophy": "Straatfotografie vereist een aanpak die de rauwe energie van de omgeving vastlegt. Contrast en schaduwen worden bewust ingezet om een mysterieus verhaal te vertellen. Het is de kunst om door bewerking de focus te leggen op de interactie tussen licht en mens in de stedelijke omgeving.",
+    "workflow_order": [
+      "stap 1: zwartpunt bepalen voor een krachtig contrast",
+      "stap 2: kleurverzadiging selectief verlagen",
+      "stap 3: focus leggen met een radiaal filter",
+      "stap 4: korrel toevoegen voor een rauw randje"
+    ],
+    "techniques": [
+      {
+        "name": "Zwartpunt aanpassing",
+        "description": "Verlaag de blacks met -40 voor een dieper contrast",
+        "when_to_use": "Bij straatfoto's in de avond",
+        "tools": [
+          "Basic Panel"
+        ],
+        "effect": "Een krachtiger en dramatischer beeld"
+      },
+      {
+        "name": "Kleur desaturatie",
+        "description": "Verlaag de vibrance met -20 voor een minder afleidend kleurenpalet",
+        "when_to_use": "Drukke stedelijke omgevingen",
+        "tools": [
+          "Presence Panel"
+        ],
+        "effect": "Een rustiger beeld met focus op onderwerp"
+      },
+      {
+        "name": "Radiaal filter focus",
+        "description": "Verhoog de exposure met +0.3 op de hoofdrolspeler",
+        "when_to_use": "Straatfoto's met één centraal persoon",
+        "tools": [
+          "Masking"
+        ],
+        "effect": "De kijker wordt naar het onderwerp geleid"
+      },
+      {
+        "name": "Korrel toevoegen",
+        "description": "Voeg korrel (Grain) toe met een hoeveelheid van 20",
+        "when_to_use": "Voor een klassieke filmische look",
+        "tools": [
+          "Effects Panel"
+        ],
+        "effect": "Een authentieke filmkorrel-textuur"
+      },
+      {
+        "name": "Curve voor matte finish",
+        "description": "Verhoog het zwartpunt in de curve naar 10",
+        "when_to_use": "Bij een stijlvolle retro uitstraling",
+        "tools": [
+          "Tone Curve"
+        ],
+        "effect": "Zachte schaduwen met een matte finish"
+      }
+    ],
+    "color_approach": "Kleuren worden in de straatfotografie vaak getemd om de aandacht bij de essentie van het moment te houden. Het beperken van het palet zorgt ervoor dat de kijker niet wordt afgeleid door onbelangrijke elementen.",
+    "local_adjustments": "Maskers en filters worden gebruikt om de kijker door het beeld te leiden, vaak door het hoofdonderwerp net iets meer licht te geven dan de omgeving.",
+    "what_to_avoid": [
+      "Te veel verzadigde kleuren die het onderwerp 'goedkoop' laten lijken",
+      "Overmatige ruisreductie waardoor de foto er onnatuurlijk glad uitziet"
+    ],
+    "best_for": "Stadsfotografie in wisselende lichtomstandigheden waarbij een dramatische sfeer gewenst is.",
+    "unique_insights": [
+      "Hij verlaagt de kleurverzadiging bewust omdat dit de kijker dwingt te focussen op compositie in plaats van op felle kleuren",
+      "Door korrel toe te voegen vóór de kleurgradatie mengen kleuren natuurlijker in elkaar",
+      "Hij gebruikt het radiale filter vaak om een onnatuurlijke lichtinval te simuleren"
+    ],
+    "style_preview": "Een krachtige, moody stijl die perfect is voor het vastleggen van de rauwe energie van de straat. Het visuele effect is mysterieus en filmisch. Deze stijl werkt het best voor opnames bij kunstlicht of schemering, waarbij contrastrijke schaduwen het verhaal dragen."
   }
 ]

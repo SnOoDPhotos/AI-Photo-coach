@@ -50464,5 +50464,833 @@
       "Door niveaus-aanpassingen toe te passen op een heel specifiek helderheidsmasker in de lucht, ontstaat er een natuurlijk polariserend effect dat niet handmatig na te bootsen is met standaard penselen."
     ],
     "style_preview": "Deze stijl kenmerkt sich door een perfecte technische scherpte van de allerdichtste voorgrond tot de verste achtergrond, gecombineerd met een dromerige en contrastrijke sfeer. De kernfilosofie draait om het handhaven van vloeiende toonovergangen en het gericht aanzetten van sfeer in specifieke helderheidszones. Dit werkt het beste voor weidse landschappen en nachtelijke hemels die gefotografeerd zijn tijdens het gouden uur of uitdagend tegenlicht. Het verwachte resultaat is een beeld met een magische, filmische diepte waarin uitgebleekte hooglichten volledig zijn uitgesloten."
+  },
+  {
+    "video_title": "How to Sunset Photos on iPhone with Snapseed",
+    "photographer_name": "iPhone Photography School",
+    "youtube_url": "https://www.youtube.com/watch?v=PVRvg11smAQ",
+    "genre": [
+      "kust",
+      "landschap"
+    ],
+    "light_conditions": [
+      "tegenlicht",
+      "gouden uur"
+    ],
+    "mood": [
+      "dramatisch",
+      "sfeervol"
+    ],
+    "software": [
+      "Snapseed"
+    ],
+    "style_description": "Warme dramatische kust silhouetten",
+    "philosophy": "De fotograaf gelooft in het maximaliseren van contrast en drama in luchten door helderheid doelbewust te verlagen in plaats van te verhogen. Er is veel aandacht voor perfect rechte horizons en strikte symmetrie die goed werkt op sociale media. De bewerking is gericht op het versterken van de gouden sfeer zonder de blauwe lucht onnatuurlijk te laten verkleuren.",
+    "workflow_order": [
+      "stap 1: horizon perfect waterpas zetten",
+      "stap 2: compositie bijsnijden naar een 1:1 vierkant formaat",
+      "stap 3: sfeer en contrast verhogen voor dramatische luchten",
+      "stap 4: witbalans verwarmen en helderheid verlagen",
+      "stap 5: lokale onzuiverheden en lensflare verwijderen"
+    ],
+    "techniques": [
+      {
+        "name": "Horizon uitlijnen",
+        "description": "Sleep de randen van het beeld om de horizon perfect recht te trekken.",
+        "when_to_use": "Bij elke zee- of kustfoto waar een scheve horizon afleidt.",
+        "tools": [
+          "Straighten"
+        ],
+        "effect": "Het beeld oogt direct in balans en professioneler."
+      },
+      {
+        "name": "Dramatische sfeer toevoegen",
+        "description": "Verhoog de Ambience slider naar ongeveer 60 tot 65 om details in schaduwen naar voren te halen en de lucht te benadrukken.",
+        "when_to_use": "Bij zonsondergangen waar de donkere delen detail missen en de lucht contrast nodig heeft.",
+        "tools": [
+          "Tune Image",
+          "Ambience"
+        ],
+        "effect": "Diepere texturen in de wolken en een sterker lokaal contrast."
+      },
+      {
+        "name": "Kleurtemperatuur optimaliseren",
+        "description": "Verhoog de White Balance subtiel naar +15 tot +20 om het gouden licht te versterken.",
+        "when_to_use": "Bij zonsondergang en gouden uur om de warmte van de zon natuurlijker te laten overkomen.",
+        "tools": [
+          "White Balance"
+        ],
+        "effect": "De foto krijgt een sterke warme gloed zonder bruin te worden."
+      },
+      {
+        "name": "Helderheid verlagen",
+        "description": "Verlaag de algehele helderheid naar -25 tot -30 in plaats van deze te verhogen.",
+        "when_to_use": "Bij silhouetten of luchten met extreme hooglichten waar extra drama gewenst is.",
+        "tools": [
+          "Brightness"
+        ],
+        "effect": "De kleuren van de lucht worden veel rijker en het silhouet-effect wordt krachtiger."
+      },
+      {
+        "name": "Lensflare verwijderen",
+        "description": "Plaats een controlepunt precies op de flare, knijp met twee vingers om het bereik extreem klein te maken, en verlaag de helderheid naar -90.",
+        "when_to_use": "Wanneer je recht tegen de zon in fotografeert en kleine reflectiepuntjes (blemishes) zichtbaar zijn.",
+        "tools": [
+          "Selective Adjust"
+        ],
+        "effect": "De storende reflectiepuntjes verdwijnen naadloos in de achtergrond."
+      }
+    ],
+    "color_approach": "Hij richt zich op het creëren van een goud-oranje tint door de witbalans te verwarmen, maar waakt ervoor dat de restanten van de blauwe lucht niet bruin uitslaan. De verzadiging krijgt slechts een zeer minimale boost (+10), omdat de Ambience-slider de kleuren al intenser maakt.",
+    "local_adjustments": "Lokale aanpassingen worden tot een absoluut minimum beperkt en uitsluitend gebruikt voor het maskeren en donkerder maken van kleine, storende sensorvlekjes of lensflares.",
+    "what_to_avoid": [
+      "Vermijd het verhogen van de witbalans voorbij +20, omdat blauwe luchten hierdoor een vieze, bruine tint krijgen.",
+      "Vermijd het lichter maken van tegenlichtfoto's; dit maakt de lucht flets en vermindert het drama."
+    ],
+    "best_for": "Sterke zonsondergangen op het strand met duidelijke silhouetten en reflecties in het zand.",
+    "unique_insights": [
+      "Het verlagen van de helderheid bij een donkere zonsondergangsfoto lijkt onlogisch, maar het is dé sleutel om dynamisch contrast en diepe luchttexturen naar voren te halen.",
+      "De Ambience-slider pakt tegelijkertijd zowel lokaal contrast als schaduwdetails aan, wat een betere basis legt dan traditionele contrastschuifjes.",
+      "In plaats van de Healing tool te gebruiken, kan het sterk verlagen van de helderheid via Selective Adjust kleine vlekjes perfect maskeren in een donkere zee."
+    ],
+    "style_preview": "Deze fotograaf creëert punchy, hoog-contrast zonsondergangen die direct opvallen. Hij focust op diepe schaduwen, gloeiende hooglichten en perfecte geometrische rust (rechte horizon, vierkant formaat). Deze stijl werkt het beste voor sociale media en situaties waarbij een sterk silhouet de voorgrond vormt. Je leert hoe je met minimale tools een dramatische, bijna schilderachtige lucht kunt doordrukken.",
+    "_warnings": [
+      "naam lijkt op kanaalnaam (photography)"
+    ]
+  },
+  {
+    "video_title": "Complete Beach Landscape Edit With Luminar AI - Full edit including Local Masking",
+    "photographer_name": "Anthony Turnham",
+    "youtube_url": "https://www.youtube.com/watch?v=gd6_IipLlFE",
+    "genre": [
+      "kust",
+      "landschap"
+    ],
+    "light_conditions": [
+      "gouden uur"
+    ],
+    "mood": [
+      "moody",
+      "sfeervol"
+    ],
+    "software": [],
+    "style_description": "Moody, textuurrijke kust zonsopgang",
+    "philosophy": "Anthony gelooft sterk in het balanceren van tegenstrijdige elementen in een foto, zoals broeierige donkere wolken tegenover een zachte, warme zonsopgang. Hij pleit voor het oververzadigd maken van de foto tijdens het werkproces om kleuren beter te kunnen beoordelen, om deze later weer subtiel terug te draaien. Zijn stijl leunt op zachte gloed-effecten in combinatie met haarscherpe lokale structuren.",
+    "workflow_order": [
+      "stap 1: globaal contrast en belichting instellen ter voorbereiding",
+      "stap 2: chromatische aberratie en lenscorrecties toepassen",
+      "stap 3: individuele kleurbalans en hue vershuiven",
+      "stap 4: sfeer toevoegen met zonnestralen en een orton-achtige gloed",
+      "stap 5: lokale structuren en contrasten met maskers verfijnen"
+    ],
+    "techniques": [
+      {
+        "name": "AI Contrast basis",
+        "description": "Verhoog Smart Contrast tot rond de 50 om de voorgrond donkerder te maken en de blauwe wolkendekken meer focus te geven.",
+        "when_to_use": "Bij landschappen waar de lucht en voorgrond beide diepte missen en de highlights beschermd moeten worden.",
+        "tools": [
+          "Smart Contrast"
+        ],
+        "effect": "Het beeld verliest zijn platte raw-look en krijgt direct een sfeervol, broeierig karakter."
+      },
+      {
+        "name": "Structuur met beleid",
+        "description": "Voeg AI Accent toe op ongeveer 30% voor een globale boost, maar compenseer het harde detail direct met een zachte Glow of Mystical filter.",
+        "when_to_use": "Wanneer je detail wilt, maar geen korrelige, over-verscherpte HDR look wenst.",
+        "tools": [
+          "Accent AI",
+          "Mystical"
+        ],
+        "effect": "Een dromerige sfeer (glow) behoudt tegelijkertijd details in de schaduwen."
+      },
+      {
+        "name": "Harmonieuze kleurversterking",
+        "description": "Wanneer je de oranje tinten verzadigt, verhoog dan ook in mindere mate de rode en gele tinten.",
+        "when_to_use": "Bij zonsopgangen waar een enkele kleurversterking te kunstmatig zou ogen.",
+        "tools": [
+          "Color",
+          "Saturation"
+        ],
+        "effect": "Een veel soepelere, natuurlijke overgang tussen de kleurtonen in de lucht."
+      },
+      {
+        "name": "Gerichte zonnestralen",
+        "description": "Plaats Sun Rays in de zon, verwarm ze, en gebruik de Eraser mask op 100% om ze volledig van de zandvoorgrond weg te poetsen.",
+        "when_to_use": "Wanneer je atmosferisch licht wilt toevoegen dat alleen door de lucht breekt, niet onrealistisch over de grond.",
+        "tools": [
+          "Sun Rays",
+          "Masking Eraser"
+        ],
+        "effect": "Subtiele lichtstralen die alleen in de lucht en door de wolken heen schijnen."
+      },
+      {
+        "name": "Lokale zandtextuur",
+        "description": "Trek een Gradient Mask over de voorgrond en verhoog AI Structure specifiek voor het zand om zandribbels te accentueren.",
+        "when_to_use": "Bij stranden of duinen waar de patronen in het zand visueel belangrijk zijn voor de diepte.",
+        "tools": [
+          "Gradient Mask",
+          "Structure AI"
+        ],
+        "effect": "Veel meer voelbare textuur en contrast in het zand zonder de lucht aan te tasten."
+      }
+    ],
+    "color_approach": "Hij zoekt een koud-warm contrast door de blauwe wolkendekken rijk en donker te houden, terwijl hij de oranje zon subtiel lokaal verwarmt en oplicht. Hij schuift de paarse tinten richting blauw om de wolken minder magenta te maken.",
+    "local_adjustments": "Lokale aanpassingen zijn essentieel: radiale maskers voor de opkomende zon, lineaire gradiënten voor de structuur in het zand en penseelmaskers om broeierige donkere wolken lokaal van extra contrast te voorzien.",
+    "what_to_avoid": [
+      "Vermijd camera-profielen zoals 'Landscape' of 'Vivid', omdat deze het contrast en de kleuren te agressief pushen zonder controle.",
+      "Vermijd dat lichteffecten zoals zonnestralen doorlopen in de voorgrond, omdat dit direct de illusie van diepte verbreekt."
+    ],
+    "best_for": "Landschapsfoto's met sterke texturen op de voorgrond (zoals zand) en een lucht met uitgesproken, dramatische wolkenpartijen.",
+    "unique_insights": [
+      "Het tijdelijk over-verzadigen van de afbeelding naar extreme waarden helpt om precies te zien wat individuele kleur-sliders en temperatuur-verschuivingen doen, voordat je ze terugbrengt naar een natuurlijke waarde.",
+      "Het verminderen van de algehele intensiteit van alle bewerkingen door de overkoepelende Template-slider terug te draaien, is de beste manier om een te zwaar bewerkte foto te redden.",
+      "Een zonsopgang kan ongeloofwaardig worden als de helderste delen zich te dicht bij de randen van het beeld bevinden; houd heldere partijen gecentreerd om het oog in het beeld te houden."
+    ],
+    "style_preview": "Deze fotograaf combineert sterke contrasten in voorgronddetails met zachte, dromerige (ethereal) luchten. Zijn aanpak draait om het isoleren van specifieke zones: het dramatisch maken van donkere wolken, het verzachten van de zon, en het knisperend scherp maken van het zand. Deze stijl is perfect voor landschappen waar je een split-persoonlijkheid in het licht hebt: donker en dreigend aan de ene kant, warm en hoopvol aan de andere."
+  },
+  {
+    "video_title": "How to edit sunsets in Luminar AI - subtle changes, big rewards!",
+    "photographer_name": "Gary McIntyre Photographer",
+    "youtube_url": "https://www.youtube.com/watch?v=QxukGOyzzxI",
+    "genre": [
+      "landschap",
+      "kust"
+    ],
+    "light_conditions": [
+      "gouden uur"
+    ],
+    "mood": [
+      "rustig",
+      "sfeervol"
+    ],
+    "software": [],
+    "style_description": "Subtiele, natuurlijke zonsondergang",
+    "philosophy": "Gary gelooft dat minimale, selectieve aanpassingen betere resultaten opleveren dan globale, zware filters. Zijn hoofddoel is trouw blijven aan de werkelijke kleuren van de scène. Hij weigert effecten over het hele beeld te gooien; elke aanpassing, van structuur tot warme gloed, wordt lokaal met een zacht penseel ingeschilderd om het oog subtiel te sturen.",
+    "workflow_order": [
+      "stap 1: de lucht subtiel aanzetten met ai sky enhancer",
+      "stap 2: texturen lokaal in het gras en wolken penselen",
+      "stap 3: kleurbalans finetunen door blauw en groen te desatureren",
+      "stap 4: warme golden hour gloed schilderen op specifieke elementen",
+      "stap 5: orton-effect lokaal maskeren over de hooglichten"
+    ],
+    "techniques": [
+      {
+        "name": "Sky Enhancer boost",
+        "description": "Verhoog de Sky Enhancer heel subtiel om de kleuren en het contrast in de wolkenpartij net iets meer definitie te geven.",
+        "when_to_use": "Bij zonsondergangen waarbij de wolken te zacht of gewoontjes ogen na een RAW conversie.",
+        "tools": [
+          "Sky Enhancer AI"
+        ],
+        "effect": "De lucht krijgt meer drama zonder de voorgrond donkerder te maken."
+      },
+      {
+        "name": "Gepenseelde structuur",
+        "description": "Zet de Structure AI iets hoger, maar in plaats van globaal toe te passen, gebruik je een zacht penseel (21-50% opaciteit) om alleen specifieke plukken gras of randen van wolken te accentueren.",
+        "when_to_use": "Wanneer je details wilt benadrukken zonder dat het hele beeld een onnatuurlijke, knisperige HDR-uitstraling krijgt.",
+        "tools": [
+          "Structure AI",
+          "Masking Brush"
+        ],
+        "effect": "Selectieve diepte en scherpte op plekken waar het licht valt."
+      },
+      {
+        "name": "Groen desatureren voor gras",
+        "description": "Trek de verzadiging van de groene tinten iets terug, waardoor de onderliggende gele (dode/droge) tinten in het gras beter naar voren komen.",
+        "when_to_use": "Bij graslandschappen in de herfst of tijdens zonsondergang waar felle groene grassen te dominant zijn.",
+        "tools": [
+          "Color",
+          "Saturation"
+        ],
+        "effect": "Het gras oogt natuurlijker, warmer en harmonieuzer in de totale zonsondergangssfeer."
+      },
+      {
+        "name": "Lokaal Gouden Uur licht",
+        "description": "Activeer het Golden Hour effect, maar schilder dit uitsluitend (op ~50% opaciteit) in de partijen in het middenplan (10-30 meter verderop) die direct licht vangen.",
+        "when_to_use": "Om de suggestie te wekken van zonnestralen die specifiek over het landschap strijken.",
+        "tools": [
+          "Golden Hour",
+          "Masking Brush"
+        ],
+        "effect": "Het effect trekt het oog de foto in zonder de voorgrond onnatuurlijk geel te maken."
+      },
+      {
+        "name": "Gericht Orton Effect",
+        "description": "Voeg een lichte dosis Orton-glow toe, maar wis deze uit de schaduwen; schilder de gloed enkel in de lichtere, zongekuste delen van de foto.",
+        "when_to_use": "Om een sfeervol, dromerig licht te creëren zonder dat de donkere contrasten modderig worden.",
+        "tools": [
+          "Orton Effect",
+          "Masking Brush"
+        ],
+        "effect": "Een zachte, magische lichtverspreiding op exact de juiste highlights."
+      }
+    ],
+    "color_approach": "Hij is terughoudend met blauw en kiest ervoor om koele tinten iets terug te dringen (-14 saturatie) zodat de foto niet onnatuurlijk koel overkomt, terwijl hij tegelijk de groentinten dimt om het gele en oranje zonlicht de onbetwiste hoofdrol te geven.",
+    "local_adjustments": "Werkelijk élk detail- en sfeereffect (zoals structuur, gouden gloed en Orton-effect) wordt door hem met een lokaal masking-penseel handmatig ingeschilderd. Hij vertrouwt nooit op de globale schuifregelaars van de software.",
+    "what_to_avoid": [
+      "Vermijd het globaal toepassen van structuur of scherpte; dit leidt onvermijdelijk tot een onrustig, nep uitziend beeld.",
+      "Vermijd dat effecten (zoals Golden Hour of Orton) doorsijpelen in de wolken of de diepe schaduwen waar ze fysiek niet thuishoren."
+    ],
+    "best_for": "Gelaagde natuurfoto's, velden en kusten tijdens golden hour waar subtiliteit en sfeer belangrijker zijn dan knallende kleuren.",
+    "unique_insights": [
+      "Het desatureren van gras (groentinten) kan vreemd genoeg helpen om het zachte gras veel meer te laten opvallen, omdat de gele ondertonen hierdoor de ruimte krijgen.",
+      "Het Orton-effect hoort van nature thuis in de lichte delen van een foto; het globaal toepassen ervan maakt schaduwen zinloos zacht en grijzig.",
+      "Door het penseel op 20-50% dekking te zetten en in kleine vegen lokaal op te bouwen, simuleer je luminosity masking zonder complexe maskers te hoeven maken."
+    ],
+    "style_preview": "Deze bewerkingsstijl draait om enorme beheersing en lokaal ingrijpen. Verwacht geen zware presets; deze fotograaf schildert structuur, warmte en gloed met kleine, zachte penseelstreken op de specifieke plekken waar het licht van nature valt. Het resulteert in een foto die zeer natuurlijk voelt, maar stiekem exact zo gestuurd is dat je oog direct naar de zongekuste onderdelen wordt getrokken."
+  },
+  {
+    "video_title": "Colour Grading in Darktable",
+    "photographer_name": "Darktable Landscapes",
+    "youtube_url": "https://www.youtube.com/watch?v=AdbPKjPKm8w",
+    "genre": [
+      "landschap"
+    ],
+    "light_conditions": [
+      "gouden uur"
+    ],
+    "mood": [
+      "naturalistisch",
+      "rustig"
+    ],
+    "software": [
+      "darktable"
+    ],
+    "style_description": "Harmonieuze, subtiele kleur theorie",
+    "philosophy": "De bewerking is volledig gebouwd op fundamentele kleurentheorie en het balanceren van complementaire kleuren. Hij gelooft dat kleurcorrectie in landschappen niet bedoeld is om extreme sferen te forceren, maar om storende of disharmonieuze elementen zachter te maken en optische illusies (zoals diepte door atmosferisch perspectief) slim in te zetten. Subtiliteit is het kernwoord.",
+    "workflow_order": [
+      "stap 1: afbeelding exporteren naar een extern kleurenwiel voor controle",
+      "stap 2: niet-complementaire kleuren corrigeren met de color equalizer",
+      "stap 3: correcties beperken met gradiënt maskers of detail thresholds",
+      "stap 4: storende verzadigde objecten lokaal desatureren",
+      "stap 5: diepte creëren door de achtergrond subtiel blauwer te maken"
+    ],
+    "techniques": [
+      {
+        "name": "Hue verschuiving via Equalizer",
+        "description": "Selecteer met de picker in de Color Equalizer (Hue tab) specifieke groengele bomen en trek de curve omlaag om ze meer oranjegeel te maken.",
+        "when_to_use": "Wanneer bladgroen in een gouden-uur landschap net uit de toon valt en clasht met de warme lucht.",
+        "tools": [
+          "Color Equalizer"
+        ],
+        "effect": "De bladeren passen qua kleur perfect binnen de complementaire goud-blauwe kleurenschema's."
+      },
+      {
+        "name": "Detail Threshold Maskering",
+        "description": "Gebruik de 'Details Threshold' slider in de maskeropties om een kleuraanpassing te beperken tot de fijne structuren (bladerdek) en egale vlakken over te slaan.",
+        "when_to_use": "Om te voorkomen dat een grote kleuraanpassing via een gradiëntmasker alles in het gebied als een sloopkogel raakt.",
+        "tools": [
+          "Parametric Mask",
+          "Details Threshold"
+        ],
+        "effect": "Subtielere kleuraanpassingen die natuurlijk inbedden in de complexe texturen."
+      },
+      {
+        "name": "Elementen desatureren",
+        "description": "Teken een pad-masker om een afleidend felgekleurd voorwerp in de voorgrond (zoals een boei) en verlaag de saturatie in de Color Equalizer.",
+        "when_to_use": "Als een object niet verwijderd hoeft te worden, maar wel veel visuele aandacht opslokt door zijn felle kleur.",
+        "tools": [
+          "Drawn Mask",
+          "Color Equalizer"
+        ],
+        "effect": "Het object blendt naadloos in met de restanten hout of stenen in de omgeving en eist geen onnodige aandacht op."
+      },
+      {
+        "name": "Atmosferisch blauw toevoegen",
+        "description": "Kopieer de Color Calibration module en verhoog de input voor de blauwe (B) channel lichtjes (bijv. naar 1.15).",
+        "when_to_use": "Wanneer de bergen of lucht op de achtergrond te warm ogen en je extra dieptewerking wilt creëren.",
+        "tools": [
+          "Color Calibration"
+        ],
+        "effect": "De scène krijgt veel meer ruimtelijke diepte doordat verafgelegen bergen daadwerkelijk verder weg lijken."
+      },
+      {
+        "name": "Maskeren op basis van kleur",
+        "description": "Gebruik een parametrisch masker gericht op het blauwe kanaal of de helderheid om de extra blauw-tint uitsluitend op de verafgelegen bergen te projecteren, zodat voorgrondbomen onaangetast blijven.",
+        "when_to_use": "Om atmosferisch perspectief te injecteren zonder warme elementen in de voorgrond koud te maken.",
+        "tools": [
+          "Parametric Mask"
+        ],
+        "effect": "Een vlekkeloze, natuurlijke overgang van warme voorgrond naar koele achtergrond."
+      }
+    ],
+    "color_approach": "Zijn kleurconcept rust op de interactie tussen complementaire kleuren op een wiskundig kleurenwiel (blauw vs. geel/oranje). Elk element in de foto wordt teruggeduwd in deze bandbreedte, en verre afstandselementen worden koeler gehouden om de natuurlijke wetten van lichtbreking na te bootsen.",
+    "local_adjustments": "Uiterst geavanceerd gebruik van parametrische en getekende maskers. Hij isoleert achtergronden op basis van helderheid- en kleurwaarden en gebruikt detail-thresholds om te voorkomen dat lucht of egale vlakken ongewenst meegekleurd worden.",
+    "what_to_avoid": [
+      "Vermijd 'sledgehammer' (grove) globale kleuraanpassingen die het realisme van complexe bladerdekken of graspartijen ruïneren.",
+      "Vermijd perfect kloonwerk in de voorgrond als een simpele, snelle desaturatie van het object al voldoende is om afleiding te voorkomen."
+    ],
+    "best_for": "Natuur- en berglandschappen met flinke dieptewerking, water en gebladerte waar een sterke kleurbalans nodig is.",
+    "unique_insights": [
+      "Door de foto tussentijds te exporteren en te analyseren in een web-based kleurenwiel app (Hue Picker), ontdek je kleurclashes die je met het blote oog misschien mist.",
+      "Atmosfeer bevat water en water reflecteert blauw; door warme achtergrondbergen handmatig een lichte blauwe zweem te geven, imiteer je de natuurlijke dikte van de lucht en dwing je diepte in een platte foto.",
+      "Een felle, lelijke kleur in de compositie hoeft niet altijd weggestempeld te worden; puur het verlagen van de saturatie maakt het object oud en verweerd waardoor het plots in de scène past."
+    ],
+    "style_preview": "Deze bewerking is puur analytisch en steunt op traditionele schilderkunst en kleurentheorie. Je zult leren om je foto's in lagen van kleur en afstand te denken in plaats van schuifjes. De stijl levert hypernatuurlijke resultaten op: foto's voelen perfect gebalanceerd en diep aan, maar niemand zal kunnen zien dát ze bewerkt zijn. Ideaal voor de serieuze, meer klassieke landschapsfotograaf."
+  },
+  {
+    "video_title": "Processing a seascape in DxO Photolab 5 plus a look at diffraction in PL5",
+    "photographer_name": "DxFlow",
+    "youtube_url": "https://www.youtube.com/watch?v=8xO3kWKFwtQ",
+    "genre": [
+      "kust"
+    ],
+    "light_conditions": [
+      "bewolkt"
+    ],
+    "mood": [
+      "rustig",
+      "zacht"
+    ],
+    "software": [
+      "DxO PhotoLab"
+    ],
+    "style_description": "Lichte, zachte bewolkte kust",
+    "philosophy": "De bewerking is gericht op het behouden van zachtheid en het vermijden van zware contrasten. Bij bewolkte, low-contrast omstandigheden laat hij agressieve tools zoals Smart Lighting en ClearView uit staan. Het doel is het versterken van subtiele details in het zand en het water, terwijl de pastelachtige, luchtige sfeer van een bewolkte zonsondergang gerespecteerd blijft.",
+    "workflow_order": [
+      "stap 1: filmsimulatie toepassen voor het wijzigen van de basis kleurweergave",
+      "stap 2: witbalans verwarmen om de bewolkte scene aantrekkelijker te maken",
+      "stap 3: lokaal midtones en highlights balanceren met selective tone",
+      "stap 4: fijn contrast toevoegen en horizon rechtzetten",
+      "stap 5: extreme controle met tijdelijke clearview voor stofvlekjes"
+    ],
+    "techniques": [
+      {
+        "name": "Film Rendering toepassen",
+        "description": "Kies een digitaal filmprofiel zoals Fuji Provia Standard onder Color Rendering om direct de response op highlights en de verschuiving in zand- en blauwtinten te sturen.",
+        "when_to_use": "Als eerste stap, omdat het de manier waarop verdere belichtingssliders reageren fundamenteel beïnvloedt.",
+        "tools": [
+          "Color Rendering"
+        ],
+        "effect": "Een vloeiendere, klassieke tonale basis met zachtere blauwen en gelen."
+      },
+      {
+        "name": "Bewolking opwarmen",
+        "description": "Versleep de temperatuurschuif direct naar ongeveer 6800K om de koele grijze sfeer van het bewolkte weer te neutraliseren.",
+        "when_to_use": "Bij zonsondergangen die achter een dik wolkenpak schuilen en daardoor flets blauwgrijs uitvallen.",
+        "tools": [
+          "White Balance"
+        ],
+        "effect": "Een subtiele, aangename zachte warmte trekt over het strand en het water."
+      },
+      {
+        "name": "Zand structuur in midtones",
+        "description": "Schuif de Midtones slider flink omhoog via Selective Tone om exclusief het natte zand op te lichten zonder de schaduwen flets te maken.",
+        "when_to_use": "Wanneer patronen in nat zand of ondiep water te donker ogen en de foto een 'licht en luchtig' (airy) gevoel moet krijgen.",
+        "tools": [
+          "Selective Tone",
+          "Midtones"
+        ],
+        "effect": "Het natte zand reflecteert beter en rimpels worden direct prominenter."
+      },
+      {
+        "name": "Lokaal hooglichten temperen",
+        "description": "Gebruik een penseel met 100% opaciteit over de terugtrekkende golven en verlaag daarbinnen de hooglichten.",
+        "when_to_use": "Wanneer globaal contrast het wit in de golven of reflecties net iets over de rand drukt.",
+        "tools": [
+          "Local Adjustments",
+          "Brush"
+        ],
+        "effect": "Details en textuur keren terug in het opschuimende zeewater."
+      },
+      {
+        "name": "Stof spotten met ClearView",
+        "description": "Zet ClearView Plus (tijdelijk) op 100% om verborgen stofvlekjes op de sensor feilloos te onthullen tegen een bewolkte lucht.",
+        "when_to_use": "Tijdens de afronding van de foto, specifiek in luchtpartijen met weinig detail.",
+        "tools": [
+          "ClearView Plus",
+          "Repair Tool"
+        ],
+        "effect": "Garandeert een perfect stofvrij eindresultaat zonder lang te hoeven turen."
+      }
+    ],
+    "color_approach": "Hij omarmt een pastelachtig palet. In plaats van felle zonsondergangskleuren te pushen, kiest hij voor de neutrale Fuji Provia filmsimulatie gecombineerd met een lichte temperatuurverhoging, wat resulteert in zacht, natuurlijk beige zand en poederig blauw water.",
+    "local_adjustments": "Zeer beperkt, voornamelijk een penseel om het inkomende en terugtrekkende water met rust te laten of lokaal te dimmen wanneer de hooglichten clippen, zodat de focus op het lijnenspel in het zand blijft liggen.",
+    "what_to_avoid": [
+      "Vermijd functies zoals Smart Lighting in dit soort scènes, omdat ze krampachtig proberen om het contrast te vergroten en de lichte, dromerige tonen zullen vernietigen door de midtones te drukken.",
+      "Vermijd Microcontrast wanneer je streeft naar een zacht, sereen beeld, omdat dit de randen onnodig hard en 'chunky' maakt."
+    ],
+    "best_for": "Sereen, minimalistisch strand en waterfotografie bij grauw of bewolkt weer (overcast).",
+    "unique_insights": [
+      "Smart Lighting analyseert het histogram en probeert dit vaak te spreiden; in een bewust lichte, low-contrast strandfoto werkt dit vaak averechts door je zorgvuldig opgebouwde lichte tonen omlaag te trekken.",
+      "De Fine Contrast schuiven activeren op de achtergrond vaak automatisch een dosis microcontrast; dit moet je handmatig uitzetten als je niet wilt dat je wolken en zand hard en korrelig worden.",
+      "Sensorvlekjes kunnen compleet onzichtbaar lijken in grijze wolkenpartijen, maar springen direct in het oog zodra een klant de foto print of jij ClearView op 100% knalt."
+    ],
+    "style_preview": "Dit is een workflow voor de purist die op zoek is naar zachtheid en subtiliteit. Je leert hoe je flets, bewolkt strandweer kunt ombuigen naar een lichte, heldere en serene fine-art look. Verwacht geen harde contrasten of knallende HDR-kleuren, maar een ingetogen aanpak waarbij filmsimulaties en voorzichtige midtone-lifts zorgen voor een zachte, luchtige sfeer."
+  },
+  {
+    "video_title": "Fine Tuning the Mask: Control Lines in DxO PhotoLab 7 - Episode 10.1",
+    "photographer_name": "Chris Wright Photography",
+    "youtube_url": "https://www.youtube.com/watch?v=giUPs0c6Gfg",
+    "genre": [
+      "landschap",
+      "kust"
+    ],
+    "light_conditions": [
+      "tegenlicht"
+    ],
+    "mood": [
+      "krachtig"
+    ],
+    "software": [
+      "DxO PhotoLab"
+    ],
+    "style_description": "Perfect gelaagde, gebalanceerde belichting",
+    "philosophy": "De fotograaf betoogt dat traditionele verloopfilters de ondergang zijn van complexe landschappen omdat ze lokale contrasten vernietigen en bergen veranderen in zwarte gaten. Zijn bewerkingsstijl draait geheel om het 'turbochargen' van gradiënten via de slimme Luma en Chroma sampling technieken in Control Lines, zodat enkel de beoogde pixels geraakt worden en het beeld een natuurlijke belichting behoudt.",
+    "workflow_order": [
+      "stap 1: controleer traditionele grad-filters en verwerp ze wegens schade",
+      "stap 2: plaats een control line en sample specifieke donkere wolken",
+      "stap 3: finetune het masker via de luminance (luma) slider",
+      "stap 4: finetune de kleursensitiviteit via de chroma slider",
+      "stap 5: inverteer of gebruik negatieve maskers voor voorgrond bescherming"
+    ],
+    "techniques": [
+      {
+        "name": "Gerichte belichting met Control Line",
+        "description": "Trek een Control Line over de horizon en verplaats het 'pipetje' (dropper) naar de donkere delen van de lucht om de belichtingsaanpassing uitsluitend aan die specifieke tonen te koppelen.",
+        "when_to_use": "Wanneer je luchten donkerder wilt maken zonder de rotsen of bomen die door de horizon breken zwart te laten vollopen.",
+        "tools": [
+          "Control Line",
+          "Picker/Dropper"
+        ],
+        "effect": "Rotsen en voorgrond blijven perfect belicht, terwijl de lucht detail terugkrijgt."
+      },
+      {
+        "name": "Luma masker restrictie",
+        "description": "Zet het masker in zwart-wit weergave en schuif de Luma (luminance) slider omhoog tot 100% of omlaag om het filter te forceren uitsluitend op pure hooglichten of diepe schaduwen te werken.",
+        "when_to_use": "Wanneer helderheidsverschillen tussen lucht en bergen de enige scheiding vormen in een overbelichte scène.",
+        "tools": [
+          "Control Line",
+          "Luma Slider"
+        ],
+        "effect": "Een uiterst precieze scheiding tussen lucht en objecten zonder complexe penselen."
+      },
+      {
+        "name": "Kleurscheiding met Chroma",
+        "description": "Verplaats de dropper naar de blauwe heuvelruggen in de verte en schuif aan de Chroma-regelaar om het masker te laten reageren op de blauwe tint, ongeacht hoe donker of licht het is.",
+        "when_to_use": "Wanneer objecten (zoals bergen) dezelfde helderheid hebben als de lucht, maar afwijken in hun specifieke (vaak blauwe) tint.",
+        "tools": [
+          "Control Line",
+          "Chroma Slider"
+        ],
+        "effect": "Subtiele heuvelruggen in de achtergrond kunnen onafhankelijk van de lucht worden behandeld."
+      },
+      {
+        "name": "Voorgrond isolatie door Inversie",
+        "description": "Trek een control line over de lucht, optimaliseer het masker en gebruik vervolgens de Shift+I shortcut om het volledige masker om te keren, zodat het enkel de voorgrond raakt.",
+        "when_to_use": "Wanneer het veel makkelijker is om de vlakke lucht te maskeren dan een sterk gedetailleerde, rommelige voorgrond.",
+        "tools": [
+          "Invert Mask"
+        ],
+        "effect": "Mogelijkheid om probleemloos de belichting van een ingewikkelde voorgrond te verhogen."
+      },
+      {
+        "name": "Bescherming via Negatief Masker",
+        "description": "Voeg een 'Negative Control Line' (Alt/Option klik op de plus) toe haaks over een gebied dat al door een masker wordt geraakt, om het effect daar volledig uit te gummen.",
+        "when_to_use": "Als een deel van je verloopfilter per ongeluk een rotsblok oplicht dat juist donker of in schaduw moet blijven.",
+        "tools": [
+          "Negative Mask",
+          "Control Line"
+        ],
+        "effect": "Natuurlijke schaduwval wordt behouden en belichtingsovergangen blijven logisch."
+      }
+    ],
+    "color_approach": "De focus ligt hier puur op helderheid, luma en chromatische selecties in de maskers zelf. Het doel is niet zozeer het verschuiven van kleuren, maar het gebruiken van aanwezige kleuren (zoals blauwe heuvels of een oranje flare) als selectiemiddel om de belichting per zone te dicteren.",
+    "local_adjustments": "Dit is honderd procent gefocust op geavanceerde lokale aanpassingen, door Control Lines en de bijbehorende Luma/Chroma sliders in te zetten om intelligente gradient maskers te bouwen met actieve, negatieve uitsluitingen.",
+    "what_to_avoid": [
+      "Vermijd het gebruik van de ouderwetse, platte Graduated Filter tool; deze fungeert als een stuk donker glas dat blindelings rotsen en bergen ruïneert zodra ze de lucht overlappen.",
+      "Vermijd het negeren van de zwart-wit maskeer-weergave; je kunt luma- en chroma-verschuivingen vrijwel niet visueel beoordelen op de foto zelf."
+    ],
+    "best_for": "Complexe landschappen en kustfoto's waar bergen, bomen of rotsformaties de horizon doorbreken met tegenlicht of lastige overbelichting.",
+    "unique_insights": [
+      "Een standaard verloopfilter maakt gebouwen en bomen plat en grauw, terwijl een Control Line de specifieke pixels 'samplet' waardoor contrasten en details in overlappende objecten bewaard blijven.",
+      "Soms is het oneindig veel makkelijker om een perfecte lucht the maskeren en deze selectie simpelweg te inverteren, dan om te proberen een gedetailleerde, rotsachtige voorgrond netjes met een penseel te selecteren.",
+      "Lensflare kan verrassend goed onder controle worden gehouden door de Chroma-slider van een Control Line slim in te stellen, zodat de flare-tint ongemoeid blijft terwijl de rest van de lucht donkerder wordt."
+    ],
+    "style_preview": "Een uiterst technische, probleemoplossende workflow voor fotografen die vechten tegen moeilijke belichting en silhouetten in landschappen. Je leert geavanceerd gebruik maken van DxO's maskerings-engine om intelligente gradients en kleurscheidingen te bouwen. Deze methode garandeert een natuurlijke balans tussen een heldere, dramatische lucht en een gedetailleerde, open voorgrond zonder slordige zwarte randen om je onderwerpen.",
+    "_warnings": [
+      "naam lijkt op kanaalnaam (photography)"
+    ]
+  },
+  {
+    "video_title": "RawTherapee in JUST 12 Minutes! | Complete Tutorial",
+    "photographer_name": "Jason Polak Photography",
+    "youtube_url": "https://www.youtube.com/watch?v=QOzPg1HwmkE",
+    "genre": [
+      "wildlife",
+      "algemeen"
+    ],
+    "light_conditions": [
+      "daglicht"
+    ],
+    "mood": [
+      "naturalistisch",
+      "krachtig"
+    ],
+    "software": [
+      "RawTherapee"
+    ],
+    "style_description": "Kraakheldere, ongeforceerde wildlife details",
+    "philosophy": "Snelheid en efficiëntie staan voorop door zich te beperken tot de modules die 90% van de impact leveren. Zijn workflow is streng gefocust op technische perfectie, waarbij lenzen en scherpte geoptimaliseerd worden vóór enige andere stap. Hij pleit voor methodische isolatie: ruisverwijdering mag nooit details slopen, en verscherping mag nooit de zachte achtergrond verstoren.",
+    "workflow_order": [
+      "stap 1: lenscorrectie (geometry) en croppen direct aan het begin",
+      "stap 2: belichting controleren via de waveform monitor en corrigeren",
+      "stap 3: hooglichten en schaduwen balanceren met de tone equalizer",
+      "stap 4: specifieke verscherping (RL deconvolution) instellen op 1:1 weergave",
+      "stap 5: ruis reductie en detail herstel zorgvuldig uitbalanceren"
+    ],
+    "techniques": [
+      {
+        "name": "Geometrische basis instellen",
+        "description": "Zet onder de lens geometry-sectie de profiled lens corrections op automatisch, om vignettering en lensvervorming te verwijderen vóór de werkelijke bewerking.",
+        "when_to_use": "Altijd als eerste stap, vooral bij groothoek of wildlife fotografie waarbij randvertekening en donkere hoeken storen.",
+        "tools": [
+          "Profiled Lens Correction"
+        ],
+        "effect": "Het beeld is optisch zuiver en plat, en belichtingsbeslissingen worden niet meer beïnvloed door lens-vignettering."
+      },
+      {
+        "name": "Veilige belichting met Waveform",
+        "description": "Gebruik de belichtingscompensatie-slider maar monitor dit met de Waveform-tool in plaats van het histogram, om te garanderen dat de hooglichten niet boven de bovenste stippellijn (clipping point) pieken.",
+        "when_to_use": "Wanneer je raw-bestand vlak oogt maar je de witte delen (zoals veren van een vogel) absoluut niet mag laten uitbijten.",
+        "tools": [
+          "Exposure Compensation",
+          "Waveform"
+        ],
+        "effect": "Maximale helderheid zonder dat witte structuren veranderen in lege, puur witte vlakken."
+      },
+      {
+        "name": "Hooglichten herdefiniëren",
+        "description": "Trek in de Shadows/Highlights tool de slider 'Highlights Tonal Width' omlaag om exact te herdefiniëren welk bereik aan midtones als hooglichten behandeld worden, en trek deze vervolgens omlaag.",
+        "when_to_use": "Als simpele hooglichten-sliders te veel van het beeld grijzig maken en je het effect uitsluitend wilt beperken tot de allerfelste partijen.",
+        "tools": [
+          "Shadows/Highlights",
+          "Highlights Tonal Width"
+        ],
+        "effect": "Hooglichten (zoals zon op een vogel) worden subtiel gedempt zonder dat het totale contrast zakt."
+      },
+      {
+        "name": "Geïsoleerde Contrast Verscherping",
+        "description": "Verhoog de verscherping stevig, en duw vervolgens de 'Contrast Threshold' omhoog totdat de verscherping uit de zachte achtergrond verdwijnt. Regel ten slotte het detail in het onderwerp weer af.",
+        "when_to_use": "Bij foto's met zachte bokeh (achtergrondonscherpte) waarbij je het onderwerp knisperend scherp wilt zonder dat ruis in de achtergrond toeneemt.",
+        "tools": [
+          "Sharpening",
+          "Contrast Threshold"
+        ],
+        "effect": "Het onderwerp komt messcherp los van de muis-stille, gladde achtergrond."
+      },
+      {
+        "name": "Gescheiden Kleurverzadiging",
+        "description": "Vink in de Vibrance-module 'Link pastel and saturated tones' uit, verhoog de pastel-tinten, en duw dominante, reeds verzadigde tinten (zoals hard oranje) gericht iets naar beneden.",
+        "when_to_use": "Als het beeld fletse gebieden heeft die een opkikker nodig hebben, maar andere kleuren al tegen de rand van oververzadiging aan zitten.",
+        "tools": [
+          "Vibrance Module"
+        ],
+        "effect": "Een enorm gebalanceerd en rijk kleurprofiel zonder neon-achtige uitschieters."
+      }
+    ],
+    "color_approach": "Kleurbeheer is hier zeer gecontroleerd. In plaats van de brute Saturatie-slider te gebruiken, werkt hij met ontkoppelde pastel- en verzadigde tonen om zachte kleuren op te tillen en te harde kleuren in toom te houden. De witbalans wordt slechts mondjesmaat (warmer) getweakt op zicht.",
+    "local_adjustments": "De software RawTherapee wordt hier gebruikt voor zeer slimme 'parametrische' of drempel-gebaseerde aanpassingen over het gehele beeld. De contrast-threshold zorgt dat de achtergrond lokaal wordt overgeslagen bij het verscherpen, wat penselen overbodig maakt.",
+    "what_to_avoid": [
+      "Vermijd het verscherpen op een uitgezoomde weergave; gebruik uitsluitend de 1:1 view, anders beoordeel je een softwarematige lage-kwaliteit preview en ruïneer je de foto.",
+      "Vermijd het verhogen van de Ruisreductie-Luminance slider zonder daarna handmatig de 'Detail Recovery' slider op te schuiven, omdat je anders essentiële texturen kapotsmeert."
+    ],
+    "best_for": "Wildlife en natuurfotografie waarbij ragfijne details, zoals veren, cruciaal zijn en de scheiding tussen onderwerp en achtergrond perfect moet zijn.",
+    "unique_insights": [
+      "Het corrigeren van lensvervorming en vignettering beïnvloedt direct de belichting van de randen van je foto; als je dit pas aan het eind doet, vernietig je je zorgvuldig opgebouwde belichtingsbalans.",
+      "RL Deconvolution is vaak een natuurlijkere methode voor verscherping dan Unsharp Mask, maar kan 'blokkerig' overkomen als je de radius niet afstemt op het uiteindelijke print/export-formaat.",
+      "De Contrast Threshold slider is het ultieme wapen om de achtergrond ruisvrij te houden tijdens het verscherpen, en neemt de noodzaak weg om ingewikkelde subject-maskers te tekenen."
+    ],
+    "style_preview": "Een uiterst doeltreffende, no-nonsense workflow speciaal ontworpen voor technische fotografen die werken in de open-source omgeving van RawTherapee. De stijl voelt zeer puur, helder en realistisch aan. Het draait niet om zware filters of magische sferen, maar om het haarscherp uitsnijden van het onderwerp uit de achtergrond met perfect behoud van veren- of vachttextuur. Ideaal voor wildlife-puristen.",
+    "_warnings": [
+      "naam lijkt op kanaalnaam (photography)"
+    ]
+  },
+  {
+    "video_title": "Easy Steps to Dreamy Long Exposure Art!",
+    "photographer_name": "Mike Earl Photography",
+    "youtube_url": "https://www.youtube.com/watch?v=M90ers27NIk",
+    "genre": [
+      "fine-art",
+      "kust"
+    ],
+    "light_conditions": [
+      "diffuus licht",
+      "bewolkt"
+    ],
+    "mood": [
+      "dramatisch",
+      "rustig"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Ethereal, high-key lange sluitertijd",
+    "philosophy": "De fotograaf focust volledig op het creëren van een onwerkelijke, ethereal (dromerige) atmosfeer die de grenzen tussen lucht en water doet vervagen. Zijn benadering vereist het kunstmatig elimineren van de natuurlijke horizonlijn om een abstract en tijdloos kunstwerk te genereren. Hij vertrouwt sterk op handmatige manipulatie, randomisatie via de patch-tool en overlappende, lage-opaciteit borstelstreken in plaats van simpele verloopjes.",
+    "workflow_order": [
+      "stap 1: hulplijnen genereren voor nauwkeurige rasters op de horizon",
+      "stap 2: verloopvlakken tekenen in het raster met lokaal gepikte kleuren",
+      "stap 3: harde lijnen doorbreken en verstoren met de patch tool",
+      "stap 4: naadloos infaden met een hele zachte, lage-opaciteit brush",
+      "stap 5: overlays en maskers toevoegen voor finale mist-effecten"
+    ],
+    "techniques": [
+      {
+        "name": "Wiskundige verloopvlakken",
+        "description": "Teken met de Rectangle tool perfecte blokken in een raster van 15 kolommen over de horizon, en vul elke blok met een gradient die exact de onderliggende zee en lucht kleur pikt met de pipet.",
+        "when_to_use": "Wanneer je de horizon over de hele breedte van een kustfoto wilt uitwissen maar de variatie in natuurlijke kleurtonen wilt respecteren.",
+        "tools": [
+          "Rectangle Tool",
+          "Gradient Fill"
+        ],
+        "effect": "De harde horizon verdwijnt, maar de natuurlijke, horizontale kleurnuances van links naar rechts blijven behouden."
+      },
+      {
+        "name": "Randomisatie via Patch Tool",
+        "description": "Smelt alle rechthoekige lagen samen en gebruik de Patch tool om in volstrekt willekeurige, organische vormen over de harde verticale grenzen van de blokken heen te slepen en te mixen.",
+        "when_to_use": "Om strakke, computer-gegenereerde gradiëntlijnen te doorbreken zodat ze de look krijgen van golvende zeemist.",
+        "tools": [
+          "Patch Tool"
+        ],
+        "effect": "Een organische, willekeurige mistband over de hele breedte in plaats van stijve kleurblokken."
+      },
+      {
+        "name": "Atmosferisch kwasten",
+        "description": "Gebruik een enorme, extreem zachte kwast (Soft Round) op een opaciteit en flow van rond de 20%, en schilder grote, overlappende vegen over de patched gebieden om deze volledig uit te vlakken.",
+        "when_to_use": "Als laatste afwerkingslaag om de handmatige patch-bewerkingen samen te smelten tot één zacht geheel.",
+        "tools": [
+          "Brush Tool",
+          "Opacity 20%"
+        ],
+        "effect": "De overgebleven structuur smelt weg in een fluweelzachte, dromerige waas."
+      },
+      {
+        "name": "Mist Overlays via Blend Modes",
+        "description": "Sleep een externe textuur (zoals Atmos Pro mist/wolken overlays) in het document, vergroot deze, en verander de Layer Blend Mode naar 'Screen'.",
+        "when_to_use": "Wanneer het gepenseelde gebied er nog te 'digitaal' en egaal uitziet en je organische gasachtige wolkenstructuren wilt simuleren.",
+        "tools": [
+          "Layer Blend Mode",
+          "Screen"
+        ],
+        "effect": "Echte textuur van mist mengt zich lichtgevend met de horizon."
+      },
+      {
+        "name": "Masker Inversie op Objecten",
+        "description": "Groepeer alle mistlagen. Gebruik de Object Selection Tool om het hoofdonderwerp (bijv. een houten paal) te selecteren. Maak een masker op de groep en druk Ctrl+I om dit te inverteren.",
+        "when_to_use": "Om te voorkomen dat het gecreëerde mist-effect het hoofdonderwerp in de zee opslokt.",
+        "tools": [
+          "Object Selection",
+          "Invert Mask"
+        ],
+        "effect": "Het scherpe onderwerp staat plotseling vrij en krachtig midden in de kunstmatige mistbank."
+      }
+    ],
+    "color_approach": "De basisfoto is omgezet via een adaptief zwart-wit/gedempt profiel voordat deze Photoshop inging. De fotograaf stuurt sterk aan op een high-key esthetiek met weinig verzadiging. Door met de pipet exact de onderliggende grijstonen te stelen voor zijn verloopvlakken, waarborgt hij dat de mist naadloos aansluit bij het sombere, etherische kleurenpalet.",
+    "local_adjustments": "Het volledige proces is in wezen één gigantische, handmatige lokale aanpassing. Via rasterlijnen, selecties op objecten en op maat gekleurde gradient-blokken wordt de horizon handmatig ontleed en herbouwd, met uiterste precisie over waar de mist ophoudt rondom palen en objecten in het water.",
+    "what_to_avoid": [
+      "Vermijd het simpelweg trekken van één groot verloop (gradient) van wit naar transparant over de horizon; dit verstoort de lokale kleurnuances en toont onmiddellijk aan dat het nep is.",
+      "Vermijd het penselen (Brushing) met een opaciteit of flow hoger dan 20%; harde penselen vernietigen het etherische karakter dat opgebouwd moet worden in laagjes."
+    ],
+    "best_for": "Lange sluitertijd landschappen en kusten met minimalistische composities waarbij objecten geïsoleerd uit het water steken.",
+    "unique_insights": [
+      "Het lijkt tegenstrijdig, maar door het beeld eerst strak geometrisch in 15 kolommen op te splitsen (Grid Layout) krijg je een fundament dat vele malen beter de natuurlijke variatie van licht behoudt dan één breed mist-masker.",
+      "De 'Patch Tool', normaal gebruikt voor het klonen van stofjes, is verrassend effectief om met willekeurige handbewegingen harde gradient-randen te verscheuren, waardoor een vloeibare, organische textuur ontstaat.",
+      "High-key lange sluitertijd beelden laten meedogenloos stofjes op je sensor en hete pixels zien; plugins of actions die specifiek stof opsporen (zoals de Dust tool in Lumenzia) zijn hier absoluut noodzakelijk in de laatste fase."
+    ],
+    "style_preview": "Deze tutorial draait om het transformeren van een 'gewone' landschapsfoto naar zware fine-art. De fotograaf leert je een extreem methodische workflow om de harde horizon volledig uit te wissen en te vervangen door schilderachtige mist. Je leert werken met gelaagde dekkingen en geometrische precisie. Het eindresultaat is zacht, mystiek, high-key en voelt meer als een houtskool/pastel tekening dan een harde foto.",
+    "_warnings": [
+      "naam lijkt op kanaalnaam (photography)"
+    ]
+  },
+  {
+    "video_title": "Luminosity Masking in Lightroom and ACR",
+    "photographer_name": "Photos on the Bay",
+    "youtube_url": "https://www.youtube.com/watch?v=SkaRcsyGNAc",
+    "genre": [
+      "landschap",
+      "kust"
+    ],
+    "light_conditions": [
+      "gouden uur"
+    ],
+    "mood": [
+      "dramatisch",
+      "sfeervol"
+    ],
+    "software": [
+      "Lightroom Classic",
+      "Photoshop"
+    ],
+    "style_description": "Rijke, kleur-gescheiden dynamische zonsondergang",
+    "philosophy": "De fotograaf hecht veel waarde aan het creëren van bestanden met massief dynamisch bereik door recht tegen de zon in te fotograferen. Hij zweert bij schone exposure-blends zonder hinderlijke ghosting-artefacten. Zijn primaire doel is het accuraat reproduceren van wat hij met zijn eigen ogen zag: een sterke scheiding tussen warme, gouden reflecties op de voorgrond en vurige, paars-roze stralen in de donkerste delen van de lucht.",
+    "workflow_order": [
+      "stap 1: samenvoegen van beugelopnames via hdr merge zonder ghosting",
+      "stap 2: herstellen van de voorgrond belichting tot het natuurlijk oogt",
+      "stap 3: witbalans globaal opwarmen voor een gouden voorgrond gloed",
+      "stap 4: luminance range masker creëren speciaal voor de felste luchtpartijen",
+      "stap 5: paarse/magenta tinten uitsluitend injecteren via het lichtmasker"
+    ],
+    "techniques": [
+      {
+        "name": "De-ghosting loze HDR Merge",
+        "description": "Selecteer een donkere en lichte belichting, gebruik Photo Merge > HDR, en zet de De-ghosting nadrukkelijk op 'None' alvorens samen te voegen.",
+        "when_to_use": "Bij scènes met enorm contrast (tegen de zon in) gefotografeerd op een statief, waarbij de lucht en de grond extreme verschillen hebben.",
+        "tools": [
+          "Photo Merge",
+          "HDR"
+        ],
+        "effect": "Een superstrak dng-bestand zonder de wazige of modderige blending-fouten die de-ghosting vaak veroorzaakt."
+      },
+      {
+        "name": "Luminance Range isolatie",
+        "description": "Maak een masker via Range > Luminance Range en klik specifiek in de helderste partij lucht tússen de donkere takken en bladeren van de boom in de voorgrond.",
+        "when_to_use": "Wanneer je lucht door gebladerte of complexe structuren heen schijnt en een 'Select Sky' masker de blaadjes ongewenst meeneemt.",
+        "tools": [
+          "Luminance Range Mask"
+        ],
+        "effect": "De lucht achter de boom wordt onafhankelijk geselecteerd zonder dat de boom zelf wordt beïnvloed of voorzien wordt van een halo."
+      },
+      {
+        "name": "Extreem zachte maskers (Feathering)",
+        "description": "Trek in de Luminance Range opties de smoothness-slider (het rechter blokje/feathering) volledig naar 100%, en schuif het bereik van de linkerkant langzaam in totdat alleen het gewenste licht wordt gepakt.",
+        "when_to_use": "Altijd wanneer je luminance masks gebruikt, om te voorkomen dat er harde, lelijke randen ontstaan rondom wolken of horizonlijnen.",
+        "tools": [
+          "Range Sliders",
+          "Smoothness"
+        ],
+        "effect": "Een onzichtbare, uiterst natuurlijke overgang tussen bewerkte hooglichten en onbewerkte schaduwen."
+      },
+      {
+        "name": "Kleurscheiding via masker",
+        "description": "Stel de globale witbalans (Temperature) in op 5000K voor een rijke oranje voorgrond, gebruik vervolgens het gemaakte Luminance Range masker in de lucht en verhoog daar specifiek de Tint (naar magenta).",
+        "when_to_use": "Bij complexe zonsondergangen waarbij je op de horizon en het zand een gouden glow wilt, maar in de hoge lucht wolken en stralen paars/magenta kleuren.",
+        "tools": [
+          "Global Temperature",
+          "Mask Tint"
+        ],
+        "effect": "De kleuren contrasteren prachtig zonder dat de paarse lucht de reflecties in het oranje zand vervuilt."
+      },
+      {
+        "name": "Beheerste schaduw lift",
+        "description": "Na het blenden van de HDR, schuif de Shadows globaal flink omhoog (naar 60 of 70%) om detail terug te winnen uit het pure zwart van de voorgrondrotsen.",
+        "when_to_use": "Omdat je een 32-bit dng hebt gecreëerd uit twee extreme opnames, kun je deze sliders veel verder pushen zonder enige vorm van ruis te introduceren.",
+        "tools": [
+          "Shadows"
+        ],
+        "effect": "Haarscherpe schaduwdetails (zoals wortels en zeepokken) keren terug zonder verlies van kwaliteit."
+      }
+    ],
+    "color_approach": "Hij hanteert een doordachte bi-color aanpak. In plaats van de hele foto met één witbalans- of tint-slider af te dwingen, scheidt hij de globale warmte (goud in de schaduw en midtones op de grond) bewust van de hooglichten in de lucht (waarin hij magenta en paarse tonen pompt via een luminance masker).",
+    "local_adjustments": "De kern van deze edit draait om Luminance Range Masking, Lightroom's alternatief voor de complexe Luminosity Masks in Photoshop. Door helderheidsniveaus te targeten ontwijkt hij de problemen van het automatische 'Select Sky' masker rondom fijne boomtakjes.",
+    "what_to_avoid": [
+      "Vermijd het blindelings accepteren van 'Select Sky' als er een sterk, gedetailleerd voorgrond-element (zoals een boom) voor de lucht staat; dit levert vrijwel altijd rommelige overgangen op rond de bladeren.",
+      "Vermijd het gebruiken van 'De-ghosting' tijdens een HDR merge als dit niet strikt noodzakelijk is (zoals bij stevige statieffotografie), omdat het vaak kunstmatige ruis en zachtheid oplevert."
+    ],
+    "best_for": "Tegenlichtsituaties met een massief contrast, zonsondergangen door bomen of over rotsen waar de kleuren van lucht en aarde fundamenteel van elkaar verschillen.",
+    "unique_insights": [
+      "Automatische HDR-bracketing op een camera gokt vaak verkeerd; handmatig één foto schieten puur met de shadows in de gaten gehouden, en direct daarna één puur gericht op het behoud van de zon (highlights), levert véél betere raw-bestanden op voor een merge.",
+      "Het verlagen van contrast, hooglichten of het toevoegen van kleur over een helderheidsmasker (luminance range) geeft direct een veel realistischer uiterlijk dan het gebruik van simpele gradiënt-filters, omdat het enkel de uitbijtende pixels aanpakt.",
+      "Een extreem zachte 'feather' (smoothness op 100%) bij het instellen van een Luminance Range masker is essentieel; een hard masker voelt direct digitaal aan, omdat licht zich in de natuur nooit met scherpe randen gedraagt."
+    ],
+    "style_preview": "Deze workflow focust op maximale beeldkwaliteit en dynamisch bereik. De fotograaf leert je de beperkingen van automatische gereedschappen in Lightroom (zoals Sky Select en De-ghosting) te omzeilen. Verwacht een krachtige, technisch schone benadering om een foto met onmogelijke contrasten te veranderen in een rijk kleurenspektakel met een feilloze scheiding tussen warme grondtinten en paarse luchten."
   }
 ]

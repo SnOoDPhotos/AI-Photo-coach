@@ -52628,5 +52628,991 @@
       "De ingebouwde lensscherpte-tool corrigeert field curvature door uitsluitend de randen te verscherpen, waardoor je minder snel last krijgt van globale verscherpingsartefacten in egale vlakken zoals de lucht."
     ],
     "style_preview": "Een uiterst naturalistische en hoogwaardige bewerkingsstijl die uitblinkt in kleurechtheid. De sfeer is puur en getrouw aan de realiteit, zonder overmatige contrasten of geforceerde verzadiging. Werkt perfect voor veeleisende landschapsfotografen die werken met hoogwaardige sensoren onder wisselende daglichtomstandigheden."
+  },
+  {
+    "video_title": "How I Edit Drone Photography in Adobe Lightroom CC | Tutorial",
+    "photographer_name": "Rodney Truitt Jr",
+    "youtube_url": "https://www.youtube.com/watch?v=SK6yW5SKybU",
+    "genre": [
+      "luchtfotografie",
+      "algemeen"
+    ],
+    "light_conditions": [
+      "daglicht",
+      "gemengd licht"
+    ],
+    "mood": [
+      "moody",
+      "levendig"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Moody Vibrant Aerial Waterfall",
+    "philosophy": "Het creëren van een krachtige en sfeervolle uitstraling door middel van gerichte toon- en kleurcorrecties. De nadruk ligt op het sturen van de blik van de kijker naar het lichte centrum van het beeld. Door selectieve aanpassingen in de kleurbladen worden specifieke landschapselementen extra aangezet.",
+    "workflow_order": [
+      "stap 1: corrigeren van de basistonaliteit en contrast in het basispaneel",
+      "stap 2: nauwkeurig afstellen van de witbalans en algehele vibrance",
+      "stap 3: fijnregeling van individuele kleurprofielen via het hsl-paneel",
+      "stap 4: toepassen van kleurnoisereductie en uitsnijden voor social media"
+    ],
+    "techniques": [
+      {
+        "name": "Highlights verlagen",
+        "description": "Verlaag Highlights naar een waarde tussen -40 en -60 om overbelichte witten in de waterval te onderdrukken en fijne doortekening terug te brengen.",
+        "when_to_use": "Bij helder stromend water of lichte partijen die hun detail dreigen te verliezen",
+        "tools": [
+          "Basic Panel"
+        ],
+        "effect": "Meer textuur en detail in de lichtste delen van het water"
+      },
+      {
+        "name": "Whites verhogen en Blacks verlagen",
+        "description": "Verhoog Whites naar +20 en verlaag Blacks naar -15 om de dynamiek en visuele punch van het beeld te maximaliseren.",
+        "when_to_use": "Wanneer een vlakke raw-foto extra levendigheid en diepe schaduwen nodig heeft",
+        "tools": [
+          "Basic Panel"
+        ],
+        "effect": "Een groter tonaal bereik met krachtige witten en diepe schaduwen"
+      },
+      {
+        "name": "Vibrance boosten en Saturation temperen",
+        "description": "Verhoog Vibrance naar +20 en verlaag Saturation naar -15 om middentonen selectief te versterken zonder de algehele kleuren te laten uitbijten.",
+        "when_to_use": "Om een gebalanceerde kleurintensiteit te krijgen in natuurlijke landschappen",
+        "tools": [
+          "Basic Panel"
+        ],
+        "effect": "Intensere kleuren in de minder verzadigde delen en bescherming tegen oversturing"
+      },
+      {
+        "name": "Groenverschuiving in HSL",
+        "description": "Verschuif de Hue van groen naar -55 en verhoog de Luminance om een warme, punchy vegetatie te creëren die contrasteert met het water.",
+        "when_to_use": "Bij weelderige bossen rondom een centraal natuurelement",
+        "tools": [
+          "HSL / Color"
+        ],
+        "effect": "Bladeren krijgen een diepe, licht geelgroene en zeer krachtige uitstraling"
+      },
+      {
+        "name": "Kleurnoisereductie (Color Noise Reduction)",
+        "description": "Verhoog Color Noise Reduction naar een waarde van 30 om storende kleursvlekken in egale partijen te elimineren.",
+        "when_to_use": "Bij raw-bestanden uit kleinere dronesensors die kleurruis vertonen in schaduwgebieden",
+        "tools": [
+          "Detail Panel"
+        ],
+        "effect": "Een schone, uniforme kleurweergave zonder verlies van textuurscherpte"
+      }
+    ],
+    "color_approach": "De kleurselectie richt zich op het creëren van een warme, bijna modderige herfstachtige ondertoon in de vegetatie door groen naar geel te trekken. Dit zorgt voor een sterk kleurcontrast met het koele, heldere wit van het stromende water.",
+    "local_adjustments": "Er worden in deze workflow voornamelijk globale toon- en HSL-aanpassingen gebruikt, gecombineerd met een strakke uitsnede om de compositie te centreren.",
+    "what_to_avoid": [
+      "Vermijd het overmatig verhogen van de algehele verzadiging omdat dit de aqua- en groentonen onnatuurlijk fel maakt",
+      "Verlaag de belichting niet te rigoureus bij donkere basisscènes om dichtlopen van schaduwdetails te voorkomen"
+    ],
+    "best_for": "Top-down en schuine luchtfotografie van watervallen omringd door dichte bossen",
+    "unique_insights": [
+      "Hij past de witbalans (Temperature -3) pas laat in de workflow aan om de reeds gemaakte HSL-aanpassingen correct in tebedden",
+      "Door aqua-tinten in de Hue sterk te verlagen naar -61 voorkomt hij een onnatuurlijk chemische look in reflecterend water",
+      "Het bewust hanteren van een 4x3 uitsnede op de zijkant gekanteld biedt de ideale verhouding voor maximale impact op mobiele schermen"
+    ],
+    "style_preview": "Deze stijl kenmerkt zich door een moody en tegelijkertijd levendige sfeer met diepe contrasten en zorgvuldig gestuurde kleurkanalen. De bewerker streeft naar een krachtige scheiding tussen licht en donker om een alledaags natuurbeeld om te vormen tot een artistieke social-media plaat. Het werkt optimaal voor dronefotografen die te maken hebben met contrastrijke landschappen en een punchy uitstraling zoeken. Het verwachte effect is een contrastrijk beeld met diepe schaduwen en sprekende, warme vegetatietones."
+  },
+  {
+    "video_title": "5 STEPS to make INCREDIBLE and EPIC DRONE photos!",
+    "photographer_name": "Mads Peter Iversen",
+    "youtube_url": "https://www.youtube.com/watch?v=ZCBkOFrEMaE",
+    "genre": [
+      "landschap",
+      "luchtfotografie"
+    ],
+    "light_conditions": [
+      "gouden uur",
+      "bewolkt",
+      "tegenlicht"
+    ],
+    "mood": [
+      "dramatisch",
+      "moody"
+    ],
+    "software": [
+      "Lightroom Classic",
+      "Photoshop"
+    ],
+    "style_description": "Epic Dramatic Fine-Art Aerial",
+    "philosophy": "Het realiseren van maximale visuele impact door het benadrukken van weidse perspectieven en krachtige composities. Raw-bestanden van drones zijn inherent vlak en dienen in de nabewerking te worden voorzien van een solide zwart- en witpunt. Storende elementen worden resoluut verwijderd om de grootsheid en dramatiek van de natuur te accentueren.",
+    "workflow_order": [
+      "stap 1: zorgvuldige handmatige of automatische bracketing-samenvoeging en compositiesectie",
+      "stap 2: instellen van een hard zwart- en witpunt via het basispaneel",
+      "stap 3: uitvoeren van lokale aanpassingen met maskers om diepte en sfeer te versterken",
+      "stap 4: retoucheren van storende elementen in photoshop en toepassen van eindverscherping"
+    ],
+    "techniques": [
+      {
+        "name": "Zwart- en Witpunt instellen",
+        "description": "Zorg voor een clippingvrij maar vullend tonaal bereik door schuiven tot exact 100% zwart en 100% wit zijn bereikt in de uiterste hoeken van het histogram.",
+        "when_to_use": "Altijd als basisinstelling voor vlakke raw-bestanden uit een drone",
+        "tools": [
+          "Tone Curve",
+          "Basic Panel"
+        ],
+        "effect": "Een krachtig contrast dat het volledige dynamische bereik van de sensor benut"
+      },
+      {
+        "name": "Verticale Panorama Stitching",
+        "description": "Voeg twee of meer verticale opnames samen met voldoende overlap om de voorgrond kunstmatig te vergroten en de achtergrond te omarmen.",
+        "when_to_use": "Bij onderwerpen zoals lavastromen of bergen waarbij de voorgrondpatronen extra nadruk vereisen",
+        "tools": [
+          "Panorama Merge"
+        ],
+        "effect": "Een weids groothoekeffect met een meeslepende en imposante dieptewerking"
+      },
+      {
+        "name": "Lage ISO Handhaving",
+        "description": "Zet de ISO vast op exact 100 om ruisvorming in de schaduwpartijen te minimaliseren.",
+        "when_to_use": "Bij alle vluchten overdag en tijdens het gouden uur",
+        "tools": [
+          "Camera Settings"
+        ],
+        "effect": "Een schoon en clean bronbestand met maximale ruimte voor schaduwherstel"
+      },
+      {
+        "name": "Scherpste Diafragma Kiezen",
+        "description": "Stel het diafragma handmatig in tussen f/4 en f/5.6 om optische diffractie te omzeilen.",
+        "when_to_use": "Bij drones met een variabele lensopening zoals de mavic 2 pro",
+        "tools": [
+          "Camera Settings"
+        ],
+        "effect": "Maximale hoekscherpte en detailweergave in de fijne landschapsstructuren"
+      },
+      {
+        "name": "Zware Content-Aware Retouche",
+        "description": "Gebruik retoucheertools om alle visuele ruis, wegreconstructies of ongewenst vuil rigoureus weg te poetsen uit de hoeken van het frame.",
+        "when_to_use": "Wanneer wijdse opnames rommelige randelementen bevatten die de blik afleiden",
+        "tools": [
+          "Clone Stamp",
+          "Spot Healing Brush"
+        ],
+        "effect": "Een minimalistisch en strak eindresultaat dat de focus volledig op het hoofdonderwerp houdt"
+      }
+    ],
+    "color_approach": "Kleur wordt ingezet om de natuurlijke textuur en sfeer te versterken, zonder te vervallen in oververzadiging. De nadruk ligt op de tonale gradatie in wolkenluchten en waterpatronen, waarbij koele en warme tinten elkaar balanceren.",
+    "local_adjustments": "Lokale maskers worden intensief gebruikt om specifieke delen van het landschap op te lichten of te verduisteren, waardoor een duidelijke visuele reis door de foto ontstaat.",
+    "what_to_avoid": [
+      "Crank de contrast- en clarity-schuiven nooit klakkeloos open naar +100 omdat dit een onnatuurlijke en crunchy look geeft",
+      "Vermijd het blind vertrouwen op ingebouwde automatische panoramafuncties om skewing te voorkomen"
+    ],
+    "best_for": "Ruige, epische landschappen met gletsjers, vulkanen en dramatische bergketens",
+    "unique_insights": [
+      "Hij vergrendelt de autofocus door eenmalig op het scherm te tikken en schakelt daarna direct over naar manual focus om focusverschuivingen tijdens aeb-reeksen uit te sluiten",
+      "Zelfs een extreme uitsnede (crop tot slechts 2 megapixels) blijft bruikbaar voor publicatie mits het bronbestand perfect scherp is en gecontroleerd wordt verscherpt",
+      "Hij adviseert om bij risicovolle vluchten boven actieve vulkanen de micro-sd-kaart tussen elke vlucht te wisselen om reeds gemaakte opnames veilig te stellen"
+    ],
+    "style_preview": "Deze benadering is bij uitstek geschikt voor de ambitieuze fine-art landschapsfotograaf die streeft naar epische, schilderachtige resultaten vanaf grote hoogte. De visuele sfeer is groots, contrastrijk en ademt pure dramatiek, waarbij compositie en minimalisme hand in hand gaan. Door het toepassen van slimme panorama- en retoustechnieken stijgt het beeld uit boven een standaard registratie. Het verwachte resultaat is een loeistrakke, uitgebalanceerde plaat met een immense dieptewerking."
+  },
+  {
+    "video_title": "How To Edit Beautiful Aerial Photo with Silkypix Developer Studio Pro 10 and Affinity Photo",
+    "photographer_name": "Treasure Hunters Digital",
+    "youtube_url": "https://www.youtube.com/watch?v=kUiWBZEtPaw",
+    "genre": [
+      "architectuur",
+      "reisfotografie"
+    ],
+    "light_conditions": [
+      "daglicht",
+      "diffuus licht"
+    ],
+    "mood": [
+      "krachtig",
+      "sfeervol"
+    ],
+    "software": [
+      "Capture One",
+      "Affinity Photo"
+    ],
+    "style_description": "Vivid Crimson Urban Aerial",
+    "philosophy": "Het versterken van de intrinsieke identiteit en het karakter van een specifieke locatie door middel van gerichte kleurcontrasten. De nabewerking is een creatief proces waarbij complementaire kleuren in de schaduwen en lichten worden geïnjecteerd. Historische structuren worden geaccentueerd door een uitgekiende balans tussen demosaicing-scherpte en tonaal bereik.",
+    "workflow_order": [
+      "stap 1: uitvoeren van demosaicing en lenscorrectie in de raw-developer",
+      "stap 2: toepassen van fujifilm vivid-simulatie en boosten van specifieke kleurkarakters",
+      "stap 3: overdragen naar affinity photo voor microcontrast via een high-pass filter",
+      "stap 4: minutieuze kleurgradatie via curves en retoucheren van overtollige beeldelementen"
+    ],
+    "techniques": [
+      {
+        "name": "Demosaicing Verscherping",
+        "description": "Verhoog de Demosaicing Sharpening exact naar 79 op advies van de raw-ontwikkelaar om de specifieke fuji-pixelstructuur optimaal te benutten.",
+        "when_to_use": "Tijdens de eerste ontwikkelfase van fujifilm raw-bestanden",
+        "tools": [
+          "Sharpening Module"
+        ],
+        "effect": "Een enorme toename in fijne details zonder artefacten te introduceren"
+      },
+      {
+        "name": "Kleurkarakter Versterken in HSL",
+        "description": "Selecteer het rode kanaal in de Fine Color Controller en boost de verzadiging aanzienlijk om de kenmerkende terracotta daken te laten spreken.",
+        "when_to_use": "Bij stedelijke opnames waarbij één specifieke kleur dominant en bepalend is",
+        "tools": [
+          "Fine Color Controller"
+        ],
+        "effect": "De rode daken springen eruit en geven de stad haar historische identiteit terug"
+      },
+      {
+        "name": "High-Pass Filter Contrast",
+        "description": "Voeg een live High-Pass Filter toe met een ragfijne straal van exact 0.5 pixels om randcontrast te verhogen zonder halo's te veroorzaken.",
+        "when_to_use": "Om architectonische details en dakstructuren extra definitie te geven",
+        "tools": [
+          "High Pass Filter"
+        ],
+        "effect": "Een subtiele maar essentiële toename in tastbare structuur bij drukwerk"
+      },
+      {
+        "name": "Complementair Schaduwcontrast via Curves",
+        "description": "Selecteer het blauwe kanaal in de Curves-tool en trek de schaduwhoek omhoog om een blauwe tint in de wegen te leggen, terwijl het middenvlak strak blijft.",
+        "when_to_use": "Om een warm-koud kleurcontrast te introduceren in een overwegend rood/warm beeld",
+        "tools": [
+          "Curves"
+        ],
+        "effect": "De schaduwen en straten krijgen een koele blauwe gloed die prachtig contrasteert met de rode daken"
+      },
+      {
+        "name": "Luminositeitsmasker voor Niveaus",
+        "description": "Pas een Levels-aanpassing toe met de overvloeimodus (Blend Mode) ingesteld op luminosity om puur het contrast te sturen zonder de kleurverzadiging te beïnvloeden.",
+        "when_to_use": "Bij de laatste tonale afwerking om clipping te voorkomen",
+        "tools": [
+          "Levels",
+          "Blend Mode"
+        ],
+        "effect": "Een gecontroleerde boost in zwart- en witwaarden met behoud van de zorgvuldige kleurbalans"
+      }
+    ],
+    "color_approach": "De kleuraanpak berust op een gedurfd contrast tussen het dominante, warme rood van de stadsdaken en een kunstmatig geïntroduceerde koele blauwtint in de diepe schaduwpartijen van de straten.",
+    "local_adjustments": "Er wordt gebruikgemaakt van inpainting-selecties om storende moderne kabels of objecten te verwijderen, gevolgd door strakke geometrische crops.",
+    "what_to_avoid": [
+      "Zorg dat de high-pass straal de grens van 0.5 niet overschrijdt om lelijke witte randen (halo's) rond gebouwen te vermijden",
+      "Vermijd het oversturen van het groene kanaal om een harmonieus stadsbeeld te bewaren"
+    ],
+    "best_for": "Luchtfotografie vanaf hoge torens of stadsdaken met een rijkdom aan patronen",
+    "unique_insights": [
+      "Hij gebruikt een historisch en culinair referentiepunt (de kleur van bolognesesaus) als ijkpunt voor zijn uiteindelijke rode kleurverzadiging",
+      "Door curves heel specifiek alleen in het eerste tonaal blok te laten muteren, beperkt hij de blauwverschuiving strikt tot de smalle straatgoten",
+      "Hij controleert de opname aan het einde via een vectorscope om te verifiëren of de kleurhuid exact richting de artistieke rode as leunt"
+    ],
+    "style_preview": "Deze unieke stijl is perfect voor de stedelijke fotograaf die zoekt naar een levendige en uiterst karaktervolle weergave van historische architectuur vanaf een verhoogd standpunt. De visuele sfeer is warm, rijk aan rode tonen en bezit een verfijnde diepte door koele schaduwaccenten. De precisie in de details spat van het scherm dankzij geavanceerde Affinity-workflows. Gebruikers kunnen een uiterst scherp gedefinieerd beeld verwachten dat perfect balanceert op het snijvlak van realisme en artistieke expressie."
+  },
+  {
+    "video_title": "Basic Drone Photo Editing",
+    "photographer_name": "pa01os",
+    "youtube_url": "https://www.youtube.com/watch?v=uR97PWriYTY",
+    "genre": [
+      "landschap",
+      "luchtfotografie"
+    ],
+    "light_conditions": [
+      "bewolkt",
+      "diffuus licht"
+    ],
+    "mood": [
+      "naturalistisch",
+      "rustig"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Natural Balanced Aerial Landscape",
+    "philosophy": "Het transformeren van een schijnbaar onbruikbare, zwaar onderbelichte raw-opname tot een gebalanceerd en natuurgetrouw landschapsbeeld. Door het slim inzetten van lineaire verloopfilters kan het grote dynamische bereik van de lucht en de schaduwrijke grond met elkaar in harmonie worden gebracht. De bewerking blijft altijd dicht bij de realiteit en corrigeert louter de technische tekortkomingen van de camera.",
+    "workflow_order": [
+      "stap 1: rechttrekken van de gekantelde horizon via het crop- en rotatiepaneel",
+      "stap 2: toepassen van een opwaarts gegradueerd filter om de onderbelichte voorgrond op te halen",
+      "stap 3: plaatsen van een neerwaarts gegradueerd filter om clipping in de lucht te herstellen",
+      "stap 4: selectieve kleuroptimalisatie in het hsl-paneel en subtiele ruisonderdrukking"
+    ],
+    "techniques": [
+      {
+        "name": "Horizon Uitlijnen met Fijn Raster",
+        "description": "Activeer de hoekcontrole in de crop-module om een ultra-fijn grid op te roepen en de scheve horizon tot op de graad nauwkeurig recht te zetten.",
+        "when_to_use": "Bij drone-opnames waarbij de gimbal een lichte afwijking vertoont",
+        "tools": [
+          "Crop & Straighten"
+        ],
+        "effect": "Een perfect gebalanceerde en stabiele compositie zonder storende schuine lijnen"
+      },
+      {
+        "name": "Voorgrond Herstellen via Verloopfilter",
+        "description": "Trek met shift ingedrukt een gegradueerd filter van beneden naar boven en verhoog de Exposure met exact +2.10 stops om schaduwdetails te redden.",
+        "when_to_use": "Wanneer de onderste tweederde van het frame zwaar onderbelicht is door te grote contrastverschillen",
+        "tools": [
+          "Graduated Filter"
+        ],
+        "effect": "Een heldere en gedetailleerde voorgrond waarin alle structuren en kleuren weer zichtbaar zijn"
+      },
+      {
+        "name": "Contrastbehoud in Schaduwherstel",
+        "description": "Verlaag binnen het voorgrond-verloopfilter de Blacks licht om te voorkomen dat de opgetrokken schaduwen een modderige of fletse uitstraling krijgen.",
+        "when_to_use": "Bij extreme belichtingscorrecties van meer dan twee stops",
+        "tools": [
+          "Graduated Filter"
+        ],
+        "effect": "De contrastrijkdom en diepte in de donkere partijen blijft stevig overeind"
+      },
+      {
+        "name": "Sky Highlight Recovery",
+        "description": "Plaats een gegradueerd filter van boven naar beneden en verlaag Highlights en Whites om de overbelichte luchtpartijen te dempen.",
+        "when_to_use": "Bij een dreigende uitbijtende witte bewolking aan de bovenrand van het frame",
+        "tools": [
+          "Graduated Filter"
+        ],
+        "effect": "Het terugbrengen van zachte doortekening en subtiele warmte in de wolkenpartijen"
+      },
+      {
+        "name": "Spot-Removal voor Stoorfactoren",
+        "description": "Gebruik de spot-removal tool in kloonmodus om ongewenste reflecterende plassen of fel oplichtende elementen in de weide weg te poetsen.",
+        "when_to_use": "Wanneer een centrale plas of reflectie de harmonie van het grasoppervlak doorbreekt",
+        "tools": [
+          "Spot Removal"
+        ],
+        "effect": "Een rustige, ononderbroken textuur in de weide die de blik niet afleidt"
+      }
+    ],
+    "color_approach": "De kleuraanpak beoogt het herstellen van de natuurlijke werkelijkheid door de witbalans een fractie warmer te maken. In het HSL-paneel wordt de graskleur subtiel verschoven naar een iets geler en lichter spectrum om het frisse gevoel van een zonnige dag na te bootsen.",
+    "local_adjustments": "Lineaire verloopfilters vormen de absolute spil van deze workflow om de extreme belichtingsverschillen tussen de lucht en de aarde lokaal te overbruggen.",
+    "what_to_avoid": [
+      "Druk de belichting van het verloopfilter niet voorbij de grens van het acceptabele om grove luminantie-ruis te vermijden",
+      "Vermijd te hoge algehele verscherping (breng deze terug van 40 naar 30) om artefacten te voorkomen"
+    ],
+    "best_for": "Dronefotografen met compacte modellen zoals de DJI Mini 2 die te maken hebben met uitdagende tegenlicht- of schaduwsituaties",
+    "unique_insights": [
+      "Hij demonstreert dat een raw-bestand met een schijnbaar hopeloos onderbelichte voorgrond (twee stops te donker) dankzij de sensortolerantie volledig gered kan worden",
+      "Door shift ingedrukt te houden tijdens het trekken van de verloopfilters, garandeert hij een perfect mathematisch horizontale overgang",
+      "Hij verlaagt de standaard kleurruis-instelling van 25 naar 15 om de subtiele microtextuur in het grasveld te beschermen tegen uitsmering"
+    ],
+    "style_preview": "Deze stijl vertegenwoordigt een uiterst degelijke, naturalistische benadering van landschapsfotografie vanuit de lucht. De visuele sfeer is sereen, gebalanceerd en blinkt uit in een zachte, realistische toonaanpassing zonder digitale oversturing. Het is de perfecte handleiding voor de fotograaf die zijn mislukte droneplaatjes wil reanimeren tot bruikbare social-media content. Men kan een logisch opgebouwd, rustig en natuurgetrouw eindresultaat verwachten waarin de lucht en de aarde perfect in balans zijn."
+  },
+  {
+    "video_title": "Snapseed Tutorial Complete Workflow - Ep01",
+    "photographer_name": "RGWords",
+    "youtube_url": "https://www.youtube.com/watch?v=LF_oYuqt7os",
+    "genre": [
+      "kust",
+      "zwart-wit"
+    ],
+    "light_conditions": [
+      "gouden uur",
+      " tegenlicht"
+    ],
+    "mood": [
+      "dramatisch",
+      "filmisch"
+    ],
+    "software": [
+      "Snapseed"
+    ],
+    "style_description": "Moody Golden Coastal Sunset",
+    "philosophy": "Het maximaliseren van de dramatische potentie van een zonsondergang aan de kust vanaf een smartphone of tablet. Door een stapsgewijze opbouw van belichting, lokaal contrast en sfeervolle kleurschakeringen transformeer je een fletse mobiele opname tot een sprekend beeld. Het slim combineren van vintage filters met selectieve maskering creëert een unieke visuele diepte.",
+    "workflow_order": [
+      "stap 1: uitlijnen van de horizon via het rotatiepaneel en uitsnijden naar instagram-formaat",
+      "stap 2: corrigeren van helderheid en contrast in de basisedit met nadruk op sfeer",
+      "stap 3: toepassen van een vintage-filterlaag om een diepe basistoon te introduceren",
+      "stap 4: selectief inpoetsen van de filtereffecten met de view-edits penseeltool"
+    ],
+    "techniques": [
+      {
+        "name": "Auto-Rotate Horizon Alignment",
+        "description": "Gebruik de automatische rotatiefunctie om de gekantelde waterlijn van een kustfoto direct en exact waterpas uit te lijnen tot +4.40 graden.",
+        "when_to_use": "Bij maritieme opnames vanaf een bewegend schip of boot",
+        "tools": [
+          "Rotate Tool"
+        ],
+        "effect": "Een stabiele, kaarsrechte horizon die direct rust brengt in het beeld"
+      },
+      {
+        "name": "Instagram 4:5 Formaat Selectie",
+        "description": "Snijd de compositie nauwkeurig bij naar een 5:4/4:5 verhouding om de beeldvullende impact op mobiele platformen te optimaliseren.",
+        "when_to_use": "Ter voorbereiding op publicaties op social-media kanalen",
+        "tools": [
+          "Crop Tool"
+        ],
+        "effect": "Een krachtige, compacte compositie waarin overtollige lege waterpartijen zijn geëlimineerd"
+      },
+      {
+        "name": "Selectieve Ambiance Boost",
+        "description": "Verhoog de Ambiance-waarde naar +10 in het Tune Image menu om lokaal contrast en verborgen kleurtonen in de golven op te halen.",
+        "when_to_use": "Bij tegenlichtopnames waarbij de voorgrond dreigt te verdrinken in saai grijs",
+        "tools": [
+          "Tune Image"
+        ],
+        "effect": "Oplichtende schuimkoppen en een rijke detailweergave in de donkere waterpartijen"
+      },
+      {
+        "name": "Gerichte Highlight-Demping",
+        "description": "Verlaag Highlights drastisch naar -76 om de felle zonsondergangkern te temmen en structuur in de omliggende wolken te behouden.",
+        "when_to_use": "Bij intense zonsondergangen met een direct zichtbare zonne-inval",
+        "tools": [
+          "Tune Image"
+        ],
+        "effect": "Een zachte, rijke doortekening in de lucht rondom de ondergaande zon"
+      },
+      {
+        "name": "Gelaagd Vintage Filter Penseel",
+        "description": "Breng Vintage Style 12 aan, open de View Edits geschiedenis en gebruik het penseel (Brush) op 75% sterkte om het effect louter op de lucht en reflecties in te poetsen.",
+        "when_to_use": "Om een specifieke artistieke sfeer toe te voegen zonder het hele beeld te vervuilen",
+        "tools": [
+          "Vintage Filter",
+          "View Edits Brush"
+        ],
+        "effect": "Een diepe, warme en dromerige gloed in de lucht, terwijl het water in de voorgrond haar helderheid behoudt"
+      }
+    ],
+    "color_approach": "De kleuraanpak centreert zich rond het dramatisch aanzetten van het gouden uurspectrum. Door het verhogen van de algehele warmte en het toevoegen van een selectieve vintage-laag transformeren de wolken in een diep oranje-magenta palet, dat prachtig weerspiegelt op de donkere golven.",
+    "local_adjustments": "De geavanceerde View Edits penseelfunctie wordt ingezet om globale filtereffecten met uiterste precisie lokaal te maskeren en te beperken tot specifieke beeldzones.",
+    "what_to_avoid": [
+      "Druk de algehele warmte-schuif niet te ver door naar negatieve waarden om een kille, onnatuurlijk blauwe zweem te voorkomen",
+      "Vermijd 100% filtersterkte op delicate texturen om dichtgelopen partijen tegen te gaan"
+    ],
+    "best_for": "Mobiele fotografen die snel en effectief dramatische zonsondergangen aan zee willen transformeren",
+    "unique_insights": [
+      "Het combineren van de Tonal Contrast tool met gerichte schaduwbescherming (+34) activeert een ongekende microtextuur in dynamische wateroppervlakken",
+      "Door het inzetten van het Vintage-penseel op wisselende intensiteiten (25%, 50%, 75%) ontstaat een vloeiende, onzichtbare overgang in de filterlaag",
+      "Hij bewijst dat mobiele nabewerking via een slimme opeenvolging van maskers de visuele diepte van een desktop-edit kan evenaren"
+    ],
+    "style_preview": "Deze mobiele stijl blinkt uit in het creëren van een zwaar aangezette, cinematische en warme sunsetsfeer op locatie. De visuele toon is krachtig, contrastrijk en bezit een nostalgische dieptewerking door het vernuftige gebruik van vintage-lagen. Snapseed wordt hier ingezet als een chirurgisch instrument in plaats van een simpele filter-app. Gebruikers kunnen een verbluffend, sfeervol kunstwerk verwachten met een schitterend kleurverloop en sprekende details in de getijden."
+  },
+  {
+    "video_title": "Snapseed v. Lightroom - BEST photo editing workflow on your phone or tablet?",
+    "photographer_name": "Keith Mason",
+    "youtube_url": "https://www.youtube.com/watch?v=xj0R8ZT5vRI",
+    "genre": [
+      "landschap",
+      "kust"
+    ],
+    "light_conditions": [
+      "daglicht",
+      "diffuus licht"
+    ],
+    "mood": [
+      "dramatisch",
+      "krachtig"
+    ],
+    "software": [
+      "Snapseed",
+      "Lightroom Mobile"
+    ],
+    "style_description": "Dramatic Textured Coastal Landscape",
+    "philosophy": "Het leveren van hoogwaardige, professionele resultaten rechtstreeks vanuit het veld met behulp van mobiele apparatuur. Een ogenschijnlijk vlakke JPEG kan door middel van een slimme, gelaagde structuur van selectieve aanpassingen worden opgewerkt tot het niveau van een raw-bestand. De visuele reis van de kijker wordt bewust gestuurd naar de historische en geografische kernpunten van de compositie.",
+    "software_list": [
+      "Snapseed",
+      "Lightroom Mobile"
+    ],
+    "workflow_order": [
+      "stap 1: initiëren van de basistonaliteit en schaduwoplichting via de tune-image module",
+      "stap 2: toepassen van een zachte contrastcurve om de dynamiek te herstellen",
+      "stap 3: uitvoeren van nauwkeurige witbalanscorrecties met de selectieve kleurkiezer",
+      "stap 4: plaatsen van meervoudige selectieve controlepunten op rotspartijen en het aanbrengen van een subtiel vignette"
+    ],
+    "techniques": [
+      {
+        "name": "Schaduwoplichting in Tonaliteit",
+        "description": "Verhoog de shadows lokaal in het basismenu om de verborgen textuur en details in de donkere rotswanden van de klif bloot te leggen.",
+        "when_to_use": "Bij contrastrijke landschapsopnames met diepe schaduwpartijen in de rotsen",
+        "tools": [
+          "Tune Image"
+        ],
+        "effect": "Direct meer zichtbare doortekening in de donkere delen van de klif"
+      },
+      {
+        "name": "Onafhankelijke S-Curve",
+        "description": "Plaats een flauwe, zachte S-curve om de middentonen subtiel te liften en de schaduwen te verankeren zonder ze te laten dichtlopen.",
+        "when_to_use": "Na een basis-tonaliteitsedit om de algehele punch terug te brengen",
+        "tools": [
+          "Curves"
+        ],
+        "effect": "Een verfijnd en gebalanceerd contrast over de gehele compositie"
+      },
+      {
+        "name": "Chirurgische Witbalans-Picker",
+        "description": "Verschuif de witbalans-picker naar een perfect neutraal grijs segment van de rotsen om een warme basissfeer te creëren, en stuur de tint richting groen.",
+        "when_to_use": "Wanneer de camera-automaat een te kille of blauwige zweem heeft achtergelaten",
+        "tools": [
+          "White Balance"
+        ],
+        "effect": "Een natuurlijke, uitnodigende warmte die perfect past bij een zomerse kust"
+      },
+      {
+        "name": "Selectieve Structuur-Maskering",
+        "description": "Drop een selectief controlepunt op de historische gebouwen, knijp de actieradius nauwkeurig af via pinchen en verhoog de Structure aanzienlijk.",
+        "when_to_use": "Om specifieke architectonische of geologische details te isoleren en te accentueren",
+        "tools": [
+          "Selective Tool"
+        ],
+        "effect": "De textuur van de stenen muren spat uiteen, waardoor het gebouw direct als focuspunt fungeert"
+      },
+      {
+        "name": "Compositorisch Richtvignet",
+        "description": "Breng een subtiel, zacht vignette aan langs de buitenranden om de blik van de kijker ongemerkt naar het lichte, centrale kanaal te dwingen.",
+        "when_to_use": "Bij landschappen met drukke randelementen die afleiden van het hoofdonderwerp",
+        "tools": [
+          "Vignette"
+        ],
+        "effect": "Een natuurlijke inkadering die de dieptewerking en focus optimaliseert"
+      }
+    ],
+    "color_approach": "De kleurbehandeling leunt op het introduceren van een gecontroleerde warmte in het landschap. Door de witbalans subtiel te manipuleren en de verzadiging lokaal op de groene heuvels op te voeren, ontstaat een sprekend contrast met de omringende grijze rotsen en de zee.",
+    "local_adjustments": "De geavanceerde selectieve controlepunten (Control Points) vormen de absolute ruggengraat van deze workflow om helderheid, contrast en structuur op pixelniveau lokaal te beheersen.",
+    "what_to_avoid": [
+      "Vermijd het overmatig pushen van de algehele verzadiging om een psychedelische look te voorkomen",
+      "Plaats controlepunten nooit met een te wijde straal om te vermijden dat er onnatuurlijke halo's in de lucht ontstaan"
+    ],
+    "best_for": "Landschapsfotografen die een snelle, professionele mobiele workflow zoeken voor ruige kustlijnen en historische ruïnes",
+    "unique_insights": [
+      "Hij demonstreert dat een slim opgebouwde JPEG-edit in Snapseed nauwelijks onderdoet voor een RAW-workflow in Lightroom Mobile",
+      "Door selectieve bewerkingen simpelweg te kopiëren en te plakken, waarborgt hij een identieke structuur en contrast op verspreide rotspartijen",
+      "Het lokaal verhogen van de ambiance in combinatie met schaduwherstel creëert een kunstmatige verhoging van het dynamisch bereik"
+    ],
+    "style_preview": "Deze stijl kenmerkt zich door een uiterst detailrijke, indrukwekkende en ruimtelijke weergave van ruige natuurlandschappen. De visuele toon is krachtig, getuigt van een enorme textuurscherpte en stuurt de toeschouwer feilloos naar de belangrijkste narratieve elementen. Keith Mason bewijst dat mobiel bewerken een volwaardige kunstvorm is. Fotografen kunnen een contrastrijke, levendige plaat verwachten die perfect geoptimaliseerd is voor directe publicatie."
+  },
+  {
+    "video_title": "Snapseed workflow for landscape photography photos",
+    "photographer_name": "The Photographer",
+    "youtube_url": "https://www.youtube.com/watch?v=PrOBNze-4-4",
+    "genre": [
+      "landschap",
+      "experimenteel"
+    ],
+    "light_conditions": [
+      "bewolkt",
+      "overcast"
+    ],
+    "mood": [
+      "melancholisch",
+      "moody"
+    ],
+    "software": [
+      "Snapseed"
+    ],
+    "style_description": "Moody Earthy Rustic Landscape",
+    "philosophy": "Het omvormen van een alledaagse landschapsopname tot een sfeervol, schilderachtig kunstwerk met louter mobiele tools. Door het stapelen van gerichte tooncorrecties en het toevoegen van een diepe, donkere vignetkleur krijgt de foto een melancholisch karakter. De focus ligt op het isoleren van het hoofdonderwerp in de voorgrond door de achtergrond bewust te dimmen.",
+    "workflow_order": [
+      "stap 1: instellen van de basishelderheid en verzadiging via de tune-image module",
+      "stap 2: toepassen van een hard verloopfilter met donkere tonen om de lucht zwaar aan te zetten",
+      "stap 3: plaatsen van fijnmazige selectieve controlepunten op het hoofdonderwerp in de voorgrond",
+      "stap 4: toepassen van een zware textuurboost middels details en afronden met een vintage laag"
+    ],
+    "techniques": [
+      {
+        "name": "Warmth en Contrast Balans",
+        "description": "Verhoog de Brightness naar +19 en druk het algehele Contrast licht aan om de structuren van de roestige houten boot direct naar voren te halen.",
+        "when_to_use": "Bij vlakke opnames onder een grijze hemel met een dominant voorgroundobject",
+        "tools": [
+          "Tune Image"
+        ],
+        "effect": "De voorgrond krijgt direct meer presence en de basistonen worden warmer gestuurd"
+      },
+      {
+        "name": "Lucht Differentiëren via Maskering",
+        "description": "Plaats een selectief controlepunt in de bewolkte lucht en verlaag de helderheid naar -75 om een dreigend, zwaar wolkendek te creëren.",
+        "when_to_use": "Wanneer een saaie, witte lucht de dramatiek uit de compositie haalt",
+        "tools": [
+          "Selective Tool"
+        ],
+        "effect": "Een diepe, donkere wolkenpartij die prachtig contrasteert met het landschap"
+      },
+      {
+        "name": "Onderwerp Isolatie via Helderheid",
+        "description": "Plaats een controlepunt exact op het centrum van de boot en verlaag de helderheid lokaal om een diepe, rustieke schaduwkern te vormen.",
+        "when_to_use": "Om de textuur en de houten nerven van een oud object extra cachet te geven",
+        "tools": [
+          "Selective Tool"
+        ],
+        "effect": "De boot krijgt een mysterieus en doorleefd uiterlijk met krachtige schaduwen"
+      },
+      {
+        "name": "Microtextuur Pop-Out",
+        "description": "Verhoog de Structure naar +92 op specifieke onderdelen van het houtwerk om elke splinter en nerf tastbaar te maken.",
+        "when_to_use": "Bij verweerde materialen zoals oud hout, roest of ruwe rotsen",
+        "tools": [
+          "Selective Tool"
+        ],
+        "effect": "Een extreme verhoging van de textuurscherpte die het object driedimensionaal laat lijken"
+      },
+      {
+        "name": "Schilderachtige Dark Vignette",
+        "description": "Breng Vintage Style 12 aan en verhoog de vignetteringssterkte om de hoeken diep zwart te laten weglopen en een tunnelvisie te creëren.",
+        "when_to_use": "Voor een bewuste fine-art of schilderachtige interpretatie van een landschapsfoto",
+        "tools": [
+          "Vintage Filter"
+        ],
+        "effect": "Een zwaar, sfeervol frame dat de blik onontkoombaar naar het centrum zuigt"
+      }
+    ],
+    "color_approach": "De kleurbehandeling transformeert de opname naar een aards, warm palet. Groentonen worden gedempt en verschoven naar een olijfachtige tint, terwijl de bruin- en roesttonen in de voorgrond intens worden aangezet om een rustieke sfeer te ademen.",
+    "local_adjustments": "Selectieve penseelstreken en meervoudige controlepunten worden intensief gecombineerd om de boot helder en scherp te houden, terwijl de omgeving in duisternis gehuld wordt.",
+    "what_to_avoid": [
+      "Vermijd het oversturen van het verscherpingsmenu om grove digitale korrel in de egale lucht te voorkomen",
+      "Druk het verloop niet te ver door om dichtgelopen zwarte vlekken in het gras te vermijden"
+    ],
+    "best_for": "Fine-art mobiele fotografen die een mystieke, donkere sfeer willen toekennen aan verlaten objecten in de natuur",
+    "unique_insights": [
+      "Het stapelen van opeenvolgende selectieve controlepunten op exact dezelfde coördinaten activeert een dubbele, intense contrastwerking",
+      "Door structuur (+92) en verzadiging (-32) in de boot lijnrecht tegenover elkaar uit te spelen, ontstaat een unieke, zilverachtige materiaaluitstraling",
+      "Hij hanteert een extreme vignette-inval als compositorisch sturingsmiddel om de imperfecties aan de beeldranden volledig te maskeren"
+    ],
+    "style_preview": "Deze stijl ademt een diepe, melancholische en zwaar artistieke sfeer uit die een gewone foto omtovert tot een mystiek schilderij. De visuele toon is donker, aards en bezit een extreme textuurwerking op het hoofdonderwerp, ingekaderd door een zwaar vignet. De mobiele workflow in Snapseed wordt hier tot het uiterste gepusht. Men kan een mysterieus, doorleefd eindresultaat verwachten met een enorme emotionele lading."
+  },
+  {
+    "video_title": "Is DxO PhotoLab 9 Better Than Lightroom? My Honest Thoughts",
+    "photographer_name": "Chris Harvey",
+    "youtube_url": "https://www.youtube.com/watch?v=QjNuAe4rozc",
+    "genre": [
+      "landschap",
+      "kust"
+    ],
+    "light_conditions": [
+      "gouden uur",
+      "tegenlicht"
+    ],
+    "mood": [
+      "sfeervol",
+      "filmisch"
+    ],
+    "software": [
+      "DxO PhotoLab"
+    ],
+    "style_description": "Painterly Warm Coastal Sunset",
+    "philosophy": "Het omarmen van volledige creatieve controle zonder vast te zitten aan verstikkende maandelijkse abonnementen. Foto-editing is het absolute hoogtepunt van het fotografische proces waarin een beeld pas echt tot leven komt. Door het minimaliseren van grove digitale scherpte ten faveure van een zachte, schilderachtige toonaanpassing ontstaat een tijdloos en sfeervol kunstwerk.",
+    "workflow_order": [
+      "stap 1: bepalen van een uitgekiende uitsnede en het inladen van de specifieke lenscorrectiemodules",
+      "stap 2: kalibreren van de basistonaliteit en het activeren van de slimme clearview-technologie",
+      "stap 3: verlagen van de fijne contrasten om een zachte, schilderachtige textuur te weven",
+      "stap 4: uitvoeren van nauwkeurige kleurselecties via het geavanceerde kleurwiel en toepassen van lokale ai-maskers"
+    ],
+    "techniques": [
+      {
+        "name": "Lokaal Opslaan en Catalogusvrij Browsen",
+        "description": "Navigeer direct naar de fysieke mappenstructuur op de harde schijf zonder tijdrovende imports of catalogusduplicaties te initiëren.",
+        "when_to_use": "Bij de start van elke efficiënte opslagbewuste workflow",
+        "tools": [
+          "Photo Library"
+        ],
+        "effect": "Een bliksemsnelle datatoegang zonder onnodige schijfruimte te verspillen"
+      },
+      {
+        "name": "Gecontroleerde ClearView Plus Lift",
+        "description": "Activeer ClearView Plus en zet deze vast op exact 20% om sfeervolle contrasten en verborgen wolkendetails subtiel naar boven te halen.",
+        "when_to_use": "Bij mistige of door de zon beschenen kustlandschappen die een zachte oppoetser behoeven",
+        "tools": [
+          "ClearView Plus"
+        ],
+        "effect": "Een heldere toename in microcontrast zonder dat het beeld een harde, digitale look krijgt"
+      },
+      {
+        "name": "Schilderachtige Contrastdemping (Painterly Texture)",
+        "description": "Verlaag zowel de fine contrast als de micro contrast sliders bewust om de harde digitale randen van grassen te verzachten.",
+        "when_to_use": "Wanneer een dromerige, zachte en bijna geschilderde esthetiek gewenst is in de natuur",
+        "tools": [
+          "Tone & Contrast Panel"
+        ],
+        "effect": "Een vloeiende, organische structuur die doet denken en oogt als een klassiek schilderij"
+      },
+      {
+        "name": "Chirurgische Kleurwiel-Maskering",
+        "description": "Selecteer het gele kanaal in het kleurwiel en roteer de buitenste segmenten om exact de gewenste breedte van de zonsondergangkleuren te desatureren.",
+        "when_to_use": "Bij verfijnde kleurgradaties waarbij sliders in traditionele software te grofmazig opereren",
+        "tools": [
+          "HSL Color Wheel"
+        ],
+        "effect": "Een totale controle over de kleurverschuiving en verzadiging van uiterst specifieke tinten"
+      },
+      {
+        "name": "Eenklik AI Cloud Masking",
+        "description": "Beweeg de cursor over het wolkendek, activeer de automatische AI-selectie met één klik en verhoog lokaal de exposure en helderheid.",
+        "when_to_use": "Om de dramatiek in de lucht te scheiden van de voorgrond zonder complexe handmatige maskers te tekenen",
+        "tools": [
+          "Local Adjustments AI"
+        ],
+        "effect": "Een vlijmscherp, perfect aansluitend masker dat de wolkenstructuur intenser aanzet"
+      }
+    ],
+    "color_approach": "De kleuraanpak is geworteld in het cultiveren van een diepe, nostalgische warmte. Via gepersonaliseerde split-toning worden de lichten voorzien van een gouden gloed, terwijl in de schaduwen een subtiele rode tint wordt geïnjecteerd om de zonsondergangharmonie te vervolmaken.",
+    "local_adjustments": "Lokale AI-penseelstreken en eenklik-maskers worden fijnmazig ingezet om de oplichtende plukjes duingras lokaal te accentueren met extra luminantie.",
+    "what_to_avoid": [
+      "Crank de clearview plus-schuif nooit te ver door om een knapperige, uitgebleekte look in de wolken te voorkomen",
+      "Vermijd harde universele contrasten bij zachte grassen om de schilderachtige dromerigheid te bewaren"
+    ],
+    "best_for": "Landschapsfotografen die streven naar een zachte, analoge esthetiek in kust- en duingebieden tijdens het gouden uur",
+    "unique_insights": [
+      "Hij verruilt het vertrouwde Lightroom-catalogusmodel voor een directe schijf-interpretatie om een strakkere fysieke folderdiscipline af te dwingen",
+      "Door split-toning op te voeren naar 100% verzadiging kiest hij eerst de perfecte kleurvibe, om deze pas daarna terug te schroeven naar een realistisch niveau",
+      "Het splitsen van contrast in drie onafhankelijke parameters (overall, micro, fine) maakt een volwaardige scheiding tussen sfeer en textuur mogelijk"
+    ],
+    "style_preview": "Deze stijl ademt een schitterende, schilderachtige en warme rust uit die perfect past bij de fijnzinnige landschapsfotograaf. De visuele toon is organisch, zacht waar nodig en bezit een fabelachtig mooie kleurharmonie dankzij de superieure DxO-kleurenarchitectuur. Het is een ode aan het creatieve bewerken zonder digitale stress. Fotografen kunnen een adembenemend, vloeiend eindresultaat verwachten met een sublieme lichtwerking."
+  },
+  {
+    "video_title": "BETTER THAN LIGHTROOM! DxO Photolab 8 is the BEST photo editing app!",
+    "photographer_name": "Tony & Chelsea Northrup",
+    "youtube_url": "https://www.youtube.com/watch?v=0v6hoRekxQc",
+    "genre": [
+      "wildlife",
+      "luchtfotografie"
+    ],
+    "light_conditions": [
+      "harde zon",
+      "tegenlicht"
+    ],
+    "mood": [
+      "krachtig",
+      "naturalistisch"
+    ],
+    "software": [
+      "DxO PhotoLab"
+    ],
+    "style_description": "Powerful Textured Crisp Wildlife",
+    "philosophy": "Het nastreven van pure fotografische perfectie door de technische grenzen van de camera in post-processing volledig te elimineren. Nabewerking is bedoeld om te herstellen wat het menselijk oog daadwerkelijk waarnam, wars van kunstmatige AI-beeldgeneratie. Door het toepassen van superieure optische correcties en revolutionaire ruisonderdrukking transformeren matige sensorbestanden tot meesterlijke prints.",
+    "workflow_order": [
+      "stap 1: direct inladen van de camera-bestanden zonder catalogusbarrières en toepassen van een strakke crop",
+      "stap 2: activeren van dxo smart lighting om de dynamische basis te balanceren",
+      "stap 3: finetunen van de unieke textuur via het drieledige contrastpaneel op het onderwerp",
+      "stap 4: inschakelen van de deep prime xd2s ruisonderdrukking en het finetunen van de lens softness op 1:1 niveau"
+    ],
+    "techniques": [
+      {
+        "name": "Intelligente Smart Lighting Balans",
+        "description": "Activeer DxO Smart Lighting en schuif deze omhoog om schaduwen automatisch op te lichten en uitgeblazen lichten in één beweging te corrigeren.",
+        "when_to_use": "Bij zware tegenlicht-situaties of drone-opnames met een veel te hoog basiscontrast",
+        "tools": [
+          "Smart Lighting"
+        ],
+        "effect": "Een direct gebalanceerd en bruikbaar tonaal bereik waarin details in lichten en schaduwen herrijzen"
+      },
+      {
+        "name": "Micro- en Fine Contrast Wildlife Boost",
+        "description": "Verhoog de micro contrast en fine contrast sliders lokaal op het onderwerp om de verenstructuur of vacht maximaal aan te zetten.",
+        "when_to_use": "Bij wildlife- en vogelfotografie waarbij elke haar of veer haarscherp getekend moet zijn",
+        "tools": [
+          "Tone & Contrast Panel"
+        ],
+        "effect": "Een fabelachtige, tastbare toename in textuur en randscherpte op het dier"
+      },
+      {
+        "name": "Deep Prime XD2s Ruiseliminatie",
+        "description": "Schakel Deep Prime XD2s in en activeer 'force details' om luminantie-ruis in de egale lucht volledig weg te smelten met behoud van scherpte.",
+        "when_to_use": "Bij wildlife-opnames op hoge iso-waarden of dronebestanden uit piepkleine sensoren",
+        "tools": [
+          "DxO Deep Prime"
+        ],
+        "effect": "Een zijdezachte, brandschone achtergrondlucht terwijl het onderwerp haar microdetails behoudt"
+      },
+      {
+        "name": "Zachte Gegradueerde Wolken-Demping",
+        "description": "Trek een weids en zacht graduated filter over de lucht, verlaag lokaal de exposure en voer ClearView Plus op om de structuur te intensiveren.",
+        "when_to_use": "Wanneer een indrukwekkende donderwolk in een landschap plat en flets overkomt op de sensor",
+        "tools": [
+          "Graduated Filter",
+          "ClearView Plus"
+        ],
+        "effect": "De wolk krijgt haar dreigende, driedimensionale volume terug zoals het oog het zag"
+      },
+      {
+        "name": "Optische Lens Softness Correctie",
+        "description": "Schakel de wiskundige lens softness compensation in om de typische onscherpte in de hoeken van het objectief lokaal sterker te corrigeren dan in het centrum.",
+        "when_to_use": "Om de fysieke en optische tekortkomingen van goedkopere of compacte lenzen te elimineren",
+        "tools": [
+          "Lens Softness"
+        ],
+        "effect": "Een fabelachtig egale scherpte die van het absolute centrum tot in de uiterste hoeken perfect doorloopt"
+      }
+    ],
+    "color_approach": "De kleuraanpak richt zich op het herstellen van de authentieke levendigheid van het moment. Door het gericht liften van de verborgen roze en oranje tinten in de wolken tijdens een zonsondergang, wordt de emotie van het live-moment gereconstrueerd zonder in een AI-look te vervallen.",
+    "local_adjustments": "Er wordt intensief gewerkt met de fijnmazige Band-Aid retoucheertool om storende elementen (zoals ventilatieroosters) met één streek naadloos te laten verdwijnen.",
+    "what_to_avoid": [
+      "Blijf weg van algehele AI-beeldgeneratie die de pure fotografie verloochent",
+      "Vermijd het oversturen van het contrast op grote egale vlakken om textuur-artefacten te voorkomen"
+    ],
+    "best_for": "Gepassioneerde wildlife- en landschapsfotografen die streven naar maximale technische perfectie voor grootformaat prints",
+    "unique_insights": [
+      "Hij berekent dat een Lightroom-abonnement over een heel leven meer dan tienduizend dollar kost, wat de overstap naar een eenmalige licentie financieel bittere noodzaak maakt",
+      "DxO is de enige software ter wereld die sharpening dynamisch aanpast aan de hand van specifieke lensprofielen (hoeken versus centrum)",
+      "Dankzij de directe OS-integratie kan een afgewerkte foto met één klik via AirDrop naar de smartphone worden verzonden zonder exporttussenstappen"
+    ],
+    "style_preview": "Deze stijl ademt een compromisloze, vlijmscherpe en technisch perfecte esthetiek uit die uit uitermate geschikt is voor de perfectionistische wildlife-fotograaf. De visuele sfeer is loeistrak, contrastrijk en barst van de tastbare texturen, ondersteund door een fabelachtige ruisvrijheid. DxO wordt hier ingezet als het ultieme precisiegereedschap. Men kan een adembenemend, printklaar meesterwerk verwachten waarin de pure realiteit in al haar glorie schittert."
+  },
+  {
+    "video_title": "How to Edit Wildlife Photos in 4 Lighting Scenarios | DxO PhotoLab 9 Tutorial",
+    "photographer_name": "Chiara Talia",
+    "youtube_url": "https://www.youtube.com/watch?v=hl3cnPL7fAo",
+    "genre": [
+      "wildlife",
+      "landschap"
+    ],
+    "light_conditions": [
+      "gouden uur",
+      "harde zon",
+      "nacht",
+      "bewolkt"
+    ],
+    "mood": [
+      "moody",
+      "naturalistisch",
+      "dramatisch"
+    ],
+    "software": [
+      "DxO PhotoLab"
+    ],
+    "style_description": "Intentional Atmospheric Textured Wildlife",
+    "philosophy": "Het resoluut afweren van een automatische piloot-benadering in de nabewerking; de heersende lichtomstandigheden moeten de edit dicteren. Elke foto vraagt om een unieke, doordachte strategie waarbij het karakter van het licht leidend is. Door het combineren van chirurgische kleurcorrecties met geavanceerde maskeringstools wordt de ziel en de sfeer van het live-moment geëxpliciteerd.",
+    "workflow_order": [
+      "stap 1: analyseren van het specifieke lichttype en bepalen van een afgewogen crop",
+      "stap 2: toepassen van selectieve tooncorrecties afgestemd op de lichtsituatie via het histogram",
+      "stap 3: inschakelen van deep prime xd3 ruisonderdrukking en lens sharpness optimalisatie",
+      "stap 4: verfijnen van de specifieke kleuresthetiek via het hsl-wiel en toepassen van lokale ai-deelmaskers"
+    ],
+    "techniques": [
+      {
+        "name": "Zachte Schaduwdemping bij Mistig Tegenlicht",
+        "description": "Verlaag de shadows lokaal met uiterste voorzichtigheid om een subtiel contrast te weven zonder het dromerige, mistige karakter van de opname te breken.",
+        "when_to_use": "Bij sfeervolle gouden uur-opnames in de mist waarbij een hard silhouet zou clashen met de sfeer",
+        "tools": [
+          "Selective Tone"
+        ],
+        "effect": "Een fluweelzachte, dromerige dieptewerking waarin het onderwerp haar delicate details behoudt"
+      },
+      {
+        "name": "Smart-Saturation via Vibrance",
+        "description": "Voer de Vibrance gecontroleerd op om middentonen en tere pigmenten in de achtergrond selectief aan te zetten zonder de delicate tinten te oversturen.",
+        "when_to_use": "Bij kleurrijke natuurscènes met kwetsbare kleurschakeringen",
+        "tools": [
+          "HSL / Color Panel"
+        ],
+        "effect": "Een sfeervolle, rijke kleurboost die de natuurlijke harmonie perfect respecteert"
+      },
+      {
+        "name": "Intelligente Kleurwiel Eyedropper-Sampling",
+        "description": "Activeer de pipet in het HSL-wiel, selecteer exact de overgangskleur tussen geel en groen en manipuleer de hue-handles om afleidende tinten te harmoniseren.",
+        "when_to_use": "Wanneer specifieke achtergrondkleuren (zoals gifgroen of felgeel) de blik wegtrekken van het dier",
+        "tools": [
+          "HSL Color Wheel"
+        ],
+        "effect": "Een rustige, monochrome achtergrond waarin de storende kleur perfect is opgegaan in de omgeving"
+      },
+      {
+        "name": "Doelgericht Histogram Zwartpunt",
+        "description": "Activeer de clipping-indicatoren op het histogram en schuif de blacks omlaag tot exact vóór het punt van pure zwart-clipping om diepte te forceren.",
+        "when_to_use": "Bij zware, vlakke overcast-opnames die van nature elke vorm van inherent contrast missen",
+        "tools": [
+          "Histogram",
+          "Selective Tone"
+        ],
+        "effect": "Een directe doorbreking van de vlakke grijze sluier, resulterend in een krachtig 3D-effect"
+      },
+      {
+        "name": "Submasker Oog-Isolatie (Remove Mode)",
+        "description": "Genereer een AI-subjectmasker, activeer een submasker in de remove-modus (Option-key) en poets het oog van de vogel secuur uit het masker.",
+        "when_to_use": "Wanneer een globale opwarming of contrast-boost op het lijf de karakteristieke blauwe of gekleurde iris zou verruïneren",
+        "tools": [
+          "Local Adjustments AI",
+          "Submask Brush"
+        ],
+        "effect": "Het vogelpakket wordt prachtig warm en contrastrijk, terwijl het oog haar natuurlijke, koele tint loepzuiver behoudt"
+      }
+    ],
+    "color_approach": "De kleuraanpak switcht behendig per scenario. Bij bewolkt licht worden blauwtinten artistiek naar groen getrokken om een rustgevend palet te weven. In lagedlichtomstandigheden wordt de achtergrond bewust afgekoeld en gedesatureerd naar een mystiek, donkergroen spectrum, waardoor het warme onderwerp (de ree) als een sieraad naar voren springt.",
+    "local_adjustments": "Geavanceerde AI-deelmaskers (subject, background, brush) worden intensief ingezet om de belichtingsbalans tussen het dier en haar biotoop tot op de millimeter nauwkeurig lokaal uit te balanceren.",
+    "what_to_avoid": [
+      "Druk de highlights bij witte vogels in de felle zon nooit te ver omlaag om een fletse, vieze grijze zweem in het verenpak te voorkomen",
+      "Edit nooit op de automatische piloot door elk bestand door dezelfde preset-molen te halen"
+    ],
+    "best_for": "Wildlife-fotografen die te maken hebben met snel wisselende, extreme lichtomstandigheden in het veld",
+    "unique_insights": [
+      "Zij waarschuwt dat een universele contrastschuif te grofmazig opereert, waardoor een selectieve tonale aanpak via het histogram altijd de voorkeur geniet",
+      "Door microcontrast lokaal in de voorgrond van het water te pompen, creëert zij een prachtige compositorische symmetrie met de textuur in de achtergrond",
+      "De Deep Prime XD3-architectuur stelt haar in staat om sfeervolle, creatieve edits in diepe onderbelichting uit te voeren zonder angst voor destructieve ruisplaten"
+    ],
+    "style_preview": "Deze stijl ademt een uiterst bewuste, sfeervolle en diep respectvolle omgang met natuurlijk licht uit, speciaal ontwikkeld voor de fijnzinnige wildlife-fotograaf. De visuele toon is poëtisch, rijk aan fijne veertexturen en blinkt uit in een meesterlijke tonale balans die naadloos aansluit bij de biotoop. Chiara Talia transformeert nabewerking van een technisch kunstje tot een verlengstuk van het veldwerk. Fotografen kunnen een adembenemend, harmonieus en diepgaand eindresultaat verwachten."
+  },
+  {
+    "video_title": "Tutorial on editing raw drone images in Photoshop",
+    "photographer_name": "Daniel Foucachon",
+    "youtube_url": "https://www.youtube.com/watch?v=UrleYhV7O1o",
+    "genre": [
+      "luchtfotografie",
+      "landschap"
+    ],
+    "light_conditions": [
+      "gouden uur",
+      "tegenlicht"
+    ],
+    "mood": [
+      "levendig",
+      "dramatisch"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Vibrant Glowing Aerial Sunset",
+    "philosophy": "Het ontsluiten van de immense, verborgen kracht van raw-data om het volledige potentieel van een zonsondergang te openbaren. Foto-editing en video-grading delen exact dezelfde fundamentele principes wat betreft kleur- en contrastbeheersing. Door het uiterste te vergen van het dynamisch bereik transformeren vlakke sensorbestanden tot levendige, stralende landschappen.",
+    "workflow_order": [
+      "stap 1: openen van het dng-bestand in camera raw en direct toepassen van een basis-verscherping",
+      "stap 2: extreem uiteentrekken van het tonale bereik via de highlights- en schaduwschuiven",
+      "stap 3: injecteren van visuele punch middels de clarity-, dehaze- en saturatietools",
+      "stap 4: boetseren van de definitieve lichtwerking via curves en afronden met ruisonderdrukking"
+    ],
+    "techniques": [
+      {
+        "name": "Raw DNG Data-Extractie",
+        "description": "Importeer het originele DNG-bestand in plaats van de automatische JPEG om toegang te krijgen tot de volledige ongecomprimeerde sensorinformatie in de lucht.",
+        "when_to_use": "Altijd bij het fotograferen van zonsondergangen met een drone om uitbijten te voorkomen",
+        "tools": [
+          "Camera Raw (Photoshop)"
+        ],
+        "effect": "Een enorme toename in tolerantie bij het herstellen van extreme contrastverschillen"
+      },
+      {
+        "name": "Radicale Highlight Retrival",
+        "description": "Trek de highlights-schuif rigoureus omlaag om de schitterende, verborgen goud- en roodtinten in de buurt van de ondergaande zon volledig terug te halen.",
+        "when_to_use": "Bij zware tegenlicht-opnames waarbij de horizon compleet wit uitgebleekt oogt",
+        "tools": [
+          "Basic Panel"
+        ],
+        "effect": "De uitgeblazen witte vlek verandert in een rijkgeschakeerd, warm wolkenspektakel"
+      },
+      {
+        "name": "Schaduw-inval Ophalen",
+        "description": "Schuif de shadows lokaal flink omhoog om alle weggedrukte details in de donkere bossen en het aardoppervlak weer zichtbaar te maken.",
+        "when_to_use": "Wanneer de grondpartijen door de felle zonneschijn in silhouet zijn veranderd",
+        "tools": [
+          "Basic Panel"
+        ],
+        "effect": "Een helder verlichte en doortekende voorgrond waarin alle details direct leesbaar zijn"
+      },
+      {
+        "name": "DeHaze Haze-Eliminatie",
+        "description": "Voer de DeHaze-schuif gecontroleerd op om de atmosferische sluier en vochtige trillingen in de verre luchtlagen direct te neutraliseren.",
+        "when_to_use": "Bij weidse luchtfotografie waarbij de verre horizon wazig en flets overkomt",
+        "tools": [
+          "Basic Panel"
+        ],
+        "effect": "Een kristalheldere verscherping van het verre landschap met diepe, sprekende tonen"
+      },
+      {
+        "name": "Poppende S-Curve Verfijning",
+        "description": "Trek een verfijnde S-curve in de toancurve om de luchtpartijen maximaal te laten poppen en de contrasten definitief te verzegelen.",
+        "when_to_use": "Als finishing touch na het herstellen van de ruwe schaduwen en lichten",
+        "tools": [
+          "Tone Curve"
+        ],
+        "effect": "Een schitterende, dynamische contrastwerking met een enorme visuele aantrekkingskracht"
+      }
+    ],
+    "color_approach": "De kleuraanpak is agressief en gericht op maximale sprankeling. Door een stevige boost in verzadiging en helderheid te combineren met curves, transformeren de basistinten in een gloeiend, intens en goudgeel kleurenpalet dat de dynamiek van de zon weerspiegelt.",
+    "local_adjustments": "Er wordt gewerkt met de algehele tonale maskers binnen Camera Raw om de extreme uitersten van het sensorspectrum global te herbalanceren.",
+    "what_to_avoid": [
+      "Schiet onder geen enkel beding in jpegs om onherstelbare compressiefouten in de lucht te voorkomen",
+      "Vermijd al te extreme curve-punten om posterisatie in de zachte luchtverlopen tegen te gaan"
+    ],
+    "best_for": "Drone-operators die met een snelle en krachtige Photoshop-workflow flitsende, levendige zonsondergangen willen realiseren",
+    "unique_insights": [
+      "Hij legt uit dat de wetmatigheden van fotobewerking naadloos vertalen naar video, mits er gefilmd wordt in vlakke, logaritmische profielen",
+      "Door direct aan het begin een subtiele noise-smooth toe te passen, voorkomt hij dat opeenvolgende contrastboosts de sensorruis versterken",
+      "Hij bewijst dat een raw-opname met minimale handelingen een drastische metamorfose kan ondergaan die met een standaard jpeg onmogelijk is"
+    ],
+    "style_preview": "Deze stijl straalt een ongelooflijk levendige, contrastrijke en zonovergoten energie uit die uitermate geschikt is voor de commercieel georiënteerde dronefotograaf. De visuele sfeer is warm, getuigt van een enorme luminantie in de lichten en knalt van het scherm dankzij de beproefde Adobe-kennis. Het is een snelle, doeltreffende methode om beelden maximaal te laten spreken. Men kan een oogverblindend, stralend eindresultaat verwachten dat direct de aandacht opeist."
   }
 ]

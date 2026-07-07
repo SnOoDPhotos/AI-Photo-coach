@@ -1253,15 +1253,10 @@ async function syncFromFile() {
       body: JSON.stringify({ action: 'init_from_file', token: authToken })
     });
     var d = await r.json();
-    if (d.success !== false && !d.error) {
-      status.style.color = 'var(--success)';
-      status.textContent = '✓ Gesynchroniseerd! Pagina herladen...';
-      setTimeout(function() { window.location.reload(); }, 1500);
-    } else {
-      status.style.color = 'var(--error)';
-      status.textContent = '✗ ' + (d.error || 'Onbekende fout');
-      btn.disabled = false;
-    }
+    status.style.color = d.error ? 'var(--error)' : 'var(--success)';
+    status.textContent = d.error ? ('✗ ' + d.error) : ('✓ ' + (d.message || 'Gesynchroniseerd') + ' — herladen...');
+    btn.disabled = false;
+    if (!d.error) setTimeout(function() { window.location.reload(); }, 2000);
   } catch(e) {
     status.style.color = 'var(--error)';
     status.textContent = '✗ ' + e.message;

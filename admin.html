@@ -999,70 +999,77 @@ async function autoAnalyzeVideos() {
   var urls = urlsText.split('\n').map(function(u) { return u.trim(); }).filter(function(u) { return u.length > 0; });
 
   if (urls.length > 10) {
-    document.getElementById('autoError').textContent = 'Maximaal 10 URLs per keer (timeout limiet). Je hebt er ' + urls.length + '.';
+    document.getElementById('autoError').textContent = 'Maximaal 10 URLs per keer. Je hebt er ' + urls.length + '.';
     document.getElementById('autoError').classList.remove('hidden');
     return;
   }
 
   var btn = document.getElementById('autoAnalyzeBtn');
   btn.disabled = true;
-  btn.textContent = 'BEZIG MET ANALYSEREN... (kan 1-2 minuten duren)';
+  var statusEl = document.getElementById('autoError');
+  statusEl.style.color = 'var(--accent)';
+  statusEl.textContent = 'Bezig... 0/' + urls.length + ' verwerkt';
+  statusEl.classList.remove('hidden');
 
-  fetch('/api/analyze-video', {
-    method: 'POST',
-    headers: {'Content-Type':'application/json'},
-    body: JSON.stringify({ token: authToken, youtubeUrls: urls })
-  })
-  .then(function(r) { return r.json(); })
-  .then(function(d) {
-    btn.disabled = false;
-    btn.textContent = 'START AUTOMATISCHE ANALYSE';
+  var allAdded = [], allSkipped = [], allFailed = [];
 
-    if (!d.success) {
-      document.getElementById('autoError').textContent = d.error || 'Onbekende fout';
-      document.getElementById('autoError').classList.remove('hidden');
-      return;
-    }
-
-    var r = d.results;
-    document.getElementById('autoSuccess').textContent = '\u2713 ' + r.added.length + ' toegevoegd, ' + r.skipped.length + ' overgeslagen (bestaat al), ' + r.failed.length + ' mislukt. Totaal kennisbank: ' + d.totalEntries + ' entries.';
-    document.getElementById('autoSuccess').classList.remove('hidden');
-
-    var html = '';
-    if (r.added.length) {
-      html += '<div style="margin-bottom:16px"><div style="font-family:monospace;font-size:11px;color:var(--success);margin-bottom:8px">\u2713 TOEGEVOEGD (' + r.added.length + ')</div>';
-      r.added.forEach(function(item) {
-        html += '<div style="font-size:12px;padding:6px 10px;background:rgba(76,175,125,0.08);border-left:2px solid var(--success);margin-bottom:4px">' + item.title + ' \u2014 ' + item.techniques + ' technieken, ' + item.insights + ' insights</div>';
+  // Verwerk één URL per keer om Vercel timeout te vermijden
+  for (var i = 0; i < urls.length; i++) {
+    statusEl.textContent = 'Bezig... ' + i + '/' + urls.length + ' verwerkt (URL ' + (i+1) + ' van ' + urls.length + ')';
+    try {
+      var r = await fetch('/api/analyze-video', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({ token: authToken, youtubeUrls: [urls[i]] })
       });
-      html += '</div>';
+      var d = await r.json();
+      if (d.success) {
+        var res = d.results;
+        allAdded = allAdded.concat(res.added || []);
+        allSkipped = allSkipped.concat(res.skipped || []);
+        allFailed = allFailed.concat(res.failed || []);
+        if ((res.added || []).length > 0) await loadKnowledge();
+      } else {
+        allFailed.push({ url: urls[i], error: d.error || 'Onbekende fout' });
+      }
+    } catch(e) {
+      allFailed.push({ url: urls[i], error: 'Verbindingsfout: ' + e.message });
     }
-    if (r.skipped.length) {
-      html += '<div style="margin-bottom:16px"><div style="font-family:monospace;font-size:11px;color:var(--muted);margin-bottom:8px">\u2014 OVERGESLAGEN (' + r.skipped.length + ')</div>';
-      r.skipped.forEach(function(item) {
-        html += '<div style="font-size:12px;padding:6px 10px;color:var(--muted)">' + (item.title||item.url) + ' \u2014 ' + item.reason + '</div>';
-      });
-      html += '</div>';
-    }
-    if (r.failed.length) {
-      html += '<div><div style="font-family:monospace;font-size:11px;color:var(--error);margin-bottom:8px">\u2717 MISLUKT (' + r.failed.length + ')</div>';
-      r.failed.forEach(function(item) {
-        html += '<div style="font-size:12px;padding:6px 10px;background:rgba(224,92,92,0.08);border-left:2px solid var(--error);margin-bottom:4px">' + (item.title||item.url) + ' \u2014 ' + item.error + '</div>';
-      });
-      html += '</div>';
-    }
-    document.getElementById('autoResults').innerHTML = html;
+  }
 
-    if (r.added.length > 0) {
-      loadKnowledge();
-    }
-  })
-  .catch(function(e) {
-    btn.disabled = false;
-    btn.textContent = 'START AUTOMATISCHE ANALYSE';
-    document.getElementById('autoError').textContent = 'Verbindingsfout: ' + e.message;
-    document.getElementById('autoError').classList.remove('hidden');
-  });
+  btn.disabled = false;
+  btn.textContent = 'START AUTOMATISCHE ANALYSE';
+  statusEl.classList.add('hidden');
+
+  document.getElementById('autoSuccess').textContent = '\u2713 ' + allAdded.length + ' toegevoegd, ' + allSkipped.length + ' overgeslagen, ' + allFailed.length + ' mislukt.';
+  document.getElementById('autoSuccess').classList.remove('hidden');
+
+  var html = '';
+  if (allAdded.length) {
+    html += '<div style="margin-bottom:16px"><div style="font-family:monospace;font-size:11px;color:var(--success);margin-bottom:8px">\u2713 TOEGEVOEGD (' + allAdded.length + ')</div>';
+    allAdded.forEach(function(item) {
+      html += '<div style="font-size:12px;padding:6px 10px;background:rgba(76,175,125,0.08);border-left:2px solid var(--success);margin-bottom:4px">' + item.title + ' \u2014 ' + item.techniques + ' technieken, ' + item.insights + ' insights</div>';
+    });
+    html += '</div>';
+  }
+  if (allSkipped.length) {
+    html += '<div style="margin-bottom:16px"><div style="font-family:monospace;font-size:11px;color:var(--muted);margin-bottom:8px">\u2014 OVERGESLAGEN (' + allSkipped.length + ')</div>';
+    allSkipped.forEach(function(item) {
+      html += '<div style="font-size:12px;padding:6px 10px;color:var(--muted)">' + (item.title||item.url) + ' \u2014 ' + item.reason + '</div>';
+    });
+    html += '</div>';
+  }
+  if (allFailed.length) {
+    html += '<div><div style="font-family:monospace;font-size:11px;color:var(--error);margin-bottom:8px">\u2717 MISLUKT (' + allFailed.length + ')</div>';
+    allFailed.forEach(function(item) {
+      html += '<div style="font-size:12px;padding:6px 10px;background:rgba(224,92,92,0.08);border-left:2px solid var(--error);margin-bottom:4px">' + (item.title||item.url) + ' \u2014 ' + item.error + '</div>';
+    });
+    html += '</div>';
+  }
+  document.getElementById('autoResults').innerHTML = html;
 }
+
+
 
 function handleJsonFileImport(file) {
   if (!file) return;

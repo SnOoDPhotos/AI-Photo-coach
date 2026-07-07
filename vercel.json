@@ -29,7 +29,7 @@
       "memory": 256
     },
     "api/analyze-video.js": {
-      "maxDuration": 60,
+      "maxDuration": 300,
       "memory": 1024
     },
     "api/ratings.js": {

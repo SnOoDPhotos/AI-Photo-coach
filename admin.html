@@ -624,8 +624,11 @@ function validateAndAdd() {
         var existingScore = (existing.techniques || []).length + (existing.unique_insights || []).length;
         var newScore = (entry.techniques || []).length + (entry.unique_insights || []).length;
         if (newScore > existingScore) {
-          // Nieuwe entry is beter — overschrijven
+          // Nieuwe entry is beter — overschrijven maar bestaande fotografnaam behouden
+          // (voorkomt dat gecorrigeerde namen worden teruggedraaid door Gem-output)
+          var correctedName = existing.photographer_name || entry.photographer_name;
           localKnowledge[existsIdx] = entry;
+          localKnowledge[existsIdx].photographer_name = correctedName;
           added.push(entry.video_title + ' (verbeterde versie, was ' + existingScore + ' → ' + newScore + ' punten)');
         } else {
           // Bestaande entry is even goed of beter — overslaan

@@ -217,18 +217,35 @@ const NAME_CORRECTIONS = {
 };
 
 async function saveKnowledge(entries) {
-  // Normaliseer fotografnamen voor opslaan
-  const cleaned = entries
-    .filter(e => {
-      const name = (e.photographer_name || '').trim();
-      if (NAME_CORRECTIONS[name] === null) return false; // verwijder kanaalnamen
-      return true;
-    })
+  // Normaliseer fotografnamen
+  let cleaned = entries
+    .filter(e => NAME_CORRECTIONS[(e.photographer_name||'').trim()] !== null)
     .map(e => {
       const name = (e.photographer_name || '').trim();
       if (NAME_CORRECTIONS[name]) e.photographer_name = NAME_CORRECTIONS[name];
       return e;
     });
+
+  // Dedupliceer op YouTube video ID — bewaar hoogste score
+  const getVidId = url => {
+    if (!url) return null;
+    const m = url.match(/(?:v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
+    return m ? m[1].toLowerCase() : null;
+  };
+  const seen = new Map();
+  cleaned.forEach(e => {
+    const vid = getVidId(e.youtube_url);
+    if (!vid) return;
+    const score = (e.techniques||[]).length + (e.unique_insights||[]).length;
+    const existing = seen.get(vid);
+    if (!existing || score > (existing.techniques||[]).length + (existing.unique_insights||[]).length) {
+      seen.set(vid, e);
+    }
+  });
+  // Bouw finale lijst: entries zonder URL + beste per URL
+  const noUrl = cleaned.filter(e => !getVidId(e.youtube_url));
+  cleaned = [...noUrl, ...Array.from(seen.values())];
+
   await kv('SET', REDIS_KEY, JSON.stringify(cleaned));
 }
 

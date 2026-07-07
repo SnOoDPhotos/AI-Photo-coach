@@ -160,6 +160,12 @@ input:focus,textarea:focus{border-color:var(--accent)}
     <div id="tab-export" class="hidden">
       <div class="section">
         <h3>EXPORTEREN</h3>
+        <div style="background:rgba(232,114,60,0.1);border:1px solid var(--accent);padding:14px;margin-bottom:20px;border-radius:4px">
+          <div style="font-family:monospace;font-size:11px;color:var(--accent);margin-bottom:8px">⚡ REDIS SYNCHRONISATIE</div>
+          <p style="font-size:12px;color:var(--muted);margin-bottom:10px;line-height:1.6">Synchroniseer de GitHub knowledge-base.json naar Redis. Gebruik dit als de admin verouderde data toont terwijl GitHub al bijgewerkt is.</p>
+          <button class="btn" onclick="syncFromFile()" id="syncBtn">↺ SYNC GITHUB → REDIS</button>
+          <span id="syncStatus" style="font-size:11px;margin-left:12px;font-family:monospace"></span>
+        </div>
         <p style="font-size:12px;color:var(--muted);margin-bottom:12px;line-height:1.7">Download de kennisbank als backup of voor GitHub.</p>
         <button class="btn btn-sm" onclick="exportKnowledge()">&#8595; DOWNLOAD knowledge-base.json</button>
       </div>
@@ -1232,6 +1238,35 @@ function computeWarnings(entries) {
     if (w.length > 0) { e._warnings = w; total++; } else { delete e._warnings; }
   });
   return total;
+}
+
+async function syncFromFile() {
+  var btn = document.getElementById('syncBtn');
+  var status = document.getElementById('syncStatus');
+  btn.disabled = true;
+  status.style.color = 'var(--accent)';
+  status.textContent = 'Bezig...';
+  try {
+    var r = await fetch('/api/knowledge', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({ action: 'init_from_file', token: authToken })
+    });
+    var d = await r.json();
+    if (d.success !== false && !d.error) {
+      status.style.color = 'var(--success)';
+      status.textContent = '✓ Gesynchroniseerd! Pagina herladen...';
+      setTimeout(function() { window.location.reload(); }, 1500);
+    } else {
+      status.style.color = 'var(--error)';
+      status.textContent = '✗ ' + (d.error || 'Onbekende fout');
+      btn.disabled = false;
+    }
+  } catch(e) {
+    status.style.color = 'var(--error)';
+    status.textContent = '✗ ' + e.message;
+    btn.disabled = false;
+  }
 }
 
 async function resetStylePreviews() {

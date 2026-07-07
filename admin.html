@@ -623,15 +623,21 @@ function validateAndAdd() {
         var existing = localKnowledge[existsIdx];
         var existingScore = (existing.techniques || []).length + (existing.unique_insights || []).length;
         var newScore = (entry.techniques || []).length + (entry.unique_insights || []).length;
-        if (newScore > existingScore) {
-          // Nieuwe entry is beter — overschrijven maar bestaande fotografnaam behouden
-          // (voorkomt dat gecorrigeerde namen worden teruggedraaid door Gem-output)
+        // Check of bestaande entry waarschuwingen heeft
+        var existingHasWarning = (existing.techniques || []).length < 3 || (existing.unique_insights || []).length < 2
+          || !existing.workflow_order || !existing.workflow_order.length || !existing.color_approach;
+        var newFixesWarning = (entry.techniques || []).length >= 3 && (entry.unique_insights || []).length >= 2
+          && entry.workflow_order && entry.workflow_order.length && entry.color_approach;
+        // Overschrijven als: nieuwe is beter, OF bestaande heeft warning en nieuwe lost die op
+        if (newScore > existingScore || (existingHasWarning && newFixesWarning)) {
           var correctedName = existing.photographer_name || entry.photographer_name;
           localKnowledge[existsIdx] = entry;
           localKnowledge[existsIdx].photographer_name = correctedName;
-          added.push(entry.video_title + ' (verbeterde versie, was ' + existingScore + ' → ' + newScore + ' punten)');
+          var reason = newScore > existingScore
+            ? ' (verbeterde versie, was ' + existingScore + ' → ' + newScore + ' punten)'
+            : ' (waarschuwing opgelost, score ' + existingScore + ' → ' + newScore + ' punten)';
+          added.push(entry.video_title + reason);
         } else {
-          // Bestaande entry is even goed of beter — overslaan
           skipped.push({ title: entry.video_title, reason: 'bestaat al en is even goed of beter (' + existingScore + ' vs ' + newScore + ' punten)' });
         }
         return;

@@ -59,5 +59,6 @@
         }
       ]
     }
-  ]
+  ],
+  "_deploy": "force-redeploy-2026-07-07"
 }

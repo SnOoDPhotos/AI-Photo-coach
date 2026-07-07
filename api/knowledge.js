@@ -201,8 +201,35 @@ async function loadKnowledge() {
 }
 
 // Sla kennisbank op in Redis
+// Fotografnaam correcties
+const NAME_CORRECTIONS = {
+  'PHLEARN': 'Aaron Nace',
+  'THAT ICELANDIC GUY': 'Arnúlfur Hakonarson',
+  'THAT ICELANDIC GUY.': 'Arnúlfur Hakonarson',
+  'TKNORTH': 'TK North',
+  'DM Productions': 'Darren McDaniel',
+  'Darren (DM Productions)': 'Darren McDaniel',
+  'MyGimpTutorialChannel': null,
+  'CREATIVE DC': null,
+  'SKY STORY': null,
+  'IAMRENSI': null,
+  'GIMP TUT': null
+};
+
 async function saveKnowledge(entries) {
-  await kv('SET', REDIS_KEY, JSON.stringify(entries));
+  // Normaliseer fotografnamen voor opslaan
+  const cleaned = entries
+    .filter(e => {
+      const name = (e.photographer_name || '').trim();
+      if (NAME_CORRECTIONS[name] === null) return false; // verwijder kanaalnamen
+      return true;
+    })
+    .map(e => {
+      const name = (e.photographer_name || '').trim();
+      if (NAME_CORRECTIONS[name]) e.photographer_name = NAME_CORRECTIONS[name];
+      return e;
+    });
+  await kv('SET', REDIS_KEY, JSON.stringify(cleaned));
 }
 
 // ── Token verificatie (zelfde logica als auth.js) ─────────────────────────

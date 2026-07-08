@@ -57154,5 +57154,182 @@
       "De sneltoets Ctrl+Alt+Shift+E (Stamp Visible) is essentieel om een schone, platte laag te genereren voor reflecties zonder je zorgvuldig opgebouwde lagenstructuur te verliezen."
     ],
     "style_preview": "Deze stijl is puur surrealistisch, fantasierijk en conceptueel van aard, gekenmerkt door levendige blauwtinten en scherpe contrasten. De kernfilosofie draait om het creëren van een magische, onmogelijke scène die er toch tastbaar en realistisch uitziet. Het werkt het beste in een minimalistische studio-omgeving, waarbij het verwachte visuele effect een oogverblindende, artistieke blikvanger is."
+  },
+  {
+    "video_title": "Photoshop for Complete Beginners: Start Here | Lesson 1",
+    "photographer_name": "PiXimperfect",
+    "youtube_url": "https://www.youtube.com/watch?v=OKkWRpoIFuw",
+    "genre": [
+      "algemeen"
+    ],
+    "light_conditions": [
+      "daglicht"
+    ],
+    "mood": [
+      "rustig",
+      "naturalistisch"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Clean Beginner Photoshop Essentials",
+    "philosophy": "De basis van effectieve bewerking ligt in een opgeruimde en persoonlijke werkomgeving. Door alleen de panelen te behouden die daadwerkelijk worden gebruikt, verminder je visuele ruis en verhoog je de focus. Het beheersen van simpele navigatie en basistools vormt het fundament voor complexere creatieve projecten.",
+    "workflow_order": [
+      "stap 1: installeer en update photoshop via de creative cloud desktop app om stabiliteit te garanderen",
+      "stap 2: pas de werkomgeving aan door onnodige panelen te sluiten en sla de workspace op",
+      "stap 3: importeer een afbeelding via het menu of door deze direct boven de tabbladenbalk te slepen",
+      "stap 4: gebruik basistools zoals het penseel (Brush Tool) en tekstgereedschap voor de eerste ontwerplagen"
+    ],
+    "techniques": [
+      {
+        "name": "Werkomgeving Resetten",
+        "description": "Ga naar Window > Workspace > Reset Essentials om Photoshop terug te zetten naar de fabrieksinstellingen wanneer panelen per ongeluk zijn gesloten.",
+        "when_to_use": "Wanneer de interface onoverzichtelijk is geworden of er belangrijke gereedschappen ontbreken.",
+        "tools": [
+          "Essentials Workspace"
+        ],
+        "effect": "De standaard lay-out van panelen en gereedschappen wordt direct hersteld."
+      },
+      {
+        "name": "Snel Documenten Openen",
+        "description": "Sleep een afbeelding vanuit de Finder of Verkenner rechtstreeks naar de bovenste balk in Photoshop om het als een nieuw document te openen.",
+        "when_to_use": "Bij het starten van een nieuwe bewerkingssessie met een schone lei.",
+        "tools": [
+          "Interface Drag and Drop"
+        ],
+        "effect": "De afbeelding opent in een eigen tabblad in plaats van als een laag in een bestaand project."
+      },
+      {
+        "name": "Niet-Destructieve Vlekken Verwijderen",
+        "description": "Maak een nieuwe lege laag aan en gebruik de Remove Tool met uitgeschakelde generatieve AI om oneffenheden nauwkeurig weg te poetsen.",
+        "when_to_use": "Bij het retoucheren van portretten om pukkeltjes of vlekjes te verwijderen zonder de originele pixels aan te tasten.",
+        "tools": [
+          "Remove Tool"
+        ],
+        "effect": "Oneffenheden verdwijnen onmiddellijk en de huidstructuur wordt vloeiend ingevuld."
+      },
+      {
+        "name": "Vogelvlucht Navigatie (Bird's Eye View)",
+        "description": "Houd de H-toets ingedrukt en klik met de muis om volledig uit te zoomen, verplaats de cursor naar het nieuwe retoucheergebied en laat los om direct in te zoomen.",
+        "when_to_use": "Wanneer je ingezoomd bent op een detail en snel naar een ander deel van de foto wilt springen.",
+        "tools": [
+          "Hand Tool"
+        ],
+        "effect": "Je springt razendsnel van het ene detail naar het andere zonder handmatig in en uit te hoeven zoomen."
+      },
+      {
+        "name": "Flick Panning Uitschakelen",
+        "description": "Vink 'Enable Flick Panning' uit in de voorkeuren (Preferences > Tools) om te zorgen dat de weergave direct stopt met schuiven als je de muis loslaat.",
+        "when_to_use": "Tijdens nauwkeurig retoucheerwerk waarbij ongewenste smartphone-achtige veegbewegingen de precisie verstoren.",
+        "tools": [
+          "Preferences"
+        ],
+        "effect": "De navigatie met de spatiebalk stopt exact op het moment dat je stopt met slepen."
+      }
+    ],
+    "color_approach": "De focus ligt op het begrijpen van de voorgrond- en achtergrondkleurblokken in de gereedschapsbalk. Kleurkeuzes worden handmatig via de kleurkiezer gemaakt om grafische elementen of teksten direct te ondersteunen.",
+    "local_adjustments": "Lokale aanpassingen worden in deze introductie puur laaggebaseerd uitgevoerd door handmatige penseelstreken op aparte lagen te plaatsen of basismaskers te genereren via de automatische functies.",
+    "what_to_avoid": [
+      "Vermijd het slepen van een nieuwe afbeelding direct op het canvas als je een apart project wilt starten, omdat dit de foto ongewenst als een transformeerbare laag binnen het huidige document plaatst.",
+      "Schilder nooit direct op de achtergrondlaag bij het retoucheren om te voorkomen dat de originele pixels permanent worden overschreven."
+    ],
+    "best_for": "Beginnende fotografen en ontwerpers die de structuur, navigatie en basisfunctionaliteiten van de interface willen doorgronden.",
+    "unique_insights": [
+      "De contextuele taakbalk fungeert als digitaal bestek: Photoshop analyseert continu de actieve selectie en biedt direct de meest logische vervolgstappen aan.",
+      "Het onthouden van de ezelbrug 'Cake Tastes Perfect' (Canvas, Tools, Panels) reduceert de initiële interface-intimidatie tot drie behapbare basiselementen.",
+      "Het sterretje (asterisk) achter de bestandsnaam in het tabblad is de belangrijkste visuele indicator voor niet-opgeslagen wijzigingen."
+    ],
+    "style_preview": "Een heldere, gestructureerde en uiterst toegankelijke benadering van fotobewerking. De visuele sfeer is minimalistisch en functioneel, gericht op het wegnemen van interface-angst bij de gebruiker. Deze stijl werkt perfect voor iedereen die vanaf nul een georganiseerde workflow wil opbouwen. Het verwachte effect is een opgeruimde interface waarin je blindelings de juiste basistools kunt vinden."
+  },
+  {
+    "video_title": "10 Epic Photo Manipulation Tips & Tricks | Photoshop Tutorial",
+    "photographer_name": "Abby Esparza",
+    "youtube_url": "https://www.youtube.com/watch?v=E8EakX0fMnc",
+    "genre": [
+      "cinematisch",
+      "experimenteel",
+      "trouwfotografie"
+    ],
+    "light_conditions": [
+      "gemengd licht",
+      "tegenlicht",
+      "storm"
+    ],
+    "mood": [
+      "dramatisch",
+      "moody",
+      "experimenteel"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Epic Cinematic Composite Style",
+    "philosophy": "Fotomanipulatie bereikt een hoger niveau door geavanceerde mengtechnieken en het slim combineren van sfeerelementen zoals regen en licht. Het doel is om realistische texturen en dramatische belichting te versmelten tot een naadloos, surrealistisch geheel. Visuele overvloed en gedurfde experimenten vormen de kern van deze creatieve workflow.",
+    "workflow_order": [
+      "stap 1: breid de compositie uit met de crop tool ingesteld op generatief uitbreiden (Generative Expand)",
+      "stap 2: scheid landschapselementen en luchten nauwkeurig met behulp van de blend if-schuifregelaars",
+      "stap 3: voeg atmosferische effecten zoals handgemaakte regen of getextureerde aderen toe op aparte lagen",
+      "stap 4: pas een kleurverloop toe (Gradient Map) en verfijn de hooglichten voor een realistische integratie"
+    ],
+    "techniques": [
+      {
+        "name": "Generatieve Uitbreiding Rasteren",
+        "description": "Klik met de rechtermuisknop op generatieve vullaalgen en kies 'Rasterize Layer' nadat je de uitsnede hebt vergroot.",
+        "when_to_use": "Wanneer je klaar bent met het genereren van de achtergrond om de bestandsgrootte te beperken en het werkgeheugen te ontlasten.",
+        "tools": [
+          "Generative Expand"
+        ],
+        "effect": "De laag verandert in statische pixels, wat zorgt voor een aanzienlijke prestatiewinst in Photoshop."
+      },
+      {
+        "name": "Geavanceerd Mengen met Blend If",
+        "description": "Dubbelklik op de laag, houd de Alt-toets ingedrukt om de schuifregelaars van 'This Layer' te splitsen en sleep ze uit elkaar om de middentonen vloeiend te mengen.",
+        "when_to_use": "Bij het samenvoegen van een nieuw landschap met een basissky op basis van helderheid.",
+        "tools": [
+          "Blend If (Layer Styles)"
+        ],
+        "effect": "De harde overgangen verdwijnen en er ontstaat een natuurlijke, semi-transparante reflectie in de donkere partijen."
+      },
+      {
+        "name": "Steunlaag voor Transparantie",
+        "description": "Maak een nieuwe lege laag onder de Blend If-laag en schilder met een donkerblauwe kleur achter de bergen om ongewenste transparantie op te vullen.",
+        "when_to_use": "Wanneer cruciale details in de schaduwen te diep zijn weggeblend door de Blend If-instellingen.",
+        "tools": [
+          "Brush Tool"
+        ],
+        "effect": "De bergen en landvormen krijgen hun solide, ondoorzichtige structuur terug zonder de vloeiende randen te verliezen."
+      },
+      {
+        "name": "Dynamische Bewegende Regen",
+        "description": "Pas Filter > Blur Gallery > Path Blur toe op een fijne korrellaag en trek de controlepunten in subtiel verschillende richtingen.",
+        "when_to_use": "Bij het creëren van een realistische regenbui in een dramatische buitenscène.",
+        "tools": [
+          "Path Blur"
+        ],
+        "effect": "De regendruppels vallen niet statisch in één lijn, maar bootsen de natuurlijke, turbulente beweging van de wind na."
+      },
+      {
+        "name": "Vloeibaar Bloed Effect",
+        "description": "Schilder de basisvorm op een vermenigvuldiglaag (Multiply), activeer 'Wet Edges' in de penseelinstellingen op een overlaylaag daaronder voor de dunnere randen, en voeg handmatige hooglichten toe van 3 tot 6 pixels groot.",
+        "when_to_use": "Bij het toevoegen van glanzende, dikke vloeistofeffecten in horror- of fantasy-composites.",
+        "tools": [
+          "Brush Settings (Wet Edges)"
+        ],
+        "effect": "De vloeistof krijgt een overtuigende diepte met donkere, stroperige kernen en heldere, reflecterende randen."
+      }
+    ],
+    "color_approach": "Kleur wordt ingezet als een sfeerbepaler door het gebruik van kleurinkleuring (Colorize) op atmosferische effecten zoals regen, zodat deze de omgevingsverlichting reflecteren. Gradient maps ingesteld op de overvloeimodus 'Multiply' transformeren basistexturen naar diepe, rijke tinten.",
+    "local_adjustments": "Lokale maskers worden intensief gebruikt in combinatie met selectietools zoals 'Refine Hair' (binnen Select and Mask) om complexe details tot op de pixel nauwkeurig vrij te zetten en lokaal in te kleuren.",
+    "what_to_avoid": [
+      "Gebruik nooit puur zwart bij het handmatig opvullen van blend-if gaten, maar kies altijd een diepe schaduwkleur die al in de afbeelding aanwezig is voor een natuurgetrouw resultaat.",
+      "Beweeg de Mixer Brush bij het maken van een olieverfeffect nooit kriskras heen en weer, omdat de kleuren dan modderig en wazig in elkaar overlopen."
+    ],
+    "best_for": "Gevorderde creatievelingen en digital artists die surrealistische scènes, filmposters of horror-concepten willen realiseren.",
+    "unique_insights": [
+      "Het inschakelen van de optie 'Wet Edges' in het penseelvenster is het geheime wapen om digitale verf direct het uiterlijk van een glanzende, stroperige vloeistof te geven.",
+      "Regen is in de praktijk nooit volledig transparant of kleurloos; door de regenlaag subtiel in te kleuren met de hoofdkleur van de omgeving smelt het effect pas echt samen met de foto.",
+      "Het stapelen van een verschilwolken-filter (Difference Clouds) op een witte basislaag creëert een organische structuur die met de juiste contrastwaarden perfect transformeert tot angstaanjagend realistische aderen."
+    ],
+    "style_preview": "Een uiterst dramatische, filmische en detailrijke bewerkingsstijl die uitblinkt in het creëren van grootse visuele verhalen. De sfeer is mysterieus en neigt vaak naar fantasy of horror, gekenmerkt door diepe schaduwen en felle lichtaccenten. Deze stijl werkt het best bij studio- of portretfoto's die in een volledig nieuwe, stormachtige omgeving geplaatst moeten worden. Het resultaat is een oogverblindend en complex kunstwerk met een tastbare textuur."
   }
 ]

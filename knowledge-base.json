@@ -57554,5 +57554,184 @@
       "Huidtinten perfectioneer je niet in HSL, maar corrigeer je door in het kalibratiepaneel de schaduw-tinten resoluut naar de magenta-zijde te trekken."
     ],
     "style_preview": "Deze verfijnde stijl emuleert de esthetiek van analoge cinema door matte schaduwen te combineren met een doordacht palet van groen-, blauw- en oranjetonen. De filosofie verwerpt de harde, klinische scherpte van moderne camera's ten gunste van zachtheid en textuur. Dit werkt magistraal bij portretten in warm tegenlicht. Het resultaat is een hoogwaardige, dromerige plaat die rechtstreeks uit een Hollywood-film lijkt te komen."
+  },
+  {
+    "video_title": "Going to Destination | Surreal Photo Manipulation in Photoshop",
+    "photographer_name": "Asm Arif",
+    "youtube_url": "https://www.youtube.com/watch?v=-OqH-5y3myw",
+    "genre": [
+      "fine-art",
+      "experimenteel"
+    ],
+    "light_conditions": [
+      "diffuus licht"
+    ],
+    "mood": [
+      "sfeervol",
+      "dramatisch",
+      "intiem"
+    ],
+    "software": [
+      "Photoshop",
+      "Nik Collection"
+    ],
+    "style_description": "Surreal Artistic Fine Art",
+    "philosophy": "Fotomanipulatie is de ultieme manier om een onwerkelijke, dromerige wereld te creëren door losse elementen naadloos samen te voegen. Het succes van een compositie valt of staat met de tonale eenheid en gecontroleerde lichtinval tussen de verschillende lagen. Kleurgrading achteraf met externe plug-ins trekt de gehele compositie visueel naar één geheel.",
+    "workflow_order": [
+      "stap 1: canvas opbouwen op een vierkant formaat van 2000 bij 2000 pixels",
+      "stap 2: achtergrond en png-elementen importeren en maskeren met de gradient tool",
+      "stap 3: handmatig lichtvlekken schilderen bij de straatlantaarn met de blend mode screen",
+      "stap 4: globale nabewerking en kleurcorrectie toepassen via het camera raw filter"
+    ],
+    "techniques": [
+      {
+        "name": "Zacht Maskeren met Verloop",
+        "description": "Gebruik de Gradient Tool op een laagmasker met een zwart-naar-wit verloop om de harde randen van een geïmporteerde heuvel zacht te laten overlopen in de achtergrond.",
+        "when_to_use": "Bij het samenvoegen van twee verschillende landschapselementen om een natuurlijke diepte te simuleren.",
+        "tools": [
+          "Gradient Tool"
+        ],
+        "effect": "De harde overgang verdwijnt waardoor het lijkt alsof het object vloeiend achter de bestaande heuvel vandaan komt."
+      },
+      {
+        "name": "Lantaarnlicht Schilderen",
+        "description": "Maak een nieuwe lege laag aan, kies een warme oranje tint en klik eenmaal met een zacht penseel (Hardness 0%) met een grootte van 125 pixels op de lamp.",
+        "when_to_use": "Om een realistische lichtbron of gloed toe te voegen aan een onbelicht object in de compositie.",
+        "tools": [
+          "Brush Tool"
+        ],
+        "effect": "Er ontstaat een zachte, warme lichtvlek die de lantaarn direct activeert als lichtbron."
+      },
+      {
+        "name": "Lichtvlek Transformatie",
+        "description": "Zet de overvloeimodus (Blend Mode) van de geschilderde lichtlaag op Screen en gebruik Free Transform (Control+T) om de lichtvlek selectief uit te rekken tot een grote lichtgloed.",
+        "when_to_use": "Direct na het aanbrengen van een basislichtvlek om een sfeervolle lichtuitstraling (flare) te maken.",
+        "tools": [
+          "Free Transform"
+        ],
+        "effect": "Het licht mengt zich op een natuurlijke, heldere manier met de onderliggende pixels en simuleert een krachtige lichtbundel."
+      },
+      {
+        "name": "Futuristische LUT Integratie",
+        "description": "Voeg een Color Lookup-aanpassingslaag toe, selecteer een futuristische 3D LUT en verlaag de Fill-waarde van de laag direct naar exact 20%.",
+        "when_to_use": "Om de eerste globale tonale binding te realiseren tussen losse, samengevoegde fotolagen.",
+        "tools": [
+          "Color Lookup"
+        ],
+        "effect": "De contrasterende kleuren van de afzonderlijke lagen worden subtiel naar elkaar toe getrokken met een lichte artistieke tint."
+      },
+      {
+        "name": "Zacht Sfeerverloop",
+        "description": "Plaats een Gradient Map-aanpassingslaag met een oranje-naar-paars verloop over de hele afbeelding, zet de blend mode op Soft Light en verlaag de Fill-waarde naar 18%.",
+        "when_to_use": "Als laatste tonale filter in de lagenstructuur om een warme, dromerige gloed over de middentonen te leggen.",
+        "tools": [
+          "Gradient Map"
+        ],
+        "effect": "De schaduwen krijgen een diepe, paarse ondertoon en de lichte delen worden warm oranje opgelicht."
+      }
+    ],
+    "color_approach": "De kleurinteractie is gebaseerd op een warm-koud contrast. Door een diepe, paarse basis in de schaduwen te mengen met feloranje lichtaccenten uit de penseelsteken, krijgt de surrealistische plaat een mystieke en harmonieuze uitstraling.",
+    "local_adjustments": "Lokale maskers worden intensief gebruikt via verloopfilters om harde fotomarges weg te poetsen. Daarnaast past de fotograaf lokale lichtaccenten toe door handmatig sfeerelementen zoals vliegende vogels en straatverlichting op aparte lagen in te schilderen.",
+    "what_to_avoid": [
+      "Vermijd het vergeten te rasteren (Rasterize) van smart objects omdat Photoshop anders geen pixels kan verwijderen met de selectietools",
+      "Vermijd een te hoge Fill-waarde op artistieke LUT-bestanden omdat de kleuren dan snel onrealistisch hard dichtlopen"
+    ],
+    "best_for": "Fijn-art kunstenaars die complexe, verhalende composities willen bouwen van losse stockbestanden met een schilderachtig resultaat.",
+    "unique_insights": [
+      "Hij spiegelt objecten horizontaal (Flip Horizontal) puur om de richting van de schaduwen direct te laten kloppen met de aanwezige omgevingsverlichting.",
+      "Lichtgloed bouw je op in fasen: hij gebruikt twee aparte lagen met de blend mode Screen over elkaar heen om een gelaagde, driedimensionale lichtbron te simuleren.",
+      "Aan het einde van de workflow voegt hij een complete cross-processing filterset toe via de externe plug-in Nik Collection om alle losse fotocomponenten definitief vast te smelten."
+    ],
+    "style_preview": "Deze surrealistische bewerkingsstijl transformeert alledaagse stockfoto's in een magisch, filmisch kunstwerk met een diepe emotionele lading. De kernfilosofie leunt op het slim manipuleren van lichtbronnen en het toepassen van gelaagde kleurfilters. De methode blinkt uit bij het creëren van dromerige fine-art scènes in diffuus buitenlicht. Het eindresultaat is een harmonieus, schilderachtig beeld waarin de grens tussen realiteit en fantasie volledig vervaagt."
+  },
+  {
+    "video_title": "Surreal Photoshop Editing Tutorial",
+    "photographer_name": "Andhika Zanuar",
+    "youtube_url": "https://www.youtube.com/watch?v=ZKY1zgGKato",
+    "genre": [
+      "fine-art",
+      "experimenteel"
+    ],
+    "light_conditions": [
+      "gemengd licht",
+      "gouden uur"
+    ],
+    "mood": [
+      "dramatisch",
+      "filmisch",
+      "moody"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Surreal Cinematic Floating Sea",
+    "philosophy": "Surrealistische fotomontage vereist een perfecte illusie van schaal en sfeer. Door schijnbaar onmogelijke elementen zoals een drijvende zee boven een verlichte stad te combineren, creëer je een krachtig visueel verhaal. Het geheim schuilt in de minutieuze tonale afstemming en schaduwopbouw rondom de toegevoegde objecten.",
+    "workflow_order": [
+      "stap 1: basisdocument aanmaken op 3000 bij 2000 pixels met de zee als basislaag",
+      "stap 2: de nachtelijke stadsfoto importeren en via de screen-modus overvloeien",
+      "stap 3: een selectieve kleurcorrectie (Selective Color) toepassen om de cyaan- en blauwtonen te versterken",
+      "stap 4: handmatig een realistische boot en schaduw in de compositie schilderen"
+    ],
+    "techniques": [
+      {
+        "name": "Stadszee Overvloeiing",
+        "description": "Importeer een heldere nachtelijke stadsfoto over de zeelaag heen en zet de overvloeimodus (Blend Mode) op Screen om de stadslichten door het water te laten schijnen.",
+        "when_to_use": "Bij het blenden van twee contrasterende texturen (licht en water) voor een dubbele belichtingseffect.",
+        "tools": [
+          "Layer Blending Modes"
+        ],
+        "effect": "De donkere lucht van de stadsfoto verdwijnt en de felle wolkenkrabbers lichten prachtig op binnen de golven van de zee."
+      },
+      {
+        "name": "Cyaan- en Blauwintensivering",
+        "description": "Open een Selective Color-aanpassingslaag, kies de kleur Cyans en verhoog Magenta naar +95% en Cyan naar +47% om het water een diepe, magische kleur te geven.",
+        "when_to_use": "Bij surrealistische composities waar zee- of luchtelementen een intensere, minder natuurlijke tint vereisen.",
+        "tools": [
+          "Selective Color"
+        ],
+        "effect": "De fletse blauwtinten in het water transformeren in een diepe, levendige cyaanblauwe kleur."
+      },
+      {
+        "name": "Tonale Contrast Correctie",
+        "description": "Voeg een Brightness/Contrast-aanpassingslaag toe onder de objecten, verlaag Brightness naar -10 en verhoog Contrast naar +29 om de achtergrond donkerder en krachtiger te maken.",
+        "when_to_use": "Om de sfeer in de achtergrondlaag mystieker te maken en de voorgrondobjecten beter te laten contrasteren.",
+        "tools": [
+          "Brightness/Contrast"
+        ],
+        "effect": "De middentonen van de stadszee worden dieper en de felle lichtpuntjes van de gebouwen springen er intenser uit."
+      },
+      {
+        "name": "Handmatige Boot Schaduw",
+        "description": "Dupliceer de bootlaag, vul deze volledig met zwart via Hue/Saturation (Lightness -100), roteer en vervorm de laag met Distort onder de boot en verlaag de Opacity naar 42%.",
+        "when_to_use": "Bij het plaatsen van een 3D-object op een water- of grondoppervlak om het object fysiek in de scène te verankeren.",
+        "tools": [
+          "Free Transform",
+          "Opacity"
+        ],
+        "effect": "Er ontstaat een perfect liggende, half-transparante slagschaduw op het wateroppervlak onder de boot."
+      },
+      {
+        "name": "Analoog Warmtefilter",
+        "description": "Plaats een Photo Filter-aanpassingslaag met een 'Warming Filter (81)' over de gehele lagenstapel en verhoog de Density naar 49% om een zonsonderganggloed te simuleren.",
+        "when_to_use": "Als globale afwerking om koude, klinische digitale montages te voorzien van een warme, analoge samenhang.",
+        "tools": [
+          "Photo Filter"
+        ],
+        "effect": "Er trekt een zachte, warme goudgele waas over de lichte delen van de afbeelding zonder de donkere schaduwen te vervuilen."
+      }
+    ],
+    "color_approach": "De kleuraanpak leunt op een strak geregisseerd complementair schema. De diepe, koele cyaan- en blauwtinten van de oceaan vormen de perfecte dynamische tegenhanger voor de goudgele stadslichten en de warme tinten van de houten boot.",
+    "local_adjustments": "Lokale maskers en handmatige penseelstreken worden gebruikt om overgangen te verfijnen. Met een zacht penseel (Soft Brush) poetst de fotograaf de harde randen van de schaduwlaag en de geïmporteerde personages weg zodat ze naadloos in de golven integreren.",
+    "what_to_avoid": [
+      "Vermijd het gebruik van een 100% dekkende zwarte schaduw onder objecten omdat dit er digitaal en onnatuurlijk uitziet op bewegend water",
+      "Vermijd het oversturen van de globale belichting waardoor de fijne lichtpuntjes van de wolkenkrabbers uitbijten (clipping)"
+    ],
+    "best_for": "Creatieve Photoshop-gebruikers die fantasierijke, filmische concepten willen uitwerken met een sterke nadruk op sfeer en tonale eenheid.",
+    "unique_insights": [
+      "Hij gebruikt de Screen-modus niet zomaar als filter, maar misbruikt een complete nachtfoto als een lichtgevende textuurlaag onder het water.",
+      "Om de schaduw op het golvende water realistisch te maken, gebruikt hij na de Distort-transformatie de Warp-tool om de schaduw zachtjes mee te buigen met de vorm van de golven.",
+      "Hij activeert een Solid Color-laag gevuld met een lichte beige tint op een extreem lage dekking van 2% in de modus Screen om een atmosferische mistlaag over de stad te leggen."
+    ],
+    "style_preview": "Deze indrukwekkende stijl combineert dromerige melancholie met grootse, filmische Hollywood-concepten. De focus ligt op het creëren van een onmogelijke werkelijkheid door strakke kleurcontrasten en meesterlijke schaduwmanipulatie. De techniek is bij uitstek geschikt voor fine-art montages tijdens het gouden uur waar warm en koud licht elkaar ontmoeten. Het visuele resultaat is een adembenemende, sfeervolle plaat waarin een zwevende boot boven een oplichtende metropool volkomen geloofwaardig oogt."
   }
 ]

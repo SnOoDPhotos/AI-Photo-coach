@@ -56891,5 +56891,268 @@
       "TIFF-bestanden bewaren net als PSD-bestanden alle laaginformatie in Photoshop, maar integreren naadloos terug als een gestapelde variant in Lightroom Classic."
     ],
     "style_preview": "Deze stijl biedt een naturalistische, heldere en sfeervolle esthetiek die de nadruk legt op de authenticiteit van reisfotografie. Door storende elementen weg te halen en een zachte gloed te introduceren, transformeren alledaagse documentairereizen in krachtige beelden. Het is bij uitstek geschikt voor de fotograaf die de details van de natuur wil respecteren maar een professionele, hoogwaardige afwerking zoekt. Het resultaat is een gebalanceerde en vloeiende foto."
+  },
+  {
+    "video_title": "Full Photo Editing Tutorial from Start to Finish in Photoshop for Beginners ",
+    "photographer_name": "Ronnix Photography",
+    "youtube_url": "https://www.youtube.com/watch?v=AX19LCBQhy8",
+    "genre": [
+      "portret",
+      "algemeen"
+    ],
+    "light_conditions": [
+      "kunstlicht"
+    ],
+    "mood": [
+      "sfeervol",
+      "levendig"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Studio Portret Achtergrond Glow",
+    "philosophy": "De focus ligt op het volledig beheersen van het nabewerkingsproces binnen één softwarepakket. Door RAW-bestanden eerst nauwkeurig te corrigeren op licht en contrast, ontstaat er een stevig fundament voor geavanceerde technieken. Het uiteindelijke doel is om de natuurlijke textuur te behouden terwijl storende elementen en onregelmatigheden onzichtbaar worden weggewerkt.",
+    "workflow_order": [
+      "stap 1: corrigeren van belichting, contrast en basiskleuren in camera raw",
+      "stap 2: verwijderen van kleine afleidingen met de spot healing brush tool",
+      "stap 3: frequentiescheiding toepassen voor egale huidtinten met behoud van textuur",
+      "stap 4: verfijnen van huidskleur en selectieve kleurgradaties met aanpassingslagen",
+      "stap 5: uitsnijden van het onderwerp en een creatief achtergrondeffect (snoot) toevoegen"
+    ],
+    "techniques": [
+      {
+        "name": "RAW Lichtcorrectie",
+        "description": "Verlaag Highlights en Whites naar -40 om details in lichte kleding te herstellen, en verhoog Shadows naar +31 om donkere partijen open te breken.",
+        "when_to_use": "Bij portretten met een hoog contrast of lichte outfits waar textuur verloren dreigt te gaan.",
+        "tools": [
+          "Light Panel"
+        ],
+        "effect": "Meer dynamisch bereik en betere doortekening in zowel lichte als donkere partijen."
+      },
+      {
+        "name": "Frequentiescheiding Opzetten",
+        "description": "Splits de afbeelding in een kleurlaag met Gaussian Blur (radius 3.0) en een textuurlaag via Apply Image (met Blend Mode 'Add', Scale 2, Offset 0 en Invert ingeschakeld) om details los te koppelen van kleur.",
+        "when_to_use": "Bij high-end huidretouche waarbij vlekken moeten worden weggewerkt zonder de huidstructuur te vervagen.",
+        "tools": [
+          "Gaussian Blur",
+          "Apply Image"
+        ],
+        "effect": "De foto wordt opgedeeld in een wazige kleurlaag en een grijze, scherpe textuurlaag."
+      },
+      {
+        "name": "Huidskleur Egaliseren met Mixer Brush",
+        "description": "Gebruik de Mixer Brush Tool met een Weight van 9%, Load 70%, Mix 90% en Flow 100% op de kleurlaag om vloeiende overgangen te schilderen.",
+        "when_to_use": "Wanneer er sprake is van vlekkerige schaduwen of harde kleurovergangen op het gezicht en lichaam.",
+        "tools": [
+          "Mixer Brush Tool"
+        ],
+        "effect": "De huidskleur krijgt een egale, zachte overgang terwijl de oorspronkelijke botstructuur behouden blijft."
+      },
+      {
+        "name": "Blemishes Verwijderen met Clone Stamp",
+        "description": "Selecteer de textuurlaag en gebruik de Clone Stamp Tool met 0% Hardness om onzuiverheden te vervangen door nabijgelegen schone huidtextuur.",
+        "when_to_use": "Voor het wegwerken van pukkeltjes, rimpels of fijne haartjes zonder de onderliggende kleur aan te tasten.",
+        "tools": [
+          "Clone Stamp Tool"
+        ],
+        "effect": "Pukkeltjes en storende textuurfoutjes verdwijnen op een natuurlijke manier."
+      },
+      {
+        "name": "Studio Achtergrond Egaliseren",
+        "description": "Gebruik de Mixer Brush op een samengevoegde laag om kreukels en oneffenheden in de studio-achtergrond volledig plat te strijken.",
+        "when_to_use": "Bij studio-opnames waarbij de papieren of stoffen achtergrond storende vouwen vertoont.",
+        "tools": [
+          "Mixer Brush Tool"
+        ],
+        "effect": "Een strakke, egale en professioneel ogende studio-achtergrond."
+      }
+    ],
+    "color_approach": "Er wordt gekozen voor een gecontroleerde benadering waarbij de oranje- en roodtinten subtiel worden opgelicht via de Color Mixer om de huid te laten stralen. Onverzadigde rode tinten worden gecorrigeerd en wittinten worden ontdaan van gele onzuiverheden voor een frisse uitstraling.",
+    "local_adjustments": "Lokale aanpassingen worden ingezet via nauwkeurige laagsjablonen (Layer Masks) om de egale huidskleuren alleen op de huid te onthullen. Daarnaast wordt de Pen Tool gebruikt om storende elementen in de achtergrond handmatig te selecteren en weg te poetsen.",
+    "what_to_avoid": "Vermijd het klakkeloos overnemen van de vervagingsradius (Gaussian Blur) bij frequentiescheiding; dit moet altijd visueel worden afgestemd op de specifieke resolutie van de camera om textuurverlies te voorkomen.",
+    "best_for": "Studio-portretfotografen die een complete, professionele workflow voor huidretouche en achtergrondmanipulatie willen leren.",
+    "unique_insights": [
+      "Het retoucheren met de Mixer Brush werkt het beste wanneer je uitzoekt en op een afstand werkt, omdat je zo de algehele schaduwovergangen beter kunt beoordelen.",
+      "Het inschakelen van 16 bits per kanaal (16 bits per channel) bij het importeren garandeert dat er aanzienlijk meer kleurinformatie en resolutie behouden blijft tijdens zware bewerkingen.",
+      "Door eerst de Whites te corrigeren en gele tinten handmatig te verminderen in de Selective Color-laag, krijg je een veel natuurlijker witresultaat in kleding dan via de standaard belichtingsschuif."
+    ],
+    "style_preview": "Deze stijl kenmerkt zich door een uiterst clean en commercieel studio-uiterlijk met perfect egale huidtinten en een creatieve achtergrond-glow. De kernfilosofie draait om het digitaal perfectioneren van de gecontroleerde studio-omgeving zonder de menselijke structuur te verliezen. Het werkt het beste voor studio-portretten met egale belichting, waarbij het verwachte visuele effect een hoogwaardige, high-end fashion uitstraling is.",
+    "_warnings": [
+      "naam lijkt op kanaalnaam (photography)"
+    ]
+  },
+  {
+    "video_title": "95% of Photo Editing Basics in Only 17 Minutes!",
+    "photographer_name": "Mark Denney",
+    "youtube_url": "https://www.youtube.com/watch?v=qqemRpV-_Wo",
+    "genre": [
+      "landschap",
+      "reisfotografie"
+    ],
+    "light_conditions": [
+      "bewolkt",
+      "overcast"
+    ],
+    "mood": [
+      "moody",
+      "rustig"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Moody Muted Landscape Arctic",
+    "philosophy": "Een succesvolle bewerking rust volledig op het beheersen van de absolute basisprincipes. Door de interface logisch in te richten naar je eigen denkstappen, creëer je een efficiënte en consistente workflow. Het doel is niet om de realiteit extreem te vervormen, maar om de kijker doelgericht naar het belangrijkste element in het landschap te leiden.",
+    "workflow_order": [
+      "stap 1: de interface van de develop-module reorganiseren voor een top-down workflow",
+      "stap 2: de algehele belichting en het contrast balanceren in het basispaneel",
+      "stap 3: witbalans nauwkeurig instellen en de compositie optimaliseren via een crop",
+      "stap 4: contrast versterken met de tone curve en kleuren kalibreren",
+      "stap 5: lokale aanpassingen en maskers aanbrengen voor extra focus en scherpte"
+    ],
+    "techniques": [
+      {
+        "name": "Belichtingsfundament Balanceren",
+        "description": "Verlaag de algehele Exposure naar een donkerder niveau en voeg handmatig contrast toe om een mystieke sfeer te creëren, zonder direct de uiterste zwartwaarden te maximaliseren.",
+        "when_to_use": "Bij mistige of winterse landschappen waar de wit- en grijstinten de overhand hebben.",
+        "tools": [
+          "Basic Panel"
+        ],
+        "effect": "De foto krijgt direct meer diepte en een duidelijk gedefinieerde sfeer."
+      },
+      {
+        "name": "Subtiele Dehaze Toepassing",
+        "description": "Verhoog Dehaze heel subtiel naar maximaal +10 om wat fijne textuur in de mist of wolken terug te brengen zonder de kleuren te oververzadigen.",
+        "when_to_use": "Bij landschappen met atmosferische mist, lichte nevel of dichte bewolking.",
+        "tools": [
+          "Presence Section"
+        ],
+        "effect": "Er ontstaat net iets meer scheiding tussen de wolkenlagen zonder dat het onnatuurlijk oogt."
+      },
+      {
+        "name": "Muted Kleurenkalibratie",
+        "description": "Verlaag de verzadiging van het blauwe primaire kanaal (Blue Primary) naar -40 in het kalibratiepaneel om felle, onnatuurlijke blauwtinten te onderdrukken.",
+        "when_to_use": "Voor arctische of winterse landschappen waar een minimalistisch kleurenpalet gewenst is.",
+        "tools": [
+          "Calibration"
+        ],
+        "effect": "De blauwe tonen in de sneeuw en lucht worden zachter, aardser en minder intens digitaal."
+      },
+      {
+        "name": "Lokaal Contrast via Radial Gradient",
+        "description": "Plaats een grote Radial Gradient over het belangrijkste bergelement met 100% Feather en verhoog handmatig de Whites en Exposure.",
+        "when_to_use": "Wanneer het hoofdonderwerp gecentreerd is en extra visuele nadruk nodig heeft.",
+        "tools": [
+          "Radial Gradient"
+        ],
+        "effect": "Het centrum van de foto licht subtiel op, waardoor de blik van de kijker direct naar de bergtop wordt getrokken."
+      },
+      {
+        "name": "Doelgerichte Verscherping met Masking",
+        "description": "Verhoog de Sharpening naar 100, pas de radius aan naar 1.5 en gebruik de Option-toets (alt) bij Masking om de verscherping puur tot de harde randen van de berg te beperken.",
+        "when_to_use": "Bij foto's met zachte wolken of waterpartijen die absoluut niet verscherpt mogen worden.",
+        "tools": [
+          "Detail Panel"
+        ],
+        "effect": "Alleen de rotsachtige structuren worden vlijmscherp, terwijl de lucht perfect zacht en ruisvrij blijft."
+      }
+    ],
+    "color_approach": "Er wordt gekozen voor een extreem minimalistisch kleurenpalet. Alle storende nevenkleuren zoals subtiel oranje of geel worden volledig weggehaald via de Color Mixer, zodat er enkel gedempte blauwtinten en zuivere wittinten overblijven die het koude gevoel versterken.",
+    "local_adjustments": "Lokale maskers worden intensief gebruikt om de foto 'af te sluiten'. Met lineaire verlopen (Linear Gradients) aan de boven- en onderkant wordt de belichting verlaagd, waardoor een natuurlijk vignet ontstaat dat de focus naar het lichte centrum dwingt.",
+    "what_to_avoid": "Vermijd het overmatig gebruik van de Dehaze-schuifregelaar, aangezien deze tool ongewenst veel contrast en extreme kleurverzadiging introduceert die de delicate sfeer in een landschap snel vernietigt.",
+    "best_for": "Landschapsfotografen die worstelen met structuur in hun nabewerking en een strakke, herhaalbare basisindeling zoeken.",
+    "unique_insights": [
+      "Het handmatig reorganiseren van de panelen in de Develop-module (Customize Develop Panel) voorkomt dat je tijdens het bewerken cruciale stappen overslaat.",
+      "De Solo Mode-functie in Lightroom sluit automatisch alle inactieve panelen, wat enorm veel scrolltijd bespaart en voor een rustige werkplek zorgt.",
+      "Het gebruik van de ingebouwde Point Curve-voorinstellingen zoals Medium Contrast is de snelste manier om veilig te leren hoe de tooncurve reageert op de foto."
+    ],
+    "style_preview": "Deze stijl ademt een serene, Scandinavische en minimalistische sfeer uit met gedempte kleuren en een krachtige focus op textuur. De kernfilosofie is het weglaten van visuele ruis om de rauwe essentie van de natuur te tonen. Het werkt perfect voor weidse landschappen onder een bewolkte hemel, waarbij het verwachte visuele effect een dromerig, sfeervol en gebalanceerd beeld is."
+  },
+  {
+    "video_title": "Photoshop Tutorial | Photo Manipulation | Water Splash in Bulb",
+    "photographer_name": "Tutorials Junction ",
+    "youtube_url": "https://www.youtube.com/watch?v=XnzGFtUevts",
+    "genre": [
+      "experimenteel",
+      "fine-art"
+    ],
+    "light_conditions": [
+      "diffuus licht"
+    ],
+    "mood": [
+      "krachtig",
+      "levendig"
+    ],
+    "software": [
+      "Photoshop"
+    ],
+    "style_description": "Surrealistische Water Spat Manipulatie",
+    "philosophy": "Fotomanipulatie draait om het naadloos samensmelten van ongerelateerde objecten tot een geloofwaardige nieuwe realiteit. Door destructieve bewerkingen te vermijden en slim gebruik te maken van overvloeimodi, behoud je volledige controle over het creatieve proces. Elk detail, van schaduw tot reflectie, draagt bij aan de illusie.",
+    "workflow_order": [
+      "stap 1: de binnenzijde van de gloeilamp leegmaken met content-aware fill en de clone stamp",
+      "stap 2: een realistische schaduwbasis creëren onder de lamp met een zacht vervaagde selectie",
+      "stap 3: de watertextuur in de lamp positioneren en maskeren met een zacht penseel",
+      "stap 4: objecten zoals vissen toevoegen en de blending modes aanpassen voor transparantie",
+      "stap 5: een dramatische waterspat toevoegen en een spiegelreflectie op de ondergrond maken"
+    ],
+    "techniques": [
+      {
+        "name": "Object Vrijmaken via Content-Aware",
+        "description": "Selecteer de binnenzijde van de gloeilamp met de Lasso Tool en gebruik Edit > Fill met Content-Aware om de gloeidraad feilloos te verwijderen.",
+        "when_to_use": "Wanneer een glazen object of achtergrond volledig leeg en transparant gemaakt moet worden.",
+        "tools": [
+          "Lasso Tool",
+          "Content-Aware Fill"
+        ],
+        "effect": "De gloeidraad verdwijnt en maakt plaats voor een helder, leeg glaseffect."
+      },
+      {
+        "name": "Zachte Schaduw Creëren",
+        "description": "Maak een elliptische selectie onder de lamp, vul deze met zwart en pas een Gaussian Blur van 11 pixels toe, waarna de dekking (Opacity) wordt verlaagd naar 35%.",
+        "when_to_use": "Bij het integreren van zwevende of geplaatste objecten op een vlakke ondergrond.",
+        "tools": [
+          "Elliptical Marquee Tool",
+          "Gaussian Blur"
+        ],
+        "effect": "Er ontstaat een realistische, zachte slagschaduw waardoor het object vaststaat in de ruimte."
+      },
+      {
+        "name": "Water Transparantie via Blending",
+        "description": "Plaats een wateroppervlak-afbeelding in de lamp en zet de overvloeimodus (Blend Mode) op Multiply om het water logisch in het glas te integreren.",
+        "when_to_use": "Bij het vullen van glazen of transparante objecten met vloeistoffen.",
+        "tools": [
+          "Blend Mode (Multiply)"
+        ],
+        "effect": "Het water versmelt met de structuur en reflecties van het glas van de gloeilamp."
+      },
+      {
+        "name": "Dynamische Spat Integratie",
+        "description": "Voeg een waterspat-stockfoto toe, verander de overvloeimodus naar Overlay en verlaag de Opacity naar 85% om de spatten over het glas heen te laten vloeien.",
+        "when_to_use": "Voor het creëren van actie en dynamiek rondom glazen elementen.",
+        "tools": [
+          "Blend Mode (Overlay)"
+        ],
+        "effect": "De waterspatten lijken daadwerkelijk uit de gloeilamp te barsten met behoud van de glans."
+      },
+      {
+        "name": "Realistische Spiegelreflectie",
+        "description": "Maak een samengevoegde kopie van het beeld via Ctrl+Alt+Shift+E, flip deze verticaal (Flip Vertical) met Free Transform en verlaag de dekking naar 20%.",
+        "when_to_use": "Bij het afwerken van composities op een glanzende of reflecterende studio-ondergrond.",
+        "tools": [
+          "Free Transform",
+          "Eraser Tool"
+        ],
+        "effect": "Een subtiele, neerwaartse spiegeling die de manipulatie een professionele studio-afwerking geeft."
+      }
+    ],
+    "color_approach": "De focus ligt op het intensiveren van de aquatische tinten. Via een Hue/Saturation aanpassingslaag, gekoppeld als Clipping Mask, wordt de Hue verschoven naar +13 en de verzadiging met 45% verhoogd om het water een diepe, levendige cyaankleur te geven. Een algehele Vibrance-laag op 60% frist het hele beeld op.",
+    "local_adjustments": "Laagmaskers (Layer Masks) in combinatie met een 0% zacht penseel (Soft Brush) worden intensief gebruikt om overlappende waterranden en ongewenste stock-achtergronden lokaal weg te poetsen zonder de originele pixels te beschadigen.",
+    "what_to_avoid": "Gebruik absoluut geen harde penselen of de standaard gumtool bij het blenden van vloeistoffen, omdat dit de vloeiende, organische overgangen van water direct vernietigt.",
+    "best_for": "Digitale kunstenaars en Photoshop-gebruikers die de basis van fotomanipulatie en het samenvoegen van stock-elementen willen leren.",
+    "unique_insights": [
+      "Door de overvloeimodus 'Multiply' te gebruiken voor de basis en 'Overlay' voor de actieve spatten, behoud je zowel de diepte van het water als de highlights van het glas.",
+      "Het verlagen van de dekking van onderwerpen onder water (zoals de vissen) naar 75% creëert direct een geloofwaardige illusie van diepte en breking.",
+      "De sneltoets Ctrl+Alt+Shift+E (Stamp Visible) is essentieel om een schone, platte laag te genereren voor reflecties zonder je zorgvuldig opgebouwde lagenstructuur te verliezen."
+    ],
+    "style_preview": "Deze stijl is puur surrealistisch, fantasierijk en conceptueel van aard, gekenmerkt door levendige blauwtinten en scherpe contrasten. De kernfilosofie draait om het creëren van een magische, onmogelijke scène die er toch tastbaar en realistisch uitziet. Het werkt het beste in een minimalistische studio-omgeving, waarbij het verwachte visuele effect een oogverblindende, artistieke blikvanger is."
   }
 ]

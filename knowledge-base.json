@@ -56712,92 +56712,105 @@
     "youtube_url": "https://www.youtube.com/watch?v=crfH_JuC2lI",
     "genre": [
       "cinematisch",
-      "experimenteel",
+      "product",
       "algemeen"
     ],
     "light_conditions": [
+      "daglicht",
       "gouden uur",
-      "daglicht"
+      "tegenlicht"
     ],
     "mood": [
-      "levendig",
-      "moody"
+      "dramatisch",
+      "sfeervol",
+      "filmisch"
     ],
     "software": [
       "Photoshop"
     ],
-    "style_description": "Vivid Hyper Realistic Manipulation",
-    "philosophy": "Fotomanipulatie vereist een strikt non-destructieve workflow waarbij pixels nooit permanent worden weggegooid. Door gebruik te maken van slimme objecten en controlelagen kan elk aspect van contrast en kleur achteraf fijngetuned worden. Het doel is een hyperrealistische look door logische interactie van licht en schaduw.",
+    "style_description": "Hyperrealistische Creatieve Foto Manipulatie",
+    "philosophy": "Het combineren van beelden vereist een strikte non-destructieve workflow om flexibiliteit te behouden. Het matchen van licht, schaduw-omgeving en kleurcontrast is belangrijker dan een perfecte uitsnede. Door gebruik te maken van visuele hulplagen wordt het giswerk bij compositing volledig geëlimineerd.",
     "workflow_order": [
-      "stap 1: verzamel alle stock-assets en gebruik eventueel generative fill om de achtergrond op te kunnen schonen",
-      "stap 2: extraheer objecten met de object selectie tool of blend if en converteer direct naar smart objects",
-      "stap 3: activeer contrast-, kleur- en saturatie-checklagen om onbalans in de elementen op te sporen",
-      "stap 4: pas curves en handmatige vermenigvuldiglagen (Multiply) toe voor lokale schaduwen en highlights"
+      "stap 1: verzamel alle benodigde stockbestanden en asset-materiaal vooraf",
+      "stap 2: gebruik snelle selectietools en verfijn de randen met maskers",
+      "stap 3: zet controlelagen (check layers) op voor kleur, contrast en verzadiging",
+      "stap 4: schilder handmatige schaduwen en hooglichten met specifieke overvloeimodi (Blend Modes)"
     ],
     "techniques": [
       {
-        "name": "Masker Verfijnen met Feather en Contrast",
-        "description": "Verhoog in Select and Mask de Feather naar 2 pixels en trek het contrast op naar 50% om gekartelde randen van automatische selecties te verzachten.",
-        "when_to_use": "Direct na het maken van een automatische selectie van een solide object",
+        "name": "Generative Fill Uitbreiding",
+        "description": "Selecteer de lege canvasruimte plus een deel van de bestaande lucht met de rechthoekige selectietool (Marquee Tool) en genereer zonder prompt om de achtergrond naadloos uit te breiden.",
+        "when_to_use": "Bij het vergroten van een achtergrond of canvas zonder creatieve beslissingen te forceren.",
         "tools": [
-          "Select and Mask"
+          "Generative Fill",
+          "Rectangular Marquee Tool"
         ],
-        "effect": "De randen van het masker worden vloeiender en minder kunstmatig scherp"
+        "effect": "De lege pixels worden perfect gevuld op basis van de omliggende structuur."
       },
       {
-        "name": "Transparante Extractie via Blend If",
-        "description": "Dubbelklik op de laag en sleep de witte of zwarte schuifregelaars van Blend If naar binnen; houd Alt ingedrukt om de regelaar te splitsen voor een zachte overgang.",
-        "when_to_use": "Bij het vrijmaken van complexe, semi-transparante elementen zoals vloeistoffen, rook of vuur tegen een egale achtergrond",
+        "name": "Maskerfout-Verfijning",
+        "description": "Verhoog in Select and Mask de Feather naar 2 pixels en verhoog de Contrast naar 50% om ruwe, gekartelde randen van automatische selecties vloeiender te maken.",
+        "when_to_use": "Direct na het maken van een automatische selectie met de objectselectietool.",
         "tools": [
-          "Blend If"
+          "Select and Mask",
+          "Object Selection Tool"
         ],
-        "effect": "De egale achtergrond verdwijnt met behoud van de natuurlijke semitransparantie in de randen"
+        "effect": "Een vloeiende, licht zachte rand die voorkomt dat het object er geplakt uitziet."
       },
       {
-        "name": "Echte Objectschaduw via Multiply",
-        "description": "Dupliceer het object, verwijder het masker, zet de modus op Multiply en gebruik Curves om het zwart- en witpunt aan te passen. Geef kleur via Hue/Saturation met colorize.",
-        "when_to_use": "Wanneer de originele schaduwvorm van het gefotografeerde object behouden moet blijven",
+        "name": "Blend If Transparantie-Extractie",
+        "description": "Dubbelklik op de laag om Layer Styles te openen en versleep de witte of zwarte sliders van This Layer terwijl je Alt ingedrukt houdt om de sliders te splitsen voor een vloeiende overgang.",
+        "when_to_use": "Bij het vrijmaken van objecten met fijne transparantie zoals melkspatten, rook, wolken of vuur.",
         "tools": [
-          "Multiply",
-          "Curves",
-          "Hue/Saturation"
+          "Blend If",
+          "Layer Style"
         ],
-        "effect": "Er ontstaat een perfecte, natuurgetrouwe schaduw die de kleur van de ondergrond aanneemt"
+        "effect": "De donkere of lichte achtergrondpixels verdwijnen met behoud van subtiele transparantie."
       },
       {
-        "name": "Geavanceerde Saturatie-Checklaag",
-        "description": "Maak een Selective Color laag aan de top, zet alle kleurkanalen qua Black op -100% en de kanalen White, Neutrals en Black op +100%.",
-        "when_to_use": "Tijdens het matchen van de verzadiging om 'radioactieve' of fletsere elementen te harmoniseren",
+        "name": "Kleur Controlelaag (Color Check Layer)",
+        "description": "Vul een nieuwe lege laag met 50% grijs via Edit > Fill en zet de overvloeimodus (Blend Mode) op Luminosity om pure kleurtinten te isoleren zonder contrast-afleiding.",
+        "when_to_use": "Bij het analyseren en op elkaar afstemmen van afwijkende kleuren tussen verschillende compositing-elementen.",
         "tools": [
-          "Selective Color"
+          "Layers",
+          "Luminosity Blend Mode"
         ],
-        "effect": "De foto toont een felle, abstracte kaart waarin de meest verzadigde gebieden direct oplichten als helder wit"
+        "effect": "De foto toont enkel de pure kleurhues, waardoor kleurzwemen in objecten direct zichtbaar worden."
       },
       {
-        "name": "De Sandwich Schaduwtechniek",
-        "description": "Plaats schaduwlagen zowel direct onder het onderwerp (voor omgevingsschaduw) als geknipt bovenop het onderwerp (voor vormschaduw) met een lage penseelflow van 1-2%.",
-        "when_to_use": "Bij het integreren van complexe objecten of dieren in een gras- of rotshorizon",
+        "name": "Contrast Controlelaag (Value Check Layer)",
+        "description": "Maak een nieuwe laag aan, vul deze met 50% grijs en zet de overvloeimodus (Blend Mode) op Color om een accurate zwart-wit weergave te krijgen van de helderheidswaarden.",
+        "when_to_use": "Bij het controleren of de ingevoegde elementen dezelfde contrastdiepte hebben als de achtergrond.",
         "tools": [
-          "Brush",
-          "Multiply",
+          "Layers",
+          "Color Blend Mode"
+        ],
+        "effect": "De afbeelding verandert in een pure grijswaardenweergave zonder dat het contrast zelf wordt aangepast."
+      },
+      {
+        "name": "De Schaduw-Sandwich",
+        "description": "Plaats schaduwlagen zowel direct onder als geknipt (Clipping Mask) over het onderwerp heen met de overvloeimodus (Blend Mode) op Multiply om diepte stapsgewijs op te bouwen.",
+        "when_to_use": "Bij het realistisch integreren van een dier of object op een fysieke ondergrond.",
+        "tools": [
+          "Multiply Blend Mode",
           "Clipping Mask"
         ],
-        "effect": "De schaduw bouwt zich uiterst vloeiend op zonder vlekkerige, vormeloze zwarte gaten te creëren"
+        "effect": "De schaduwen bouwen zich organisch op rondom en op de randen van het onderwerp."
       }
     ],
-    "color_approach": "Kleur wordt gecontroleerd via een Luminosity-grijze controlelaag gecombineerd met een maximale Vibrance-laag om pure tintverschillen bloot te leggen. Er wordt voor gezorgd dat schaduwen nooit puur grijs zijn, maar altijd een complementaire kleurzweem bevatten op basis van de omgeving (zoals magenta of blauw).",
-    "local_adjustments": "Lokale aanpassingen leunen zwaar op Blend If-instellingen binnen masker-eigenschappen, waarmee curves-aanpassingen specifiek worden beperkt tot uitsluitend de hoogste lichten of diepste schaduwen van een selectie.",
+    "color_approach": "Kleur wordt strikt gecontroleerd door het toevoegen van een extra verzadigings-controlelaag (Selective Color met specifieke zwart-instellingen) om radioactieve, oververzadigde tinten te temperen. Schaduwen worden nooit puur zwart of grijs gelaten, maar ingekleurd met de omgevingskleur (zoals blauw uit de lucht of rood als reflectie van omliggend fruit) via Hue/Saturation of handmatige penselen.",
+    "local_adjustments": "Lokale aanpassingen worden uitsluitend uitgevoerd via clipping masks gekoppeld aan curven (Curves) of via slimme objecten (Smart Objects). Hierdoor kan met blend if specifiek de schaduw of het hooglicht binnen één lokaal object gecorrigeerd worden zonder omliggende elementen te raken.",
     "what_to_avoid": [
-      "Vermijd het gebruik van pure grijstinten of zwart voor schaduwen, omdat dit de compositie modderig en plat maakt.",
-      "Vermijd het oversatureren van universele elementen zoals lucht en gras; omdat het menselijk oog deze dagelijks ziet, vallen fouten hierin direct op."
+      "Vermijd het gebruik van pure zwarte of grijze penselen voor schaduwen, omdat dit resulteert in modderige en onrealistische resultaten.",
+      "Gebruik de gum (Eraser Tool) niet direct op pixellagen om vernietiging van beeldinformatie te voorkomen."
     ],
-    "best_for": "Commerciële advertenties en fantasierijke fotomanipulaties waarbij absolute controle over schone uitsnedes en kleurgradaties vereist is.",
+    "best_for": "Fotografen die complexe fotomontages, surrealistische concepten of commerciële productadvertenties naadloos willen samenvoegen.",
     "unique_insights": [
-      "Docu-lagen en Smart Objects negeren transparante pixels die door Blend If zijn gecreëerd; als je een Blend If-laag omzet naar een Smart Object, kun je er daarna perfecte randeffecten zoals Inner Glow op toepassen.",
-      "Bij het handmatig schilderen van schaduwen met een muis moet de flow-waarde extreem laag gezet worden (1% tot 2%) om harde, onnatuurlijke randen te voorkomen.",
-      "Door een grijze laag op Luminosity te zetten en daarboven een extreem verzadigde Vibrance-laag te plaatsen, zie je direct de verborgen kleurverschillen in zogenaamd 'wit' materiaal."
+      "Door Whites vóór Highlights aan te passen bij felle tegenlichtcomposities, blijft fijnere randinformatie veel beter behouden.",
+      "Het converteren van een laag met een actieve Blend If-instelling naar een Smart Object zorgt ervoor dat laagstijlen zoals Inner Glow zich correct naar de nieuwe, transparante randen vormen.",
+      "Bij het handmatig schilderen van schaduwen met een muis moet de Flow-instelling van het penseel extreem laag gezet worden (1% tot 2%) om harde, vormloze vlekken te voorkomen."
     ],
-    "style_preview": "Deze stijl levert een uiterst levendige, scherpe en gepolijste hyperrealistische look op die perfect is voor high-end advertenties of surrealistische kunst. De bewerkingen zijn minutieus gecontroleerd op basis van objectieve waarden in plaats van visueel gokken. Fotografen die streven naar een fabelachtig mooie en kleurrijke integratie van diverse elementen zullen deze methode waarderen. Het verwachte effect is een fabelachtig helder eindproduct met naadloze dieptewerking."
+    "style_preview": "Deze stijl biedt een hyperrealistische en magische sfeer waarin losse foto-elementen perfect versmelten tot één vloeiend geheel. Abby Esparza legt de nadruk op een mathematisch gecontroleerde opbouw van contrast en kleur via analytische hulplagen. Het werkt het best voor studio-composites en creatieve reclame-uitingen onder heldere daglicht- of gouden uromstandigheden. Het verwachte resultaat is een fabelachtig strakke plaat waarin de kijker niet kan zien waar de afzonderlijke foto's ophouden en de manipulatie begint."
   },
   {
     "video_title": "Beginner Photoshop Tutorial for Photo Editing | Made by a Travel Photographer",
@@ -56806,91 +56819,101 @@
     "genre": [
       "reisfotografie",
       "landschap",
-      "wildlife"
+      "algemeen"
     ],
     "light_conditions": [
       "daglicht",
-      "diffuus licht"
+      "bewolkt",
+      "harde zon"
     ],
     "mood": [
-      "sfeervol",
-      "naturalistisch"
+      "naturalalistisch",
+      "levendig",
+      "krachtig"
     ],
     "software": [
       "Photoshop",
       "Lightroom Classic"
     ],
-    "style_description": "Natural Travel Glow Style",
-    "philosophy": "Photoshop is een uiterst krachtig raster- en pixelgebaseerd bewerkingsprogramma dat voor fotografen effectief ingezet moet worden zonder te verdwalen in overbodige grafische functies. Non-destructief werken met aanpassingslagen behoudt de flexibiliteit om projecten later te herzien. De camera-engine dient als basis voor de initiële RAW-ontwikkeling.",
+    "style_description": "Clean Realistische Reisfotografie Bewerking",
+    "philosophy": "Photoshop is een pixel-gebaseerde editor die het best presteert wanneer overbodige tools worden genegeerd en de focus ligt op wat telt voor fotografen. Het behoud van resolutie en non-destructief werken via slimme objecten vormt de basis van elke hoogwaardige aanpassing. RAW-bestanden moeten altijd eerst correct geïnterpreteerd worden via een krachtige raw-processor voordat de pixelbewerking start.",
     "workflow_order": [
-      "stap 1: importeer en ontwikkel de RAW-foto via Lightroom Classic of direct in de Camera Raw-interface",
-      "stap 2: pas lenscorrecties, ruisonderdrukking (Denoise) en basisscherpte toe in de Camera Raw-module",
-      "stap 3: open de pixel-laag in Photoshop en voeg contrast toe met curves en selectieve verzadiging via maskerlagen",
-      "stap 4: pas creatieve filters toe zoals Gaussian Blur in combinatie met overvloeimodi voor een subtiele sfeerglow"
+      "stap 1: open het RAW-bestand in Camera Raw en corrigeer belichting en ruis",
+      "stap 2: importeer de foto als pixellaag in Photoshop en recht de horizon",
+      "stap 3: dupliceer de basislaag voor destructieve retoucheerstappen",
+      "stap 4: pas lokale contrasten en sfeer toe met aanpassingslagen en maskers"
     ],
     "techniques": [
       {
-        "name": "RAW Schaduwherstel met Maskering",
-        "description": "Haal onderbelichte schaduwen op via de schuifregelaar in Camera Raw en pas verscherping toe met een Masking-masker (Alt-ingedrukt houden) om de herstelde ruis in egale vlakken te ontzien.",
-        "when_to_use": "Bij sterk onderbelichte RAW-opnames met veel potentieel detail in de donkere partijen",
+        "name": "Camera Raw Schaduw-Herstel",
+        "description": "Schuif in het Light-paneel de Shadows-slider naar rechts (+80 of hoger) om details in zwaar onderbelichte delen te herstellen.",
+        "when_to_use": "Bij RAW-opnames met een hoog dynamisch bereik waar de schaduwen onderbelicht zijn geraakt.",
         "tools": [
-          "Camera Raw (Sharpening / Masking)"
+          "Camera Raw (Photoshop)"
         ],
-        "effect": "De randen en details worden scherp geaccentueerd zonder dat de achtergrondruis toeneemt"
+        "effect": "Voorheen onzichtbare details in de donkere partijen worden volledig zichtbaar."
+      },
+      {
+        "name": "Gedetailleerde Maskering van Verscherping",
+        "description": "Houd de Option/Alt-key ingedrukt terwijl je de Masking-slider in het Details-paneel naar rechts sleept om de verscherping te beperken tot de witte randen.",
+        "when_to_use": "Tijdens het verscherpen van een foto om te voorkomen dat er ruis in egale vlakken ontstaat.",
+        "tools": [
+          "Camera Raw (Photoshop)"
+        ],
+        "effect": "Alleen de harde contouren worden verscherpt, terwijl de achtergrondruis ongemoeid blijft."
+      },
+      {
+        "name": "Horizon Rechtzetten via Straighten Tool",
+        "description": "Activeer de Crop Tool, selecteer de Straighten Tool in de bovenbalk en trek een rechte lijn over de scheve horizonlijn.",
+        "when_to_use": "Bij landschaps- of reisfoto's waarbij de camera tijdens de opname onbedoeld gekanteld was.",
+        "tools": [
+          "Crop Tool"
+        ],
+        "effect": "De foto wordt automatisch exact geroteerd en uitgesneden zodat de horizon perfect waterpas loopt."
       },
       {
         "name": "Content-Aware Retoucheren",
-        "description": "Dupliceer de laag naar een 'cleanup layer' en schilder met de Spot Healing Brush ingesteld op Content-Aware over storende kabels, touwen of stofvlekken.",
-        "when_to_use": "Voor het snel en naadloos elimineren van ongewenste omgevingsfactoren",
+        "description": "Gebruik de Spot Healing Brush Tool met de modus ingesteld op Normal en het type op Content-Aware om over storende kabels of elementen heen te schilderen.",
+        "when_to_use": "Voor het snel verwijderen van vlekken, elektriciteitsdraden of touwen in een landschap.",
         "tools": [
-          "Spot Healing Brush"
+          "Spot Healing Brush Tool"
         ],
-        "effect": "De storende elementen verdwijnen en worden onzichtbaar vervangen door omliggende texturen"
+        "effect": "De ongewenste objecten verdwijnen en worden vervangen door een slim gegenereerde textuur uit de directe omgeving."
       },
       {
-        "name": "Radiaal Maskeren voor Midden-Focus",
-        "description": "Verhoog de helderheid globaal, vul het masker met zwart (Invert) en schilder met een groot wit penseel (Hardness 0%) enkel in het centrum van het beeld.",
-        "when_to_use": "Wanneer er sprake is van natuurlijke lensvignettering en de nadruk op het centrum moet liggen",
+        "name": "Radiale Centrum-Oplichting",
+        "description": "Voeg een Brightness/Contrast laag toe, verhoog de helderheid naar +35, inverseer het masker naar zwart met Ctrl+I en schilder met een groot, zacht wit penseel (Hardness 0%) in het midden.",
+        "when_to_use": "Om handmatig vignettering tegen te gaan en de focus subtiel naar het centrale onderwerp te trekken.",
         "tools": [
-          "Brush",
           "Brightness/Contrast",
-          "Layer Mask"
+          "Brush Tool"
         ],
-        "effect": "Het midden van de foto licht subtiel op, wat de blik van de kijker direct naar het hoofdonderwerp trekt"
+        "effect": "Het midden van de foto licht subtiel op met een onzichtbare, vloeiende overgang naar de donkere hoeken."
       },
       {
-        "name": "Glow-Effect via Gaussian Blur",
-        "description": "Dupliceer de pixel-laag, pas een Gaussian Blur toe met een straal (Radius) van 37 pixels en zet de overvloeimodus op Linear Light met een verlaagde dekking van 50%.",
-        "when_to_use": "Bij sfeervolle reis- en landschapsbeelden om een dromerige, zachte sfeer te creëren",
+        "name": "Orton-Glow Effect via Gaussian Blur",
+        "description": "Dupliceer de laag, pas een Gaussian Blur toe met een straal (Radius) van 37 pixels en verander de overvloeimodus (Blend Mode) naar Linear Dodge met een verlaagde dekking (Opacity) van 50%.",
+        "when_to_use": "Om een dromerige, zachte en sfeervolle gloed toe te voegen aan landschaps- of reisfoto's.",
         "tools": [
           "Gaussian Blur",
-          "Linear Light"
+          "Linear Dodge Blend Mode"
         ],
-        "effect": "De foto krijgt een zachte, dromerige gloed over de lichte partijen heen zonder scherpte te verliezen"
-      },
-      {
-        "name": "Laagmaskers Kopiëren en Combineren",
-        "description": "Kopieer een handgemaakt masker van de ene aanpassingslaag naar de andere door Alt ingedrukt te houden en het masker naar de doellaag te slepen.",
-        "when_to_use": "Wanneer exact hetzelfde geselecteerde gebied zowel een contrast- als een kleurcorrectie behoeft",
-        "tools": [
-          "Layer Mask"
-        ],
-        "effect": "Beide effecten worden perfect synchroon en uitsluitend op dezelfde lokale zone toegepast"
+        "effect": "Er ontstaat een sprookjesachtige, zachte gloed over de lichte delen zonder dat de basisscherpte volledig verdwijnt."
       }
     ],
-    "color_approach": "Kleur wordt gecontroleerd gecorrigeerd door subtiele verschuivingen in het Color Balance-paneel, waarbij schaduwen een lichte cyaantint krijgen en highlights neigen naar magenta voor een filmische, uitgebalanceerde reissfeer.",
-    "local_adjustments": "Lokale aanpassingen worden hoofdzakelijk uitgevoerd met uiterst zachte penselen (0% hardheid) op omgekeerde zwarte maskers, waarbij de flow en dekking rond de 50% worden gehouden voor geleidelijke effectopbouw.",
+    "color_approach": "Kleur wordt op een naturalistische maar krachtige manier benaderd. In de Color Balance-laag worden de midtonen subtiel richting geel verschoven om warmte te introduceren, terwijl de hooglichten een vleugje magenta krijgen en de schaduwen worden gekoeld met cyaan. Dit creëert een uitgebalanceerde, licht filmische look die typerend is voor professionele reisfotografie.",
+    "local_adjustments": "Lokale aanpassingen leunen zwaar op handmatig schilderen in laagmaskers (Layer Masks). Door gebruik te maken van geavanceerde AI-tools zoals de Object Selection Tool worden maskers snel gegenereerd, waarna ze met zachte penselen (Hardness 0%) vloeiend worden ingeblend om harde overgangen te vermijden.",
     "what_to_avoid": [
-      "Vermijd het definitief croppen van pixels met 'Delete Cropped Pixels' aangevinkt, zodat composities altijd hersteld kunnen worden.",
-      "Vermijd het rechtstreeks bewerken op de achtergrondlaag; werk altijd op kopieën om destructieve fouten te voorkomen."
+      "Zorg ervoor dat 'Delete Cropped Pixels' niet is aangevinkt bij het uitsnijden, om te voorkomen dat buiten de uitsnede vallende pixels permanent worden vernietigd.",
+      "Vermijd het vergroten of verkleinen van gerasterde lagen zonder ze eerst om te zetten in een Smart Object om kwaliteitsverlies te voorkomen."
     ],
-    "best_for": "Reis- en natuurfotografen die hun opnames snel willen opschonen en voorzien van een natuurlijke, professionele sfeerboost.",
+    "best_for": "Beginnende fotografen en reizigers die hun RAW-beelden efficiënt willen opschonen en voorzien van een professionele, sfeervolle uitstraling.",
     "unique_insights": [
-      "Photoshop kan zelf geen RAW-bestanden verwerken; het is een pixel-editor die de Camera Raw-engine op de achtergrond nodig heeft om de data te vertalen.",
-      "By de Alt/Option-toets in te drukken tijdens het slepen van de Masking-schuifbalk in Camera Raw, zie je in zwart-wit exact welke randen verscherpt worden.",
-      "TIFF-bestanden bewaren net als PSD-bestanden alle laaginformatie in Photoshop, maar integreren naadloos terug als een gestapelde variant in Lightroom Classic."
+      "Wanneer een RAW-bestand rechtstreeks in Photoshop wordt geopend, fungeert Camera Raw als de noodzakelijke translator omdat Photoshop zelf geen onbewerkte RAW-data kan tonen.",
+      "Het kopiëren van een complex masker van een contrastlaag naar een kleurlaag (via Option/Alt+sleep) garandeert dat kleur- en contrastwijzigingen exact in dezelfde zones vallen.",
+      "Bij het verkleinen en naderhand weer vergroten van een pixellaag gaat de resolutie permanent verloren, tenzij de laag de status van een Smart Object heeft."
     ],
-    "style_preview": "Deze stijl biedt een naturalistische, heldere en sfeervolle esthetiek die de nadruk legt op de authenticiteit van reisfotografie. Door storende elementen weg te halen en een zachte gloed te introduceren, transformeren alledaagse documentairereizen in krachtige beelden. Het is bij uitstek geschikt voor de fotograaf die de details van de natuur wil respecteren maar een professionele, hoogwaardige afwerking zoekt. Het resultaat is een gebalanceerde en vloeiende foto."
+    "style_preview": "Deze stijl richt zich op het creëren van heldere, levendige en levensechte reisbeelden met een subtiele, dromerige twist. Aperlust combineert een documentaire-achtige scherpte met zachte glow-effecten om landschappen groots aan te zetten. De workflow is perfect voor buitenopnames bij natuurlijk daglicht of bewolkte omstandigheden. Het visuele resultaat is een gebalanceerde foto met diepe schaduwen, herstelde details en een sfeervolle warmte die uitnodigt om naar de locatie te reizen."
   },
   {
     "video_title": "Full Photo Editing Tutorial from Start to Finish in Photoshop for Beginners ",
@@ -56898,85 +56921,106 @@
     "youtube_url": "https://www.youtube.com/watch?v=AX19LCBQhy8",
     "genre": [
       "portret",
-      "algemeen"
+      "trouwfotografie",
+      "fine-art"
     ],
     "light_conditions": [
-      "kunstlicht"
+      "kunstlicht",
+      "diffuus licht",
+      "gemengd licht"
     ],
     "mood": [
       "sfeervol",
-      "levendig"
+      "intiem",
+      "krachtig"
     ],
     "software": [
       "Photoshop"
     ],
-    "style_description": "Studio Portret Achtergrond Glow",
-    "philosophy": "De focus ligt op het volledig beheersen van het nabewerkingsproces binnen één softwarepakket. Door RAW-bestanden eerst nauwkeurig te corrigeren op licht en contrast, ontstaat er een stevig fundament voor geavanceerde technieken. Het uiteindelijke doel is om de natuurlijke textuur te behouden terwijl storende elementen en onregelmatigheden onzichtbaar worden weggewerkt.",
+    "style_description": "High-End Studio Portret Retouching",
+    "philosophy": "Professionele portretbewerking vereist het strikt scheiden van kleur en textuur om de huidtextuur natuurgetrouw te bewaren. Een egale, gecontroleerde studiostijl leunt op het handmatig egaliseren van de huidskleur over het gehele lichaam. Door achtergronden digitaal te manipuleren en te voorzien van een spot-effect (Snoot), krijgt een standaard studiofoto een high-end, luxueuze uitstraling.",
     "workflow_order": [
-      "stap 1: corrigeren van belichting, contrast en basiskleuren in camera raw",
-      "stap 2: verwijderen van kleine afleidingen met de spot healing brush tool",
-      "stap 3: frequentiescheiding toepassen voor egale huidtinten met behoud van textuur",
-      "stap 4: verfijnen van huidskleur en selectieve kleurgradaties met aanpassingslagen",
-      "stap 5: uitsnijden van het onderwerp en een creatief achtergrondeffect (snoot) toevoegen"
+      "stap 1: pas in Camera Raw de basisbelichting aan en activeer 16-bits diepte",
+      "stap 2: reinig de achtergrond en storende elementen met de Spot Healing Brush",
+      "stap 3: voer Frequency Separation uit om huidtinten en texturen apart te bewerken",
+      "stap 4: pas een egale huidskleur-grading toe en voeg een digitaal snoot-effect toe"
     ],
     "techniques": [
       {
-        "name": "RAW Lichtcorrectie",
-        "description": "Verlaag Highlights en Whites naar -40 om details in lichte kleding te herstellen, en verhoog Shadows naar +31 om donkere partijen open te breken.",
-        "when_to_use": "Bij portretten met een hoog contrast of lichte outfits waar textuur verloren dreigt te gaan.",
+        "name": "16-Bits Workflow Activatie",
+        "description": "Klik onderaan de Camera Raw-interface op de workflow-link en wijzig de Depth naar 16 bits per channel om kleurafbraak en banding tijdens zware bewerkingen te voorkomen.",
+        "when_to_use": "Altijd bij het openen van een RAW-portret voordat de overdracht naar de Photoshop-pixelomgeving plaatsvindt.",
         "tools": [
-          "Light Panel"
+          "Camera Raw (Photoshop)"
         ],
-        "effect": "Meer dynamisch bereik en betere doortekening in zowel lichte als donkere partijen."
+        "effect": "De foto behoudt een aanzienlijk grotere hoeveelheid kleur- en resolutiedata tijdens het retoucheren."
       },
       {
-        "name": "Frequentiescheiding Opzetten",
-        "description": "Splits de afbeelding in een kleurlaag met Gaussian Blur (radius 3.0) en een textuurlaag via Apply Image (met Blend Mode 'Add', Scale 2, Offset 0 en Invert ingeschakeld) om details los te koppelen van kleur.",
-        "when_to_use": "Bij high-end huidretouche waarbij vlekken moeten worden weggewerkt zonder de huidstructuur te vervagen.",
+        "name": "Witte Kleding Informatieherstel",
+        "description": "Verlaag de Whites en de Highlights in het Light-paneel om overbelichte details in lichte stoffen of kledingstukken terug te halen.",
+        "when_to_use": "Bij portretten waarbij het onderwerp witte of reflecterende kleding draagt onder felle studiolampen.",
+        "tools": [
+          "Camera Raw (Photoshop)"
+        ],
+        "effect": "Textuur en plooien in de witte kleding worden weer perfect zichtbaar en doortekend."
+      },
+      {
+        "name": "Frequency Separation Opzet (16-bits)",
+        "description": "Dupliceer de laag tweemaal. Pas Gaussian Blur toe op de 'Color'-laag (Radius 3 pixels). Gebruik op de 'Texture'-laag Apply Image met Source ingesteld op 'Color', Blending op 'Add', Scale op 2, Offset op 0 en vink 'Invert' aan. Zet de overvloeimodus op Linear Light.",
+        "when_to_use": "Als basisstap voor high-end huidretouche waarbij structuur en kleur apart gecorrigeerd moeten worden.",
         "tools": [
           "Gaussian Blur",
-          "Apply Image"
+          "Apply Image",
+          "Linear Light Blend Mode"
         ],
-        "effect": "De foto wordt opgedeeld in een wazige kleurlaag en een grijze, scherpe textuurlaag."
+        "effect": "De afbeelding wordt opgesplitst in een wazige kleurlaag en een grijze, scherpe textuurlaag."
       },
       {
-        "name": "Huidskleur Egaliseren met Mixer Brush",
-        "description": "Gebruik de Mixer Brush Tool met een Weight van 9%, Load 70%, Mix 90% en Flow 100% op de kleurlaag om vloeiende overgangen te schilderen.",
-        "when_to_use": "Wanneer er sprake is van vlekkerige schaduwen of harde kleurovergangen op het gezicht en lichaam.",
+        "name": "Huidskleur Egalisering (Solid Color Masking)",
+        "description": "Maak een Solid Color aanpassingslaag, sample een perfect stukje huidskleur (5x5 gemiddelde), zet de overvloeimodus op Color, inverseer het masker naar zwart en schilder met een zacht wit penseel op de huid.",
+        "when_to_use": "Om vlekkerige huidtinten, rode overgangen of kleurverschillen tussen gezicht en handen op te lossen.",
         "tools": [
-          "Mixer Brush Tool"
+          "Solid Color",
+          "Brush Tool",
+          "Color Blend Mode"
         ],
-        "effect": "De huidskleur krijgt een egale, zachte overgang terwijl de oorspronkelijke botstructuur behouden blijft."
+        "effect": "De huid krijgt overal exact dezelfde, harmonieuze basistint zonder verlies van onderliggende details."
       },
       {
-        "name": "Blemishes Verwijderen met Clone Stamp",
-        "description": "Selecteer de textuurlaag en gebruik de Clone Stamp Tool met 0% Hardness om onzuiverheden te vervangen door nabijgelegen schone huidtextuur.",
-        "when_to_use": "Voor het wegwerken van pukkeltjes, rimpels of fijne haartjes zonder de onderliggende kleur aan te tasten.",
+        "name": "Digitale Snoot-Achtergrond Integratie",
+        "description": "Selecteer het onderwerp via Select > Subject en zet haar op een nieuwe laag. Plak een snoot-lichttextuur op een laag daaronder, vergroot deze met Ctrl+T, zet de modus op Screen en pas een Gaussian Blur toe met een Radius van 27 pixels.",
+        "when_to_use": "Bij studio-portretten waarbij de fysieke achtergrond te saai, kreukelig of vlak is gebleven.",
         "tools": [
-          "Clone Stamp Tool"
+          "Select Subject",
+          "Screen Blend Mode",
+          "Gaussian Blur"
         ],
-        "effect": "Pukkeltjes en storende textuurfoutjes verdwijnen op een natuurlijke manier."
+        "effect": "Er verschijnt een realistische, zachte lichtvlek achter het onderwerp die diepte en sfeer toevoegt."
       },
       {
-        "name": "Studio Achtergrond Egaliseren",
-        "description": "Gebruik de Mixer Brush op een samengevoegde laag om kreukels en oneffenheden in de studio-achtergrond volledig plat te strijken.",
-        "when_to_use": "Bij studio-opnames waarbij de papieren of stoffen achtergrond storende vouwen vertoont.",
+        "name": "Snoot Kleur-Matching (Colorized Clipping)",
+        "description": "Voeg een Hue/Saturation laag toe direct boven de snoot-textuur, activeer de Clipping-optie en vink 'Colorize' aan om de kleur van de achtergrondgloed exact af te stemmen via de Hue-slider.",
+        "when_to_use": "Om de sfeer van de kunstmatige achtergrondvlek te laten matchen met de kleding of make-up van het model.",
         "tools": [
-          "Mixer Brush Tool"
+          "Hue/Saturation",
+          "Clipping Mask"
         ],
-        "effect": "Een strakke, egale en professioneel ogende studio-achtergrond."
+        "effect": "De achtergrondgloed verandert van kleur en mengt op een natuurlijke wijze met de algehele compositie."
       }
     ],
-    "color_approach": "Er wordt gekozen voor een gecontroleerde benadering waarbij de oranje- en roodtinten subtiel worden opgelicht via de Color Mixer om de huid te laten stralen. Onverzadigde rode tinten worden gecorrigeerd en wittinten worden ontdaan van gele onzuiverheden voor een frisse uitstraling.",
-    "local_adjustments": "Lokale aanpassingen worden ingezet via nauwkeurige laagsjablonen (Layer Masks) om de egale huidskleuren alleen op de huid te onthullen. Daarnaast wordt de Pen Tool gebruikt om storende elementen in de achtergrond handmatig te selecteren en weg te poetsen.",
-    "what_to_avoid": "Vermijd het klakkeloos overnemen van de vervagingsradius (Gaussian Blur) bij frequentiescheiding; dit moet altijd visueel worden afgestemd op de specifieke resolutie van de camera om textuurverlies te voorkomen.",
-    "best_for": "Studio-portretfotografen die een complete, professionele workflow voor huidretouche en achtergrondmanipulatie willen leren.",
-    "unique_insights": [
-      "Het retoucheren met de Mixer Brush werkt het beste wanneer je uitzoekt en op een afstand werkt, omdat je zo de algehele schaduwovergangen beter kunt beoordelen.",
-      "Het inschakelen van 16 bits per kanaal (16 bits per channel) bij het importeren garandeert dat er aanzienlijk meer kleurinformatie en resolutie behouden blijft tijdens zware bewerkingen.",
-      "Door eerst de Whites te corrigeren en gele tinten handmatig te verminderen in de Selective Color-laag, krijg je een veel natuurlijker witresultaat in kleding dan via de standaard belichtingsschuif."
+    "color_approach": "Kleurgrading draait om het creëren van een egale, egale en vlekkeloze huidskleur. Via Selective Color worden de gelen uit de witte tinten gefilterd om kleding witter te maken. Rode en oververzadigde tonen in de huid worden gecorrigeerd met een Hue/Saturation laag gericht op de rood-kanalen, waarbij de Lightness subtiel wordt verlaagd om de huid te laten spreken.",
+    "local_adjustments": "Lokale aanpassingen zijn cruciaal en worden toegepast via frequency separation (met de Mixer Brush Tool op een lage Weight van 9% om kleurovergangen handmatig te vermengen) en via nauwkeurige selecties met de Pen Tool om specifieke achtergrond-afleidingen te isoleren en weg te schilderen.",
+    "what_to_avoid": [
+      "Onthoud dat je de radius-waarde bij frequency separation nooit klakkeloos moet kopiëren van andere foto's; stem deze altijd specifiek af op de resolutie en textuur van je huidige beeld.",
+      "Vermijd het retoucheren van de huid terwijl je extreem ver bent ingezoomd; werk op een afstand om kleur-unevenheden beter te kunnen beoordelen."
     ],
-    "style_preview": "Deze stijl kenmerkt zich door een uiterst clean en commercieel studio-uiterlijk met perfect egale huidtinten en een creatieve achtergrond-glow. De kernfilosofie draait om het digitaal perfectioneren van de gecontroleerde studio-omgeving zonder de menselijke structuur te verliezen. Het werkt het beste voor studio-portretten met egale belichting, waarbij het verwachte visuele effect een hoogwaardige, high-end fashion uitstraling is.",
+    "best_for": "Portretfotografen en studio-retouchers die een vlekkeloze huid en een dynamische, professionele studio-uitstraling willen realiseren.",
+    "unique_insights": [
+      "Retoucheren op een grotere visuele afstand (uitgezoomd) versnelt de workflow aanzienlijk en voorkomt dat de retoucher de algehele kleurharmonie uit het oog verliest.",
+      "Bij een 16-bits workflow moet de overvloeimodus in Apply Image voor frequentiescheiding ingesteld worden op 'Add' (met Invert aan) in plaats van 'Subtract', wat de standaard is voor 8-bits beelden.",
+      "Het toevoegen van een subtiele Levels-aanpassingslaag aan het einde waarbij de zwarte en witte clips handmatig worden aangesneden (via Option/Alt), geeft de foto net dat extra beetje pop en commerciële scherpte."
+    ],
+    "style_preview": "Deze stijl vertegenwoordigt de klassieke, hoogwaardige en vlekkeloze studio- en moderedactielook. Ronnix Photography levert een uiterst gepolijst visueel resultaat waarbij de huid perfect egaal is gemaakt zonder dat de poriënstructuur verloren gaat. De stijl blinkt uit bij gecontroleerd studiokunstlicht of diffuus licht. Met dramatische snoot-effecten in de achtergrond transformeer je een simpele studiowand in een high-end, sfeervolle setting met een luxe en glamoureuze uitstraling.",
     "_warnings": [
       "naam lijkt op kanaalnaam (photography)"
     ]

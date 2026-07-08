@@ -57375,5 +57375,184 @@
       "Het stapelen van een verschilwolken-filter (Difference Clouds) op een witte basislaag creëert een organische structuur die met de juiste contrastwaarden perfect transformeert tot angstaanjagend realistische aderen."
     ],
     "style_preview": "Een uiterst dramatische, filmische en detailrijke bewerkingsstijl die uitblinkt in het creëren van grootse visuele verhalen. De sfeer is mysterieus en neigt vaak naar fantasy of horror, gekenmerkt door diepe schaduwen en felle lichtaccenten. Deze stijl werkt het best bij studio- of portretfoto's die in een volledig nieuwe, stormachtige omgeving geplaatst moeten worden. Het resultaat is een oogverblindend en complex kunstwerk met een tastbare textuur."
+  },
+  {
+    "video_title": "Lightroom and Photoshop Tutorial for Beginners",
+    "photographer_name": "Josh Katz",
+    "youtube_url": "https://www.youtube.com/watch?v=2ucydClPe4Q",
+    "genre": [
+      "straatfotografie",
+      "architectuur"
+    ],
+    "light_conditions": [
+      "daglicht"
+    ],
+    "mood": [
+      "krachtig",
+      "dramatisch",
+      "filmisch"
+    ],
+    "software": [
+      "Lightroom Classic",
+      "Photoshop"
+    ],
+    "style_description": "High Contrast Dramatic Street",
+    "philosophy": "Editing maakt een goede foto geweldig en een geweldige foto fantastisch. Het is essentieel om vooraf een duidelijke visie te hebben van wat je wilt bereiken in plaats van doelloos met schuifjes te spelen. De beste manier om software te leren is door problemen pas op te lossen wanneer je ze daadwerkelijk tegenkomt.",
+    "workflow_order": [
+      "stap 1: scheve lijnen rechttrekken en storende elementen wegsnijden",
+      "stap 2: lenscorrecties en perspectief (Keystoning) aanpassen",
+      "stap 3: globale belichting, contrast en schaduwen instellen",
+      "stap 4: individuele kleuren finetunen in het HSL-paneel"
+    ],
+    "techniques": [
+      {
+        "name": "Perspectiefcorrectie",
+        "description": "Pas de verticale transformatie-slider aan om 'keystoning' (het achterover leunen van gebouwen) te corrigeren zodat lijnen loodrecht lopen.",
+        "when_to_use": "Bij architectuur- of straatfoto's waarbij gebouwen vanaf een laag standpunt zijn gefotografeerd.",
+        "tools": [
+          "Lens Corrections"
+        ],
+        "effect": "Het gebouw wordt optisch rechtgetrokken alsof het vanaf de juiste hoogte is gefotografeerd."
+      },
+      {
+        "name": "Contrast Push",
+        "description": "Verhoog het contrast licht om de foto direct een scherpere indruk te geven en de structuren te versterken.",
+        "when_to_use": "Bij vlakke raw-bestanden die futloos uit de camera komen.",
+        "tools": [
+          "Tone"
+        ],
+        "effect": "De scheiding tussen licht en donker wordt groter waardoor het beeld meer pop krijgt."
+      },
+      {
+        "name": "Clarity Extensie",
+        "description": "Verhoog de Clarity-slider aanzienlijk om het lokaal contrast in de middentonen te versterken voor een stoere look.",
+        "when_to_use": "Voor een rauwe, scherpe uitstraling in urban- en straatfotografie.",
+        "tools": [
+          "Presence"
+        ],
+        "effect": "Randen en texturen in de foto worden extreem geaccentueerd."
+      },
+      {
+        "name": "Zwartwaarden Verlagen",
+        "description": "Sleep de Blacks-slider fors naar links om een diep, dramatisch en donker gevoel in de schaduwpartijen te forceren.",
+        "when_to_use": "Wanneer de foto een mysterieuze of zware sfeer nodig heeft.",
+        "tools": [
+          "Tone"
+        ],
+        "effect": "De donkerste delen van de foto worden gitzwart zonder restdetails."
+      },
+      {
+        "name": "Highlight Priority Vignette",
+        "description": "Voeg een subtiel donker vignet toe en kies de 'Highlight Priority'-stijl om de hoeken te verduisteren terwijl lichte delen daar natuurlijk overvloeien.",
+        "when_to_use": "Aan het einde van de bewerking om de blik naar het centrum van de actie te trekken.",
+        "tools": [
+          "Effects"
+        ],
+        "effect": "De randen worden donkerder, wat zorgt voor een intiemer en dramatischer beeld."
+      }
+    ],
+    "color_approach": "De fotograaf mijdt de algehele verzadigingsknop (Saturation) om slordige resultaten te voorkomen en geeft de voorkeur aan Vibrance. Kleuraanpassingen worden specifiek per tint uitgevoerd in het HSL-paneel om individuele kleuren zoals rood of oranje selectief te versterken.",
+    "local_adjustments": "Lokale aanpassingen worden hoofdzakelijk ingezet voor zware retoucheerklussen. Ongeveer 5 tot 10 procent van de foto's verhuist naar Photoshop om objecten zoals temperatuurmeters of ongewenste lensflares volledig onzichtbaar te maken.",
+    "what_to_avoid": [
+      "Vermijd de algehele Saturation-bar omdat deze kleuren snel lelijk en opzichtig overstuurt",
+      "Vermijd een overduidelijk vignet; als het vignet direct opvalt voor de kijker is het verkeerd uitgevoerd"
+    ],
+    "best_for": "Straatfotografen die houden van een grafische, scherpe look met diepe zwarten en strakke stedelijke lijnen.",
+    "unique_insights": [
+      "Hij adviseert om sliders bewust eerst extreem naar links en rechts te jagen om de absolute grenzen van de data in de foto te leren kennen.",
+      "Hij hanteert een 'fight-or-flight'-leermethode: leer een tool pas op het moment dat je een foto hebt die niet afkomt zonder die specifieke tool.",
+      "In plaats van urenlang video's te kijken, raadt hij aan om bij specifieke toolvragen direct de geschreven Help-documentatie van Adobe te gebruiken voor maximale snelheid."
+    ],
+    "style_preview": "Deze stijl levert een grafische, contrastrijke stadslook op die perfect past bij rauwe straatfotografie. De kernfilosofie is gebaseerd op het versterken van de aanwezige compositie door structuur en diepe schaduwen aan te zetten. Het werkt het beste bij hard daglicht waar heldere lijnen en diepe schaduwen elkaar afwisselen. Het verwachte visuele effect is een stoere, messcherpe plaat met een krachtige dynamiek."
+  },
+  {
+    "video_title": "Complete LIGHTROOM Tutorial For Beginners",
+    "photographer_name": "Maarten Schrader",
+    "youtube_url": "https://www.youtube.com/watch?v=i01G_ANeSpU",
+    "genre": [
+      "cinematisch",
+      "portret",
+      "fijn-art"
+    ],
+    "light_conditions": [
+      "tegenlicht",
+      "gouden uur"
+    ],
+    "mood": [
+      "filmisch",
+      "moody",
+      "rustig"
+    ],
+    "software": [
+      "Lightroom Classic"
+    ],
+    "style_description": "Soft Cinematic Triad Tone",
+    "philosophy": "Een analoge, cinematische sfeer ontstaat door het harmonieus samenspel van kleurtheorie en curvecontrole. Het gaat nooit om één magisch schuifje, maar om de gelaagde interactie tussen diverse panelen. Een superieure bewerking streeft naar een zacht, organisch beeld in plaats van digitale oververscherping.",
+    "workflow_order": [
+      "stap 1: witbalans neutraliseren om kleuren correct te registreren",
+      "stap 2: curves instellen om de tonale basis en overrides te bepalen",
+      "stap 3: split-toning toepassen voor de filmische basiskleuring",
+      "stap 4: kalibratie (Calibration) gebruiken om de huidtinten te perfectioneren"
+    ],
+    "techniques": [
+      {
+        "name": "Tooncurve Override",
+        "description": "Gebruik de Tone Curve om de schaduwen gecontroleerd omhoog te liften en de sliders te overr歸den voor een matte look.",
+        "when_to_use": "Voor het creëren van een vintage of filmische basistoon in de schaduwpartijen.",
+        "tools": [
+          "Tone Curve"
+        ],
+        "effect": "De diepste zwarte delen transformeren in een zacht, mat donkergrijs."
+      },
+      {
+        "name": "Highlight Reductie",
+        "description": "Verlaag de Highlights drastisch om de digitale waas (haze) weg te nemen en felle clipping te herstellen.",
+        "when_to_use": "Onmisbaar bij het realiseren van analoge, cinematische stijlen met zacht licht.",
+        "tools": [
+          "Tone"
+        ],
+        "effect": "Overbelichte delen krijgen hun textuur terug en de algehele sfeer wordt zachter."
+      },
+      {
+        "name": "Clarity Reductie",
+        "description": "Verlaag de Clarity-slider licht naar negatieve waarden om de harde digitale scherpte te breken.",
+        "when_to_use": "Bij portretten of dromerige scènes waar een analoge zachtheid gewenst is.",
+        "tools": [
+          "Presence"
+        ],
+        "effect": "De foto krijgt een dromerige, vloeiende overgang in de middentonen."
+      },
+      {
+        "name": "Scherpte Maskeren",
+        "description": "Houd de Option-toets ingedrukt tijdens het schuiven met Masking om uitsluitend de harde contrastlijnen te verscherpen.",
+        "when_to_use": "Bij het exporteren van portretten om te voorkomen dat huidonzuiverheden of ruis worden verscherpt.",
+        "tools": [
+          "Detail"
+        ],
+        "effect": "Alleen de essentiële contouren (zoals de ogen) worden scherp, de rest blijft zacht."
+      },
+      {
+        "name": "Kleurcurve Schaduwcorrectie",
+        "description": "Pas de individuele RGB-curves aan in de linkerkant (schaduwen) om overtollig groen handmatig weg te drukken met paars.",
+        "when_to_use": "Wanneer split-toning of kalibratie de donkere tonen ongewenst heeft verkleurd.",
+        "tools": [
+          "Tone Curve"
+        ],
+        "effect": "De schaduwen keren terug naar een perfect, zuiver neutraal zwart."
+      }
+    ],
+    "color_approach": "Er wordt gewerkt met een verfijnd triadisch kleurenpalet: groen in de schaduwen, blauw via split-toning in de lichte delen, en een natuurlijke complementaire oranje tint voor de huid. Dit bootst de kleurstelling van klassieke bioscoopfilms na.",
+    "local_adjustments": "Er worden subtiele, maskers ingezet. Via 'Select Subject' krijgt het model een fractie extra contrast om los te komen van de achtergrond, terwijl de achtergrond via een textuurverlaging bewust zachter wordt gemaakt.",
+    "what_to_avoid": [
+      "Vermijd het blindelings omhoog jagen van de Clarity-slider omdat dit de foto een goedkope, onrealistische look geeft",
+      "Vermijd het aanpassen van HSL voordat de witbalans klopt, omdat de software de kleuren anders verkeerd indexeert"
+    ],
+    "best_for": "Fotografen die een professionele, smaakvolle filmlook willen toepassen op portretten in het tegenlicht.",
+    "unique_insights": [
+      "De Tooncurve heeft altijd het laatste woord; zij overrulet de gewone belichtingssliders en dat is hét geheim achter unieke contraststijlen.",
+      "De witbalans bepaalt hoe Lightroom kleuren registreert; bij een verkeerde temperatuur kun je in het HSL-paneel bepaalde tinten simpelweg niet meer isoleren.",
+      "Huidtinten perfectioneer je niet in HSL, maar corrigeer je door in het kalibratiepaneel de schaduw-tinten resoluut naar de magenta-zijde te trekken."
+    ],
+    "style_preview": "Deze verfijnde stijl emuleert de esthetiek van analoge cinema door matte schaduwen te combineren met een doordacht palet van groen-, blauw- en oranjetonen. De filosofie verwerpt de harde, klinische scherpte van moderne camera's ten gunste van zachtheid en textuur. Dit werkt magistraal bij portretten in warm tegenlicht. Het resultaat is een hoogwaardige, dromerige plaat die rechtstreeks uit een Hollywood-film lijkt te komen."
   }
 ]

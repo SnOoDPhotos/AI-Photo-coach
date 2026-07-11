@@ -39,6 +39,10 @@
     "api/style-preview.js": {
       "maxDuration": 60,
       "memory": 512
+    },
+    "api/rollback.js": {
+      "maxDuration": 30,
+      "memory": 256
     }
   },
   "headers": [

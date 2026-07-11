@@ -727,65 +727,52 @@ function showAddError(msg) {
   el.textContent = msg; el.classList.remove('hidden');
 }
 
-function importJsonFile(input) {
-  var file = input.files[0];
+async function importJsonFile(event) {
+  var file = event.target.files[0];
   if (!file) return;
-  var el = document.getElementById('importResult');
-  el.style.color = 'var(--accent)';
-  el.textContent = 'Bestand lezen...';
-  var reader = new FileReader();
-  reader.onload = function(e) {
-    try {
-      var data = JSON.parse(e.target.result);
-      if (!Array.isArray(data)) throw new Error('Geen geldige array');
-      localKnowledge = data;
-      el.textContent = data.length + ' entries geladen. Opslaan...';
-      fetch('/api/knowledge', {
-        method: 'POST', headers: {'Content-Type':'application/json'},
-        body: JSON.stringify({ action: 'save_all', token: authToken, entries: localKnowledge })
-      })
-      .then(function(r) { return r.json(); })
-      .then(function(d) {
-        if (d.success) { el.textContent = '✓ ' + d.count + ' entries geimporteerd en opgeslagen!'; renderAll(); }
-        else { el.style.color = 'var(--error)'; el.textContent = '✗ ' + (d.error || 'Fout'); }
-      })
-      .catch(function(err) { el.style.color = 'var(--error)'; el.textContent = '✗ ' + err.message; });
-    } catch(err) { el.style.color = 'var(--error)'; el.textContent = '✗ Ongeldig JSON: ' + err.message; }
-  };
-  reader.readAsText(file);
-  input.value = '';
-}
+  var statusEl = document.getElementById('importStatus');
+  statusEl.textContent = 'Bestand lezen...';
+  statusEl.classList.remove('hidden');
 
-async function pushToDatabase() {
-  if (!localKnowledge.length) { alert('Geen kennisbank geladen.'); return; }
-  if (!confirm(localKnowledge.length + ' entries naar database sturen?')) return;
-  var el = document.getElementById('pushStatus');
-  el.textContent = 'Bezig met uploaden...';
+  try {
+    var text = await file.text();
+    var imported = JSON.parse(text);
+    if (!Array.isArray(imported)) throw new Error('Geen geldige JSON array');
 
-  var CHUNK = 100;
-  var total = Math.ceil(localKnowledge.length / CHUNK);
+    // Voeg toe aan localKnowledge
+    var added = 0;
+    imported.forEach(function(e) {
+      if (e && e.video_title) {
+        var exists = localKnowledge.findIndex(function(x) {
+          return x.youtube_url && e.youtube_url && x.youtube_url === e.youtube_url;
+        });
+        if (exists === -1) { localKnowledge.push(e); added++; }
+        else if ((e.techniques||[]).length + (e.unique_insights||[]).length >
+                 (localKnowledge[exists].techniques||[]).length + (localKnowledge[exists].unique_insights||[]).length) {
+          localKnowledge[exists] = e; added++;
+        }
+      }
+    });
 
-  for (var i = 0; i < total; i++) {
-    var chunk = localKnowledge.slice(i * CHUNK, (i + 1) * CHUNK);
-    el.textContent = 'Uploaden chunk ' + (i+1) + ' van ' + total + '...';
-    try {
+    renderAll();
+    statusEl.textContent = added + ' entries geladen. Uploaden naar database...';
+
+    // Chunked upload
+    var CHUNK = 100;
+    var total = Math.ceil(localKnowledge.length / CHUNK);
+    for (var ci = 0; ci < total; ci++) {
+      var chunk = localKnowledge.slice(ci * CHUNK, (ci + 1) * CHUNK);
+      statusEl.textContent = 'Uploaden chunk ' + (ci+1) + ' van ' + total + '...';
       var r = await fetch('/api/knowledge', {
-        method: 'POST',
-        headers: {'Content-Type':'application/json'},
-        body: JSON.stringify({ action: 'save_chunk', token: authToken, entries: chunk, chunk_index: i, total_chunks: total })
+        method: 'POST', headers: {'Content-Type':'application/json'},
+        body: JSON.stringify({ action: 'save_chunk', token: authToken, entries: chunk, chunk_index: ci, total_chunks: total })
       });
-      var d = await r.json();
-      if (!d.success) {
-        el.textContent = '✗ Fout bij chunk ' + (i+1) + ': ' + (d.error || 'onbekend');
-        return;
-      }
-      if (d.done) {
-        el.textContent = '✓ ' + d.count + ' entries opgeslagen en naar GitHub gepusht!';
-      }
-    } catch(e) {
-      el.textContent = '✗ ' + e.message;
-      return;
+      var res = await r.json();
+      if (!res.success) throw new Error(res.error || 'Chunk mislukt');
     }
+    statusEl.textContent = '✓ ' + localKnowledge.length + ' entries opgeslagen in database!';
+  } catch(e) {
+    statusEl.textContent = '✗ ' + e.message;
   }
 }
 

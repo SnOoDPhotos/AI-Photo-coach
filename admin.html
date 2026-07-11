@@ -730,9 +730,9 @@ function showAddError(msg) {
 async function importJsonFile(event) {
   var file = (event.target ? event.target : event).files[0];
   if (!file) return;
-  var statusEl = document.getElementById('importStatus');
+  var statusEl = document.getElementById('importResult');
   statusEl.textContent = 'Bestand lezen...';
-  statusEl.classList.remove('hidden');
+  if (statusEl) statusEl.classList.remove('hidden');
 
   try {
     var text = await file.text();
@@ -1036,7 +1036,7 @@ async function autoAnalyzeVideos() {
   var statusEl = document.getElementById('autoError');
   statusEl.style.color = 'var(--accent)';
   statusEl.textContent = 'Bezig... 0/' + urls.length + ' verwerkt';
-  statusEl.classList.remove('hidden');
+  if (statusEl) statusEl.classList.remove('hidden');
 
   var allAdded = [], allSkipped = [], allFailed = [];
 
@@ -1300,6 +1300,30 @@ async function resetStylePreviews() {
   } catch(e) {
     statusEl.style.color = 'var(--error)';
     statusEl.textContent = '✗ ' + e.message;
+  }
+}
+
+async function pushToDatabase() {
+  if (!localKnowledge.length) { alert('Geen kennisbank geladen.'); return; }
+  if (!confirm(localKnowledge.length + ' entries naar database sturen?')) return;
+  var el = document.getElementById('initResult');
+  if (el) el.textContent = 'Uploaden...';
+  var CHUNK = 100;
+  var total = Math.ceil(localKnowledge.length / CHUNK);
+  for (var i = 0; i < total; i++) {
+    var chunk = localKnowledge.slice(i * CHUNK, (i + 1) * CHUNK);
+    if (el) el.textContent = 'Uploaden chunk ' + (i+1) + ' van ' + total + '...';
+    try {
+      var r = await fetch('/api/knowledge', {
+        method: 'POST', headers: {'Content-Type':'application/json'},
+        body: JSON.stringify({ action: 'save_chunk', token: authToken, entries: chunk, chunk_index: i, total_chunks: total })
+      });
+      var d = await r.json();
+      if (!d.success) { if (el) el.textContent = '✗ ' + (d.error||'fout'); return; }
+      if (d.done && el) el.textContent = '✓ ' + d.count + ' entries opgeslagen!';
+    } catch(e) {
+      if (el) el.textContent = '✗ ' + e.message; return;
+    }
   }
 }
 

@@ -756,21 +756,37 @@ function importJsonFile(input) {
   input.value = '';
 }
 
-function pushToDatabase() {
+async function pushToDatabase() {
   if (!localKnowledge.length) { alert('Geen kennisbank geladen.'); return; }
   if (!confirm(localKnowledge.length + ' entries naar database sturen?')) return;
-  var el = document.getElementById('initResult');
-  el.style.color = 'var(--accent)'; el.textContent = 'Bezig...';
-  fetch('/api/knowledge', {
-    method: 'POST', headers: {'Content-Type':'application/json'},
-    body: JSON.stringify({ action: 'save_all', token: authToken, entries: localKnowledge })
-  })
-  .then(function(r) { return r.json(); })
-  .then(function(d) {
-    if (d.success) { var msg = '✓ ' + d.count + ' entries opgeslagen' + (d.previewsPreserved ? ' (' + d.previewsPreserved + ' previews)' : ''); if (d.github && d.github.success) msg += ' \u2014 GitHub backup ' + d.github.commit; else if (d.github && !d.github.success) msg += ' (GitHub: ' + d.github.reason + ')'; el.textContent = msg; }
-    else { el.style.color = 'var(--error)'; el.textContent = '✗ ' + (d.error || 'Fout'); }
-  })
-  .catch(function(e) { el.style.color = 'var(--error)'; el.textContent = '✗ ' + e.message; });
+  var el = document.getElementById('pushStatus');
+  el.textContent = 'Bezig met uploaden...';
+
+  var CHUNK = 100;
+  var total = Math.ceil(localKnowledge.length / CHUNK);
+
+  for (var i = 0; i < total; i++) {
+    var chunk = localKnowledge.slice(i * CHUNK, (i + 1) * CHUNK);
+    el.textContent = 'Uploaden chunk ' + (i+1) + ' van ' + total + '...';
+    try {
+      var r = await fetch('/api/knowledge', {
+        method: 'POST',
+        headers: {'Content-Type':'application/json'},
+        body: JSON.stringify({ action: 'save_chunk', token: authToken, entries: chunk, chunk_index: i, total_chunks: total })
+      });
+      var d = await r.json();
+      if (!d.success) {
+        el.textContent = '✗ Fout bij chunk ' + (i+1) + ': ' + (d.error || 'onbekend');
+        return;
+      }
+      if (d.done) {
+        el.textContent = '✓ ' + d.count + ' entries opgeslagen en naar GitHub gepusht!';
+      }
+    } catch(e) {
+      el.textContent = '✗ ' + e.message;
+      return;
+    }
+  }
 }
 
 function exportKnowledge() {

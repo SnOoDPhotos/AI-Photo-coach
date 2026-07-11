@@ -643,6 +643,7 @@ function validateAndAdd() {
             ? ' (verbeterde versie, was ' + existingScore + ' → ' + newScore + ' punten)'
             : ' (waarschuwing opgelost, score ' + existingScore + ' → ' + newScore + ' punten)';
           added.push(entry.video_title + reason);
+          addedEntries.push(entry);
         } else {
           skipped.push({ title: entry.video_title, reason: 'bestaat al en is even goed of beter (' + existingScore + ' vs ' + newScore + ' punten) | warning:' + existingHasWarning + ' fixes:' + newFixesWarning });
         }
@@ -680,7 +681,7 @@ function validateAndAdd() {
       document.getElementById('addSuccess').textContent = summary + (detailLines.length ? '\n' + detailLines.join('\n') : '') + ' \u2014 wordt naar database gestuurd...';
       document.getElementById('addSuccess').style.whiteSpace = 'pre-line';
       document.getElementById('addSuccess').classList.remove('hidden');
-      autoPushToDatabase(added.length + ' entries');
+      autoPushToDatabase(added.length + ' entries', addedEntries);
     } else {
       showAddError(summary + '\n' + detailLines.join('\n'));
       document.getElementById('addError').style.whiteSpace = 'pre-line';
@@ -691,26 +692,34 @@ function validateAndAdd() {
   }
 }
 
-function autoPushToDatabase(addedTitle) {
-  fetch('/api/knowledge', {
-    method: 'POST',
-    headers: {'Content-Type':'application/json'},
-    body: JSON.stringify({ action: 'save_all', token: authToken, entries: localKnowledge })
-  })
-  .then(function(r) { return r.json(); })
-  .then(function(d) {
-    var el = document.getElementById('addSuccess');
-    if (d.success) {
-      el.textContent = '✓ "' + addedTitle + '" toegevoegd en opgeslagen in database! (' + d.count + ' entries totaal)';
-    } else {
+async function autoPushToDatabase(addedTitle, newEntries) {
+  // Gebruik add action per entry - veel kleiner payload dan save_all
+  var el = document.getElementById('addSuccess');
+  var entriesToPush = newEntries || localKnowledge.slice(-1);
+  var successCount = 0;
+  for (var i = 0; i < entriesToPush.length; i++) {
+    try {
+      var r = await fetch('/api/knowledge', {
+        method: 'POST',
+        headers: {'Content-Type':'application/json'},
+        body: JSON.stringify({ action: 'add', token: authToken, entry: entriesToPush[i] })
+      });
+      var d = await r.json();
+      if (d.success || d.updated) successCount++;
+      else if (d.error && !d.error.includes('al beter')) {
+        el.classList.add('hidden');
+        showAddError('Database update mislukt: ' + d.error);
+        return;
+      }
+    } catch(e) {
       el.classList.add('hidden');
-      showAddError('Entry lokaal toegevoegd maar database update mislukt: ' + (d.error || 'onbekende fout'));
+      showAddError('Entry lokaal toegevoegd maar database update mislukt: ' + e.message);
+      return;
     }
-  })
-  .catch(function(e) {
-    document.getElementById('addSuccess').classList.add('hidden');
-    showAddError('Entry lokaal toegevoegd maar database update mislukt: ' + e.message);
-  });
+  }
+  if (el && !el.classList.contains('hidden')) {
+    el.textContent = '✓ "' + addedTitle + '" opgeslagen in database! (' + localKnowledge.length + ' entries totaal)';
+  }
 }
 
 function showAddError(msg) {

@@ -519,6 +519,35 @@ module.exports = async function handler(req, res) {
       return res.status(200).json({ success: true, count: entries.length });
     }
 
+    // ── CHUNKED OPSLAAN ──────────────────────────────────────────────────
+    if (action === 'save_chunk') {
+      const token = getToken(req);
+      if (!verifyAdminToken(token)) return res.status(403).json({ error: 'Geen toegang' });
+      const { entries, chunk_index, total_chunks } = req.body;
+      if (!Array.isArray(entries)) return res.status(400).json({ error: 'entries array vereist' });
+      try {
+        if (chunk_index === 0) {
+          // Eerste chunk: vervang alles
+          await saveKnowledge(entries);
+        } else {
+          // Volgende chunks: voeg toe aan bestaande
+          const existing = await loadKnowledge();
+          const combined = [...existing, ...entries];
+          await saveKnowledge(combined);
+        }
+        const isLast = chunk_index === total_chunks - 1;
+        if (isLast) {
+          // Push naar GitHub na laatste chunk
+          const all = await loadKnowledge();
+          await pushToGitHub(all);
+          return res.status(200).json({ success: true, done: true, count: all.length });
+        }
+        return res.status(200).json({ success: true, done: false, chunk: chunk_index });
+      } catch(e) {
+        return res.status(500).json({ error: 'Chunk opslaan mislukt: ' + e.message });
+      }
+    }
+
     // ── REDIS INITIALISEREN vanuit knowledge-base.json ────────────────────
     if (action === 'init_from_file') {
       const token = getToken(req);

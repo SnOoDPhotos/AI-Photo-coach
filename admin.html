@@ -728,7 +728,7 @@ function showAddError(msg) {
 }
 
 async function importJsonFile(event) {
-  var file = event.target.files[0];
+  var file = (event.target ? event.target : event).files[0];
   if (!file) return;
   var statusEl = document.getElementById('importStatus');
   statusEl.textContent = 'Bestand lezen...';

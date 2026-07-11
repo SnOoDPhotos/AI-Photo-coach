@@ -596,7 +596,7 @@ function validateAndAdd() {
     var entries = Array.isArray(parsed) ? parsed : [parsed];
 
     var required = ['video_title', 'genre', 'techniques', 'philosophy', 'unique_insights'];
-    var added = [];
+    var added = [], addedEntries = [];
     var skipped = [];
     var failed = [];
 

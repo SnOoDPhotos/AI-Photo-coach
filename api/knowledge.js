@@ -213,16 +213,57 @@ const NAME_CORRECTIONS = {
   'CREATIVE DC': null,
   'SKY STORY': null,
   'IAMRENSI': null,
-  'GIMP TUT': null
+  'GIMP TUT': null,
+  'WHISPERS OF POWER': null,
+  'BNomandProductions': null,
+  'Benny Productions': null,
+  'MDMZ': null,
+  'P A N T E R': null,
+  'Areeb Productions': null
+};
+
+// Software normalisatie
+const SW_RENAME = {
+  'Camera Raw (Photoshop)': 'Photoshop',
+  'gimp': 'GIMP',
+  'Topaz Studio 2': null,
+};
+const SW_REMOVE = new Set(['Nik Collection','Topaz Photo AI','Topaz Studio 2',
+  'DNG Profile Editor','Imagine AI','Affinity Photo','ON1 Photo RAW','PixInsight','algemeen']);
+const SUPPORTED_SW = new Set(['Lightroom Classic','Lightroom Mobile','Photoshop',
+  'Capture One','DxO PhotoLab','Luminar Neo','darktable','RawTherapee','Snapseed','VSCO','GIMP']);
+
+// Genre normalisatie
+const GENRE_FIX = {
+  'fijn-art': 'fine-art',
+  'stadsfotografie': 'straatfotografie',
+  'verhaal': 'documentaire',
+  'sfeervol': null,
+  'reportage': 'documentaire',
+  'documentary': 'documentaire',
 };
 
 async function saveKnowledge(entries) {
-  // Normaliseer fotografnamen
+  // Normaliseer fotografnamen, software en genres
   let cleaned = entries
-    .filter(e => NAME_CORRECTIONS[(e.photographer_name||'').trim()] !== null)
+    .filter(e => {
+      const name = (e.photographer_name||'').trim();
+      if (NAME_CORRECTIONS[name] === null) return false;
+      // Verwijder entries zonder ondersteunde software
+      const sw = (e.software||[]).filter(s => SW_REMOVE.has(s) ? false : true)
+        .map(s => SW_RENAME[s] || s);
+      return sw.some(s => SUPPORTED_SW.has(s));
+    })
     .map(e => {
       const name = (e.photographer_name || '').trim();
       if (NAME_CORRECTIONS[name]) e.photographer_name = NAME_CORRECTIONS[name];
+      // Software normaliseren
+      const newSw = [...new Set((e.software||[])
+        .filter(s => !SW_REMOVE.has(s))
+        .map(s => SW_RENAME[s] || s))];
+      e.software = newSw;
+      // Genres normaliseren
+      e.genre = [...new Set((e.genre||[]).map(g => GENRE_FIX[g] !== undefined ? GENRE_FIX[g] : g).filter(Boolean))];
       return e;
     });
 

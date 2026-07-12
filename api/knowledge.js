@@ -454,7 +454,12 @@ module.exports = async function handler(req, res) {
         const existing = entries[existingIdx];
         const existingScore = (existing.techniques||[]).length + (existing.unique_insights||[]).length;
         const newScore = (entry.techniques||[]).length + (entry.unique_insights||[]).length;
-        if (newScore > existingScore) {
+        // Warning override: ook accepteren als bestaande waarschuwingen heeft en nieuwe die oplost
+        const existingHasWarning = (existing.techniques||[]).length < 3 || (existing.unique_insights||[]).length < 2
+          || !existing.workflow_order || !existing.color_approach;
+        const newFixesWarning = (entry.techniques||[]).length >= 3 && (entry.unique_insights||[]).length >= 2
+          && entry.workflow_order && entry.color_approach;
+        if (newScore > existingScore || (existingHasWarning && newFixesWarning)) {
           // Behoud style_preview van bestaande entry
           if (existing.style_preview && !entry.style_preview) {
             entry.style_preview = existing.style_preview;

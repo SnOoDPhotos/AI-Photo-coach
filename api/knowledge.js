@@ -244,37 +244,34 @@ const GENRE_FIX = {
 };
 
 async function saveKnowledge(entries) {
-  // Normaliseer fotografnamen, software en genres
-  let cleaned = entries
+  // Normaliseer fotografnamen, software en genres (GEEN deduplicatie hier — die zit in save_chunk)
+  const cleaned = entries
     .filter(e => {
       const name = (e.photographer_name||'').trim();
       if (NAME_CORRECTIONS[name] === null) return false;
-      // Verwijder entries zonder ondersteunde software
-      const sw = (e.software||[]).filter(s => SW_REMOVE.has(s) ? false : true)
-        .map(s => SW_RENAME[s] || s);
+      const sw = (e.software||[]).filter(s => !SW_REMOVE.has(s)).map(s => SW_RENAME[s] || s);
       return sw.some(s => SUPPORTED_SW.has(s));
     })
     .map(e => {
       const name = (e.photographer_name || '').trim();
       if (NAME_CORRECTIONS[name]) e.photographer_name = NAME_CORRECTIONS[name];
-      // Software normaliseren
-      const newSw = [...new Set((e.software||[])
-        .filter(s => !SW_REMOVE.has(s))
-        .map(s => SW_RENAME[s] || s))];
+      const newSw = [...new Set((e.software||[]).filter(s => !SW_REMOVE.has(s)).map(s => SW_RENAME[s] || s))];
       e.software = newSw;
-      // Genres normaliseren
       e.genre = [...new Set((e.genre||[]).map(g => GENRE_FIX[g] !== undefined ? GENRE_FIX[g] : g).filter(Boolean))];
       return e;
     });
+  await kv('SET', REDIS_KEY, JSON.stringify(cleaned));
+}
 
-  // Dedupliceer op YouTube video ID — bewaar hoogste score
+// Dedupliceer op YouTube video ID — alleen voor bulk operaties
+function deduplicateEntries(entries) {
   const getVidId = url => {
     if (!url) return null;
     const m = url.match(/(?:v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
     return m ? m[1].toLowerCase() : null;
   };
   const seen = new Map();
-  cleaned.forEach(e => {
+  entries.forEach(e => {
     const vid = getVidId(e.youtube_url);
     if (!vid) return;
     const score = (e.techniques||[]).length + (e.unique_insights||[]).length;
@@ -283,11 +280,8 @@ async function saveKnowledge(entries) {
       seen.set(vid, e);
     }
   });
-  // Bouw finale lijst: entries zonder URL + beste per URL
-  const noUrl = cleaned.filter(e => !getVidId(e.youtube_url));
-  cleaned = [...noUrl, ...Array.from(seen.values())];
-
-  await kv('SET', REDIS_KEY, JSON.stringify(cleaned));
+  const noUrl = entries.filter(e => !getVidId(e.youtube_url));
+  return [...noUrl, ...Array.from(seen.values())];
 }
 
 // ── Token verificatie (zelfde logica als auth.js) ─────────────────────────
@@ -574,7 +568,7 @@ module.exports = async function handler(req, res) {
       try {
         if (chunk_index === 0) {
           // Eerste chunk: vervang alles
-          await saveKnowledge(entries);
+          await saveKnowledge(deduplicateEntries(entries));
         } else {
           // Volgende chunks: voeg toe aan bestaande
           const existing = await loadKnowledge();

@@ -460,6 +460,7 @@ module.exports = async function handler(req, res) {
           }
           entries[existingIdx] = entry;
           await saveKnowledge(entries);
+          try { await pushToGitHub(entries); } catch(ghErr) { console.log('GitHub push na add/update mislukt:', ghErr.message); }
           return res.status(200).json({ success: true, updated: true, count: entries.length, message: 'Betere versie vervangt bestaande entry' });
         } else {
           return res.status(409).json({ error: 'Bestaande entry is al beter (score: ' + existingScore + ' vs ' + newScore + ')', existing_score: existingScore, new_score: newScore });
@@ -468,6 +469,7 @@ module.exports = async function handler(req, res) {
 
       entries.push(entry);
       await saveKnowledge(entries);
+      try { await pushToGitHub(entries); } catch(ghErr) { console.log('GitHub push na add mislukt:', ghErr.message); }
       return res.status(200).json({ success: true, count: entries.length });
     }
 

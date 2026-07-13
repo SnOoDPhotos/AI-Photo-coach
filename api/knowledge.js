@@ -261,6 +261,20 @@ async function saveKnowledge(entries) {
       return e;
     });
   await kv('SET', REDIS_KEY, JSON.stringify(cleaned));
+  return cleaned; // belangrijk: dit is de daadwerkelijk opgeslagen lijst, kan korter zijn dan de input
+}
+
+// Legt uit waarom een entry door saveKnowledge zou worden weggefilterd (voor foutmeldingen)
+function explainWhyFiltered(entry) {
+  const name = (entry.photographer_name || '').trim();
+  if (NAME_CORRECTIONS[name] === null) {
+    return 'Fotografennaam "' + name + '" staat op de verwijderlijst (waarschijnlijk een kanaalnaam of ongeldige naam).';
+  }
+  const sw = (entry.software || []).filter(s => !SW_REMOVE.has(s)).map(s => SW_RENAME[s] || s);
+  if (!sw.some(s => SUPPORTED_SW.has(s))) {
+    return 'Geen enkele opgegeven software (' + (entry.software||[]).join(', ') + ') wordt ondersteund na normalisatie.';
+  }
+  return 'Onbekende reden — controleer de entry handmatig.';
 }
 
 // Dedupliceer op YouTube video ID — alleen voor bulk operaties
@@ -459,18 +473,26 @@ module.exports = async function handler(req, res) {
             entry.style_preview = existing.style_preview;
           }
           entries[existingIdx] = entry;
-          await saveKnowledge(entries);
-          try { await pushToGitHub(entries); } catch(ghErr) { console.log('GitHub push na add/update mislukt:', ghErr.message); }
-          return res.status(200).json({ success: true, updated: true, count: entries.length, message: 'Betere versie vervangt bestaande entry' });
+          const persisted = await saveKnowledge(entries);
+          const stillPresent = persisted.some(e => extractVideoId(e.youtube_url) === newId || (e.video_title||'').toLowerCase().trim() === newTitle);
+          if (!stillPresent) {
+            return res.status(422).json({ error: 'Entry werd na normalisatie weggefilterd en dus NIET opgeslagen: ' + explainWhyFiltered(entry), count: persisted.length });
+          }
+          try { await pushToGitHub(persisted); } catch(ghErr) { console.log('GitHub push na add/update mislukt:', ghErr.message); }
+          return res.status(200).json({ success: true, updated: true, count: persisted.length, message: 'Betere versie vervangt bestaande entry' });
         } else {
           return res.status(409).json({ error: 'Bestaande entry is al beter (score: ' + existingScore + ' vs ' + newScore + ')', existing_score: existingScore, new_score: newScore });
         }
       }
 
       entries.push(entry);
-      await saveKnowledge(entries);
-      try { await pushToGitHub(entries); } catch(ghErr) { console.log('GitHub push na add mislukt:', ghErr.message); }
-      return res.status(200).json({ success: true, count: entries.length });
+      const persisted = await saveKnowledge(entries);
+      const stillPresent = persisted.some(e => extractVideoId(e.youtube_url) === newId || (e.video_title||'').toLowerCase().trim() === newTitle);
+      if (!stillPresent) {
+        return res.status(422).json({ error: 'Entry werd na normalisatie weggefilterd en dus NIET opgeslagen: ' + explainWhyFiltered(entry), count: persisted.length });
+      }
+      try { await pushToGitHub(persisted); } catch(ghErr) { console.log('GitHub push na add mislukt:', ghErr.message); }
+      return res.status(200).json({ success: true, count: persisted.length });
     }
 
     // ── ENTRY BIJWERKEN (op index of video_title) ─────────────────────────

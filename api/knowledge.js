@@ -611,8 +611,12 @@ module.exports = async function handler(req, res) {
         if (isLast) {
           // Push naar GitHub na laatste chunk
           const all = await loadKnowledge();
-          await pushToGitHub(all);
-          return res.status(200).json({ success: true, done: true, count: all.length });
+          let ghWarning = null;
+          try {
+            const ghResult = await pushToGitHub(all);
+            if (!ghResult.success) ghWarning = 'Redis bijgewerkt, maar GitHub-sync mislukt: ' + ghResult.reason;
+          } catch(ghErr) { ghWarning = 'Redis bijgewerkt, maar GitHub-sync mislukt: ' + ghErr.message; }
+          return res.status(200).json({ success: true, done: true, count: all.length, warning: ghWarning });
         }
         return res.status(200).json({ success: true, done: false, chunk: chunk_index });
       } catch(e) {

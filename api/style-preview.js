@@ -102,8 +102,11 @@ module.exports = async function handler(req, res) {
     let generated = 0;
     const errors = [];
 
-    // Process in parallel batches of 10
+    // Fase 1: verzamel alle Gemini-resultaten in parallelle batches van 10
+    // (GEEN Redis load/save hier - dat gebeurt pas na alle batches, om
+    // race conditions tussen gelijktijdige loadKnowledge/saveKnowledge te voorkomen)
     const PARALLEL = 10;
+    const results = []; // { photographer_name, style_description, text }
     for (let i = 0; i < unique.length; i += PARALLEL) {
       const batch = unique.slice(i, i + PARALLEL);
       await Promise.all(batch.map(async function(entry) {
@@ -122,41 +125,49 @@ module.exports = async function handler(req, res) {
           if (data.error) { errors.push((entry.photographer_name||'?') + ': ' + data.error.message); return; }
           const text = (data.candidates||[]).map(c => ((c.content||{}).parts||[])).flat().map(p => p.text||'').join('').trim();
           if (!text || text.length < 20) { errors.push((entry.photographer_name||'?') + ': lege response'); return; }
-
-          // Update all matching entries in KB
-          const kb = await loadKnowledge();
-          const pg = (entry.photographer_name||'').toLowerCase();
-          const sg = (entry.style_description||'').toLowerCase();
-          let updated = false;
-          kb.forEach(function(e) {
-            if ((e.photographer_name||'').toLowerCase() === pg && (e.style_description||'').toLowerCase() === sg) {
-              e.style_preview = text;
-              updated = true;
-            }
-          });
-          if (updated) {
-            await saveKnowledge(kb);
-            // Sla ook op in aparte previews map (overleeft export naar database)
-            try {
-              const previewsRaw = await kv('GET', 'style_previews:map');
-              const previewMap = previewsRaw ? JSON.parse(previewsRaw) : {};
-              const pk = ((entry.photographer_name||'') + '|' + (entry.style_description||'')).toLowerCase();
-              previewMap[pk] = text;
-              // Sla ook op per entry keys voor snelle lookup
-              kb.forEach(function(e) {
-                if ((e.photographer_name||'').toLowerCase() === pg && (e.style_description||'').toLowerCase() === sg) {
-                  const ek = ((e.youtube_url||'') + '|' + (e.video_title||'')).toLowerCase();
-                  previewMap[ek] = text;
-                }
-              });
-              await kv('SET', 'style_previews:map', JSON.stringify(previewMap));
-            } catch(e2) { console.log('Preview map save error:', e2.message); }
-            generated++;
+          if (!text.trim().endsWith('.') && !text.trim().endsWith('!') && !text.trim().endsWith('?')) {
+            errors.push((entry.photographer_name||'?') + ': Gemini-antwoord zelf afgekapt, overgeslagen'); return;
           }
+
+          results.push({
+            photographer_name: entry.photographer_name || '',
+            style_description: entry.style_description || '',
+            text
+          });
         } catch(e) {
           errors.push((entry.photographer_name||'?') + ': ' + e.message);
         }
       }));
+    }
+
+    // Fase 2: één keer laden, alle resultaten toepassen, één keer opslaan
+    if (results.length) {
+      const kb = await loadKnowledge();
+      const previewsRaw = await kv('GET', 'style_previews:map');
+      const previewMap = previewsRaw ? JSON.parse(previewsRaw) : {};
+
+      results.forEach(function(res) {
+        const pg = res.photographer_name.toLowerCase();
+        const sg = res.style_description.toLowerCase();
+        let updated = false;
+        kb.forEach(function(e) {
+          if ((e.photographer_name||'').toLowerCase() === pg && (e.style_description||'').toLowerCase() === sg) {
+            e.style_preview = res.text;
+            updated = true;
+            const ek = ((e.youtube_url||'') + '|' + (e.video_title||'')).toLowerCase();
+            previewMap[ek] = res.text;
+          }
+        });
+        if (updated) {
+          generated++;
+          const pk = (res.photographer_name + '|' + res.style_description).toLowerCase();
+          previewMap[pk] = res.text;
+        }
+      });
+
+      await saveKnowledge(kb);
+      try { await kv('SET', 'style_previews:map', JSON.stringify(previewMap)); }
+      catch(e2) { console.log('Preview map save error:', e2.message); }
     }
 
     return res.status(200).json({ success: true, generated, skipped: toProcess.length - unique.length, errors: errors.slice(0,5) });

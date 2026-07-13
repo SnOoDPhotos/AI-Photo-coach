@@ -478,8 +478,12 @@ module.exports = async function handler(req, res) {
           if (!stillPresent) {
             return res.status(422).json({ error: 'Entry werd na normalisatie weggefilterd en dus NIET opgeslagen: ' + explainWhyFiltered(entry), count: persisted.length });
           }
-          try { await pushToGitHub(persisted); } catch(ghErr) { console.log('GitHub push na add/update mislukt:', ghErr.message); }
-          return res.status(200).json({ success: true, updated: true, count: persisted.length, message: 'Betere versie vervangt bestaande entry' });
+          let ghWarning = null;
+          try {
+            const ghResult = await pushToGitHub(persisted);
+            if (!ghResult.success) ghWarning = 'Opgeslagen in Redis, maar GitHub-sync mislukt: ' + ghResult.reason;
+          } catch(ghErr) { ghWarning = 'Opgeslagen in Redis, maar GitHub-sync mislukt: ' + ghErr.message; }
+          return res.status(200).json({ success: true, updated: true, count: persisted.length, message: 'Betere versie vervangt bestaande entry', warning: ghWarning });
         } else {
           return res.status(409).json({ error: 'Bestaande entry is al beter (score: ' + existingScore + ' vs ' + newScore + ')', existing_score: existingScore, new_score: newScore });
         }
@@ -491,8 +495,12 @@ module.exports = async function handler(req, res) {
       if (!stillPresent) {
         return res.status(422).json({ error: 'Entry werd na normalisatie weggefilterd en dus NIET opgeslagen: ' + explainWhyFiltered(entry), count: persisted.length });
       }
-      try { await pushToGitHub(persisted); } catch(ghErr) { console.log('GitHub push na add mislukt:', ghErr.message); }
-      return res.status(200).json({ success: true, count: persisted.length });
+      let ghWarning = null;
+      try {
+        const ghResult = await pushToGitHub(persisted);
+        if (!ghResult.success) ghWarning = 'Opgeslagen in Redis, maar GitHub-sync mislukt: ' + ghResult.reason;
+      } catch(ghErr) { ghWarning = 'Opgeslagen in Redis, maar GitHub-sync mislukt: ' + ghErr.message; }
+      return res.status(200).json({ success: true, count: persisted.length, warning: ghWarning });
     }
 
     // ── ENTRY BIJWERKEN (op index of video_title) ─────────────────────────

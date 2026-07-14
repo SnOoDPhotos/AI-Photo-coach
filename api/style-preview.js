@@ -71,6 +71,80 @@ module.exports = async function handler(req, res) {
       return res.status(200).json({ success: true, message: 'Alle style previews gereset' });
     }
 
+    if (action === 'translate_previews') {
+      const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+      if (!GEMINI_API_KEY) return res.status(500).json({ error: 'Gemini API key niet geconfigureerd' });
+
+      const toTranslate = (entries || []).filter(function(e) {
+        var nl = e.style_preview || '';
+        var en = e.style_preview_en || '';
+        if (!nl || nl.length < 10) return false; // niets om te vertalen
+        if (!en || en.length < 10) return true;  // nog geen vertaling
+        return false;
+      });
+      if (!toTranslate.length) {
+        return res.status(200).json({ success: true, translated: 0, skipped: 0, message: 'Alle entries hebben al een Engelse vertaling' });
+      }
+
+      // Dedupliceer op de brontekst zelf (meerdere entries kunnen dezelfde preview delen)
+      const seen = new Set();
+      const unique = toTranslate.filter(function(e) {
+        const key = (e.style_preview || '').trim();
+        if (seen.has(key)) return false;
+        seen.add(key);
+        return true;
+      });
+
+      let translated = 0;
+      const errors = [];
+      const PARALLEL = 10;
+      const results = []; // { source, text }
+      for (let i = 0; i < unique.length; i += PARALLEL) {
+        const batch = unique.slice(i, i + PARALLEL);
+        await Promise.all(batch.map(async function(entry) {
+          const source = entry.style_preview;
+          const prompt = 'Translate the following Dutch photo-editing style description into natural, fluent English. Keep the same tone, meaning and level of detail. Do not add or remove information. Do not mention any photographer, person or YouTuber name. Return ONLY the translated text, nothing else.\n\nDutch text:\n' + source;
+
+          try {
+            const r = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=' + GEMINI_API_KEY, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                contents: [{ parts: [{ text: prompt }] }],
+                generationConfig: { maxOutputTokens: 2500, temperature: 0.3 }
+              })
+            });
+            const data = await r.json();
+            if (data.error) { errors.push(source.slice(0,40) + '...: ' + data.error.message); return; }
+            const text = (data.candidates||[]).map(c => ((c.content||{}).parts||[])).flat().map(p => p.text||'').join('').trim();
+            if (!text || text.length < 20) { errors.push(source.slice(0,40) + '...: lege response'); return; }
+            if (!text.trim().endsWith('.') && !text.trim().endsWith('!') && !text.trim().endsWith('?')) {
+              errors.push(source.slice(0,40) + '...: afgekapte vertaling, overgeslagen'); return;
+            }
+            results.push({ source, text });
+          } catch(e) {
+            errors.push(source.slice(0,40) + '...: ' + e.message);
+          }
+        }));
+      }
+
+      if (results.length) {
+        const kb = await loadKnowledge();
+        const bySource = {};
+        results.forEach(function(r) { bySource[r.source.trim()] = r.text; });
+        kb.forEach(function(e) {
+          const key = (e.style_preview || '').trim();
+          if (bySource[key]) {
+            e.style_preview_en = bySource[key];
+            translated++;
+          }
+        });
+        await saveKnowledge(kb);
+      }
+
+      return res.status(200).json({ success: true, translated, skipped: toTranslate.length - unique.length, errors: errors.slice(0,5) });
+    }
+
     if (action !== 'generate_previews') {
       return res.status(400).json({ error: 'Onbekende actie' });
     }

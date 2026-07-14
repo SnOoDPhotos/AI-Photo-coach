@@ -629,22 +629,14 @@ module.exports = async function handler(req, res) {
       if (!Array.isArray(entries)) return res.status(400).json({ error: 'entries array vereist' });
       try {
         const existing = await loadKnowledge();
-        if (chunk_index === 0) {
-          // Voeg samen met bestaande data i.p.v. te vervangen — voorkomt dataverlies
-          // als de browser-tab een verouderde/onvolledige lokale staat had.
-          function extractVideoId(url) {
-            if (!url) return null;
-            const m = url.match(/(?:v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
-            return m ? m[1] : (url || '').toLowerCase().trim();
-          }
-          const incomingIds = new Set(entries.map(e => extractVideoId(e.youtube_url) || (e.video_title||'').toLowerCase().trim()));
-          const untouched = existing.filter(e => !incomingIds.has(extractVideoId(e.youtube_url) || (e.video_title||'').toLowerCase().trim()));
-          await saveKnowledge(deduplicateEntries([...untouched, ...entries]));
-        } else {
-          // Volgende chunks: voeg toe aan bestaande
-          const combined = [...existing, ...entries];
-          await saveKnowledge(combined);
+        function extractVideoId(url) {
+          if (!url) return null;
+          const m = url.match(/(?:v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
+          return m ? m[1] : (url || '').toLowerCase().trim();
         }
+        const incomingIds = new Set(entries.map(e => extractVideoId(e.youtube_url) || (e.video_title||'').toLowerCase().trim()));
+        const untouched = existing.filter(e => !incomingIds.has(extractVideoId(e.youtube_url) || (e.video_title||'').toLowerCase().trim()));
+        await saveKnowledge(deduplicateEntries([...untouched, ...entries]));
         const isLast = chunk_index === total_chunks - 1;
         if (isLast) {
           // Push naar GitHub na laatste chunk

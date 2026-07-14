@@ -139,6 +139,9 @@ function getEntryWarnings(entry) {
       break;
     }
   }
+  if (checkNameLeak(entry)) {
+    warnings.push('naam lekt in tekst (GOUDEN REGEL)');
+  }
 
   // Software check
   for (const s of (entry.software || [])) {
@@ -265,6 +268,28 @@ async function saveKnowledge(entries) {
 }
 
 // Legt uit waarom een entry door saveKnowledge zou worden weggefilterd (voor foutmeldingen)
+function checkNameLeak(entry) {
+  const name = (entry.photographer_name || '').trim();
+  if (!name || name.length < 3) return null;
+  const nameLower = name.toLowerCase();
+  const textFields = [
+    entry.philosophy,
+    entry.style_preview,
+    entry.color_approach,
+    entry.local_adjustments,
+    entry.best_for,
+    ...(entry.unique_insights || []),
+    ...(entry.workflow_order || []),
+    ...(entry.what_to_avoid || []),
+    ...(entry.techniques || []).flatMap(t => [t.description, t.when_to_use, t.effect])
+  ].filter(Boolean);
+  for (const field of textFields) {
+    if (field.toLowerCase().includes(nameLower)) {
+      return 'Fotografennaam "' + name + '" komt letterlijk voor in de tekst van deze entry (GOUDEN REGEL geschonden).';
+    }
+  }
+  return null;
+}
 function explainWhyFiltered(entry) {
   const name = (entry.photographer_name || '').trim();
   if (NAME_CORRECTIONS[name] === null) {
@@ -439,6 +464,11 @@ module.exports = async function handler(req, res) {
         entry._warnings = entryWarnings;
       }
       if (!entry || !entry.video_title) return res.status(400).json({ error: 'Ongeldige entry' });
+
+      const nameLeak = checkNameLeak(entry);
+      if (nameLeak) {
+        return res.status(422).json({ error: nameLeak });
+      }
 
       const entries = await loadKnowledge();
 

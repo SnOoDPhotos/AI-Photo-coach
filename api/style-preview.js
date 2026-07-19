@@ -145,6 +145,75 @@ module.exports = async function handler(req, res) {
       return res.status(200).json({ success: true, translated, skipped: toTranslate.length - unique.length, errors: errors.slice(0,5) });
     }
 
+    if (action === 'translate_names') {
+      const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+      if (!GEMINI_API_KEY) return res.status(500).json({ error: 'Gemini API key niet geconfigureerd' });
+
+      const toTranslate = (entries || []).filter(function(e) {
+        var en = e.style_description || '';
+        var nl = e.style_description_nl || '';
+        if (!en || en.length < 3) return false;
+        if (!nl || nl.length < 3) return true;
+        return false;
+      });
+      if (!toTranslate.length) {
+        return res.status(200).json({ success: true, translated: 0, skipped: 0, message: 'Alle entries hebben al een Nederlandse stijlnaam' });
+      }
+
+      const seen = new Set();
+      const unique = toTranslate.filter(function(e) {
+        const key = (e.style_description || '').trim().toLowerCase();
+        if (seen.has(key)) return false;
+        seen.add(key);
+        return true;
+      });
+
+      let translated = 0;
+      const errors = [];
+      const PARALLEL = 10;
+      const results = [];
+      for (let i = 0; i < unique.length; i += PARALLEL) {
+        const batch = unique.slice(i, i + PARALLEL);
+        await Promise.all(batch.map(async function(entry) {
+          const source = entry.style_description;
+          const prompt = 'Translate the following short English photo-editing style name into a natural, catchy Dutch equivalent (2-5 words). Keep it as a short name/title, not a sentence. Do not mention any photographer or person name. Return ONLY the translated name, nothing else.\n\nEnglish name:\n' + source;
+          try {
+            const r = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=' + GEMINI_API_KEY, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                contents: [{ parts: [{ text: prompt }] }],
+                generationConfig: { maxOutputTokens: 100, temperature: 0.3 }
+              })
+            });
+            const data = await r.json();
+            if (data.error) { errors.push(source.slice(0,40) + '...: ' + data.error.message); return; }
+            const text = (data.candidates||[]).map(c => ((c.content||{}).parts||[])).flat().map(p => p.text||'').join('').trim().replace(/^["']|["']$/g, '');
+            if (!text || text.length < 2) { errors.push(source.slice(0,40) + '...: lege response'); return; }
+            results.push({ source, text });
+          } catch(e) {
+            errors.push(source.slice(0,40) + '...: ' + e.message);
+          }
+        }));
+      }
+
+      if (results.length) {
+        const kb = await loadKnowledge();
+        const bySource = {};
+        results.forEach(function(r) { bySource[r.source.trim().toLowerCase()] = r.text; });
+        kb.forEach(function(e) {
+          const key = (e.style_description || '').trim().toLowerCase();
+          if (bySource[key]) {
+            e.style_description_nl = bySource[key];
+            translated++;
+          }
+        });
+        await saveKnowledge(kb);
+      }
+
+      return res.status(200).json({ success: true, translated, skipped: toTranslate.length - unique.length, errors: errors.slice(0,5) });
+    }
+
     if (action !== 'generate_previews') {
       return res.status(400).json({ error: 'Onbekende actie' });
     }

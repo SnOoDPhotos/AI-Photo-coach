@@ -183,12 +183,12 @@ module.exports = async function handler(req, res) {
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify({
                 contents: [{ parts: [{ text: prompt }] }],
-                generationConfig: { maxOutputTokens: 500, temperature: 0.3 }
+                generationConfig: { maxOutputTokens: 2500, temperature: 0.3 }
               })
             });
             const data = await r.json();
             if (data.error) { errors.push(source.slice(0,40) + '...: ' + data.error.message); return; }
-            const text = (data.candidates||[]).map(c => ((c.content||{}).parts||[])).flat().map(p => p.text||'').join('').trim().replace(/^["']|["']$/g, '');
+            const text = (data.candidates||[]).map(c => ((c.content||{}).parts||[])).flat().map(p => p.text||'').join('').trim().replace(/^["']|["']$/g, '').replace(/\*+/g, '').trim();
             if (!text || text.length < 2) { errors.push(source.slice(0,40) + '...: lege response'); return; }
             if (text.length < source.length * 0.4 && text.length < 8) { errors.push(source.slice(0,40) + '...: vermoedelijk afgekapt, overgeslagen'); return; }
             results.push({ source, text });

@@ -446,6 +446,86 @@ module.exports = async function handler(req, res) {
       return res.status(200).json(entries);
     }
 
+    // ── STIJL BEOORDELEN (publiek, geen auth nodig) ────────────────────────
+    if (action === 'rate_style') {
+      const { youtube_url, video_title, rating, comment, source } = req.body || {};
+      const ratingNum = parseInt(rating);
+      if (!ratingNum || ratingNum < 1 || ratingNum > 5) {
+        return res.status(400).json({ error: 'Ongeldige rating (moet 1-5 zijn)' });
+      }
+      if (!youtube_url && !video_title) {
+        return res.status(400).json({ error: 'Geen entry-identifier meegegeven' });
+      }
+      const entries = await loadKnowledge();
+      const idx = entries.findIndex(e =>
+        (youtube_url && e.youtube_url === youtube_url) ||
+        (!youtube_url && e.video_title === video_title)
+      );
+      if (idx === -1) return res.status(404).json({ error: 'Entry niet gevonden' });
+
+      const cleanComment = (comment || '').toString().trim().slice(0, 500);
+      if (!Array.isArray(entries[idx].ratings)) entries[idx].ratings = [];
+      entries[idx].ratings.push({
+        rating: ratingNum,
+        comment: cleanComment,
+        timestamp: Date.now(),
+        source: source === 'admin' ? 'admin' : 'user'
+      });
+      // Cap op laatste 200 ratings per entry om de database niet ongelimiteerd te laten groeien
+      if (entries[idx].ratings.length > 200) {
+        entries[idx].ratings = entries[idx].ratings.slice(-200);
+      }
+      const avg = entries[idx].ratings.reduce((s, r) => s + r.rating, 0) / entries[idx].ratings.length;
+      entries[idx].rating_avg = Math.round(avg * 10) / 10;
+      entries[idx].rating_count = entries[idx].ratings.length;
+
+      await saveKnowledge(entries);
+      return res.status(200).json({ success: true, rating_avg: entries[idx].rating_avg, rating_count: entries[idx].rating_count });
+    }
+
+    // ── COMMENT VERWIJDEREN (admin, moderatie) ─────────────────────────────
+    if (action === 'delete_rating') {
+      const token = getToken(req);
+      if (!verifyAdminToken(token)) return res.status(403).json({ error: 'Geen toegang' });
+      const { youtube_url, video_title, rating_timestamp } = req.body || {};
+      const entries = await loadKnowledge();
+      const idx = entries.findIndex(e =>
+        (youtube_url && e.youtube_url === youtube_url) ||
+        (!youtube_url && e.video_title === video_title)
+      );
+      if (idx === -1) return res.status(404).json({ error: 'Entry niet gevonden' });
+      entries[idx].ratings = (entries[idx].ratings || []).filter(r => r.timestamp !== rating_timestamp);
+      if (entries[idx].ratings.length) {
+        const avg = entries[idx].ratings.reduce((s, r) => s + r.rating, 0) / entries[idx].ratings.length;
+        entries[idx].rating_avg = Math.round(avg * 10) / 10;
+        entries[idx].rating_count = entries[idx].ratings.length;
+      } else {
+        entries[idx].rating_avg = null;
+        entries[idx].rating_count = 0;
+      }
+      await saveKnowledge(entries);
+      return res.status(200).json({ success: true });
+    }
+
+    // ── AI-TERUGHOUDENDHEID INSTELLEN (admin) ──────────────────────────────
+    if (action === 'set_ai_caution') {
+      const token = getToken(req);
+      if (!verifyAdminToken(token)) return res.status(403).json({ error: 'Geen toegang' });
+      const { youtube_url, video_title, ai_caution } = req.body || {};
+      if (!['normal', 'cautious', 'very_cautious'].includes(ai_caution)) {
+        return res.status(400).json({ error: 'Ongeldige waarde voor ai_caution' });
+      }
+      const entries = await loadKnowledge();
+      const idx = entries.findIndex(e =>
+        (youtube_url && e.youtube_url === youtube_url) ||
+        (!youtube_url && e.video_title === video_title)
+      );
+      if (idx === -1) return res.status(404).json({ error: 'Entry niet gevonden' });
+      entries[idx].ai_caution = ai_caution;
+      await saveKnowledge(entries);
+      return res.status(200).json({ success: true });
+    }
+
     // ── ENTRY TOEVOEGEN ───────────────────────────────────────────────────
     if (action === 'add') {
       const token = getToken(req);

@@ -740,13 +740,16 @@ module.exports = async function handler(req, res) {
       if (!verifyAdminToken(token)) return res.status(403).json({ error: 'Geen toegang' });
 
       try {
-        const filePath = path.join(process.cwd(), 'knowledge-base.json');
-        const data = fs.readFileSync(filePath, 'utf-8');
-        const entries = JSON.parse(data);
+        // Haal ALTIJD live op van GitHub i.p.v. het gebundelde bestand in deze deployment,
+        // want dat kan verouderd zijn als een eerdere deploy is mislukt/vertraagd.
+        const ghResp = await fetch('https://raw.githubusercontent.com/SnOoDPhotos/AI-Photo-coach/main/knowledge-base.json?t=' + Date.now());
+        if (!ghResp.ok) throw new Error('GitHub gaf status ' + ghResp.status);
+        const entries = await ghResp.json();
+        if (!Array.isArray(entries) || !entries.length) throw new Error('Ongeldige of lege data van GitHub');
         await saveKnowledge(entries);
-        return res.status(200).json({ success: true, message: `${entries.length} entries geladen uit knowledge-base.json` });
+        return res.status(200).json({ success: true, message: `${entries.length} entries live opgehaald van GitHub` });
       } catch(e) {
-        return res.status(500).json({ error: 'Kon knowledge-base.json niet laden: ' + e.message });
+        return res.status(500).json({ error: 'Kon niet live van GitHub laden: ' + e.message });
       }
     }
 

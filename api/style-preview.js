@@ -71,148 +71,115 @@ module.exports = async function handler(req, res) {
       return res.status(200).json({ success: true, message: 'Alle style previews gereset' });
     }
 
+// Gedeelde vertaal-batch-functie, vervangt de bijna-identieke logica die eerder los
+// in translate_previews en translate_names stond. Getest tegen mock-Gemini-responses
+// vóór toepassing (zie sessie-notities); gedrag komt overeen met de originelen.
+async function translateField(opts) {
+  const { entries, sourceField, targetField, minLength, keyFn, buildPrompt, postProcess, validate, notFoundMessage, generationConfig, GEMINI_API_KEY } = opts;
+
+  const toTranslate = (entries || []).filter(function(e) {
+    var src = e[sourceField] || '';
+    var tgt = e[targetField] || '';
+    if (!src || src.length < minLength) return false;
+    if (!tgt || tgt.length < minLength) return true;
+    return false;
+  });
+  if (!toTranslate.length) {
+    return { success: true, translated: 0, skipped: 0, message: notFoundMessage };
+  }
+
+  const seen = new Set();
+  const unique = toTranslate.filter(function(e) {
+    const key = keyFn(e[sourceField]);
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+
+  let translated = 0;
+  const errors = [];
+  const PARALLEL = 10;
+  const results = [];
+  for (let i = 0; i < unique.length; i += PARALLEL) {
+    const batch = unique.slice(i, i + PARALLEL);
+    await Promise.all(batch.map(async function(entry) {
+      const source = entry[sourceField];
+      const prompt = buildPrompt(source);
+      try {
+        const r = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=' + GEMINI_API_KEY, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }], generationConfig })
+        });
+        const data = await r.json();
+        if (data.error) { errors.push(source.slice(0,40) + '...: ' + data.error.message); return; }
+        let text = (data.candidates||[]).map(c => ((c.content||{}).parts||[])).flat().map(p => p.text||'').join('').trim();
+        text = postProcess ? postProcess(text) : text;
+        if (!text || text.length < 2) { errors.push(source.slice(0,40) + '...: lege response'); return; }
+        const validationError = validate ? validate(text, source) : null;
+        if (validationError) { errors.push(source.slice(0,40) + '...: ' + validationError); return; }
+        results.push({ source, text });
+      } catch(e) {
+        errors.push(source.slice(0,40) + '...: ' + e.message);
+      }
+    }));
+  }
+
+  if (results.length) {
+    const kb = await loadKnowledge();
+    const bySource = {};
+    results.forEach(function(r) { bySource[keyFn(r.source)] = r.text; });
+    kb.forEach(function(e) {
+      const key = keyFn(e[sourceField]);
+      if (bySource[key]) {
+        e[targetField] = bySource[key];
+        translated++;
+      }
+    });
+    await saveKnowledge(kb);
+  }
+
+  return { success: true, translated, skipped: toTranslate.length - unique.length, errors: errors.slice(0,5) };
+}
+
     if (action === 'translate_previews') {
       const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
       if (!GEMINI_API_KEY) return res.status(500).json({ error: 'Gemini API key niet geconfigureerd' });
 
-      const toTranslate = (entries || []).filter(function(e) {
-        var nl = e.style_preview || '';
-        var en = e.style_preview_en || '';
-        if (!nl || nl.length < 10) return false; // niets om te vertalen
-        if (!en || en.length < 10) return true;  // nog geen vertaling
-        return false;
+      const result = await translateField({
+        entries, GEMINI_API_KEY,
+        sourceField: 'style_preview', targetField: 'style_preview_en', minLength: 10,
+        keyFn: s => s.trim(),
+        buildPrompt: source => 'Translate the following Dutch photo-editing style description into natural, fluent English. Keep the same tone, meaning and level of detail. Do not add or remove information. Do not mention any photographer, person or YouTuber name. Return ONLY the translated text, nothing else.\n\nDutch text:\n' + source,
+        validate: text => {
+          const t = text.trim();
+          if (!t.endsWith('.') && !t.endsWith('!') && !t.endsWith('?')) return 'afgekapte vertaling, overgeslagen';
+          return null;
+        },
+        notFoundMessage: 'Alle entries hebben al een Engelse vertaling',
+        generationConfig: { maxOutputTokens: 2500, temperature: 0.3 }
       });
-      if (!toTranslate.length) {
-        return res.status(200).json({ success: true, translated: 0, skipped: 0, message: 'Alle entries hebben al een Engelse vertaling' });
-      }
-
-      // Dedupliceer op de brontekst zelf (meerdere entries kunnen dezelfde preview delen)
-      const seen = new Set();
-      const unique = toTranslate.filter(function(e) {
-        const key = (e.style_preview || '').trim();
-        if (seen.has(key)) return false;
-        seen.add(key);
-        return true;
-      });
-
-      let translated = 0;
-      const errors = [];
-      const PARALLEL = 10;
-      const results = []; // { source, text }
-      for (let i = 0; i < unique.length; i += PARALLEL) {
-        const batch = unique.slice(i, i + PARALLEL);
-        await Promise.all(batch.map(async function(entry) {
-          const source = entry.style_preview;
-          const prompt = 'Translate the following Dutch photo-editing style description into natural, fluent English. Keep the same tone, meaning and level of detail. Do not add or remove information. Do not mention any photographer, person or YouTuber name. Return ONLY the translated text, nothing else.\n\nDutch text:\n' + source;
-
-          try {
-            const r = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=' + GEMINI_API_KEY, {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({
-                contents: [{ parts: [{ text: prompt }] }],
-                generationConfig: { maxOutputTokens: 2500, temperature: 0.3 }
-              })
-            });
-            const data = await r.json();
-            if (data.error) { errors.push(source.slice(0,40) + '...: ' + data.error.message); return; }
-            const text = (data.candidates||[]).map(c => ((c.content||{}).parts||[])).flat().map(p => p.text||'').join('').trim();
-            if (!text || text.length < 20) { errors.push(source.slice(0,40) + '...: lege response'); return; }
-            if (!text.trim().endsWith('.') && !text.trim().endsWith('!') && !text.trim().endsWith('?')) {
-              errors.push(source.slice(0,40) + '...: afgekapte vertaling, overgeslagen'); return;
-            }
-            results.push({ source, text });
-          } catch(e) {
-            errors.push(source.slice(0,40) + '...: ' + e.message);
-          }
-        }));
-      }
-
-      if (results.length) {
-        const kb = await loadKnowledge();
-        const bySource = {};
-        results.forEach(function(r) { bySource[r.source.trim()] = r.text; });
-        kb.forEach(function(e) {
-          const key = (e.style_preview || '').trim();
-          if (bySource[key]) {
-            e.style_preview_en = bySource[key];
-            translated++;
-          }
-        });
-        await saveKnowledge(kb);
-      }
-
-      return res.status(200).json({ success: true, translated, skipped: toTranslate.length - unique.length, errors: errors.slice(0,5) });
+      return res.status(200).json(result);
     }
 
     if (action === 'translate_names') {
       const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
       if (!GEMINI_API_KEY) return res.status(500).json({ error: 'Gemini API key niet geconfigureerd' });
 
-      const toTranslate = (entries || []).filter(function(e) {
-        var en = e.style_description || '';
-        var nl = e.style_description_nl || '';
-        if (!en || en.length < 3) return false;
-        if (!nl || nl.length < 3) return true;
-        return false;
+      const result = await translateField({
+        entries, GEMINI_API_KEY,
+        sourceField: 'style_description', targetField: 'style_description_nl', minLength: 3,
+        keyFn: s => s.trim().toLowerCase(),
+        buildPrompt: source => 'Translate the following short English photo-editing style name into a natural, catchy Dutch equivalent (2-5 words). Keep it as a short name/title, not a sentence. Do not mention any photographer or person name. Return ONLY the translated name, nothing else.\n\nEnglish name:\n' + source,
+        postProcess: t => t.replace(/^["']|["']$/g, '').replace(/\*+/g, '').trim(),
+        validate: (text, source) => {
+          if (text.length < source.length * 0.4 && text.length < 8) return 'vermoedelijk afgekapt, overgeslagen';
+          return null;
+        },
+        notFoundMessage: 'Alle entries hebben al een Nederlandse stijlnaam',
+        generationConfig: { maxOutputTokens: 2500, temperature: 0.3, thinkingConfig: { thinkingBudget: 0 } }
       });
-      if (!toTranslate.length) {
-        return res.status(200).json({ success: true, translated: 0, skipped: 0, message: 'Alle entries hebben al een Nederlandse stijlnaam' });
-      }
-
-      const seen = new Set();
-      const unique = toTranslate.filter(function(e) {
-        const key = (e.style_description || '').trim().toLowerCase();
-        if (seen.has(key)) return false;
-        seen.add(key);
-        return true;
-      });
-
-      let translated = 0;
-      const errors = [];
-      const PARALLEL = 10;
-      const results = [];
-      for (let i = 0; i < unique.length; i += PARALLEL) {
-        const batch = unique.slice(i, i + PARALLEL);
-        await Promise.all(batch.map(async function(entry) {
-          const source = entry.style_description;
-          const prompt = 'Translate the following short English photo-editing style name into a natural, catchy Dutch equivalent (2-5 words). Keep it as a short name/title, not a sentence. Do not mention any photographer or person name. Return ONLY the translated name, nothing else.\n\nEnglish name:\n' + source;
-          try {
-            const r = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=' + GEMINI_API_KEY, {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({
-                contents: [{ parts: [{ text: prompt }] }],
-                generationConfig: { maxOutputTokens: 2500, temperature: 0.3, thinkingConfig: { thinkingBudget: 0 } }
-              })
-            });
-            const data = await r.json();
-            if (data.error) { errors.push(source.slice(0,40) + '...: ' + data.error.message); return; }
-            const text = (data.candidates||[]).map(c => ((c.content||{}).parts||[])).flat().map(p => p.text||'').join('').trim().replace(/^["']|["']$/g, '').replace(/\*+/g, '').trim();
-            if (!text || text.length < 2) { errors.push(source.slice(0,40) + '...: lege response'); return; }
-            if (text.length < source.length * 0.4 && text.length < 8) { errors.push(source.slice(0,40) + '...: vermoedelijk afgekapt, overgeslagen'); return; }
-            results.push({ source, text });
-          } catch(e) {
-            errors.push(source.slice(0,40) + '...: ' + e.message);
-          }
-        }));
-      }
-
-      if (results.length) {
-        const kb = await loadKnowledge();
-        const bySource = {};
-        results.forEach(function(r) { bySource[r.source.trim().toLowerCase()] = r.text; });
-        kb.forEach(function(e) {
-          const key = (e.style_description || '').trim().toLowerCase();
-          if (bySource[key]) {
-            e.style_description_nl = bySource[key];
-            translated++;
-          }
-        });
-        await saveKnowledge(kb);
-      }
-
-      return res.status(200).json({ success: true, translated, skipped: toTranslate.length - unique.length, errors: errors.slice(0,5) });
+      return res.status(200).json(result);
     }
 
     if (action !== 'generate_previews') {

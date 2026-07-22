@@ -343,6 +343,17 @@ function getToken(req) {
   return req.body?.token || (req.headers?.authorization || '').replace('Bearer ', '');
 }
 
+// Gedeelde auth-check, vervangt het 11x gedupliceerde inline patroon.
+// Getest tegen: geldig token, verlopen token, verkeerde user, verkeerd secret, misvormd token, geen token, token via header.
+function requireAdmin(req, res) {
+  const token = getToken(req);
+  if (!verifyAdminToken(token)) {
+    res.status(403).json({ error: 'Geen toegang' });
+    return false;
+  }
+  return true;
+}
+
 // ── Handler ───────────────────────────────────────────────────────────────
 
 // ── GitHub backup via Git Data API ────────────────────────────────────────
@@ -404,16 +415,14 @@ module.exports = async function handler(req, res) {
 
     // ── LIJST OPHALEN (POST, voor admin GUI) ──────────────────────────────
     if (action === 'list') {
-      const token = getToken(req);
-      if (!verifyAdminToken(token)) return res.status(403).json({ error: 'Geen toegang' });
+      if (!requireAdmin(req, res)) return;
       const entries = await loadKnowledge();
       return res.status(200).json({ success: true, entries });
     }
 
     // ── RESET STYLE PREVIEWS ──────────────────────────────────────────────────
     if (action === 'reset_previews') {
-      const token = getToken(req);
-      if (!verifyAdminToken(token)) return res.status(403).json({ error: 'Geen toegang' });
+      if (!requireAdmin(req, res)) return;
       // Leeg de aparte previews map
       await kv('SET', 'style_previews:map', JSON.stringify({}));
       // Verwijder style_preview uit alle kennisbank entries
@@ -429,8 +438,7 @@ module.exports = async function handler(req, res) {
 
     // ── WAARSCHUWINGEN OPHALEN (admin) ────────────────────────────────────────
     if (action === 'get_warnings') {
-      const token = getToken(req);
-      if (!verifyAdminToken(token)) return res.status(403).json({ error: 'Geen toegang' });
+      if (!requireAdmin(req, res)) return;
       const kb = await loadKnowledge();
       const withWarnings = kb.map(function(e, i) {
         const w = getEntryWarnings(e);
@@ -485,8 +493,7 @@ module.exports = async function handler(req, res) {
 
     // ── COMMENT VERWIJDEREN (admin, moderatie) ─────────────────────────────
     if (action === 'delete_rating') {
-      const token = getToken(req);
-      if (!verifyAdminToken(token)) return res.status(403).json({ error: 'Geen toegang' });
+      if (!requireAdmin(req, res)) return;
       const { youtube_url, video_title, rating_timestamp } = req.body || {};
       const entries = await loadKnowledge();
       const idx = entries.findIndex(e =>
@@ -509,8 +516,7 @@ module.exports = async function handler(req, res) {
 
     // ── AI-TERUGHOUDENDHEID INSTELLEN (admin) ──────────────────────────────
     if (action === 'set_ai_caution') {
-      const token = getToken(req);
-      if (!verifyAdminToken(token)) return res.status(403).json({ error: 'Geen toegang' });
+      if (!requireAdmin(req, res)) return;
       const { youtube_url, video_title, ai_caution } = req.body || {};
       if (!['normal', 'cautious', 'very_cautious'].includes(ai_caution)) {
         return res.status(400).json({ error: 'Ongeldige waarde voor ai_caution' });
@@ -528,8 +534,7 @@ module.exports = async function handler(req, res) {
 
     // ── ENTRY TOEVOEGEN ───────────────────────────────────────────────────
     if (action === 'add') {
-      const token = getToken(req);
-      if (!verifyAdminToken(token)) return res.status(403).json({ error: 'Geen toegang' });
+      if (!requireAdmin(req, res)) return;
 
       const { entry } = req.body;
       if (entry && Array.isArray(entry.genre)) {
@@ -615,8 +620,7 @@ module.exports = async function handler(req, res) {
 
     // ── ENTRY BIJWERKEN (op index of video_title) ─────────────────────────
     if (action === 'update') {
-      const token = getToken(req);
-      if (!verifyAdminToken(token)) return res.status(403).json({ error: 'Geen toegang' });
+      if (!requireAdmin(req, res)) return;
 
       const { index, fields } = req.body;
       if (typeof index !== 'number' || !fields) return res.status(400).json({ error: 'index en fields vereist' });
@@ -632,8 +636,7 @@ module.exports = async function handler(req, res) {
 
     // ── VOLLEDIGE KENNISBANK OVERSCHRIJVEN ────────────────────────────────
     if (action === 'save_all') {
-      const token = getToken(req);
-      if (!verifyAdminToken(token)) return res.status(403).json({ error: 'Geen toegang' });
+      if (!requireAdmin(req, res)) return;
 
       const { entries } = req.body;
       if (!Array.isArray(entries)) return res.status(400).json({ error: 'entries array vereist' });
@@ -687,8 +690,7 @@ module.exports = async function handler(req, res) {
 
     // ── ENTRY VERWIJDEREN ─────────────────────────────────────────────────
     if (action === 'delete') {
-      const token = getToken(req);
-      if (!verifyAdminToken(token)) return res.status(403).json({ error: 'Geen toegang' });
+      if (!requireAdmin(req, res)) return;
 
       const { index } = req.body;
       if (typeof index !== 'number') return res.status(400).json({ error: 'index vereist' });
@@ -703,8 +705,7 @@ module.exports = async function handler(req, res) {
 
     // ── CHUNKED OPSLAAN ──────────────────────────────────────────────────
     if (action === 'save_chunk') {
-      const token = getToken(req);
-      if (!verifyAdminToken(token)) return res.status(403).json({ error: 'Geen toegang' });
+      if (!requireAdmin(req, res)) return;
       const { entries, chunk_index, total_chunks } = req.body;
       if (!Array.isArray(entries)) return res.status(400).json({ error: 'entries array vereist' });
       try {
@@ -736,8 +737,7 @@ module.exports = async function handler(req, res) {
 
     // ── REDIS INITIALISEREN vanuit knowledge-base.json ────────────────────
     if (action === 'init_from_file') {
-      const token = getToken(req);
-      if (!verifyAdminToken(token)) return res.status(403).json({ error: 'Geen toegang' });
+      if (!requireAdmin(req, res)) return;
 
       try {
         // Haal ALTIJD live op van GitHub i.p.v. het gebundelde bestand in deze deployment,
